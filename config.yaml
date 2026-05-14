@@ -1,0 +1,58 @@
+# ============================================================
+# Federated Learning Experiment Configuration
+# 配置驱动：修改此文件即可控制所有实验变量
+# ============================================================
+
+# -------------------- 全局设置 --------------------
+global:
+  rounds: 50                # 通信轮数
+  num_clients: 10           # 客户端总数
+  frac: 1.0                # 每轮参与比例 (0.0 ~ 1.0)
+  seed: 42                  # 随机种子（确保可复现）
+
+# -------------------- 数据配置 --------------------
+data:
+  name: mnist               # 数据集: mnist, cifar10, fashionmnist
+  split: iid               # 划分方式: iid, lda, sharding
+  alpha: 0.3               # LDA的Non-IID程度 (越小越倾斜)
+  batch_size: 32           # 批大小
+
+# -------------------- 聚合器配置 --------------------
+# 支持: fedavg, multi_krum, trimmed_mean, fltrust, median
+aggregator:
+  name: fedavg
+  params:
+    # Multi-Krum参数
+    f: 4                    # 恶意客户端数量上限 (建议: num_clients * malicious_ratio)
+    m: 6                    # 选择梯度数量 (默认: n - f)
+
+# -------------------- 攻击配置 --------------------
+# 支持: none, label_flipping, sign_flipping
+attack:
+  name: none
+  malicious_ratio: 0.0      # 恶意客户端占比 (0.0 ~ 1.0)
+  params:
+    # 标签翻转参数
+    flip_mapping: "9-y"    # 翻转映射: "9-y" 或 "custom"
+    # 符号翻转参数
+    sign_scale: -1.0        # 翻转系数: -1.0 (翻转) 或其他倍数
+    # 梯度投毒参数
+    noise_scale: 2.0        # 高斯噪声标准差
+
+# -------------------- 本地训练配置 --------------------
+local:
+  lr: 0.01                 # 学习率
+  batch_size: 32           # 本地批大小
+  epochs: 2                # 本地训练轮数
+  optimizer: sgd            # 优化器: sgd, adam
+
+# -------------------- 模型配置 --------------------
+model:
+  name: simple_cnn         # 模型: simple_cnn, resnet18
+  num_classes: 10         # 分类类别数
+
+# -------------------- 输出配置 --------------------
+output:
+  save_dir: ./results      # 结果保存目录
+  log_interval: 1          # 日志打印间隔（轮）
+  save_model: true         # 是否保存最终模型
