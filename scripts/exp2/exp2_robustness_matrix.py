@@ -169,6 +169,29 @@ def evaluate(model, test_loader, device):
     return 100.0 * correct / max(total, 1)
 
 
+def evaluate_full(model, test_loader, device, attack='none', num_classes=10):
+    """返回 accuracy 和 attack-specific ASR.
+    ASR definition:
+      - label_flip: fraction of samples predicted as flipped label (9-y)
+      - sign_flip / gaussian_noise: ASR computed post-hoc via accuracy drop
+    """
+    model.eval()
+    correct = total = 0
+    flip_correct = 0
+    with torch.no_grad():
+        for x, y in test_loader:
+            x, y = x.to(device), y.to(device)
+            preds = model(x).argmax(dim=1)
+            correct += preds.eq(y).sum().item()
+            if attack == 'label_flip':
+                flipped_targets = num_classes - 1 - y
+                flip_correct += preds.eq(flipped_targets).sum().item()
+            total += y.size(0)
+    acc = 100.0 * correct / max(total, 1)
+    asr = 100.0 * flip_correct / max(total, 1) if attack == 'label_flip' else 0.0
+    return acc, asr
+
+
 def state_sub(local_state, global_state):
     return {k: (local_state[k] - global_state[k]).detach()
             for k in global_state
@@ -612,6 +635,7 @@ def run_single(
     global_state = global_model.state_dict()
 
     acc_history = []
+    asr_history = []
     ema_weights = None  # For TASL EMA
     cos_history = []   # For TASL cos history penalty
     prev_anchor = None # For TASL anchor stability
@@ -681,25 +705,32 @@ def run_single(
 
         global_state = state_add(global_state, agg_update)
         global_model.load_state_dict(global_state)
-        acc = evaluate(global_model, test_loader, device)
+        acc, asr = evaluate_full(global_model, test_loader, device, attack=attack)
         acc_history.append(acc)
+        asr_history.append(asr)
 
         if r % 10 == 0 or r == 1:
             byz_avg_w = 0.0
             if algo == 'tasl' and ema_weights:
                 byz_avg_w = np.mean([ema_weights.get(c, 0) for c in byzantine_set])
+            asr_str = f" asr={asr:.2f}%" if attack == 'label_flip' else ""
             print(f"  [{algo}/{attack}] R{r:02d} acc={acc:.2f}%"
-                  + (f" byz_w={byz_avg_w:.4f}" if algo == 'tasl' else ""))
+                  + (f" byz_w={byz_avg_w:.4f}" if algo == 'tasl' else "") + asr_str)
 
     best_acc = max(acc_history)
     avg_acc = np.mean(acc_history)
     last_acc = acc_history[-1]
+    best_asr = max(asr_history) if asr_history else 0.0
+    avg_asr = float(np.mean(asr_history)) if asr_history else 0.0
 
     return {
         'best_acc': best_acc,
         'avg_acc': avg_acc,
         'last_acc': last_acc,
         'acc_history': acc_history,
+        'asr_history': asr_history,
+        'best_asr': best_asr,
+        'avg_asr': avg_asr,
     }
 
 
@@ -921,6 +952,12 @@ def main():
             )
 
             all_results[algo][attack] = result
+            # 计算 ASR: label_flip 直接用 asr; sign_flip/gaussian_noise 用精度下降比
+            if attack == 'label_flip':
+                final_asr = result['avg_asr']
+            else:
+                # ASR = 1 - (attacked_avg_acc / clean_avg_acc)，越高攻击越成功
+                final_asr = max(0, 100.0 * (1 - result['avg_acc'] / max(clean_result['avg_acc'], 1e-6)))
             csv_rows.append({
                 'algo': algo,
                 'attack': attack,
@@ -929,9 +966,11 @@ def main():
                 'best_acc': result['best_acc'],
                 'avg_acc': result['avg_acc'],
                 'last_acc': result['last_acc'],
+                'asr': final_asr,
             })
 
-            print(f"  => best={result['best_acc']:.2f}%, avg={result['avg_acc']:.2f}%, last={result['last_acc']:.2f}%")
+            asr_str = f", asr={final_asr:.2f}%" if attack != 'none' else ""
+            print(f"  => best={result['best_acc']:.2f}%, avg={result['avg_acc']:.2f}%, last={result['last_acc']:.2f}%{asr_str}")
 
     # ── Save CSV ───────────────────────────────────────────────────────
     results_dir = os.path.join(BLOCKCHAIN_DIR, "results")
@@ -940,7 +979,7 @@ def main():
 
     with open(csv_path, 'w', newline='', encoding='utf-8') as f:
         writer = csv.DictWriter(f, fieldnames=['algo', 'attack', 'split', 'byzantine_ratio',
-                                                'best_acc', 'avg_acc', 'last_acc'])
+                                                'best_acc', 'avg_acc', 'last_acc', 'asr'])
         writer.writeheader()
         writer.writerows(csv_rows)
 
@@ -949,6 +988,7 @@ def main():
         'algo': 'clean_baseline', 'attack': 'none', 'split': args.split,
         'byzantine_ratio': 0.0, 'best_acc': clean_result['best_acc'],
         'avg_acc': clean_result['avg_acc'], 'last_acc': clean_result['last_acc'],
+        'asr': 0.0,
     })
 
     # ── Print summary table ────────────────────────────────────────────
