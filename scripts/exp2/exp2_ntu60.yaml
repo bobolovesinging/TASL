@@ -1,0 +1,88 @@
+# ============================================================
+# 实验二: Byzantine Resilience Matrix — NTU-60 + ST-GCN
+# ============================================================
+
+experiment:
+  name: "exp2_ntu60_robustness"
+  seed: 42
+  device: "cuda"
+  output_dir: "results"
+
+# ── 数据 ──
+data:
+  dataset: "ntu60"
+  data_dir: "/media/njit5/39e16d05-05ba-46b4-bc9b-47b3c98f1d4f/tlf/datasets/dir_iid"
+  n_clients: 10
+  alpha: null               # IID: no Dirichlet
+  split: "iid"              # iid / non_iid
+  batch_size: 64
+
+# ── 模型 ──
+model:
+  name: "stgcn"
+  num_classes: 60
+  in_channels: 3
+  graph_layout: "ntu-rgb+d"
+  graph_strategy: "spatial"
+  edge_importance_weighting: true
+  dropout: 0.5
+
+# ── 训练 ──
+training:
+  rounds: 65
+  local_epochs: 1
+  momentum: 0.9
+  weight_decay: 1e-4
+  # LR schedule: warmup + step decay (matches run_ntu60_aug.py 70.15% Clean)
+  lr_schedule:
+    base_lr: 0.1
+    warmup: 5
+    steps: [35, 55]
+    decay: 0.1
+
+# ── Byzantine ──
+byzantine:
+  ratio: 0.2
+  # attacks: see --attacks CLI arg
+  #   Data-layer attacks:  label_flip, fgsm, pgd, bone_len, hard_nobox
+  #   Gradient-layer attacks:  sign_flip, gaussian_noise, scaling, min_max
+
+# ── 攻击参数 ──
+attack_params:
+  fgsm:
+    epsilon: 0.1              # perturbation magnitude
+  pgd:
+    epsilon: 0.1              # max L-inf perturbation
+    alpha: 0.01               # step size
+    steps: 10                 # PGD iterations
+  bone_len:
+    scale_std: 0.3            # log-normal std for bone scaling
+  hard_nobox:
+    noise_std: 0.2            # noise std relative to data std
+  gaussian_noise:
+    noise_scale: 0.1          # DEPRECATED: use attack_params.scaling instead
+  scaling:
+    scaling_factor: 100.0     # scaling attack: update放大倍数
+  min_max:
+    sign_flip_first: true     # min-max attack: 先取反再加干扰
+
+# ── 聚合算法（CLI --algorithms 覆盖，默认全跑）──
+# algorithms:
+#   - fedavg
+#   - multi_krum
+#   - trimmed_mean
+#   - fltrust
+#   - tasl
+
+# ── 各算法特有参数 ──
+algorithm_params:
+  tasl:
+    trust_power: 5
+    weight_cap_ratio: 1.5    # 1.5/N
+    ema_alpha: 0.7
+    norm_penalty: 0.8
+    min_cos: 0.2
+  multi_krum:
+    krum_m: null              # null = auto (n - f - 2)
+  gaussian_noise:
+    noise_scale: 0.1          # noise std relative to param std

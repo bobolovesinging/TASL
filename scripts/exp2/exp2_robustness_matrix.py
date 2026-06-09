@@ -423,6 +423,51 @@ def fltrust_aggregate(flat_updates_dict, updates, device):
 # TASL Trust Scoring (v2: 改进版 — 双锚点+范数门控+自适应阈值)
 # ═══════════════════════════════════════════════════════════════════════
 
+# ═══════════════════════════════════════════════════════════════════════
+# FedPure-style Detection for TASL Fusion
+# ═══════════════════════════════════════════════════════════════════════
+
+def fedpure_style_detection(flat_updates, corr_threshold=0.3):
+    """
+    Simplified FedPure anomaly detection on gradient vectors.
+    Computes pairwise cosine correlation; low-consensus clients flagged.
+    Returns {cid: score} where 1.0=clean, 0.0=malicious.
+    """
+    ids = list(flat_updates.keys())
+    n = len(ids)
+    if n <= 2:
+        return {cid: 1.0 for cid in ids}
+
+    sims = {}
+    for i in ids:
+        vi = flat_updates[i]
+        vi_norm = np.linalg.norm(vi) + 1e-12
+        sims[i] = {}
+        for j in ids:
+            if i != j:
+                vj = flat_updates[j]
+                vj_norm = np.linalg.norm(vj) + 1e-12
+                sims[i][j] = float(np.dot(vi, vj) / (vi_norm * vj_norm))
+
+    median_sims = {}
+    for i in ids:
+        median_sims[i] = float(np.median(list(sims[i].values())))
+
+    sim_values = sorted(median_sims.values())
+    q25 = np.percentile(sim_values, 25)
+
+    scores = {}
+    for cid in ids:
+        ms = median_sims[cid]
+        if ms < corr_threshold:
+            scores[cid] = 0.0
+        elif ms < q25:
+            scores[cid] = ms / max(q25, 0.01)
+        else:
+            scores[cid] = 1.0
+    return scores
+
+
 def compute_tasl_trust_weights(
     flat_updates,
     trust_power=5.0,
@@ -676,6 +721,40 @@ def run_single(
         elif algo == 'fltrust':
             agg_update = fltrust_aggregate(flat_updates, local_updates, device)
 
+        elif algo == 'tasl_fused':
+            # Layer 0: FedPure detection
+            fedpure_scores = fedpure_style_detection(flat_updates, corr_threshold=0.3)
+            # Layer 1: TASL trust scoring
+            trust_weights, cos_sims, new_anchor = compute_tasl_trust_weights(
+                flat_updates, trust_power=5.0, max_weight_ratio=1.5,
+                min_cos_threshold=0.2, norm_penalty_strength=0.8,
+                refine_anchor=True, ema_weights=ema_weights, ema_alpha=0.7,
+                cos_history=cos_history, prev_anchor=prev_anchor,
+                temporal_anchor=temporal_anchor,
+            )
+            # Layer 2: Multiplicative fusion (fp_score=0 → weight=0)
+            n_cl = n_clients
+            fused_raw = {}
+            for cid in range(n_clients):
+                fp = fedpure_scores.get(cid, 1.0)
+                tsl = trust_weights.get(cid, 0.0) * n_cl  # denormalize
+                fused_raw[cid] = fp * max(0.0, tsl)
+            sum_f = sum(fused_raw.values())
+            if sum_f > 1e-12:
+                trust_weights = {cid: w / sum_f for cid, w in fused_raw.items()}
+            max_w = 1.5 / n_cl
+            capped = {cid: min(w, max_w) for cid, w in trust_weights.items()}
+            cap_sum = sum(capped.values())
+            if cap_sum > 1e-12:
+                trust_weights = {cid: w / cap_sum for cid, w in capped.items()}
+            ema_weights = dict(trust_weights)
+            cos_history.append(dict(cos_sims))
+            prev_anchor = new_anchor
+            agg_update = fedavg_aggregate(local_updates, trust_weights)
+            agg_flat = flatten_update(agg_update)
+            if np.linalg.norm(agg_flat) > 1e-12:
+                temporal_anchor = agg_flat
+
         elif algo == 'tasl':
             trust_weights, cos_sims, new_anchor = compute_tasl_trust_weights(
                 flat_updates,
@@ -741,8 +820,8 @@ def run_single(
 def plot_heatmap(save_path, results_df, metric='best_acc'):
     """Plot MA/ASR heatmap: algorithms × attacks"""
     import pandas as pd
-    algos = ['fedavg', 'multi_krum', 'trimmed_mean', 'fltrust', 'tasl']
-    algo_labels = ['FedAvg', 'Multi-Krum', 'Trimmed Mean', 'FLTrust', 'TASL (Ours)']
+    algos = ['fedavg', 'multi_krum', 'trimmed_mean', 'fltrust', 'tasl', 'tasl_fused']
+    algo_labels = ['FedAvg', 'Multi-Krum', 'Trimmed Mean', 'FLTrust', 'TASL (Ours)', 'TASL+FedPure']
     attacks = ['label_flip', 'sign_flip', 'gaussian_noise']
     attack_labels = ['Label Flip', 'Sign Flip', 'Gaussian Noise']
 
@@ -786,6 +865,7 @@ def plot_curves(save_path, all_results, attack, rounds):
         'trimmed_mean': '#FB8C00',
         'fltrust': '#8E24AA',
         'tasl': '#43A047',
+        'tasl_fused': '#FF6F00',
     }
     algo_labels = {
         'fedavg': 'FedAvg',
@@ -793,6 +873,7 @@ def plot_curves(save_path, all_results, attack, rounds):
         'trimmed_mean': 'Trimmed Mean',
         'fltrust': 'FLTrust',
         'tasl': 'TASL (Ours)',
+        'tasl_fused': 'TASL+FedPure',
     }
 
     fig, ax = plt.subplots(figsize=(12, 6))
@@ -822,11 +903,11 @@ def plot_curves(save_path, all_results, attack, rounds):
 def plot_bar_comparison(save_path, results_df, metric='best_acc'):
     """Bar chart comparing all algorithms across all attacks"""
     import pandas as pd
-    algos = ['fedavg', 'multi_krum', 'trimmed_mean', 'fltrust', 'tasl']
-    algo_labels = ['FedAvg', 'Multi-\nKrum', 'Trimmed\nMean', 'FLTrust', 'TASL\n(Ours)']
+    algos = ['fedavg', 'multi_krum', 'trimmed_mean', 'fltrust', 'tasl', 'tasl_fused']
+    algo_labels = ['FedAvg', 'Multi-\nKrum', 'Trimmed\nMean', 'FLTrust', 'TASL\n(Ours)', 'TASL+\nFedPure']
     attacks = ['label_flip', 'sign_flip', 'gaussian_noise']
     attack_labels = ['Label Flip', 'Sign Flip', 'Gaussian Noise']
-    algo_colors = ['#E53935', '#1E88E5', '#FB8C00', '#8E24AA', '#43A047']
+    algo_colors = ['#E53935', '#1E88E5', '#FB8C00', '#8E24AA', '#43A047', '#FF6F00']
 
     fig, axes = plt.subplots(1, 3, figsize=(16, 5), sharey=True)
     for j, atk in enumerate(attacks):
@@ -893,7 +974,7 @@ def main():
     n_byz = max(1, int(n_clients * args.byzantine_ratio))
     rounds = int(args.rounds)
 
-    algos = ['fedavg', 'multi_krum', 'trimmed_mean', 'fltrust', 'tasl']
+    algos = ['fedavg', 'multi_krum', 'trimmed_mean', 'fltrust', 'tasl', 'tasl_fused']
     attacks = ['label_flip', 'sign_flip', 'gaussian_noise']
     if args.attack:
         attacks = [args.attack]

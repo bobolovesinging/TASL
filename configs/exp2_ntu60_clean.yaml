@@ -1,0 +1,46 @@
+# ============================================================
+# Clean Baseline — NTU-60 + ST-GCN (No Attack)
+# ============================================================
+
+experiment:
+  name: "exp2_ntu60_clean"
+  seed: 42
+  device: "cuda"
+  output_dir: "results"
+
+data:
+  dataset: "ntu60"
+  data_dir: "/media/njit5/39e16d05-05ba-46b4-bc9b-47b3c98f1d4f/tlf/datasets/dir0.1"
+  n_clients: 10
+  alpha: 0.1
+  split: "non_iid"
+  batch_size: 64
+
+model:
+  name: "stgcn"
+  num_classes: 60
+  in_channels: 3
+  graph_layout: "ntu-rgb+d"
+  graph_strategy: "spatial"
+  edge_importance_weighting: true
+  dropout: 0.5
+
+training:
+  rounds: 50
+  local_epochs: 2
+  lr: 0.01
+  momentum: 0.9
+  weight_decay: 1e-4
+
+byzantine:
+  ratio: 0.0
+  attacks:
+    - none
+
+algorithms:
+  - fedavg
+  - fedprox
+
+algorithm_params:
+  fedprox:
+    mu: 0.01

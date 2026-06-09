@@ -639,6 +639,153 @@ class GradientAggregator:
 
         return trust_weights
 
+    @staticmethod
+    def compute_tasl_trust_weights(
+        flat_updates: Dict[int, torch.Tensor],
+        trust_power: float = 5.0,
+        max_weight_ratio: float = 1.5,
+        min_cos_threshold: float = 0.2,
+        norm_penalty_strength: float = 0.8,
+        ema_weights: Optional[Dict[int, float]] = None,
+        ema_alpha: float = 0.7,
+        cos_history: Optional[List[Dict[int, float]]] = None,
+        prev_anchor: Optional[torch.Tensor] = None,
+        temporal_anchor: Optional[torch.Tensor] = None,
+        data_trust: Optional[Dict[int, float]] = None,
+    ) -> Tuple[Dict[int, float], Dict[int, float], torch.Tensor]:
+        """
+        TASL Full Gradient-Layer Trust Scoring.
+
+        Pipeline:
+          1. Spatial Median Anchor → element-wise median
+          2. Norm Gate → zero weights for |L2| > 2.5×median_norm
+          3. Pairwise Consensus → median inter-client similarity, filter low-consensus
+          4. Anchor Blending → 0.6×refined + 0.4×prev_anchor
+          4.5 Temporal Anchor Blending → 0.6×anchor + 0.4×temporal_anchor (if dir_agree > 0.3)
+          5. Cubic Trust → max(0, cos)^power × norm_penalty × consensus
+          6. IQR Adaptive cos Threshold → dynamic via Q1 - IQR
+          7. Temporal Penalty → 2 consecutive rounds cos<0.3 → ×0.1
+          8. Optional: data_trust multiplicative fusion
+          9. Weight Cap → 1.5/N
+          10. EMA Smoothing → α=0.7
+
+        Returns:
+          trust_weights, cos_sims, new_anchor
+        """
+        eps = 1e-12
+        ids = list(flat_updates.keys())
+        n = len(ids)
+        if n == 0:
+            return {}, {}, None
+
+        # Convert torch tensors to numpy for flexible ops
+        np_updates = {cid: v.detach().cpu().numpy() for cid, v in flat_updates.items()}
+
+        # ── 1. Norm Gate ──
+        norms = {cid: float(np.linalg.norm(v)) for cid, v in np_updates.items()}
+        median_norm = float(np.median(list(norms.values())))
+        norm_gate = median_norm * 2.5
+
+        # ── 2. Spatial Median Anchor ──
+        stacked = np.stack(list(np_updates.values()), axis=0)
+        anchor = np.median(stacked, axis=0)
+        anchor_norm = float(np.linalg.norm(anchor)) + eps
+
+        # ── 3. Pairwise Consensus ──
+        pairwise_medians = {}
+        for i in ids:
+            vi = np_updates[i]; vin = float(np.linalg.norm(vi)) + eps
+            sims = [float(np.dot(vi, np_updates[j]) / (vin * (float(np.linalg.norm(np_updates[j])) + eps)))
+                    for j in ids if j != i]
+            pairwise_medians[i] = float(np.median(sims)) if sims else 0.5
+
+        med_c = float(np.median(list(pairwise_medians.values())))
+        high_ids = [cid for cid in ids if pairwise_medians[cid] >= med_c]
+        if len(high_ids) >= max(2, n // 2):
+            cons_stacked = np.stack([np_updates[cid] for cid in high_ids])
+            anchor = 0.6 * anchor + 0.4 * np.median(cons_stacked, axis=0)
+            anchor_norm = float(np.linalg.norm(anchor)) + eps
+
+        # ── 4. Refined Anchor (blending) ──
+        fps = {cid: float(np.dot(np_updates[cid], anchor) /
+                         (float(np.linalg.norm(np_updates[cid])) + eps) / anchor_norm)
+               for cid in ids}
+        tids = [cid for cid in ids if fps[cid] > 0]
+        if len(tids) >= max(2, n // 2):
+            ref = np.median(np.stack([np_updates[c] for c in tids]), axis=0)
+            prev = prev_anchor.detach().cpu().numpy() if prev_anchor is not None else ref
+            anchor = 0.6 * ref + 0.4 * prev
+            anchor_norm = float(np.linalg.norm(anchor)) + eps
+
+        # ── 4.5 Temporal Anchor Blending (v3) ──
+        if temporal_anchor is not None:
+            temp_np = temporal_anchor.detach().cpu().numpy()
+            temp_norm = float(np.linalg.norm(temp_np)) + eps
+            dir_agree = float(np.dot(anchor, temp_np) / (anchor_norm * temp_norm))
+            if dir_agree > 0.3:
+                anchor = 0.6 * anchor + 0.4 * temp_np
+                anchor_norm = float(np.linalg.norm(anchor)) + eps
+
+        # ── 5. Cosine Similarities & IQR Threshold ──
+        cos_sims = {cid: float(np.dot(v, anchor) / (float(np.linalg.norm(v)) + eps) / anchor_norm)
+                    for cid, v in np_updates.items()}
+        cv = sorted(cos_sims.values())
+        if len(cv) >= 4:
+            q1, q3 = float(np.percentile(cv, 25)), float(np.percentile(cv, 75))
+            iqr = q3 - q1
+            adaptive_thr = min(0.4, max(min_cos_threshold, q1 - 1.0 * iqr))
+        else:
+            adaptive_thr = min_cos_threshold
+
+        # ── 6. Raw Trust Scores ──
+        rs = {}
+        for cid in ids:
+            cos = cos_sims[cid]
+            if norms[cid] > norm_gate or cos < adaptive_thr:
+                rs[cid] = 0.0
+                continue
+            nr = norms[cid] / (median_norm + eps)
+            np_factor = float(np.exp(-norm_penalty_strength * abs(nr - 1)))
+            con = max(0.01, pairwise_medians.get(cid, 0.5))
+            rs[cid] = (cos ** trust_power) * np_factor * con
+
+        # ── 7. Temporal Penalty ──
+        if cos_history and len(cos_history) >= 2:
+            for cid in ids:
+                if all(ch.get(cid, 0.5) < 0.3 for ch in cos_history[-2:]):
+                    rs[cid] *= 0.1
+
+        # ── 8. Data Trust Fusion (multiplicative) ──
+        if data_trust:
+            for cid in ids:
+                rs[cid] *= data_trust.get(cid, 1.0)
+
+        # ── 9. Normalize ──
+        sw = sum(rs.values())
+        if sw > eps:
+            tw = {cid: w / sw for cid, w in rs.items()}
+        else:
+            tw = {cid: 1.0 / n for cid in ids}
+
+        # ── 10. Weight Cap ──
+        mw = max_weight_ratio / n
+        capped = {c: min(w, mw) for c, w in tw.items()}
+        cs_sum = sum(capped.values())
+        if cs_sum > eps:
+            tw = {c: w / cs_sum for c, w in capped.items()}
+
+        # ── 11. EMA Smoothing ──
+        if ema_weights:
+            sm = {cid: ema_alpha * tw.get(cid, 0) + (1 - ema_alpha) * ema_weights.get(cid, 1.0 / n)
+                  for cid in ids}
+            ss = sum(sm.values())
+            if ss > eps:
+                tw = {c: w / ss for c, w in sm.items()}
+
+        # Return anchor as torch.Tensor
+        new_anchor = torch.from_numpy(anchor).float()
+        return tw, cos_sims, new_anchor
+
     def aggregate(self,
                  client_gradients: Dict[int, Dict[str, torch.Tensor]],
                  sample_counts: Optional[Dict[int, int]] = None,
