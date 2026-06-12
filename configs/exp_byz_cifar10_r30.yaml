@@ -1,0 +1,43 @@
+# CIFAR-10 — label_flip + sign_flip, 30% Byzantine, fixed ResNet
+experiment:
+  name: exp_byz_cifar10_r30_n10
+  seed: 42
+  device: cuda
+  output_dir: results
+
+data:
+  dataset: cifar10
+  n_clients: 10
+  alpha: 0.3
+  split: non_iid
+  batch_size: 64
+
+model:
+  name: resnet18_cifar
+  num_classes: 10
+
+training:
+  rounds: 200
+  local_epochs: 5
+  lr: 0.1
+  momentum: 0.9
+  weight_decay: 0.0001
+
+byzantine:
+  ratio: 0.3
+  attacks:
+    - label_flip
+    - sign_flip
+
+algorithms:
+  - fedavg
+  - multi_krum
+  - trimmed_mean
+  - fltrust
+  - tasl
+
+algorithm_params:
+  krum:
+    num_excluded: 3
+  multi_krum:
+    num_excluded: 3

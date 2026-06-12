@@ -81,15 +81,20 @@ def deep_merge(base, override):
 # ═══════════════════════════════════════════════════════════════════════
 
 class FederatedDataset(Dataset):
-    def __init__(self, data, labels):
+    def __init__(self, data, labels, transform=None):
         self.data = torch.from_numpy(data).float() if isinstance(data, np.ndarray) else data.float()
         self.labels = torch.from_numpy(labels).long() if isinstance(labels, np.ndarray) else labels.long()
+        self.transform = transform
 
     def __len__(self):
         return len(self.data)
 
     def __getitem__(self, idx):
-        return self.data[idx], self.labels[idx]
+        x = self.data[idx]
+        y = self.labels[idx]
+        if self.transform:
+            x = self.transform(x)
+        return x, y
 
 
 def dirichlet_partition(labels, n_clients, alpha=0.3, seed=42):
@@ -132,6 +137,77 @@ def load_ntu60_data(cfg):
     test_loader = DataLoader(test_ds, batch_size=batch_size, shuffle=False)
 
     return client_loaders, test_loader
+
+
+
+import torchvision.transforms as _T_proxy
+
+def create_proxy_loader(dataset_name, n_per_class=50, batch_size=64):
+    from os import makedirs as _makedirs
+    _makedirs(BLOCKCHAIN_DIR + "/data/temp", exist_ok=True)
+    tdir = BLOCKCHAIN_DIR + "/data/temp"
+    from torchvision import datasets as _tds
+
+    if dataset_name == "mnist":
+        ds = _tds.MNIST(tdir, train=True, download=True)
+        x = ds.data.numpy().astype("float32") / 255.0
+        if len(x.shape) == 3:
+            x = x[:, None, :, :]
+        y = ds.targets.numpy()
+        transform = None
+    elif dataset_name in ("fashionmnist", "fashion_mnist"):
+        ds = _tds.FashionMNIST(tdir, train=True, download=True)
+        x = ds.data.numpy().astype("float32") / 255.0
+        if len(x.shape) == 3:
+            x = x[:, None, :, :]
+        y = ds.targets.numpy()
+        transform = None
+    elif dataset_name == "cifar10":
+        ds = _tds.CIFAR10(tdir, train=True, download=True)
+        x = ds.data.astype("float32") / 255.0
+        x = np.transpose(x, (0, 3, 1, 2))
+        cm = np.array([0.4914, 0.4822, 0.4465], dtype="float32").reshape(1, 3, 1, 1)
+        cs = np.array([0.247, 0.243, 0.261], dtype="float32").reshape(1, 3, 1, 1)
+        x = (x - cm) / cs
+        y = np.array(ds.targets)
+        transform = _T_proxy.Compose([
+            _T_proxy.RandomCrop(32, padding=4),
+            _T_proxy.RandomHorizontalFlip(),
+        ])
+    else:
+        raise ValueError("Unknown proxy dataset: " + dataset_name)
+
+    nc = int(y.max() + 1)
+    indices = []
+    for c in range(nc):
+        ci = np.where(y == c)[0]
+        ns = min(n_per_class, len(ci))
+        pick = np.random.RandomState(42).choice(ci, size=ns, replace=False)
+        indices.extend(pick)
+
+    px = x[indices]
+    py = y[indices]
+    pds = FederatedDataset(px, py, transform=transform)
+    pl = DataLoader(pds, batch_size=min(batch_size, len(px)), shuffle=True)
+    print("  Proxy dataset: %d samples (%d/class x %d classes)" % (len(px), n_per_class, nc))
+    return pl
+
+
+def compute_proxy_root(global_state, proxy_loader, device, model_fn, lr=0.01, epochs=1):
+    model = model_fn().to(device)
+    sd = {k: v.to(device) for k, v in global_state.items()}
+    model.load_state_dict(sd)
+    crit = nn.CrossEntropyLoss()
+    opt = torch.optim.SGD(model.parameters(), lr=lr, momentum=0.9)
+    model.train()
+    for _ in range(epochs):
+        for xb, yb in proxy_loader:
+            xb, yb = xb.to(device), yb.to(device)
+            opt.zero_grad()
+            crit(model(xb), yb).backward()
+            opt.step()
+    fs = {k: v.clone().cpu() for k, v in model.state_dict().items()}
+    return flatten_update(state_sub(fs, global_state))
 
 
 def load_mnist_data(cfg):
@@ -185,9 +261,119 @@ def load_mnist_data(cfg):
     return client_loaders, test_loader
 
 
+def load_fashionmnist_data(cfg):
+    """Load Fashion-MNIST data with Dirichlet partitioning."""
+    from torchvision import datasets, transforms
+
+    batch_size = cfg['data']['batch_size']
+    n_clients = cfg['data']['n_clients']
+    alpha = cfg['data']['alpha']
+    split = cfg['data'].get('split', 'non_iid')
+    seed = cfg['experiment']['seed']
+
+    temp_dir = os.path.join(BLOCKCHAIN_DIR, "data", "temp")
+    os.makedirs(temp_dir, exist_ok=True)
+
+    train_dataset = datasets.FashionMNIST(root=temp_dir, train=True, download=True,
+                                           transform=transforms.ToTensor())
+    test_dataset = datasets.FashionMNIST(root=temp_dir, train=False, download=True,
+                                          transform=transforms.ToTensor())
+
+    train_data = train_dataset.data.numpy().astype(np.float32) / 255.0
+    train_labels = train_dataset.targets.numpy()
+    if len(train_data.shape) == 3:
+        train_data = np.expand_dims(train_data, axis=1)
+
+    test_data = test_dataset.data.numpy().astype(np.float32) / 255.0
+    if len(test_data.shape) == 3:
+        test_data = np.expand_dims(test_data, axis=1)
+    test_labels = test_dataset.targets.numpy()
+
+    if split == 'non_iid':
+        client_indices = dirichlet_partition(train_labels, n_clients, alpha=alpha, seed=seed)
+    else:
+        rng = np.random.RandomState(seed)
+        client_indices = {i: [] for i in range(n_clients)}
+        for c in range(10):
+            idx = np.where(train_labels == c)[0]
+            rng.shuffle(idx)
+            splits = np.array_split(idx, n_clients)
+            for i in range(n_clients):
+                client_indices[i].extend(splits[i].tolist())
+
+    client_loaders = []
+    for i in range(n_clients):
+        idx = client_indices[i]
+        ds = FederatedDataset(train_data[idx], train_labels[idx])
+        client_loaders.append(DataLoader(ds, batch_size=batch_size, shuffle=True))
+
+    test_loader = DataLoader(FederatedDataset(test_data, test_labels),
+                             batch_size=batch_size, shuffle=False)
+    return client_loaders, test_loader
+
+
+def load_cifar10_data(cfg):
+    """Load CIFAR-10 data with Dirichlet partitioning."""
+    from torchvision import datasets, transforms
+
+    batch_size = cfg['data']['batch_size']
+    n_clients = cfg['data']['n_clients']
+    alpha = cfg['data']['alpha']
+    split = cfg['data'].get('split', 'non_iid')
+    seed = cfg['experiment']['seed']
+
+    temp_dir = os.path.join(BLOCKCHAIN_DIR, "data", "temp")
+    os.makedirs(temp_dir, exist_ok=True)
+
+    train_dataset = datasets.CIFAR10(root=temp_dir, train=True, download=True,
+                                     transform=transforms.ToTensor())
+    test_dataset = datasets.CIFAR10(root=temp_dir, train=False, download=True,
+                                    transform=transforms.ToTensor())
+
+    train_data = train_dataset.data.astype(np.float32) / 255.0
+    train_labels = np.array(train_dataset.targets)
+    if len(train_data.shape) == 3:
+        train_data = np.expand_dims(train_data, axis=1)
+    else:
+        # CIFAR-10: NHWC -> NCHW
+        train_data = np.transpose(train_data, (0, 3, 1, 2))
+
+    test_data = test_dataset.data.astype(np.float32) / 255.0
+    if len(test_data.shape) == 3:
+        test_data = np.expand_dims(test_data, axis=1)
+    else:
+        # CIFAR-10: NHWC -> NCHW
+        test_data = np.transpose(test_data, (0, 3, 1, 2))
+    test_labels = np.array(test_dataset.targets)
+
+    if split == 'non_iid':
+        client_indices = dirichlet_partition(train_labels, n_clients, alpha=alpha, seed=seed)
+    else:
+        rng = np.random.RandomState(seed)
+        client_indices = {i: [] for i in range(n_clients)}
+        for c in range(10):
+            idx = np.where(train_labels == c)[0]
+            rng.shuffle(idx)
+            splits = np.array_split(idx, n_clients)
+            for i in range(n_clients):
+                client_indices[i].extend(splits[i].tolist())
+
+    client_loaders = []
+    for i in range(n_clients):
+        idx = client_indices[i]
+        ds = FederatedDataset(train_data[idx], train_labels[idx])
+        client_loaders.append(DataLoader(ds, batch_size=batch_size, shuffle=True))
+
+    test_loader = DataLoader(FederatedDataset(test_data, test_labels),
+                             batch_size=batch_size, shuffle=False)
+    return client_loaders, test_loader
+
+
 DATA_LOADERS = {
     'ntu60': load_ntu60_data,
     'mnist': load_mnist_data,
+    'fashionmnist': load_fashionmnist_data,
+    'cifar10': load_cifar10_data,
 }
 
 
@@ -216,9 +402,16 @@ def create_model(cfg):
     elif name == 'fedavgcnn':
         from model import FedAvgCNN
         model = FedAvgCNN(num_classes=model_cfg['num_classes'])
+    elif name == 'resnet18_cifar':
+        import torchvision.models as models
+        model = models.resnet18(num_classes=model_cfg['num_classes'])
+        # CIFAR-10 adaptation: 3x3 conv1, stride 1, no maxpool
+        model.conv1 = nn.Conv2d(3, 64, kernel_size=3, stride=1, padding=1, bias=False)
+        model.maxpool = nn.Identity()
     elif name == 'resnet18':
         import torchvision.models as models
         model = models.resnet18(num_classes=model_cfg['num_classes'])
+
     else:
         raise ValueError(f"Unknown model: {name}")
 
@@ -589,12 +782,14 @@ def trimmed_mean_aggregate(updates, beta=0.2):
     return agg
 
 
-def fltrust_aggregate(flat_updates_dict, updates, device):
+def fltrust_aggregate(flat_updates_dict, updates, device, root=None):
     ids = list(flat_updates_dict.keys())
     n = len(ids)
 
-    stacked = np.stack([flat_updates_dict[cid] for cid in ids])
-    root = np.mean(stacked, axis=0)
+    # g0: server proxy dataset gradient (or fallback to client mean)
+    if root is None:
+        stacked = np.stack([flat_updates_dict[cid] for cid in ids])
+        root = np.mean(stacked, axis=0)
     root_norm = np.linalg.norm(root) + 1e-12
     root_unit = root / root_norm
 
@@ -766,7 +961,7 @@ def compute_tasl_trust_weights(
 # ═══════════════════════════════════════════════════════════════════════
 
 def run_single(algo, attack, client_loaders, test_loader, cfg,
-               model_fn, n_clients, n_byz, rounds, device):
+               model_fn, n_clients, n_byz, rounds, device, proxy_loader=None):
     """Run a single algo × attack experiment."""
     seed = cfg['experiment']['seed']
     set_seed(seed)
@@ -887,7 +1082,12 @@ def run_single(algo, attack, client_loaders, test_loader, cfg,
         elif algo == 'trimmed_mean':
             agg_update = trimmed_mean_aggregate(local_updates, beta=0.2)
         elif algo == 'fltrust':
-            agg_update = fltrust_aggregate(flat_updates, local_updates, device)
+            # FLTrust: compute g0 from proxy dataset
+            if proxy_loader is not None:
+                proxy_root = compute_proxy_root(global_state, proxy_loader, device, model_fn, lr=lr)
+            else:
+                proxy_root = None
+            agg_update = fltrust_aggregate(flat_updates, local_updates, device, root=proxy_root)
         elif algo == 'tasl':
             trust_weights, cos_sims, new_anchor = compute_tasl_trust_weights(
                 flat_updates,
@@ -1119,6 +1319,12 @@ def main():
     client_loaders, test_loader = data_loader_fn(cfg)
     print(f"  Data loaded: {n_clients} clients, test set ready")
 
+    # Create proxy dataset for FLTrust g0 (50 images per class)
+    if 'fltrust' in algos:
+        proxy_loader = create_proxy_loader(dataset_name, n_per_class=50)
+    else:
+        proxy_loader = None
+
     # ── Clean baseline ──
     if args.no_baseline:
         clean_result = None
@@ -1126,7 +1332,8 @@ def main():
     else:
         print("\n>>> Clean Baseline (no attack) <<<")
         clean_result = run_single('fedavg', 'none', client_loaders, test_loader, cfg,
-                                  model_fn, n_clients, n_byz=0, rounds=rounds, device=device)
+                                  model_fn, n_clients, n_byz=0, rounds=rounds, device=device,
+                                  proxy_loader=proxy_loader)
         print(f"  Clean: best={clean_result['best_acc']:.2f}%, avg={clean_result['avg_acc']:.2f}%")
 
     # ── Run all combinations ──
@@ -1141,7 +1348,7 @@ def main():
             print(f"\n>>> [{run_idx}/{total_runs}] {algo} × {attack} <<<")
 
             result = run_single(algo, attack, client_loaders, test_loader, cfg,
-                                model_fn, n_clients, n_byz, rounds, device)
+                                model_fn, n_clients, n_byz, rounds, device, proxy_loader=proxy_loader)
 
             all_results[algo][attack] = result
 
