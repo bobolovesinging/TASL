@@ -957,6 +957,28 @@ def compute_tasl_trust_weights(
 
 
 # ═══════════════════════════════════════════════════════════════════════
+
+# ═══════════════════════════════════════════════════════════════════════
+# BSP: Blockchain-Shared Pre-training (data layer)
+# ═══════════════════════════════════════════════════════════════════════
+
+def bsp_pretrain(global_state, shared_loader, device, model_fn, lr=0.01, epochs=1):
+    """Pre-train on shared pool with identical seed/order/hyperparams.
+    Returns the new global_state after pre-training."""
+    model = model_fn().to(device)
+    model.load_state_dict({k: v.to(device) for k, v in global_state.items()})
+    model.train()
+    opt = torch.optim.SGD(model.parameters(), lr=lr, momentum=0.9)
+    crit = nn.CrossEntropyLoss()
+    for _ in range(epochs):
+        for xb, yb in shared_loader:
+            xb, yb = xb.to(device), yb.to(device)
+            opt.zero_grad()
+            crit(model(xb), yb).backward()
+            opt.step()
+    return {k: v.clone().cpu() for k, v in model.state_dict().items()}
+
+
 # Single experiment run
 # ═══════════════════════════════════════════════════════════════════════
 
@@ -979,6 +1001,25 @@ def run_single(algo, attack, client_loaders, test_loader, cfg,
     byzantine_set = set(range(n_byz))
     global_model = model_fn().to(device)
     global_state = {k: v.clone().cpu() for k, v in global_model.state_dict().items()}
+
+    # BSP: Blockchain-Shared Pre-training (data layer, TASL only)
+    bsp_cfg = algo_params.get('bsp', {})
+    if algo == 'tasl' and bsp_cfg.get('enabled', False):
+        dataset_name = cfg['data']['dataset']
+        n_per_class = int(bsp_cfg.get('n_per_class', 50))
+        bsp_lr = float(bsp_cfg.get('lr', lr))
+        bsp_epochs = int(bsp_cfg.get('epochs', 1))
+        shared_loader = create_proxy_loader(dataset_name, n_per_class=n_per_class,
+                                            batch_size=cfg['data'].get('batch_size', 64))
+        global_state = bsp_pretrain(global_state, shared_loader, device, model_fn,
+                                    lr=bsp_lr, epochs=bsp_epochs)
+        global_model.load_state_dict({k: v.to(device) for k, v in global_state.items()})
+        print("  [BSP] Pre-trained on %d shared samples" % (n_per_class * num_classes))
+
+    # Trust-layer: progressive exclusion state (TASL only)
+    excluded_clients = set()
+    violation_counts = {cid: 0 for cid in range(n_clients)}
+    max_exclusions = n_byz  # safety cap
 
     acc_history = []
     asr_history = []
@@ -1071,6 +1112,12 @@ def run_single(algo, attack, client_loaders, test_loader, cfg,
                 local_updates[cid] = upd
                 flat_updates[cid] = flatten_update(upd)
 
+        # Remove excluded clients from this round (TASL progressive exclusion)
+        if algo == 'tasl' and excluded_clients:
+            for ecid in list(excluded_clients):
+                local_updates.pop(ecid, None)
+                flat_updates.pop(ecid, None)
+
         # Aggregation
         tasl_cfg = algo_params.get('tasl', {})
         if algo == 'fedavg':
@@ -1110,6 +1157,29 @@ def run_single(algo, attack, client_loaders, test_loader, cfg,
             agg_flat = flatten_update(agg_update)
             if np.linalg.norm(agg_flat) > 1e-12:
                 temporal_anchor = agg_flat
+
+            # Trust-layer: progressive exclusion (TASL only)
+            if len(excluded_clients) < max_exclusions:
+                # Compute per-client violation signals
+                active_ids = [cid for cid in range(n_clients) if cid not in excluded_clients]
+                if len(active_ids) >= 2:
+                    active_norms = [np.linalg.norm(flat_updates.get(cid, np.zeros(1))) for cid in active_ids]
+                    median_norm_r = np.median(active_norms) + 1e-12
+                    for cid in active_ids:
+                        if cid not in flat_updates:
+                            continue
+                        cs = cos_sims.get(cid, 0.5)
+                        nr = np.linalg.norm(flat_updates[cid]) / median_norm_r
+                        violated = (cs < -0.1) or (nr > 2.0)
+                        if violated:
+                            violation_counts[cid] += 1
+                        else:
+                            violation_counts[cid] = max(0, violation_counts[cid] - 1)
+                        # Progressive exclusion: 2 consecutive violations => exclude
+                        if violation_counts[cid] >= 2 and len(excluded_clients) < max_exclusions:
+                            excluded_clients.add(cid)
+                            violation_counts[cid] = 0
+                            print("    [Exclusion] Client %d excluded (round %d)" % (cid, r))
         else:
             raise ValueError(f"Unknown algo: {algo}")
 
