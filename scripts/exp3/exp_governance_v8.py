@@ -43,7 +43,22 @@ sys.path.insert(0, CORE_DIR)
 sys.path.insert(0, SCRIPTS_DIR)
 
 from model import FedAvgCNN
-from utils_data import get_data_loaders
+# Data loading from exp2_run.py
+from scripts.exp2.exp2_run import load_mnist_data, load_fashionmnist_data, load_cifar10_data, FederatedDataset
+
+def get_data_loaders(dataset, client_num=10, batch_size=128, alpha=0.3, seed=42):
+    cfg = {
+        "data": {"dataset": dataset, "n_clients": client_num,
+                   "batch_size": batch_size, "alpha": alpha, "split": "non_iid"},
+        "experiment": {"seed": seed},
+    }
+    if dataset == "mnist":
+        return load_mnist_data(cfg)
+    elif dataset in ("fashionmnist", "fashion_mnist"):
+        return load_fashionmnist_data(cfg)
+    elif dataset == "cifar10":
+        return load_cifar10_data(cfg)
+    raise ValueError(f"Unknown: {dataset}")
 
 
 # ═══════════════════════════════════════════════════════════════════════
@@ -166,6 +181,28 @@ def compute_trust_weights(flat_updates, trust_power=5.0, max_weight_ratio=2.0):
 # ═══════════════════════════════════════════════════════════════════════
 # Local training
 # ═══════════════════════════════════════════════════════════════════════
+
+def train_one_client_sign_flip(global_state, loader, device,
+                                 local_epochs=1, lr=0.02, num_classes=10):
+    """Train with sign-flipped gradient."""
+    model = FedAvgCNN(num_classes=num_classes).to(device)
+    model.load_state_dict(global_state)
+    criterion = nn.CrossEntropyLoss()
+    optim = torch.optim.SGD(model.parameters(), lr=lr, momentum=0.9)
+    model.train()
+    for _ in range(int(local_epochs)):
+        for data, target in loader:
+            data, target = data.to(device), target.to(device)
+            flipped = (num_classes - 1) - target
+            optim.zero_grad()
+            loss = criterion(model(data), flipped)
+            loss.backward()
+            for p in model.parameters():
+                if p.grad is not None:
+                    p.grad.data.neg_()
+            optim.step()
+    return {k: v.clone().cpu() for k, v in model.state_dict().items()}
+
 
 def train_one_client(global_state, loader, device, local_epochs=1, lr=0.02):
     model = FedAvgCNN().to(device)
@@ -367,9 +404,14 @@ def run_group(
 
         for cid in range(num_clients):
             if cid in byzantine_set:
-                local_state = train_one_client_label_flip(
-                    global_state, client_loaders[cid], device,
-                    local_epochs=local_epochs, lr=lr)
+                if attack_type == "sign_flip":
+                    local_state = train_one_client_sign_flip(
+                        global_state, client_loaders[cid], device,
+                        local_epochs=local_epochs, lr=lr)
+                else:
+                    local_state = train_one_client_label_flip(
+                        global_state, client_loaders[cid], device,
+                        local_epochs=local_epochs, lr=lr)
             else:
                 local_state = train_one_client(
                     global_state, client_loaders[cid], device,
@@ -585,7 +627,7 @@ def plot_accuracy_curves(out_path, histories: Dict[str, List[float]],
 
     ax.set_xlabel("Communication Round", fontsize=12)
     ax.set_ylabel("Test Accuracy (%)", fontsize=12)
-    ax.set_title("TAS Governance: Accuracy under Byzantine (label_flip) + Corrupt E\n"
+    ax.set_title("TAS Governance: Accuracy under Byzantine ({attack_type}) + Corrupt E\n"
                  "(v8: FedAvg vs TAS, 6/10 attack rounds)",
                  fontsize=13, fontweight='bold')
     ax.legend(fontsize=10, loc='lower right')
@@ -654,8 +696,12 @@ def main():
     parser.add_argument("--v1-tolerance", type=float, default=2e-3)
     parser.add_argument("--byzantine-ratio", type=float, default=0.3)
     parser.add_argument("--ema-alpha", type=float, default=0.6)
+    parser.add_argument("--attack", type=str, default="label_flip",
+                        help="Client attack: label_flip, sign_flip")
     parser.add_argument("--attacks-per-block", type=int, default=6,
                         help="攻击轮/10轮 (v8默认6/10)")
+    parser.add_argument("--dataset", type=str, default="mnist",
+                        help="Dataset: mnist, fashionmnist, cifar10")
     args = parser.parse_args()
 
     set_seed(args.seed)
@@ -664,8 +710,9 @@ def main():
     client_num = int(args.clients)
     n_byz = max(1, int(client_num * args.byzantine_ratio))
     byzantine_ids = list(range(n_byz))
+    global attack_type; attack_type = args.attack
 
-    print(f"[Exp3 v8] {client_num} clients, {n_byz} Byzantine (label_flip), "
+    print(f"[Exp3 v8] {client_num} clients, {n_byz} Byzantine ({attack_type}), "
           f"device={device}")
     print(f"  trust_power=5, weight_cap=2.0/n, ema_alpha={args.ema_alpha}")
     print(f"  attacks_per_block={args.attacks_per_block}/10")
@@ -673,7 +720,7 @@ def main():
 
     # Load data
     client_loaders, test_loader = get_data_loaders(
-        "mnist", client_num=client_num, batch_size=int(args.batch_size))
+        args.dataset, client_num=client_num, batch_size=int(args.batch_size))
 
     # Attack schedule
     schedule = make_chaos_schedule(rounds=args.rounds, seed=int(args.chaos_seed),
@@ -707,7 +754,7 @@ def main():
     print("\n" + "=" * 60)
     print(f"=== 2/4: Byz+HonestE ({n_byz} Byzantine, honest E + trust scoring) ===")
     print("=" * 60)
-    byz_honest_result = run_group("byz_honest", chaos_schedule=clean_schedule,
+    byz_honest_result = run_group("byz_honest", chaos_schedule=clean_schedule, 
                                    chaos_mode=False, seed=150, **common_kwargs)
 
     # ══════════════════════════════════════════════════════════════════

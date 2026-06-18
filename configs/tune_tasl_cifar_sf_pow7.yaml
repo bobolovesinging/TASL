@@ -1,0 +1,15 @@
+algorithm_params:
+  krum: {num_excluded: 3}
+  multi_krum: {num_excluded: 3}
+  scaling: {scaling_factor: 5.0}
+  tasl:
+    trust_power: 7.0
+    weight_cap_ratio: 1.5
+    ema_alpha: 0.7
+    norm_penalty: 0.8
+algorithms: [tasl]
+byzantine: {attacks: [sign_flip], ratio: 0.3}
+data: {alpha: 0.3, batch_size: 64, dataset: cifar10, n_clients: 10, split: non_iid}
+experiment: {device: cuda, name: tune_tasl_cifar_sf_pow7, output_dir: results, seed: 42}
+model: {name: resnet18_cifar, num_classes: 10}
+training: {local_epochs: 5, lr: 0.1, momentum: 0.9, rounds: 200, weight_decay: 0.0001}
