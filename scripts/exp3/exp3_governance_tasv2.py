@@ -848,7 +848,7 @@ def main():
     print(f"{'='*70}")
     print(f"TAS Governance v2 Experiment")
     print(f"{'='*70}")
-    print(f"  Dataset: Fashion-MNIST, {args.clients} clients, {n_byz} Byzantine (label_flip)")
+    print(f"  Dataset: {args.dataset}, {args.clients} clients, {n_byz} Byzantine ({args.client_attack})")
     print(f"  Rounds: {args.rounds}, Local epochs: {args.local_epochs}")
     print(f"  LR: {args.lr}, Momentum: {args.momentum}, Weight decay: {args.weight_decay}")
     print(f"  Batch size: {args.batch_size}, Dirichlet alpha: {args.alpha}")
