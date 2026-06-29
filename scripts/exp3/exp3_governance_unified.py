@@ -18,6 +18,8 @@
   python exp2_run.py --config configs/exp2_ntu60.yaml --quick
 """
 import argparse
+import random
+import copy
 import csv
 import os
 import random
@@ -982,8 +984,75 @@ def bsp_pretrain(global_state, shared_loader, device, model_fn, lr=0.01, epochs=
 # Single experiment run
 # ═══════════════════════════════════════════════════════════════════════
 
+
+
+# ═══════════════════════════════════════════════════════════════════════
+# Governance: V1/V2 Audit + Corrupt Executor + Healing
+# ═══════════════════════════════════════════════════════════════════════
+
+EXECUTOR_ATTACKS = {
+    "A1": lambda w, tw, byz, rng: {cid: 0.7 for cid in byz},
+    "A2": lambda w, tw, byz, rng: {cid: min(0.50, w.get(cid, 0.0) + 0.25) for cid in byz},
+    "A3": None,  # handled separately
+}
+
+def apply_executor_attack(tampered_w, trust_w, byz_set, rng, attack_type="A1"):
+    """Corrupt Executor tampers with aggregation weights."""
+    if attack_type == "A1":
+        for cid in byz_set:
+            tampered_w[cid] = 0.7
+    elif attack_type == "A2":
+        for cid in byz_set:
+            old = tampered_w.get(cid, 0.0)
+            tampered_w[cid] = min(0.50, old + 0.25)
+    elif attack_type == "A3":
+        for cid in byz_set:
+            tampered_w[cid] = 0.7
+        # Suppress top2 honest clients
+        honest = {c: trust_w.get(c, 0.0) for c in trust_w if c not in byz_set}
+        if honest:
+            top2 = sorted(honest, key=honest.get, reverse=True)[:2]
+            for cid in top2:
+                tampered_w[cid] = 0.0
+    return tampered_w
+
+def v1_weight_audit(tampered_w, correct_w, num_clients, tolerance=2e-3):
+    """V1: Full-scan weight deviation detection."""
+    for cid in range(num_clients):
+        if abs(tampered_w.get(cid, 0.0) - correct_w.get(cid, 0.0)) > tolerance:
+            return True
+    return False
+
+def v2_rank_audit(trust_rank_history, num_clients, consecutive=3, low_threshold=0.3):
+    """V2: Membership audit via rank persistence."""
+    threshold_rank = int(num_clients * (1 - low_threshold))
+    suspected = set()
+    for cid in range(num_clients):
+        ranks = trust_rank_history.get(cid, [])
+        if len(ranks) < consecutive:
+            continue
+        recent = ranks[-consecutive:]
+        if all(r >= threshold_rank for r in recent):
+            suspected.add(cid)
+    return len(suspected) > 0, suspected
+
+def make_chaos_schedule(rounds, seed=2026, attacks_per_block=6):
+    """6/10 rounds are attack rounds, random A1/A2/A3."""
+    rng = random.Random(seed)
+    schedule = {}
+    block_start = 1
+    while block_start <= rounds:
+        block_end = min(block_start + 9, rounds)
+        block_rounds = list(range(block_start, block_end + 1))
+        atk_rounds = rng.sample(block_rounds, k=min(attacks_per_block, len(block_rounds)))
+        for r in atk_rounds:
+            schedule[r] = rng.choice(["A1", "A2", "A3"])
+        block_start += 10
+    return schedule
+
 def run_single(algo, attack, client_loaders, test_loader, cfg,
-               model_fn, n_clients, n_byz, rounds, device, proxy_loader=None):
+               model_fn, n_clients, n_byz, rounds, device, proxy_loader=None,
+               governance_mode=None, chaos_schedule=None):
     """Run a single algo × attack experiment."""
     seed = cfg['experiment']['seed']
     set_seed(seed)
@@ -1023,6 +1092,17 @@ def run_single(algo, attack, client_loaders, test_loader, cfg,
     _tasl_cfg = cfg.get('algorithm_params', {}).get('tasl', {})
     if not _tasl_cfg.get('exclusion', True):
         max_exclusions = 0  # ablation: disable progressive exclusion
+
+    # Governance state (exp3 only)
+    gov_active = governance_mode is not None
+    use_v1 = governance_mode in ("trust_v1", "tas")
+    use_v2 = governance_mode in ("trust_v2", "tas")
+    trust_rank_history = {cid: [] for cid in range(n_clients)}
+    gov_v1_detections = 0
+    gov_v2_detections = 0
+    gov_blocked = 0
+    gov_attack_rounds = 0
+    gov_healed = 0
 
     acc_history = []
     asr_history = []
@@ -1175,6 +1255,65 @@ def run_single(algo, attack, client_loaders, test_loader, cfg,
             agg_flat = flatten_update(agg_update)
             if np.linalg.norm(agg_flat) > 1e-12:
                 temporal_anchor = agg_flat
+
+            # ── Governance: Corrupt Executor + V1/V2 audit ──
+            if gov_active and chaos_schedule and r in chaos_schedule:
+                gov_attack_rounds += 1
+                atk_type = chaos_schedule[r]
+
+                # Executor tampers with trust_weights
+                tampered_w = dict(trust_weights)
+                tampered_w = apply_executor_attack(tampered_w, trust_weights,
+                                                   byzantine_set, None, atk_type)
+
+                # V1: weight deviation audit (full scan)
+                v1_det = False
+                if use_v1:
+                    v1_det = v1_weight_audit(tampered_w, trust_weights, n_clients)
+                    if v1_det:
+                        gov_v1_detections += 1
+
+                # V2: rank persistence audit (independent of V1)
+                v2_det = False
+                v2_suspected = set()
+                if use_v2 and r >= 3:
+                    v2_det, v2_suspected = v2_rank_audit(trust_rank_history, n_clients)
+                    if v2_det:
+                        gov_v2_detections += 1
+
+                # Healing: if detected, use healed weights
+                if v1_det or v2_det:
+                    gov_blocked += 1
+                    healed_w = dict(trust_weights)
+                    for cid in byzantine_set:
+                        healed_w[cid] = 0.0
+                    for cid in v2_suspected:
+                        healed_w[cid] = 0.0
+                    for cid in range(n_clients):
+                        if tampered_w.get(cid, 0.0) > 0.3:
+                            healed_w[cid] = 0.0
+                    h_sum = sum(healed_w.values())
+                    if h_sum > 1e-12:
+                        healed_w = {c: w / h_sum for c, w in healed_w.items()}
+                    else:
+                        honest = [c for c in range(n_clients) if c not in byzantine_set]
+                        healed_w = {c: 1.0/len(honest) for c in honest}
+                    agg_update = fedavg_aggregate(local_updates, healed_w)
+                    gov_healed += 1
+                else:
+                    # Not detected: use tampered weights
+                    agg_update = fedavg_aggregate(local_updates, tampered_w)
+                # Update rank history (after healing/tampering)
+                sorted_cids = sorted(range(n_clients), key=lambda c: trust_weights.get(c, 0.0))
+                rank_map = {cid: rank for rank, cid in enumerate(sorted_cids)}
+                for cid in range(n_clients):
+                    trust_rank_history[cid].append(rank_map[cid])
+            elif gov_active:
+                # Non-attack round: update rank history
+                sorted_cids = sorted(range(n_clients), key=lambda c: trust_weights.get(c, 0.0))
+                rank_map = {cid: rank for rank, cid in enumerate(sorted_cids)}
+                for cid in range(n_clients):
+                    trust_rank_history[cid].append(rank_map[cid])
 
             # Trust-layer: progressive exclusion (TASL only)
             if len(excluded_clients) < max_exclusions:
@@ -1358,6 +1497,11 @@ def main():
     parser.add_argument("--rounds", type=int, default=None, help="Override number of rounds")
     parser.add_argument("--no-baseline", action='store_true',
                         help="Skip clean baseline (use when you already have baseline results)")
+    parser.add_argument("--governance-mode", type=str, default=None,
+                        choices=["fedavg", "trust_only", "trust_v1", "trust_v2", "tas"],
+                        help="Governance mode for Executor threat ablation")
+    parser.add_argument("--corrupt-executor", action='store_true',
+                        help="Enable Corrupt Executor attacks")
     args = parser.parse_args()
 
     cfg = load_config(args.config)

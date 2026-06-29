@@ -51,7 +51,7 @@ from exp2_fashionmnist import (
 
 # ── 常量 ──────────────────────────────────────────────
 ABLATION_MODES = ["full", "nopretrain", "nograd", "additive"]
-ATTACKS = ["label_flip", "sign_flip"]
+ATTACKS = ["label_flip", "sign_flip", "scaling"]
 SAVE_DIR = os.path.join(BLOCKCHAIN_DIR, "results", "exp2_fashionmnist_bsp_ablation")
 
 # ══════════════════════════════════════════════════════
@@ -255,6 +255,11 @@ def run_ablation_single(
     best_acc = 0.0
     best_asr = 0.0
 
+    # Trust-layer: progressive exclusion state (TASL only, all ablation modes)
+    excluded_clients = set()
+    violation_counts = {cid: 0 for cid in range(n_clients)}
+    max_exclusions = n_byz  # safety cap
+
     for r in range(1, rounds + 1):
         local_updates = {}
         flat_updates = {}
@@ -320,11 +325,41 @@ def run_ablation_single(
         # nopretrain: 无预训练 + TASL 梯度信任（在 run_ablation_single 中
         #   pretrained_state=None 控制不从预训练权重开始）
 
+        # ── Remove excluded clients ────────────────────
+        if excluded_clients:
+            for ecid in list(excluded_clients):
+                trust_weights.pop(ecid, None)
+        if excluded_clients:
+            for ecid in list(excluded_clients):
+                local_updates.pop(ecid, None)
+                flat_updates.pop(ecid, None)
+
         # ── Aggregate ───────────────────────────────────
         agg_update = fedavg_aggregate(local_updates, trust_weights)
         agg_flat = flatten_update(agg_update)
         if np.linalg.norm(agg_flat) > 1e-12:
             temporal_anchor = agg_flat
+
+        # ── Progressive exclusion (all ablation modes) ─
+        if len(excluded_clients) < max_exclusions:
+            active_ids = [cid for cid in range(n_clients) if cid not in excluded_clients]
+            if len(active_ids) >= 2:
+                active_norms = [np.linalg.norm(flat_updates.get(cid, np.zeros(1))) for cid in active_ids]
+                median_norm_r = np.median(active_norms) + 1e-12
+                for cid in active_ids:
+                    if cid not in flat_updates:
+                        continue
+                    cs = cos_sims.get(cid, 0.5) if 'cos_sims' in dir() else 0.5
+                    nr = np.linalg.norm(flat_updates[cid]) / median_norm_r
+                    violated = (cs < -0.1) or (nr > 2.0)
+                    if violated:
+                        violation_counts[cid] += 1
+                    else:
+                        violation_counts[cid] = max(0, violation_counts[cid] - 1)
+                    if violation_counts[cid] >= 2 and len(excluded_clients) < max_exclusions:
+                        excluded_clients.add(cid)
+                        violation_counts[cid] = 0
+                        print('    [Exclusion] Client %d excluded (round %d)' % (cid, r))
 
         global_state = state_add(global_state, agg_update)
         global_model.load_state_dict(global_state)

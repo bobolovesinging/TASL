@@ -91,6 +91,8 @@ def set_seed(seed: int = 42):
     torch.manual_seed(seed)
     if torch.cuda.is_available():
         torch.cuda.manual_seed_all(seed)
+        torch.backends.cudnn.deterministic = True
+        torch.backends.cudnn.benchmark = False
 
 
 def evaluate(model: nn.Module, test_loader, device: torch.device) -> float:
@@ -188,7 +190,7 @@ def train_one_client_sign_flip(global_state, loader, device,
     model = FedAvgCNN(num_classes=num_classes).to(device)
     model.load_state_dict(global_state)
     criterion = nn.CrossEntropyLoss()
-    optim = torch.optim.SGD(model.parameters(), lr=lr, momentum=0.9)
+    optim = torch.optim.SGD(model.parameters(), lr=lr, momentum=0.9, weight_decay=1e-4)
     model.train()
     for _ in range(int(local_epochs)):
         for data, target in loader:
@@ -204,12 +206,12 @@ def train_one_client_sign_flip(global_state, loader, device,
     return {k: v.clone().cpu() for k, v in model.state_dict().items()}
 
 
-def train_one_client(global_state, loader, device, local_epochs=1, lr=0.02):
+def train_one_client(global_state, loader, device, local_epochs=1, lr=0.01):
     model = FedAvgCNN().to(device)
     model.load_state_dict(global_state)
     model.train()
     criterion = nn.CrossEntropyLoss()
-    optimizer = torch.optim.SGD(model.parameters(), lr=lr)
+    optimizer = torch.optim.SGD(model.parameters(), lr=lr, momentum=0.9, weight_decay=1e-4)
     for _ in range(local_epochs):
         for x, y in loader:
             x, y = x.to(device), y.to(device)
@@ -217,16 +219,16 @@ def train_one_client(global_state, loader, device, local_epochs=1, lr=0.02):
             loss = criterion(model(x), y)
             loss.backward()
             optimizer.step()
-    return model.state_dict()
+    return {k: v.clone().cpu() for k, v in model.state_dict().items()}
 
 
 def train_one_client_label_flip(global_state, loader, device,
-                                  local_epochs=1, lr=0.02, num_classes=10):
+                                  local_epochs=1, lr=0.01, num_classes=10):
     model = FedAvgCNN().to(device)
     model.load_state_dict(global_state)
     model.train()
     criterion = nn.CrossEntropyLoss()
-    optimizer = torch.optim.SGD(model.parameters(), lr=lr)
+    optimizer = torch.optim.SGD(model.parameters(), lr=lr, momentum=0.9, weight_decay=1e-4)
     for _ in range(local_epochs):
         for x, y in loader:
             x, y = x.to(device), y.to(device)
@@ -235,7 +237,7 @@ def train_one_client_label_flip(global_state, loader, device,
             loss = criterion(model(x), y_flipped)
             loss.backward()
             optimizer.step()
-    return model.state_dict()
+    return {k: v.clone().cpu() for k, v in model.state_dict().items()}
 
 
 # ═══════════════════════════════════════════════════════════════════════
@@ -269,7 +271,7 @@ def make_chaos_schedule(rounds: int, seed: int = 42,
 # ═══════════════════════════════════════════════════════════════════════
 
 def apply_attack_a1(tampered_weights, sim_scores, byzantine_ids, rng, **kwargs):
-    """A1-Blunt: E 将所有 Byzantine 客户端权重设为 0.7"""
+    """A1-Blunt: Byzantine 权重设为 0.7, 偏差大, V1 轻松检测"""
     targets = set()
     for cid in byzantine_ids:
         tampered_weights[cid] = 0.7
@@ -279,7 +281,7 @@ def apply_attack_a1(tampered_weights, sim_scores, byzantine_ids, rng, **kwargs):
 
 def apply_attack_a2(tampered_weights, sim_scores, byzantine_ids, rng,
                      boost=0.25, **kwargs):
-    """A2-Stealthy: E 将 Byzantine 客户端权重增加 +0.25"""
+    """A2-Stealthy: Byzantine 权重 +0.25 (上限0.50)"""
     targets = set()
     for cid in byzantine_ids:
         old_w = tampered_weights.get(cid, 0.0)
@@ -289,7 +291,7 @@ def apply_attack_a2(tampered_weights, sim_scores, byzantine_ids, rng,
 
 
 def apply_attack_a3(tampered_weights, sim_scores, byzantine_ids, rng, **kwargs):
-    """A3-Blunt+Suppress: E 将 Byzantine 权重设为 0.7 + 压制前2个最优诚实客户端"""
+    """A3-Blunt+Suppress: Byzantine 权重 0.7 + 压制前2个最优诚实客户端"""
     targets = set()
     for cid in byzantine_ids:
         tampered_weights[cid] = 0.7
@@ -331,16 +333,60 @@ def v1_audit_sampled(tampered_weights, correct_weights, num_clients,
 
 
 def v2_membership_audit(trust_rank_history, num_clients, byzantine_set,
-                         low_rank_threshold=0.3, consecutive_rounds=3):
+                         low_rank_threshold=0.3, consecutive_rounds=2,
+                         tampered_weights=None, trust_weights=None):
+    """Enhanced V2: rank persistence + weight-rank consistency.
+
+    Detection logic:
+    1. Rank persistence: Byzantine clients ranked in top tier for consecutive rounds
+    2. Weight-rank consistency: client's tampered weight rank differs from trust weight rank
+       (Executor boosted Byzantine → tampered rank > trust rank)
+    3. Weight delta rank: client's weight change (tampered - trust) ranks abnormally high
+    """
     suspected = set()
+
+    # Signal 1: Rank persistence (original logic)
+    threshold_rank = int(num_clients * (1 - low_rank_threshold))
     for cid in range(num_clients):
         ranks = trust_rank_history.get(cid, [])
         if len(ranks) < consecutive_rounds:
             continue
         recent = ranks[-consecutive_rounds:]
-        threshold_rank = int(num_clients * (1 - low_rank_threshold))
         if all(r >= threshold_rank for r in recent):
             suspected.add(cid)
+
+    # Signal 2: Weight-rank consistency (new)
+    # If tampered_weights and trust_weights provided, check rank inconsistency
+    if tampered_weights is not None and trust_weights is not None:
+        # Rank by trust_weights (what it should be)
+        trust_sorted = sorted(range(num_clients),
+                              key=lambda c: trust_weights.get(c, 0.0), reverse=True)
+        trust_rank = {cid: rank for rank, cid in enumerate(trust_sorted)}
+
+        # Rank by tampered_weights (what Executor actually used)
+        tampered_sorted = sorted(range(num_clients),
+                                 key=lambda c: tampered_weights.get(c, 0.0), reverse=True)
+        tampered_rank = {cid: rank for rank, cid in enumerate(tampered_sorted)}
+
+        # Clients whose rank improved significantly (Executor boosted them)
+        for cid in range(num_clients):
+            rank_delta = trust_rank[cid] - tampered_rank[cid]  # positive = improved
+            if rank_delta >= 2:  # improved by 2+ positions
+                suspected.add(cid)
+
+        # Signal 3: Weight delta (new)
+        # Clients with abnormally high weight increase
+        deltas = {cid: tampered_weights.get(cid, 0.0) - trust_weights.get(cid, 0.0)
+                  for cid in range(num_clients)}
+        if deltas:
+            # Any client with delta > 2x of median positive delta
+            positive_deltas = [d for d in deltas.values() if d > 0.001]
+            if positive_deltas:
+                median_delta = sorted(positive_deltas)[len(positive_deltas) // 2]
+                for cid in range(num_clients):
+                    if deltas[cid] > 2 * median_delta and deltas[cid] > 0.01:
+                        suspected.add(cid)
+
     return len(suspected) > 0, suspected
 
 

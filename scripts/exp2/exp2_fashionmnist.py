@@ -1112,10 +1112,12 @@ def main():
     parser.add_argument("--split", type=str, default='non_iid', choices=['iid', 'non_iid'])
     parser.add_argument("--noise-scale", type=float, default=5.0, help="Gaussian noise scale (noise L2 = N * honest update L2)")
     parser.add_argument("--attack", type=str, default=None,
-                        choices=['label_flip', 'sign_flip', 'gaussian_noise', 'fgsm', 'pgd', 'cw'],
+                        choices=['label_flip', 'sign_flip', 'gaussian_noise', 'fgsm', 'pgd', 'cw', 'scaling', 'min_max'],
                         help="Only run specified attack (default: run all)")
     # Quick mode for testing
     parser.add_argument("--quick", action='store_true', help="Quick test: 5 clients, 10 rounds")
+    parser.add_argument("--skip-clean", action='store_true', help="Skip clean baseline (already ran for this dataset)")
+    parser.add_argument("--output", type=str, default=None, help="Output directory override")
     args = parser.parse_args()
 
     if args.quick:
@@ -1159,15 +1161,19 @@ def main():
         seed=args.seed,
     )
 
-    # ── Run clean baseline first ───────────────────────────────────────
-    print("\n>>> Clean Baseline (no attack) <<<")
-    clean_result = run_single(
-        'fedavg', 'none', client_loaders, test_loader,
-        n_clients=n_clients, n_byz=0, rounds=rounds, device=device,
-        local_epochs=int(args.local_epochs), lr=float(args.lr),
-        seed=args.seed,
-    )
-    print(f"  Clean: best={clean_result['best_acc']:.2f}%, avg={clean_result['avg_acc']:.2f}%")
+    # ── Run clean baseline first (skip if --skip-clean) ────────────────
+    if args.skip_clean:
+        print("\n>>> Clean Baseline skipped (--skip-clean) <<<")
+        clean_result = None
+    else:
+        print("\n>>> Clean Baseline (no attack) <<<")
+        clean_result = run_single(
+            'fedavg', 'none', client_loaders, test_loader,
+            n_clients=n_clients, n_byz=0, rounds=rounds, device=device,
+            local_epochs=int(args.local_epochs), lr=float(args.lr),
+            seed=args.seed,
+        )
+        print(f"  Clean: best={clean_result['best_acc']:.2f}%, avg={clean_result['avg_acc']:.2f}%")
 
     # ── Run all combinations ───────────────────────────────────────────
     all_results = {algo: {} for algo in algos}
@@ -1196,7 +1202,10 @@ def main():
                 final_asr = result['avg_asr']
             else:
                 # ASR = 1 - (attacked_avg_acc / clean_avg_acc)，越高攻击越成功
-                final_asr = max(0, 100.0 * (1 - result['avg_acc'] / max(clean_result['avg_acc'], 1e-6)))
+                if clean_result is not None:
+                    final_asr = max(0, 100.0 * (1 - result['avg_acc'] / max(clean_result['avg_acc'], 1e-6)))
+                else:
+                    final_asr = float("nan")
             csv_rows.append({
                 'algo': algo,
                 'attack': attack,
@@ -1212,23 +1221,31 @@ def main():
             print(f"  => best={result['best_acc']:.2f}%, avg={result['avg_acc']:.2f}%, last={result['last_acc']:.2f}%{asr_str}")
 
     # ── Save CSV ───────────────────────────────────────────────────────
-    results_dir = os.path.join(BLOCKCHAIN_DIR, "results")
+    if args.output:
+        results_dir = args.output
+    else:
+        results_dir = os.path.join(BLOCKCHAIN_DIR, "results")
     os.makedirs(results_dir, exist_ok=True)
-    csv_path = os.path.join(results_dir, "exp2_fashionmnist_data.csv")
+    # Unique CSV name per run for traceability
+    attack_tag = args.attack if args.attack else "all"
+    csv_name = f"exp2_fashionmnist_seed{args.seed}_{attack_tag}.csv"
+    csv_path = os.path.join(results_dir, csv_name)
+
+    # Add clean baseline row when it was actually computed.
+    if clean_result is not None:
+        csv_rows.append({
+            'algo': 'clean_baseline', 'attack': 'none', 'split': args.split,
+            'byzantine_ratio': 0.0, 'best_acc': clean_result['best_acc'],
+            'avg_acc': clean_result['avg_acc'], 'last_acc': clean_result['last_acc'],
+            'asr': 0.0,
+        })
 
     with open(csv_path, 'w', newline='', encoding='utf-8') as f:
         writer = csv.DictWriter(f, fieldnames=['algo', 'attack', 'split', 'byzantine_ratio',
                                                 'best_acc', 'avg_acc', 'last_acc', 'asr'])
         writer.writeheader()
         writer.writerows(csv_rows)
-
-    # Add clean baseline row
-    csv_rows.append({
-        'algo': 'clean_baseline', 'attack': 'none', 'split': args.split,
-        'byzantine_ratio': 0.0, 'best_acc': clean_result['best_acc'],
-        'avg_acc': clean_result['avg_acc'], 'last_acc': clean_result['last_acc'],
-        'asr': 0.0,
-    })
+    print(f"\nSaved CSV: {csv_path}")
 
     # ── Print summary table ────────────────────────────────────────────
     print("\n" + "=" * 70)
@@ -1246,22 +1263,26 @@ def main():
             marker = " *" if is_best else ""
             row_str += f" {val:>6.2f}{marker:<2s}"
         print(row_str)
-    print(f"\nClean Baseline: best={clean_result['best_acc']:.2f}%, avg={clean_result['avg_acc']:.2f}%")
+    if clean_result is not None:
+        print(f"\nClean Baseline: best={clean_result['best_acc']:.2f}%, avg={clean_result['avg_acc']:.2f}%")
+    else:
+        print("\nClean Baseline: skipped")
 
-    # ── Plots ──────────────────────────────────────────────────────────
-    import pandas as pd
-    results_df = pd.DataFrame(csv_rows)
+    # ── Plots (wrapped to avoid crash on single-attack runs) ─────────
+    try:
+        import pandas as pd
+        results_df = pd.DataFrame(csv_rows)
 
-    suffix = f"_{args.split}"
-    plot_heatmap(os.path.join(results_dir, f"exp2_fashionmnist_heatmap{suffix}.png"), results_df, 'best_acc')
-    plot_bar_comparison(os.path.join(results_dir, f"exp2_fashionmnist_bar{suffix}.png"), results_df, 'best_acc')
+        suffix = f"_{args.split}"
+        plot_heatmap(os.path.join(results_dir, f"exp2_fashionmnist_heatmap{suffix}.png"), results_df, 'best_acc')
+        plot_bar_comparison(os.path.join(results_dir, f"exp2_fashionmnist_bar{suffix}.png"), results_df, 'best_acc')
 
-    for attack in attacks:
-        plot_curves(os.path.join(results_dir, f"exp2_fashionmnist_curves_{attack}{suffix}.png"),
-                    all_results, attack, rounds)
-
-    print(f"\nSaved CSV: {csv_path}")
-    print(f"Saved Plots: {results_dir}")
+        for attack in attacks:
+            plot_curves(os.path.join(results_dir, f"exp2_fashionmnist_curves_{attack}{suffix}.png"),
+                        all_results, attack, rounds)
+        print(f"Saved Plots: {results_dir}")
+    except Exception as e:
+        print(f"[WARN] Plot generation skipped: {e}")
 
 
 if __name__ == "__main__":

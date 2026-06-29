@@ -17,7 +17,7 @@ build/
 .DS_Store
 Thumbs.db
 
-# 实验数据与结果
+# Experiment data and generated results
 data/
 results/
 *.png
@@ -27,15 +27,20 @@ results/
 *.tar.gz
 *.wav
 
-# 运行日志
+# Runtime logs
 logs/
 
-# 临时文件与备份
+# Temporary files and local backups
 temp/
 *.bak
 *.bak.*
 *.pid
+patch_*.py
+fix_*.py
+compare_heal.py
+wrap_mnist_plots.py
+run_*server*.sh
 
-# 本地配置（不提交）
+# Local configuration
 config.yaml
 *.local.yaml

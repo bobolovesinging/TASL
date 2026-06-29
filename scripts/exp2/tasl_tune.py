@@ -1,12 +1,14 @@
 """
 Quick TASL hyperparameter sweep for Table 4 improvements.
-Only runs TASL. Run from ~/TLF/TASL/ with:
-  cd ~/TLF/TASL && python3 scripts/exp2/tasl_tune.py
+Run from the repository root with:
+  python scripts/exp2/tasl_tune.py
 """
 import sys, os, csv
-sys.path.insert(0, "/home/njit516/TLF/TASL")
-sys.path.insert(0, "/home/njit516/TLF/TASL/core")
-sys.path.insert(0, "/home/njit516/TLF/TASL/scripts/exp2")
+
+ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+sys.path.insert(0, ROOT_DIR)
+sys.path.insert(0, os.path.join(ROOT_DIR, "core"))
+sys.path.insert(0, os.path.join(ROOT_DIR, "scripts", "exp2"))
 
 import torch, numpy as np
 from model import FedAvgCNN

@@ -1022,7 +1022,9 @@ def main():
     parser.add_argument("--alpha",           type=float, default=0.3,  help="Dirichlet alpha")
     parser.add_argument("--noise-scale",     type=float, default=5.0)
     parser.add_argument("--attack",          type=str,   default=None,
-                        choices=['label_flip', 'sign_flip', 'gaussian_noise', 'fgsm', 'pgd', 'cw'])
+                        choices=['label_flip', 'sign_flip', 'gaussian_noise', 'fgsm', 'pgd', 'cw', 'scaling', 'min_max'])
+    parser.add_argument("--skip-clean",     action='store_true', help="Skip clean baseline")
+    parser.add_argument("--output",         type=str, default=None, help="Output directory override")
     parser.add_argument("--quick",           action='store_true',
                         help="快速测试: 5客户端, 10轮, 1个local_epoch")
     args = parser.parse_args()
@@ -1073,16 +1075,20 @@ def main():
     )
     print(f"[Data] {n_clients} client loaders ready")
 
-    # ── Clean Baseline ─────────────────────────────────────────────────
-    print("\n>>> Clean Baseline (no attack) <<<")
-    clean_result = run_single(
-        'fedavg', 'none', client_loaders, test_loader,
-        n_clients=n_clients, n_byz=0,
-        rounds=rounds, device=device,
-        local_epochs=int(args.local_epochs), lr=float(args.lr),
-        seed=args.seed,
-    )
-    print(f"  Clean: best={clean_result['best_acc']:.2f}%, avg={clean_result['avg_acc']:.2f}%")
+    # ── Clean Baseline (skip if --skip-clean) ──────────────────────────
+    if args.skip_clean:
+        print("\n>>> Clean Baseline skipped (--skip-clean) <<<")
+        clean_result = None
+    else:
+        print("\n>>> Clean Baseline (no attack) <<<")
+        clean_result = run_single(
+            'fedavg', 'none', client_loaders, test_loader,
+            n_clients=n_clients, n_byz=0,
+            rounds=rounds, device=device,
+            local_epochs=int(args.local_epochs), lr=float(args.lr),
+            seed=args.seed,
+        )
+        print(f"  Clean: best={clean_result['best_acc']:.2f}%, avg={clean_result['avg_acc']:.2f}%")
 
     # ── All combinations ───────────────────────────────────────────────
     all_results = {algo: {} for algo in algos}
@@ -1106,7 +1112,10 @@ def main():
             if attack == 'label_flip':
                 final_asr = result['avg_asr']
             else:
-                final_asr = max(0, 100.0 * (1 - result['avg_acc'] / max(clean_result['avg_acc'], 1e-6)))
+                if clean_result is not None:
+                    final_asr = max(0, 100.0 * (1 - result['avg_acc'] / max(clean_result['avg_acc'], 1e-6)))
+                else:
+                    final_asr = float("nan")
             csv_rows.append({
                 'algo': algo, 'attack': attack,
                 'dataset': 'cifar10', 'alpha': args.alpha,
@@ -1120,30 +1129,38 @@ def main():
             print(f"  => best={result['best_acc']:.2f}%, avg={result['avg_acc']:.2f}%, last={result['last_acc']:.2f}%{asr_str}")
 
     # ── Save CSV ───────────────────────────────────────────────────────
-    results_dir = os.path.join(BLOCKCHAIN_DIR, "results", "exp2_cifar10_v3")
+    if args.output:
+        results_dir = args.output
+    else:
+        results_dir = os.path.join(BLOCKCHAIN_DIR, "results", "exp2_cifar10_v3")
     os.makedirs(results_dir, exist_ok=True)
-    csv_path    = os.path.join(results_dir, "exp2_cifar10_v3_data.csv")
+    attack_tag = args.attack if args.attack else "all"
+    csv_path    = os.path.join(results_dir, f"exp2_cifar10_v3_seed{args.seed}_{attack_tag}.csv")
     fieldnames  = ['algo', 'attack', 'dataset', 'alpha', 'byzantine_ratio',
                    'best_acc', 'avg_acc', 'last_acc', 'asr']
+    if clean_result is not None:
+        csv_rows.append({
+            'algo': 'clean_baseline', 'attack': 'none',
+            'dataset': 'cifar10', 'alpha': args.alpha,
+            'byzantine_ratio': 0.0,
+            'best_acc': clean_result['best_acc'],
+            'avg_acc':  clean_result['avg_acc'],
+            'last_acc': clean_result['last_acc'],
+            'asr':      0.0,
+        })
+
     with open(csv_path, 'w', newline='', encoding='utf-8') as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(csv_rows)
 
-    csv_rows.append({
-        'algo': 'clean_baseline', 'attack': 'none',
-        'dataset': 'cifar10', 'alpha': args.alpha,
-        'byzantine_ratio': 0.0,
-        'best_acc': clean_result['best_acc'],
-        'avg_acc':  clean_result['avg_acc'],
-        'last_acc': clean_result['last_acc'],
-        'asr':      0.0,
-    })
-
     # ── Summary table ──────────────────────────────────────────────────
     print("\n" + "=" * 70)
     print(f"[Exp2-CIFAR10 v3] Summary — ResNet-18, Non-IID alpha={args.alpha}, {args.byzantine_ratio:.0%} Byzantine")
-    print(f"Clean Baseline: best={clean_result['best_acc']:.2f}%, avg={clean_result['avg_acc']:.2f}%")
+    if clean_result is not None:
+        print(f"Clean Baseline: best={clean_result['best_acc']:.2f}%, avg={clean_result['avg_acc']:.2f}%")
+    else:
+        print("Clean Baseline: skipped")
     print("=" * 70)
     print(f"{'Attack':<18s} {'FedAvg':>8s} {'M-Krum':>8s} {'T-Mean':>8s} {'FLTrust':>8s} {'TASL':>8s}")
     print("-" * 70)
@@ -1176,7 +1193,10 @@ def main():
             if attack == 'label_flip':
                 asr_val = all_results[algo][attack]['avg_asr']
             else:
-                asr_val = max(0, 100.0 * (1 - all_results[algo][attack]['avg_acc'] / max(clean_result['avg_acc'], 1e-6)))
+                if clean_result is not None:
+                    asr_val = max(0, 100.0 * (1 - all_results[algo][attack]['avg_acc'] / max(clean_result['avg_acc'], 1e-6)))
+                else:
+                    asr_val = float("nan")
             all_asr.append(asr_val)
         for algo, asr_val in zip(algos, all_asr):
             marker   = " *" if asr_val == min(all_asr) else "  "

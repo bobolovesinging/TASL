@@ -70,7 +70,7 @@ def train_one_client_scaling(global_state, loader, device,
             scaled[k] = local_state[k].detach().cpu() if isinstance(local_state[k], torch.Tensor) else local_state[k]
     return scaled
 
-def get_data_loaders(dataset, client_num=10, batch_size=128, alpha=0.3, seed=42):
+def get_data_loaders(dataset, client_num=10, batch_size=64, alpha=0.3, seed=42):
     cfg = {
         "data": {"dataset": dataset, "n_clients": client_num,
                    "batch_size": batch_size, "alpha": alpha, "split": "non_iid"},
@@ -146,7 +146,11 @@ def run_ablation_group(
 
         for cid in range(num_clients):
             if cid in byzantine_set:
-                if attack == "sign_flip":
+                if attack == "none":
+                    raw_state = train_one_client(
+                        global_state, client_loaders[cid], device,
+                        local_epochs=local_epochs, lr=lr)
+                elif attack == "sign_flip":
                     raw_state = train_one_client_sign_flip(
                         global_state, client_loaders[cid], device,
                         local_epochs=local_epochs, lr=lr)
@@ -225,12 +229,17 @@ def run_ablation_group(
                     atk_fn(tampered_weights, sim_scores,
                            byzantine_ids=byzantine_clients, rng=rng)
 
-            # V1/V2 审计
+            # V1/V2 审计 (independent detection, joint healing)
             use_v1 = group_name in ("trust_v1", "trust_v1v2")
             use_v2 = group_name in ("trust_v2", "trust_v1v2")
 
             if chaos.active:
+                v1_detected = False
+                v2_detected = False
+                v2_suspected = set()
+
                 if use_v1:
+                    # V1: sampled audit (30% of clients per round)
                     v1_detected, _ = v1_audit_sampled(
                         tampered_weights, trust_weights, num_clients,
                         sample_ratio=v1_sample_ratio, tolerance=v1_tolerance,
@@ -238,31 +247,47 @@ def run_ablation_group(
                     if v1_detected:
                         v1_detections += 1
 
-                if not v1_detected and use_v2 and r >= 3:
+                if use_v2 and r >= 2:
+                    # V2: independent detection (runs even if V1 detected)
+                    # Reduced to 2 consecutive rounds for higher sensitivity
                     v2_detected, v2_suspected = v2_membership_audit(
                         trust_rank_history, num_clients, byzantine_set,
-                        low_rank_threshold=0.3, consecutive_rounds=3)
+                        low_rank_threshold=0.2, consecutive_rounds=2,
+                        tampered_weights=tampered_weights, trust_weights=trust_weights)
                     if v2_detected:
                         v2_detections += 1
 
                 if v1_detected or v2_detected:
                     consensus_ok = False
                     blocked_rounds += 1
-                    heal_source = "V1" if v1_detected else "V2"
+                    if v1_detected and v2_detected:
+                        heal_source = "V1+V2"
+                    elif v1_detected:
+                        heal_source = "V1"
+                    else:
+                        heal_source = "V2"
 
             if consensus_ok:
                 agg_update = weighted_average_updates(local_updates, tampered_weights)
                 global_state = state_add(global_state, agg_update)
             else:
-                # Healing
+                # Healing: restore trust weights, zero out Byzantine + V2 suspects
                 healed_weights = dict(trust_weights)
                 for cid in byzantine_set:
                     healed_weights[cid] = 0.0
                 for cid in v2_suspected:
                     healed_weights[cid] = 0.0
+                # Also zero out clients with abnormally high tampered weights
+                for cid in range(num_clients):
+                    if tampered_weights.get(cid, 0.0) > 0.3:
+                        healed_weights[cid] = 0.0
                 h_sum = sum(healed_weights.values())
                 if h_sum > 1e-12:
                     healed_weights = {cid: w / h_sum for cid, w in healed_weights.items()}
+                else:
+                    # Fallback: equal weights for non-byzantine
+                    honest = [c for c in range(num_clients) if c not in byzantine_set]
+                    healed_weights = {c: 1.0/len(honest) for c in honest}
                 agg_update = weighted_average_updates(local_updates, healed_weights)
                 global_state = state_add(global_state, agg_update)
                 healed_applied = True
@@ -303,7 +328,10 @@ def main():
     parser.add_argument("--dataset", type=str, default="mnist",
                         choices=["mnist", "fashionmnist", "cifar10"])
     parser.add_argument("--attack", type=str, default="label_flip",
-                        choices=["label_flip", "sign_flip", "scaling"])
+                        choices=["label_flip", "sign_flip", "scaling", "none"])
+    parser.add_argument("--executor-attack", type=str, default="all",
+                        choices=["A1", "A2", "A3", "all"],
+                        help="Executor attack: A1=Blunt, A2=Stealthy, A3=Adaptive")
     parser.add_argument("--rounds", type=int, default=50)
     parser.add_argument("--clients", type=int, default=10)
     parser.add_argument("--byzantine-ratio", type=float, default=0.3)
@@ -323,29 +351,39 @@ def main():
     print(f"{'='*70}")
 
     client_loaders, test_loader = get_data_loaders(
-        args.dataset, client_num=args.clients, batch_size=128,
+        args.dataset, client_num=args.clients, batch_size=64,
         alpha=0.3, seed=args.seed)
 
-    schedule = make_chaos_schedule(rounds=args.rounds, seed=2026, attacks_per_block=6)
+    executor_attacks = ["A1", "A2", "A3"] if args.executor_attack == "all" else [args.executor_attack]
 
     common = dict(
         client_loaders=client_loaders, test_loader=test_loader,
-        rounds=args.rounds, chaos_schedule=schedule,
+        rounds=args.rounds,
         device=device, local_epochs=args.local_epochs, lr=args.lr,
         byzantine_clients=byzantine_ids, ema_alpha=0.6,
         attack=args.attack,
     )
 
     groups = ["fedavg", "trust_only", "trust_v1", "trust_v2", "trust_v1v2"]
-    results = {}
+    all_results = {}
 
-    for i, g in enumerate(groups):
-        print(f"\n--- {i+1}/5: {g} ---")
-        results[g] = run_ablation_group(g, seed=args.seed + i * 100, **common)
+    for ea in executor_attacks:
+        print(f"\n{'='*70}")
+        print(f"Executor Attack: {ea}")
+        print(f"{'='*70}")
+        schedule = make_chaos_schedule(rounds=args.rounds, seed=2026, attacks_per_block=6,
+                                       attack_types=[ea])
+        ea_common = dict(common, chaos_schedule=schedule)
+        results = {}
+        for i, g in enumerate(groups):
+            print(f"\n--- {ea} {i+1}/5: {g} ---")
+            results[g] = run_ablation_group(g, seed=args.seed, **ea_common)
+        all_results[ea] = results
 
-    # Summary
-    print(f"\n{'='*70}")
-    print(f"Governance Ablation Summary: {args.dataset} / {args.attack}")
+    # Summary per executor attack
+    for ea, results in all_results.items():
+        print(f"\n{'='*70}")
+        print(f"Governance Ablation Summary: {args.dataset} / {args.attack} / Executor={ea}")
     print(f"{'='*70}")
     print(f"{'Group':<18} {'Best':>8} {'Avg':>8} {'V1_det':>7} {'V2_det':>7} {'Blocked':>8} {'Interc%':>8}")
     print("-" * 70)

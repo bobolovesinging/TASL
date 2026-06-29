@@ -1,0 +1,20 @@
+algorithm_params:
+  scaling: {scaling_factor: 5.0}
+  bsp:
+    enabled: true
+    n_per_class: 50
+    lr: 0.01
+    epochs: 1
+  tasl:
+    trust_power: 5.0
+    weight_cap_ratio: 1.5
+    ema_alpha: 0.7
+    norm_penalty: 0.8
+algorithms: [tasl]
+byzantine:
+  attacks: [label_flip]
+  ratio: 0.30
+data: {alpha: 0.3, batch_size: 64, dataset: mnist, n_clients: 10, split: non_iid}
+experiment: {device: cuda, name: tasl_bsp_mnist_r30, output_dir: results, seed: 42}
+model: {name: fedavgcnn, num_classes: 10}
+training: {local_epochs: 1, lr: 0.01, momentum: 0.9, rounds: 50, weight_decay: 0.0001}
