@@ -7,9 +7,12 @@ import torch
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 EXP2_DIR = PROJECT_ROOT / "scripts" / "exp2"
+EXP3_DIR = PROJECT_ROOT / "scripts" / "exp3"
 sys.path.insert(0, str(EXP2_DIR))
+sys.path.insert(0, str(EXP3_DIR))
 
 import exp2_cifar10_v3 as sweep
+import exp3_governance_cifar10_scaling as governance
 
 
 def make_context(baseline_aggregate=None, round_number=1):
@@ -96,6 +99,100 @@ class ExecutorHookTests(unittest.TestCase):
 
         self.assertIs(decision.aggregate, attacked)
         self.assertEqual(decision.metadata["attack"], "A1")
+
+
+class ExecutorAttackTests(unittest.TestCase):
+    def test_a1_is_detected_only_by_v1(self):
+        """Catches V1 missing forged trust or V2 claiming A1 coverage."""
+        context = make_context()
+
+        proposal = governance.apply_executor_attack(context, "A1")
+
+        self.assertTrue(governance.verify_v1(proposal, context))
+        self.assertFalse(
+            governance.verify_v2(
+                proposal,
+                context,
+                projection_seed=7,
+            )
+        )
+
+    def test_a2_is_detected_only_by_v2(self):
+        """Catches V2 missing aggregate tampering or V1 claiming A2 coverage."""
+        context = make_context()
+
+        proposal = governance.apply_executor_attack(context, "A2")
+
+        self.assertFalse(governance.verify_v1(proposal, context))
+        self.assertTrue(
+            governance.verify_v2(
+                proposal,
+                context,
+                projection_seed=7,
+            )
+        )
+
+
+def policy(group, attack_type):
+    return governance.GovernanceExecutor(
+        group=group,
+        schedule={1: attack_type},
+        seed=42,
+    )
+
+
+class GovernancePolicyTests(unittest.TestCase):
+    def test_trust_only_accepts_a1(self):
+        """Catches Trust Only accidentally applying an Executor defense."""
+        context = make_context()
+
+        decision = policy("trust_only", "A1")(context)
+
+        self.assertFalse(decision.metadata["blocked"])
+        self.assertFalse(decision.metadata["healed"])
+        with self.assertRaises(AssertionError):
+            torch.testing.assert_close(
+                decision.aggregate["weight"],
+                context.baseline_aggregate["weight"],
+                rtol=0,
+                atol=0,
+            )
+
+    def test_v1_heals_a1_but_not_a2(self):
+        """Catches V1 defending the wrong Executor attack."""
+        a1 = policy("v1", "A1")(make_context())
+        a2 = policy("v1", "A2")(make_context())
+
+        self.assertTrue(a1.metadata["healed"])
+        self.assertFalse(a2.metadata["healed"])
+
+    def test_v2_heals_a2_but_not_a1(self):
+        """Catches V2 defending the wrong Executor attack."""
+        a1 = policy("v2", "A1")(make_context())
+        a2 = policy("v2", "A2")(make_context())
+
+        self.assertFalse(a1.metadata["healed"])
+        self.assertTrue(a2.metadata["healed"])
+
+    def test_tas_heals_both_attacks_to_exact_baseline(self):
+        """Catches TAS recovery using rollback or recomputed client weights."""
+        for attack_type in ("A1", "A2"):
+            with self.subTest(attack_type=attack_type):
+                context = make_context()
+
+                decision = policy("tas", attack_type)(context)
+
+                self.assertTrue(decision.metadata["healed"])
+                self.assertIs(
+                    decision.aggregate,
+                    context.baseline_aggregate,
+                )
+                torch.testing.assert_close(
+                    decision.aggregate["weight"],
+                    context.baseline_aggregate["weight"],
+                    rtol=0,
+                    atol=0,
+                )
 
 
 if __name__ == "__main__":
