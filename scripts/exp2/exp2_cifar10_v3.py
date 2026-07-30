@@ -38,7 +38,8 @@ import random
 import sys
 import argparse
 from collections import defaultdict
-from typing import Dict, List, Optional, Tuple
+from dataclasses import dataclass, field
+from typing import Any, Callable, Dict, List, Optional, Tuple
 
 import matplotlib
 matplotlib.use("Agg")
@@ -786,6 +787,36 @@ def compute_tasl_trust_weights(
 # Single experiment run (v3: data-layer detection enabled)
 # ═══════════════════════════════════════════════════════════════════════
 
+@dataclass(frozen=True)
+class ExecutorRoundContext:
+    round_number: int
+    seed: int
+    local_updates: Dict[int, Dict[str, torch.Tensor]]
+    trust_weights: Dict[int, float]
+    similarity_scores: Dict[int, float]
+    baseline_aggregate: Dict[str, torch.Tensor]
+    byzantine_ids: Tuple[int, ...]
+
+
+@dataclass
+class ExecutorRoundDecision:
+    aggregate: Dict[str, torch.Tensor]
+    metadata: Dict[str, Any] = field(default_factory=dict)
+
+
+ExecutorHook = Callable[[ExecutorRoundContext], ExecutorRoundDecision]
+
+
+def select_executor_aggregate(
+    context: ExecutorRoundContext,
+    executor_hook: Optional[ExecutorHook],
+) -> ExecutorRoundDecision:
+    """Return the baseline aggregate or an Executor hook's proposal."""
+    if executor_hook is None:
+        return ExecutorRoundDecision(aggregate=context.baseline_aggregate)
+    return executor_hook(context)
+
+
 def run_single(
     algo: str,
     attack: str,
@@ -799,7 +830,11 @@ def run_single(
     lr: float = 0.1,
     seed: int = 42,
     noise_scale: float = 5.0,
+    executor_hook: Optional[ExecutorHook] = None,
 ) -> Dict:
+    if executor_hook is not None and algo != 'tasl':
+        raise ValueError("executor_hook is supported only for algo='tasl'")
+
     set_seed(seed)
     byzantine_set = set(range(n_byz))
     global_model  = CifarCNN().to(device)
@@ -811,6 +846,7 @@ def run_single(
     cos_history    = []
     prev_anchor    = None
     temporal_anchor = None
+    executor_history = []
 
     # ── v3: Unified data-layer stats collector ─────────────────────────
     stats_collector = TrainStatsCollector()
@@ -877,7 +913,20 @@ def run_single(
             ema_weights  = dict(trust_weights)
             cos_history.append(dict(cos_sims))
             prev_anchor  = new_anchor
-            agg_update   = fedavg_aggregate(local_updates, trust_weights)
+            baseline_aggregate = fedavg_aggregate(local_updates, trust_weights)
+            context = ExecutorRoundContext(
+                round_number=r,
+                seed=seed,
+                local_updates=local_updates,
+                trust_weights=dict(trust_weights),
+                similarity_scores=dict(cos_sims),
+                baseline_aggregate=baseline_aggregate,
+                byzantine_ids=tuple(sorted(byzantine_set)),
+            )
+            decision = select_executor_aggregate(context, executor_hook)
+            agg_update = decision.aggregate
+            if decision.metadata:
+                executor_history.append(dict(decision.metadata))
             # 更新 temporal anchor
             agg_flat = flatten_update(agg_update)
             if np.linalg.norm(agg_flat) > 1e-12:
@@ -918,6 +967,7 @@ def run_single(
         'asr_history': asr_history,
         'best_asr':    max(asr_history) if asr_history else 0.0,
         'avg_asr':     float(np.mean(asr_history)) if asr_history else 0.0,
+        'executor_history': executor_history,
     }
 
 
