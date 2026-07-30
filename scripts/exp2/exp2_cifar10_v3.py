@@ -164,6 +164,11 @@ def set_seed(seed=42):
         torch.cuda.manual_seed_all(seed)
 
 
+def resolve_run_seed(base_seed: int, run_seed: Optional[int]) -> int:
+    """Return an explicit, process-stable experiment seed."""
+    return int(base_seed if run_seed is None else run_seed)
+
+
 # ═══════════════════════════════════════════════════════════════════════
 # Data -- CIFAR-10 Non-IID Partitioning
 # ═══════════════════════════════════════════════════════════════════════
@@ -523,6 +528,32 @@ def train_cw(global_state, loader, device, local_epochs=5, lr=0.1,
     )
 
 
+def scale_model_update(global_state, trained_state, scale_factor=5.0):
+    """Amplify a trained client's floating-point update."""
+    scaled_state = {}
+    for key, value in trained_state.items():
+        if isinstance(value, torch.Tensor) and value.is_floating_point():
+            base = global_state[key].to(value.device)
+            scaled_state[key] = base + scale_factor * (value - base)
+        else:
+            scaled_state[key] = value
+    return scaled_state
+
+
+def train_scaling(global_state, loader, device, local_epochs=5, lr=0.1,
+                  scale_factor=5.0, **kwargs):
+    """Train normally, then amplify the local model update."""
+    trained_state = train_honest(
+        global_state,
+        loader,
+        device,
+        local_epochs=local_epochs,
+        lr=lr,
+        **kwargs,
+    )
+    return scale_model_update(global_state, trained_state, scale_factor)
+
+
 ATTACK_TRAIN_FNS = {
     'label_flip':     train_label_flip,
     'sign_flip':      train_sign_flip,
@@ -530,6 +561,7 @@ ATTACK_TRAIN_FNS = {
     'fgsm':           train_fgsm,
     'pgd':            train_pgd,
     'cw':             train_cw,
+    'scaling':        train_scaling,
 }
 
 
@@ -1018,6 +1050,8 @@ def main():
     parser.add_argument("--local-epochs",    type=int,   default=5)
     parser.add_argument("--lr",              type=float, default=0.1)
     parser.add_argument("--seed",            type=int,   default=42)
+    parser.add_argument("--run-seed",        type=int,   default=None,
+                        help="Explicit model/training seed (defaults to --seed)")
     parser.add_argument("--byzantine-ratio", type=float, default=0.4)
     parser.add_argument("--alpha",           type=float, default=0.3,  help="Dirichlet alpha")
     parser.add_argument("--noise-scale",     type=float, default=5.0)
@@ -1039,6 +1073,7 @@ def main():
     n_clients = int(args.clients)
     n_byz     = max(1, int(n_clients * args.byzantine_ratio))
     rounds    = int(args.rounds)
+    run_seed  = resolve_run_seed(args.seed, args.run_seed)
 
     algos   = ['fedavg', 'multi_krum', 'trimmed_mean', 'fltrust', 'tasl']
     attacks = ['label_flip', 'sign_flip', 'gaussian_noise', 'fgsm', 'pgd', 'cw']
@@ -1062,6 +1097,7 @@ def main():
     print(f"  v3: unified data-layer detection (loss + grad_norm)")
     print(f"  Algorithms: {algos}")
     print(f"  Attacks: {attacks}")
+    print(f"  Seeds: partition={args.seed}, run={run_seed}")
     print(f"  Device: {device}")
     print("=" * 70)
 
@@ -1086,7 +1122,7 @@ def main():
             n_clients=n_clients, n_byz=0,
             rounds=rounds, device=device,
             local_epochs=int(args.local_epochs), lr=float(args.lr),
-            seed=args.seed,
+            seed=run_seed,
         )
         print(f"  Clean: best={clean_result['best_acc']:.2f}%, avg={clean_result['avg_acc']:.2f}%")
 
@@ -1105,7 +1141,7 @@ def main():
                 n_clients=n_clients, n_byz=n_byz,
                 rounds=rounds, device=device,
                 local_epochs=int(args.local_epochs), lr=float(args.lr),
-                seed=args.seed + hash(algo + attack) % 1000,
+                seed=run_seed,
                 noise_scale=float(args.noise_scale),
             )
             all_results[algo][attack] = result
