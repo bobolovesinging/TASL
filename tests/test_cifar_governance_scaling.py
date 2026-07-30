@@ -1,5 +1,6 @@
 import csv
 import json
+import os
 import sys
 import tempfile
 import unittest
@@ -74,6 +75,36 @@ class ScalingTests(unittest.TestCase):
         """Catches reintroduction of process-randomized experiment seeds."""
         self.assertEqual(sweep.resolve_run_seed(base_seed=42, run_seed=None), 42)
         self.assertEqual(sweep.resolve_run_seed(base_seed=42, run_seed=314), 314)
+
+    def test_set_seed_enables_deterministic_cuda_execution(self):
+        """Catches same-seed CUDA runs drifting through cuDNN/cuBLAS choices."""
+        previous_algorithms = torch.are_deterministic_algorithms_enabled()
+        previous_cudnn_deterministic = torch.backends.cudnn.deterministic
+        previous_cudnn_benchmark = torch.backends.cudnn.benchmark
+        previous_cublas_config = os.environ.get("CUBLAS_WORKSPACE_CONFIG")
+        try:
+            torch.use_deterministic_algorithms(False)
+            torch.backends.cudnn.deterministic = False
+            torch.backends.cudnn.benchmark = True
+            os.environ.pop("CUBLAS_WORKSPACE_CONFIG", None)
+
+            sweep.set_seed(42)
+
+            self.assertTrue(torch.are_deterministic_algorithms_enabled())
+            self.assertTrue(torch.backends.cudnn.deterministic)
+            self.assertFalse(torch.backends.cudnn.benchmark)
+            self.assertEqual(
+                os.environ["CUBLAS_WORKSPACE_CONFIG"],
+                ":4096:8",
+            )
+        finally:
+            torch.use_deterministic_algorithms(previous_algorithms)
+            torch.backends.cudnn.deterministic = previous_cudnn_deterministic
+            torch.backends.cudnn.benchmark = previous_cudnn_benchmark
+            if previous_cublas_config is None:
+                os.environ.pop("CUBLAS_WORKSPACE_CONFIG", None)
+            else:
+                os.environ["CUBLAS_WORKSPACE_CONFIG"] = previous_cublas_config
 
 
 class ExecutorHookTests(unittest.TestCase):
