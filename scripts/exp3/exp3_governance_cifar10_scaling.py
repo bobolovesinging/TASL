@@ -99,7 +99,7 @@ def apply_executor_attack(
     )
 
 
-def verify_v1(
+def verify_v1_trust(
     proposal: ExecutorProposal,
     context: sweep.ExecutorRoundContext,
     tolerance: float = 1e-4,
@@ -115,7 +115,63 @@ def verify_v1(
     )
 
 
-def verify_v2(
+def verify_v1_aggregate(
+    proposal: ExecutorProposal,
+    context: sweep.ExecutorRoundContext,
+    cosine_threshold: float = 0.97,
+) -> bool:
+    """Weakly detect aggregate direction drift against published weights."""
+    published = normalize_weights(proposal.published_weights)
+    client_count = len(context.local_updates)
+    minimum_weight = 1.0 / client_count
+    soft_published = {
+        cid: max(published.get(cid, 0.0), minimum_weight)
+        for cid in context.local_updates
+    }
+    soft_published = normalize_weights(soft_published)
+    expected = sweep.fedavg_aggregate(
+        context.local_updates,
+        soft_published,
+    )
+    actual_flat = sweep.flatten_update(proposal.aggregate)
+    expected_flat = sweep.flatten_update(expected)
+    actual_norm = np.linalg.norm(actual_flat) + 1e-12
+    expected_norm = np.linalg.norm(expected_flat) + 1e-12
+    cosine_similarity = float(
+        np.dot(actual_flat, expected_flat)
+        / (actual_norm * expected_norm)
+    )
+    return cosine_similarity < cosine_threshold
+
+
+def verify_v2_trust(
+    proposal: ExecutorProposal,
+    context: sweep.ExecutorRoundContext,
+    sample_ratio: float = 0.3,
+    sample_seed: int = 0,
+    tolerance: float = 1e-4,
+) -> bool:
+    """Weakly detect forged trust by checking a deterministic client sample."""
+    client_ids = sorted(context.local_updates)
+    sample_count = max(1, int(len(client_ids) * sample_ratio))
+    rng = np.random.RandomState(sample_seed)
+    sampled_indices = rng.choice(
+        len(client_ids),
+        size=sample_count,
+        replace=False,
+    )
+    sampled_clients = [client_ids[index] for index in sampled_indices]
+    return any(
+        abs(
+            proposal.published_weights.get(cid, 0.0)
+            - context.trust_weights.get(cid, 0.0)
+        )
+        > tolerance
+        for cid in sampled_clients
+    )
+
+
+def verify_v2_aggregate(
     proposal: ExecutorProposal,
     context: sweep.ExecutorRoundContext,
     projection_seed: int,
@@ -139,6 +195,11 @@ def verify_v2(
     difference = abs(actual_value - expected_value)
     scale = max(abs(actual_value), abs(expected_value), 1e-12)
     return difference > atol + rtol * scale
+
+
+# Compatibility aliases for callers of the first unified-runner revision.
+verify_v1 = verify_v1_trust
+verify_v2 = verify_v2_aggregate
 
 
 class GovernanceExecutor:
@@ -169,13 +230,28 @@ class GovernanceExecutor:
             )
 
         proposal = apply_executor_attack(context, attack_type)
-        v1_detected = (
-            verify_v1(proposal, context)
+        v1_trust_detected = (
+            verify_v1_trust(proposal, context)
             if self.group in {"v1", "tas"}
             else False
         )
-        v2_detected = (
-            verify_v2(
+        v1_aggregate_detected = (
+            verify_v1_aggregate(proposal, context)
+            if self.group in {"v1", "tas"}
+            else False
+        )
+        v2_trust_detected = (
+            verify_v2_trust(
+                proposal,
+                context,
+                sample_ratio=0.3,
+                sample_seed=self.seed + context.round_number * 137,
+            )
+            if self.group in {"v2", "tas"}
+            else False
+        )
+        v2_aggregate_detected = (
+            verify_v2_aggregate(
                 proposal,
                 context,
                 projection_seed=self.seed + context.round_number * 971,
@@ -183,6 +259,8 @@ class GovernanceExecutor:
             if self.group in {"v2", "tas"}
             else False
         )
+        v1_detected = v1_trust_detected or v1_aggregate_detected
+        v2_detected = v2_trust_detected or v2_aggregate_detected
         blocked = v1_detected or v2_detected
         aggregate = (
             context.baseline_aggregate
@@ -194,6 +272,10 @@ class GovernanceExecutor:
             metadata={
                 "round": context.round_number,
                 "attack": attack_type,
+                "v1_trust_detected": v1_trust_detected,
+                "v1_aggregate_detected": v1_aggregate_detected,
+                "v2_trust_detected": v2_trust_detected,
+                "v2_aggregate_detected": v2_aggregate_detected,
                 "v1_detected": v1_detected,
                 "v2_detected": v2_detected,
                 "blocked": blocked,

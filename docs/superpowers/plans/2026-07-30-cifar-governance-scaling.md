@@ -14,8 +14,10 @@
 - Do not change TASL trust-scoring mathematics.
 - Scaling is exactly `global + 5 * (trained_local - global)`.
 - Sweep and governance `no_executor` use the same `run_single()` call and explicit seed.
-- V1 checks published trust only and defends A1.
-- V2 checks aggregate consistency only and defends A2.
+- V1 uses full trust comparison as its primary A1 defense and a cosine
+  aggregate check as weaker A2 coverage.
+- V2 uses random projection as its primary A2 defense and 30% sampled trust
+  comparison as weaker, probabilistic A1 coverage.
 - TAS blocks when V1 or V2 detects manipulation.
 - Recovery commits the current round's precomputed TASL baseline aggregate.
 - Preserve the existing Sweep result dictionary fields and add only compatible fields.
@@ -275,7 +277,7 @@ git commit -m "feat: add Executor hook to CIFAR TASL runner"
 
 ```python
 class ExecutorAttackTests(unittest.TestCase):
-    def test_a1_is_detected_only_by_v1(self):
+    def test_a1_has_full_v1_and_sampled_v2_trust_detection(self):
         context = make_context({"w": torch.tensor([2.0, 2.0])})
         proposal = governance.apply_executor_attack(context, "A1")
 
@@ -284,7 +286,7 @@ class ExecutorAttackTests(unittest.TestCase):
             governance.verify_v2(proposal, context, projection_seed=7)
         )
 
-    def test_a2_is_detected_only_by_v2(self):
+    def test_a2_has_weaker_v1_cosine_and_full_v2_projection_detection(self):
         context = make_context({"w": torch.tensor([2.0, 2.0])})
         proposal = governance.apply_executor_attack(context, "A2")
 
@@ -342,10 +344,12 @@ def apply_executor_attack(context, attack_type):
 
 - [ ] **Step 4: Implement defense checks**
 
-V1 compares every published client weight with `context.trust_weights`.
-V2 normalizes published weights, computes the expected aggregate, creates a
-unit random vector from `np.random.RandomState(projection_seed)`, and compares
-actual and expected projections using:
+V1 compares every published client weight with `context.trust_weights` and
+also performs the historical soft-weight cosine aggregate check at threshold
+`0.97`. V2 samples 30% of clients for trust comparison, then normalizes
+published weights, computes the expected aggregate, creates a unit random
+vector from `np.random.RandomState(projection_seed)`, and compares actual and
+expected projections using:
 
 ```python
 difference = abs(actual_projection - expected_projection)

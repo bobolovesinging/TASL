@@ -38,6 +38,24 @@ def make_context(baseline_aggregate=None, round_number=1):
     )
 
 
+def make_cross_detection_context(round_number=1):
+    local_updates = {
+        0: {"weight": torch.tensor([1.0, 0.0, 0.0, 0.0])},
+        1: {"weight": torch.tensor([0.0, 1.0, 0.0, 0.0])},
+        2: {"weight": torch.tensor([0.0, 0.0, 1.0, 0.0])},
+        3: {"weight": torch.tensor([0.0, 0.0, 0.0, 1.0])},
+    }
+    return sweep.ExecutorRoundContext(
+        round_number=round_number,
+        seed=42,
+        local_updates=local_updates,
+        trust_weights={0: 0.7, 1: 0.1, 2: 0.1, 3: 0.1},
+        similarity_scores={0: 0.9, 1: 0.8, 2: 0.7, 3: 0.1},
+        baseline_aggregate={"weight": torch.tensor([0.7, 0.1, 0.1, 0.1])},
+        byzantine_ids=(3,),
+    )
+
+
 class ScalingTests(unittest.TestCase):
     def test_scale_model_update_multiplies_only_floating_delta(self):
         """Catches missing x5 amplification or accidental integer scaling."""
@@ -137,30 +155,61 @@ class ExecutorHookTests(unittest.TestCase):
 
 
 class ExecutorAttackTests(unittest.TestCase):
-    def test_a1_is_detected_only_by_v1(self):
-        """Catches V1 missing forged trust or V2 claiming A1 coverage."""
-        context = make_context()
+    def test_a1_has_full_v1_and_sampled_v2_trust_detection(self):
+        """Catches removal of V2's weaker sampled defense against A1."""
+        context = make_cross_detection_context()
 
         proposal = governance.apply_executor_attack(context, "A1")
 
-        self.assertTrue(governance.verify_v1(proposal, context))
+        self.assertTrue(governance.verify_v1_trust(proposal, context))
+        self.assertTrue(
+            governance.verify_v2_trust(
+                proposal,
+                context,
+                sample_ratio=0.3,
+                sample_seed=1,
+            )
+        )
         self.assertFalse(
-            governance.verify_v2(
+            governance.verify_v2_trust(
+                proposal,
+                context,
+                sample_ratio=0.3,
+                sample_seed=0,
+            )
+        )
+        self.assertFalse(
+            governance.verify_v2_aggregate(
                 proposal,
                 context,
                 projection_seed=7,
             )
         )
 
-    def test_a2_is_detected_only_by_v2(self):
-        """Catches V2 missing aggregate tampering or V1 claiming A2 coverage."""
-        context = make_context()
+    def test_a2_has_weaker_v1_cosine_and_full_v2_projection_detection(self):
+        """Catches removal of V1's weaker aggregate defense against A2."""
+        context = make_cross_detection_context()
 
         proposal = governance.apply_executor_attack(context, "A2")
 
-        self.assertFalse(governance.verify_v1(proposal, context))
+        self.assertFalse(governance.verify_v1_trust(proposal, context))
         self.assertTrue(
-            governance.verify_v2(
+            governance.verify_v1_aggregate(
+                proposal,
+                context,
+                cosine_threshold=0.97,
+            )
+        )
+        self.assertFalse(
+            governance.verify_v2_trust(
+                proposal,
+                context,
+                sample_ratio=0.3,
+                sample_seed=1,
+            )
+        )
+        self.assertTrue(
+            governance.verify_v2_aggregate(
                 proposal,
                 context,
                 projection_seed=7,
@@ -168,11 +217,11 @@ class ExecutorAttackTests(unittest.TestCase):
         )
 
 
-def policy(group, attack_type):
+def policy(group, attack_type, seed=42):
     return governance.GovernanceExecutor(
         group=group,
         schedule={1: attack_type},
-        seed=42,
+        seed=seed,
     )
 
 
@@ -193,21 +242,36 @@ class GovernancePolicyTests(unittest.TestCase):
                 atol=0,
             )
 
-    def test_v1_heals_a1_but_not_a2(self):
-        """Catches V1 defending the wrong Executor attack."""
-        a1 = policy("v1", "A1")(make_context())
-        a2 = policy("v1", "A2")(make_context())
+    def test_v1_heals_a1_and_detectable_a2(self):
+        """Catches V1 losing its full-trust or weaker cosine defense."""
+        context = make_cross_detection_context()
+        a1 = policy("v1", "A1")(context)
+        a2 = policy("v1", "A2")(context)
 
         self.assertTrue(a1.metadata["healed"])
-        self.assertFalse(a2.metadata["healed"])
-
-    def test_v2_heals_a2_but_not_a1(self):
-        """Catches V2 defending the wrong Executor attack."""
-        a1 = policy("v2", "A1")(make_context())
-        a2 = policy("v2", "A2")(make_context())
-
-        self.assertFalse(a1.metadata["healed"])
         self.assertTrue(a2.metadata["healed"])
+        self.assertTrue(a1.metadata["v1_trust_detected"])
+        self.assertTrue(a2.metadata["v1_aggregate_detected"])
+
+    def test_v2_heals_a2_and_sampled_a1(self):
+        """Catches V2 losing its projection or sampled-trust defense."""
+        context = make_cross_detection_context()
+        a1 = policy("v2", "A1", seed=3)(context)
+        a2 = policy("v2", "A2", seed=3)(context)
+
+        self.assertTrue(a1.metadata["healed"])
+        self.assertTrue(a2.metadata["healed"])
+        self.assertTrue(a1.metadata["v2_trust_detected"])
+        self.assertTrue(a2.metadata["v2_aggregate_detected"])
+
+    def test_v2_can_miss_a1_when_sample_omits_forged_client(self):
+        """Catches sampled V2 trust being misrepresented as full coverage."""
+        decision = policy("v2", "A1", seed=0)(
+            make_cross_detection_context()
+        )
+
+        self.assertFalse(decision.metadata["healed"])
+        self.assertFalse(decision.metadata["v2_trust_detected"])
 
     def test_tas_heals_both_attacks_to_exact_baseline(self):
         """Catches TAS recovery using rollback or recomputed client weights."""

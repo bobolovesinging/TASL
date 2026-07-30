@@ -147,15 +147,20 @@ use the five canonical names above.
 ### V1
 
 V1 fully compares the published trust weights with the independently known
-correct TASL weights using a fixed absolute tolerance. It is responsible for
-A1 and does not inspect aggregate consistency, so it does not defend A2.
+correct TASL weights using a fixed absolute tolerance. This is its primary A1
+defense. It also compares the Executor aggregate direction with a soft-weight
+aggregate through cosine similarity (`threshold=0.97`). The cosine check gives
+V1 weaker, direction-sensitive coverage of A2, but can miss primarily
+magnitude-based or nearly aligned tampering.
 
 ### V2
 
-V2 uses a deterministic random projection to compare the submitted aggregate
-against the aggregate implied by the published weights. It is responsible
-for A2. Because A1's submitted aggregate is consistent with its published
-weights, V2 does not defend A1.
+V2 samples 30% of clients and compares their published trust values with the
+correct TASL values. This gives V2 probabilistic, weaker coverage of A1: it
+detects forged trust only when a modified client is sampled. V2 also uses a
+deterministic random projection to compare the submitted aggregate against the
+aggregate implied by the published weights. The projection check is its
+primary A2 defense, with a 3% relative tolerance.
 
 ### TAS and Recovery
 
@@ -190,10 +195,13 @@ Output directories are created only when the experiment command runs.
 Automated CPU tests cover:
 
 1. Scaling produces `global + 5 * delta`.
-2. A1 changes published trust and is detected by V1.
-3. A1 is internally aggregate-consistent and is not detected by V2.
-4. A2 preserves published trust and is not detected by V1.
-5. A2 changes the aggregate and is detected by V2.
+2. A1 changes published trust and is detected by V1's full trust comparison.
+3. V2 detects A1 when its 30% sample includes a forged client and can miss it
+   when the sample omits all forged clients.
+4. A2 preserves published trust but can be detected by V1's weaker cosine
+   aggregate check when its direction changes enough.
+5. A2 changes the aggregate and is detected primarily by V2's projection
+   check.
 6. `trust_only` accepts the malicious proposal.
 7. V1, V2, and TAS recover exactly to the same-round baseline when their
    corresponding defense detects an attack.
