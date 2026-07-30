@@ -1,0 +1,19 @@
+clients: 10
+byzantine_ratio: 0.4
+alpha: 0.3
+batch_size: 128
+rounds: 200
+local_epochs: 5
+lr: 0.1
+seed: 42
+block_size: 10
+attacks_per_block: 6
+executor_attack: mixed12
+groups:
+  - no_executor
+  - trust_only
+  - v1
+  - v2
+  - tas
+device: auto
+output: results/exp3_cifar10_scaling_governance

@@ -1,6 +1,10 @@
+import csv
+import json
 import sys
+import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 import torch
 
@@ -193,6 +197,169 @@ class GovernancePolicyTests(unittest.TestCase):
                     rtol=0,
                     atol=0,
                 )
+
+
+class GovernanceRunnerTests(unittest.TestCase):
+    def test_mixed_schedule_is_repeatable(self):
+        """Catches group-specific or process-specific attack schedules."""
+        first = governance.make_attack_schedule(
+            rounds=20,
+            seed=42,
+            attack_type="mixed12",
+            block_size=10,
+            attacks_per_block=6,
+        )
+        second = governance.make_attack_schedule(
+            rounds=20,
+            seed=42,
+            attack_type="mixed12",
+            block_size=10,
+            attacks_per_block=6,
+        )
+
+        self.assertEqual(first, second)
+        self.assertEqual(len(first), 12)
+        self.assertTrue(set(first.values()).issubset({"A1", "A2"}))
+
+    def test_no_executor_group_builds_no_hook(self):
+        """Catches No Executor accidentally entering governance logic."""
+        hook = governance.build_executor_hook(
+            group="no_executor",
+            schedule={1: "A1"},
+            seed=42,
+        )
+
+        self.assertIsNone(hook)
+
+    def test_unknown_group_is_rejected(self):
+        """Catches misspelled groups silently running the wrong defense."""
+        with self.assertRaisesRegex(
+            ValueError,
+            "unsupported governance group",
+        ):
+            governance.build_executor_hook(
+                group="unknown",
+                schedule={},
+                seed=42,
+            )
+
+    def test_cli_parses_canonical_groups_and_explicit_seed(self):
+        """Catches comma-separated groups or run seed being ignored."""
+        args = governance.parse_args(
+            [
+                "--groups",
+                "no_executor,v1,tas",
+                "--rounds",
+                "2",
+                "--seed",
+                "314",
+            ]
+        )
+
+        self.assertEqual(args.groups, ["no_executor", "v1", "tas"])
+        self.assertEqual(args.rounds, 2)
+        self.assertEqual(args.seed, 314)
+
+    def test_default_output_stays_inside_repository_results(self):
+        """Catches experiment artifacts escaping the TASL repository."""
+        args = governance.parse_args([])
+
+        self.assertEqual(
+            Path(args.output).resolve(),
+            (PROJECT_ROOT / "results" / "exp3_cifar10_scaling_governance").resolve(),
+        )
+
+    def test_save_results_writes_auditable_json_and_csv(self):
+        """Catches summary output dropping audit counts or histories."""
+        results = {
+            "no_executor": {
+                "best_acc": 70.0,
+                "avg_acc": 60.0,
+                "last_acc": 69.0,
+                "acc_history": [50.0, 69.0],
+                "executor_history": [],
+            },
+            "tas": {
+                "best_acc": 70.0,
+                "avg_acc": 60.0,
+                "last_acc": 69.0,
+                "acc_history": [50.0, 69.0],
+                "executor_history": [
+                    {"round": 2, "attack": "A2", "blocked": True},
+                ],
+            },
+        }
+
+        with tempfile.TemporaryDirectory() as temp_dir:
+            json_path, csv_path = governance.save_results(
+                output_dir=temp_dir,
+                config={"seed": 42, "rounds": 2},
+                results=results,
+            )
+
+            with open(json_path, encoding="utf-8") as handle:
+                payload = json.load(handle)
+            with open(csv_path, newline="", encoding="utf-8") as handle:
+                rows = list(csv.DictReader(handle))
+
+        self.assertEqual(payload["results"]["no_executor"]["acc_history"], [50.0, 69.0])
+        self.assertEqual(rows[0]["group"], "no_executor")
+        self.assertEqual(rows[0]["attack_rounds"], "0")
+        self.assertEqual(rows[1]["group"], "tas")
+        self.assertEqual(rows[1]["blocked_rounds"], "1")
+
+    def test_group_runner_reuses_one_seed_and_disables_no_executor_hook(self):
+        """Catches group drift in the unified Sweep invocation."""
+        args = governance.parse_args(
+            [
+                "--groups",
+                "no_executor,trust_only",
+                "--clients",
+                "2",
+                "--rounds",
+                "1",
+                "--local-epochs",
+                "1",
+                "--device",
+                "cpu",
+            ]
+        )
+        captured = []
+
+        def fake_prepare_cifar10_loaders(**_kwargs):
+            return ["client-0", "client-1"], "test-loader"
+
+        def fake_run_single(*_args, **kwargs):
+            captured.append(kwargs)
+            return {
+                "best_acc": 10.0,
+                "avg_acc": 10.0,
+                "last_acc": 10.0,
+                "acc_history": [10.0],
+                "asr_history": [0.0],
+                "best_asr": 0.0,
+                "avg_asr": 0.0,
+                "executor_history": [],
+            }
+
+        with patch.object(
+            governance.sweep,
+            "prepare_cifar10_loaders",
+            fake_prepare_cifar10_loaders,
+        ), patch.object(
+            governance.sweep,
+            "run_single",
+            fake_run_single,
+        ):
+            results = governance.run_governance_groups(args)
+
+        self.assertEqual(list(results), ["no_executor", "trust_only"])
+        self.assertEqual([item["seed"] for item in captured], [42, 42])
+        self.assertIsNone(captured[0]["executor_hook"])
+        self.assertIsInstance(
+            captured[1]["executor_hook"],
+            governance.GovernanceExecutor,
+        )
 
 
 if __name__ == "__main__":
