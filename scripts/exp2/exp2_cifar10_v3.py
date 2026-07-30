@@ -38,7 +38,8 @@ import random
 import sys
 import argparse
 from collections import defaultdict
-from typing import Dict, List, Optional, Tuple
+from dataclasses import dataclass, field
+from typing import Any, Callable, Dict, List, Optional, Tuple
 
 import matplotlib
 matplotlib.use("Agg")
@@ -157,11 +158,20 @@ class CifarCNN(nn.Module):
 # ═══════════════════════════════════════════════════════════════════════
 
 def set_seed(seed=42):
+    os.environ["CUBLAS_WORKSPACE_CONFIG"] = ":4096:8"
     random.seed(seed)
     np.random.seed(seed)
     torch.manual_seed(seed)
     if torch.cuda.is_available():
         torch.cuda.manual_seed_all(seed)
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
+    torch.use_deterministic_algorithms(True)
+
+
+def resolve_run_seed(base_seed: int, run_seed: Optional[int]) -> int:
+    """Return an explicit, process-stable experiment seed."""
+    return int(base_seed if run_seed is None else run_seed)
 
 
 # ═══════════════════════════════════════════════════════════════════════
@@ -523,6 +533,32 @@ def train_cw(global_state, loader, device, local_epochs=5, lr=0.1,
     )
 
 
+def scale_model_update(global_state, trained_state, scale_factor=5.0):
+    """Amplify a trained client's floating-point update."""
+    scaled_state = {}
+    for key, value in trained_state.items():
+        if isinstance(value, torch.Tensor) and value.is_floating_point():
+            base = global_state[key].to(value.device)
+            scaled_state[key] = base + scale_factor * (value - base)
+        else:
+            scaled_state[key] = value
+    return scaled_state
+
+
+def train_scaling(global_state, loader, device, local_epochs=5, lr=0.1,
+                  scale_factor=5.0, **kwargs):
+    """Train normally, then amplify the local model update."""
+    trained_state = train_honest(
+        global_state,
+        loader,
+        device,
+        local_epochs=local_epochs,
+        lr=lr,
+        **kwargs,
+    )
+    return scale_model_update(global_state, trained_state, scale_factor)
+
+
 ATTACK_TRAIN_FNS = {
     'label_flip':     train_label_flip,
     'sign_flip':      train_sign_flip,
@@ -530,6 +566,7 @@ ATTACK_TRAIN_FNS = {
     'fgsm':           train_fgsm,
     'pgd':            train_pgd,
     'cw':             train_cw,
+    'scaling':        train_scaling,
 }
 
 
@@ -754,6 +791,36 @@ def compute_tasl_trust_weights(
 # Single experiment run (v3: data-layer detection enabled)
 # ═══════════════════════════════════════════════════════════════════════
 
+@dataclass(frozen=True)
+class ExecutorRoundContext:
+    round_number: int
+    seed: int
+    local_updates: Dict[int, Dict[str, torch.Tensor]]
+    trust_weights: Dict[int, float]
+    similarity_scores: Dict[int, float]
+    baseline_aggregate: Dict[str, torch.Tensor]
+    byzantine_ids: Tuple[int, ...]
+
+
+@dataclass
+class ExecutorRoundDecision:
+    aggregate: Dict[str, torch.Tensor]
+    metadata: Dict[str, Any] = field(default_factory=dict)
+
+
+ExecutorHook = Callable[[ExecutorRoundContext], ExecutorRoundDecision]
+
+
+def select_executor_aggregate(
+    context: ExecutorRoundContext,
+    executor_hook: Optional[ExecutorHook],
+) -> ExecutorRoundDecision:
+    """Return the baseline aggregate or an Executor hook's proposal."""
+    if executor_hook is None:
+        return ExecutorRoundDecision(aggregate=context.baseline_aggregate)
+    return executor_hook(context)
+
+
 def run_single(
     algo: str,
     attack: str,
@@ -767,7 +834,11 @@ def run_single(
     lr: float = 0.1,
     seed: int = 42,
     noise_scale: float = 5.0,
+    executor_hook: Optional[ExecutorHook] = None,
 ) -> Dict:
+    if executor_hook is not None and algo != 'tasl':
+        raise ValueError("executor_hook is supported only for algo='tasl'")
+
     set_seed(seed)
     byzantine_set = set(range(n_byz))
     global_model  = CifarCNN().to(device)
@@ -779,6 +850,7 @@ def run_single(
     cos_history    = []
     prev_anchor    = None
     temporal_anchor = None
+    executor_history = []
 
     # ── v3: Unified data-layer stats collector ─────────────────────────
     stats_collector = TrainStatsCollector()
@@ -845,7 +917,20 @@ def run_single(
             ema_weights  = dict(trust_weights)
             cos_history.append(dict(cos_sims))
             prev_anchor  = new_anchor
-            agg_update   = fedavg_aggregate(local_updates, trust_weights)
+            baseline_aggregate = fedavg_aggregate(local_updates, trust_weights)
+            context = ExecutorRoundContext(
+                round_number=r,
+                seed=seed,
+                local_updates=local_updates,
+                trust_weights=dict(trust_weights),
+                similarity_scores=dict(cos_sims),
+                baseline_aggregate=baseline_aggregate,
+                byzantine_ids=tuple(sorted(byzantine_set)),
+            )
+            decision = select_executor_aggregate(context, executor_hook)
+            agg_update = decision.aggregate
+            if decision.metadata:
+                executor_history.append(dict(decision.metadata))
             # 更新 temporal anchor
             agg_flat = flatten_update(agg_update)
             if np.linalg.norm(agg_flat) > 1e-12:
@@ -886,6 +971,7 @@ def run_single(
         'asr_history': asr_history,
         'best_asr':    max(asr_history) if asr_history else 0.0,
         'avg_asr':     float(np.mean(asr_history)) if asr_history else 0.0,
+        'executor_history': executor_history,
     }
 
 
@@ -1018,6 +1104,8 @@ def main():
     parser.add_argument("--local-epochs",    type=int,   default=5)
     parser.add_argument("--lr",              type=float, default=0.1)
     parser.add_argument("--seed",            type=int,   default=42)
+    parser.add_argument("--run-seed",        type=int,   default=None,
+                        help="Explicit model/training seed (defaults to --seed)")
     parser.add_argument("--byzantine-ratio", type=float, default=0.4)
     parser.add_argument("--alpha",           type=float, default=0.3,  help="Dirichlet alpha")
     parser.add_argument("--noise-scale",     type=float, default=5.0)
@@ -1039,6 +1127,7 @@ def main():
     n_clients = int(args.clients)
     n_byz     = max(1, int(n_clients * args.byzantine_ratio))
     rounds    = int(args.rounds)
+    run_seed  = resolve_run_seed(args.seed, args.run_seed)
 
     algos   = ['fedavg', 'multi_krum', 'trimmed_mean', 'fltrust', 'tasl']
     attacks = ['label_flip', 'sign_flip', 'gaussian_noise', 'fgsm', 'pgd', 'cw']
@@ -1062,6 +1151,7 @@ def main():
     print(f"  v3: unified data-layer detection (loss + grad_norm)")
     print(f"  Algorithms: {algos}")
     print(f"  Attacks: {attacks}")
+    print(f"  Seeds: partition={args.seed}, run={run_seed}")
     print(f"  Device: {device}")
     print("=" * 70)
 
@@ -1086,7 +1176,7 @@ def main():
             n_clients=n_clients, n_byz=0,
             rounds=rounds, device=device,
             local_epochs=int(args.local_epochs), lr=float(args.lr),
-            seed=args.seed,
+            seed=run_seed,
         )
         print(f"  Clean: best={clean_result['best_acc']:.2f}%, avg={clean_result['avg_acc']:.2f}%")
 
@@ -1105,7 +1195,7 @@ def main():
                 n_clients=n_clients, n_byz=n_byz,
                 rounds=rounds, device=device,
                 local_epochs=int(args.local_epochs), lr=float(args.lr),
-                seed=args.seed + hash(algo + attack) % 1000,
+                seed=run_seed,
                 noise_scale=float(args.noise_scale),
             )
             all_results[algo][attack] = result
