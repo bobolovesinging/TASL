@@ -1,0 +1,398 @@
+{
+  "all_current_table_figure_labels": 26,
+  "records": [
+    {
+      "label": "tab:comprehensive_comparison",
+      "manuscript_line": 216,
+      "evidence_scope": "literature comparison; no measured numeric baseline",
+      "sources": [
+        {
+          "path": "manuscript/references.bib",
+          "kind": "file",
+          "sha256": "88adc9df32d67fe4c9100012a78115f6d5a724e5775b7ea9b30f6f2de7eb21a1"
+        }
+      ]
+    },
+    {
+      "label": "fig:system_model",
+      "manuscript_line": 301,
+      "evidence_scope": "protocol schematic; DKG/IPFS architecture not a deployment measurement",
+      "sources": [
+        {
+          "path": "manuscript/Figure_1_TASL.pdf",
+          "kind": "file",
+          "sha256": "e892e46241276d6174250f6d11b01f50538d5041b214c63d9c55a7d64fcf7835"
+        }
+      ]
+    },
+    {
+      "label": "tab:robustness_combined",
+      "manuscript_line": 736,
+      "evidence_scope": "partially verified historical main table; missing original traces outside indexed CIFAR LF",
+      "sources": [
+        {
+          "path": "r4_tasl_experiments_20260921/legacy_main_sources_20261002/workbook_validation.json",
+          "kind": "file",
+          "sha256": "73a9ed8ea88b7dff4e937aed93ec2a992ed64df3bb2b575cbd00bd5e59d65d9a"
+        }
+      ]
+    },
+    {
+      "label": "tab:ratio_sweep",
+      "manuscript_line": 772,
+      "evidence_scope": "CIFAR workbook extract verified; complete MNIST/Fashion trace provenance remains missing",
+      "sources": [
+        {
+          "path": "r4_tasl_experiments_20260921/legacy_main_sources_20261002/workbook_validation.json",
+          "kind": "file",
+          "sha256": "73a9ed8ea88b7dff4e937aed93ec2a992ed64df3bb2b575cbd00bd5e59d65d9a"
+        }
+      ]
+    },
+    {
+      "label": "tab:governance",
+      "manuscript_line": 853,
+      "evidence_scope": "legacy saved precision verified, not final-protocol experiments",
+      "sources": [
+        {
+          "path": "r4_tasl_experiments_20260921/legacy_sources_20261002/validation.json",
+          "kind": "file",
+          "sha256": "170dccc03b362dcad5f8745c0b211261ca3eb0103bdbcb1281c883b7c89e5183"
+        },
+        {
+          "path": "docx_qa/validate_legacy_sources_20261002.py",
+          "kind": "file",
+          "sha256": "4af745713fba69d42c26e035077f224be3bf84718ad52d6d48b66075b7c3d3d8"
+        }
+      ]
+    },
+    {
+      "label": "tab:governance_40",
+      "manuscript_line": 886,
+      "evidence_scope": "legacy saved precision verified; some CIFAR reconstructed from different historical logs",
+      "sources": [
+        {
+          "path": "r4_tasl_experiments_20260921/legacy_sources_20261002/validation.json",
+          "kind": "file",
+          "sha256": "170dccc03b362dcad5f8745c0b211261ca3eb0103bdbcb1281c883b7c89e5183"
+        },
+        {
+          "path": "docx_qa/validate_legacy_sources_20261002.py",
+          "kind": "file",
+          "sha256": "4af745713fba69d42c26e035077f224be3bf84718ad52d6d48b66075b7c3d3d8"
+        }
+      ]
+    },
+    {
+      "label": "tab:storage_growth",
+      "manuscript_line": 923,
+      "evidence_scope": "metadata-only analytical estimate, not measured physical IPFS storage",
+      "sources": [
+        {
+          "path": "manuscript/main.tex",
+          "kind": "file",
+          "sha256": "a678b509363487a04c60e51e87e9e9981be603c17025abcbc1e6be4193b14b9f"
+        }
+      ]
+    },
+    {
+      "label": "tab:semantic_retention",
+      "manuscript_line": 1039,
+      "evidence_scope": "serialized three-round replay extrapolated to the displayed retention horizons",
+      "sources": [
+        {
+          "path": "r4_tasl_experiments_20260921/storage_replay/results/semantic_retention_summary.json",
+          "kind": "file",
+          "sha256": "c4482f43f014276552062e341fa86d8232302ab3560050ff53c504ae365e9cb0"
+        },
+        {
+          "path": "r4_tasl_experiments_20260921/storage_replay/semantic_retention_analysis.py",
+          "kind": "file",
+          "sha256": "4cb5555949463d2caf319872466e38981b4d7e03564f7f61c00b9f112ba704d4"
+        }
+      ]
+    },
+    {
+      "label": "tab:gas_analysis",
+      "manuscript_line": 1063,
+      "evidence_scope": "analytical gas estimate; no executable deployed-contract benchmark",
+      "sources": [
+        {
+          "path": "manuscript/main.tex",
+          "kind": "file",
+          "sha256": "a678b509363487a04c60e51e87e9e9981be603c17025abcbc1e6be4193b14b9f"
+        }
+      ]
+    },
+    {
+      "label": "tab:appendix_tas_final",
+      "manuscript_line": 1154,
+      "evidence_scope": "final fixed-participation single-seed audit CSVs",
+      "sources": [
+        {
+          "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/no_exclusion_20260929",
+          "kind": "directory",
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "label": "tab:appendix_tas_recovery",
+      "manuscript_line": 1177,
+      "evidence_scope": "paired state checks in the same final audit CSVs",
+      "sources": [
+        {
+          "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/no_exclusion_20260929",
+          "kind": "directory",
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "label": "tab:appendix_cifar_final",
+      "manuscript_line": 1210,
+      "evidence_scope": "CIFAR final single-seed audit CSVs",
+      "sources": [
+        {
+          "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results",
+          "kind": "directory",
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "label": "tab:tas_five_seed",
+      "manuscript_line": 1243,
+      "evidence_scope": "five-seed Full TAS/reference validation",
+      "sources": [
+        {
+          "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/validation.json",
+          "kind": "file",
+          "sha256": "181be7d9f3d92368fd70dad5ceb0dedf6c50380e42bcf26b75caf4faac27b871"
+        },
+        {
+          "path": "r4_tasl_experiments_20260921/final_protocol_20260928/validate_fashion_fixed_five_seed.py",
+          "kind": "file",
+          "sha256": "cc41c045cfa0a35f6a021d5a43751f67bf2d62391483c72ffeb5b384d1040448"
+        }
+      ]
+    },
+    {
+      "label": "tab:tas_single_five_seed",
+      "manuscript_line": 1263,
+      "evidence_scope": "five-seed single-auditor validation",
+      "sources": [
+        {
+          "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/validation.json",
+          "kind": "file",
+          "sha256": "2c7c7446c57cd80d024bf0f9b1c3a90664cf37832804eaaed6873fc03d5c3fbc"
+        },
+        {
+          "path": "r4_tasl_experiments_20260921/final_protocol_20260928/validate_single_auditor_five_seed.py",
+          "kind": "file",
+          "sha256": "e8f2cb675b7fe7935797320c86ea6ab05b973d41b2b59ae3dbab7454525866b3"
+        }
+      ]
+    },
+    {
+      "label": "tab:appendix_v1_sensitivity",
+      "manuscript_line": 1297,
+      "evidence_scope": "captured-update component grid, not independent training seeds",
+      "sources": [
+        {
+          "path": "r4_tasl_experiments_20260921/audit_replay/results_refined_thresholds_20260923",
+          "kind": "directory",
+          "sha256": null
+        },
+        {
+          "path": "r4_tasl_experiments_20260921/audit_replay/refined_threshold_sensitivity.py",
+          "kind": "file",
+          "sha256": "322ee593aa0da4556e679e1cf489acc4903a708cedd7ec8c5d57623872f2c5d0"
+        }
+      ]
+    },
+    {
+      "label": "tab:appendix_v2_sensitivity",
+      "manuscript_line": 1333,
+      "evidence_scope": "captured-update component grid, not deployment proof",
+      "sources": [
+        {
+          "path": "r4_tasl_experiments_20260921/audit_replay/results_refined_thresholds_20260923",
+          "kind": "directory",
+          "sha256": null
+        },
+        {
+          "path": "r4_tasl_experiments_20260921/audit_replay/refined_threshold_sensitivity.py",
+          "kind": "file",
+          "sha256": "322ee593aa0da4556e679e1cf489acc4903a708cedd7ec8c5d57623872f2c5d0"
+        }
+      ]
+    },
+    {
+      "label": "tab:principal_five_seed",
+      "manuscript_line": 1375,
+      "evidence_scope": "five-seed matched learning, offline statistical regeneration",
+      "sources": [
+        {
+          "path": "r4_tasl_experiments_20260921/principal_5seed/aggregate_summary.csv",
+          "kind": "file",
+          "sha256": "7ca763f65c76258a9e78179c66694ad7f534c4dd49d9615519d704797b22b2ee"
+        },
+        {
+          "path": "docx_qa/verify_local_reproduction_20261002.py",
+          "kind": "file",
+          "sha256": "a22299e02e33788580dfc5adb00a4f24943d22aa7ad96c5a5f5e0904fc2cb317"
+        }
+      ]
+    },
+    {
+      "label": "tab:client_weight_distribution",
+      "manuscript_line": 1404,
+      "evidence_scope": "full client-round distribution with zero weights included",
+      "sources": [
+        {
+          "path": "r4_tasl_experiments_20260921/principal_5seed/results",
+          "kind": "directory",
+          "sha256": null
+        },
+        {
+          "path": "r4_tasl_experiments_20260921/principal_5seed/summarize_5seed.py",
+          "kind": "file",
+          "sha256": "162a693465d6910199328152354df0ac8f51e673e8cd81d4c8d18c54c4892e41"
+        }
+      ]
+    },
+    {
+      "label": "fig:principal_uncertainty",
+      "manuscript_line": 1428,
+      "evidence_scope": "five-seed mean/SD curves, coordinates verified",
+      "sources": [
+        {
+          "path": "r4_tasl_experiments_20260921/principal_5seed/aggregate_curves.csv",
+          "kind": "file",
+          "sha256": "a20d6a8b2edd46c09c700cfa82d452fa5ffb8fd890c134245daf2cca4141b72d"
+        },
+        {
+          "path": "docx_qa/r4_continue_20260929/principal_uncertainty.tex",
+          "kind": "file",
+          "sha256": "2cc1cdbd4731b5e2e921c45a8a98d3443991221f85d29c798afc0015045b94de"
+        }
+      ]
+    },
+    {
+      "label": "tab:appendix_trust_sensitivity",
+      "manuscript_line": 1447,
+      "evidence_scope": "single-seed EMA/min-cosine parameter runs",
+      "sources": [
+        {
+          "path": "r4_tasl_experiments_20260921/ema_sensitivity/results",
+          "kind": "directory",
+          "sha256": null
+        },
+        {
+          "path": "r4_tasl_experiments_20260921/principal_5seed/threshold_results",
+          "kind": "directory",
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "label": "tab:appendix_scale",
+      "manuscript_line": 1469,
+      "evidence_scope": "single-seed client scale/Dirichlet tests",
+      "sources": [
+        {
+          "path": "r4_tasl_experiments_20260921/alpha_sweep/results",
+          "kind": "directory",
+          "sha256": null
+        },
+        {
+          "path": "r4_tasl_experiments_20260921/principal_5seed",
+          "kind": "directory",
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "label": "tab:appendix_component_cost",
+      "manuscript_line": 1497,
+      "evidence_scope": "GPU tensor timings and linear CKKS projections, not networking",
+      "sources": [
+        {
+          "path": "r4_tasl_experiments_20260921/crypto_system/system_results/component_timing.csv",
+          "kind": "file",
+          "sha256": "b866ee9bbe4d58747989eccd8e0cbae3c3d3f50caf4fbacf73376ef2d580fea2"
+        },
+        {
+          "path": "r4_tasl_experiments_20260921/crypto_system/results/client_scaling_projection.csv",
+          "kind": "file",
+          "sha256": "4896f45515b1c433e39c192361a65242a9eae53ddaed164f53f8747a990313e7"
+        }
+      ]
+    },
+    {
+      "label": "tab:local_recovery_cost",
+      "manuscript_line": 1523,
+      "evidence_scope": "controlled CPU subpath timing, fixed captured weights",
+      "sources": [
+        {
+          "path": "r4_tasl_experiments_20260921/crypto_system/results/controlled_blas1_three_rounds_20261002.json",
+          "kind": "file",
+          "sha256": "bb3ff3d98a62ade4908980daab44d23d4204711efedfc6bb113f8c4593fab47e"
+        },
+        {
+          "path": "r4_tasl_experiments_20260921/crypto_system/results/controlled_blas1_three_rounds_repeat_20261002.json",
+          "kind": "file",
+          "sha256": "2c2bcf1f2a77f480342586cc45947f53286bd9f0c99e3701bc912a546057390b"
+        }
+      ]
+    },
+    {
+      "label": "tab:minmax_stress",
+      "manuscript_line": 1552,
+      "evidence_scope": "single-seed negative stress finding, not evidence of robust performance",
+      "sources": [
+        {
+          "path": "r4_tasl_experiments_20260921/minmax_20261002",
+          "kind": "directory",
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "label": "tab:fixed_constant_sensitivity",
+      "manuscript_line": 1576,
+      "evidence_scope": "ten single-seed LF scans, defaults unchanged",
+      "sources": [
+        {
+          "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/trust_sweep/validation.json",
+          "kind": "file",
+          "sha256": "05d2b0ff1efc09123f92c5f6b520e3ff7384a351dacc72a83f78a55b4c7d4d9c"
+        },
+        {
+          "path": "docx_qa/validate_trust_sweep_20261002.py",
+          "kind": "file",
+          "sha256": "5f3eb71547a00b0896cce707983e0f28b2443b220fda79efe1938196f777f79b"
+        }
+      ]
+    },
+    {
+      "label": "tab:recent_baseline",
+      "manuscript_line": 1612,
+      "evidence_scope": "six matched single-seed trajectories; LASA author aggregation",
+      "sources": [
+        {
+          "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/validation.json",
+          "kind": "file",
+          "sha256": "fdad281b8dcfa4ed59923b5dcef50d47592269d9f7037a4b24fe39f6866722f3"
+        },
+        {
+          "path": "docx_qa/validate_recent_baseline_20261002.py",
+          "kind": "file",
+          "sha256": "b028160e7e550fecb9bed11ed41fd3da994149901148585bb45d2a565d4f351b"
+        }
+      ]
+    }
+  ],
+  "scope": "Every current artifact indexed; an index is not full original-trace recovery or all-table regeneration."
+}

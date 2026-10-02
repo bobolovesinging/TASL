@@ -1,0 +1,19 @@
+{
+  "comment": "R4.6",
+  "state": "completed",
+  "gpu": 1,
+  "attack": "anchor_norm",
+  "maximum_core_temperature_C": 66,
+  "thermal_rule": ">=86 C immediately or >=82 C for three consecutive five-second samples",
+  "started_utc": "2026-10-02T10:32:05.537496+00:00",
+  "command": [
+    "/home/njit/tof/envs/tof-depthcad/bin/python",
+    "-u",
+    "/home/njit/tasl_recent_baseline_20261002/run_trust_sweep.py",
+    "--group",
+    "anchor_norm"
+  ],
+  "pid": 3675088,
+  "exit_code": 0,
+  "finished_utc": "2026-10-02T10:36:01.754707+00:00"
+}

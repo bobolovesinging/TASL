@@ -1,0 +1,16 @@
+{
+  "seeds": [
+    42,
+    123,
+    2024,
+    3407,
+    7711
+  ],
+  "training_combinations": 30,
+  "round_records": 1500,
+  "expected_training_combinations": 30,
+  "expected_round_records": 1500,
+  "all_finite": true,
+  "complete_marker": true,
+  "source_sha256": "8f4c447acab1f78e750592825643954dcf9ed8ba7402c907ca2cafe272a2ef83"
+}

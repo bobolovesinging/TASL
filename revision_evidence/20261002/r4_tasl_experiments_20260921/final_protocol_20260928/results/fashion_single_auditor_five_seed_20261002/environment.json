@@ -1,0 +1,13 @@
+{
+  "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]",
+  "platform": "Linux-6.17.0-14-generic-x86_64-with-glibc2.39",
+  "hostname": "njit-506-1",
+  "torch": "2.5.1+cu121",
+  "torchvision": "0.20.1+cu121",
+  "numpy": "1.26.4",
+  "yaml": "6.0.3",
+  "torch_cuda": "12.1",
+  "cudnn": 90100,
+  "gpus": "0, NVIDIA GeForce RTX 3090, GPU-49a33b24-87b4-1a37-5a30-b18f37295b12, 535.288.01\n1, NVIDIA GeForce RTX 3090, GPU-eb98ab21-a9df-bb46-7077-2c3efa470dea, 535.288.01\n",
+  "scope": "Reproduction record captured during existing runs; does not establish public release or recover original submitted table sources."
+}

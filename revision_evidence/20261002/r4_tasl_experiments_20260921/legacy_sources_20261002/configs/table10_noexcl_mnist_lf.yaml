@@ -1,0 +1,43 @@
+experiment:
+  name: table10_noexcl_mnist_lf
+  seed: 42
+  rounds: 50
+  clients: 10
+  byzantine_ratio: 0.3
+  local_epochs: 2
+  lr: 0.02
+  momentum: 0.0
+  weight_decay: 0.0
+  batch_size: 128
+
+data:
+  dataset: mnist
+  alpha: 0.3
+
+client_attack:
+  type: label_flip
+
+executor_attack:
+  type: mixed12
+  attacks_per_block: 6
+  chaos_seed: 2026
+
+tas:
+  ema_alpha: 0.7
+  trust_power: 5.0
+  max_weight_ratio: 1.5
+  exclusion: false
+  v1_sample_dim_ratio: 0.3
+  v2_sample_client_ratio: 0.3
+  tolerance: 1.0e-4
+
+groups:
+  - noexecutor
+  - fedavg
+  - trust_only
+  - trust_v1
+  - trust_v2
+  - trust_v1v2
+
+output:
+  dir: results/table10_noexcl/mnist_lf

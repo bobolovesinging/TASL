@@ -1,0 +1,12 @@
+[
+  {
+    "attack": "lf",
+    "gpu": 0,
+    "supervisor_pid": 3667906
+  },
+  {
+    "attack": "scaling",
+    "gpu": 1,
+    "supervisor_pid": 3667907
+  }
+]

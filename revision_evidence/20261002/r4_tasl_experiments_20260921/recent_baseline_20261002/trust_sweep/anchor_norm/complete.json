@@ -1,0 +1,11 @@
+{
+  "comment": "R4.6",
+  "rounds": 50,
+  "seed": 42,
+  "cases": 4,
+  "source_sha256": "8f4c447acab1f78e750592825643954dcf9ed8ba7402c907ca2cafe272a2ef83",
+  "default_transform_equivalence": true,
+  "only_one_factor_varied": true,
+  "clean_training_not_scanned": true,
+  "no_test_set_selection": true
+}

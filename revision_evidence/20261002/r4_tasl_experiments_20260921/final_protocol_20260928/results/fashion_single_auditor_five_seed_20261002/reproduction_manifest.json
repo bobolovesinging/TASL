@@ -1,0 +1,146 @@
+{
+  "source_files": [
+    {
+      "path": "core/model.py",
+      "sha256": "641d88652fb246e0e2e83dd6e9c1d1b9515ea8fc8d92121431cd81eb2a8fd045"
+    },
+    {
+      "path": "scripts/exp2/exp2_run.py",
+      "sha256": "a87aeb3dc0893d90ead10f26ba9f643faa97ce82b1efa228c8305596b93c420d"
+    },
+    {
+      "path": "scripts/exp3/exp3_governance_tasv2.py",
+      "sha256": "f71067a01c7af357c664306aed944a64c440e53df537a0f2f7e8f0311311e987"
+    }
+  ],
+  "dataset_files": [
+    {
+      "path": "data/temp/FashionMNIST/raw/t10k-images-idx3-ubyte",
+      "bytes": 7840016,
+      "sha256": "5b4141f0afbad91edebe8549f8fcffe087ea10ca49f1dbef5c9a5cd8815ce37b"
+    },
+    {
+      "path": "data/temp/FashionMNIST/raw/t10k-images-idx3-ubyte.gz",
+      "bytes": 4422102,
+      "sha256": "346e55b948d973a97e58d2351dde16a484bd415d4595297633bb08f03db6a073"
+    },
+    {
+      "path": "data/temp/FashionMNIST/raw/t10k-labels-idx1-ubyte",
+      "bytes": 10008,
+      "sha256": "0402a96d92fd2663957122ceb108a494c5af83dab82d92729df917d7dec38c34"
+    },
+    {
+      "path": "data/temp/FashionMNIST/raw/t10k-labels-idx1-ubyte.gz",
+      "bytes": 5148,
+      "sha256": "67da17c76eaffca5446c3361aaab5c3cd6d1c2608764d35dfb1850b086bf8dd5"
+    },
+    {
+      "path": "data/temp/FashionMNIST/raw/train-images-idx3-ubyte",
+      "bytes": 47040016,
+      "sha256": "c59f468a2f672dc815687fe0f83887768d799fd8a3f3276145d20f83aa44d888"
+    },
+    {
+      "path": "data/temp/FashionMNIST/raw/train-images-idx3-ubyte.gz",
+      "bytes": 26421880,
+      "sha256": "3aede38d61863908ad78613f6a32ed271626dd12800ba2636569512369268a84"
+    },
+    {
+      "path": "data/temp/FashionMNIST/raw/train-labels-idx1-ubyte",
+      "bytes": 60008,
+      "sha256": "bad3541b69d912435c50bb6ba87bec294ff4f6a2e1246121d8633921760443d9"
+    },
+    {
+      "path": "data/temp/FashionMNIST/raw/train-labels-idx1-ubyte.gz",
+      "bytes": 29515,
+      "sha256": "a04f17134ac03560a47e3764e11b92fc97de4d1bfaf8ba1a3aa29af54cc90845"
+    }
+  ],
+  "partitions": [
+    {
+      "seed": 42,
+      "file": "partition_seed42.json",
+      "sha256": "eb9be7fc67f0ac67608ebc821a6c030c66e9acd2cc97f2731299114be5cee0d0",
+      "client_sizes": [
+        11644,
+        6656,
+        3265,
+        6728,
+        6294,
+        1718,
+        10565,
+        4387,
+        7655,
+        1088
+      ]
+    },
+    {
+      "seed": 123,
+      "file": "partition_seed123.json",
+      "sha256": "9aa501b5f5c35c0ab2331922aad2ea081f6b66234d9cd505d5fe2070db35f596",
+      "client_sizes": [
+        7805,
+        3448,
+        2938,
+        3078,
+        10546,
+        4532,
+        5473,
+        7350,
+        5573,
+        9257
+      ]
+    },
+    {
+      "seed": 2024,
+      "file": "partition_seed2024.json",
+      "sha256": "1193755b4fdcab4a740148dccc14eabea474c0477ce533995cebb5e27400e921",
+      "client_sizes": [
+        9703,
+        726,
+        1063,
+        7844,
+        2446,
+        3464,
+        11849,
+        7762,
+        8970,
+        6173
+      ]
+    },
+    {
+      "seed": 3407,
+      "file": "partition_seed3407.json",
+      "sha256": "44e7b521cc9e48eeb387aa298b39c2cdcbad45d8c4e1d56273dd95e96acf4fa8",
+      "client_sizes": [
+        3474,
+        3287,
+        3198,
+        10200,
+        3231,
+        1791,
+        8706,
+        12883,
+        5216,
+        8014
+      ]
+    },
+    {
+      "seed": 7711,
+      "file": "partition_seed7711.json",
+      "sha256": "bec65e8ab3a1ba81c1c6060212b1ba1a62df2cbba896034e4f710e816ee98894",
+      "client_sizes": [
+        9642,
+        6509,
+        5329,
+        3724,
+        7748,
+        10079,
+        6202,
+        7668,
+        142,
+        2957
+      ]
+    }
+  ],
+  "partition_capture": "Rebuilt from unchanged source and training seed; not directly emitted by the training process."
+}

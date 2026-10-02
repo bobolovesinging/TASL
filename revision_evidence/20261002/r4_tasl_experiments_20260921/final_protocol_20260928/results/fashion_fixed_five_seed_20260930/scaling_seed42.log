@@ -1,0 +1,55 @@
+======================================================================
+TAS Governance v2 Experiment [table11_fashion_scaling]
+======================================================================
+  Config: /home/njit/tasl_fashion_tas_5seed_20260930/configs/fashion_scaling_seed42.yaml
+  Dataset: fashionmnist, 10 clients, 4 Byzantine (scaling)
+  Rounds: 50, Local epochs: 2
+  LR: 0.02, Momentum: 0.0, Weight decay: 0.0
+  Batch size: 128, Dirichlet alpha: 0.3
+  Seed: 42, Device: cuda
+  EMA alpha: 0.7, Trust cos^power: 5.0
+  V1 dim sample: 0.3, V2 client sample: 0.3
+  Tolerance: 1e-06
+  cudnn.deterministic: True
+
+======================================================================
+  Executor Attack: mixed12
+======================================================================
+
+--- mixed12 1/2: noexecutor ---
+[noexecutor] r01 | atk=False | ok=1 heal=0 | acc=37.14%
+[noexecutor] r10 | atk=False | ok=1 heal=0 | acc=71.55%
+[noexecutor] r20 | atk=False | ok=1 heal=0 | acc=76.01%
+[noexecutor] r30 | atk=False | ok=1 heal=0 | acc=77.35%
+[noexecutor] r40 | atk=False | ok=1 heal=0 | acc=76.54%
+[noexecutor] r50 | atk=False | ok=1 heal=0 | acc=80.95%
+  => best_acc=83.86%, avg_acc=74.42%
+  [snapshot] Saved: /home/njit/tasl_fashion_tas_5seed_20260930/results/scaling_seed42/tasv2_mixed12_r50_b4.csv
+  [snapshot] Saved: /home/njit/tasl_fashion_tas_5seed_20260930/results/scaling_seed42/tasv2_summary.csv
+
+--- mixed12 2/2: trust_v1v2 ---
+[trust_v1v2] r01 | atk=False | V1_t=0,a=0 | V2_t=0,a=0 | ok=1 heal=0 | acc=37.14%
+[trust_v1v2] r10 | atk=True | V1_t=0,a=1 | V2_t=0,a=1 | ok=0 heal=1 | acc=71.55%
+[trust_v1v2] r20 | atk=True | V1_t=0,a=1 | V2_t=0,a=1 | ok=0 heal=1 | acc=76.01%
+[trust_v1v2] r30 | atk=False | V1_t=0,a=0 | V2_t=0,a=0 | ok=1 heal=0 | acc=77.35%
+[trust_v1v2] r40 | atk=True | V1_t=1,a=0 | V2_t=1,a=0 | ok=0 heal=1 | acc=76.54%
+[trust_v1v2] r50 | atk=False | V1_t=0,a=0 | V2_t=0,a=0 | ok=1 heal=0 | acc=80.95%
+  => best_acc=83.86%, avg_acc=74.42%
+  [snapshot] Saved: /home/njit/tasl_fashion_tas_5seed_20260930/results/scaling_seed42/tasv2_mixed12_r50_b4.csv
+  [snapshot] Saved: /home/njit/tasl_fashion_tas_5seed_20260930/results/scaling_seed42/tasv2_summary.csv
+
+======================================================================
+ TAS Governance v2 Summary: Executor Attack = mixed12
+======================================================================
+Group                  Best      Avg   V1_t   V1_a   V2_t   V2_a  Blocked Interc%
+-------------------------------------------------------------------------------------
+noexecutor            83.86    74.42      0      0      0      0        0    0.0%
+trust_v1v2            83.86    74.42     10     20      8     20       30  100.0%
+
+  TAS Heal Sources: V1=2, V2=0, V1+V2=28
+  [snapshot] Saved: /home/njit/tasl_fashion_tas_5seed_20260930/results/scaling_seed42/tasv2_mixed12_r50_b4.csv
+  [snapshot] Saved: /home/njit/tasl_fashion_tas_5seed_20260930/results/scaling_seed42/tasv2_summary.csv
+
+======================================================================
+ Experiment complete.
+======================================================================

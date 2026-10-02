@@ -1,0 +1,21 @@
+{
+  "comment": "R4.8",
+  "state": "completed",
+  "gpu": 0,
+  "attack": "none",
+  "maximum_core_temperature_C": 67,
+  "thermal_rule": ">=86 C immediately or >=82 C for three consecutive five-second samples",
+  "started_utc": "2026-10-02T10:26:44.706659+00:00",
+  "command": [
+    "/home/njit/tof/envs/tof-depthcad/bin/python",
+    "-u",
+    "/home/njit/tasl_recent_baseline_20261002/run_matched.py",
+    "--attack",
+    "none",
+    "--output",
+    "/home/njit/tasl_recent_baseline_20261002/results/none"
+  ],
+  "pid": 3674308,
+  "exit_code": 0,
+  "finished_utc": "2026-10-02T10:29:30.501391+00:00"
+}
