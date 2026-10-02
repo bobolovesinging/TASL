@@ -1,0 +1,6 @@
+algo,attack,dataset,alpha,byzantine_ratio,best_acc,avg_acc,last_acc,asr
+fedavg,label_flip,cifar10,0.3,0.1,80.01,55.70565,80.01,9.771550000000001
+multi_krum,label_flip,cifar10,0.3,0.1,79.8,53.2817,79.8,11.016100000000002
+trimmed_mean,label_flip,cifar10,0.3,0.1,82.29,58.614349999999995,82.29,8.929400000000001
+fltrust,label_flip,cifar10,0.3,0.1,82.14,59.58,81.62,9.212850000000001
+tasl,label_flip,cifar10,0.3,0.1,81.92,59.50785,81.92,8.7487
