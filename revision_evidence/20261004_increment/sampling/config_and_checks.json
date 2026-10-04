@@ -1,0 +1,54 @@
+{
+  "purpose": [
+    "R4.6: client-sampling-budget sensitivity",
+    "R4.13: partial component evidence only"
+  ],
+  "frozen_source": "final_protocol_20260928\\scripts\\exp3\\exp3_governance_tasv2.py",
+  "source_sha256": "f71067a01c7af357c664306aed944a64c440e53df537a0f2f7e8f0311311e987",
+  "captured_training_seed": 42,
+  "captures": [
+    {
+      "file": "audit_replay\\audit_inputs\\round_001.npz",
+      "sha256": "dc2278b9798135164335a7d8db03c76f5fdee85e3286f130e0e59c306d66b627"
+    },
+    {
+      "file": "audit_replay\\audit_inputs\\round_002.npz",
+      "sha256": "cb4565003706066091fa07da1c1f6985a212c1fd8da4780a02377e1741998eb3"
+    },
+    {
+      "file": "audit_replay\\audit_inputs\\round_003.npz",
+      "sha256": "4fd36b0d82bdb3ee205dd744e90f37d37b38741100d81038251364683c71402e"
+    }
+  ],
+  "clients": 10,
+  "sampling_counts": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "changed_weight_counts": [
+    2,
+    4,
+    6
+  ],
+  "transfer_per_pair": 0.01,
+  "method": "Enumerate every size-k subset via a controlled RNG hook in the unchanged frozen function.",
+  "exclusion": "No training, aggregate verification, recovery, distributed execution, or adaptive-attacker claim.",
+  "np_version": "2.3.5",
+  "raw_subset_rows": 9207,
+  "summary_rows": 90,
+  "timing_rows": 6030,
+  "timing_scope": "CPU weight comparisons and RNG only; fresh trust inputs already supplied. Not full VP cost.",
+  "files": {
+    "subsets.csv": "afb417c161cec10aad50cfb47e6e7991388a9709d078165a5bc7ea503e7def61",
+    "summary.csv": "9059cfd83b57a6fc9c67df87dab6cfae59a7f52b7d29f79b724744091ce19e22",
+    "timings.csv": "c5a1e432f878a595075a0cbfea763c99c27353350151b2c0eadd3c1899a5bae1"
+  }
+}

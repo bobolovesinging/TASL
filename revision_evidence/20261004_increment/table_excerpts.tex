@@ -1,0 +1,47 @@
+% Numerical table excerpts only; not a complete or compilable manuscript.
+
+\begin{table}[t]
+\color{red}
+\centering
+\caption{Semantics-aware local plaintext-retention replay at round 50 ($M=5$).}
+\label{tab:semantic_retention}
+\small
+\setlength{\tabcolsep}{3.5pt}
+\renewcommand{\arraystretch}{1.16}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrr@{}}
+\toprule
+Policy & Active bytes & Evidence coverage \\
+\midrule
+Full retention & 1,281,155,700 & 50/50 (100\%) \\
+Uniform window pruning & 118,798,594 & 5/50 (10\%) \\
+HBS semantic tiers & 118,862,944 & 50/50 (100\%) \\
+Matched semantic checkpoint--prune & 118,862,944 & 50/50 (100\%) \\
+\bottomrule
+\end{tabular*}
+\end{table}
+
+\noindent\begin{minipage}{\textwidth}
+\refstepcounter{table}\label{tab:vp_sampling_sensitivity}
+\textbf{Table~\thetable}\\
+\revRfour{Client-sampling sensitivity of the $V_{\mathrm{P}}$ weight cross-check. Percentages enumerate all subsets in each captured round and agree across the three rounds. These are component detection rates, not whole-protocol interception rates or additional training seeds.}
+\par\smallskip\centering\small
+\setlength{\tabcolsep}{7pt}
+\begingroup\color{red}
+\begin{tabular}{lrrrr}
+\toprule
+Sample & Ratio (\%) & $m=2$ (\%) & $m=4$ (\%) & $m=6$ (\%) \\
+\midrule
+1/10 & 10 & 20.00 & 40.00 & 60.00 \\
+2/10 & 20 & 37.78 & 66.67 & 86.67 \\
+3/10 & 30 & 53.33 & 83.33 & 96.67 \\
+4/10 & 40 & 66.67 & 92.86 & 99.52 \\
+5/10 & 50 & 77.78 & 97.62 & 100.00 \\
+6/10 & 60 & 86.67 & 99.52 & 100.00 \\
+7/10 & 70 & 93.33 & 100.00 & 100.00 \\
+8/10 & 80 & 97.78 & 100.00 & 100.00 \\
+9/10 & 90 & 100.00 & 100.00 & 100.00 \\
+10/10 & 100 & 100.00 & 100.00 & 100.00 \\
+\bottomrule
+\end{tabular}
+\endgroup
+\end{minipage}

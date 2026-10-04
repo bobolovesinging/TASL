@@ -1,0 +1,3874 @@
+{
+  "validation": "passed",
+  "comments": [
+    "R4.10",
+    "R4.15"
+  ],
+  "workbook_filename": "cifar10_3seed_sweep.xlsx",
+  "workbook_sha256": "8a5caac1fd1cf2b6222a6d4c6409d6ccb399ee30061aa684e9467c49f4fb408f",
+  "seed_level_records": [
+    {
+      "algorithm": "FedAvg",
+      "ratio_percent": 10,
+      "seed": 42,
+      "best": 80.01,
+      "avg": 55.71,
+      "asr": 9.77,
+      "source_cells": {
+        "best": "'All Seeds Data'!D4",
+        "avg": "'All Seeds Data'!E4",
+        "asr": "'All Seeds Data'!F4"
+      }
+    },
+    {
+      "algorithm": "FedAvg",
+      "ratio_percent": 10,
+      "seed": 123,
+      "best": 85.1,
+      "avg": 63.37,
+      "asr": 6.47,
+      "source_cells": {
+        "best": "'All Seeds Data'!D5",
+        "avg": "'All Seeds Data'!E5",
+        "asr": "'All Seeds Data'!F5"
+      }
+    },
+    {
+      "algorithm": "FedAvg",
+      "ratio_percent": 10,
+      "seed": 2024,
+      "best": 85.93,
+      "avg": 70.64,
+      "asr": 5.08,
+      "source_cells": {
+        "best": "'All Seeds Data'!D6",
+        "avg": "'All Seeds Data'!E6",
+        "asr": "'All Seeds Data'!F6"
+      }
+    },
+    {
+      "algorithm": "FedAvg",
+      "ratio_percent": 20,
+      "seed": 42,
+      "best": 79.94,
+      "avg": 60.46,
+      "asr": 10.65,
+      "source_cells": {
+        "best": "'All Seeds Data'!D8",
+        "avg": "'All Seeds Data'!E8",
+        "asr": "'All Seeds Data'!F8"
+      }
+    },
+    {
+      "algorithm": "FedAvg",
+      "ratio_percent": 20,
+      "seed": 123,
+      "best": 82.07,
+      "avg": 61.67,
+      "asr": 8.59,
+      "source_cells": {
+        "best": "'All Seeds Data'!D9",
+        "avg": "'All Seeds Data'!E9",
+        "asr": "'All Seeds Data'!F9"
+      }
+    },
+    {
+      "algorithm": "FedAvg",
+      "ratio_percent": 20,
+      "seed": 2024,
+      "best": 81.95,
+      "avg": 65.73,
+      "asr": 6.49,
+      "source_cells": {
+        "best": "'All Seeds Data'!D10",
+        "avg": "'All Seeds Data'!E10",
+        "asr": "'All Seeds Data'!F10"
+      }
+    },
+    {
+      "algorithm": "FedAvg",
+      "ratio_percent": 30,
+      "seed": 42,
+      "best": 75.32,
+      "avg": 55.48,
+      "asr": 13.94,
+      "source_cells": {
+        "best": "'All Seeds Data'!D12",
+        "avg": "'All Seeds Data'!E12",
+        "asr": "'All Seeds Data'!F12"
+      }
+    },
+    {
+      "algorithm": "FedAvg",
+      "ratio_percent": 30,
+      "seed": 123,
+      "best": 77.72,
+      "avg": 54.41,
+      "asr": 13.17,
+      "source_cells": {
+        "best": "'All Seeds Data'!D13",
+        "avg": "'All Seeds Data'!E13",
+        "asr": "'All Seeds Data'!F13"
+      }
+    },
+    {
+      "algorithm": "FedAvg",
+      "ratio_percent": 30,
+      "seed": 2024,
+      "best": 79.08,
+      "avg": 61.31,
+      "asr": 9.66,
+      "source_cells": {
+        "best": "'All Seeds Data'!D14",
+        "avg": "'All Seeds Data'!E14",
+        "asr": "'All Seeds Data'!F14"
+      }
+    },
+    {
+      "algorithm": "FedAvg",
+      "ratio_percent": 40,
+      "seed": 42,
+      "best": 65.74,
+      "avg": 46.09,
+      "asr": 20.08,
+      "source_cells": {
+        "best": "'All Seeds Data'!D16",
+        "avg": "'All Seeds Data'!E16",
+        "asr": "'All Seeds Data'!F16"
+      }
+    },
+    {
+      "algorithm": "FedAvg",
+      "ratio_percent": 40,
+      "seed": 123,
+      "best": 70.06,
+      "avg": 53.45,
+      "asr": 17.63,
+      "source_cells": {
+        "best": "'All Seeds Data'!D17",
+        "avg": "'All Seeds Data'!E17",
+        "asr": "'All Seeds Data'!F17"
+      }
+    },
+    {
+      "algorithm": "FedAvg",
+      "ratio_percent": 40,
+      "seed": 2024,
+      "best": 82.26,
+      "avg": 68.26,
+      "asr": 9.59,
+      "source_cells": {
+        "best": "'All Seeds Data'!D18",
+        "avg": "'All Seeds Data'!E18",
+        "asr": "'All Seeds Data'!F18"
+      }
+    },
+    {
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 10,
+      "seed": 42,
+      "best": 79.8,
+      "avg": 53.28,
+      "asr": 11.02,
+      "source_cells": {
+        "best": "'All Seeds Data'!D21",
+        "avg": "'All Seeds Data'!E21",
+        "asr": "'All Seeds Data'!F21"
+      }
+    },
+    {
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 10,
+      "seed": 123,
+      "best": 79.4,
+      "avg": 57.51,
+      "asr": 9.14,
+      "source_cells": {
+        "best": "'All Seeds Data'!D22",
+        "avg": "'All Seeds Data'!E22",
+        "asr": "'All Seeds Data'!F22"
+      }
+    },
+    {
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 10,
+      "seed": 2024,
+      "best": 82.25,
+      "avg": 65.17,
+      "asr": 4.8,
+      "source_cells": {
+        "best": "'All Seeds Data'!D23",
+        "avg": "'All Seeds Data'!E23",
+        "asr": "'All Seeds Data'!F23"
+      }
+    },
+    {
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 20,
+      "seed": 42,
+      "best": 73.98,
+      "avg": 45.42,
+      "asr": 18.36,
+      "source_cells": {
+        "best": "'All Seeds Data'!D25",
+        "avg": "'All Seeds Data'!E25",
+        "asr": "'All Seeds Data'!F25"
+      }
+    },
+    {
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 20,
+      "seed": 123,
+      "best": 77.97,
+      "avg": 55.15,
+      "asr": 10.19,
+      "source_cells": {
+        "best": "'All Seeds Data'!D26",
+        "avg": "'All Seeds Data'!E26",
+        "asr": "'All Seeds Data'!F26"
+      }
+    },
+    {
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 20,
+      "seed": 2024,
+      "best": 80.18,
+      "avg": 56.82,
+      "asr": 7.3,
+      "source_cells": {
+        "best": "'All Seeds Data'!D27",
+        "avg": "'All Seeds Data'!E27",
+        "asr": "'All Seeds Data'!F27"
+      }
+    },
+    {
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 30,
+      "seed": 42,
+      "best": 55.18,
+      "avg": 33.82,
+      "asr": 27.13,
+      "source_cells": {
+        "best": "'All Seeds Data'!D29",
+        "avg": "'All Seeds Data'!E29",
+        "asr": "'All Seeds Data'!F29"
+      }
+    },
+    {
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 30,
+      "seed": 123,
+      "best": 75.25,
+      "avg": 47.39,
+      "asr": 12.21,
+      "source_cells": {
+        "best": "'All Seeds Data'!D30",
+        "avg": "'All Seeds Data'!E30",
+        "asr": "'All Seeds Data'!F30"
+      }
+    },
+    {
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 30,
+      "seed": 2024,
+      "best": 76.96,
+      "avg": 57.8,
+      "asr": 5.48,
+      "source_cells": {
+        "best": "'All Seeds Data'!D31",
+        "avg": "'All Seeds Data'!E31",
+        "asr": "'All Seeds Data'!F31"
+      }
+    },
+    {
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 40,
+      "seed": 42,
+      "best": 26.98,
+      "avg": 18.85,
+      "asr": 46.73,
+      "source_cells": {
+        "best": "'All Seeds Data'!D33",
+        "avg": "'All Seeds Data'!E33",
+        "asr": "'All Seeds Data'!F33"
+      }
+    },
+    {
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 40,
+      "seed": 123,
+      "best": 80.39,
+      "avg": 50.78,
+      "asr": 15.43,
+      "source_cells": {
+        "best": "'All Seeds Data'!D34",
+        "avg": "'All Seeds Data'!E34",
+        "asr": "'All Seeds Data'!F34"
+      }
+    },
+    {
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 40,
+      "seed": 2024,
+      "best": 80.77,
+      "avg": 57.42,
+      "asr": 11.12,
+      "source_cells": {
+        "best": "'All Seeds Data'!D35",
+        "avg": "'All Seeds Data'!E35",
+        "asr": "'All Seeds Data'!F35"
+      }
+    },
+    {
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 10,
+      "seed": 42,
+      "best": 82.29,
+      "avg": 58.61,
+      "asr": 8.93,
+      "source_cells": {
+        "best": "'All Seeds Data'!D38",
+        "avg": "'All Seeds Data'!E38",
+        "asr": "'All Seeds Data'!F38"
+      }
+    },
+    {
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 10,
+      "seed": 123,
+      "best": 83.78,
+      "avg": 61.59,
+      "asr": 6.49,
+      "source_cells": {
+        "best": "'All Seeds Data'!D39",
+        "avg": "'All Seeds Data'!E39",
+        "asr": "'All Seeds Data'!F39"
+      }
+    },
+    {
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 10,
+      "seed": 2024,
+      "best": 83.4,
+      "avg": 65.95,
+      "asr": 5.3,
+      "source_cells": {
+        "best": "'All Seeds Data'!D40",
+        "avg": "'All Seeds Data'!E40",
+        "asr": "'All Seeds Data'!F40"
+      }
+    },
+    {
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 20,
+      "seed": 42,
+      "best": 80.54,
+      "avg": 59.82,
+      "asr": 9.53,
+      "source_cells": {
+        "best": "'All Seeds Data'!D42",
+        "avg": "'All Seeds Data'!E42",
+        "asr": "'All Seeds Data'!F42"
+      }
+    },
+    {
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 20,
+      "seed": 123,
+      "best": 79.7,
+      "avg": 52.68,
+      "asr": 9.67,
+      "source_cells": {
+        "best": "'All Seeds Data'!D43",
+        "avg": "'All Seeds Data'!E43",
+        "asr": "'All Seeds Data'!F43"
+      }
+    },
+    {
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 20,
+      "seed": 2024,
+      "best": 85.6,
+      "avg": 67.25,
+      "asr": 5.48,
+      "source_cells": {
+        "best": "'All Seeds Data'!D44",
+        "avg": "'All Seeds Data'!E44",
+        "asr": "'All Seeds Data'!F44"
+      }
+    },
+    {
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 30,
+      "seed": 42,
+      "best": 75.85,
+      "avg": 55.3,
+      "asr": 12.2,
+      "source_cells": {
+        "best": "'All Seeds Data'!D46",
+        "avg": "'All Seeds Data'!E46",
+        "asr": "'All Seeds Data'!F46"
+      }
+    },
+    {
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 30,
+      "seed": 123,
+      "best": 80.49,
+      "avg": 56.61,
+      "asr": 11.27,
+      "source_cells": {
+        "best": "'All Seeds Data'!D47",
+        "avg": "'All Seeds Data'!E47",
+        "asr": "'All Seeds Data'!F47"
+      }
+    },
+    {
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 30,
+      "seed": 2024,
+      "best": 83.08,
+      "avg": 64.99,
+      "asr": 7.11,
+      "source_cells": {
+        "best": "'All Seeds Data'!D48",
+        "avg": "'All Seeds Data'!E48",
+        "asr": "'All Seeds Data'!F48"
+      }
+    },
+    {
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 40,
+      "seed": 42,
+      "best": 65.76,
+      "avg": 46.76,
+      "asr": 17.69,
+      "source_cells": {
+        "best": "'All Seeds Data'!D50",
+        "avg": "'All Seeds Data'!E50",
+        "asr": "'All Seeds Data'!F50"
+      }
+    },
+    {
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 40,
+      "seed": 123,
+      "best": 71.21,
+      "avg": 50.57,
+      "asr": 15.49,
+      "source_cells": {
+        "best": "'All Seeds Data'!D51",
+        "avg": "'All Seeds Data'!E51",
+        "asr": "'All Seeds Data'!F51"
+      }
+    },
+    {
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 40,
+      "seed": 2024,
+      "best": 79.75,
+      "avg": 62.04,
+      "asr": 8.48,
+      "source_cells": {
+        "best": "'All Seeds Data'!D52",
+        "avg": "'All Seeds Data'!E52",
+        "asr": "'All Seeds Data'!F52"
+      }
+    },
+    {
+      "algorithm": "FLTrust",
+      "ratio_percent": 10,
+      "seed": 42,
+      "best": 82.14,
+      "avg": 59.58,
+      "asr": 9.21,
+      "source_cells": {
+        "best": "'All Seeds Data'!D55",
+        "avg": "'All Seeds Data'!E55",
+        "asr": "'All Seeds Data'!F55"
+      }
+    },
+    {
+      "algorithm": "FLTrust",
+      "ratio_percent": 10,
+      "seed": 123,
+      "best": 86.59,
+      "avg": 67.52,
+      "asr": 5.45,
+      "source_cells": {
+        "best": "'All Seeds Data'!D56",
+        "avg": "'All Seeds Data'!E56",
+        "asr": "'All Seeds Data'!F56"
+      }
+    },
+    {
+      "algorithm": "FLTrust",
+      "ratio_percent": 10,
+      "seed": 2024,
+      "best": 85.48,
+      "avg": 67.06,
+      "asr": 6.24,
+      "source_cells": {
+        "best": "'All Seeds Data'!D57",
+        "avg": "'All Seeds Data'!E57",
+        "asr": "'All Seeds Data'!F57"
+      }
+    },
+    {
+      "algorithm": "FLTrust",
+      "ratio_percent": 20,
+      "seed": 42,
+      "best": 81.37,
+      "avg": 58.64,
+      "asr": 11.05,
+      "source_cells": {
+        "best": "'All Seeds Data'!D59",
+        "avg": "'All Seeds Data'!E59",
+        "asr": "'All Seeds Data'!F59"
+      }
+    },
+    {
+      "algorithm": "FLTrust",
+      "ratio_percent": 20,
+      "seed": 123,
+      "best": 84.96,
+      "avg": 62.59,
+      "asr": 9.36,
+      "source_cells": {
+        "best": "'All Seeds Data'!D60",
+        "avg": "'All Seeds Data'!E60",
+        "asr": "'All Seeds Data'!F60"
+      }
+    },
+    {
+      "algorithm": "FLTrust",
+      "ratio_percent": 20,
+      "seed": 2024,
+      "best": 86.03,
+      "avg": 66.52,
+      "asr": 8.78,
+      "source_cells": {
+        "best": "'All Seeds Data'!D61",
+        "avg": "'All Seeds Data'!E61",
+        "asr": "'All Seeds Data'!F61"
+      }
+    },
+    {
+      "algorithm": "FLTrust",
+      "ratio_percent": 30,
+      "seed": 42,
+      "best": 79.82,
+      "avg": 54.28,
+      "asr": 14.63,
+      "source_cells": {
+        "best": "'All Seeds Data'!D63",
+        "avg": "'All Seeds Data'!E63",
+        "asr": "'All Seeds Data'!F63"
+      }
+    },
+    {
+      "algorithm": "FLTrust",
+      "ratio_percent": 30,
+      "seed": 123,
+      "best": 82.82,
+      "avg": 51.48,
+      "asr": 16.18,
+      "source_cells": {
+        "best": "'All Seeds Data'!D64",
+        "avg": "'All Seeds Data'!E64",
+        "asr": "'All Seeds Data'!F64"
+      }
+    },
+    {
+      "algorithm": "FLTrust",
+      "ratio_percent": 30,
+      "seed": 2024,
+      "best": 84.07,
+      "avg": 59.06,
+      "asr": 14.28,
+      "source_cells": {
+        "best": "'All Seeds Data'!D65",
+        "avg": "'All Seeds Data'!E65",
+        "asr": "'All Seeds Data'!F65"
+      }
+    },
+    {
+      "algorithm": "FLTrust",
+      "ratio_percent": 40,
+      "seed": 42,
+      "best": 76.2,
+      "avg": 47.7,
+      "asr": 21.25,
+      "source_cells": {
+        "best": "'All Seeds Data'!D67",
+        "avg": "'All Seeds Data'!E67",
+        "asr": "'All Seeds Data'!F67"
+      }
+    },
+    {
+      "algorithm": "FLTrust",
+      "ratio_percent": 40,
+      "seed": 123,
+      "best": 81.41,
+      "avg": 51.27,
+      "asr": 17.44,
+      "source_cells": {
+        "best": "'All Seeds Data'!D68",
+        "avg": "'All Seeds Data'!E68",
+        "asr": "'All Seeds Data'!F68"
+      }
+    },
+    {
+      "algorithm": "FLTrust",
+      "ratio_percent": 40,
+      "seed": 2024,
+      "best": 86.02,
+      "avg": 58.74,
+      "asr": 15.16,
+      "source_cells": {
+        "best": "'All Seeds Data'!D69",
+        "avg": "'All Seeds Data'!E69",
+        "asr": "'All Seeds Data'!F69"
+      }
+    },
+    {
+      "algorithm": "TASL",
+      "ratio_percent": 10,
+      "seed": 42,
+      "best": 81.92,
+      "avg": 59.51,
+      "asr": 8.75,
+      "source_cells": {
+        "best": "'All Seeds Data'!D72",
+        "avg": "'All Seeds Data'!E72",
+        "asr": "'All Seeds Data'!F72"
+      }
+    },
+    {
+      "algorithm": "TASL",
+      "ratio_percent": 10,
+      "seed": 123,
+      "best": 83.77,
+      "avg": 60.59,
+      "asr": 6.81,
+      "source_cells": {
+        "best": "'All Seeds Data'!D73",
+        "avg": "'All Seeds Data'!E73",
+        "asr": "'All Seeds Data'!F73"
+      }
+    },
+    {
+      "algorithm": "TASL",
+      "ratio_percent": 10,
+      "seed": 2024,
+      "best": 86.21,
+      "avg": 71.91,
+      "asr": 4.52,
+      "source_cells": {
+        "best": "'All Seeds Data'!D74",
+        "avg": "'All Seeds Data'!E74",
+        "asr": "'All Seeds Data'!F74"
+      }
+    },
+    {
+      "algorithm": "TASL",
+      "ratio_percent": 20,
+      "seed": 42,
+      "best": 83.31,
+      "avg": 59.09,
+      "asr": 9.44,
+      "source_cells": {
+        "best": "'All Seeds Data'!D76",
+        "avg": "'All Seeds Data'!E76",
+        "asr": "'All Seeds Data'!F76"
+      }
+    },
+    {
+      "algorithm": "TASL",
+      "ratio_percent": 20,
+      "seed": 123,
+      "best": 84.3,
+      "avg": 62.42,
+      "asr": 7.91,
+      "source_cells": {
+        "best": "'All Seeds Data'!D77",
+        "avg": "'All Seeds Data'!E77",
+        "asr": "'All Seeds Data'!F77"
+      }
+    },
+    {
+      "algorithm": "TASL",
+      "ratio_percent": 20,
+      "seed": 2024,
+      "best": 85.59,
+      "avg": 68.42,
+      "asr": 5.39,
+      "source_cells": {
+        "best": "'All Seeds Data'!D78",
+        "avg": "'All Seeds Data'!E78",
+        "asr": "'All Seeds Data'!F78"
+      }
+    },
+    {
+      "algorithm": "TASL",
+      "ratio_percent": 30,
+      "seed": 42,
+      "best": 77.24,
+      "avg": 49.03,
+      "asr": 12.96,
+      "source_cells": {
+        "best": "'All Seeds Data'!D80",
+        "avg": "'All Seeds Data'!E80",
+        "asr": "'All Seeds Data'!F80"
+      }
+    },
+    {
+      "algorithm": "TASL",
+      "ratio_percent": 30,
+      "seed": 123,
+      "best": 83.27,
+      "avg": 55.98,
+      "asr": 12.23,
+      "source_cells": {
+        "best": "'All Seeds Data'!D81",
+        "avg": "'All Seeds Data'!E81",
+        "asr": "'All Seeds Data'!F81"
+      }
+    },
+    {
+      "algorithm": "TASL",
+      "ratio_percent": 30,
+      "seed": 2024,
+      "best": 85.63,
+      "avg": 64.02,
+      "asr": 9.27,
+      "source_cells": {
+        "best": "'All Seeds Data'!D82",
+        "avg": "'All Seeds Data'!E82",
+        "asr": "'All Seeds Data'!F82"
+      }
+    },
+    {
+      "algorithm": "TASL",
+      "ratio_percent": 40,
+      "seed": 42,
+      "best": 76.85,
+      "avg": 42.99,
+      "asr": 19.22,
+      "source_cells": {
+        "best": "'All Seeds Data'!D84",
+        "avg": "'All Seeds Data'!E84",
+        "asr": "'All Seeds Data'!F84"
+      }
+    },
+    {
+      "algorithm": "TASL",
+      "ratio_percent": 40,
+      "seed": 123,
+      "best": 83.91,
+      "avg": 54.42,
+      "asr": 16.5,
+      "source_cells": {
+        "best": "'All Seeds Data'!D85",
+        "avg": "'All Seeds Data'!E85",
+        "asr": "'All Seeds Data'!F85"
+      }
+    },
+    {
+      "algorithm": "TASL",
+      "ratio_percent": 40,
+      "seed": 2024,
+      "best": 84.93,
+      "avg": 63.03,
+      "asr": 9.34,
+      "source_cells": {
+        "best": "'All Seeds Data'!D86",
+        "avg": "'All Seeds Data'!E86",
+        "asr": "'All Seeds Data'!F86"
+      }
+    }
+  ],
+  "three_seed_checks": [
+    {
+      "algorithm": "FedAvg",
+      "ratio_percent": 10,
+      "metric": "best",
+      "seed_values": [
+        80.01,
+        85.1,
+        85.93
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!D4",
+        "'All Seeds Data'!D5",
+        "'All Seeds Data'!D6"
+      ],
+      "recomputed_mean": 83.68,
+      "recomputed_sample_sd": 3.2052924983533075,
+      "workbook_mean": 83.68,
+      "workbook_sample_sd": 3.21,
+      "source_summary_cells": [
+        "'Summary Matrix'!B4",
+        "'Summary Matrix'!C4"
+      ]
+    },
+    {
+      "algorithm": "FedAvg",
+      "ratio_percent": 20,
+      "metric": "best",
+      "seed_values": [
+        79.94,
+        82.07,
+        81.95
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!D8",
+        "'All Seeds Data'!D9",
+        "'All Seeds Data'!D10"
+      ],
+      "recomputed_mean": 81.32,
+      "recomputed_sample_sd": 1.1966202405107478,
+      "workbook_mean": 81.32,
+      "workbook_sample_sd": 1.2,
+      "source_summary_cells": [
+        "'Summary Matrix'!D4",
+        "'Summary Matrix'!E4"
+      ]
+    },
+    {
+      "algorithm": "FedAvg",
+      "ratio_percent": 30,
+      "metric": "best",
+      "seed_values": [
+        75.32,
+        77.72,
+        79.08
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!D12",
+        "'All Seeds Data'!D13",
+        "'All Seeds Data'!D14"
+      ],
+      "recomputed_mean": 77.37333333333333,
+      "recomputed_sample_sd": 1.903820719850833,
+      "workbook_mean": 77.37,
+      "workbook_sample_sd": 1.9,
+      "source_summary_cells": [
+        "'Summary Matrix'!F4",
+        "'Summary Matrix'!G4"
+      ]
+    },
+    {
+      "algorithm": "FedAvg",
+      "ratio_percent": 40,
+      "metric": "best",
+      "seed_values": [
+        65.74,
+        70.06,
+        82.26
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!D16",
+        "'All Seeds Data'!D17",
+        "'All Seeds Data'!D18"
+      ],
+      "recomputed_mean": 72.68666666666667,
+      "recomputed_sample_sd": 8.567504498588455,
+      "workbook_mean": 72.69,
+      "workbook_sample_sd": 8.57,
+      "source_summary_cells": [
+        "'Summary Matrix'!H4",
+        "'Summary Matrix'!I4"
+      ]
+    },
+    {
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 10,
+      "metric": "best",
+      "seed_values": [
+        79.8,
+        79.4,
+        82.25
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!D21",
+        "'All Seeds Data'!D22",
+        "'All Seeds Data'!D23"
+      ],
+      "recomputed_mean": 80.48333333333333,
+      "recomputed_sample_sd": 1.5429949233012172,
+      "workbook_mean": 80.48,
+      "workbook_sample_sd": 1.54,
+      "source_summary_cells": [
+        "'Summary Matrix'!B5",
+        "'Summary Matrix'!C5"
+      ]
+    },
+    {
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 20,
+      "metric": "best",
+      "seed_values": [
+        73.98,
+        77.97,
+        80.18
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!D25",
+        "'All Seeds Data'!D26",
+        "'All Seeds Data'!D27"
+      ],
+      "recomputed_mean": 77.37666666666667,
+      "recomputed_sample_sd": 3.1422974609882717,
+      "workbook_mean": 77.38,
+      "workbook_sample_sd": 3.14,
+      "source_summary_cells": [
+        "'Summary Matrix'!D5",
+        "'Summary Matrix'!E5"
+      ]
+    },
+    {
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 30,
+      "metric": "best",
+      "seed_values": [
+        55.18,
+        75.25,
+        76.96
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!D29",
+        "'All Seeds Data'!D30",
+        "'All Seeds Data'!D31"
+      ],
+      "recomputed_mean": 69.13,
+      "recomputed_sample_sd": 12.11127160953795,
+      "workbook_mean": 69.13,
+      "workbook_sample_sd": 12.11,
+      "source_summary_cells": [
+        "'Summary Matrix'!F5",
+        "'Summary Matrix'!G5"
+      ]
+    },
+    {
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 40,
+      "metric": "best",
+      "seed_values": [
+        26.98,
+        80.39,
+        80.77
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!D33",
+        "'All Seeds Data'!D34",
+        "'All Seeds Data'!D35"
+      ],
+      "recomputed_mean": 62.71333333333333,
+      "recomputed_sample_sd": 30.946557697639545,
+      "workbook_mean": 62.71,
+      "workbook_sample_sd": 30.95,
+      "source_summary_cells": [
+        "'Summary Matrix'!H5",
+        "'Summary Matrix'!I5"
+      ]
+    },
+    {
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 10,
+      "metric": "best",
+      "seed_values": [
+        82.29,
+        83.78,
+        83.4
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!D38",
+        "'All Seeds Data'!D39",
+        "'All Seeds Data'!D40"
+      ],
+      "recomputed_mean": 83.15666666666667,
+      "recomputed_sample_sd": 0.7742308010750606,
+      "workbook_mean": 83.16,
+      "workbook_sample_sd": 0.77,
+      "source_summary_cells": [
+        "'Summary Matrix'!B6",
+        "'Summary Matrix'!C6"
+      ]
+    },
+    {
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 20,
+      "metric": "best",
+      "seed_values": [
+        80.54,
+        79.7,
+        85.6
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!D42",
+        "'All Seeds Data'!D43",
+        "'All Seeds Data'!D44"
+      ],
+      "recomputed_mean": 81.94666666666667,
+      "recomputed_sample_sd": 3.191634899754873,
+      "workbook_mean": 81.95,
+      "workbook_sample_sd": 3.19,
+      "source_summary_cells": [
+        "'Summary Matrix'!D6",
+        "'Summary Matrix'!E6"
+      ]
+    },
+    {
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 30,
+      "metric": "best",
+      "seed_values": [
+        75.85,
+        80.49,
+        83.08
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!D46",
+        "'All Seeds Data'!D47",
+        "'All Seeds Data'!D48"
+      ],
+      "recomputed_mean": 79.80666666666666,
+      "recomputed_sample_sd": 3.6631179797180087,
+      "workbook_mean": 79.81,
+      "workbook_sample_sd": 3.66,
+      "source_summary_cells": [
+        "'Summary Matrix'!F6",
+        "'Summary Matrix'!G6"
+      ]
+    },
+    {
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 40,
+      "metric": "best",
+      "seed_values": [
+        65.76,
+        71.21,
+        79.75
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!D50",
+        "'All Seeds Data'!D51",
+        "'All Seeds Data'!D52"
+      ],
+      "recomputed_mean": 72.24,
+      "recomputed_sample_sd": 7.051645198108026,
+      "workbook_mean": 72.24,
+      "workbook_sample_sd": 7.05,
+      "source_summary_cells": [
+        "'Summary Matrix'!H6",
+        "'Summary Matrix'!I6"
+      ]
+    },
+    {
+      "algorithm": "FLTrust",
+      "ratio_percent": 10,
+      "metric": "best",
+      "seed_values": [
+        82.14,
+        86.59,
+        85.48
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!D55",
+        "'All Seeds Data'!D56",
+        "'All Seeds Data'!D57"
+      ],
+      "recomputed_mean": 84.73666666666666,
+      "recomputed_sample_sd": 2.3162541599171154,
+      "workbook_mean": 84.74,
+      "workbook_sample_sd": 2.32,
+      "source_summary_cells": [
+        "'Summary Matrix'!B7",
+        "'Summary Matrix'!C7"
+      ]
+    },
+    {
+      "algorithm": "FLTrust",
+      "ratio_percent": 20,
+      "metric": "best",
+      "seed_values": [
+        81.37,
+        84.96,
+        86.03
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!D59",
+        "'All Seeds Data'!D60",
+        "'All Seeds Data'!D61"
+      ],
+      "recomputed_mean": 84.12,
+      "recomputed_sample_sd": 2.4409219569662577,
+      "workbook_mean": 84.12,
+      "workbook_sample_sd": 2.44,
+      "source_summary_cells": [
+        "'Summary Matrix'!D7",
+        "'Summary Matrix'!E7"
+      ]
+    },
+    {
+      "algorithm": "FLTrust",
+      "ratio_percent": 30,
+      "metric": "best",
+      "seed_values": [
+        79.82,
+        82.82,
+        84.07
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!D63",
+        "'All Seeds Data'!D64",
+        "'All Seeds Data'!D65"
+      ],
+      "recomputed_mean": 82.23666666666666,
+      "recomputed_sample_sd": 2.184223737013526,
+      "workbook_mean": 82.24,
+      "workbook_sample_sd": 2.18,
+      "source_summary_cells": [
+        "'Summary Matrix'!F7",
+        "'Summary Matrix'!G7"
+      ]
+    },
+    {
+      "algorithm": "FLTrust",
+      "ratio_percent": 40,
+      "metric": "best",
+      "seed_values": [
+        76.2,
+        81.41,
+        86.02
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!D67",
+        "'All Seeds Data'!D68",
+        "'All Seeds Data'!D69"
+      ],
+      "recomputed_mean": 81.21,
+      "recomputed_sample_sd": 4.913054040004035,
+      "workbook_mean": 81.21,
+      "workbook_sample_sd": 4.91,
+      "source_summary_cells": [
+        "'Summary Matrix'!H7",
+        "'Summary Matrix'!I7"
+      ]
+    },
+    {
+      "algorithm": "TASL",
+      "ratio_percent": 10,
+      "metric": "best",
+      "seed_values": [
+        81.92,
+        83.77,
+        86.21
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!D72",
+        "'All Seeds Data'!D73",
+        "'All Seeds Data'!D74"
+      ],
+      "recomputed_mean": 83.96666666666667,
+      "recomputed_sample_sd": 2.1517512247779287,
+      "workbook_mean": 83.97,
+      "workbook_sample_sd": 2.15,
+      "source_summary_cells": [
+        "'Summary Matrix'!B8",
+        "'Summary Matrix'!C8"
+      ]
+    },
+    {
+      "algorithm": "TASL",
+      "ratio_percent": 20,
+      "metric": "best",
+      "seed_values": [
+        83.31,
+        84.3,
+        85.59
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!D76",
+        "'All Seeds Data'!D77",
+        "'All Seeds Data'!D78"
+      ],
+      "recomputed_mean": 84.4,
+      "recomputed_sample_sd": 1.143284741435834,
+      "workbook_mean": 84.4,
+      "workbook_sample_sd": 1.14,
+      "source_summary_cells": [
+        "'Summary Matrix'!D8",
+        "'Summary Matrix'!E8"
+      ]
+    },
+    {
+      "algorithm": "TASL",
+      "ratio_percent": 30,
+      "metric": "best",
+      "seed_values": [
+        77.24,
+        83.27,
+        85.63
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!D80",
+        "'All Seeds Data'!D81",
+        "'All Seeds Data'!D82"
+      ],
+      "recomputed_mean": 82.04666666666667,
+      "recomputed_sample_sd": 4.326711607368041,
+      "workbook_mean": 82.05,
+      "workbook_sample_sd": 4.33,
+      "source_summary_cells": [
+        "'Summary Matrix'!F8",
+        "'Summary Matrix'!G8"
+      ]
+    },
+    {
+      "algorithm": "TASL",
+      "ratio_percent": 40,
+      "metric": "best",
+      "seed_values": [
+        76.85,
+        83.91,
+        84.93
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!D84",
+        "'All Seeds Data'!D85",
+        "'All Seeds Data'!D86"
+      ],
+      "recomputed_mean": 81.89666666666666,
+      "recomputed_sample_sd": 4.400196965288415,
+      "workbook_mean": 81.9,
+      "workbook_sample_sd": 4.4,
+      "source_summary_cells": [
+        "'Summary Matrix'!H8",
+        "'Summary Matrix'!I8"
+      ]
+    },
+    {
+      "algorithm": "FedAvg",
+      "ratio_percent": 10,
+      "metric": "avg",
+      "seed_values": [
+        55.71,
+        63.37,
+        70.64
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!E4",
+        "'All Seeds Data'!E5",
+        "'All Seeds Data'!E6"
+      ],
+      "recomputed_mean": 63.24,
+      "recomputed_sample_sd": 7.465848913552966,
+      "workbook_mean": 63.24,
+      "workbook_sample_sd": 7.47,
+      "source_summary_cells": [
+        "'Summary Matrix'!B14",
+        "'Summary Matrix'!C14"
+      ]
+    },
+    {
+      "algorithm": "FedAvg",
+      "ratio_percent": 20,
+      "metric": "avg",
+      "seed_values": [
+        60.46,
+        61.67,
+        65.73
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!E8",
+        "'All Seeds Data'!E9",
+        "'All Seeds Data'!E10"
+      ],
+      "recomputed_mean": 62.620000000000005,
+      "recomputed_sample_sd": 2.760452861397928,
+      "workbook_mean": 62.62,
+      "workbook_sample_sd": 2.76,
+      "source_summary_cells": [
+        "'Summary Matrix'!D14",
+        "'Summary Matrix'!E14"
+      ]
+    },
+    {
+      "algorithm": "FedAvg",
+      "ratio_percent": 30,
+      "metric": "avg",
+      "seed_values": [
+        55.48,
+        54.41,
+        61.31
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!E12",
+        "'All Seeds Data'!E13",
+        "'All Seeds Data'!E14"
+      ],
+      "recomputed_mean": 57.06666666666666,
+      "recomputed_sample_sd": 3.713574199249741,
+      "workbook_mean": 57.07,
+      "workbook_sample_sd": 3.71,
+      "source_summary_cells": [
+        "'Summary Matrix'!F14",
+        "'Summary Matrix'!G14"
+      ]
+    },
+    {
+      "algorithm": "FedAvg",
+      "ratio_percent": 40,
+      "metric": "avg",
+      "seed_values": [
+        46.09,
+        53.45,
+        68.26
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!E16",
+        "'All Seeds Data'!E17",
+        "'All Seeds Data'!E18"
+      ],
+      "recomputed_mean": 55.93333333333334,
+      "recomputed_sample_sd": 11.291697539933194,
+      "workbook_mean": 55.93,
+      "workbook_sample_sd": 11.29,
+      "source_summary_cells": [
+        "'Summary Matrix'!H14",
+        "'Summary Matrix'!I14"
+      ]
+    },
+    {
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 10,
+      "metric": "avg",
+      "seed_values": [
+        53.28,
+        57.51,
+        65.17
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!E21",
+        "'All Seeds Data'!E22",
+        "'All Seeds Data'!E23"
+      ],
+      "recomputed_mean": 58.653333333333336,
+      "recomputed_sample_sd": 6.026892510517617,
+      "workbook_mean": 58.66,
+      "workbook_sample_sd": 6.03,
+      "source_summary_cells": [
+        "'Summary Matrix'!B15",
+        "'Summary Matrix'!C15"
+      ]
+    },
+    {
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 20,
+      "metric": "avg",
+      "seed_values": [
+        45.42,
+        55.15,
+        56.82
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!E25",
+        "'All Seeds Data'!E26",
+        "'All Seeds Data'!E27"
+      ],
+      "recomputed_mean": 52.46333333333333,
+      "recomputed_sample_sd": 6.156592672358089,
+      "workbook_mean": 52.47,
+      "workbook_sample_sd": 6.16,
+      "source_summary_cells": [
+        "'Summary Matrix'!D15",
+        "'Summary Matrix'!E15"
+      ]
+    },
+    {
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 30,
+      "metric": "avg",
+      "seed_values": [
+        33.82,
+        47.39,
+        57.8
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!E29",
+        "'All Seeds Data'!E30",
+        "'All Seeds Data'!E31"
+      ],
+      "recomputed_mean": 46.336666666666666,
+      "recomputed_sample_sd": 12.024651069088588,
+      "workbook_mean": 46.34,
+      "workbook_sample_sd": 12.02,
+      "source_summary_cells": [
+        "'Summary Matrix'!F15",
+        "'Summary Matrix'!G15"
+      ]
+    },
+    {
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 40,
+      "metric": "avg",
+      "seed_values": [
+        18.85,
+        50.78,
+        57.42
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!E33",
+        "'All Seeds Data'!E34",
+        "'All Seeds Data'!E35"
+      ],
+      "recomputed_mean": 42.35,
+      "recomputed_sample_sd": 20.620618322446106,
+      "workbook_mean": 42.35,
+      "workbook_sample_sd": 20.62,
+      "source_summary_cells": [
+        "'Summary Matrix'!H15",
+        "'Summary Matrix'!I15"
+      ]
+    },
+    {
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 10,
+      "metric": "avg",
+      "seed_values": [
+        58.61,
+        61.59,
+        65.95
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!E38",
+        "'All Seeds Data'!E39",
+        "'All Seeds Data'!E40"
+      ],
+      "recomputed_mean": 62.050000000000004,
+      "recomputed_sample_sd": 3.691557936698273,
+      "workbook_mean": 62.05,
+      "workbook_sample_sd": 3.69,
+      "source_summary_cells": [
+        "'Summary Matrix'!B16",
+        "'Summary Matrix'!C16"
+      ]
+    },
+    {
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 20,
+      "metric": "avg",
+      "seed_values": [
+        59.82,
+        52.68,
+        67.25
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!E42",
+        "'All Seeds Data'!E43",
+        "'All Seeds Data'!E44"
+      ],
+      "recomputed_mean": 59.916666666666664,
+      "recomputed_sample_sd": 7.285480995331286,
+      "workbook_mean": 59.92,
+      "workbook_sample_sd": 7.28,
+      "source_summary_cells": [
+        "'Summary Matrix'!D16",
+        "'Summary Matrix'!E16"
+      ]
+    },
+    {
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 30,
+      "metric": "avg",
+      "seed_values": [
+        55.3,
+        56.61,
+        64.99
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!E46",
+        "'All Seeds Data'!E47",
+        "'All Seeds Data'!E48"
+      ],
+      "recomputed_mean": 58.96666666666666,
+      "recomputed_sample_sd": 5.257321878421875,
+      "workbook_mean": 58.97,
+      "workbook_sample_sd": 5.26,
+      "source_summary_cells": [
+        "'Summary Matrix'!F16",
+        "'Summary Matrix'!G16"
+      ]
+    },
+    {
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 40,
+      "metric": "avg",
+      "seed_values": [
+        46.76,
+        50.57,
+        62.04
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!E50",
+        "'All Seeds Data'!E51",
+        "'All Seeds Data'!E52"
+      ],
+      "recomputed_mean": 53.123333333333335,
+      "recomputed_sample_sd": 7.953567333802697,
+      "workbook_mean": 53.12,
+      "workbook_sample_sd": 7.95,
+      "source_summary_cells": [
+        "'Summary Matrix'!H16",
+        "'Summary Matrix'!I16"
+      ]
+    },
+    {
+      "algorithm": "FLTrust",
+      "ratio_percent": 10,
+      "metric": "avg",
+      "seed_values": [
+        59.58,
+        67.52,
+        67.06
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!E55",
+        "'All Seeds Data'!E56",
+        "'All Seeds Data'!E57"
+      ],
+      "recomputed_mean": 64.72,
+      "recomputed_sample_sd": 4.457308604976775,
+      "workbook_mean": 64.72,
+      "workbook_sample_sd": 4.46,
+      "source_summary_cells": [
+        "'Summary Matrix'!B17",
+        "'Summary Matrix'!C17"
+      ]
+    },
+    {
+      "algorithm": "FLTrust",
+      "ratio_percent": 20,
+      "metric": "avg",
+      "seed_values": [
+        58.64,
+        62.59,
+        66.52
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!E59",
+        "'All Seeds Data'!E60",
+        "'All Seeds Data'!E61"
+      ],
+      "recomputed_mean": 62.583333333333336,
+      "recomputed_sample_sd": 3.94000423011617,
+      "workbook_mean": 62.58,
+      "workbook_sample_sd": 3.94,
+      "source_summary_cells": [
+        "'Summary Matrix'!D17",
+        "'Summary Matrix'!E17"
+      ]
+    },
+    {
+      "algorithm": "FLTrust",
+      "ratio_percent": 30,
+      "metric": "avg",
+      "seed_values": [
+        54.28,
+        51.48,
+        59.06
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!E63",
+        "'All Seeds Data'!E64",
+        "'All Seeds Data'!E65"
+      ],
+      "recomputed_mean": 54.94,
+      "recomputed_sample_sd": 3.8328579415365787,
+      "workbook_mean": 54.94,
+      "workbook_sample_sd": 3.83,
+      "source_summary_cells": [
+        "'Summary Matrix'!F17",
+        "'Summary Matrix'!G17"
+      ]
+    },
+    {
+      "algorithm": "FLTrust",
+      "ratio_percent": 40,
+      "metric": "avg",
+      "seed_values": [
+        47.7,
+        51.27,
+        58.74
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!E67",
+        "'All Seeds Data'!E68",
+        "'All Seeds Data'!E69"
+      ],
+      "recomputed_mean": 52.57,
+      "recomputed_sample_sd": 5.633640031098898,
+      "workbook_mean": 52.57,
+      "workbook_sample_sd": 5.63,
+      "source_summary_cells": [
+        "'Summary Matrix'!H17",
+        "'Summary Matrix'!I17"
+      ]
+    },
+    {
+      "algorithm": "TASL",
+      "ratio_percent": 10,
+      "metric": "avg",
+      "seed_values": [
+        59.51,
+        60.59,
+        71.91
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!E72",
+        "'All Seeds Data'!E73",
+        "'All Seeds Data'!E74"
+      ],
+      "recomputed_mean": 64.00333333333333,
+      "recomputed_sample_sd": 6.868634022375431,
+      "workbook_mean": 64.0,
+      "workbook_sample_sd": 6.87,
+      "source_summary_cells": [
+        "'Summary Matrix'!B18",
+        "'Summary Matrix'!C18"
+      ]
+    },
+    {
+      "algorithm": "TASL",
+      "ratio_percent": 20,
+      "metric": "avg",
+      "seed_values": [
+        59.09,
+        62.42,
+        68.42
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!E76",
+        "'All Seeds Data'!E77",
+        "'All Seeds Data'!E78"
+      ],
+      "recomputed_mean": 63.31,
+      "recomputed_sample_sd": 4.72824491751432,
+      "workbook_mean": 63.31,
+      "workbook_sample_sd": 4.72,
+      "source_summary_cells": [
+        "'Summary Matrix'!D18",
+        "'Summary Matrix'!E18"
+      ]
+    },
+    {
+      "algorithm": "TASL",
+      "ratio_percent": 30,
+      "metric": "avg",
+      "seed_values": [
+        49.03,
+        55.98,
+        64.02
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!E80",
+        "'All Seeds Data'!E81",
+        "'All Seeds Data'!E82"
+      ],
+      "recomputed_mean": 56.343333333333334,
+      "recomputed_sample_sd": 7.5016020511177,
+      "workbook_mean": 56.34,
+      "workbook_sample_sd": 7.5,
+      "source_summary_cells": [
+        "'Summary Matrix'!F18",
+        "'Summary Matrix'!G18"
+      ]
+    },
+    {
+      "algorithm": "TASL",
+      "ratio_percent": 40,
+      "metric": "avg",
+      "seed_values": [
+        42.99,
+        54.42,
+        63.03
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!E84",
+        "'All Seeds Data'!E85",
+        "'All Seeds Data'!E86"
+      ],
+      "recomputed_mean": 53.480000000000004,
+      "recomputed_sample_sd": 10.053014473281136,
+      "workbook_mean": 53.48,
+      "workbook_sample_sd": 10.05,
+      "source_summary_cells": [
+        "'Summary Matrix'!H18",
+        "'Summary Matrix'!I18"
+      ]
+    },
+    {
+      "algorithm": "FedAvg",
+      "ratio_percent": 10,
+      "metric": "asr",
+      "seed_values": [
+        9.77,
+        6.47,
+        5.08
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!F4",
+        "'All Seeds Data'!F5",
+        "'All Seeds Data'!F6"
+      ],
+      "recomputed_mean": 7.1066666666666665,
+      "recomputed_sample_sd": 2.4089485949960268,
+      "workbook_mean": 7.11,
+      "workbook_sample_sd": 2.41,
+      "source_summary_cells": [
+        "'Summary Matrix'!B24",
+        "'Summary Matrix'!C24"
+      ]
+    },
+    {
+      "algorithm": "FedAvg",
+      "ratio_percent": 20,
+      "metric": "asr",
+      "seed_values": [
+        10.65,
+        8.59,
+        6.49
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!F8",
+        "'All Seeds Data'!F9",
+        "'All Seeds Data'!F10"
+      ],
+      "recomputed_mean": 8.576666666666666,
+      "recomputed_sample_sd": 2.080032051035112,
+      "workbook_mean": 8.57,
+      "workbook_sample_sd": 2.08,
+      "source_summary_cells": [
+        "'Summary Matrix'!D24",
+        "'Summary Matrix'!E24"
+      ]
+    },
+    {
+      "algorithm": "FedAvg",
+      "ratio_percent": 30,
+      "metric": "asr",
+      "seed_values": [
+        13.94,
+        13.17,
+        9.66
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!F12",
+        "'All Seeds Data'!F13",
+        "'All Seeds Data'!F14"
+      ],
+      "recomputed_mean": 12.256666666666666,
+      "recomputed_sample_sd": 2.2814980458754137,
+      "workbook_mean": 12.26,
+      "workbook_sample_sd": 2.28,
+      "source_summary_cells": [
+        "'Summary Matrix'!F24",
+        "'Summary Matrix'!G24"
+      ]
+    },
+    {
+      "algorithm": "FedAvg",
+      "ratio_percent": 40,
+      "metric": "asr",
+      "seed_values": [
+        20.08,
+        17.63,
+        9.59
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!F16",
+        "'All Seeds Data'!F17",
+        "'All Seeds Data'!F18"
+      ],
+      "recomputed_mean": 15.766666666666666,
+      "recomputed_sample_sd": 5.4876254731289125,
+      "workbook_mean": 15.77,
+      "workbook_sample_sd": 5.49,
+      "source_summary_cells": [
+        "'Summary Matrix'!H24",
+        "'Summary Matrix'!I24"
+      ]
+    },
+    {
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 10,
+      "metric": "asr",
+      "seed_values": [
+        11.02,
+        9.14,
+        4.8
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!F21",
+        "'All Seeds Data'!F22",
+        "'All Seeds Data'!F23"
+      ],
+      "recomputed_mean": 8.32,
+      "recomputed_sample_sd": 3.190047021597017,
+      "workbook_mean": 8.32,
+      "workbook_sample_sd": 3.19,
+      "source_summary_cells": [
+        "'Summary Matrix'!B25",
+        "'Summary Matrix'!C25"
+      ]
+    },
+    {
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 20,
+      "metric": "asr",
+      "seed_values": [
+        18.36,
+        10.19,
+        7.3
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!F25",
+        "'All Seeds Data'!F26",
+        "'All Seeds Data'!F27"
+      ],
+      "recomputed_mean": 11.95,
+      "recomputed_sample_sd": 5.736209549868275,
+      "workbook_mean": 11.95,
+      "workbook_sample_sd": 5.74,
+      "source_summary_cells": [
+        "'Summary Matrix'!D25",
+        "'Summary Matrix'!E25"
+      ]
+    },
+    {
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 30,
+      "metric": "asr",
+      "seed_values": [
+        27.13,
+        12.21,
+        5.48
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!F29",
+        "'All Seeds Data'!F30",
+        "'All Seeds Data'!F31"
+      ],
+      "recomputed_mean": 14.94,
+      "recomputed_sample_sd": 11.080175991382086,
+      "workbook_mean": 14.94,
+      "workbook_sample_sd": 11.08,
+      "source_summary_cells": [
+        "'Summary Matrix'!F25",
+        "'Summary Matrix'!G25"
+      ]
+    },
+    {
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 40,
+      "metric": "asr",
+      "seed_values": [
+        46.73,
+        15.43,
+        11.12
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!F33",
+        "'All Seeds Data'!F34",
+        "'All Seeds Data'!F35"
+      ],
+      "recomputed_mean": 24.426666666666666,
+      "recomputed_sample_sd": 19.43509797591289,
+      "workbook_mean": 24.43,
+      "workbook_sample_sd": 19.44,
+      "source_summary_cells": [
+        "'Summary Matrix'!H25",
+        "'Summary Matrix'!I25"
+      ]
+    },
+    {
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 10,
+      "metric": "asr",
+      "seed_values": [
+        8.93,
+        6.49,
+        5.3
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!F38",
+        "'All Seeds Data'!F39",
+        "'All Seeds Data'!F40"
+      ],
+      "recomputed_mean": 6.906666666666666,
+      "recomputed_sample_sd": 1.850522448751523,
+      "workbook_mean": 6.91,
+      "workbook_sample_sd": 1.85,
+      "source_summary_cells": [
+        "'Summary Matrix'!B26",
+        "'Summary Matrix'!C26"
+      ]
+    },
+    {
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 20,
+      "metric": "asr",
+      "seed_values": [
+        9.53,
+        9.67,
+        5.48
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!F42",
+        "'All Seeds Data'!F43",
+        "'All Seeds Data'!F44"
+      ],
+      "recomputed_mean": 8.226666666666667,
+      "recomputed_sample_sd": 2.379712867833708,
+      "workbook_mean": 8.23,
+      "workbook_sample_sd": 2.38,
+      "source_summary_cells": [
+        "'Summary Matrix'!D26",
+        "'Summary Matrix'!E26"
+      ]
+    },
+    {
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 30,
+      "metric": "asr",
+      "seed_values": [
+        12.2,
+        11.27,
+        7.11
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!F46",
+        "'All Seeds Data'!F47",
+        "'All Seeds Data'!F48"
+      ],
+      "recomputed_mean": 10.193333333333333,
+      "recomputed_sample_sd": 2.7104304701160165,
+      "workbook_mean": 10.19,
+      "workbook_sample_sd": 2.71,
+      "source_summary_cells": [
+        "'Summary Matrix'!F26",
+        "'Summary Matrix'!G26"
+      ]
+    },
+    {
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 40,
+      "metric": "asr",
+      "seed_values": [
+        17.69,
+        15.49,
+        8.48
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!F50",
+        "'All Seeds Data'!F51",
+        "'All Seeds Data'!F52"
+      ],
+      "recomputed_mean": 13.886666666666667,
+      "recomputed_sample_sd": 4.809785164987448,
+      "workbook_mean": 13.89,
+      "workbook_sample_sd": 4.81,
+      "source_summary_cells": [
+        "'Summary Matrix'!H26",
+        "'Summary Matrix'!I26"
+      ]
+    },
+    {
+      "algorithm": "FLTrust",
+      "ratio_percent": 10,
+      "metric": "asr",
+      "seed_values": [
+        9.21,
+        5.45,
+        6.24
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!F55",
+        "'All Seeds Data'!F56",
+        "'All Seeds Data'!F57"
+      ],
+      "recomputed_mean": 6.966666666666667,
+      "recomputed_sample_sd": 1.9825320510229676,
+      "workbook_mean": 6.97,
+      "workbook_sample_sd": 1.98,
+      "source_summary_cells": [
+        "'Summary Matrix'!B27",
+        "'Summary Matrix'!C27"
+      ]
+    },
+    {
+      "algorithm": "FLTrust",
+      "ratio_percent": 20,
+      "metric": "asr",
+      "seed_values": [
+        11.05,
+        9.36,
+        8.78
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!F59",
+        "'All Seeds Data'!F60",
+        "'All Seeds Data'!F61"
+      ],
+      "recomputed_mean": 9.73,
+      "recomputed_sample_sd": 1.179364235509964,
+      "workbook_mean": 9.73,
+      "workbook_sample_sd": 1.18,
+      "source_summary_cells": [
+        "'Summary Matrix'!D27",
+        "'Summary Matrix'!E27"
+      ]
+    },
+    {
+      "algorithm": "FLTrust",
+      "ratio_percent": 30,
+      "metric": "asr",
+      "seed_values": [
+        14.63,
+        16.18,
+        14.28
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!F63",
+        "'All Seeds Data'!F64",
+        "'All Seeds Data'!F65"
+      ],
+      "recomputed_mean": 15.03,
+      "recomputed_sample_sd": 1.0111874208078342,
+      "workbook_mean": 15.03,
+      "workbook_sample_sd": 1.01,
+      "source_summary_cells": [
+        "'Summary Matrix'!F27",
+        "'Summary Matrix'!G27"
+      ]
+    },
+    {
+      "algorithm": "FLTrust",
+      "ratio_percent": 40,
+      "metric": "asr",
+      "seed_values": [
+        21.25,
+        17.44,
+        15.16
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!F67",
+        "'All Seeds Data'!F68",
+        "'All Seeds Data'!F69"
+      ],
+      "recomputed_mean": 17.95,
+      "recomputed_sample_sd": 3.0768652879188583,
+      "workbook_mean": 17.95,
+      "workbook_sample_sd": 3.08,
+      "source_summary_cells": [
+        "'Summary Matrix'!H27",
+        "'Summary Matrix'!I27"
+      ]
+    },
+    {
+      "algorithm": "TASL",
+      "ratio_percent": 10,
+      "metric": "asr",
+      "seed_values": [
+        8.75,
+        6.81,
+        4.52
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!F72",
+        "'All Seeds Data'!F73",
+        "'All Seeds Data'!F74"
+      ],
+      "recomputed_mean": 6.693333333333333,
+      "recomputed_sample_sd": 2.117411942285519,
+      "workbook_mean": 6.69,
+      "workbook_sample_sd": 2.12,
+      "source_summary_cells": [
+        "'Summary Matrix'!B28",
+        "'Summary Matrix'!C28"
+      ]
+    },
+    {
+      "algorithm": "TASL",
+      "ratio_percent": 20,
+      "metric": "asr",
+      "seed_values": [
+        9.44,
+        7.91,
+        5.39
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!F76",
+        "'All Seeds Data'!F77",
+        "'All Seeds Data'!F78"
+      ],
+      "recomputed_mean": 7.58,
+      "recomputed_sample_sd": 2.0450672360585114,
+      "workbook_mean": 7.58,
+      "workbook_sample_sd": 2.05,
+      "source_summary_cells": [
+        "'Summary Matrix'!D28",
+        "'Summary Matrix'!E28"
+      ]
+    },
+    {
+      "algorithm": "TASL",
+      "ratio_percent": 30,
+      "metric": "asr",
+      "seed_values": [
+        12.96,
+        12.23,
+        9.27
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!F80",
+        "'All Seeds Data'!F81",
+        "'All Seeds Data'!F82"
+      ],
+      "recomputed_mean": 11.486666666666666,
+      "recomputed_sample_sd": 1.9540811992681717,
+      "workbook_mean": 11.49,
+      "workbook_sample_sd": 1.95,
+      "source_summary_cells": [
+        "'Summary Matrix'!F28",
+        "'Summary Matrix'!G28"
+      ]
+    },
+    {
+      "algorithm": "TASL",
+      "ratio_percent": 40,
+      "metric": "asr",
+      "seed_values": [
+        19.22,
+        16.5,
+        9.34
+      ],
+      "source_seed_cells": [
+        "'All Seeds Data'!F84",
+        "'All Seeds Data'!F85",
+        "'All Seeds Data'!F86"
+      ],
+      "recomputed_mean": 15.02,
+      "recomputed_sample_sd": 5.103567379784458,
+      "workbook_mean": 15.02,
+      "workbook_sample_sd": 5.11,
+      "source_summary_cells": [
+        "'Summary Matrix'!H28",
+        "'Summary Matrix'!I28"
+      ]
+    }
+  ],
+  "cell_index": [
+    {
+      "table": 2,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FedAvg",
+      "ratio_percent": 40,
+      "metric": "best",
+      "statistic": "seed42",
+      "manuscript_value": 65.7,
+      "workbook_value": 65.74,
+      "source_cell": "'All Seeds Data'!D16",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 2,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FedAvg",
+      "ratio_percent": 40,
+      "metric": "asr",
+      "statistic": "seed42",
+      "manuscript_value": 20.1,
+      "workbook_value": 20.08,
+      "source_cell": "'All Seeds Data'!F16",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 2,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 40,
+      "metric": "best",
+      "statistic": "seed42",
+      "manuscript_value": 27.0,
+      "workbook_value": 26.98,
+      "source_cell": "'All Seeds Data'!D33",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 2,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 40,
+      "metric": "asr",
+      "statistic": "seed42",
+      "manuscript_value": 46.7,
+      "workbook_value": 46.73,
+      "source_cell": "'All Seeds Data'!F33",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 2,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 40,
+      "metric": "best",
+      "statistic": "seed42",
+      "manuscript_value": 65.8,
+      "workbook_value": 65.76,
+      "source_cell": "'All Seeds Data'!D50",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 2,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 40,
+      "metric": "asr",
+      "statistic": "seed42",
+      "manuscript_value": 17.7,
+      "workbook_value": 17.69,
+      "source_cell": "'All Seeds Data'!F50",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 2,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FLTrust",
+      "ratio_percent": 40,
+      "metric": "best",
+      "statistic": "seed42",
+      "manuscript_value": 76.2,
+      "workbook_value": 76.2,
+      "source_cell": "'All Seeds Data'!D67",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 2,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FLTrust",
+      "ratio_percent": 40,
+      "metric": "asr",
+      "statistic": "seed42",
+      "manuscript_value": 21.3,
+      "workbook_value": 21.25,
+      "source_cell": "'All Seeds Data'!F67",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 2,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "TASL",
+      "ratio_percent": 40,
+      "metric": "best",
+      "statistic": "seed42",
+      "manuscript_value": 76.9,
+      "workbook_value": 76.85,
+      "source_cell": "'All Seeds Data'!D84",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 2,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "TASL",
+      "ratio_percent": 40,
+      "metric": "asr",
+      "statistic": "seed42",
+      "manuscript_value": 19.2,
+      "workbook_value": 19.22,
+      "source_cell": "'All Seeds Data'!F84",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FedAvg",
+      "ratio_percent": 10,
+      "metric": "best",
+      "statistic": "mean",
+      "manuscript_value": 83.7,
+      "workbook_value": 83.68,
+      "source_cell": "'Summary Matrix'!B4",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FedAvg",
+      "ratio_percent": 10,
+      "metric": "best",
+      "statistic": "sample_sd",
+      "manuscript_value": 3.2,
+      "workbook_value": 3.21,
+      "source_cell": "'Summary Matrix'!C4",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FedAvg",
+      "ratio_percent": 20,
+      "metric": "best",
+      "statistic": "mean",
+      "manuscript_value": 81.3,
+      "workbook_value": 81.32,
+      "source_cell": "'Summary Matrix'!D4",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FedAvg",
+      "ratio_percent": 20,
+      "metric": "best",
+      "statistic": "sample_sd",
+      "manuscript_value": 1.2,
+      "workbook_value": 1.2,
+      "source_cell": "'Summary Matrix'!E4",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FedAvg",
+      "ratio_percent": 30,
+      "metric": "best",
+      "statistic": "mean",
+      "manuscript_value": 77.4,
+      "workbook_value": 77.37,
+      "source_cell": "'Summary Matrix'!F4",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FedAvg",
+      "ratio_percent": 30,
+      "metric": "best",
+      "statistic": "sample_sd",
+      "manuscript_value": 1.9,
+      "workbook_value": 1.9,
+      "source_cell": "'Summary Matrix'!G4",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FedAvg",
+      "ratio_percent": 40,
+      "metric": "best",
+      "statistic": "mean",
+      "manuscript_value": 72.7,
+      "workbook_value": 72.69,
+      "source_cell": "'Summary Matrix'!H4",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FedAvg",
+      "ratio_percent": 40,
+      "metric": "best",
+      "statistic": "sample_sd",
+      "manuscript_value": 8.6,
+      "workbook_value": 8.57,
+      "source_cell": "'Summary Matrix'!I4",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 10,
+      "metric": "best",
+      "statistic": "mean",
+      "manuscript_value": 80.5,
+      "workbook_value": 80.48,
+      "source_cell": "'Summary Matrix'!B5",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 10,
+      "metric": "best",
+      "statistic": "sample_sd",
+      "manuscript_value": 1.5,
+      "workbook_value": 1.54,
+      "source_cell": "'Summary Matrix'!C5",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 20,
+      "metric": "best",
+      "statistic": "mean",
+      "manuscript_value": 77.4,
+      "workbook_value": 77.38,
+      "source_cell": "'Summary Matrix'!D5",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 20,
+      "metric": "best",
+      "statistic": "sample_sd",
+      "manuscript_value": 3.1,
+      "workbook_value": 3.14,
+      "source_cell": "'Summary Matrix'!E5",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 30,
+      "metric": "best",
+      "statistic": "mean",
+      "manuscript_value": 69.1,
+      "workbook_value": 69.13,
+      "source_cell": "'Summary Matrix'!F5",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 30,
+      "metric": "best",
+      "statistic": "sample_sd",
+      "manuscript_value": 12.1,
+      "workbook_value": 12.11,
+      "source_cell": "'Summary Matrix'!G5",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 40,
+      "metric": "best",
+      "statistic": "mean",
+      "manuscript_value": 62.7,
+      "workbook_value": 62.71,
+      "source_cell": "'Summary Matrix'!H5",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 40,
+      "metric": "best",
+      "statistic": "sample_sd",
+      "manuscript_value": 31.0,
+      "workbook_value": 30.95,
+      "source_cell": "'Summary Matrix'!I5",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 10,
+      "metric": "best",
+      "statistic": "mean",
+      "manuscript_value": 83.2,
+      "workbook_value": 83.16,
+      "source_cell": "'Summary Matrix'!B6",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 10,
+      "metric": "best",
+      "statistic": "sample_sd",
+      "manuscript_value": 0.8,
+      "workbook_value": 0.77,
+      "source_cell": "'Summary Matrix'!C6",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 20,
+      "metric": "best",
+      "statistic": "mean",
+      "manuscript_value": 82.0,
+      "workbook_value": 81.95,
+      "source_cell": "'Summary Matrix'!D6",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 20,
+      "metric": "best",
+      "statistic": "sample_sd",
+      "manuscript_value": 3.2,
+      "workbook_value": 3.19,
+      "source_cell": "'Summary Matrix'!E6",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 30,
+      "metric": "best",
+      "statistic": "mean",
+      "manuscript_value": 79.8,
+      "workbook_value": 79.81,
+      "source_cell": "'Summary Matrix'!F6",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 30,
+      "metric": "best",
+      "statistic": "sample_sd",
+      "manuscript_value": 3.7,
+      "workbook_value": 3.66,
+      "source_cell": "'Summary Matrix'!G6",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 40,
+      "metric": "best",
+      "statistic": "mean",
+      "manuscript_value": 72.2,
+      "workbook_value": 72.24,
+      "source_cell": "'Summary Matrix'!H6",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 40,
+      "metric": "best",
+      "statistic": "sample_sd",
+      "manuscript_value": 7.1,
+      "workbook_value": 7.05,
+      "source_cell": "'Summary Matrix'!I6",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FLTrust",
+      "ratio_percent": 10,
+      "metric": "best",
+      "statistic": "mean",
+      "manuscript_value": 84.7,
+      "workbook_value": 84.74,
+      "source_cell": "'Summary Matrix'!B7",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FLTrust",
+      "ratio_percent": 10,
+      "metric": "best",
+      "statistic": "sample_sd",
+      "manuscript_value": 2.3,
+      "workbook_value": 2.32,
+      "source_cell": "'Summary Matrix'!C7",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FLTrust",
+      "ratio_percent": 20,
+      "metric": "best",
+      "statistic": "mean",
+      "manuscript_value": 84.1,
+      "workbook_value": 84.12,
+      "source_cell": "'Summary Matrix'!D7",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FLTrust",
+      "ratio_percent": 20,
+      "metric": "best",
+      "statistic": "sample_sd",
+      "manuscript_value": 2.4,
+      "workbook_value": 2.44,
+      "source_cell": "'Summary Matrix'!E7",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FLTrust",
+      "ratio_percent": 30,
+      "metric": "best",
+      "statistic": "mean",
+      "manuscript_value": 82.2,
+      "workbook_value": 82.24,
+      "source_cell": "'Summary Matrix'!F7",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FLTrust",
+      "ratio_percent": 30,
+      "metric": "best",
+      "statistic": "sample_sd",
+      "manuscript_value": 2.2,
+      "workbook_value": 2.18,
+      "source_cell": "'Summary Matrix'!G7",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FLTrust",
+      "ratio_percent": 40,
+      "metric": "best",
+      "statistic": "mean",
+      "manuscript_value": 81.2,
+      "workbook_value": 81.21,
+      "source_cell": "'Summary Matrix'!H7",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FLTrust",
+      "ratio_percent": 40,
+      "metric": "best",
+      "statistic": "sample_sd",
+      "manuscript_value": 4.9,
+      "workbook_value": 4.91,
+      "source_cell": "'Summary Matrix'!I7",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "TASL",
+      "ratio_percent": 10,
+      "metric": "best",
+      "statistic": "mean",
+      "manuscript_value": 84.0,
+      "workbook_value": 83.97,
+      "source_cell": "'Summary Matrix'!B8",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "TASL",
+      "ratio_percent": 10,
+      "metric": "best",
+      "statistic": "sample_sd",
+      "manuscript_value": 2.2,
+      "workbook_value": 2.15,
+      "source_cell": "'Summary Matrix'!C8",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "TASL",
+      "ratio_percent": 20,
+      "metric": "best",
+      "statistic": "mean",
+      "manuscript_value": 84.4,
+      "workbook_value": 84.4,
+      "source_cell": "'Summary Matrix'!D8",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "TASL",
+      "ratio_percent": 20,
+      "metric": "best",
+      "statistic": "sample_sd",
+      "manuscript_value": 1.1,
+      "workbook_value": 1.14,
+      "source_cell": "'Summary Matrix'!E8",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "TASL",
+      "ratio_percent": 30,
+      "metric": "best",
+      "statistic": "mean",
+      "manuscript_value": 82.1,
+      "workbook_value": 82.05,
+      "source_cell": "'Summary Matrix'!F8",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "TASL",
+      "ratio_percent": 30,
+      "metric": "best",
+      "statistic": "sample_sd",
+      "manuscript_value": 4.3,
+      "workbook_value": 4.33,
+      "source_cell": "'Summary Matrix'!G8",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "TASL",
+      "ratio_percent": 40,
+      "metric": "best",
+      "statistic": "mean",
+      "manuscript_value": 81.9,
+      "workbook_value": 81.9,
+      "source_cell": "'Summary Matrix'!H8",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "TASL",
+      "ratio_percent": 40,
+      "metric": "best",
+      "statistic": "sample_sd",
+      "manuscript_value": 4.4,
+      "workbook_value": 4.4,
+      "source_cell": "'Summary Matrix'!I8",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FedAvg",
+      "ratio_percent": 10,
+      "metric": "avg",
+      "statistic": "mean",
+      "manuscript_value": 63.2,
+      "workbook_value": 63.24,
+      "source_cell": "'Summary Matrix'!B14",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FedAvg",
+      "ratio_percent": 10,
+      "metric": "avg",
+      "statistic": "sample_sd",
+      "manuscript_value": 7.5,
+      "workbook_value": 7.47,
+      "source_cell": "'Summary Matrix'!C14",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FedAvg",
+      "ratio_percent": 20,
+      "metric": "avg",
+      "statistic": "mean",
+      "manuscript_value": 62.6,
+      "workbook_value": 62.62,
+      "source_cell": "'Summary Matrix'!D14",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FedAvg",
+      "ratio_percent": 20,
+      "metric": "avg",
+      "statistic": "sample_sd",
+      "manuscript_value": 2.8,
+      "workbook_value": 2.76,
+      "source_cell": "'Summary Matrix'!E14",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FedAvg",
+      "ratio_percent": 30,
+      "metric": "avg",
+      "statistic": "mean",
+      "manuscript_value": 57.1,
+      "workbook_value": 57.07,
+      "source_cell": "'Summary Matrix'!F14",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FedAvg",
+      "ratio_percent": 30,
+      "metric": "avg",
+      "statistic": "sample_sd",
+      "manuscript_value": 3.7,
+      "workbook_value": 3.71,
+      "source_cell": "'Summary Matrix'!G14",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FedAvg",
+      "ratio_percent": 40,
+      "metric": "avg",
+      "statistic": "mean",
+      "manuscript_value": 55.9,
+      "workbook_value": 55.93,
+      "source_cell": "'Summary Matrix'!H14",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FedAvg",
+      "ratio_percent": 40,
+      "metric": "avg",
+      "statistic": "sample_sd",
+      "manuscript_value": 11.3,
+      "workbook_value": 11.29,
+      "source_cell": "'Summary Matrix'!I14",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 10,
+      "metric": "avg",
+      "statistic": "mean",
+      "manuscript_value": 58.7,
+      "workbook_value": 58.66,
+      "source_cell": "'Summary Matrix'!B15",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 10,
+      "metric": "avg",
+      "statistic": "sample_sd",
+      "manuscript_value": 6.0,
+      "workbook_value": 6.03,
+      "source_cell": "'Summary Matrix'!C15",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 20,
+      "metric": "avg",
+      "statistic": "mean",
+      "manuscript_value": 52.5,
+      "workbook_value": 52.47,
+      "source_cell": "'Summary Matrix'!D15",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 20,
+      "metric": "avg",
+      "statistic": "sample_sd",
+      "manuscript_value": 6.2,
+      "workbook_value": 6.16,
+      "source_cell": "'Summary Matrix'!E15",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 30,
+      "metric": "avg",
+      "statistic": "mean",
+      "manuscript_value": 46.3,
+      "workbook_value": 46.34,
+      "source_cell": "'Summary Matrix'!F15",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 30,
+      "metric": "avg",
+      "statistic": "sample_sd",
+      "manuscript_value": 12.0,
+      "workbook_value": 12.02,
+      "source_cell": "'Summary Matrix'!G15",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 40,
+      "metric": "avg",
+      "statistic": "mean",
+      "manuscript_value": 42.4,
+      "workbook_value": 42.35,
+      "source_cell": "'Summary Matrix'!H15",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 40,
+      "metric": "avg",
+      "statistic": "sample_sd",
+      "manuscript_value": 20.6,
+      "workbook_value": 20.62,
+      "source_cell": "'Summary Matrix'!I15",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 10,
+      "metric": "avg",
+      "statistic": "mean",
+      "manuscript_value": 62.1,
+      "workbook_value": 62.05,
+      "source_cell": "'Summary Matrix'!B16",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 10,
+      "metric": "avg",
+      "statistic": "sample_sd",
+      "manuscript_value": 3.7,
+      "workbook_value": 3.69,
+      "source_cell": "'Summary Matrix'!C16",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 20,
+      "metric": "avg",
+      "statistic": "mean",
+      "manuscript_value": 59.9,
+      "workbook_value": 59.92,
+      "source_cell": "'Summary Matrix'!D16",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 20,
+      "metric": "avg",
+      "statistic": "sample_sd",
+      "manuscript_value": 7.3,
+      "workbook_value": 7.28,
+      "source_cell": "'Summary Matrix'!E16",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 30,
+      "metric": "avg",
+      "statistic": "mean",
+      "manuscript_value": 59.0,
+      "workbook_value": 58.97,
+      "source_cell": "'Summary Matrix'!F16",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 30,
+      "metric": "avg",
+      "statistic": "sample_sd",
+      "manuscript_value": 5.3,
+      "workbook_value": 5.26,
+      "source_cell": "'Summary Matrix'!G16",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 40,
+      "metric": "avg",
+      "statistic": "mean",
+      "manuscript_value": 53.1,
+      "workbook_value": 53.12,
+      "source_cell": "'Summary Matrix'!H16",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 40,
+      "metric": "avg",
+      "statistic": "sample_sd",
+      "manuscript_value": 8.0,
+      "workbook_value": 7.95,
+      "source_cell": "'Summary Matrix'!I16",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FLTrust",
+      "ratio_percent": 10,
+      "metric": "avg",
+      "statistic": "mean",
+      "manuscript_value": 64.7,
+      "workbook_value": 64.72,
+      "source_cell": "'Summary Matrix'!B17",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FLTrust",
+      "ratio_percent": 10,
+      "metric": "avg",
+      "statistic": "sample_sd",
+      "manuscript_value": 4.5,
+      "workbook_value": 4.46,
+      "source_cell": "'Summary Matrix'!C17",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FLTrust",
+      "ratio_percent": 20,
+      "metric": "avg",
+      "statistic": "mean",
+      "manuscript_value": 62.6,
+      "workbook_value": 62.58,
+      "source_cell": "'Summary Matrix'!D17",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FLTrust",
+      "ratio_percent": 20,
+      "metric": "avg",
+      "statistic": "sample_sd",
+      "manuscript_value": 3.9,
+      "workbook_value": 3.94,
+      "source_cell": "'Summary Matrix'!E17",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FLTrust",
+      "ratio_percent": 30,
+      "metric": "avg",
+      "statistic": "mean",
+      "manuscript_value": 54.9,
+      "workbook_value": 54.94,
+      "source_cell": "'Summary Matrix'!F17",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FLTrust",
+      "ratio_percent": 30,
+      "metric": "avg",
+      "statistic": "sample_sd",
+      "manuscript_value": 3.8,
+      "workbook_value": 3.83,
+      "source_cell": "'Summary Matrix'!G17",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FLTrust",
+      "ratio_percent": 40,
+      "metric": "avg",
+      "statistic": "mean",
+      "manuscript_value": 52.6,
+      "workbook_value": 52.57,
+      "source_cell": "'Summary Matrix'!H17",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FLTrust",
+      "ratio_percent": 40,
+      "metric": "avg",
+      "statistic": "sample_sd",
+      "manuscript_value": 5.6,
+      "workbook_value": 5.63,
+      "source_cell": "'Summary Matrix'!I17",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "TASL",
+      "ratio_percent": 10,
+      "metric": "avg",
+      "statistic": "mean",
+      "manuscript_value": 64.0,
+      "workbook_value": 64.0,
+      "source_cell": "'Summary Matrix'!B18",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "TASL",
+      "ratio_percent": 10,
+      "metric": "avg",
+      "statistic": "sample_sd",
+      "manuscript_value": 6.9,
+      "workbook_value": 6.87,
+      "source_cell": "'Summary Matrix'!C18",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "TASL",
+      "ratio_percent": 20,
+      "metric": "avg",
+      "statistic": "mean",
+      "manuscript_value": 63.3,
+      "workbook_value": 63.31,
+      "source_cell": "'Summary Matrix'!D18",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "TASL",
+      "ratio_percent": 20,
+      "metric": "avg",
+      "statistic": "sample_sd",
+      "manuscript_value": 4.7,
+      "workbook_value": 4.72,
+      "source_cell": "'Summary Matrix'!E18",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "TASL",
+      "ratio_percent": 30,
+      "metric": "avg",
+      "statistic": "mean",
+      "manuscript_value": 56.3,
+      "workbook_value": 56.34,
+      "source_cell": "'Summary Matrix'!F18",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "TASL",
+      "ratio_percent": 30,
+      "metric": "avg",
+      "statistic": "sample_sd",
+      "manuscript_value": 7.5,
+      "workbook_value": 7.5,
+      "source_cell": "'Summary Matrix'!G18",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "TASL",
+      "ratio_percent": 40,
+      "metric": "avg",
+      "statistic": "mean",
+      "manuscript_value": 53.5,
+      "workbook_value": 53.48,
+      "source_cell": "'Summary Matrix'!H18",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "TASL",
+      "ratio_percent": 40,
+      "metric": "avg",
+      "statistic": "sample_sd",
+      "manuscript_value": 10.1,
+      "workbook_value": 10.05,
+      "source_cell": "'Summary Matrix'!I18",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FedAvg",
+      "ratio_percent": 10,
+      "metric": "asr",
+      "statistic": "mean",
+      "manuscript_value": 7.1,
+      "workbook_value": 7.11,
+      "source_cell": "'Summary Matrix'!B24",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FedAvg",
+      "ratio_percent": 10,
+      "metric": "asr",
+      "statistic": "sample_sd",
+      "manuscript_value": 2.4,
+      "workbook_value": 2.41,
+      "source_cell": "'Summary Matrix'!C24",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FedAvg",
+      "ratio_percent": 20,
+      "metric": "asr",
+      "statistic": "mean",
+      "manuscript_value": 8.6,
+      "workbook_value": 8.57,
+      "source_cell": "'Summary Matrix'!D24",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FedAvg",
+      "ratio_percent": 20,
+      "metric": "asr",
+      "statistic": "sample_sd",
+      "manuscript_value": 2.1,
+      "workbook_value": 2.08,
+      "source_cell": "'Summary Matrix'!E24",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FedAvg",
+      "ratio_percent": 30,
+      "metric": "asr",
+      "statistic": "mean",
+      "manuscript_value": 12.3,
+      "workbook_value": 12.26,
+      "source_cell": "'Summary Matrix'!F24",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FedAvg",
+      "ratio_percent": 30,
+      "metric": "asr",
+      "statistic": "sample_sd",
+      "manuscript_value": 2.3,
+      "workbook_value": 2.28,
+      "source_cell": "'Summary Matrix'!G24",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FedAvg",
+      "ratio_percent": 40,
+      "metric": "asr",
+      "statistic": "mean",
+      "manuscript_value": 15.8,
+      "workbook_value": 15.77,
+      "source_cell": "'Summary Matrix'!H24",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FedAvg",
+      "ratio_percent": 40,
+      "metric": "asr",
+      "statistic": "sample_sd",
+      "manuscript_value": 5.5,
+      "workbook_value": 5.49,
+      "source_cell": "'Summary Matrix'!I24",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 10,
+      "metric": "asr",
+      "statistic": "mean",
+      "manuscript_value": 8.3,
+      "workbook_value": 8.32,
+      "source_cell": "'Summary Matrix'!B25",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 10,
+      "metric": "asr",
+      "statistic": "sample_sd",
+      "manuscript_value": 3.2,
+      "workbook_value": 3.19,
+      "source_cell": "'Summary Matrix'!C25",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 20,
+      "metric": "asr",
+      "statistic": "mean",
+      "manuscript_value": 12.0,
+      "workbook_value": 11.95,
+      "source_cell": "'Summary Matrix'!D25",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 20,
+      "metric": "asr",
+      "statistic": "sample_sd",
+      "manuscript_value": 5.7,
+      "workbook_value": 5.74,
+      "source_cell": "'Summary Matrix'!E25",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 30,
+      "metric": "asr",
+      "statistic": "mean",
+      "manuscript_value": 14.9,
+      "workbook_value": 14.94,
+      "source_cell": "'Summary Matrix'!F25",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 30,
+      "metric": "asr",
+      "statistic": "sample_sd",
+      "manuscript_value": 11.1,
+      "workbook_value": 11.08,
+      "source_cell": "'Summary Matrix'!G25",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 40,
+      "metric": "asr",
+      "statistic": "mean",
+      "manuscript_value": 24.4,
+      "workbook_value": 24.43,
+      "source_cell": "'Summary Matrix'!H25",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Multi-Krum",
+      "ratio_percent": 40,
+      "metric": "asr",
+      "statistic": "sample_sd",
+      "manuscript_value": 19.4,
+      "workbook_value": 19.44,
+      "source_cell": "'Summary Matrix'!I25",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 10,
+      "metric": "asr",
+      "statistic": "mean",
+      "manuscript_value": 6.9,
+      "workbook_value": 6.91,
+      "source_cell": "'Summary Matrix'!B26",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 10,
+      "metric": "asr",
+      "statistic": "sample_sd",
+      "manuscript_value": 1.9,
+      "workbook_value": 1.85,
+      "source_cell": "'Summary Matrix'!C26",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 20,
+      "metric": "asr",
+      "statistic": "mean",
+      "manuscript_value": 8.2,
+      "workbook_value": 8.23,
+      "source_cell": "'Summary Matrix'!D26",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 20,
+      "metric": "asr",
+      "statistic": "sample_sd",
+      "manuscript_value": 2.4,
+      "workbook_value": 2.38,
+      "source_cell": "'Summary Matrix'!E26",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 30,
+      "metric": "asr",
+      "statistic": "mean",
+      "manuscript_value": 10.2,
+      "workbook_value": 10.19,
+      "source_cell": "'Summary Matrix'!F26",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 30,
+      "metric": "asr",
+      "statistic": "sample_sd",
+      "manuscript_value": 2.7,
+      "workbook_value": 2.71,
+      "source_cell": "'Summary Matrix'!G26",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 40,
+      "metric": "asr",
+      "statistic": "mean",
+      "manuscript_value": 13.9,
+      "workbook_value": 13.89,
+      "source_cell": "'Summary Matrix'!H26",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "Trimmed Mean",
+      "ratio_percent": 40,
+      "metric": "asr",
+      "statistic": "sample_sd",
+      "manuscript_value": 4.8,
+      "workbook_value": 4.81,
+      "source_cell": "'Summary Matrix'!I26",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FLTrust",
+      "ratio_percent": 10,
+      "metric": "asr",
+      "statistic": "mean",
+      "manuscript_value": 7.0,
+      "workbook_value": 6.97,
+      "source_cell": "'Summary Matrix'!B27",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FLTrust",
+      "ratio_percent": 10,
+      "metric": "asr",
+      "statistic": "sample_sd",
+      "manuscript_value": 2.0,
+      "workbook_value": 1.98,
+      "source_cell": "'Summary Matrix'!C27",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FLTrust",
+      "ratio_percent": 20,
+      "metric": "asr",
+      "statistic": "mean",
+      "manuscript_value": 9.7,
+      "workbook_value": 9.73,
+      "source_cell": "'Summary Matrix'!D27",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FLTrust",
+      "ratio_percent": 20,
+      "metric": "asr",
+      "statistic": "sample_sd",
+      "manuscript_value": 1.2,
+      "workbook_value": 1.18,
+      "source_cell": "'Summary Matrix'!E27",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FLTrust",
+      "ratio_percent": 30,
+      "metric": "asr",
+      "statistic": "mean",
+      "manuscript_value": 15.0,
+      "workbook_value": 15.03,
+      "source_cell": "'Summary Matrix'!F27",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FLTrust",
+      "ratio_percent": 30,
+      "metric": "asr",
+      "statistic": "sample_sd",
+      "manuscript_value": 1.0,
+      "workbook_value": 1.01,
+      "source_cell": "'Summary Matrix'!G27",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FLTrust",
+      "ratio_percent": 40,
+      "metric": "asr",
+      "statistic": "mean",
+      "manuscript_value": 18.0,
+      "workbook_value": 17.95,
+      "source_cell": "'Summary Matrix'!H27",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "FLTrust",
+      "ratio_percent": 40,
+      "metric": "asr",
+      "statistic": "sample_sd",
+      "manuscript_value": 3.1,
+      "workbook_value": 3.08,
+      "source_cell": "'Summary Matrix'!I27",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "TASL",
+      "ratio_percent": 10,
+      "metric": "asr",
+      "statistic": "mean",
+      "manuscript_value": 6.7,
+      "workbook_value": 6.69,
+      "source_cell": "'Summary Matrix'!B28",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "TASL",
+      "ratio_percent": 10,
+      "metric": "asr",
+      "statistic": "sample_sd",
+      "manuscript_value": 2.1,
+      "workbook_value": 2.12,
+      "source_cell": "'Summary Matrix'!C28",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "TASL",
+      "ratio_percent": 20,
+      "metric": "asr",
+      "statistic": "mean",
+      "manuscript_value": 7.6,
+      "workbook_value": 7.58,
+      "source_cell": "'Summary Matrix'!D28",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "TASL",
+      "ratio_percent": 20,
+      "metric": "asr",
+      "statistic": "sample_sd",
+      "manuscript_value": 2.1,
+      "workbook_value": 2.05,
+      "source_cell": "'Summary Matrix'!E28",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "TASL",
+      "ratio_percent": 30,
+      "metric": "asr",
+      "statistic": "mean",
+      "manuscript_value": 11.5,
+      "workbook_value": 11.49,
+      "source_cell": "'Summary Matrix'!F28",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "TASL",
+      "ratio_percent": 30,
+      "metric": "asr",
+      "statistic": "sample_sd",
+      "manuscript_value": 2.0,
+      "workbook_value": 1.95,
+      "source_cell": "'Summary Matrix'!G28",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "TASL",
+      "ratio_percent": 40,
+      "metric": "asr",
+      "statistic": "mean",
+      "manuscript_value": 15.0,
+      "workbook_value": 15.02,
+      "source_cell": "'Summary Matrix'!H28",
+      "source_precision": "0.01 percentage point"
+    },
+    {
+      "table": 3,
+      "dataset": "cifar10",
+      "attack": "label_flip",
+      "algorithm": "TASL",
+      "ratio_percent": 40,
+      "metric": "asr",
+      "statistic": "sample_sd",
+      "manuscript_value": 5.1,
+      "workbook_value": 5.11,
+      "source_cell": "'Summary Matrix'!I28",
+      "source_precision": "0.01 percentage point"
+    }
+  ],
+  "scope": {
+    "Table2_CIFAR_LF_numeric_values": 10,
+    "Table3_CIFAR_numeric_values": 120
+  },
+  "limitations": [
+    "Workbook seed-level values and summaries are rounded records, not unrounded trajectories.",
+    "Historical code versions, partitions, and execution environment are not certified by this check.",
+    "MNIST/Fashion-MNIST main tables and CIFAR-10 SF/Scaling main-table trajectories remain unrecovered."
+  ]
+}

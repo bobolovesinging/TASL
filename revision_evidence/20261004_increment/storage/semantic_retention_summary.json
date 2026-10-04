@@ -1,0 +1,57 @@
+{
+  "rounds": 50,
+  "window": 5,
+  "measured_bytes": {
+    "updates": 23292440.0,
+    "checkpoint": 2329244.0,
+    "metadata": 1430.0
+  },
+  "policies": [
+    {
+      "policy": "full_retention",
+      "active_bytes": 1281155700,
+      "model_update_window_rounds": 50,
+      "permanent_evidence_rounds": 50,
+      "permanent_evidence_coverage": 1.0,
+      "expired_payload_recoverable_without_archive": 1,
+      "extra_active_bytes_vs_uniform": 1162357106
+    },
+    {
+      "policy": "uniform_window_pruning",
+      "active_bytes": 118798594,
+      "model_update_window_rounds": 5,
+      "permanent_evidence_rounds": 5,
+      "permanent_evidence_coverage": 0.1,
+      "expired_payload_recoverable_without_archive": 0,
+      "extra_active_bytes_vs_uniform": 0
+    },
+    {
+      "policy": "hbs_semantic_tiers",
+      "active_bytes": 118862944,
+      "model_update_window_rounds": 5,
+      "permanent_evidence_rounds": 50,
+      "permanent_evidence_coverage": 1.0,
+      "expired_payload_recoverable_without_archive": 0,
+      "extra_active_bytes_vs_uniform": 64350
+    },
+    {
+      "policy": "matched_semantic_checkpoint_prune",
+      "active_bytes": 118862944,
+      "model_update_window_rounds": 5,
+      "permanent_evidence_rounds": 50,
+      "permanent_evidence_coverage": 1.0,
+      "expired_payload_recoverable_without_archive": 0,
+      "extra_active_bytes_vs_uniform": 64350
+    }
+  ],
+  "hbs_extra_bytes_vs_uniform": 64350,
+  "hbs_extra_percent_vs_uniform": 0.05416730773766565,
+  "evidence_coverage_gain_percentage_points": 90.0,
+  "purpose": "Quantify the storage cost of retaining compact integrity/governance evidence after transient model-bearing states expire.",
+  "interpretation": "HBS preserves evidence for every round at small metadata overhead relative to uniform pruning. A checkpoint-and-prune policy with the same semantic tiers is byte-equivalent to HBS.",
+  "limitations": [
+    "Derived from three measured Fashion-MNIST rounds replayed to a 50-round accounting horizon.",
+    "A retained commitment supports provenance/integrity checking if a payload is later presented; it does not reconstruct an expired payload.",
+    "Historical payload recovery requires the separately accounted external archive."
+  ]
+}

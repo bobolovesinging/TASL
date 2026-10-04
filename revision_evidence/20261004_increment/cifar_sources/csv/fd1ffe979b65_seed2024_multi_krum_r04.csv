@@ -1,0 +1,2 @@
+algo,attack,dataset,alpha,byzantine_ratio,best_acc,avg_acc,last_acc,asr
+multi_krum,label_flip,cifar10,0.3,0.4,80.77,57.42,80.77,11.12
