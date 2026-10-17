@@ -1,0 +1,101 @@
+{
+  "comment": "R4.6",
+  "trajectories": 10,
+  "round_records": 500,
+  "seed": 42,
+  "rows": [
+    {
+      "parameter": "trust_power",
+      "value": 3.0,
+      "avg_acc": 66.5784,
+      "avg_asr": 1.3572,
+      "honest_zero_count": 102,
+      "honest_zero_percent": 34.0
+    },
+    {
+      "parameter": "trust_power",
+      "value": 7.0,
+      "avg_acc": 64.053,
+      "avg_asr": 1.4164,
+      "honest_zero_count": 125,
+      "honest_zero_percent": 41.666666666666664
+    },
+    {
+      "parameter": "norm_penalty",
+      "value": 0.4,
+      "avg_acc": 65.63600000000001,
+      "avg_asr": 1.4972000000000003,
+      "honest_zero_count": 105,
+      "honest_zero_percent": 35.0
+    },
+    {
+      "parameter": "norm_penalty",
+      "value": 1.2,
+      "avg_acc": 67.8824,
+      "avg_asr": 1.5092,
+      "honest_zero_count": 103,
+      "honest_zero_percent": 34.333333333333336
+    },
+    {
+      "parameter": "weight_cap_ratio",
+      "value": 1.0,
+      "avg_acc": 66.76180000000001,
+      "avg_asr": 1.4506000000000001,
+      "honest_zero_count": 108,
+      "honest_zero_percent": 36.0
+    },
+    {
+      "parameter": "weight_cap_ratio",
+      "value": 2.0,
+      "avg_acc": 66.6734,
+      "avg_asr": 1.6765999999999999,
+      "honest_zero_count": 92,
+      "honest_zero_percent": 30.666666666666668
+    },
+    {
+      "parameter": "anchor_current_fraction",
+      "value": 0.4,
+      "avg_acc": 67.1658,
+      "avg_asr": 1.3763999999999998,
+      "honest_zero_count": 75,
+      "honest_zero_percent": 25.0
+    },
+    {
+      "parameter": "anchor_current_fraction",
+      "value": 0.8,
+      "avg_acc": 62.331199999999995,
+      "avg_asr": 1.4858000000000002,
+      "honest_zero_count": 138,
+      "honest_zero_percent": 46.0
+    },
+    {
+      "parameter": "norm_gate_multiplier",
+      "value": 2.0,
+      "avg_acc": 67.727,
+      "avg_asr": 1.5619999999999998,
+      "honest_zero_count": 100,
+      "honest_zero_percent": 33.333333333333336
+    },
+    {
+      "parameter": "norm_gate_multiplier",
+      "value": 3.0,
+      "avg_acc": 65.63600000000001,
+      "avg_asr": 1.5164,
+      "honest_zero_count": 105,
+      "honest_zero_percent": 35.0
+    }
+  ],
+  "default": {
+    "avg_acc": 65.63600000000001,
+    "avg_asr": 1.5164,
+    "honest_zero_count": 105,
+    "honest_zero_percent": 35.0
+  },
+  "support": "One-factor heuristic sensitivity and honest-client screening cost in the measured LF setting.",
+  "limits": [
+    "Not an optimizer or convergence proof; defaults are not selected from the test results.",
+    "One training seed, no clean scan and no interaction grid.",
+    "Changing the anchor fraction changes all three anchor blend occurrences together.",
+    "Zero client weights are not honest Executor false rejections; fixed Vp sample count is not scanned."
+  ]
+}

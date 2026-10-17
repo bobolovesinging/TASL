@@ -1,0 +1,136 @@
+{
+  "comment": "R4.8",
+  "trajectories": 6,
+  "rounds": 300,
+  "seed": 42,
+  "paired_initial_state_and_partition": true,
+  "rows": [
+    {
+      "algorithm": "fedavg",
+      "attack": "none",
+      "avg_acc": 76.0526,
+      "best_acc": "83.45",
+      "avg_asr": 0.0
+    },
+    {
+      "algorithm": "tasl_full",
+      "attack": "none",
+      "avg_acc": 74.7636,
+      "best_acc": "84.5",
+      "avg_asr": 0.0
+    },
+    {
+      "algorithm": "lasa",
+      "attack": "none",
+      "avg_acc": 73.14359999999999,
+      "best_acc": "82.76",
+      "avg_asr": 0.0
+    },
+    {
+      "algorithm": "fedavg",
+      "attack": "label_flip",
+      "avg_acc": 54.9646,
+      "best_acc": "78.14",
+      "avg_asr": 17.6006
+    },
+    {
+      "algorithm": "tasl_full",
+      "attack": "label_flip",
+      "avg_acc": 65.63600000000001,
+      "best_acc": "78.39",
+      "avg_asr": 1.5164
+    },
+    {
+      "algorithm": "lasa",
+      "attack": "label_flip",
+      "avg_acc": 34.5172,
+      "best_acc": "67.91",
+      "avg_asr": 33.6566
+    }
+  ],
+  "clean_minus_LF_Avg_points": {
+    "fedavg": 21.088,
+    "tasl_full": 9.127599999999987,
+    "lasa": 38.62639999999999
+  },
+  "LASA_upstream_commit": "8477367a4e8708cde264f7572805040c650af59f",
+  "support": "TASL exceeds the measured LASA default configuration in this single matched LF setting.",
+  "limits": [
+    "One seed and one dataset; no general or statistical superiority over recent methods.",
+    "LASA uses author CLI defaults and an aggregation-only adaptation; no outcome-driven tuning.",
+    "This comparison has no malicious Executor, DKG, ledger, or secure aggregation deployment.",
+    "Results from the 502 environment are kept separate from the five-seed newserver controls."
+  ],
+  "exclusion_budget": {
+    "new_clean": 0,
+    "new_LF": 4,
+    "five_seed_clean": 4,
+    "interpretation": "New clean utility tests screening/weighting without permanent exclusion, not its full cost."
+  },
+  "files": [
+    {
+      "path": "results/label_flip/complete.json",
+      "sha256": "22a8f2c4e1c41837386ce8e02c9c220c930ee767691b3044cc0c6f9df58ce675"
+    },
+    {
+      "path": "results/label_flip/environment.json",
+      "sha256": "2f9eac829b39ff024e724583edac00bb9492baabd2f8b899c505f3e0d381946b"
+    },
+    {
+      "path": "results/label_flip/fedavg.json",
+      "sha256": "ef611f02a0de3c2c231191aa79f9ba495050ed9ceaf2e72475fa71e03017ca58"
+    },
+    {
+      "path": "results/label_flip/lasa.json",
+      "sha256": "2bd3839e52b586cdc606619c618e1aeb2815f3d2c3d1b51f968d8cfd569b0d94"
+    },
+    {
+      "path": "results/label_flip/partition.json",
+      "sha256": "be29a5114af0da0332bd425c5f68c4417e76a7c92a4b6cecff0fdbb2a88675aa"
+    },
+    {
+      "path": "results/label_flip/pip_freeze.txt",
+      "sha256": "461cbee448547411dd01b8112c636b9268cd43e1fad1b33d044544a5842e64c4"
+    },
+    {
+      "path": "results/label_flip/summary.csv",
+      "sha256": "d88e36c3fbe6364e75455715f5cac455ba00d5361e3fbfcc1a00a2831dabbffa"
+    },
+    {
+      "path": "results/label_flip/tasl_full.json",
+      "sha256": "ddae24cccc2032292fcdae6bd6028809d6dbe18b630a6b290e6bcd77ee6fcdce"
+    },
+    {
+      "path": "results/none/complete.json",
+      "sha256": "22a8f2c4e1c41837386ce8e02c9c220c930ee767691b3044cc0c6f9df58ce675"
+    },
+    {
+      "path": "results/none/environment.json",
+      "sha256": "632826171127a3686ce57ea31f1ed18bcb0665c803a67beec7b79ffc5db10649"
+    },
+    {
+      "path": "results/none/fedavg.json",
+      "sha256": "29795528e230697c1f552df14ac93baff1633fbb81449ae2a1b173cc57cf9aca"
+    },
+    {
+      "path": "results/none/lasa.json",
+      "sha256": "6a995f99f67b40740488cc6502550c09002dcc71e8d31d5b5ba67760d658db85"
+    },
+    {
+      "path": "results/none/partition.json",
+      "sha256": "be29a5114af0da0332bd425c5f68c4417e76a7c92a4b6cecff0fdbb2a88675aa"
+    },
+    {
+      "path": "results/none/pip_freeze.txt",
+      "sha256": "461cbee448547411dd01b8112c636b9268cd43e1fad1b33d044544a5842e64c4"
+    },
+    {
+      "path": "results/none/summary.csv",
+      "sha256": "05991e312cddb3bed9578925fb8674a1c380b3d2040a9cd6ea6a9241fc2a42ed"
+    },
+    {
+      "path": "results/none/tasl_full.json",
+      "sha256": "b6a344429ea799b5c03fc50b13ee4555ce6ffdd0b51161db2809fb9f837bb07d"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "comments": [
+    "R4.1",
+    "R4.14",
+    "R4.15"
+  ],
+  "accounting_rows_checked": 48,
+  "table7_policies_checked": 4,
+  "measured_capture_rounds": 3,
+  "payload_unit": "torch-serialized plaintext float32 updates/checkpoint; not CKKS ciphertext",
+  "metadata_unit": "local fixed-width JSON record with commitment/signature placeholders; not deployed ledger/proof bytes",
+  "source_sha256": "c4ccf4405fcc09df5dff824c5cac129a8bec769ea87fcf5213dd2686ed786b16",
+  "hbs_extra_active_bytes": 64350,
+  "hbs_extra_percent": 0.05416730773766565,
+  "conclusion": "Accounting is consistent with the stated local model; it supports retention semantics, not cryptographic validity or deployed system storage."
+}

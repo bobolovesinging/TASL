@@ -1,0 +1,39 @@
+experiment:
+  name: table11_fashion_scaling
+  seed: 2024
+  rounds: 50
+  clients: 10
+  byzantine_ratio: 0.4
+  local_epochs: 2
+  lr: 0.02
+  momentum: 0.0
+  weight_decay: 0.0
+  batch_size: 128
+
+data:
+  dataset: fashionmnist
+  alpha: 0.3
+
+client_attack:
+  type: scaling
+
+executor_attack:
+  type: mixed12
+  attacks_per_block: 6
+  chaos_seed: 2026
+
+tas:
+  exclusion: false
+  ema_alpha: 0.7
+  trust_power: 5.0
+  max_weight_ratio: 1.5
+  v1_sample_dim_ratio: 0.3
+  v2_sample_client_ratio: 0.3
+  tolerance: 1.0e-6
+
+groups:
+  - noexecutor
+  - trust_v1v2
+
+output:
+  dir: /home/njit/tasl_fashion_tas_5seed_20260930/results/scaling_seed2024

@@ -1,0 +1,4 @@
+group,best_acc,avg_acc,last_acc,attack_rounds,blocked_rounds
+no_executor,81.8,56.08610000000001,81.8,0,0
+trust_only,10.0,10.0,10.0,120,0
+v1,26.69,10.50665,10.0,120,81

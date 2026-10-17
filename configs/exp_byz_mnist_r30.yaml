@@ -1,0 +1,40 @@
+algorithm_params:
+  krum:
+    num_excluded: 3
+  min_max:
+    z_max: 2.0
+  multi_krum:
+    num_excluded: 3
+  scaling:
+    scaling_factor: 100.0
+algorithms:
+- fedavg
+- multi_krum
+- trimmed_mean
+- fltrust
+- tasl
+byzantine:
+  attacks:
+  - label_flip
+  - sign_flip
+  ratio: 0.3
+data:
+  alpha: 0.3
+  batch_size: 64
+  dataset: mnist
+  n_clients: 10
+  split: non_iid
+experiment:
+  device: cuda
+  name: exp_byz_mnist_r30_n10
+  output_dir: results
+  seed: 42
+model:
+  name: fedavgcnn
+  num_classes: 10
+training:
+  local_epochs: 1
+  lr: 0.01
+  momentum: 0.9
+  rounds: 50
+  weight_decay: 0.0001

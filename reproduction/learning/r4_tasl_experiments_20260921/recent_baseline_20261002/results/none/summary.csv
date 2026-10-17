@@ -1,0 +1,4 @@
+algorithm,attack,avg_acc,best_acc,avg_asr
+fedavg,none,76.0526,83.45,0.0
+tasl_full,none,74.7636,84.5,0.0
+lasa,none,73.14359999999999,82.76,0.0

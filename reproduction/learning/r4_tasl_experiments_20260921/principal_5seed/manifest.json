@@ -1,0 +1,75 @@
+{
+  "created": "2026-09-21T22:35:15+0800",
+  "host": "njit5-MS-7C35",
+  "gpu": "NVIDIA GeForce RTX 3090, 550.54.14",
+  "python": "/home/njit5/anaconda3/envs/lt/bin/python",
+  "seeds": [
+    42,
+    123,
+    2024,
+    3407,
+    7711
+  ],
+  "matrix": {
+    "dataset": "Fashion-MNIST",
+    "algorithms": [
+      "FedAvg",
+      "FLTrust",
+      "TASL"
+    ],
+    "conditions": [
+      "clean",
+      "40% label-flipping"
+    ],
+    "rounds": 50,
+    "local_epochs": 2,
+    "clients": 10,
+    "dirichlet_alpha": 0.3
+  },
+  "fltrust_note": "Isolated snapshot corrects omitted FLTrust client-update norm normalization; test_fltrust_norm.py passes.",
+  "files": {
+    "scripts/exp2/exp2_run.py": "8f4c447acab1f78e750592825643954dcf9ed8ba7402c907ca2cafe272a2ef83",
+    "tests/test_fltrust_norm.py": "9e40cddf876aec2f4213be8d32c7d1b8a9cf3b5d3e74063d5178dae2025d28fd",
+    "tests/validate_seed.py": "d72015b9cc5e0aca9185fedb8abf1d6856c7e22cd69d0738a6bdfbda831a9bf0",
+    "run_sequential.sh": "443e06daa9731c98ef4db86ca0745c1e6196c5a73f656e0a8ec29955662d5217",
+    "summarize_5seed.py": "162a693465d6910199328152354df0ac8f51e673e8cd81d4c8d18c54c4892e41",
+    "per_seed_metrics.csv": "9cf8da491df041f3e14d23ea1cdeafceb5fecbd5af71d1fabe33ec21a9a0f147",
+    "aggregate_summary.csv": "7ca763f65c76258a9e78179c66694ad7f534c4dd49d9615519d704797b22b2ee",
+    "paired_effects.csv": "ff6925e11e5e3bdf3decd6f1409a9ba0b7255cc885742573b29ebd6d3fe86bd7",
+    "robustness_degradation.csv": "c74db29e6bdf2bd580725b6cf237e0157fd18b3d56a838dc38cfb7b598db8377",
+    "tasl_weight_diagnostics.csv": "e5c6292ee40977b0461d28b5a45531c4a53a37713fffb977bdd9a7d8f1973ab5",
+    "aggregate_curves.csv": "a20d6a8b2edd46c09c700cfa82d452fa5ffb8fd890c134245daf2cca4141b72d",
+    "validation_report.json": "cbfc2363fcfc23620609d94188c6acd8ee31d13eaabc46c1ae88147f2599971c",
+    "configs/mincos00.yaml": "74a6a07133920918a8549786948ad9059ed44dcd2c808fa11a17d4b9b72d90ed",
+    "configs/mincos04.yaml": "2ccaf5eaf718267ae1f8a1ed701adeb1a8700777364d48ed1d093db6543e91f3",
+    "logs/mincos00.log": "e019dfd83416e71d47246fa40a777c37a81ebfb8a9b61f4d3086da5b28ea5d7f",
+    "logs/mincos04.log": "7cb59642621aeb101bc946168ce82c7920130c505969804109f19d5a46f52476",
+    "run_threshold_scan.sh": "81e30d258b349f4b4e160a7e673480dbf3467aec9090769f8a19a79be5e6a137",
+    "threshold_status.txt": "50cfcc0fcdeb63363d8698cbc0db2a0df697563541e7fe2ebf3653ffa6f77b85",
+    "trust_threshold_summary.csv": "26006d2ecb655ecabd5bd5a5c75f35531c53ecc007ffc662b1b55cb223352b79"
+  },
+  "configs": {
+    "seed123.yaml": "8a42588bc4c4eb253b6f0551b4da9e2d98e5514c0e184808e8b49d4b5e4c3388",
+    "seed2024.yaml": "21ef761f4e63641fb33b6fadfad0a0961b1c218c87d32efafbcd6b7345601d8d",
+    "seed3407.yaml": "2cb8e329808c40e5e951b98139dbbf4269847c140e55e5cd061ec5ee0f1d7ba5",
+    "seed42.yaml": "5f575d6c91c4067e4fe68d9c4bdc10245a43416ee50f8f5b3d860c77433f45e4",
+    "seed7711.yaml": "de906072d613e46ae77354d7c3615104b1a64345ed708f62ae6e9138d9cff79a"
+  },
+  "completed": "2026-09-21T23:18:29+0800",
+  "status": "complete_and_cross_seed_validated",
+  "trust_threshold_scan": {
+    "status": "complete",
+    "seed": 42,
+    "parameter": "min_cos",
+    "values": [
+      0.0,
+      0.2,
+      0.4
+    ],
+    "conditions": [
+      "clean",
+      "40% label-flipping"
+    ],
+    "validated": true
+  }
+}

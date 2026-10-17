@@ -1,0 +1,2 @@
+# Preserve exact bytes used by recorded-result checks on every platform.
+reproduction/** -text

@@ -1,0 +1,1328 @@
+{
+  "validation": "passed",
+  "comments": [
+    "R4.10",
+    "R4.15"
+  ],
+  "matched_cells": 120,
+  "cases": [
+    {
+      "table": 4,
+      "condition": "mnist_lf",
+      "round_rows": 300,
+      "csv_sha256": "6b6fde268d6e706dcac70e72a800571d3b7aff0811a1e5fb083acd1f39e0bd3f",
+      "summary_sha256": "4fcb285e79919d9015a35f3c29847ffdf786fefccbc293abcc62b2c3a88139ba"
+    },
+    {
+      "table": 4,
+      "condition": "mnist_scaling",
+      "round_rows": 300,
+      "csv_sha256": "cedcf66a6b98aca1adb96f5a64ad8b7f04f485c30e5b4fefc665724e163247b3",
+      "summary_sha256": "3e0fbbd752ef3cee7ef939866a4f33509a5eadcdb011726c88aedf131e09ff59"
+    },
+    {
+      "table": 4,
+      "condition": "fashion_lf",
+      "round_rows": 300,
+      "csv_sha256": "7ec2bd497dc2bdf0f14868864566b917df3bf2f4575cb8f1d779d20bff935886",
+      "summary_sha256": "c9c244f1774c167d898701844dcbb4f1883801aea5ad7bfdb0744f2681daa898"
+    },
+    {
+      "table": 4,
+      "condition": "fashion_scaling",
+      "round_rows": 300,
+      "csv_sha256": "a4c9ae423f7f69dec4b7c4e06c01d1b27a5a0b03eb74ffc2f5bdbde0becc7d13",
+      "summary_sha256": "85a45544439f53c3da650dfde86d997239c6d3cd3d159f0f6616c2cf51e21146"
+    },
+    {
+      "table": 5,
+      "condition": "mnist_lf",
+      "round_rows": 300,
+      "csv_sha256": "9681cb41be9885e93ea172289ac78f97a19852d233334dde5d2f740953db7070",
+      "summary_sha256": "470ecf74f38d6d49eb1d83d50b0c5fefda9f9abd1a6a2bc0f486db254f68a1dc"
+    },
+    {
+      "table": 5,
+      "condition": "mnist_scaling",
+      "round_rows": 300,
+      "csv_sha256": "c8299974c4294d06556347c8651543b3cf6bc2d47ae8f29b3765f019c68842c9",
+      "summary_sha256": "b627356299a0c99b6ce91a14235e1a53c1389e98da9972e3e11295da731aa935"
+    },
+    {
+      "table": 5,
+      "condition": "fashion_lf",
+      "round_rows": 300,
+      "csv_sha256": "4f10e5e9d8ff4f7920811be5b6197fcf9b93f2a4560ac66324de3f7a969346a0",
+      "summary_sha256": "7f35223a5a87f4088ba00ed477a224926e2bef4ae7a05959e07c6d9900a1ce39"
+    },
+    {
+      "table": 5,
+      "condition": "fashion_scaling",
+      "round_rows": 300,
+      "csv_sha256": "008c9caebdd8a6f6e1f7b4e90a31de0c0367ea3d0745b63d542ca88169d46eca",
+      "summary_sha256": "7bd2ee1fb6c10b7d482f78ca927952ae26b6cfce08d079784e3a15ed94c09af4"
+    },
+    {
+      "table": 4,
+      "condition": "cifar_lf",
+      "round_rows": 1000,
+      "log_sha256": "56a59808c0d5f74bd99e4fa28429c9d5a8382773df0f222cee56859c2b7e3cab",
+      "legacy_attack_types": [
+        "A1",
+        "A2",
+        "A3"
+      ]
+    },
+    {
+      "table": 5,
+      "condition": "cifar_lf",
+      "round_rows": 1000,
+      "log_sha256": "c0b2c03557b583b49b3154729b184091d93e0a6596ee2eb9a345419ed3538dac",
+      "legacy_attack_types": [
+        "A1",
+        "A2",
+        "A3"
+      ]
+    },
+    {
+      "table": 4,
+      "condition": "cifar_scaling",
+      "round_rows": 1000,
+      "log_sha256": "23f3e529e604dc4c213285ef3ea98b3d3d403c6c48c7f19185f4f718f0dff0ab",
+      "legacy_attack_types": [
+        "A1",
+        "A2",
+        "A3"
+      ]
+    },
+    {
+      "table": 5,
+      "condition": "cifar_scaling",
+      "groups": [
+        "trust_only",
+        "v1"
+      ],
+      "json_sha256": "6eb448a6bee3e25f391499b624bc70af092767c1350e51c5af1abfe8f4a39144"
+    },
+    {
+      "table": 5,
+      "condition": "cifar_scaling",
+      "groups": [
+        "v2",
+        "tas"
+      ],
+      "json_sha256": "db45499c76d4e9af5b6b4531155db505193c048594a7f1dc9cf17ea5418991fc"
+    },
+    {
+      "table": 5,
+      "condition": "cifar_scaling",
+      "groups": [
+        "fedavg"
+      ],
+      "log_sha256": "f0c98f2dc7ec53ee410734550b781c27b15265f9aafda75780a5dbc678db560b"
+    }
+  ],
+  "cell_index": [
+    {
+      "table": 4,
+      "condition": "mnist_lf",
+      "group": "fedavg",
+      "metric": "Avg",
+      "manuscript_value": 50.0,
+      "recomputed_value": 49.9998,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\mnist_lf\\tasv2_mixed12_r50_b3.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\mnist_lf\\tasv2_summary.csv"
+    },
+    {
+      "table": 4,
+      "condition": "mnist_lf",
+      "group": "fedavg",
+      "metric": "Interc",
+      "manuscript_value": 0.0,
+      "recomputed_value": 0.0,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\mnist_lf\\tasv2_mixed12_r50_b3.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\mnist_lf\\tasv2_summary.csv"
+    },
+    {
+      "table": 4,
+      "condition": "mnist_lf",
+      "group": "trust_only",
+      "metric": "Avg",
+      "manuscript_value": 74.1,
+      "recomputed_value": 74.0944,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\mnist_lf\\tasv2_mixed12_r50_b3.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\mnist_lf\\tasv2_summary.csv"
+    },
+    {
+      "table": 4,
+      "condition": "mnist_lf",
+      "group": "trust_only",
+      "metric": "Interc",
+      "manuscript_value": 0.0,
+      "recomputed_value": 0.0,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\mnist_lf\\tasv2_mixed12_r50_b3.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\mnist_lf\\tasv2_summary.csv"
+    },
+    {
+      "table": 4,
+      "condition": "mnist_lf",
+      "group": "trust_v1",
+      "metric": "Avg",
+      "manuscript_value": 92.9,
+      "recomputed_value": 92.9172,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\mnist_lf\\tasv2_mixed12_r50_b3.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\mnist_lf\\tasv2_summary.csv"
+    },
+    {
+      "table": 4,
+      "condition": "mnist_lf",
+      "group": "trust_v1",
+      "metric": "Interc",
+      "manuscript_value": 80.0,
+      "recomputed_value": 80.0,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\mnist_lf\\tasv2_mixed12_r50_b3.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\mnist_lf\\tasv2_summary.csv"
+    },
+    {
+      "table": 4,
+      "condition": "mnist_lf",
+      "group": "trust_v2",
+      "metric": "Avg",
+      "manuscript_value": 91.5,
+      "recomputed_value": 91.51820000000001,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\mnist_lf\\tasv2_mixed12_r50_b3.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\mnist_lf\\tasv2_summary.csv"
+    },
+    {
+      "table": 4,
+      "condition": "mnist_lf",
+      "group": "trust_v2",
+      "metric": "Interc",
+      "manuscript_value": 90.0,
+      "recomputed_value": 90.0,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\mnist_lf\\tasv2_mixed12_r50_b3.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\mnist_lf\\tasv2_summary.csv"
+    },
+    {
+      "table": 4,
+      "condition": "mnist_lf",
+      "group": "trust_v1v2",
+      "metric": "Avg",
+      "manuscript_value": 93.7,
+      "recomputed_value": 93.7132,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\mnist_lf\\tasv2_mixed12_r50_b3.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\mnist_lf\\tasv2_summary.csv"
+    },
+    {
+      "table": 4,
+      "condition": "mnist_lf",
+      "group": "trust_v1v2",
+      "metric": "Interc",
+      "manuscript_value": 100.0,
+      "recomputed_value": 100.0,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\mnist_lf\\tasv2_mixed12_r50_b3.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\mnist_lf\\tasv2_summary.csv"
+    },
+    {
+      "table": 4,
+      "condition": "mnist_scaling",
+      "group": "fedavg",
+      "metric": "Avg",
+      "manuscript_value": 70.6,
+      "recomputed_value": 70.60679999999999,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\mnist_scaling\\tasv2_mixed12_r50_b3.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\mnist_scaling\\tasv2_summary.csv"
+    },
+    {
+      "table": 4,
+      "condition": "mnist_scaling",
+      "group": "fedavg",
+      "metric": "Interc",
+      "manuscript_value": 0.0,
+      "recomputed_value": 0.0,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\mnist_scaling\\tasv2_mixed12_r50_b3.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\mnist_scaling\\tasv2_summary.csv"
+    },
+    {
+      "table": 4,
+      "condition": "mnist_scaling",
+      "group": "trust_only",
+      "metric": "Avg",
+      "manuscript_value": 83.0,
+      "recomputed_value": 82.992,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\mnist_scaling\\tasv2_mixed12_r50_b3.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\mnist_scaling\\tasv2_summary.csv"
+    },
+    {
+      "table": 4,
+      "condition": "mnist_scaling",
+      "group": "trust_only",
+      "metric": "Interc",
+      "manuscript_value": 0.0,
+      "recomputed_value": 0.0,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\mnist_scaling\\tasv2_mixed12_r50_b3.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\mnist_scaling\\tasv2_summary.csv"
+    },
+    {
+      "table": 4,
+      "condition": "mnist_scaling",
+      "group": "trust_v1",
+      "metric": "Avg",
+      "manuscript_value": 91.2,
+      "recomputed_value": 91.198,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\mnist_scaling\\tasv2_mixed12_r50_b3.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\mnist_scaling\\tasv2_summary.csv"
+    },
+    {
+      "table": 4,
+      "condition": "mnist_scaling",
+      "group": "trust_v1",
+      "metric": "Interc",
+      "manuscript_value": 73.3,
+      "recomputed_value": 73.33333333333333,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\mnist_scaling\\tasv2_mixed12_r50_b3.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\mnist_scaling\\tasv2_summary.csv"
+    },
+    {
+      "table": 4,
+      "condition": "mnist_scaling",
+      "group": "trust_v2",
+      "metric": "Avg",
+      "manuscript_value": 93.4,
+      "recomputed_value": 93.3616,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\mnist_scaling\\tasv2_mixed12_r50_b3.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\mnist_scaling\\tasv2_summary.csv"
+    },
+    {
+      "table": 4,
+      "condition": "mnist_scaling",
+      "group": "trust_v2",
+      "metric": "Interc",
+      "manuscript_value": 90.0,
+      "recomputed_value": 90.0,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\mnist_scaling\\tasv2_mixed12_r50_b3.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\mnist_scaling\\tasv2_summary.csv"
+    },
+    {
+      "table": 4,
+      "condition": "mnist_scaling",
+      "group": "trust_v1v2",
+      "metric": "Avg",
+      "manuscript_value": 93.9,
+      "recomputed_value": 93.9044,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\mnist_scaling\\tasv2_mixed12_r50_b3.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\mnist_scaling\\tasv2_summary.csv"
+    },
+    {
+      "table": 4,
+      "condition": "mnist_scaling",
+      "group": "trust_v1v2",
+      "metric": "Interc",
+      "manuscript_value": 100.0,
+      "recomputed_value": 100.0,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\mnist_scaling\\tasv2_mixed12_r50_b3.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\mnist_scaling\\tasv2_summary.csv"
+    },
+    {
+      "table": 4,
+      "condition": "fashion_lf",
+      "group": "fedavg",
+      "metric": "Avg",
+      "manuscript_value": 33.5,
+      "recomputed_value": 33.4804,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\fashion_lf\\tasv2_mixed12_r50_b3.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\fashion_lf\\tasv2_summary.csv"
+    },
+    {
+      "table": 4,
+      "condition": "fashion_lf",
+      "group": "fedavg",
+      "metric": "Interc",
+      "manuscript_value": 0.0,
+      "recomputed_value": 0.0,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\fashion_lf\\tasv2_mixed12_r50_b3.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\fashion_lf\\tasv2_summary.csv"
+    },
+    {
+      "table": 4,
+      "condition": "fashion_lf",
+      "group": "trust_only",
+      "metric": "Avg",
+      "manuscript_value": 51.0,
+      "recomputed_value": 51.0272,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\fashion_lf\\tasv2_mixed12_r50_b3.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\fashion_lf\\tasv2_summary.csv"
+    },
+    {
+      "table": 4,
+      "condition": "fashion_lf",
+      "group": "trust_only",
+      "metric": "Interc",
+      "manuscript_value": 0.0,
+      "recomputed_value": 0.0,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\fashion_lf\\tasv2_mixed12_r50_b3.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\fashion_lf\\tasv2_summary.csv"
+    },
+    {
+      "table": 4,
+      "condition": "fashion_lf",
+      "group": "trust_v1",
+      "metric": "Avg",
+      "manuscript_value": 72.3,
+      "recomputed_value": 72.2582,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\fashion_lf\\tasv2_mixed12_r50_b3.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\fashion_lf\\tasv2_summary.csv"
+    },
+    {
+      "table": 4,
+      "condition": "fashion_lf",
+      "group": "trust_v1",
+      "metric": "Interc",
+      "manuscript_value": 90.0,
+      "recomputed_value": 90.0,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\fashion_lf\\tasv2_mixed12_r50_b3.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\fashion_lf\\tasv2_summary.csv"
+    },
+    {
+      "table": 4,
+      "condition": "fashion_lf",
+      "group": "trust_v2",
+      "metric": "Avg",
+      "manuscript_value": 70.1,
+      "recomputed_value": 70.0598,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\fashion_lf\\tasv2_mixed12_r50_b3.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\fashion_lf\\tasv2_summary.csv"
+    },
+    {
+      "table": 4,
+      "condition": "fashion_lf",
+      "group": "trust_v2",
+      "metric": "Interc",
+      "manuscript_value": 90.0,
+      "recomputed_value": 90.0,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\fashion_lf\\tasv2_mixed12_r50_b3.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\fashion_lf\\tasv2_summary.csv"
+    },
+    {
+      "table": 4,
+      "condition": "fashion_lf",
+      "group": "trust_v1v2",
+      "metric": "Avg",
+      "manuscript_value": 73.1,
+      "recomputed_value": 73.075,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\fashion_lf\\tasv2_mixed12_r50_b3.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\fashion_lf\\tasv2_summary.csv"
+    },
+    {
+      "table": 4,
+      "condition": "fashion_lf",
+      "group": "trust_v1v2",
+      "metric": "Interc",
+      "manuscript_value": 100.0,
+      "recomputed_value": 100.0,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\fashion_lf\\tasv2_mixed12_r50_b3.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\fashion_lf\\tasv2_summary.csv"
+    },
+    {
+      "table": 4,
+      "condition": "fashion_scaling",
+      "group": "fedavg",
+      "metric": "Avg",
+      "manuscript_value": 50.5,
+      "recomputed_value": 50.5264,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\fashion_scaling\\tasv2_mixed12_r50_b3.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\fashion_scaling\\tasv2_summary.csv"
+    },
+    {
+      "table": 4,
+      "condition": "fashion_scaling",
+      "group": "fedavg",
+      "metric": "Interc",
+      "manuscript_value": 0.0,
+      "recomputed_value": 0.0,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\fashion_scaling\\tasv2_mixed12_r50_b3.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\fashion_scaling\\tasv2_summary.csv"
+    },
+    {
+      "table": 4,
+      "condition": "fashion_scaling",
+      "group": "trust_only",
+      "metric": "Avg",
+      "manuscript_value": 66.3,
+      "recomputed_value": 66.2534,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\fashion_scaling\\tasv2_mixed12_r50_b3.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\fashion_scaling\\tasv2_summary.csv"
+    },
+    {
+      "table": 4,
+      "condition": "fashion_scaling",
+      "group": "trust_only",
+      "metric": "Interc",
+      "manuscript_value": 0.0,
+      "recomputed_value": 0.0,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\fashion_scaling\\tasv2_mixed12_r50_b3.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\fashion_scaling\\tasv2_summary.csv"
+    },
+    {
+      "table": 4,
+      "condition": "fashion_scaling",
+      "group": "trust_v1",
+      "metric": "Avg",
+      "manuscript_value": 71.9,
+      "recomputed_value": 71.9294,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\fashion_scaling\\tasv2_mixed12_r50_b3.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\fashion_scaling\\tasv2_summary.csv"
+    },
+    {
+      "table": 4,
+      "condition": "fashion_scaling",
+      "group": "trust_v1",
+      "metric": "Interc",
+      "manuscript_value": 50.0,
+      "recomputed_value": 50.0,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\fashion_scaling\\tasv2_mixed12_r50_b3.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\fashion_scaling\\tasv2_summary.csv"
+    },
+    {
+      "table": 4,
+      "condition": "fashion_scaling",
+      "group": "trust_v2",
+      "metric": "Avg",
+      "manuscript_value": 73.5,
+      "recomputed_value": 73.54,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\fashion_scaling\\tasv2_mixed12_r50_b3.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\fashion_scaling\\tasv2_summary.csv"
+    },
+    {
+      "table": 4,
+      "condition": "fashion_scaling",
+      "group": "trust_v2",
+      "metric": "Interc",
+      "manuscript_value": 86.7,
+      "recomputed_value": 86.66666666666667,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\fashion_scaling\\tasv2_mixed12_r50_b3.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\fashion_scaling\\tasv2_summary.csv"
+    },
+    {
+      "table": 4,
+      "condition": "fashion_scaling",
+      "group": "trust_v1v2",
+      "metric": "Avg",
+      "manuscript_value": 74.0,
+      "recomputed_value": 74.0288,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\fashion_scaling\\tasv2_mixed12_r50_b3.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\fashion_scaling\\tasv2_summary.csv"
+    },
+    {
+      "table": 4,
+      "condition": "fashion_scaling",
+      "group": "trust_v1v2",
+      "metric": "Interc",
+      "manuscript_value": 96.7,
+      "recomputed_value": 96.66666666666667,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\fashion_scaling\\tasv2_mixed12_r50_b3.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table10_noexcl\\fashion_scaling\\tasv2_summary.csv"
+    },
+    {
+      "table": 5,
+      "condition": "mnist_lf",
+      "group": "fedavg",
+      "metric": "Avg",
+      "manuscript_value": 34.7,
+      "recomputed_value": 34.6598,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\mnist_lf\\tasv2_mixed12_r50_b4.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\mnist_lf\\tasv2_summary.csv"
+    },
+    {
+      "table": 5,
+      "condition": "mnist_lf",
+      "group": "fedavg",
+      "metric": "Interc",
+      "manuscript_value": 0.0,
+      "recomputed_value": 0.0,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\mnist_lf\\tasv2_mixed12_r50_b4.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\mnist_lf\\tasv2_summary.csv"
+    },
+    {
+      "table": 5,
+      "condition": "mnist_lf",
+      "group": "trust_only",
+      "metric": "Avg",
+      "manuscript_value": 63.7,
+      "recomputed_value": 63.7222,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\mnist_lf\\tasv2_mixed12_r50_b4.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\mnist_lf\\tasv2_summary.csv"
+    },
+    {
+      "table": 5,
+      "condition": "mnist_lf",
+      "group": "trust_only",
+      "metric": "Interc",
+      "manuscript_value": 0.0,
+      "recomputed_value": 0.0,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\mnist_lf\\tasv2_mixed12_r50_b4.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\mnist_lf\\tasv2_summary.csv"
+    },
+    {
+      "table": 5,
+      "condition": "mnist_lf",
+      "group": "trust_v1",
+      "metric": "Avg",
+      "manuscript_value": 83.4,
+      "recomputed_value": 83.3504,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\mnist_lf\\tasv2_mixed12_r50_b4.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\mnist_lf\\tasv2_summary.csv"
+    },
+    {
+      "table": 5,
+      "condition": "mnist_lf",
+      "group": "trust_v1",
+      "metric": "Interc",
+      "manuscript_value": 60.0,
+      "recomputed_value": 60.0,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\mnist_lf\\tasv2_mixed12_r50_b4.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\mnist_lf\\tasv2_summary.csv"
+    },
+    {
+      "table": 5,
+      "condition": "mnist_lf",
+      "group": "trust_v2",
+      "metric": "Avg",
+      "manuscript_value": 88.5,
+      "recomputed_value": 88.5214,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\mnist_lf\\tasv2_mixed12_r50_b4.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\mnist_lf\\tasv2_summary.csv"
+    },
+    {
+      "table": 5,
+      "condition": "mnist_lf",
+      "group": "trust_v2",
+      "metric": "Interc",
+      "manuscript_value": 93.3,
+      "recomputed_value": 93.33333333333333,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\mnist_lf\\tasv2_mixed12_r50_b4.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\mnist_lf\\tasv2_summary.csv"
+    },
+    {
+      "table": 5,
+      "condition": "mnist_lf",
+      "group": "trust_v1v2",
+      "metric": "Avg",
+      "manuscript_value": 92.2,
+      "recomputed_value": 92.212,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\mnist_lf\\tasv2_mixed12_r50_b4.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\mnist_lf\\tasv2_summary.csv"
+    },
+    {
+      "table": 5,
+      "condition": "mnist_lf",
+      "group": "trust_v1v2",
+      "metric": "Interc",
+      "manuscript_value": 100.0,
+      "recomputed_value": 100.0,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\mnist_lf\\tasv2_mixed12_r50_b4.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\mnist_lf\\tasv2_summary.csv"
+    },
+    {
+      "table": 5,
+      "condition": "mnist_scaling",
+      "group": "fedavg",
+      "metric": "Avg",
+      "manuscript_value": 72.6,
+      "recomputed_value": 72.5984,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\mnist_scaling\\tasv2_mixed12_r50_b4.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\mnist_scaling\\tasv2_summary.csv"
+    },
+    {
+      "table": 5,
+      "condition": "mnist_scaling",
+      "group": "fedavg",
+      "metric": "Interc",
+      "manuscript_value": 0.0,
+      "recomputed_value": 0.0,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\mnist_scaling\\tasv2_mixed12_r50_b4.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\mnist_scaling\\tasv2_summary.csv"
+    },
+    {
+      "table": 5,
+      "condition": "mnist_scaling",
+      "group": "trust_only",
+      "metric": "Avg",
+      "manuscript_value": 81.2,
+      "recomputed_value": 81.1766,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\mnist_scaling\\tasv2_mixed12_r50_b4.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\mnist_scaling\\tasv2_summary.csv"
+    },
+    {
+      "table": 5,
+      "condition": "mnist_scaling",
+      "group": "trust_only",
+      "metric": "Interc",
+      "manuscript_value": 0.0,
+      "recomputed_value": 0.0,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\mnist_scaling\\tasv2_mixed12_r50_b4.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\mnist_scaling\\tasv2_summary.csv"
+    },
+    {
+      "table": 5,
+      "condition": "mnist_scaling",
+      "group": "trust_v1",
+      "metric": "Avg",
+      "manuscript_value": 91.2,
+      "recomputed_value": 91.1532,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\mnist_scaling\\tasv2_mixed12_r50_b4.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\mnist_scaling\\tasv2_summary.csv"
+    },
+    {
+      "table": 5,
+      "condition": "mnist_scaling",
+      "group": "trust_v1",
+      "metric": "Interc",
+      "manuscript_value": 50.0,
+      "recomputed_value": 50.0,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\mnist_scaling\\tasv2_mixed12_r50_b4.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\mnist_scaling\\tasv2_summary.csv"
+    },
+    {
+      "table": 5,
+      "condition": "mnist_scaling",
+      "group": "trust_v2",
+      "metric": "Avg",
+      "manuscript_value": 92.3,
+      "recomputed_value": 92.3092,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\mnist_scaling\\tasv2_mixed12_r50_b4.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\mnist_scaling\\tasv2_summary.csv"
+    },
+    {
+      "table": 5,
+      "condition": "mnist_scaling",
+      "group": "trust_v2",
+      "metric": "Interc",
+      "manuscript_value": 93.3,
+      "recomputed_value": 93.33333333333333,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\mnist_scaling\\tasv2_mixed12_r50_b4.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\mnist_scaling\\tasv2_summary.csv"
+    },
+    {
+      "table": 5,
+      "condition": "mnist_scaling",
+      "group": "trust_v1v2",
+      "metric": "Avg",
+      "manuscript_value": 93.0,
+      "recomputed_value": 93.0128,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\mnist_scaling\\tasv2_mixed12_r50_b4.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\mnist_scaling\\tasv2_summary.csv"
+    },
+    {
+      "table": 5,
+      "condition": "mnist_scaling",
+      "group": "trust_v1v2",
+      "metric": "Interc",
+      "manuscript_value": 100.0,
+      "recomputed_value": 100.0,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\mnist_scaling\\tasv2_mixed12_r50_b4.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\mnist_scaling\\tasv2_summary.csv"
+    },
+    {
+      "table": 5,
+      "condition": "fashion_lf",
+      "group": "fedavg",
+      "metric": "Avg",
+      "manuscript_value": 25.4,
+      "recomputed_value": 25.4412,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\fashion_lf\\tasv2_mixed12_r50_b4.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\fashion_lf\\tasv2_summary.csv"
+    },
+    {
+      "table": 5,
+      "condition": "fashion_lf",
+      "group": "fedavg",
+      "metric": "Interc",
+      "manuscript_value": 0.0,
+      "recomputed_value": 0.0,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\fashion_lf\\tasv2_mixed12_r50_b4.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\fashion_lf\\tasv2_summary.csv"
+    },
+    {
+      "table": 5,
+      "condition": "fashion_lf",
+      "group": "trust_only",
+      "metric": "Avg",
+      "manuscript_value": 41.1,
+      "recomputed_value": 41.066,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\fashion_lf\\tasv2_mixed12_r50_b4.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\fashion_lf\\tasv2_summary.csv"
+    },
+    {
+      "table": 5,
+      "condition": "fashion_lf",
+      "group": "trust_only",
+      "metric": "Interc",
+      "manuscript_value": 0.0,
+      "recomputed_value": 0.0,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\fashion_lf\\tasv2_mixed12_r50_b4.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\fashion_lf\\tasv2_summary.csv"
+    },
+    {
+      "table": 5,
+      "condition": "fashion_lf",
+      "group": "trust_v1",
+      "metric": "Avg",
+      "manuscript_value": 67.1,
+      "recomputed_value": 67.088,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\fashion_lf\\tasv2_mixed12_r50_b4.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\fashion_lf\\tasv2_summary.csv"
+    },
+    {
+      "table": 5,
+      "condition": "fashion_lf",
+      "group": "trust_v1",
+      "metric": "Interc",
+      "manuscript_value": 76.7,
+      "recomputed_value": 76.66666666666667,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\fashion_lf\\tasv2_mixed12_r50_b4.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\fashion_lf\\tasv2_summary.csv"
+    },
+    {
+      "table": 5,
+      "condition": "fashion_lf",
+      "group": "trust_v2",
+      "metric": "Avg",
+      "manuscript_value": 69.7,
+      "recomputed_value": 69.732,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\fashion_lf\\tasv2_mixed12_r50_b4.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\fashion_lf\\tasv2_summary.csv"
+    },
+    {
+      "table": 5,
+      "condition": "fashion_lf",
+      "group": "trust_v2",
+      "metric": "Interc",
+      "manuscript_value": 93.3,
+      "recomputed_value": 93.33333333333333,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\fashion_lf\\tasv2_mixed12_r50_b4.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\fashion_lf\\tasv2_summary.csv"
+    },
+    {
+      "table": 5,
+      "condition": "fashion_lf",
+      "group": "trust_v1v2",
+      "metric": "Avg",
+      "manuscript_value": 71.0,
+      "recomputed_value": 70.9628,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\fashion_lf\\tasv2_mixed12_r50_b4.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\fashion_lf\\tasv2_summary.csv"
+    },
+    {
+      "table": 5,
+      "condition": "fashion_lf",
+      "group": "trust_v1v2",
+      "metric": "Interc",
+      "manuscript_value": 100.0,
+      "recomputed_value": 100.0,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\fashion_lf\\tasv2_mixed12_r50_b4.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\fashion_lf\\tasv2_summary.csv"
+    },
+    {
+      "table": 5,
+      "condition": "fashion_scaling",
+      "group": "fedavg",
+      "metric": "Avg",
+      "manuscript_value": 41.1,
+      "recomputed_value": 41.0502,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\fashion_scaling\\tasv2_mixed12_r50_b4.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\fashion_scaling\\tasv2_summary.csv"
+    },
+    {
+      "table": 5,
+      "condition": "fashion_scaling",
+      "group": "fedavg",
+      "metric": "Interc",
+      "manuscript_value": 0.0,
+      "recomputed_value": 0.0,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\fashion_scaling\\tasv2_mixed12_r50_b4.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\fashion_scaling\\tasv2_summary.csv"
+    },
+    {
+      "table": 5,
+      "condition": "fashion_scaling",
+      "group": "trust_only",
+      "metric": "Avg",
+      "manuscript_value": 63.0,
+      "recomputed_value": 62.9778,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\fashion_scaling\\tasv2_mixed12_r50_b4.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\fashion_scaling\\tasv2_summary.csv"
+    },
+    {
+      "table": 5,
+      "condition": "fashion_scaling",
+      "group": "trust_only",
+      "metric": "Interc",
+      "manuscript_value": 0.0,
+      "recomputed_value": 0.0,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\fashion_scaling\\tasv2_mixed12_r50_b4.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\fashion_scaling\\tasv2_summary.csv"
+    },
+    {
+      "table": 5,
+      "condition": "fashion_scaling",
+      "group": "trust_v1",
+      "metric": "Avg",
+      "manuscript_value": 72.4,
+      "recomputed_value": 72.4218,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\fashion_scaling\\tasv2_mixed12_r50_b4.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\fashion_scaling\\tasv2_summary.csv"
+    },
+    {
+      "table": 5,
+      "condition": "fashion_scaling",
+      "group": "trust_v1",
+      "metric": "Interc",
+      "manuscript_value": 36.7,
+      "recomputed_value": 36.666666666666664,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\fashion_scaling\\tasv2_mixed12_r50_b4.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\fashion_scaling\\tasv2_summary.csv"
+    },
+    {
+      "table": 5,
+      "condition": "fashion_scaling",
+      "group": "trust_v2",
+      "metric": "Avg",
+      "manuscript_value": 73.6,
+      "recomputed_value": 73.5736,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\fashion_scaling\\tasv2_mixed12_r50_b4.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\fashion_scaling\\tasv2_summary.csv"
+    },
+    {
+      "table": 5,
+      "condition": "fashion_scaling",
+      "group": "trust_v2",
+      "metric": "Interc",
+      "manuscript_value": 93.3,
+      "recomputed_value": 93.33333333333333,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\fashion_scaling\\tasv2_mixed12_r50_b4.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\fashion_scaling\\tasv2_summary.csv"
+    },
+    {
+      "table": 5,
+      "condition": "fashion_scaling",
+      "group": "trust_v1v2",
+      "metric": "Avg",
+      "manuscript_value": 74.7,
+      "recomputed_value": 74.7052,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\fashion_scaling\\tasv2_mixed12_r50_b4.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\fashion_scaling\\tasv2_summary.csv"
+    },
+    {
+      "table": 5,
+      "condition": "fashion_scaling",
+      "group": "trust_v1v2",
+      "metric": "Interc",
+      "manuscript_value": 100.0,
+      "recomputed_value": 100.0,
+      "raw_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\fashion_scaling\\tasv2_mixed12_r50_b4.csv",
+      "summary_csv": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\table11_noexcl\\fashion_scaling\\tasv2_summary.csv"
+    },
+    {
+      "table": 4,
+      "condition": "cifar_lf",
+      "group": "fedavg",
+      "metric": "Avg",
+      "manuscript_value": 36.3,
+      "recomputed_value": 36.3382,
+      "raw_log": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\governance_ablation\\gov_cifar10_r30_final.log",
+      "accuracy_precision": "Per-round accuracy printed to 0.01 percentage point; full-precision tensors not recovered."
+    },
+    {
+      "table": 4,
+      "condition": "cifar_lf",
+      "group": "fedavg",
+      "metric": "Interc",
+      "manuscript_value": 0.0,
+      "recomputed_value": 0.0,
+      "raw_log": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\governance_ablation\\gov_cifar10_r30_final.log",
+      "accuracy_precision": "Per-round accuracy printed to 0.01 percentage point; full-precision tensors not recovered."
+    },
+    {
+      "table": 4,
+      "condition": "cifar_lf",
+      "group": "trust_only",
+      "metric": "Avg",
+      "manuscript_value": 40.4,
+      "recomputed_value": 40.3807,
+      "raw_log": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\governance_ablation\\gov_cifar10_r30_final.log",
+      "accuracy_precision": "Per-round accuracy printed to 0.01 percentage point; full-precision tensors not recovered."
+    },
+    {
+      "table": 4,
+      "condition": "cifar_lf",
+      "group": "trust_only",
+      "metric": "Interc",
+      "manuscript_value": 0.0,
+      "recomputed_value": 0.0,
+      "raw_log": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\governance_ablation\\gov_cifar10_r30_final.log",
+      "accuracy_precision": "Per-round accuracy printed to 0.01 percentage point; full-precision tensors not recovered."
+    },
+    {
+      "table": 4,
+      "condition": "cifar_lf",
+      "group": "v1_only",
+      "metric": "Avg",
+      "manuscript_value": 58.3,
+      "recomputed_value": 58.3129,
+      "raw_log": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\governance_ablation\\gov_cifar10_r30_final.log",
+      "accuracy_precision": "Per-round accuracy printed to 0.01 percentage point; full-precision tensors not recovered."
+    },
+    {
+      "table": 4,
+      "condition": "cifar_lf",
+      "group": "v1_only",
+      "metric": "Interc",
+      "manuscript_value": 83.3,
+      "recomputed_value": 83.33333333333333,
+      "raw_log": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\governance_ablation\\gov_cifar10_r30_final.log",
+      "accuracy_precision": "Per-round accuracy printed to 0.01 percentage point; full-precision tensors not recovered."
+    },
+    {
+      "table": 4,
+      "condition": "cifar_lf",
+      "group": "v2_only",
+      "metric": "Avg",
+      "manuscript_value": 59.8,
+      "recomputed_value": 59.7806,
+      "raw_log": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\governance_ablation\\gov_cifar10_r30_final.log",
+      "accuracy_precision": "Per-round accuracy printed to 0.01 percentage point; full-precision tensors not recovered."
+    },
+    {
+      "table": 4,
+      "condition": "cifar_lf",
+      "group": "v2_only",
+      "metric": "Interc",
+      "manuscript_value": 99.2,
+      "recomputed_value": 99.16666666666667,
+      "raw_log": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\governance_ablation\\gov_cifar10_r30_final.log",
+      "accuracy_precision": "Per-round accuracy printed to 0.01 percentage point; full-precision tensors not recovered."
+    },
+    {
+      "table": 4,
+      "condition": "cifar_lf",
+      "group": "tas",
+      "metric": "Avg",
+      "manuscript_value": 60.8,
+      "recomputed_value": 60.801899999999996,
+      "raw_log": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\governance_ablation\\gov_cifar10_r30_final.log",
+      "accuracy_precision": "Per-round accuracy printed to 0.01 percentage point; full-precision tensors not recovered."
+    },
+    {
+      "table": 4,
+      "condition": "cifar_lf",
+      "group": "tas",
+      "metric": "Interc",
+      "manuscript_value": 100.0,
+      "recomputed_value": 100.0,
+      "raw_log": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\governance_ablation\\gov_cifar10_r30_final.log",
+      "accuracy_precision": "Per-round accuracy printed to 0.01 percentage point; full-precision tensors not recovered."
+    },
+    {
+      "table": 5,
+      "condition": "cifar_lf",
+      "group": "fedavg",
+      "metric": "Avg",
+      "manuscript_value": 29.3,
+      "recomputed_value": 29.2547,
+      "raw_log": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\governance_ablation\\gov_cifar10_r40_final.log",
+      "accuracy_precision": "Per-round accuracy printed to 0.01 percentage point; full-precision tensors not recovered."
+    },
+    {
+      "table": 5,
+      "condition": "cifar_lf",
+      "group": "fedavg",
+      "metric": "Interc",
+      "manuscript_value": 0.0,
+      "recomputed_value": 0.0,
+      "raw_log": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\governance_ablation\\gov_cifar10_r40_final.log",
+      "accuracy_precision": "Per-round accuracy printed to 0.01 percentage point; full-precision tensors not recovered."
+    },
+    {
+      "table": 5,
+      "condition": "cifar_lf",
+      "group": "trust_only",
+      "metric": "Avg",
+      "manuscript_value": 32.6,
+      "recomputed_value": 32.56335,
+      "raw_log": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\governance_ablation\\gov_cifar10_r40_final.log",
+      "accuracy_precision": "Per-round accuracy printed to 0.01 percentage point; full-precision tensors not recovered."
+    },
+    {
+      "table": 5,
+      "condition": "cifar_lf",
+      "group": "trust_only",
+      "metric": "Interc",
+      "manuscript_value": 0.0,
+      "recomputed_value": 0.0,
+      "raw_log": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\governance_ablation\\gov_cifar10_r40_final.log",
+      "accuracy_precision": "Per-round accuracy printed to 0.01 percentage point; full-precision tensors not recovered."
+    },
+    {
+      "table": 5,
+      "condition": "cifar_lf",
+      "group": "v1_only",
+      "metric": "Avg",
+      "manuscript_value": 53.1,
+      "recomputed_value": 53.12395,
+      "raw_log": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\governance_ablation\\gov_cifar10_r40_final.log",
+      "accuracy_precision": "Per-round accuracy printed to 0.01 percentage point; full-precision tensors not recovered."
+    },
+    {
+      "table": 5,
+      "condition": "cifar_lf",
+      "group": "v1_only",
+      "metric": "Interc",
+      "manuscript_value": 90.8,
+      "recomputed_value": 90.83333333333333,
+      "raw_log": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\governance_ablation\\gov_cifar10_r40_final.log",
+      "accuracy_precision": "Per-round accuracy printed to 0.01 percentage point; full-precision tensors not recovered."
+    },
+    {
+      "table": 5,
+      "condition": "cifar_lf",
+      "group": "v2_only",
+      "metric": "Avg",
+      "manuscript_value": 53.1,
+      "recomputed_value": 53.08865,
+      "raw_log": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\governance_ablation\\gov_cifar10_r40_final.log",
+      "accuracy_precision": "Per-round accuracy printed to 0.01 percentage point; full-precision tensors not recovered."
+    },
+    {
+      "table": 5,
+      "condition": "cifar_lf",
+      "group": "v2_only",
+      "metric": "Interc",
+      "manuscript_value": 99.2,
+      "recomputed_value": 99.16666666666667,
+      "raw_log": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\governance_ablation\\gov_cifar10_r40_final.log",
+      "accuracy_precision": "Per-round accuracy printed to 0.01 percentage point; full-precision tensors not recovered."
+    },
+    {
+      "table": 5,
+      "condition": "cifar_lf",
+      "group": "tas",
+      "metric": "Avg",
+      "manuscript_value": 54.5,
+      "recomputed_value": 54.4487,
+      "raw_log": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\governance_ablation\\gov_cifar10_r40_final.log",
+      "accuracy_precision": "Per-round accuracy printed to 0.01 percentage point; full-precision tensors not recovered."
+    },
+    {
+      "table": 5,
+      "condition": "cifar_lf",
+      "group": "tas",
+      "metric": "Interc",
+      "manuscript_value": 100.0,
+      "recomputed_value": 100.0,
+      "raw_log": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\governance_ablation\\gov_cifar10_r40_final.log",
+      "accuracy_precision": "Per-round accuracy printed to 0.01 percentage point; full-precision tensors not recovered."
+    },
+    {
+      "table": 4,
+      "condition": "cifar_scaling",
+      "group": "fedavg",
+      "metric": "Avg",
+      "manuscript_value": 10.01,
+      "recomputed_value": 10.01295,
+      "raw_log": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\governance_ablation\\gov_cifar10_scaling_full_r30.log",
+      "accuracy_precision": "Per-round accuracy printed to 0.01 percentage point; full-precision tensors not recovered."
+    },
+    {
+      "table": 4,
+      "condition": "cifar_scaling",
+      "group": "fedavg",
+      "metric": "Interc",
+      "manuscript_value": 0.0,
+      "recomputed_value": 0.0,
+      "raw_log": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\governance_ablation\\gov_cifar10_scaling_full_r30.log",
+      "accuracy_precision": "Per-round accuracy printed to 0.01 percentage point; full-precision tensors not recovered."
+    },
+    {
+      "table": 4,
+      "condition": "cifar_scaling",
+      "group": "trust_only",
+      "metric": "Avg",
+      "manuscript_value": 10.09,
+      "recomputed_value": 10.0891,
+      "raw_log": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\governance_ablation\\gov_cifar10_scaling_full_r30.log",
+      "accuracy_precision": "Per-round accuracy printed to 0.01 percentage point; full-precision tensors not recovered."
+    },
+    {
+      "table": 4,
+      "condition": "cifar_scaling",
+      "group": "trust_only",
+      "metric": "Interc",
+      "manuscript_value": 0.0,
+      "recomputed_value": 0.0,
+      "raw_log": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\governance_ablation\\gov_cifar10_scaling_full_r30.log",
+      "accuracy_precision": "Per-round accuracy printed to 0.01 percentage point; full-precision tensors not recovered."
+    },
+    {
+      "table": 4,
+      "condition": "cifar_scaling",
+      "group": "v1_only",
+      "metric": "Avg",
+      "manuscript_value": 19.35,
+      "recomputed_value": 19.3507,
+      "raw_log": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\governance_ablation\\gov_cifar10_scaling_full_r30.log",
+      "accuracy_precision": "Per-round accuracy printed to 0.01 percentage point; full-precision tensors not recovered."
+    },
+    {
+      "table": 4,
+      "condition": "cifar_scaling",
+      "group": "v1_only",
+      "metric": "Interc",
+      "manuscript_value": 83.3,
+      "recomputed_value": 83.33333333333333,
+      "raw_log": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\governance_ablation\\gov_cifar10_scaling_full_r30.log",
+      "accuracy_precision": "Per-round accuracy printed to 0.01 percentage point; full-precision tensors not recovered."
+    },
+    {
+      "table": 4,
+      "condition": "cifar_scaling",
+      "group": "v2_only",
+      "metric": "Avg",
+      "manuscript_value": 63.6,
+      "recomputed_value": 63.6033,
+      "raw_log": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\governance_ablation\\gov_cifar10_scaling_full_r30.log",
+      "accuracy_precision": "Per-round accuracy printed to 0.01 percentage point; full-precision tensors not recovered."
+    },
+    {
+      "table": 4,
+      "condition": "cifar_scaling",
+      "group": "v2_only",
+      "metric": "Interc",
+      "manuscript_value": 99.2,
+      "recomputed_value": 99.16666666666667,
+      "raw_log": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\governance_ablation\\gov_cifar10_scaling_full_r30.log",
+      "accuracy_precision": "Per-round accuracy printed to 0.01 percentage point; full-precision tensors not recovered."
+    },
+    {
+      "table": 4,
+      "condition": "cifar_scaling",
+      "group": "tas",
+      "metric": "Avg",
+      "manuscript_value": 65.57,
+      "recomputed_value": 65.5654,
+      "raw_log": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\governance_ablation\\gov_cifar10_scaling_full_r30.log",
+      "accuracy_precision": "Per-round accuracy printed to 0.01 percentage point; full-precision tensors not recovered."
+    },
+    {
+      "table": 4,
+      "condition": "cifar_scaling",
+      "group": "tas",
+      "metric": "Interc",
+      "manuscript_value": 100.0,
+      "recomputed_value": 100.0,
+      "raw_log": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\governance_ablation\\gov_cifar10_scaling_full_r30.log",
+      "accuracy_precision": "Per-round accuracy printed to 0.01 percentage point; full-precision tensors not recovered."
+    },
+    {
+      "table": 5,
+      "condition": "cifar_scaling",
+      "group": "trust_only",
+      "metric": "Avg",
+      "manuscript_value": 10.0,
+      "recomputed_value": 10.0,
+      "raw_json": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\cifar_scaling_20260730\\gpu0\\cifar_scaling_governance_seed42.json",
+      "source_precision": "Full-precision 200-round accuracy history and 120 attacked-round records."
+    },
+    {
+      "table": 5,
+      "condition": "cifar_scaling",
+      "group": "trust_only",
+      "metric": "Interc",
+      "manuscript_value": 0.0,
+      "recomputed_value": 0.0,
+      "raw_json": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\cifar_scaling_20260730\\gpu0\\cifar_scaling_governance_seed42.json",
+      "source_precision": "Full-precision 200-round accuracy history and 120 attacked-round records."
+    },
+    {
+      "table": 5,
+      "condition": "cifar_scaling",
+      "group": "v1",
+      "metric": "Avg",
+      "manuscript_value": 10.5,
+      "recomputed_value": 10.50665,
+      "raw_json": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\cifar_scaling_20260730\\gpu0\\cifar_scaling_governance_seed42.json",
+      "source_precision": "Full-precision 200-round accuracy history and 120 attacked-round records."
+    },
+    {
+      "table": 5,
+      "condition": "cifar_scaling",
+      "group": "v1",
+      "metric": "Interc",
+      "manuscript_value": 67.5,
+      "recomputed_value": 67.5,
+      "raw_json": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\cifar_scaling_20260730\\gpu0\\cifar_scaling_governance_seed42.json",
+      "source_precision": "Full-precision 200-round accuracy history and 120 attacked-round records."
+    },
+    {
+      "table": 5,
+      "condition": "cifar_scaling",
+      "group": "v2",
+      "metric": "Avg",
+      "manuscript_value": 24.1,
+      "recomputed_value": 24.0827,
+      "raw_json": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\cifar_scaling_20260730\\gpu1\\cifar_scaling_governance_seed42.json",
+      "source_precision": "Full-precision 200-round accuracy history and 120 attacked-round records."
+    },
+    {
+      "table": 5,
+      "condition": "cifar_scaling",
+      "group": "v2",
+      "metric": "Interc",
+      "manuscript_value": 92.5,
+      "recomputed_value": 92.5,
+      "raw_json": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\cifar_scaling_20260730\\gpu1\\cifar_scaling_governance_seed42.json",
+      "source_precision": "Full-precision 200-round accuracy history and 120 attacked-round records."
+    },
+    {
+      "table": 5,
+      "condition": "cifar_scaling",
+      "group": "tas",
+      "metric": "Avg",
+      "manuscript_value": 52.9,
+      "recomputed_value": 52.94165,
+      "raw_json": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\cifar_scaling_20260730\\gpu1\\cifar_scaling_governance_seed42.json",
+      "source_precision": "Full-precision 200-round accuracy history and 120 attacked-round records."
+    },
+    {
+      "table": 5,
+      "condition": "cifar_scaling",
+      "group": "tas",
+      "metric": "Interc",
+      "manuscript_value": 99.2,
+      "recomputed_value": 99.16666666666667,
+      "raw_json": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\cifar_scaling_20260730\\gpu1\\cifar_scaling_governance_seed42.json",
+      "source_precision": "Full-precision 200-round accuracy history and 120 attacked-round records."
+    },
+    {
+      "table": 5,
+      "condition": "cifar_scaling",
+      "group": "fedavg",
+      "metric": "Avg",
+      "manuscript_value": 10.0,
+      "recomputed_value": 10.00295,
+      "raw_log": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\governance_ablation\\gov_cifar10_scaling_full_r40.log",
+      "source_precision": "Rounded per-round log; different historical script from the four audit rows."
+    },
+    {
+      "table": 5,
+      "condition": "cifar_scaling",
+      "group": "fedavg",
+      "metric": "Interc",
+      "manuscript_value": 0.0,
+      "recomputed_value": 0.0,
+      "raw_log": "r4_tasl_experiments_20260921\\legacy_sources_20261002\\governance_ablation\\gov_cifar10_scaling_full_r40.log",
+      "source_precision": "Rounded per-round log; different historical script from the four audit rows."
+    }
+  ],
+  "limitations": "Historical executable commits/environments not certified. Some CIFAR cells are compatible with rounded logs, not full-precision CSV recovery. CIFAR Table 5 scaling uses July JSON audit rows and a June FedAvg log, rather than one uniform source file. Main Tables 2/3 still require additional provenance. Legacy honest-round acceptance is not a measured false-positive audit test. CIFAR legacy LF logs contain A3 joint tampering as well as A1/A2, unlike the final A1/A2 schedule."
+}

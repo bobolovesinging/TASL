@@ -1,0 +1,4 @@
+algorithm,attack,avg_acc,best_acc,avg_asr
+fedavg,label_flip,54.9646,78.14,17.6006
+tasl_full,label_flip,65.63600000000001,78.39,1.5164
+lasa,label_flip,34.5172,67.91,33.6566

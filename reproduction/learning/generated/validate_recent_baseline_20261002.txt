@@ -1,0 +1,70 @@
+{
+  "comment": "R4.8",
+  "trajectories": 6,
+  "rounds": 300,
+  "seed": 42,
+  "paired_initial_state_and_partition": true,
+  "rows": [
+    {
+      "algorithm": "fedavg",
+      "attack": "none",
+      "avg_acc": 76.0526,
+      "best_acc": "83.45",
+      "avg_asr": 0.0
+    },
+    {
+      "algorithm": "tasl_full",
+      "attack": "none",
+      "avg_acc": 74.7636,
+      "best_acc": "84.5",
+      "avg_asr": 0.0
+    },
+    {
+      "algorithm": "lasa",
+      "attack": "none",
+      "avg_acc": 73.14359999999999,
+      "best_acc": "82.76",
+      "avg_asr": 0.0
+    },
+    {
+      "algorithm": "fedavg",
+      "attack": "label_flip",
+      "avg_acc": 54.9646,
+      "best_acc": "78.14",
+      "avg_asr": 17.6006
+    },
+    {
+      "algorithm": "tasl_full",
+      "attack": "label_flip",
+      "avg_acc": 65.63600000000001,
+      "best_acc": "78.39",
+      "avg_asr": 1.5164
+    },
+    {
+      "algorithm": "lasa",
+      "attack": "label_flip",
+      "avg_acc": 34.5172,
+      "best_acc": "67.91",
+      "avg_asr": 33.6566
+    }
+  ],
+  "clean_minus_LF_Avg_points": {
+    "fedavg": 21.088,
+    "tasl_full": 9.127599999999987,
+    "lasa": 38.62639999999999
+  },
+  "LASA_upstream_commit": "8477367a4e8708cde264f7572805040c650af59f",
+  "support": "TASL exceeds the measured LASA default configuration in this single matched LF setting.",
+  "limits": [
+    "One seed and one dataset; no general or statistical superiority over recent methods.",
+    "LASA uses author CLI defaults and an aggregation-only adaptation; no outcome-driven tuning.",
+    "This comparison has no malicious Executor, DKG, ledger, or secure aggregation deployment.",
+    "Results from the 502 environment are kept separate from the five-seed newserver controls."
+  ],
+  "exclusion_budget": {
+    "new_clean": 0,
+    "new_LF": 4,
+    "five_seed_clean": 4,
+    "interpretation": "New clean utility tests screening/weighting without permanent exclusion, not its full cost."
+  }
+}

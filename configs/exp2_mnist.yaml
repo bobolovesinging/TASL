@@ -1,0 +1,66 @@
+# ============================================================
+# 实验二: Byzantine Resilience Matrix — MNIST + FedAvgCNN
+# ============================================================
+
+experiment:
+  name: "exp2_mnist_robustness"
+  seed: 42
+  device: "cuda"
+  output_dir: "results"
+
+# ── 数据 ──
+data:
+  dataset: "mnist"
+  data_dir: null              # MNIST自动下载
+  n_clients: 10
+  alpha: 0.3                # Dirichlet α
+  split: "non_iid"
+  batch_size: 128
+
+# ── 模型 ──
+model:
+  name: "fedavgcnn"
+  num_classes: 10
+
+# ── 训练 ──
+training:
+  rounds: 50
+  local_epochs: 2
+  lr: 0.02
+  momentum: 0.9
+  weight_decay: 1e-4
+
+# ── Byzantine ──
+byzantine:
+  ratio: 0.4
+  attacks:
+    - label_flip
+    - sign_flip
+    - gaussian_noise
+    - min_max
+    - scaling
+
+# ── 聚合算法 ──
+algorithms:
+  - fedavg
+  - multi_krum
+  - trimmed_mean
+  - fltrust
+  - tasl
+
+# ── 各算法特有参数 ──
+algorithm_params:
+  tasl:
+    trust_power: 5
+    weight_cap_ratio: 1.5
+    ema_alpha: 0.7
+    norm_penalty: 0.8
+    min_cos: 0.2
+  multi_krum:
+    krum_m: null
+  gaussian_noise:
+    noise_scale: 5.0
+  min_max:
+    z_max: 2.0
+  scaling:
+    scaling_factor: 100.0

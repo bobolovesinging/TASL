@@ -1,0 +1,50 @@
+# CIFAR-10 v4 — gaussian_noise(TASL) + min_max + scaling (fill missing)
+# 5 algorithms × 3 attacks, 10 clients, 4 Byzantine, 100 rounds
+
+experiment:
+  name: exp2_cifar10_v4
+  seed: 42
+  device: cuda
+  output_dir: results
+
+data:
+  dataset: cifar10
+  n_clients: 10
+  alpha: 0.3
+  split: non_iid
+  batch_size: 64
+
+model:
+  name: resnet18
+  num_classes: 10
+
+training:
+  rounds: 100
+  local_epochs: 1
+  lr: 0.01
+  momentum: 0.9
+  weight_decay: 0.0001
+
+byzantine:
+  ratio: 0.4
+  attacks:
+    - gaussian_noise
+    - min_max
+    - scaling
+
+algorithms:
+  - fedavg
+  - multi_krum
+  - trimmed_mean
+  - fltrust
+  - tasl
+
+algorithm_params:
+  krum:
+    num_excluded: 4
+  multi_krum:
+    num_excluded: 4
+  min_max:
+    z_max: 2.0
+  scaling:
+    scaling_factor: 100.0

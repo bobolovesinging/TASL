@@ -1,0 +1,7 @@
+executor_attack,group,best_acc,avg_acc,v1_trust_det,v1_agg_det,v2_trust_det,v2_agg_det,attack_rounds,blocked_rounds,interception_rate
+mixed12,noexecutor,98.0000,93.7132,0,0,0,0,0,0,0.0000
+mixed12,fedavg,96.5500,49.9998,0,0,0,0,30,0,0.0000
+mixed12,trust_only,97.5800,74.0944,0,0,0,0,30,0,0.0000
+mixed12,trust_v1,97.9000,92.9172,10,14,0,0,30,24,0.8000
+mixed12,trust_v2,98.0200,91.5182,0,0,7,20,30,27,0.9000
+mixed12,trust_v1v2,98.0000,93.7132,10,7,7,20,30,30,1.0000

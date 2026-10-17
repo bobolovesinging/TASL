@@ -1,0 +1,270 @@
+{
+  "purpose": "50-round persisted-state HBS/TAS recovery; full-data functional test",
+  "source_sha256": "f71067a01c7af357c664306aed944a64c440e53df537a0f2f7e8f0311311e987",
+  "driver_sha256": "ffd34dcd49ba2ed27ed9ae317284c57292eacdabda90ffe7977e78ca3234a793",
+  "exp2_sha256": "a87aeb3dc0893d90ead10f26ba9f643faa97ce82b1efa228c8305596b93c420d",
+  "model_sha256": "641d88652fb246e0e2e83dd6e9c1d1b9515ea8fc8d92121431cd81eb2a8fd045",
+  "configuration": {
+    "experiment": {
+      "name": "table11_fashion_lf",
+      "seed": 42,
+      "rounds": 50,
+      "clients": 10,
+      "byzantine_ratio": 0.4,
+      "local_epochs": 2,
+      "lr": 0.02,
+      "momentum": 0.0,
+      "weight_decay": 0.0,
+      "batch_size": 128
+    },
+    "data": {
+      "dataset": "fashionmnist",
+      "alpha": 0.3
+    },
+    "client_attack": {
+      "type": "label_flip"
+    },
+    "executor_attack": {
+      "type": "mixed12",
+      "attacks_per_block": 6,
+      "chaos_seed": 2026
+    },
+    "tas": {
+      "ema_alpha": 0.7,
+      "trust_power": 5.0,
+      "max_weight_ratio": 1.5,
+      "v1_sample_dim_ratio": 0.3,
+      "v2_sample_client_ratio": 0.3,
+      "tolerance": 1e-06,
+      "exclusion": false
+    },
+    "groups": [
+      "noexecutor",
+      "fedavg",
+      "trust_only",
+      "trust_v1",
+      "trust_v2",
+      "trust_v1v2"
+    ],
+    "output": {
+      "dir": "results/table11/fashion_lf"
+    }
+  },
+  "group": "noexecutor",
+  "device": "cuda:0",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]",
+  "torch": "2.5.1+cu121",
+  "torchvision": "0.20.1+cu121",
+  "numpy": "1.26.4",
+  "platform": "Linux-6.17.0-14-generic-x86_64-with-glibc2.39",
+  "deterministic_algorithms": true,
+  "allow_tf32": false,
+  "cpu_threads": 4,
+  "training_samples": 60000,
+  "test_samples": 10000,
+  "data_root": "/home/njit/tasl_r4_final_protocol_20260928/data/temp",
+  "attack_schedule": {
+    "1": {
+      "active": true,
+      "attack_type": "A1"
+    },
+    "2": {
+      "active": true,
+      "attack_type": "A2"
+    },
+    "3": {
+      "active": true,
+      "attack_type": "A3"
+    },
+    "4": {
+      "active": true,
+      "attack_type": "A1"
+    },
+    "5": {
+      "active": true,
+      "attack_type": "A2"
+    },
+    "6": {
+      "active": true,
+      "attack_type": "A3"
+    },
+    "7": {
+      "active": true,
+      "attack_type": "A1"
+    },
+    "8": {
+      "active": true,
+      "attack_type": "A2"
+    },
+    "9": {
+      "active": true,
+      "attack_type": "A3"
+    },
+    "10": {
+      "active": true,
+      "attack_type": "A1"
+    },
+    "11": {
+      "active": true,
+      "attack_type": "A2"
+    },
+    "12": {
+      "active": true,
+      "attack_type": "A3"
+    },
+    "13": {
+      "active": true,
+      "attack_type": "A1"
+    },
+    "14": {
+      "active": true,
+      "attack_type": "A2"
+    },
+    "15": {
+      "active": true,
+      "attack_type": "A3"
+    },
+    "16": {
+      "active": true,
+      "attack_type": "A1"
+    },
+    "17": {
+      "active": true,
+      "attack_type": "A2"
+    },
+    "18": {
+      "active": true,
+      "attack_type": "A3"
+    },
+    "19": {
+      "active": true,
+      "attack_type": "A1"
+    },
+    "20": {
+      "active": true,
+      "attack_type": "A2"
+    },
+    "21": {
+      "active": true,
+      "attack_type": "A3"
+    },
+    "22": {
+      "active": true,
+      "attack_type": "A1"
+    },
+    "23": {
+      "active": true,
+      "attack_type": "A2"
+    },
+    "24": {
+      "active": true,
+      "attack_type": "A3"
+    },
+    "25": {
+      "active": true,
+      "attack_type": "A1"
+    },
+    "26": {
+      "active": true,
+      "attack_type": "A2"
+    },
+    "27": {
+      "active": true,
+      "attack_type": "A3"
+    },
+    "28": {
+      "active": true,
+      "attack_type": "A1"
+    },
+    "29": {
+      "active": true,
+      "attack_type": "A2"
+    },
+    "30": {
+      "active": true,
+      "attack_type": "A3"
+    },
+    "31": {
+      "active": true,
+      "attack_type": "A1"
+    },
+    "32": {
+      "active": true,
+      "attack_type": "A2"
+    },
+    "33": {
+      "active": true,
+      "attack_type": "A3"
+    },
+    "34": {
+      "active": true,
+      "attack_type": "A1"
+    },
+    "35": {
+      "active": true,
+      "attack_type": "A2"
+    },
+    "36": {
+      "active": true,
+      "attack_type": "A3"
+    },
+    "37": {
+      "active": true,
+      "attack_type": "A1"
+    },
+    "38": {
+      "active": true,
+      "attack_type": "A2"
+    },
+    "39": {
+      "active": true,
+      "attack_type": "A3"
+    },
+    "40": {
+      "active": true,
+      "attack_type": "A1"
+    },
+    "41": {
+      "active": true,
+      "attack_type": "A2"
+    },
+    "42": {
+      "active": true,
+      "attack_type": "A3"
+    },
+    "43": {
+      "active": true,
+      "attack_type": "A1"
+    },
+    "44": {
+      "active": true,
+      "attack_type": "A2"
+    },
+    "45": {
+      "active": true,
+      "attack_type": "A3"
+    },
+    "46": {
+      "active": true,
+      "attack_type": "A1"
+    },
+    "47": {
+      "active": true,
+      "attack_type": "A2"
+    },
+    "48": {
+      "active": true,
+      "attack_type": "A3"
+    },
+    "49": {
+      "active": true,
+      "attack_type": "A1"
+    },
+    "50": {
+      "active": true,
+      "attack_type": "A2"
+    }
+  },
+  "started_utc": "2026-10-12T08:45:32Z"
+}

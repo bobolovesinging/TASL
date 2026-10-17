@@ -1,0 +1,66 @@
+{
+  "reviewer_comments": [
+    "R4.9",
+    "R2.2",
+    "R2.4"
+  ],
+  "purpose": "Cross-seed stability of single-auditor ablations against completed paired Full TAS/no-Executor runs.",
+  "source_sha256": "f71067a01c7af357c664306aed944a64c440e53df537a0f2f7e8f0311311e987",
+  "dataset": "fashionmnist",
+  "seeds": [
+    42,
+    123,
+    2024,
+    3407,
+    7711
+  ],
+  "groups": [
+    "trust_v1",
+    "trust_v2"
+  ],
+  "design": "Same training, client attacks, Executor schedule and thresholds as prior five-seed runs; only groups/name/output differ.",
+  "evaluation": "Validate every round and honest/attacked proposal counts before interpreting recall, precision, false rejection and paired accuracy; no hypothesis that single auditors must intercept every attack.",
+  "scope": "Single-host fixed-participation Executor audit test, not the main client-exclusion learning experiment.",
+  "configurations": [
+    {
+      "file": "fashion_lf_seed42.yaml",
+      "sha256": "a65fb43e341eeffa167dafa1e4c87b8c9fc29bbdd8acd0caac81c3976a021871"
+    },
+    {
+      "file": "fashion_lf_seed123.yaml",
+      "sha256": "d1ac6d8143374b43b864159ba82583e9786d5d6f2d15a056716abc407f7f9705"
+    },
+    {
+      "file": "fashion_lf_seed2024.yaml",
+      "sha256": "4915fe8ab996906dee04586773a349401107b713a9fab880247ea3a135e312e3"
+    },
+    {
+      "file": "fashion_lf_seed3407.yaml",
+      "sha256": "2ce74759ec9c6edc0405f858ea1cefac66ad5d8fef925fe594dc41a12bb484b8"
+    },
+    {
+      "file": "fashion_lf_seed7711.yaml",
+      "sha256": "92ca74cd270a53be777a69535b8d213cd86b5ed64fb24942f2e46e25e7fced92"
+    },
+    {
+      "file": "fashion_scaling_seed42.yaml",
+      "sha256": "c957fcd0488c7e7f7c623c403ea866f2d9d1c8bd60e9487bf1fade4c68740cdd"
+    },
+    {
+      "file": "fashion_scaling_seed123.yaml",
+      "sha256": "ecc736ffad33d3a8ce075af347df30bc7e900444736dd9206f5392e3c62710c0"
+    },
+    {
+      "file": "fashion_scaling_seed2024.yaml",
+      "sha256": "c4154da0974d641c41b0cd5950c8a8aba37098f69c6a24da98edce4a92890913"
+    },
+    {
+      "file": "fashion_scaling_seed3407.yaml",
+      "sha256": "629c7d89f87d62f6cca3d202124687a1f3b54d1224d871815fa4185da1f3544b"
+    },
+    {
+      "file": "fashion_scaling_seed7711.yaml",
+      "sha256": "f81d3e05b2690509035ccca2c66cb543382eee62102989a14c001fbf8fea0286"
+    }
+  ]
+}

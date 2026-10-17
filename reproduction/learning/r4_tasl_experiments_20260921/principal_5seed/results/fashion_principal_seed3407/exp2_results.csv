@@ -1,0 +1,7 @@
+algo,attack,split,byzantine_ratio,best_acc,avg_acc,last_acc,asr
+fedavg,none,non_iid,0.4,80.93,75.6192,80.93,0.0
+fedavg,label_flip,non_iid,0.4,75.88,57.21040000000001,21.26,16.6192
+fltrust,none,non_iid,0.4,77.06,63.483000000000004,75.25,0.0
+fltrust,label_flip,non_iid,0.4,77.91,63.84660000000001,74.59,2.6233999999999997
+tasl_full,none,non_iid,0.4,79.79,72.92920000000001,74.63,0.0
+tasl_full,label_flip,non_iid,0.4,81.17,66.6516,60.74,3.2790000000000004

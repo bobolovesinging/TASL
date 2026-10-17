@@ -1,0 +1,44 @@
+{
+  "validation": "passed",
+  "comments": [
+    "R4.10",
+    "R4.15"
+  ],
+  "snapshot_files_sha256_checked": 292,
+  "historical_governance": 120,
+  "workbook_extract": {
+    "numeric_values": 130,
+    "seed_records": 60,
+    "historical_summary_matches": 32,
+    "scope": "Recompute from the saved, cell-addressed workbook extract. Original workbook was checked read-only before packaging; no unrounded trajectories are implied."
+  },
+  "principal_learning": {
+    "training_trajectories": 30,
+    "round_records": 1500,
+    "Table_C1_numeric_values": 18,
+    "Fig2_mean_SD_curve_points": 300,
+    "Fig2_TeX_coordinates_checked": true
+  },
+  "five_seed_governance": {
+    "Full_reference_rounds": 1000,
+    "single_auditor_rounds": 1000,
+    "matched_initial_conditions": 20,
+    "paired_Avg_CIs_include_zero": true
+  },
+  "recent_baseline": {
+    "trajectories": 6,
+    "rounds": 300,
+    "table_numeric_entries": 9
+  },
+  "fixed_constant_sensitivity": {
+    "trajectories": 10,
+    "rounds": 500,
+    "scan_numeric_entries": 30
+  },
+  "limitations": [
+    "Offline statistical regeneration is not retraining.",
+    "Unrecovered original main-table trajectories and historical executable versions remain missing.",
+    "Only this selected subset is packaged; all-table/all-figure regeneration and immutable public release remain pending.",
+    "Captured package versions are not a cryptographic dependency lock or a proof of identical training outputs on another machine."
+  ]
+}

@@ -1,0 +1,35 @@
+algorithm_params:
+  bsp: {enabled: false}
+  scaling: {scaling_factor: 5.0}
+  tasl:
+    trust_power: 5.0
+    weight_cap_ratio: 1.5
+    ema_alpha: 0.7
+    norm_penalty: 0.8
+    fusion: multiplicative
+    exclusion: true
+    screen_tau: 0.6
+algorithms: [fedavg, fltrust, tasl_full]
+byzantine:
+  attacks: [none, label_flip]
+  ratio: 0.4
+data:
+  alpha: 0.3
+  batch_size: 128
+  dataset: fashionmnist
+  n_clients: 10
+  split: non_iid
+experiment:
+  device: cuda
+  name: fashion_principal_seed42
+  output_dir: results
+  seed: 42
+model:
+  name: fedavgcnn
+  num_classes: 10
+training:
+  local_epochs: 2
+  lr: 0.02
+  momentum: 0.0
+  rounds: 50
+  weight_decay: 0.0

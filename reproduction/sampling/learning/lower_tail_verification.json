@@ -1,0 +1,13 @@
+{
+  "checked_histories": 30,
+  "rounds": 1500,
+  "metric": "within-run 10th percentile over all 50 rounds; linear interpolation",
+  "paired_training_seeds": 5,
+  "mean_difference": 20.794,
+  "ci95_low": 12.766412887955216,
+  "ci95_high": 28.821587112044785,
+  "t4_critical": 2.776445105197789,
+  "purpose": "R4.9: cite existing lower-tail evidence rather than add training or final-accuracy reporting.",
+  "secondary_analysis": true,
+  "multiplicity_adjustment": false
+}

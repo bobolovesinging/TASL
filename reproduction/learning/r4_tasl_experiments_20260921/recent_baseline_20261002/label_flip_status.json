@@ -1,0 +1,21 @@
+{
+  "comment": "R4.8",
+  "state": "completed",
+  "gpu": 1,
+  "attack": "label_flip",
+  "maximum_core_temperature_C": 66,
+  "thermal_rule": ">=86 C immediately or >=82 C for three consecutive five-second samples",
+  "started_utc": "2026-10-02T10:28:09.718719+00:00",
+  "command": [
+    "/home/njit/tof/envs/tof-depthcad/bin/python",
+    "-u",
+    "/home/njit/tasl_recent_baseline_20261002/run_matched.py",
+    "--attack",
+    "label_flip",
+    "--output",
+    "/home/njit/tasl_recent_baseline_20261002/results/label_flip"
+  ],
+  "pid": 3674546,
+  "exit_code": 0,
+  "finished_utc": "2026-10-02T10:30:50.516256+00:00"
+}

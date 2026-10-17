@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 实验数据与结果
+data/
+results/
+*.png
+*.npy
+*.log
+*.pth
+*.tar.gz
+*.wav
+
+# 运行日志
+logs/
+
+# 临时文件与备份
+temp/
+*.bak
+*.bak.*
+*.pid
+
+# 本地配置（不提交）
+config.yaml
+*.local.yaml
+
+# Local authoring files and work beyond the published study
+private/
+work_in_progress/
+future_work/
+drafts/
+*.docx
+*.xlsx
+*.pdf
+*.pt
+*.npz
+*.ckpt
+*.h5
+*.hdf5
+*.zip
+*.7z

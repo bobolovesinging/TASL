@@ -1,0 +1,2 @@
+algo,attack,dataset,alpha,byzantine_ratio,best_acc,avg_acc,last_acc,asr
+tasl,label_flip,cifar10,0.3,0.1,86.21,71.9126,85.93,4.52095

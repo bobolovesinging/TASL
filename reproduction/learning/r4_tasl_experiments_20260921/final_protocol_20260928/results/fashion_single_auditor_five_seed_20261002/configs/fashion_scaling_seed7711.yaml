@@ -1,0 +1,33 @@
+client_attack:
+  type: scaling
+data:
+  alpha: 0.3
+  dataset: fashionmnist
+executor_attack:
+  attacks_per_block: 6
+  chaos_seed: 2026
+  type: mixed12
+experiment:
+  batch_size: 128
+  byzantine_ratio: 0.4
+  clients: 10
+  local_epochs: 2
+  lr: 0.02
+  momentum: 0.0
+  name: final_single_auditor_scaling_seed7711
+  rounds: 50
+  seed: 7711
+  weight_decay: 0.0
+groups:
+- trust_v1
+- trust_v2
+output:
+  dir: /home/njit/tasl_fashion_single_auditor_5seed_20261002/results/scaling_seed7711
+tas:
+  ema_alpha: 0.7
+  exclusion: false
+  max_weight_ratio: 1.5
+  tolerance: 1.0e-06
+  trust_power: 5.0
+  v1_sample_dim_ratio: 0.3
+  v2_sample_client_ratio: 0.3

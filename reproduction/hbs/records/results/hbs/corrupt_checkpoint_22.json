@@ -1,0 +1,1 @@
+{"case":"corrupt_checkpoint","commit_count":0,"committed":false,"error":"payload digest mismatch: checkpoint_22.pt","events":["recovery_blocked_before_commit"],"local_loop_ms":5.178275,"pid":3820712,"round":22,"timing_scope":"after Python/torch import; read+hash+trust+audit+local commit","worker_source_sha256":"5eef876d7078a39e4353e89186eaf89187415d4d94fd283c5bef9ebad9a08971"}

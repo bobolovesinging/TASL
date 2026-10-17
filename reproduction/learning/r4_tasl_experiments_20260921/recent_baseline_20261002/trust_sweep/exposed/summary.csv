@@ -1,0 +1,7 @@
+parameter,value,avg_acc,avg_asr,honest_zero_weights,honest_client_rounds
+trust_power,3.0,66.5784,1.3572,102,300
+trust_power,7.0,64.053,1.4164,125,300
+norm_penalty,0.4,65.63600000000001,1.4972000000000003,105,300
+norm_penalty,1.2,67.8824,1.5092,103,300
+weight_cap_ratio,1.0,66.76180000000001,1.4506000000000001,108,300
+weight_cap_ratio,2.0,66.6734,1.6765999999999999,92,300

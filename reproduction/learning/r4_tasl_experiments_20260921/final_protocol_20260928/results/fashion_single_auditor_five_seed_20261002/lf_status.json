@@ -1,0 +1,55 @@
+{
+  "state": "completed",
+  "started_utc": "2026-10-02T05:19:51.544336+00:00",
+  "physical_gpu": 0,
+  "comments": [
+    "R4.9",
+    "R2.2",
+    "R2.4"
+  ],
+  "source_sha256": "f71067a01c7af357c664306aed944a64c440e53df537a0f2f7e8f0311311e987",
+  "completed": [
+    {
+      "seed": 42,
+      "finished_utc": "2026-10-02T05:22:37.379983+00:00",
+      "exit_code": 0
+    },
+    {
+      "seed": 123,
+      "finished_utc": "2026-10-02T05:25:23.376445+00:00",
+      "exit_code": 0
+    },
+    {
+      "seed": 2024,
+      "finished_utc": "2026-10-02T05:28:09.390096+00:00",
+      "exit_code": 0
+    },
+    {
+      "seed": 3407,
+      "finished_utc": "2026-10-02T05:30:55.333861+00:00",
+      "exit_code": 0
+    },
+    {
+      "seed": 7711,
+      "finished_utc": "2026-10-02T05:33:46.172128+00:00",
+      "exit_code": 0
+    }
+  ],
+  "environment": {
+    "python": "/home/njit/tof/envs/tof-depthcad/bin/python",
+    "CUDA_VISIBLE_DEVICES": "0",
+    "OMP_NUM_THREADS": "4"
+  },
+  "thermal_policy": "Stop at >=86 C immediately or >=82 C for three consecutive 5-second samples; core temperature only.",
+  "maximum_core_temperature_C": 66,
+  "current_seed": 7711,
+  "current_command": [
+    "/home/njit/tof/envs/tof-depthcad/bin/python",
+    "-u",
+    "/home/njit/tasl_r4_final_protocol_20260928/scripts/exp3/exp3_governance_tasv2.py",
+    "--config",
+    "/home/njit/tasl_fashion_single_auditor_5seed_20261002/configs/fashion_lf_seed7711.yaml"
+  ],
+  "current_pid": 3669385,
+  "finished_utc": "2026-10-02T05:33:46.172283+00:00"
+}

@@ -1,0 +1,5 @@
+parameter,value,avg_acc,avg_asr,honest_zero_weights,honest_client_rounds
+anchor_current_fraction,0.4,67.1658,1.3763999999999998,75,300
+anchor_current_fraction,0.8,62.331199999999995,1.4858000000000002,138,300
+norm_gate_multiplier,2.0,67.727,1.5619999999999998,100,300
+norm_gate_multiplier,3.0,65.63600000000001,1.5164,105,300

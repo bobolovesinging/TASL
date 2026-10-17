@@ -1,0 +1,1493 @@
+{
+  "package_status": "selected_evidence_snapshot_complete_history_and_deployment_not_claimed",
+  "comments": [
+    "R4.10",
+    "R4.15"
+  ],
+  "files": [
+    {
+      "path": "docx_qa/build_artifact_source_map_20261002.py",
+      "bytes": 6656,
+      "sha256": "fdc5684e41fbf09d7ec932177497aae7ab38d1e814b26a9edca4d63b9c6b2ac8"
+    },
+    {
+      "path": "docx_qa/r4_continue_20260929/principal_uncertainty.tex",
+      "bytes": 16044,
+      "sha256": "2cc1cdbd4731b5e2e921c45a8a98d3443991221f85d29c798afc0015045b94de"
+    },
+    {
+      "path": "docx_qa/validate_legacy_sources_20261002.py",
+      "bytes": 7321,
+      "sha256": "4af745713fba69d42c26e035077f224be3bf84718ad52d6d48b66075b7c3d3d8"
+    },
+    {
+      "path": "docx_qa/validate_main_workbook_20261002.py",
+      "bytes": 6881,
+      "sha256": "8f41c8e508abbcf74574b83a6881f98f72d649c342dba4e821428db989c852f8"
+    },
+    {
+      "path": "docx_qa/validate_recent_baseline_20261002.py",
+      "bytes": 3156,
+      "sha256": "b028160e7e550fecb9bed11ed41fd3da994149901148585bb45d2a565d4f351b"
+    },
+    {
+      "path": "docx_qa/validate_trust_sweep_20261002.py",
+      "bytes": 2245,
+      "sha256": "5f3eb71547a00b0896cce707983e0f28b2443b220fda79efe1938196f777f79b"
+    },
+    {
+      "path": "docx_qa/verify_local_reproduction_20261002.py",
+      "bytes": 14215,
+      "sha256": "a22299e02e33788580dfc5adb00a4f24943d22aa7ad96c5a5f5e0904fc2cb317"
+    },
+    {
+      "path": "manuscript/main.tex",
+      "bytes": 34554,
+      "sha256": "90c1023229aea59440540fb51180c31c1f4ab63de3f246afacd07bfdc665f217"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/core/model.py",
+      "bytes": 1333,
+      "sha256": "641d88652fb246e0e2e83dd6e9c1d1b9515ea8fc8d92121431cd81eb2a8fd045"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/configs/fashion_lf_seed123.yaml",
+      "bytes": 618,
+      "sha256": "01bf0faa0d317519168499cbe42084430d02fc7599aa5483840f9b98feb56c7d"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/configs/fashion_lf_seed2024.yaml",
+      "bytes": 620,
+      "sha256": "f355620ab4c45dd8367997d9d65f8b4badef708e65445085ece0d2630d71d7f8"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/configs/fashion_lf_seed3407.yaml",
+      "bytes": 620,
+      "sha256": "cb91b0e7f6cbef93853d34a08be42b4f733e736d587f4f1640b690fa696a7d1a"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/configs/fashion_lf_seed42.yaml",
+      "bytes": 616,
+      "sha256": "6c31d1923f585be5184b2dd0480e17c783731b004ecb359dc1132e44f5a3ce25"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/configs/fashion_lf_seed7711.yaml",
+      "bytes": 620,
+      "sha256": "41987d430ead7dc39ed109448e7fe6510780f76479e96a6f3832c46b8be56a3f"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/configs/fashion_scaling_seed123.yaml",
+      "bytes": 625,
+      "sha256": "9b8df9c0f35267330e28f762eb56543071c5e16061b88e65e215c8ae8d193b96"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/configs/fashion_scaling_seed2024.yaml",
+      "bytes": 627,
+      "sha256": "c70ca5f0715b35967c5930c94d0422c26fcb77465ba9fd0cd90de388d4abf78b"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/configs/fashion_scaling_seed3407.yaml",
+      "bytes": 627,
+      "sha256": "b751a942c38cdeade05c8e5dca372c4b29133de5dedc43b2d18b8c6bc2c16d28"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/configs/fashion_scaling_seed42.yaml",
+      "bytes": 623,
+      "sha256": "8a0c9fc697b57ea3ce1b8452781900a46b55ba157dc35c481e15f27f1215b87f"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/configs/fashion_scaling_seed7711.yaml",
+      "bytes": 627,
+      "sha256": "36968c151621cadf4de44199bfdf8fe5805cacc28221cea6229b53121f386d84"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/lf_seed123.log",
+      "bytes": 3102,
+      "sha256": "c3196701b4d0fded6922688e2a325727d4de7547c8f1e706a4cffa95958c429a"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/lf_seed2024.log",
+      "bytes": 3110,
+      "sha256": "1a2bb5a5064f8a8826c228e291a80c333abc4115a11a0adb53e69c54fcd302be"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/lf_seed3407.log",
+      "bytes": 3110,
+      "sha256": "bcf9c66c5e1da156b4ab63fcc17a022f729c087d7d2d57c1c5e308cec2f15556"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/lf_seed42.log",
+      "bytes": 3094,
+      "sha256": "a9d2fafbad14743b55d4ab456e02fd587b18a426f4ab05e9afd35fb57755d16a"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/lf_seed7711.log",
+      "bytes": 3110,
+      "sha256": "34a6d31d59b751c3ba074d2f6d3c18fcb6916abf77e934d0e401bbcbc01347c5"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/results/lf_seed123/tasv2_mixed12_r50_b4.csv",
+      "bytes": 179458,
+      "sha256": "c66ece2604ef445a6541607357f7154ade2ecb4227ceabb34169502b2a389ee2"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/results/lf_seed123/tasv2_summary.csv",
+      "bytes": 250,
+      "sha256": "d016306adf98fa6a401db10142515a1969410bec179c83d41acfa32ee1e4c75f"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/results/lf_seed2024/tasv2_mixed12_r50_b4.csv",
+      "bytes": 180298,
+      "sha256": "b9a23159ec389a6cd8dff7f7813acb949023baf4481191f067947e746fe79e43"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/results/lf_seed2024/tasv2_summary.csv",
+      "bytes": 251,
+      "sha256": "f6289253d0d5a61aa8a536d87fc602f8223e3addb8cafd458b73a7a5d0ba9a07"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/results/lf_seed3407/tasv2_mixed12_r50_b4.csv",
+      "bytes": 180197,
+      "sha256": "15d4f0c5eaa3546999071320b9ad58a54da942554b010a0c3e67fc1b54d58407"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/results/lf_seed3407/tasv2_summary.csv",
+      "bytes": 250,
+      "sha256": "a026e26c536a65403c54ec3cce97c8adf335c4ecb8abc57fce43bde8311c2163"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/results/lf_seed42/tasv2_mixed12_r50_b4.csv",
+      "bytes": 179706,
+      "sha256": "e1ae0c13b73e486d8bfcd44b049d595957f5eb571adfaad34c2981a9d51b54d4"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/results/lf_seed42/tasv2_summary.csv",
+      "bytes": 250,
+      "sha256": "1e5752dfc8d4ab05c3cfd2c27023f0cc99e89894fc31d492161342e0409685bd"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/results/lf_seed7711/tasv2_mixed12_r50_b4.csv",
+      "bytes": 179864,
+      "sha256": "cb3b8b06a6525dd5aad48df382e0db355f2c947d5b6d052a33a6ff9cd9637b41"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/results/lf_seed7711/tasv2_summary.csv",
+      "bytes": 250,
+      "sha256": "6420c5c37865d03f115c03514de92f74d82ed7b7844fa9d7fc9510723fea4766"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/results/scaling_seed123/tasv2_mixed12_r50_b4.csv",
+      "bytes": 180344,
+      "sha256": "cf19854e435ea1606ab8dda1dc63b85190b4a8d93e168a293e99bff34a900b44"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/results/scaling_seed123/tasv2_summary.csv",
+      "bytes": 250,
+      "sha256": "afbb61c06f9da19691a4e2687d14a664bfe048f5a4b76e91c6b7ba6b09ebf718"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/results/scaling_seed2024/tasv2_mixed12_r50_b4.csv",
+      "bytes": 179994,
+      "sha256": "1e92248c6bd834cde6593f1245a31d24dcce9b8c3c8301a1ead6f59f924a922e"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/results/scaling_seed2024/tasv2_summary.csv",
+      "bytes": 251,
+      "sha256": "2c4d61af305e57721edc1584243a341be5a190a03b7896b9b2795e26aa1936e3"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/results/scaling_seed3407/tasv2_mixed12_r50_b4.csv",
+      "bytes": 180203,
+      "sha256": "0ebf36cff2341b90fc967c1d81577f005052c3926feb5e18688997e4558c6593"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/results/scaling_seed3407/tasv2_summary.csv",
+      "bytes": 250,
+      "sha256": "cd666e5db5e42795fcc1ab6e0c5694d1a0fb6e75de108dc9dc8c3bbff793e810"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/results/scaling_seed42/tasv2_mixed12_r50_b4.csv",
+      "bytes": 179943,
+      "sha256": "e72c16dee66ac825889753910b59c4172fe64de133219670c39caf445f5c2b7b"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/results/scaling_seed42/tasv2_summary.csv",
+      "bytes": 250,
+      "sha256": "cc3316c90cbfc462bebfc9c6f57da53c96eb034dcb9d471779678bb137d5a1a2"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/results/scaling_seed7711/tasv2_mixed12_r50_b4.csv",
+      "bytes": 180349,
+      "sha256": "efb982621f42421b9b3938ca5ba04b8741b5f2cb74c0d724e186e0f6215fd366"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/results/scaling_seed7711/tasv2_summary.csv",
+      "bytes": 250,
+      "sha256": "442331c9fddc01181eb1af3f34238582aad22fba2c0b821ac5f39721cb800abb"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/scaling_seed123.log",
+      "bytes": 3139,
+      "sha256": "5b5a244472e644037fdb1106385a03b7b17337b8fa7d30a07e1c3087e02c176e"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/scaling_seed2024.log",
+      "bytes": 3147,
+      "sha256": "5da24a833979b7da266cc0625cb48c978356a19e90ff926b96660e41a2fe2bec"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/scaling_seed3407.log",
+      "bytes": 3147,
+      "sha256": "b820b5949488e8c771f912be90a342d47bf82f7b604d91a83f64e2035481a29a"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/scaling_seed42.log",
+      "bytes": 3131,
+      "sha256": "ff4529c40fa198916f46ba30bec470622bf888d40d8ef945cc7e8d6d1ef60131"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/scaling_seed7711.log",
+      "bytes": 3147,
+      "sha256": "2b760265ed664ce02281e6b341279c41211c919ff5a2f415f7c6dd033dadb8a6"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_fixed_five_seed_20260930/validation.json",
+      "bytes": 7734,
+      "sha256": "181be7d9f3d92368fd70dad5ceb0dedf6c50380e42bcf26b75caf4faac27b871"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/capture_reproduction.py",
+      "bytes": 3515,
+      "sha256": "5e6d2f885372119f9e4de03178ce71128286124f03f46100708d86dd5733c9c0"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/configs/fashion_lf_seed123.yaml",
+      "bytes": 662,
+      "sha256": "d1ac6d8143374b43b864159ba82583e9786d5d6f2d15a056716abc407f7f9705"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/configs/fashion_lf_seed2024.yaml",
+      "bytes": 665,
+      "sha256": "4915fe8ab996906dee04586773a349401107b713a9fab880247ea3a135e312e3"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/configs/fashion_lf_seed3407.yaml",
+      "bytes": 665,
+      "sha256": "2ce74759ec9c6edc0405f858ea1cefac66ad5d8fef925fe594dc41a12bb484b8"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/configs/fashion_lf_seed42.yaml",
+      "bytes": 659,
+      "sha256": "a65fb43e341eeffa167dafa1e4c87b8c9fc29bbdd8acd0caac81c3976a021871"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/configs/fashion_lf_seed7711.yaml",
+      "bytes": 665,
+      "sha256": "92ca74cd270a53be777a69535b8d213cd86b5ed64fb24942f2e46e25e7fced92"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/configs/fashion_scaling_seed123.yaml",
+      "bytes": 669,
+      "sha256": "ecc736ffad33d3a8ce075af347df30bc7e900444736dd9206f5392e3c62710c0"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/configs/fashion_scaling_seed2024.yaml",
+      "bytes": 672,
+      "sha256": "c4154da0974d641c41b0cd5950c8a8aba37098f69c6a24da98edce4a92890913"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/configs/fashion_scaling_seed3407.yaml",
+      "bytes": 672,
+      "sha256": "629c7d89f87d62f6cca3d202124687a1f3b54d1224d871815fa4185da1f3544b"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/configs/fashion_scaling_seed42.yaml",
+      "bytes": 666,
+      "sha256": "c957fcd0488c7e7f7c623c403ea866f2d9d1c8bd60e9487bf1fade4c68740cdd"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/configs/fashion_scaling_seed7711.yaml",
+      "bytes": 672,
+      "sha256": "f81d3e05b2690509035ccca2c66cb543382eee62102989a14c001fbf8fea0286"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/environment.json",
+      "bytes": 650,
+      "sha256": "73f11009e60a7ad40fcee60aabeefeeed3b8a41c19ec7f892aaeb02117c4b31f"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/launch.json",
+      "bytes": 153,
+      "sha256": "a3652c336e1cf2a7bb561edc413ae2656e269bc087d2979b7ead47d2df876d82"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/launch.py",
+      "bytes": 641,
+      "sha256": "0b27a5d4d68370a775a144b9e4b5ee6dc56a78fb9a38eb8df5ec4c38cb98f2d9"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/lf_gpu_telemetry.csv",
+      "bytes": 10333,
+      "sha256": "05f0d54cde32327fc275daa6b28fa8346c8e953e78e8746adc9072236ebe6e08"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/lf_queue.log",
+      "bytes": 1288,
+      "sha256": "5c5d4b1f05d8358fb1ca0cee625f0b643d0133b1194ad93d77bfe64506035a6f"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/lf_seed123.log",
+      "bytes": 3118,
+      "sha256": "3f8d7a32874962301e6077a8fba22379dc23e5f43e65a2f9bf429aebd9de0c1e"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/lf_seed2024.log",
+      "bytes": 3128,
+      "sha256": "8b51320bff546bebc986acb7632aa4e3ab7d2e8ba7160fc2004fe0e4bacc7d6a"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/lf_seed3407.log",
+      "bytes": 3128,
+      "sha256": "b15d450ac3f124c31dcac1fde898ceabfb26576540ffe9583a6e14c74bf72e49"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/lf_seed42.log",
+      "bytes": 3110,
+      "sha256": "708a2f180a70deb046e1714d6993435750f9d3cdf1c42f8fb4dbf00d36db23aa"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/lf_seed7711.log",
+      "bytes": 3128,
+      "sha256": "d0dce3380bda16ebb5410745f9aab8e248e5ed775aaae58332ede9ce20cc6726"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/lf_status.json",
+      "bytes": 1515,
+      "sha256": "5d37cc5029d1381e2cc96037fe771e02f596e250d0647260705e5259964c3eaf"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/partition_seed123.json",
+      "bytes": 349817,
+      "sha256": "9aa501b5f5c35c0ab2331922aad2ea081f6b66234d9cd505d5fe2070db35f596"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/partition_seed2024.json",
+      "bytes": 349816,
+      "sha256": "1193755b4fdcab4a740148dccc14eabea474c0477ce533995cebb5e27400e921"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/partition_seed3407.json",
+      "bytes": 349826,
+      "sha256": "44e7b521cc9e48eeb387aa298b39c2cdcbad45d8c4e1d56273dd95e96acf4fa8"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/partition_seed42.json",
+      "bytes": 349828,
+      "sha256": "eb9be7fc67f0ac67608ebc821a6c030c66e9acd2cc97f2731299114be5cee0d0"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/partition_seed7711.json",
+      "bytes": 349821,
+      "sha256": "bec65e8ab3a1ba81c1c6060212b1ba1a62df2cbba896034e4f710e816ee98894"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/pip_freeze.txt",
+      "bytes": 2090,
+      "sha256": "461cbee448547411dd01b8112c636b9268cd43e1fad1b33d044544a5842e64c4"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/plan_manifest.json",
+      "bytes": 2374,
+      "sha256": "885ca49f04cc0c1e78c8ba098b60f469c61694f7c4f23721c36109b0b759c999"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/reproduction_manifest.json",
+      "bytes": 3759,
+      "sha256": "2b76e1cb50afe5d0c16862ff6085b40e055379c8caa64b0a66fd0979ba94262e"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/results/lf_seed123/tasv2_mixed12_r50_b4.csv",
+      "bytes": 182679,
+      "sha256": "17c973146fc37c915536d846becaebbf14efc6ff2c1b7aa426b1451f32d45094"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/results/lf_seed123/tasv2_summary.csv",
+      "bytes": 248,
+      "sha256": "ea281fe9ad52e05f17591babfd0c6d5519cfaf6265db308ea1adea5bbdb17cc6"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/results/lf_seed2024/tasv2_mixed12_r50_b4.csv",
+      "bytes": 183796,
+      "sha256": "f523b50b53cb6a43929ce0141ad1fc23e3c50e63578c6d64e1cc4aab363db899"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/results/lf_seed2024/tasv2_summary.csv",
+      "bytes": 249,
+      "sha256": "7f50c66909a26e639e76e605a2fd23e171f8ea854507981a67788b1acbbf4dfb"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/results/lf_seed3407/tasv2_mixed12_r50_b4.csv",
+      "bytes": 183493,
+      "sha256": "c9c579f7bfd46ba81fb1de80ee5ef49ed10afe37ab07efa7b2cfc0eccba1c9a3"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/results/lf_seed3407/tasv2_summary.csv",
+      "bytes": 248,
+      "sha256": "8efa5f541da6417b8a0b6007f39cddd695176838fc6e02c9b6098c93ad13456f"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/results/lf_seed42/tasv2_mixed12_r50_b4.csv",
+      "bytes": 183059,
+      "sha256": "4ff10d020b07878c71cb2fd8b834f9ab41d8f3346e3da5eb23cbc213bcd87f93"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/results/lf_seed42/tasv2_summary.csv",
+      "bytes": 248,
+      "sha256": "15c712d78bdc088621d6cdd440935e2bf81a785a63ab302ed7cd6a24257ea5b2"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/results/lf_seed7711/tasv2_mixed12_r50_b4.csv",
+      "bytes": 183217,
+      "sha256": "bd8975bf577a8ea5cecf2de7970a38bc1a6c3872a39afbc2d5b5858aae73f1fb"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/results/lf_seed7711/tasv2_summary.csv",
+      "bytes": 248,
+      "sha256": "443c171c801f6ad4f6c399f1701b74ee3cec2f4b7a367618633fd2205b3e2802"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/results/scaling_seed123/tasv2_mixed12_r50_b4.csv",
+      "bytes": 183132,
+      "sha256": "514180a81e75a22e446a8a516c4cf52d1c2cbfe63e34f57c68d158448b49a376"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/results/scaling_seed123/tasv2_summary.csv",
+      "bytes": 248,
+      "sha256": "7729bfa894226a78dabf16710d98290950737cdb952a94fd926dda29cc9da80e"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/results/scaling_seed2024/tasv2_mixed12_r50_b4.csv",
+      "bytes": 183139,
+      "sha256": "f014b421871d5dfc6ff3b707479b6d9ea069ecc56a346a9a0096135e5dd649c4"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/results/scaling_seed2024/tasv2_summary.csv",
+      "bytes": 249,
+      "sha256": "441a737085fbd4109944e99d48f477221552390c43c2aaa198964ce66e6c5282"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/results/scaling_seed3407/tasv2_mixed12_r50_b4.csv",
+      "bytes": 183625,
+      "sha256": "baa16114bd406fdf6a78b77d41fa80e2653fa2ad42a716d2e8ad877c7b045817"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/results/scaling_seed3407/tasv2_summary.csv",
+      "bytes": 248,
+      "sha256": "0b42fc1f165b1ed68bbb5fcc08423f8705cae51faa854f4f28ebbf272b9516fd"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/results/scaling_seed42/tasv2_mixed12_r50_b4.csv",
+      "bytes": 182720,
+      "sha256": "b07988b20ac40126eb274c2e586cbee639260488d5dc1d0799556a9b69ff3886"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/results/scaling_seed42/tasv2_summary.csv",
+      "bytes": 248,
+      "sha256": "def9eff363807779eefd3811d62ee20d5cfcf95ef437208b58c0cbea00358f16"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/results/scaling_seed7711/tasv2_mixed12_r50_b4.csv",
+      "bytes": 183385,
+      "sha256": "be79ec361dc2ce976acc57673074808b3dcaf9e1a27d243265482625ddacb3f5"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/results/scaling_seed7711/tasv2_summary.csv",
+      "bytes": 248,
+      "sha256": "f4dd23518496f5e24d291e43f0833096c7d3899e1145c96f49b0cf912cb654fb"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/scaling_gpu_telemetry.csv",
+      "bytes": 10272,
+      "sha256": "783eedc998cee109ff201b22a824ed384c8905c1aa72adba66042377254ac03b"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/scaling_queue.log",
+      "bytes": 1293,
+      "sha256": "22eb4a0e1212e73f7abe6c38b2ab4c5fba7ee423b099f5b5b03d11a5285f734e"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/scaling_seed123.log",
+      "bytes": 3156,
+      "sha256": "842faf72a8ec2c3391282eba8714aab0228421e014870bdd5202e4504838931e"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/scaling_seed2024.log",
+      "bytes": 3165,
+      "sha256": "176524488996b577acafd816a465b2087a8c60a696e803041046aaf41f2c5c38"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/scaling_seed3407.log",
+      "bytes": 3165,
+      "sha256": "a0f99bac0e84b67e9d1e6791a57bfbd9855fc09aa642cd33cd71817403d71308"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/scaling_seed42.log",
+      "bytes": 3147,
+      "sha256": "b5d3def53be31cc71bb92c0f8d9bd5505ffab761eef79ccc39b2c1da0430c5bf"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/scaling_seed7711.log",
+      "bytes": 3165,
+      "sha256": "77b545eec48a6f041dd8da4029938acc6d71f7db1d3385e74ba8953d6a82b0d2"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/scaling_status.json",
+      "bytes": 1520,
+      "sha256": "ad61531442143adeed4a68a07a3fed8a647cf2d981cbd4b75a01c794401b6605"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/thermal_queue.py",
+      "bytes": 3568,
+      "sha256": "caa09efd57bab15243eac0ef186af3c6132f43b80f7b3b58897246221811e528"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/validation.json",
+      "bytes": 24827,
+      "sha256": "2c7c7446c57cd80d024bf0f9b1c3a90664cf37832804eaaed6873fc03d5c3fbc"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/validation_seed123.json",
+      "bytes": 3673,
+      "sha256": "5c7b6ad4b683c0a12536e893114bb644ed07249c5c04ba76a57816b8411fb31f"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/validation_seed2024.json",
+      "bytes": 3642,
+      "sha256": "88c5fbf74d4eb719f615be0e7799fffc17ddab48a8724061320f1316ccb5f013"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/validation_seed3407.json",
+      "bytes": 3663,
+      "sha256": "8c44977b40a29294ee03fefaf73bceb52f611fa28b66443cd100a4a6c59b37c8"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/results/fashion_single_auditor_five_seed_20261002/validation_seed42.json",
+      "bytes": 3659,
+      "sha256": "a2409865d180a2a8869cc143876872b4410129da1d9b6e49ae71aa0a0a1a8695"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/scripts/exp2/exp2_run.py",
+      "bytes": 67993,
+      "sha256": "a87aeb3dc0893d90ead10f26ba9f643faa97ce82b1efa228c8305596b93c420d"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/scripts/exp3/cifar10_legacy_components.py",
+      "bytes": 5259,
+      "sha256": "8d655fbef5e483539a2f9e1ff14edec84e2c3c5de478225a5de045ad944c5b37"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/scripts/exp3/exp3_governance_tasv2.py",
+      "bytes": 59163,
+      "sha256": "f71067a01c7af357c664306aed944a64c440e53df537a0f2f7e8f0311311e987"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/scripts/exp3/exp3_governance_tasv2_faultcheck.py",
+      "bytes": 63681,
+      "sha256": "5fb8d47c9c0e9b772a9c19085febb6cfd8aa785b0ecb57b1a5906e914088d6a3"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/validate_fashion_fixed_five_seed.py",
+      "bytes": 5547,
+      "sha256": "cc41c045cfa0a35f6a021d5a43751f67bf2d62391483c72ffeb5b384d1040448"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/final_protocol_20260928/validate_single_auditor_five_seed.py",
+      "bytes": 7523,
+      "sha256": "e8f2cb675b7fe7935797320c86ea6ab05b973d41b2b59ae3dbab7454525866b3"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/legacy_main_sources_20261002/cifar_workbook_source_records.json",
+      "bytes": 210436,
+      "sha256": "f43f541aa01aa8971d89290436896f6ad9bf500bd0fa442cf881f9cb06027539"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/legacy_main_sources_20261002/workbook_validation.json",
+      "bytes": 102300,
+      "sha256": "73a9ed8ea88b7dff4e937aed93ec2a992ed64df3bb2b575cbd00bd5e59d65d9a"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/legacy_sources_20261002/cifar_scaling_20260730/gpu0/cifar_scaling_governance_seed42.csv",
+      "bytes": 171,
+      "sha256": "8c729c9030c113a58d0f6d7681464f19b8490728a66dac57e1fe0db819b10141"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/legacy_sources_20261002/cifar_scaling_20260730/gpu0/cifar_scaling_governance_seed42.json",
+      "bytes": 100935,
+      "sha256": "6eb448a6bee3e25f391499b624bc70af092767c1350e51c5af1abfe8f4a39144"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/legacy_sources_20261002/cifar_scaling_20260730/gpu1/cifar_scaling_governance_seed42.csv",
+      "bytes": 139,
+      "sha256": "934c80ea233f23571180bf1dbc2e5b685175da4719eed57bf56df5270ede8716"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/legacy_sources_20261002/cifar_scaling_20260730/gpu1/cifar_scaling_governance_seed42.json",
+      "bytes": 94673,
+      "sha256": "db45499c76d4e9af5b6b4531155db505193c048594a7f1dc9cf17ea5418991fc"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/legacy_sources_20261002/configs/table10_noexcl_fashion_lf.yaml",
+      "bytes": 648,
+      "sha256": "b28422716802836701b74ad1167333331b48d4e9b48c0c4c8cb7a6412a715172"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/legacy_sources_20261002/configs/table10_noexcl_fashion_scaling.yaml",
+      "bytes": 655,
+      "sha256": "300306bec03f8af2c73b2b94d12208529c0d12abc2a3eb8c0dba3d02b25a7d2c"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/legacy_sources_20261002/configs/table10_noexcl_mnist_lf.yaml",
+      "bytes": 637,
+      "sha256": "81ad7b92d3d381cc1b267acb0e9b49a0d4365f7c9419232ecfe808cb1090bf36"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/legacy_sources_20261002/configs/table10_noexcl_mnist_scaling.yaml",
+      "bytes": 644,
+      "sha256": "2d6ead4569885d97268c82ff0d5d36c4d0758162ace16daa8da1ffff55218ba7"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/legacy_sources_20261002/configs/table11_noexcl_fashion_lf.yaml",
+      "bytes": 648,
+      "sha256": "4c8785158175f61bdb27bbb6f2e4da7529d812f9e8f085ce42efb13eb58f8a4f"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/legacy_sources_20261002/configs/table11_noexcl_fashion_scaling.yaml",
+      "bytes": 655,
+      "sha256": "98ffa033b4feb349b5be10b24ed2a71ad89fb5d65b2da1a7fc9b9c77e300760f"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/legacy_sources_20261002/configs/table11_noexcl_mnist_lf.yaml",
+      "bytes": 637,
+      "sha256": "da6dcfe9df67e105ac175155eb903c35d64588b263eef10d1555b8fc80b67d8a"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/legacy_sources_20261002/configs/table11_noexcl_mnist_scaling.yaml",
+      "bytes": 644,
+      "sha256": "04a8c0125b29ad8bb74b5e21af808ee475b8a4560fa1cbaf37f87aaa1093dcb6"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/legacy_sources_20261002/governance_ablation/gov_cifar10_r30_final.log",
+      "bytes": 112363,
+      "sha256": "56a59808c0d5f74bd99e4fa28429c9d5a8382773df0f222cee56859c2b7e3cab"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/legacy_sources_20261002/governance_ablation/gov_cifar10_r40_final.log",
+      "bytes": 121381,
+      "sha256": "c0b2c03557b583b49b3154729b184091d93e0a6596ee2eb9a345419ed3538dac"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/legacy_sources_20261002/governance_ablation/gov_cifar10_scaling_full_r30.log",
+      "bytes": 112258,
+      "sha256": "23f3e529e604dc4c213285ef3ea98b3d3d403c6c48c7f19185f4f718f0dff0ab"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/legacy_sources_20261002/governance_ablation/gov_cifar10_scaling_full_r40.log",
+      "bytes": 121278,
+      "sha256": "f0c98f2dc7ec53ee410734550b781c27b15265f9aafda75780a5dbc678db560b"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/legacy_sources_20261002/table10_noexcl/fashion_lf/tasv2_mixed12_r50_b3.csv",
+      "bytes": 11830,
+      "sha256": "7ec2bd497dc2bdf0f14868864566b917df3bf2f4575cb8f1d779d20bff935886"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/legacy_sources_20261002/table10_noexcl/fashion_lf/tasv2_summary.csv",
+      "bytes": 471,
+      "sha256": "c9c244f1774c167d898701844dcbb4f1883801aea5ad7bfdb0744f2681daa898"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/legacy_sources_20261002/table10_noexcl/fashion_scaling/tasv2_mixed12_r50_b3.csv",
+      "bytes": 11802,
+      "sha256": "a4c9ae423f7f69dec4b7c4e06c01d1b27a5a0b03eb74ffc2f5bdbde0becc7d13"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/legacy_sources_20261002/table10_noexcl/fashion_scaling/tasv2_summary.csv",
+      "bytes": 469,
+      "sha256": "85a45544439f53c3da650dfde86d997239c6d3cd3d159f0f6616c2cf51e21146"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/legacy_sources_20261002/table10_noexcl/mnist_lf/tasv2_mixed12_r50_b3.csv",
+      "bytes": 11834,
+      "sha256": "6b6fde268d6e706dcac70e72a800571d3b7aff0811a1e5fb083acd1f39e0bd3f"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/legacy_sources_20261002/table10_noexcl/mnist_lf/tasv2_summary.csv",
+      "bytes": 470,
+      "sha256": "4fcb285e79919d9015a35f3c29847ffdf786fefccbc293abcc62b2c3a88139ba"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/legacy_sources_20261002/table10_noexcl/mnist_scaling/tasv2_mixed12_r50_b3.csv",
+      "bytes": 11863,
+      "sha256": "cedcf66a6b98aca1adb96f5a64ad8b7f04f485c30e5b4fefc665724e163247b3"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/legacy_sources_20261002/table10_noexcl/mnist_scaling/tasv2_summary.csv",
+      "bytes": 471,
+      "sha256": "3e0fbbd752ef3cee7ef939866a4f33509a5eadcdb011726c88aedf131e09ff59"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/legacy_sources_20261002/table10_noexcl/table10_full.log",
+      "bytes": 23073,
+      "sha256": "91b0691a5ec1f0a1bc6f0e203b6dc7283c94afba8b6ad9809f285927ed9a0b76"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/legacy_sources_20261002/table11_noexcl/fashion_lf/tasv2_mixed12_r50_b4.csv",
+      "bytes": 11801,
+      "sha256": "4f10e5e9d8ff4f7920811be5b6197fcf9b93f2a4560ac66324de3f7a969346a0"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/legacy_sources_20261002/table11_noexcl/fashion_lf/tasv2_summary.csv",
+      "bytes": 471,
+      "sha256": "7f35223a5a87f4088ba00ed477a224926e2bef4ae7a05959e07c6d9900a1ce39"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/legacy_sources_20261002/table11_noexcl/fashion_scaling/tasv2_mixed12_r50_b4.csv",
+      "bytes": 11803,
+      "sha256": "008c9caebdd8a6f6e1f7b4e90a31de0c0367ea3d0745b63d542ca88169d46eca"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/legacy_sources_20261002/table11_noexcl/fashion_scaling/tasv2_summary.csv",
+      "bytes": 469,
+      "sha256": "7bd2ee1fb6c10b7d482f78ca927952ae26b6cfce08d079784e3a15ed94c09af4"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/legacy_sources_20261002/table11_noexcl/mnist_lf/tasv2_mixed12_r50_b4.csv",
+      "bytes": 11802,
+      "sha256": "9681cb41be9885e93ea172289ac78f97a19852d233334dde5d2f740953db7070"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/legacy_sources_20261002/table11_noexcl/mnist_lf/tasv2_summary.csv",
+      "bytes": 470,
+      "sha256": "470ecf74f38d6d49eb1d83d50b0c5fefda9f9abd1a6a2bc0f486db254f68a1dc"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/legacy_sources_20261002/table11_noexcl/mnist_scaling/tasv2_mixed12_r50_b4.csv",
+      "bytes": 11810,
+      "sha256": "c8299974c4294d06556347c8651543b3cf6bc2d47ae8f29b3765f019c68842c9"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/legacy_sources_20261002/table11_noexcl/mnist_scaling/tasv2_summary.csv",
+      "bytes": 469,
+      "sha256": "b627356299a0c99b6ce91a14235e1a53c1389e98da9972e3e11295da731aa935"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/legacy_sources_20261002/table11_noexcl/table11_full.log",
+      "bytes": 23067,
+      "sha256": "ec702cde14c407cf3f573373456fc05cacfcaed0e6c535d888b9f1b08a894f03"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/legacy_sources_20261002/validation.json",
+      "bytes": 57731,
+      "sha256": "170dccc03b362dcad5f8745c0b211261ca3eb0103bdbcb1281c883b7c89e5183"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/aggregate_curves.csv",
+      "bytes": 26756,
+      "sha256": "a20d6a8b2edd46c09c700cfa82d452fa5ffb8fd890c134245daf2cca4141b72d"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/aggregate_summary.csv",
+      "bytes": 4043,
+      "sha256": "7ca763f65c76258a9e78179c66694ad7f534c4dd49d9615519d704797b22b2ee"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/configs/seed123.yaml",
+      "bytes": 654,
+      "sha256": "8a42588bc4c4eb253b6f0551b4da9e2d98e5514c0e184808e8b49d4b5e4c3388"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/configs/seed2024.yaml",
+      "bytes": 656,
+      "sha256": "21ef761f4e63641fb33b6fadfad0a0961b1c218c87d32efafbcd6b7345601d8d"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/configs/seed3407.yaml",
+      "bytes": 656,
+      "sha256": "2cb8e329808c40e5e951b98139dbbf4269847c140e55e5cd061ec5ee0f1d7ba5"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/configs/seed42.yaml",
+      "bytes": 652,
+      "sha256": "5f575d6c91c4067e4fe68d9c4bdc10245a43416ee50f8f5b3d860c77433f45e4"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/configs/seed7711.yaml",
+      "bytes": 656,
+      "sha256": "de906072d613e46ae77354d7c3615104b1a64345ed708f62ae6e9138d9cff79a"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/core/model.py",
+      "bytes": 1287,
+      "sha256": "8034c1028c95cba2b8c9b0654b9991a4d40f06284e81b9ed3d55ed0a5d77ea8d"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/manifest.json",
+      "bytes": 3312,
+      "sha256": "dba79230a06d77479d51866eca91f66f490682c209a33d4157050ba13f1c318a"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/paired_effects.csv",
+      "bytes": 3825,
+      "sha256": "ff6925e11e5e3bdf3decd6f1409a9ba0b7255cc885742573b29ebd6d3fe86bd7"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/per_seed_metrics.csv",
+      "bytes": 2998,
+      "sha256": "9cf8da491df041f3e14d23ea1cdeafceb5fecbd5af71d1fabe33ec21a9a0f147"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed123/exp2_results.csv",
+      "bytes": 425,
+      "sha256": "85e48724ed4a5d3712ddd93ffa26bf96549ccfacb19d0fcad0a53267b05a1216"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed123/history__fedavg__label_flip.json",
+      "bytes": 1176,
+      "sha256": "1e4bd33cf99aa98131e20c5941f78d0298d771e84dbca59d0669d4c11fdfc27c"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed123/history__fedavg__none.json",
+      "bytes": 1089,
+      "sha256": "26074883e2dfa2a7a5c775949b383fdaeb22e5048a9bd23cefa9eb23cb1f39f2"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed123/history__fltrust__label_flip.json",
+      "bytes": 1141,
+      "sha256": "aabad6890a4d9f9fce53bd7b29e252a2240a38c68f3458c54b3aa74aa5de1d69"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed123/history__fltrust__none.json",
+      "bytes": 1089,
+      "sha256": "407fae637e01a9fa7d78161d7ecaac16fc47ffd2bacb1044ba7cfcdec1a2ca87"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed123/history__tasl_full__label_flip.json",
+      "bytes": 1142,
+      "sha256": "ea2ab38326fb31ba2e2b4f97efd7de2fd478f2a3e99edf19614f523de7ef1904"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed123/history__tasl_full__none.json",
+      "bytes": 1091,
+      "sha256": "859f134e792b6b417e236523c3d32197e86f7aa8fbd28a9f3e22387228f648e0"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed123/round_metrics__fedavg__label_flip.csv",
+      "bytes": 2734,
+      "sha256": "cd115b230010a4b0e95f6267d256cd576b4f55ebd134933945d56dffb5a1613e"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed123/round_metrics__fedavg__none.csv",
+      "bytes": 2656,
+      "sha256": "92bc6c02dbcd602c3b8d1f4859d8f0d489875d2ec21dad515d1e21d269f17c2b"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed123/round_metrics__fltrust__label_flip.csv",
+      "bytes": 2700,
+      "sha256": "b1ca85bb1d1e2eb01f86891019e42dafa9e4992671321dbe4cc8b020ecaffbaf"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed123/round_metrics__fltrust__none.csv",
+      "bytes": 2658,
+      "sha256": "619d59618e6dc72797da0f624d5cea0ebd43f6e49b84aed625d77a0b38989c94"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed123/round_metrics__tasl_full__label_flip.csv",
+      "bytes": 12204,
+      "sha256": "3ba56e83d89847eaecf1516d99179606372ed035b4d2f6d021078f0f25c4c1ba"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed123/round_metrics__tasl_full__none.csv",
+      "bytes": 12650,
+      "sha256": "53f6a45147c21e483c60342e5bfaeb2d15204b24951077f3fd13f31cfe416fa0"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed2024/exp2_results.csv",
+      "bytes": 433,
+      "sha256": "4d57cbec5165850004f9e35332edcef0e107e1383302a0b560f55f59ad0c9374"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed2024/history__fedavg__label_flip.json",
+      "bytes": 1181,
+      "sha256": "513a16580ca40a4bc94c7e73d1fe85ef45adee3e4164a15ed6486de9f1ca6394"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed2024/history__fedavg__none.json",
+      "bytes": 1088,
+      "sha256": "849c4e31337dd6a8e4772e6ff090a5ef71e5e051fef332ee30ca4ef1b0ea3f00"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed2024/history__fltrust__label_flip.json",
+      "bytes": 1137,
+      "sha256": "189468672e3c8ad08a3736aeba5c8c64329a1ebe38891333d8d8d8b5337cc094"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed2024/history__fltrust__none.json",
+      "bytes": 1088,
+      "sha256": "8c1dd1e71ad573aeb74f67418bba1d2282cf021c44f68a1bfc53c10361bc69ca"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed2024/history__tasl_full__label_flip.json",
+      "bytes": 1135,
+      "sha256": "bde38e910c39d7845870b4d96677de62b8ed2168fd76b0d31659c27a7595a7ae"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed2024/history__tasl_full__none.json",
+      "bytes": 1087,
+      "sha256": "d8e33358b2393e7176667704d66fbaad29691142e8a7bcb3cbbda3b0bccb8a94"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed2024/round_metrics__fedavg__label_flip.csv",
+      "bytes": 2744,
+      "sha256": "1d14fd8ae7546190e316c95d94f8373b637c25a42a6c358a07fcec51cf54fa4e"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed2024/round_metrics__fedavg__none.csv",
+      "bytes": 2656,
+      "sha256": "c8b9052625a3793ed299bd1c2608d85a956e39f47f230d02e3cd693aa69af117"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed2024/round_metrics__fltrust__label_flip.csv",
+      "bytes": 2703,
+      "sha256": "921ee8b3d2c9ef253b799c3e9172651bf029dc299a1a2bc8653501c105a55ec2"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed2024/round_metrics__fltrust__none.csv",
+      "bytes": 2655,
+      "sha256": "77de9d54eaab289bb29f0e43c73382acd7920b6242601b7e58d44abd13fc5e88"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed2024/round_metrics__tasl_full__label_flip.csv",
+      "bytes": 11347,
+      "sha256": "184fd21dc18fcc0a4cce834a3ba54bcf6a17f73a1b26e0d7ecc0291015d4469f"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed2024/round_metrics__tasl_full__none.csv",
+      "bytes": 12932,
+      "sha256": "2562716b324a110bf6abf2257775d18721bcc2db50dff1347c72d67b902f48c3"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed3407/exp2_results.csv",
+      "bytes": 460,
+      "sha256": "55f08f7ba00780ed029745864c875f835b8002d608b003c3da31f3a7fca8e9f7"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed3407/history__fedavg__label_flip.json",
+      "bytes": 1179,
+      "sha256": "a2e86a2d49ef488e5d31674cbf547a36f84d1fb8fe89eeb7285263ed850d3251"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed3407/history__fedavg__none.json",
+      "bytes": 1090,
+      "sha256": "e5ccd15e72ec28795280630057ced25fbb2627c517319e9204a42fb19a728cdc"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed3407/history__fltrust__label_flip.json",
+      "bytes": 1141,
+      "sha256": "3a84284aaff0b3b041ce97bdf600b892ddf99c5a2e97610ef0e8527144991bdb"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed3407/history__fltrust__none.json",
+      "bytes": 1089,
+      "sha256": "4f9c64cfd7aa4af4df2dabbc3ac3762256c5210eeb7206fbdb3e4c9b59540b97"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed3407/history__tasl_full__label_flip.json",
+      "bytes": 1146,
+      "sha256": "66e902a3369251ea5086a5df166725dee341ff2e6d7acce1b40fb7533ed06f03"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed3407/history__tasl_full__none.json",
+      "bytes": 1092,
+      "sha256": "f7ebf30b15007fde8090a15ba46e34a297c266fddebfb35df0a1246422865fa8"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed3407/round_metrics__fedavg__label_flip.csv",
+      "bytes": 2742,
+      "sha256": "47924518aa947bea854947bc8bb730aa83f16d1bf5a27790531a958b1b7eda95"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed3407/round_metrics__fedavg__none.csv",
+      "bytes": 2656,
+      "sha256": "de8c258a89a5bc32651bad9e3f40b45656bda6cc7e1d8df5a57ffaa120832c00"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed3407/round_metrics__fltrust__label_flip.csv",
+      "bytes": 2700,
+      "sha256": "d803e4f295ab86de001cf5a560de1081146997e0de07fe302da4a44202d134d0"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed3407/round_metrics__fltrust__none.csv",
+      "bytes": 2657,
+      "sha256": "6161af7ff4035cbb9ebc20712f1ba31754011447c6a874fc8c8bf6bd19b2b8b9"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed3407/round_metrics__tasl_full__label_flip.csv",
+      "bytes": 10983,
+      "sha256": "6afad803246494ecd369a7e5e5be0f86967d2d814d8b77b8b03ae38d6ba851a2"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed3407/round_metrics__tasl_full__none.csv",
+      "bytes": 13209,
+      "sha256": "2aa100d7f7afa767bd002dd5bb3a4fa57992ba38994e8f10049da31b1d6f6c9f"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed42/exp2_results.csv",
+      "bytes": 438,
+      "sha256": "069da384570d7595e925978a323ad12a91402f72b89513cc8dcd35e42061c33d"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed42/history__fedavg__label_flip.json",
+      "bytes": 1157,
+      "sha256": "707a98809bb037ec0d0ce3119fa59ace1651d99ae358e65ad1a4bd66711674b8"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed42/history__fedavg__none.json",
+      "bytes": 1085,
+      "sha256": "ad8f62a5615565e9fdca51079e3d8dcac5b8118bcd88ddd6a7510291ad76a817"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed42/history__fltrust__label_flip.json",
+      "bytes": 1144,
+      "sha256": "ff9832d4abe34a85c43916345f100b2df527bbe0e539a6820abf3bc2a6772056"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed42/history__fltrust__none.json",
+      "bytes": 1089,
+      "sha256": "b6f462f9017c724a2a32b6f0fd94600cb88f786b30d2805273dfd66ddfe8f66d"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed42/history__tasl_full__label_flip.json",
+      "bytes": 1137,
+      "sha256": "7e230f57ef6c0363e23ff09c9bdf576aea4c2a24141e21f28539153a7d15637b"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed42/history__tasl_full__none.json",
+      "bytes": 1089,
+      "sha256": "af91aa97c23779017dfc38ca7034b2f4fe611a170073da47a112d1edd6bdffd8"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed42/round_metrics__fedavg__label_flip.csv",
+      "bytes": 2722,
+      "sha256": "9bd1bb8e91d4e5cb23607acd3e1ddc6e41c85c8b11b8988fd4775019b0cbc4df"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed42/round_metrics__fedavg__none.csv",
+      "bytes": 2651,
+      "sha256": "034eddff22483b0cb28e49ba25a8bcce4d960dec251a302f434f030f74743925"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed42/round_metrics__fltrust__label_flip.csv",
+      "bytes": 2703,
+      "sha256": "06adb1cd08bbacadc3cf847b8d10b0e8f73292f38e14a676cbb5e146e1909c69"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed42/round_metrics__fltrust__none.csv",
+      "bytes": 2659,
+      "sha256": "98cc334b33851179a11dc1a9dd87af15d7473f5144dd0948f3156ef2ddb6c1f2"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed42/round_metrics__tasl_full__label_flip.csv",
+      "bytes": 11536,
+      "sha256": "ece30c452ba24199626b76553528aeb35ffd88ac8c359728e7aeac0405a68db4"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed42/round_metrics__tasl_full__none.csv",
+      "bytes": 13962,
+      "sha256": "5bb4c1faf43c3d1519bae34b096bff8253ac7137c80f0c4a1fc19f7274b3b584"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed7711/exp2_results.csv",
+      "bytes": 403,
+      "sha256": "fa1269d17e31608e1ffe5ebdfd4fe6834d82b50ade7f25a614ab6d57166b6e97"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed7711/history__fedavg__label_flip.json",
+      "bytes": 1181,
+      "sha256": "97fb3eb664e640519a628d296d68fa49302b64441336abe5f558e0a313009527"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed7711/history__fedavg__none.json",
+      "bytes": 1087,
+      "sha256": "ca9fc360ba1844a420485f09fd2236c9774803d1965fd6b53d41d8e275ad0536"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed7711/history__fltrust__label_flip.json",
+      "bytes": 1140,
+      "sha256": "8f187bc82b3711d23b61a7abb742094f82c91ac23c8010138f07c1d145b729da"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed7711/history__fltrust__none.json",
+      "bytes": 1088,
+      "sha256": "ad7e120595dd2b2ea70b7466f9273a2162dcefdd49c4a8bd2f1f762340fc7fcb"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed7711/history__tasl_full__label_flip.json",
+      "bytes": 1144,
+      "sha256": "c3791f687e8f07131e40a1aa6132da0a394d029e0d9ec8286de44296279ec40c"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed7711/history__tasl_full__none.json",
+      "bytes": 1091,
+      "sha256": "c84dea454af57a4bed7e175ebafb05228d3d9bca04e13fe35458c4fc5188b01b"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed7711/round_metrics__fedavg__label_flip.csv",
+      "bytes": 2747,
+      "sha256": "e0c065cc35beffb65ec73942376927c6832d65db28784a7f13c03d1206097fd9"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed7711/round_metrics__fedavg__none.csv",
+      "bytes": 2662,
+      "sha256": "4fa644c1049e5ccc55a5c45d91556d8204fce2661d6622118caf72c86b22e6df"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed7711/round_metrics__fltrust__label_flip.csv",
+      "bytes": 2696,
+      "sha256": "bec9f5c642558b456635fd587615763456ccc0539335fc5539b2b40bc4777344"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed7711/round_metrics__fltrust__none.csv",
+      "bytes": 2655,
+      "sha256": "2314bdcf58e1cd03af400408fc6d086708d55e3f8b9faa3e2aa8dc16a5184d33"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed7711/round_metrics__tasl_full__label_flip.csv",
+      "bytes": 11330,
+      "sha256": "6dad655a39f0dc5e31fd4e39f1a0348a673b138b8bc42aedf13ac4af8a940b6d"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/results/fashion_principal_seed7711/round_metrics__tasl_full__none.csv",
+      "bytes": 13151,
+      "sha256": "49ded7d8274ee281b43413e456c52ebf2503f68a215e88b6098edf408636c49a"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/run_sequential.sh",
+      "bytes": 1393,
+      "sha256": "443e06daa9731c98ef4db86ca0745c1e6196c5a73f656e0a8ec29955662d5217"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/scripts/exp2/exp2_run.py",
+      "bytes": 72689,
+      "sha256": "8f4c447acab1f78e750592825643954dcf9ed8ba7402c907ca2cafe272a2ef83"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/summarize_5seed.py",
+      "bytes": 7658,
+      "sha256": "162a693465d6910199328152354df0ac8f51e673e8cd81d4c8d18c54c4892e41"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/tests/test_fltrust_norm.py",
+      "bytes": 1034,
+      "sha256": "9e40cddf876aec2f4213be8d32c7d1b8a9cf3b5d3e74063d5178dae2025d28fd"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/tests/validate_seed.py",
+      "bytes": 1052,
+      "sha256": "d72015b9cc5e0aca9185fedb8abf1d6856c7e22cd69d0738a6bdfbda831a9bf0"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/principal_5seed/validation_report.json",
+      "bytes": 332,
+      "sha256": "cbfc2363fcfc23620609d94188c6acd8ee31d13eaabc46c1ae88147f2599971c"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/anchor_norm_status.json",
+      "bytes": 538,
+      "sha256": "7b25ae8d6d915ed2be956cfe2b602549def3093a2730fcc8bb1613c4e163a365"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/anchor_norm_telemetry.csv",
+      "bytes": 2738,
+      "sha256": "37100a0637fd6858e01e2fe52fcef36ebe5468b0a8c196ad1f9546370e65f881"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/exposed_status.json",
+      "bytes": 530,
+      "sha256": "975a9144d3a83e489acaa5975ab77ad33d573fddf1c3103711ed6e43c23e4b0b"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/exposed_telemetry.csv",
+      "bytes": 3916,
+      "sha256": "356401b8e8ec5388ac89d6064e224f90d672a9e28e9021bd1a9b9eb34d2c9fd4"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/label_flip_status.json",
+      "bytes": 616,
+      "sha256": "230cb42a0058494d7024e2c1792a8134dc55766e9f17e920b329e71330a38f9c"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/label_flip_telemetry.csv",
+      "bytes": 1899,
+      "sha256": "cc1f9809513b74c582d6e79cac298adee720e5219f1043013b94ede37e400d78"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/lasa_adapter.py",
+      "bytes": 1743,
+      "sha256": "494da6e1c6f68963003224aa3f11c1988df168353dff33a9a35abb54a53851d0"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/none_status.json",
+      "bytes": 598,
+      "sha256": "8ef8f8b34c3613238f4c00bd140f64701b5b757fdc278c8c3247eec0e25a38d4"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/none_telemetry.csv",
+      "bytes": 1954,
+      "sha256": "df46110819b06ec652d112a8f489c0145f76a786105965bb7c5ce0b29902a886"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/pipeline/core/model.py",
+      "bytes": 1287,
+      "sha256": "8034c1028c95cba2b8c9b0654b9991a4d40f06284e81b9ed3d55ed0a5d77ea8d"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/pipeline/scripts/exp2/exp2_run.py",
+      "bytes": 72689,
+      "sha256": "8f4c447acab1f78e750592825643954dcf9ed8ba7402c907ca2cafe272a2ef83"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/results/label_flip/complete.json",
+      "bytes": 89,
+      "sha256": "22a8f2c4e1c41837386ce8e02c9c220c930ee767691b3044cc0c6f9df58ce675"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/results/label_flip/environment.json",
+      "bytes": 1683,
+      "sha256": "2f9eac829b39ff024e724583edac00bb9492baabd2f8b899c505f3e0d381946b"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/results/label_flip/fedavg.json",
+      "bytes": 16040,
+      "sha256": "ef611f02a0de3c2c231191aa79f9ba495050ed9ceaf2e72475fa71e03017ca58"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/results/label_flip/lasa.json",
+      "bytes": 16416,
+      "sha256": "2bd3839e52b586cdc606619c618e1aeb2815f3d2c3d1b51f968d8cfd569b0d94"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/results/label_flip/partition.json",
+      "bytes": 408960,
+      "sha256": "be29a5114af0da0332bd425c5f68c4417e76a7c92a4b6cecff0fdbb2a88675aa"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/results/label_flip/pip_freeze.txt",
+      "bytes": 2090,
+      "sha256": "461cbee448547411dd01b8112c636b9268cd43e1fad1b33d044544a5842e64c4"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/results/label_flip/summary.csv",
+      "bytes": 176,
+      "sha256": "d88e36c3fbe6364e75455715f5cac455ba00d5361e3fbfcc1a00a2831dabbffa"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/results/label_flip/tasl_full.json",
+      "bytes": 24893,
+      "sha256": "ddae24cccc2032292fcdae6bd6028809d6dbe18b630a6b290e6bcd77ee6fcdce"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/results/none/complete.json",
+      "bytes": 89,
+      "sha256": "22a8f2c4e1c41837386ce8e02c9c220c930ee767691b3044cc0c6f9df58ce675"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/results/none/environment.json",
+      "bytes": 1677,
+      "sha256": "632826171127a3686ce57ea31f1ed18bcb0665c803a67beec7b79ffc5db10649"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/results/none/fedavg.json",
+      "bytes": 15901,
+      "sha256": "29795528e230697c1f552df14ac93baff1633fbb81449ae2a1b173cc57cf9aca"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/results/none/lasa.json",
+      "bytes": 16266,
+      "sha256": "6a995f99f67b40740488cc6502550c09002dcc71e8d31d5b5ba67760d658db85"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/results/none/partition.json",
+      "bytes": 408960,
+      "sha256": "be29a5114af0da0332bd425c5f68c4417e76a7c92a4b6cecff0fdbb2a88675aa"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/results/none/pip_freeze.txt",
+      "bytes": 2090,
+      "sha256": "461cbee448547411dd01b8112c636b9268cd43e1fad1b33d044544a5842e64c4"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/results/none/summary.csv",
+      "bytes": 146,
+      "sha256": "05991e312cddb3bed9578925fb8674a1c380b3d2040a9cd6ea6a9241fc2a42ed"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/results/none/tasl_full.json",
+      "bytes": 27728,
+      "sha256": "b6a344429ea799b5c03fc50b13ee4555ce6ffdd0b51161db2809fb9f837bb07d"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/run_matched.py",
+      "bytes": 3828,
+      "sha256": "cc0340eb5afb018653c48fa0ad9f594aee85f47c05f372373838f70d5a959175"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/run_trust_sweep.py",
+      "bytes": 4072,
+      "sha256": "7ac8495fcb9d27ec12cb859adde638d0733f1eeeb9e27a85d9c3d5926e908b92"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/seed42.yaml",
+      "bytes": 652,
+      "sha256": "5f575d6c91c4067e4fe68d9c4bdc10245a43416ee50f8f5b3d860c77433f45e4"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/supervise.py",
+      "bytes": 2671,
+      "sha256": "5271e93d4853af6c1e6d78b5d75504c9af3f4868ff44cbbff43f60e88e6a73cc"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/test_lasa_adapter.py",
+      "bytes": 1764,
+      "sha256": "031d4d31caa52001fbf00fa51da5d615c0d4494407a40160b3e7f202f63ab709"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/trust_sweep/anchor_norm/anchor_current_fraction_0.4.json",
+      "bytes": 28184,
+      "sha256": "abcc1fd3b23fd02b5540b2044ec3eba9a836af57a57fbaddf42654a9251db74b"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/trust_sweep/anchor_norm/anchor_current_fraction_0.4.py",
+      "bytes": 5252,
+      "sha256": "86d61edf8170426681726680b417858138f1e36078789a071dd14dd76b20970a"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/trust_sweep/anchor_norm/anchor_current_fraction_0.8.json",
+      "bytes": 26808,
+      "sha256": "8e9a407616184d9bd0a9ab597147d5f098ed307a52d43f34843e40c938cd42cd"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/trust_sweep/anchor_norm/anchor_current_fraction_0.8.py",
+      "bytes": 5300,
+      "sha256": "cc7b30c7eb9d8557be849a66f3a769676951b18f400c2ff88ebdda30a403cb07"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/trust_sweep/anchor_norm/complete.json",
+      "bytes": 300,
+      "sha256": "7191f386ac51262f788ed922fa387baf6c8178e271b9718058e4dbda5f14c7f1"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/trust_sweep/anchor_norm/norm_gate_multiplier_2.0.json",
+      "bytes": 27592,
+      "sha256": "4e38ac79d559a99c4b1b55fa88482e4e0c926d385a118fae1c7dd90e5bd51aac"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/trust_sweep/anchor_norm/norm_gate_multiplier_2.0.py",
+      "bytes": 5252,
+      "sha256": "55179f8dcb22e8ccfe11d1c28f200d8b2faeda8c475728a68e0f70eae3210217"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/trust_sweep/anchor_norm/norm_gate_multiplier_3.0.json",
+      "bytes": 27462,
+      "sha256": "e28bb891c912b7a7db084537ff6cbbf021a5bc2d3915217baa7d68569b83d938"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/trust_sweep/anchor_norm/norm_gate_multiplier_3.0.py",
+      "bytes": 5252,
+      "sha256": "2bc98206199fb92d5d8d0a0b9daf88c41b58d6d5aed1d594ba1722d527516bb0"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/trust_sweep/anchor_norm/summary.csv",
+      "bytes": 331,
+      "sha256": "6b7565809cfbc9928794cec1f98e0fe047946fc449613b56a7478cbe5e67a680"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/trust_sweep/exposed/complete.json",
+      "bytes": 300,
+      "sha256": "1be342b9a04c6b9ad4b17d5ade1b0d42d0f6634ef58cea57496c11a0a087c409"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/trust_sweep/exposed/norm_penalty_0.4.json",
+      "bytes": 27480,
+      "sha256": "7a260320b14821386612ff2f47a726d66c63ead678a89a91f9772d8e73ea4f1a"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/trust_sweep/exposed/norm_penalty_1.2.json",
+      "bytes": 27532,
+      "sha256": "e1e39af20ed550e35828ce1c43f87a980da86301b16e44fcf691be612f55f92c"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/trust_sweep/exposed/summary.csv",
+      "bytes": 380,
+      "sha256": "c046a6cb17a70cbed03891d651e72238a2447de1051ada36d6d7512235e1cfc6"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/trust_sweep/exposed/trust_power_3.0.json",
+      "bytes": 27486,
+      "sha256": "c96638fb899436331a3bf82bc53e90ecacadcedd3ce38dce040170a236c82401"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/trust_sweep/exposed/trust_power_7.0.json",
+      "bytes": 27090,
+      "sha256": "88808db0c5d4bc69d9a8f386a6b7c401b23013bf523166b0ba89de95e319bed0"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/trust_sweep/exposed/weight_cap_ratio_1.0.json",
+      "bytes": 27413,
+      "sha256": "821dcb8922d6392e2bd6d9e1f665ed04859cbecb5eedddd020c2b7914e24f6a0"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/trust_sweep/exposed/weight_cap_ratio_2.0.json",
+      "bytes": 27743,
+      "sha256": "7904b303c79dc0bab602141d687f005652c95ad62ca69f82f44f075436e4ec9a"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/trust_sweep/validation.json",
+      "bytes": 2881,
+      "sha256": "05d2b0ff1efc09123f92c5f6b520e3ff7384a351dacc72a83f78a55b4c7d4d9c"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/recent_baseline_20261002/validation.json",
+      "bytes": 4374,
+      "sha256": "fdad281b8dcfa4ed59923b5dcef50d47592269d9f7037a4b24fe39f6866722f3"
+    },
+    {
+      "path": "r4_tasl_experiments_20260921/reproduction_20261002/artifact_source_map.json",
+      "bytes": 14376,
+      "sha256": "93a5f51fa674cfdad8f9ea137466d1d834de7b97ec80a085f9a1408267f551ff"
+    }
+  ],
+  "offline_command": [
+    "python",
+    "docx_qa/verify_local_reproduction_20261002.py"
+  ],
+  "outputs": [
+    "generated/verification.json",
+    "generated/Table_C1_regenerated.csv",
+    "generated/Tables_A4_A5_regenerated.csv",
+    "generated/Fig2_curves_regenerated.csv"
+  ],
+  "coverage": [
+    "Every current table/figure indexed with its evidence scope (not all independently regenerated)",
+    "Table D6 fixed-constant sensitivity and Table E1 recent aggregation comparison",
+    "Table2 CIFAR LF and Table3 CIFAR workbook extracts",
+    "All Table4/5 numeric records at saved precision",
+    "Five-seed Tables A4/A5 and Table C1, Fig2 coordinates"
+  ],
+  "limitations": [
+    "No model retraining in offline validation; datasets/model tensors not bundled.",
+    "Original workbook is represented by a cell-addressed extract and its whole-file SHA256.",
+    "Source/config/environment snapshots apply to their stated experiments, not every historical table.",
+    "Not all tables/figures are included; public immutable tag and dependency lock remain pending."
+  ],
+  "manuscript_representation": "Table excerpts only; the complete draft manuscript and review letter are excluded."
+}

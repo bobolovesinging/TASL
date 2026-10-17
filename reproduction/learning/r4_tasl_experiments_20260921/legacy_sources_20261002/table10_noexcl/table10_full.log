@@ -1,0 +1,420 @@
+===== START configs/table10_noexcl_mnist_lf.yaml 2026年 07月 03日 星期五 23:42:06 CST =====
+======================================================================
+TAS Governance v2 Experiment [table10_noexcl_mnist_lf]
+======================================================================
+  Config: configs/table10_noexcl_mnist_lf.yaml
+  Dataset: mnist, 10 clients, 3 Byzantine (label_flip)
+  Rounds: 50, Local epochs: 2
+  LR: 0.02, Momentum: 0.0, Weight decay: 0.0
+  Batch size: 128, Dirichlet alpha: 0.3
+  Seed: 42, Device: cuda
+  EMA alpha: 0.7, Trust cos^power: 5.0
+  V1 dim sample: 0.3, V2 client sample: 0.3
+  Tolerance: 0.0001
+  cudnn.deterministic: True
+
+======================================================================
+  Executor Attack: mixed12
+======================================================================
+
+--- mixed12 1/6: noexecutor ---
+[noexecutor] r01 | atk=False | ok=1 heal=0 | acc=34.18%
+[noexecutor] r10 | atk=False | ok=1 heal=0 | acc=94.48%
+[noexecutor] r20 | atk=False | ok=1 heal=0 | acc=96.58%
+[noexecutor] r30 | atk=False | ok=1 heal=0 | acc=97.54%
+[noexecutor] r40 | atk=False | ok=1 heal=0 | acc=98.00%
+[noexecutor] r50 | atk=False | ok=1 heal=0 | acc=97.40%
+  => best_acc=98.00%, avg_acc=93.71%
+  [snapshot] Saved: results/table10_noexcl/mnist_lf/tasv2_mixed12_r50_b3.csv
+  [snapshot] Saved: results/table10_noexcl/mnist_lf/tasv2_summary.csv
+
+--- mixed12 2/6: fedavg ---
+[fedavg] r01 | atk=False | ok=1 heal=0 | acc=32.96%
+[fedavg] r10 | atk=True | ok=1 heal=0 | acc=27.49%
+[fedavg] r20 | atk=True | ok=1 heal=0 | acc=28.82%
+[fedavg] r30 | atk=False | ok=1 heal=0 | acc=95.78%
+[fedavg] r40 | atk=True | ok=1 heal=0 | acc=4.02%
+[fedavg] r50 | atk=False | ok=1 heal=0 | acc=90.89%
+  => best_acc=96.55%, avg_acc=50.00%
+  [snapshot] Saved: results/table10_noexcl/mnist_lf/tasv2_mixed12_r50_b3.csv
+  [snapshot] Saved: results/table10_noexcl/mnist_lf/tasv2_summary.csv
+
+--- mixed12 3/6: trust_only ---
+[trust_only] r01 | atk=False | ok=1 heal=0 | acc=34.18%
+[trust_only] r10 | atk=True | ok=1 heal=0 | acc=84.41%
+[trust_only] r20 | atk=True | ok=1 heal=0 | acc=81.08%
+[trust_only] r30 | atk=False | ok=1 heal=0 | acc=96.84%
+[trust_only] r40 | atk=True | ok=1 heal=0 | acc=17.85%
+[trust_only] r50 | atk=False | ok=1 heal=0 | acc=95.47%
+  => best_acc=97.58%, avg_acc=74.09%
+  [snapshot] Saved: results/table10_noexcl/mnist_lf/tasv2_mixed12_r50_b3.csv
+  [snapshot] Saved: results/table10_noexcl/mnist_lf/tasv2_summary.csv
+
+--- mixed12 4/6: trust_v1 ---
+[trust_v1] r01 | atk=False | V1_t=0,a=0 | ok=1 heal=0 | acc=34.18%
+[trust_v1] r10 | atk=True | V1_t=0,a=1 | ok=0 heal=1 | acc=94.48%
+[trust_v1] r20 | atk=True | V1_t=0,a=1 | ok=0 heal=1 | acc=95.74%
+[trust_v1] r30 | atk=False | V1_t=0,a=0 | ok=1 heal=0 | acc=97.40%
+[trust_v1] r40 | atk=True | V1_t=1,a=0 | ok=0 heal=1 | acc=97.87%
+[trust_v1] r50 | atk=False | V1_t=0,a=0 | ok=1 heal=0 | acc=97.90%
+  => best_acc=97.90%, avg_acc=92.92%
+  [snapshot] Saved: results/table10_noexcl/mnist_lf/tasv2_mixed12_r50_b3.csv
+  [snapshot] Saved: results/table10_noexcl/mnist_lf/tasv2_summary.csv
+
+--- mixed12 5/6: trust_v2 ---
+[trust_v2] r01 | atk=False | V2_t=0,a=0 | ok=1 heal=0 | acc=34.18%
+[trust_v2] r10 | atk=True | V2_t=0,a=1 | ok=0 heal=1 | acc=94.48%
+[trust_v2] r20 | atk=True | V2_t=0,a=1 | ok=0 heal=1 | acc=96.58%
+[trust_v2] r30 | atk=False | V2_t=0,a=0 | ok=1 heal=0 | acc=97.61%
+[trust_v2] r40 | atk=True | V2_t=1,a=0 | ok=0 heal=1 | acc=96.80%
+[trust_v2] r50 | atk=False | V2_t=0,a=0 | ok=1 heal=0 | acc=98.00%
+  => best_acc=98.02%, avg_acc=91.52%
+  [snapshot] Saved: results/table10_noexcl/mnist_lf/tasv2_mixed12_r50_b3.csv
+  [snapshot] Saved: results/table10_noexcl/mnist_lf/tasv2_summary.csv
+
+--- mixed12 6/6: trust_v1v2 ---
+[trust_v1v2] r01 | atk=False | V1_t=0,a=0 | V2_t=0,a=0 | ok=1 heal=0 | acc=34.18%
+[trust_v1v2] r10 | atk=True | V1_t=0,a=1 | V2_t=0,a=1 | ok=0 heal=1 | acc=94.48%
+[trust_v1v2] r20 | atk=True | V1_t=0,a=0 | V2_t=0,a=1 | ok=0 heal=1 | acc=96.58%
+[trust_v1v2] r30 | atk=False | V1_t=0,a=0 | V2_t=0,a=0 | ok=1 heal=0 | acc=97.54%
+[trust_v1v2] r40 | atk=True | V1_t=1,a=0 | V2_t=1,a=0 | ok=0 heal=1 | acc=98.00%
+[trust_v1v2] r50 | atk=False | V1_t=0,a=0 | V2_t=0,a=0 | ok=1 heal=0 | acc=97.40%
+  => best_acc=98.00%, avg_acc=93.71%
+  [snapshot] Saved: results/table10_noexcl/mnist_lf/tasv2_mixed12_r50_b3.csv
+  [snapshot] Saved: results/table10_noexcl/mnist_lf/tasv2_summary.csv
+
+======================================================================
+ TAS Governance v2 Summary: Executor Attack = mixed12
+======================================================================
+Group                  Best      Avg   V1_t   V1_a   V2_t   V2_a  Blocked Interc%
+-------------------------------------------------------------------------------------
+noexecutor            98.00    93.71      0      0      0      0        0    0.0%
+fedavg                96.55    50.00      0      0      0      0        0    0.0%
+trust_only            97.58    74.09      0      0      0      0        0    0.0%
+trust_v1              97.90    92.92     10     14      0      0       24   80.0%
+trust_v2              98.02    91.52      0      0      7     20       27   90.0%
+trust_v1v2            98.00    93.71     10      7      7     20       30  100.0%
+
+  TAS Heal Sources: V1=3, V2=13, V1+V2=14
+  [snapshot] Saved: results/table10_noexcl/mnist_lf/tasv2_mixed12_r50_b3.csv
+  [snapshot] Saved: results/table10_noexcl/mnist_lf/tasv2_summary.csv
+
+======================================================================
+ Experiment complete.
+======================================================================
+===== END configs/table10_noexcl_mnist_lf.yaml 2026年 07月 03日 星期五 23:51:00 CST =====
+===== START configs/table10_noexcl_mnist_scaling.yaml 2026年 07月 03日 星期五 23:51:00 CST =====
+======================================================================
+TAS Governance v2 Experiment [table10_noexcl_mnist_scaling]
+======================================================================
+  Config: configs/table10_noexcl_mnist_scaling.yaml
+  Dataset: mnist, 10 clients, 3 Byzantine (scaling)
+  Rounds: 50, Local epochs: 2
+  LR: 0.02, Momentum: 0.0, Weight decay: 0.0
+  Batch size: 128, Dirichlet alpha: 0.3
+  Seed: 42, Device: cuda
+  EMA alpha: 0.7, Trust cos^power: 5.0
+  V1 dim sample: 0.3, V2 client sample: 0.3
+  Tolerance: 0.0001
+  cudnn.deterministic: True
+
+======================================================================
+  Executor Attack: mixed12
+======================================================================
+
+--- mixed12 1/6: noexecutor ---
+[noexecutor] r01 | atk=False | ok=1 heal=0 | acc=25.34%
+[noexecutor] r10 | atk=False | ok=1 heal=0 | acc=94.48%
+[noexecutor] r20 | atk=False | ok=1 heal=0 | acc=96.46%
+[noexecutor] r30 | atk=False | ok=1 heal=0 | acc=97.66%
+[noexecutor] r40 | atk=False | ok=1 heal=0 | acc=97.97%
+[noexecutor] r50 | atk=False | ok=1 heal=0 | acc=98.05%
+  => best_acc=98.11%, avg_acc=93.90%
+  [snapshot] Saved: results/table10_noexcl/mnist_scaling/tasv2_mixed12_r50_b3.csv
+  [snapshot] Saved: results/table10_noexcl/mnist_scaling/tasv2_summary.csv
+
+--- mixed12 2/6: fedavg ---
+[fedavg] r01 | atk=False | ok=1 heal=0 | acc=19.35%
+[fedavg] r10 | atk=True | ok=1 heal=0 | acc=43.44%
+[fedavg] r20 | atk=True | ok=1 heal=0 | acc=81.72%
+[fedavg] r30 | atk=False | ok=1 heal=0 | acc=94.47%
+[fedavg] r40 | atk=True | ok=1 heal=0 | acc=51.75%
+[fedavg] r50 | atk=False | ok=1 heal=0 | acc=97.02%
+  => best_acc=97.74%, avg_acc=70.61%
+  [snapshot] Saved: results/table10_noexcl/mnist_scaling/tasv2_mixed12_r50_b3.csv
+  [snapshot] Saved: results/table10_noexcl/mnist_scaling/tasv2_summary.csv
+
+--- mixed12 3/6: trust_only ---
+[trust_only] r01 | atk=False | ok=1 heal=0 | acc=25.34%
+[trust_only] r10 | atk=True | ok=1 heal=0 | acc=22.40%
+[trust_only] r20 | atk=True | ok=1 heal=0 | acc=93.47%
+[trust_only] r30 | atk=False | ok=1 heal=0 | acc=98.02%
+[trust_only] r40 | atk=True | ok=1 heal=0 | acc=97.03%
+[trust_only] r50 | atk=False | ok=1 heal=0 | acc=97.51%
+  => best_acc=98.21%, avg_acc=82.99%
+  [snapshot] Saved: results/table10_noexcl/mnist_scaling/tasv2_mixed12_r50_b3.csv
+  [snapshot] Saved: results/table10_noexcl/mnist_scaling/tasv2_summary.csv
+
+--- mixed12 4/6: trust_v1 ---
+[trust_v1] r01 | atk=False | V1_t=0,a=0 | ok=1 heal=0 | acc=25.34%
+[trust_v1] r10 | atk=True | V1_t=0,a=0 | ok=1 heal=0 | acc=90.83%
+[trust_v1] r20 | atk=True | V1_t=0,a=0 | ok=1 heal=0 | acc=92.40%
+[trust_v1] r30 | atk=False | V1_t=0,a=0 | ok=1 heal=0 | acc=97.56%
+[trust_v1] r40 | atk=True | V1_t=1,a=0 | ok=0 heal=1 | acc=98.21%
+[trust_v1] r50 | atk=False | V1_t=0,a=0 | ok=1 heal=0 | acc=98.04%
+  => best_acc=98.21%, avg_acc=91.20%
+  [snapshot] Saved: results/table10_noexcl/mnist_scaling/tasv2_mixed12_r50_b3.csv
+  [snapshot] Saved: results/table10_noexcl/mnist_scaling/tasv2_summary.csv
+
+--- mixed12 5/6: trust_v2 ---
+[trust_v2] r01 | atk=False | V2_t=0,a=0 | ok=1 heal=0 | acc=25.34%
+[trust_v2] r10 | atk=True | V2_t=0,a=1 | ok=0 heal=1 | acc=94.48%
+[trust_v2] r20 | atk=True | V2_t=0,a=1 | ok=0 heal=1 | acc=96.46%
+[trust_v2] r30 | atk=False | V2_t=0,a=0 | ok=1 heal=0 | acc=97.34%
+[trust_v2] r40 | atk=True | V2_t=1,a=0 | ok=0 heal=1 | acc=98.08%
+[trust_v2] r50 | atk=False | V2_t=0,a=0 | ok=1 heal=0 | acc=97.91%
+  => best_acc=98.08%, avg_acc=93.36%
+  [snapshot] Saved: results/table10_noexcl/mnist_scaling/tasv2_mixed12_r50_b3.csv
+  [snapshot] Saved: results/table10_noexcl/mnist_scaling/tasv2_summary.csv
+
+--- mixed12 6/6: trust_v1v2 ---
+[trust_v1v2] r01 | atk=False | V1_t=0,a=0 | V2_t=0,a=0 | ok=1 heal=0 | acc=25.34%
+[trust_v1v2] r10 | atk=True | V1_t=0,a=0 | V2_t=0,a=1 | ok=0 heal=1 | acc=94.48%
+[trust_v1v2] r20 | atk=True | V1_t=0,a=1 | V2_t=0,a=1 | ok=0 heal=1 | acc=96.46%
+[trust_v1v2] r30 | atk=False | V1_t=0,a=0 | V2_t=0,a=0 | ok=1 heal=0 | acc=97.66%
+[trust_v1v2] r40 | atk=True | V1_t=1,a=0 | V2_t=1,a=0 | ok=0 heal=1 | acc=97.97%
+[trust_v1v2] r50 | atk=False | V1_t=0,a=0 | V2_t=0,a=0 | ok=1 heal=0 | acc=98.05%
+  => best_acc=98.11%, avg_acc=93.90%
+  [snapshot] Saved: results/table10_noexcl/mnist_scaling/tasv2_mixed12_r50_b3.csv
+  [snapshot] Saved: results/table10_noexcl/mnist_scaling/tasv2_summary.csv
+
+======================================================================
+ TAS Governance v2 Summary: Executor Attack = mixed12
+======================================================================
+Group                  Best      Avg   V1_t   V1_a   V2_t   V2_a  Blocked Interc%
+-------------------------------------------------------------------------------------
+noexecutor            98.11    93.90      0      0      0      0        0    0.0%
+fedavg                97.74    70.61      0      0      0      0        0    0.0%
+trust_only            98.21    82.99      0      0      0      0        0    0.0%
+trust_v1              98.21    91.20     10     12      0      0       22   73.3%
+trust_v2              98.08    93.36      0      0      7     20       27   90.0%
+trust_v1v2            98.11    93.90     10     14      7     20       30  100.0%
+
+  TAS Heal Sources: V1=3, V2=6, V1+V2=21
+  [snapshot] Saved: results/table10_noexcl/mnist_scaling/tasv2_mixed12_r50_b3.csv
+  [snapshot] Saved: results/table10_noexcl/mnist_scaling/tasv2_summary.csv
+
+======================================================================
+ Experiment complete.
+======================================================================
+===== END configs/table10_noexcl_mnist_scaling.yaml 2026年 07月 04日 星期六 00:00:05 CST =====
+===== START configs/table10_noexcl_fashion_lf.yaml 2026年 07月 04日 星期六 00:00:05 CST =====
+======================================================================
+TAS Governance v2 Experiment [table10_noexcl_fashion_lf]
+======================================================================
+  Config: configs/table10_noexcl_fashion_lf.yaml
+  Dataset: fashionmnist, 10 clients, 3 Byzantine (label_flip)
+  Rounds: 50, Local epochs: 2
+  LR: 0.02, Momentum: 0.0, Weight decay: 0.0
+  Batch size: 128, Dirichlet alpha: 0.3
+  Seed: 42, Device: cuda
+  EMA alpha: 0.7, Trust cos^power: 5.0
+  V1 dim sample: 0.3, V2 client sample: 0.3
+  Tolerance: 0.0001
+  cudnn.deterministic: True
+
+======================================================================
+  Executor Attack: mixed12
+======================================================================
+
+--- mixed12 1/6: noexecutor ---
+[noexecutor] r01 | atk=False | ok=1 heal=0 | acc=20.07%
+[noexecutor] r10 | atk=False | ok=1 heal=0 | acc=68.09%
+[noexecutor] r20 | atk=False | ok=1 heal=0 | acc=75.59%
+[noexecutor] r30 | atk=False | ok=1 heal=0 | acc=76.61%
+[noexecutor] r40 | atk=False | ok=1 heal=0 | acc=80.90%
+[noexecutor] r50 | atk=False | ok=1 heal=0 | acc=79.84%
+  => best_acc=83.96%, avg_acc=73.08%
+  [snapshot] Saved: results/table10_noexcl/fashion_lf/tasv2_mixed12_r50_b3.csv
+  [snapshot] Saved: results/table10_noexcl/fashion_lf/tasv2_summary.csv
+
+--- mixed12 2/6: fedavg ---
+[fedavg] r01 | atk=False | ok=1 heal=0 | acc=19.97%
+[fedavg] r10 | atk=True | ok=1 heal=0 | acc=15.13%
+[fedavg] r20 | atk=True | ok=1 heal=0 | acc=7.20%
+[fedavg] r30 | atk=False | ok=1 heal=0 | acc=77.04%
+[fedavg] r40 | atk=True | ok=1 heal=0 | acc=2.07%
+[fedavg] r50 | atk=False | ok=1 heal=0 | acc=75.20%
+  => best_acc=79.30%, avg_acc=33.48%
+  [snapshot] Saved: results/table10_noexcl/fashion_lf/tasv2_mixed12_r50_b3.csv
+  [snapshot] Saved: results/table10_noexcl/fashion_lf/tasv2_summary.csv
+
+--- mixed12 3/6: trust_only ---
+[trust_only] r01 | atk=False | ok=1 heal=0 | acc=20.07%
+[trust_only] r10 | atk=True | ok=1 heal=0 | acc=48.11%
+[trust_only] r20 | atk=True | ok=1 heal=0 | acc=49.95%
+[trust_only] r30 | atk=False | ok=1 heal=0 | acc=76.96%
+[trust_only] r40 | atk=True | ok=1 heal=0 | acc=3.95%
+[trust_only] r50 | atk=False | ok=1 heal=0 | acc=82.15%
+  => best_acc=82.15%, avg_acc=51.03%
+  [snapshot] Saved: results/table10_noexcl/fashion_lf/tasv2_mixed12_r50_b3.csv
+  [snapshot] Saved: results/table10_noexcl/fashion_lf/tasv2_summary.csv
+
+--- mixed12 4/6: trust_v1 ---
+[trust_v1] r01 | atk=False | V1_t=0,a=0 | ok=1 heal=0 | acc=20.07%
+[trust_v1] r10 | atk=True | V1_t=0,a=1 | ok=0 heal=1 | acc=68.09%
+[trust_v1] r20 | atk=True | V1_t=0,a=0 | ok=1 heal=0 | acc=70.86%
+[trust_v1] r30 | atk=False | V1_t=0,a=0 | ok=1 heal=0 | acc=77.24%
+[trust_v1] r40 | atk=True | V1_t=1,a=0 | ok=0 heal=1 | acc=79.63%
+[trust_v1] r50 | atk=False | V1_t=0,a=0 | ok=1 heal=0 | acc=83.12%
+  => best_acc=83.12%, avg_acc=72.26%
+  [snapshot] Saved: results/table10_noexcl/fashion_lf/tasv2_mixed12_r50_b3.csv
+  [snapshot] Saved: results/table10_noexcl/fashion_lf/tasv2_summary.csv
+
+--- mixed12 5/6: trust_v2 ---
+[trust_v2] r01 | atk=False | V2_t=0,a=0 | ok=1 heal=0 | acc=20.07%
+[trust_v2] r10 | atk=True | V2_t=0,a=1 | ok=0 heal=1 | acc=68.09%
+[trust_v2] r20 | atk=True | V2_t=0,a=1 | ok=0 heal=1 | acc=75.59%
+[trust_v2] r30 | atk=False | V2_t=0,a=0 | ok=1 heal=0 | acc=80.56%
+[trust_v2] r40 | atk=True | V2_t=1,a=0 | ok=0 heal=1 | acc=79.55%
+[trust_v2] r50 | atk=False | V2_t=0,a=0 | ok=1 heal=0 | acc=81.54%
+  => best_acc=83.60%, avg_acc=70.06%
+  [snapshot] Saved: results/table10_noexcl/fashion_lf/tasv2_mixed12_r50_b3.csv
+  [snapshot] Saved: results/table10_noexcl/fashion_lf/tasv2_summary.csv
+
+--- mixed12 6/6: trust_v1v2 ---
+[trust_v1v2] r01 | atk=False | V1_t=0,a=0 | V2_t=0,a=0 | ok=1 heal=0 | acc=20.07%
+[trust_v1v2] r10 | atk=True | V1_t=0,a=1 | V2_t=0,a=1 | ok=0 heal=1 | acc=68.09%
+[trust_v1v2] r20 | atk=True | V1_t=0,a=0 | V2_t=0,a=1 | ok=0 heal=1 | acc=75.59%
+[trust_v1v2] r30 | atk=False | V1_t=0,a=0 | V2_t=0,a=0 | ok=1 heal=0 | acc=76.61%
+[trust_v1v2] r40 | atk=True | V1_t=1,a=0 | V2_t=1,a=0 | ok=0 heal=1 | acc=80.90%
+[trust_v1v2] r50 | atk=False | V1_t=0,a=0 | V2_t=0,a=0 | ok=1 heal=0 | acc=79.84%
+  => best_acc=83.96%, avg_acc=73.08%
+  [snapshot] Saved: results/table10_noexcl/fashion_lf/tasv2_mixed12_r50_b3.csv
+  [snapshot] Saved: results/table10_noexcl/fashion_lf/tasv2_summary.csv
+
+======================================================================
+ TAS Governance v2 Summary: Executor Attack = mixed12
+======================================================================
+Group                  Best      Avg   V1_t   V1_a   V2_t   V2_a  Blocked Interc%
+-------------------------------------------------------------------------------------
+noexecutor            83.96    73.08      0      0      0      0        0    0.0%
+fedavg                79.30    33.48      0      0      0      0        0    0.0%
+trust_only            82.15    51.03      0      0      0      0        0    0.0%
+trust_v1              83.12    72.26     10     17      0      0       27   90.0%
+trust_v2              83.60    70.06      0      0      7     20       27   90.0%
+trust_v1v2            83.96    73.08     10     14      7     20       30  100.0%
+
+  TAS Heal Sources: V1=3, V2=6, V1+V2=21
+  [snapshot] Saved: results/table10_noexcl/fashion_lf/tasv2_mixed12_r50_b3.csv
+  [snapshot] Saved: results/table10_noexcl/fashion_lf/tasv2_summary.csv
+
+======================================================================
+ Experiment complete.
+======================================================================
+===== END configs/table10_noexcl_fashion_lf.yaml 2026年 07月 04日 星期六 00:09:05 CST =====
+===== START configs/table10_noexcl_fashion_scaling.yaml 2026年 07月 04日 星期六 00:09:05 CST =====
+======================================================================
+TAS Governance v2 Experiment [table10_noexcl_fashion_scaling]
+======================================================================
+  Config: configs/table10_noexcl_fashion_scaling.yaml
+  Dataset: fashionmnist, 10 clients, 3 Byzantine (scaling)
+  Rounds: 50, Local epochs: 2
+  LR: 0.02, Momentum: 0.0, Weight decay: 0.0
+  Batch size: 128, Dirichlet alpha: 0.3
+  Seed: 42, Device: cuda
+  EMA alpha: 0.7, Trust cos^power: 5.0
+  V1 dim sample: 0.3, V2 client sample: 0.3
+  Tolerance: 0.0001
+  cudnn.deterministic: True
+
+======================================================================
+  Executor Attack: mixed12
+======================================================================
+
+--- mixed12 1/6: noexecutor ---
+[noexecutor] r01 | atk=False | ok=1 heal=0 | acc=37.13%
+[noexecutor] r10 | atk=False | ok=1 heal=0 | acc=69.36%
+[noexecutor] r20 | atk=False | ok=1 heal=0 | acc=74.43%
+[noexecutor] r30 | atk=False | ok=1 heal=0 | acc=77.34%
+[noexecutor] r40 | atk=False | ok=1 heal=0 | acc=78.77%
+[noexecutor] r50 | atk=False | ok=1 heal=0 | acc=79.46%
+  => best_acc=82.30%, avg_acc=74.20%
+  [snapshot] Saved: results/table10_noexcl/fashion_scaling/tasv2_mixed12_r50_b3.csv
+  [snapshot] Saved: results/table10_noexcl/fashion_scaling/tasv2_summary.csv
+
+--- mixed12 2/6: fedavg ---
+[fedavg] r01 | atk=False | ok=1 heal=0 | acc=17.90%
+[fedavg] r10 | atk=True | ok=1 heal=0 | acc=40.31%
+[fedavg] r20 | atk=True | ok=1 heal=0 | acc=53.48%
+[fedavg] r30 | atk=False | ok=1 heal=0 | acc=60.06%
+[fedavg] r40 | atk=True | ok=1 heal=0 | acc=52.08%
+[fedavg] r50 | atk=False | ok=1 heal=0 | acc=71.81%
+  => best_acc=78.84%, avg_acc=50.53%
+  [snapshot] Saved: results/table10_noexcl/fashion_scaling/tasv2_mixed12_r50_b3.csv
+  [snapshot] Saved: results/table10_noexcl/fashion_scaling/tasv2_summary.csv
+
+--- mixed12 3/6: trust_only ---
+[trust_only] r01 | atk=False | ok=1 heal=0 | acc=37.13%
+[trust_only] r10 | atk=True | ok=1 heal=0 | acc=33.02%
+[trust_only] r20 | atk=True | ok=1 heal=0 | acc=57.31%
+[trust_only] r30 | atk=False | ok=1 heal=0 | acc=85.84%
+[trust_only] r40 | atk=True | ok=1 heal=0 | acc=62.15%
+[trust_only] r50 | atk=False | ok=1 heal=0 | acc=82.29%
+  => best_acc=85.84%, avg_acc=66.25%
+  [snapshot] Saved: results/table10_noexcl/fashion_scaling/tasv2_mixed12_r50_b3.csv
+  [snapshot] Saved: results/table10_noexcl/fashion_scaling/tasv2_summary.csv
+
+--- mixed12 4/6: trust_v1 ---
+[trust_v1] r01 | atk=False | V1_t=0,a=0 | ok=1 heal=0 | acc=37.13%
+[trust_v1] r10 | atk=True | V1_t=0,a=0 | ok=1 heal=0 | acc=56.05%
+[trust_v1] r20 | atk=True | V1_t=0,a=0 | ok=1 heal=0 | acc=53.48%
+[trust_v1] r30 | atk=False | V1_t=0,a=0 | ok=1 heal=0 | acc=79.60%
+[trust_v1] r40 | atk=True | V1_t=1,a=0 | ok=0 heal=1 | acc=81.67%
+[trust_v1] r50 | atk=False | V1_t=0,a=0 | ok=1 heal=0 | acc=85.71%
+  => best_acc=85.71%, avg_acc=71.93%
+  [snapshot] Saved: results/table10_noexcl/fashion_scaling/tasv2_mixed12_r50_b3.csv
+  [snapshot] Saved: results/table10_noexcl/fashion_scaling/tasv2_summary.csv
+
+--- mixed12 5/6: trust_v2 ---
+[trust_v2] r01 | atk=False | V2_t=0,a=0 | ok=1 heal=0 | acc=37.13%
+[trust_v2] r10 | atk=True | V2_t=0,a=1 | ok=0 heal=1 | acc=69.36%
+[trust_v2] r20 | atk=True | V2_t=0,a=1 | ok=0 heal=1 | acc=72.63%
+[trust_v2] r30 | atk=False | V2_t=0,a=0 | ok=1 heal=0 | acc=83.06%
+[trust_v2] r40 | atk=True | V2_t=1,a=0 | ok=0 heal=1 | acc=80.42%
+[trust_v2] r50 | atk=False | V2_t=0,a=0 | ok=1 heal=0 | acc=84.07%
+  => best_acc=84.13%, avg_acc=73.54%
+  [snapshot] Saved: results/table10_noexcl/fashion_scaling/tasv2_mixed12_r50_b3.csv
+  [snapshot] Saved: results/table10_noexcl/fashion_scaling/tasv2_summary.csv
+
+--- mixed12 6/6: trust_v1v2 ---
+[trust_v1v2] r01 | atk=False | V1_t=0,a=0 | V2_t=0,a=0 | ok=1 heal=0 | acc=37.13%
+[trust_v1v2] r10 | atk=True | V1_t=0,a=0 | V2_t=0,a=1 | ok=0 heal=1 | acc=69.36%
+[trust_v1v2] r20 | atk=True | V1_t=0,a=0 | V2_t=0,a=1 | ok=0 heal=1 | acc=72.63%
+[trust_v1v2] r30 | atk=False | V1_t=0,a=0 | V2_t=0,a=0 | ok=1 heal=0 | acc=76.24%
+[trust_v1v2] r40 | atk=True | V1_t=1,a=0 | V2_t=1,a=0 | ok=0 heal=1 | acc=80.58%
+[trust_v1v2] r50 | atk=False | V1_t=0,a=0 | V2_t=0,a=0 | ok=1 heal=0 | acc=80.12%
+  => best_acc=82.49%, avg_acc=74.03%
+  [snapshot] Saved: results/table10_noexcl/fashion_scaling/tasv2_mixed12_r50_b3.csv
+  [snapshot] Saved: results/table10_noexcl/fashion_scaling/tasv2_summary.csv
+
+======================================================================
+ TAS Governance v2 Summary: Executor Attack = mixed12
+======================================================================
+Group                  Best      Avg   V1_t   V1_a   V2_t   V2_a  Blocked Interc%
+-------------------------------------------------------------------------------------
+noexecutor            82.30    74.20      0      0      0      0        0    0.0%
+fedavg                78.84    50.53      0      0      0      0        0    0.0%
+trust_only            85.84    66.25      0      0      0      0        0    0.0%
+trust_v1              85.71    71.93     10      5      0      0       15   50.0%
+trust_v2              84.13    73.54      0      0      7     19       26   86.7%
+trust_v1v2            82.49    74.03     10      0      7     19       29   96.7%
+
+  TAS Heal Sources: V1=3, V2=19, V1+V2=7
+  [snapshot] Saved: results/table10_noexcl/fashion_scaling/tasv2_mixed12_r50_b3.csv
+  [snapshot] Saved: results/table10_noexcl/fashion_scaling/tasv2_summary.csv
+
+======================================================================
+ Experiment complete.
+======================================================================
+===== END configs/table10_noexcl_fashion_scaling.yaml 2026年 07月 04日 星期六 00:18:06 CST =====
