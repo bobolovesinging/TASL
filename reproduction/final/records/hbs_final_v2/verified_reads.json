@@ -1,0 +1,67 @@
+[
+  {
+    "source": "Archive",
+    "median_ms": 0.912276,
+    "q1_q3_ms": [
+      0.9080505,
+      0.9206559999999999
+    ],
+    "round": 1,
+    "clients": 10,
+    "parent_bytes": 2331224,
+    "input_bytes": 25633222,
+    "compact_bytes": 667
+  },
+  {
+    "source": "Archive",
+    "median_ms": 37.419126,
+    "q1_q3_ms": [
+      37.3492885,
+      37.614418
+    ],
+    "round": 3,
+    "clients": 10,
+    "parent_bytes": 14653912,
+    "input_bytes": 25633222,
+    "compact_bytes": 667
+  },
+  {
+    "source": "Archive",
+    "median_ms": 39.71748,
+    "q1_q3_ms": [
+      39.6519985,
+      39.8050815
+    ],
+    "round": 10,
+    "clients": 6,
+    "parent_bytes": 14961880,
+    "input_bytes": 16312230,
+    "compact_bytes": 728
+  },
+  {
+    "source": "Archive",
+    "median_ms": 40.805873,
+    "q1_q3_ms": [
+      40.7359985,
+      40.949876
+    ],
+    "round": 25,
+    "clients": 6,
+    "parent_bytes": 15148824,
+    "input_bytes": 16312230,
+    "compact_bytes": 668
+  },
+  {
+    "source": "Active",
+    "median_ms": 40.817138,
+    "q1_q3_ms": [
+      40.7249345,
+      40.9341985
+    ],
+    "round": 50,
+    "clients": 6,
+    "parent_bytes": 15095640,
+    "input_bytes": 16312230,
+    "compact_bytes": 668
+  }
+]

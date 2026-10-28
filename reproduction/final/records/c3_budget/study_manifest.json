@@ -1,0 +1,15 @@
+{
+  "comment": "R4 round2 Comment 3",
+  "actual_faults": [
+    0,
+    4
+  ],
+  "assumed_exclusion_budgets": [
+    0,
+    2,
+    4
+  ],
+  "fixed": "All training/trust constants and progressive two-violation exclusion rule fixed; only exclusion cap changed.",
+  "reused": "40% LF cap4 reference/final checkpoint from C2",
+  "seed": 42
+}

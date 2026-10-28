@@ -1,0 +1,302 @@
+[
+  {
+    "round": 1,
+    "max_decode_abs": 1.3915346691118283e-08,
+    "ciphertext_bytes": 478029120,
+    "seconds": 6.052886242046952
+  },
+  {
+    "round": 2,
+    "max_decode_abs": 1.3445885971904298e-08,
+    "ciphertext_bytes": 478033053,
+    "seconds": 6.06495142262429
+  },
+  {
+    "round": 3,
+    "max_decode_abs": 1.3167175460637032e-08,
+    "ciphertext_bytes": 478048685,
+    "seconds": 5.963287320919335
+  },
+  {
+    "round": 4,
+    "max_decode_abs": 1.4937352867773002e-08,
+    "ciphertext_bytes": 478036802,
+    "seconds": 6.078422570601106
+  },
+  {
+    "round": 5,
+    "max_decode_abs": 1.2976673531079602e-08,
+    "ciphertext_bytes": 430241620,
+    "seconds": 5.482965620234609
+  },
+  {
+    "round": 6,
+    "max_decode_abs": 1.4302993690199894e-08,
+    "ciphertext_bytes": 382427795,
+    "seconds": 4.846625651232898
+  },
+  {
+    "round": 7,
+    "max_decode_abs": 1.2588696064633025e-08,
+    "ciphertext_bytes": 286817644,
+    "seconds": 3.5117855444550514
+  },
+  {
+    "round": 8,
+    "max_decode_abs": 1.3675533480758586e-08,
+    "ciphertext_bytes": 286828655,
+    "seconds": 3.544298654422164
+  },
+  {
+    "round": 9,
+    "max_decode_abs": 1.2687652488959505e-08,
+    "ciphertext_bytes": 286819484,
+    "seconds": 3.530540951527655
+  },
+  {
+    "round": 10,
+    "max_decode_abs": 1.2263881794073511e-08,
+    "ciphertext_bytes": 286822496,
+    "seconds": 3.64206369407475
+  },
+  {
+    "round": 11,
+    "max_decode_abs": 1.2226018873619411e-08,
+    "ciphertext_bytes": 286826196,
+    "seconds": 3.6464400198310614
+  },
+  {
+    "round": 12,
+    "max_decode_abs": 1.3551049587513016e-08,
+    "ciphertext_bytes": 286822301,
+    "seconds": 3.6432067221030593
+  },
+  {
+    "round": 13,
+    "max_decode_abs": 1.395162902532456e-08,
+    "ciphertext_bytes": 286820204,
+    "seconds": 3.5263580940663815
+  },
+  {
+    "round": 14,
+    "max_decode_abs": 1.3141799837349281e-08,
+    "ciphertext_bytes": 286820856,
+    "seconds": 3.536053949035704
+  },
+  {
+    "round": 15,
+    "max_decode_abs": 1.4756607550734769e-08,
+    "ciphertext_bytes": 286825112,
+    "seconds": 3.651885971426964
+  },
+  {
+    "round": 16,
+    "max_decode_abs": 1.2381809757176787e-08,
+    "ciphertext_bytes": 286816119,
+    "seconds": 3.6518389685079455
+  },
+  {
+    "round": 17,
+    "max_decode_abs": 1.3384239439820855e-08,
+    "ciphertext_bytes": 286826094,
+    "seconds": 3.6537195201963186
+  },
+  {
+    "round": 18,
+    "max_decode_abs": 1.3524287150655468e-08,
+    "ciphertext_bytes": 286820518,
+    "seconds": 3.6512787770479918
+  },
+  {
+    "round": 19,
+    "max_decode_abs": 1.527240518455603e-08,
+    "ciphertext_bytes": 286816254,
+    "seconds": 3.634849598631263
+  },
+  {
+    "round": 20,
+    "max_decode_abs": 1.2844618764941873e-08,
+    "ciphertext_bytes": 286818248,
+    "seconds": 3.6345764100551605
+  },
+  {
+    "round": 21,
+    "max_decode_abs": 1.517250532512087e-08,
+    "ciphertext_bytes": 286815896,
+    "seconds": 3.6282581109553576
+  },
+  {
+    "round": 22,
+    "max_decode_abs": 1.2842669370438631e-08,
+    "ciphertext_bytes": 286822120,
+    "seconds": 3.5357938138768077
+  },
+  {
+    "round": 23,
+    "max_decode_abs": 1.2122935090139696e-08,
+    "ciphertext_bytes": 286814585,
+    "seconds": 3.631795335561037
+  },
+  {
+    "round": 24,
+    "max_decode_abs": 1.2219799891909598e-08,
+    "ciphertext_bytes": 286810052,
+    "seconds": 3.634291528724134
+  },
+  {
+    "round": 25,
+    "max_decode_abs": 1.30630634743523e-08,
+    "ciphertext_bytes": 286817383,
+    "seconds": 3.6299707386642694
+  },
+  {
+    "round": 26,
+    "max_decode_abs": 1.4538719626783187e-08,
+    "ciphertext_bytes": 286818846,
+    "seconds": 3.6459766943007708
+  },
+  {
+    "round": 27,
+    "max_decode_abs": 1.3639238594174551e-08,
+    "ciphertext_bytes": 286820185,
+    "seconds": 3.6291971309110522
+  },
+  {
+    "round": 28,
+    "max_decode_abs": 1.3196799461155304e-08,
+    "ciphertext_bytes": 286816166,
+    "seconds": 3.6365360068157315
+  },
+  {
+    "round": 29,
+    "max_decode_abs": 1.3584231828369677e-08,
+    "ciphertext_bytes": 286820970,
+    "seconds": 3.6456524515524507
+  },
+  {
+    "round": 30,
+    "max_decode_abs": 1.2786444017519674e-08,
+    "ciphertext_bytes": 286826913,
+    "seconds": 3.6436482751742005
+  },
+  {
+    "round": 31,
+    "max_decode_abs": 1.2807704440005773e-08,
+    "ciphertext_bytes": 286809550,
+    "seconds": 3.636751851066947
+  },
+  {
+    "round": 32,
+    "max_decode_abs": 1.365686694735171e-08,
+    "ciphertext_bytes": 286825860,
+    "seconds": 3.5378079945221543
+  },
+  {
+    "round": 33,
+    "max_decode_abs": 1.245787362712822e-08,
+    "ciphertext_bytes": 286816757,
+    "seconds": 3.6455181995406747
+  },
+  {
+    "round": 34,
+    "max_decode_abs": 1.3695270338631455e-08,
+    "ciphertext_bytes": 286823189,
+    "seconds": 3.648479045368731
+  },
+  {
+    "round": 35,
+    "max_decode_abs": 1.3789076227150893e-08,
+    "ciphertext_bytes": 286822333,
+    "seconds": 3.635269188322127
+  },
+  {
+    "round": 36,
+    "max_decode_abs": 1.361453941097835e-08,
+    "ciphertext_bytes": 286813787,
+    "seconds": 3.617251585237682
+  },
+  {
+    "round": 37,
+    "max_decode_abs": 1.1901843353505663e-08,
+    "ciphertext_bytes": 286818212,
+    "seconds": 3.648464727215469
+  },
+  {
+    "round": 38,
+    "max_decode_abs": 1.2862727797376822e-08,
+    "ciphertext_bytes": 286819265,
+    "seconds": 3.6305691404268146
+  },
+  {
+    "round": 39,
+    "max_decode_abs": 1.3466128986498521e-08,
+    "ciphertext_bytes": 286826782,
+    "seconds": 3.6391288740560412
+  },
+  {
+    "round": 40,
+    "max_decode_abs": 1.2816319257303747e-08,
+    "ciphertext_bytes": 286830127,
+    "seconds": 3.6458412893116474
+  },
+  {
+    "round": 41,
+    "max_decode_abs": 1.334648689726688e-08,
+    "ciphertext_bytes": 286811871,
+    "seconds": 3.6456620721146464
+  },
+  {
+    "round": 42,
+    "max_decode_abs": 1.1592337304053985e-08,
+    "ciphertext_bytes": 286820718,
+    "seconds": 3.6412995122373104
+  },
+  {
+    "round": 43,
+    "max_decode_abs": 1.2688209709834578e-08,
+    "ciphertext_bytes": 286822442,
+    "seconds": 3.6281580859795213
+  },
+  {
+    "round": 44,
+    "max_decode_abs": 1.2754037254103252e-08,
+    "ciphertext_bytes": 286812663,
+    "seconds": 3.524988180026412
+  },
+  {
+    "round": 45,
+    "max_decode_abs": 1.248512013804319e-08,
+    "ciphertext_bytes": 286819683,
+    "seconds": 3.654745471663773
+  },
+  {
+    "round": 46,
+    "max_decode_abs": 1.4221598001752092e-08,
+    "ciphertext_bytes": 286831864,
+    "seconds": 3.636189330369234
+  },
+  {
+    "round": 47,
+    "max_decode_abs": 1.447545638601699e-08,
+    "ciphertext_bytes": 286823455,
+    "seconds": 3.6433763802051544
+  },
+  {
+    "round": 48,
+    "max_decode_abs": 1.2381641468426881e-08,
+    "ciphertext_bytes": 286824907,
+    "seconds": 3.6389140663668513
+  },
+  {
+    "round": 49,
+    "max_decode_abs": 1.3689600979985717e-08,
+    "ciphertext_bytes": 286823683,
+    "seconds": 3.6409529261291027
+  },
+  {
+    "round": 50,
+    "max_decode_abs": 1.2189766343127968e-08,
+    "ciphertext_bytes": 286817138,
+    "seconds": 3.6447790330275893
+  }
+]

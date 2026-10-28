@@ -1,0 +1,21 @@
+{
+  "name": "label_flip_budget0",
+  "comments": [
+    "R4 round2 C2"
+  ],
+  "rounds_completed": 50,
+  "average_accuracy": 66.3898,
+  "best_accuracy": 80.43,
+  "seconds": 79.35285869054496,
+  "skipped": 0,
+  "norm_gate_leak_rounds": 0,
+  "maximum_norm_rejected_weight": 0,
+  "honest_proposals": 50,
+  "attacked_proposals": 0,
+  "true_rejections": 0,
+  "false_rejections": 0,
+  "honest_acceptance": 1.0,
+  "precision": null,
+  "recall": null,
+  "interpretation": "Run finished; scope and pairing checks must still be assessed before manuscript use."
+}

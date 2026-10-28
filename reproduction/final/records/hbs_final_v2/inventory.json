@@ -1,0 +1,352 @@
+[
+  {
+    "round": 1,
+    "clients": 10,
+    "parent_bytes": 2331224,
+    "input_bytes": 25633222,
+    "compact_bytes": 667
+  },
+  {
+    "round": 2,
+    "clients": 10,
+    "parent_bytes": 13573848,
+    "input_bytes": 25633222,
+    "compact_bytes": 727
+  },
+  {
+    "round": 3,
+    "clients": 10,
+    "parent_bytes": 14653912,
+    "input_bytes": 25633222,
+    "compact_bytes": 667
+  },
+  {
+    "round": 4,
+    "clients": 10,
+    "parent_bytes": 14753880,
+    "input_bytes": 25633222,
+    "compact_bytes": 668
+  },
+  {
+    "round": 5,
+    "clients": 9,
+    "parent_bytes": 14814296,
+    "input_bytes": 23302990,
+    "compact_bytes": 728
+  },
+  {
+    "round": 6,
+    "clients": 8,
+    "parent_bytes": 14859864,
+    "input_bytes": 20972758,
+    "compact_bytes": 730
+  },
+  {
+    "round": 7,
+    "clients": 6,
+    "parent_bytes": 14880664,
+    "input_bytes": 16312230,
+    "compact_bytes": 666
+  },
+  {
+    "round": 8,
+    "clients": 6,
+    "parent_bytes": 14883096,
+    "input_bytes": 16312230,
+    "compact_bytes": 726
+  },
+  {
+    "round": 9,
+    "clients": 6,
+    "parent_bytes": 14923224,
+    "input_bytes": 16312230,
+    "compact_bytes": 726
+  },
+  {
+    "round": 10,
+    "clients": 6,
+    "parent_bytes": 14961880,
+    "input_bytes": 16312230,
+    "compact_bytes": 728
+  },
+  {
+    "round": 11,
+    "clients": 6,
+    "parent_bytes": 14987800,
+    "input_bytes": 16312230,
+    "compact_bytes": 728
+  },
+  {
+    "round": 12,
+    "clients": 6,
+    "parent_bytes": 15006808,
+    "input_bytes": 16312230,
+    "compact_bytes": 728
+  },
+  {
+    "round": 13,
+    "clients": 6,
+    "parent_bytes": 15050072,
+    "input_bytes": 16312230,
+    "compact_bytes": 668
+  },
+  {
+    "round": 14,
+    "clients": 6,
+    "parent_bytes": 15058200,
+    "input_bytes": 16312230,
+    "compact_bytes": 728
+  },
+  {
+    "round": 15,
+    "clients": 6,
+    "parent_bytes": 15064536,
+    "input_bytes": 16312230,
+    "compact_bytes": 728
+  },
+  {
+    "round": 16,
+    "clients": 6,
+    "parent_bytes": 15087704,
+    "input_bytes": 16312230,
+    "compact_bytes": 668
+  },
+  {
+    "round": 17,
+    "clients": 6,
+    "parent_bytes": 15098904,
+    "input_bytes": 16312230,
+    "compact_bytes": 728
+  },
+  {
+    "round": 18,
+    "clients": 6,
+    "parent_bytes": 15100056,
+    "input_bytes": 16312230,
+    "compact_bytes": 668
+  },
+  {
+    "round": 19,
+    "clients": 6,
+    "parent_bytes": 15121816,
+    "input_bytes": 16312230,
+    "compact_bytes": 668
+  },
+  {
+    "round": 20,
+    "clients": 6,
+    "parent_bytes": 15132056,
+    "input_bytes": 16312230,
+    "compact_bytes": 728
+  },
+  {
+    "round": 21,
+    "clients": 6,
+    "parent_bytes": 15160216,
+    "input_bytes": 16312230,
+    "compact_bytes": 728
+  },
+  {
+    "round": 22,
+    "clients": 6,
+    "parent_bytes": 15162072,
+    "input_bytes": 16312230,
+    "compact_bytes": 728
+  },
+  {
+    "round": 23,
+    "clients": 6,
+    "parent_bytes": 15142360,
+    "input_bytes": 16312230,
+    "compact_bytes": 728
+  },
+  {
+    "round": 24,
+    "clients": 6,
+    "parent_bytes": 15133080,
+    "input_bytes": 16312230,
+    "compact_bytes": 668
+  },
+  {
+    "round": 25,
+    "clients": 6,
+    "parent_bytes": 15148824,
+    "input_bytes": 16312230,
+    "compact_bytes": 668
+  },
+  {
+    "round": 26,
+    "clients": 6,
+    "parent_bytes": 15125400,
+    "input_bytes": 16312230,
+    "compact_bytes": 728
+  },
+  {
+    "round": 27,
+    "clients": 6,
+    "parent_bytes": 15151256,
+    "input_bytes": 16312230,
+    "compact_bytes": 728
+  },
+  {
+    "round": 28,
+    "clients": 6,
+    "parent_bytes": 15152152,
+    "input_bytes": 16312230,
+    "compact_bytes": 668
+  },
+  {
+    "round": 29,
+    "clients": 6,
+    "parent_bytes": 15130392,
+    "input_bytes": 16312230,
+    "compact_bytes": 728
+  },
+  {
+    "round": 30,
+    "clients": 6,
+    "parent_bytes": 15152088,
+    "input_bytes": 16312230,
+    "compact_bytes": 668
+  },
+  {
+    "round": 31,
+    "clients": 6,
+    "parent_bytes": 15127960,
+    "input_bytes": 16312230,
+    "compact_bytes": 728
+  },
+  {
+    "round": 32,
+    "clients": 6,
+    "parent_bytes": 15070424,
+    "input_bytes": 16312230,
+    "compact_bytes": 668
+  },
+  {
+    "round": 33,
+    "clients": 6,
+    "parent_bytes": 15145368,
+    "input_bytes": 16312230,
+    "compact_bytes": 668
+  },
+  {
+    "round": 34,
+    "clients": 6,
+    "parent_bytes": 15149656,
+    "input_bytes": 16312230,
+    "compact_bytes": 728
+  },
+  {
+    "round": 35,
+    "clients": 6,
+    "parent_bytes": 15175320,
+    "input_bytes": 16312230,
+    "compact_bytes": 668
+  },
+  {
+    "round": 36,
+    "clients": 6,
+    "parent_bytes": 15142424,
+    "input_bytes": 16312230,
+    "compact_bytes": 728
+  },
+  {
+    "round": 37,
+    "clients": 6,
+    "parent_bytes": 15145752,
+    "input_bytes": 16312230,
+    "compact_bytes": 728
+  },
+  {
+    "round": 38,
+    "clients": 6,
+    "parent_bytes": 15143000,
+    "input_bytes": 16312230,
+    "compact_bytes": 728
+  },
+  {
+    "round": 39,
+    "clients": 6,
+    "parent_bytes": 15168856,
+    "input_bytes": 16312230,
+    "compact_bytes": 668
+  },
+  {
+    "round": 40,
+    "clients": 6,
+    "parent_bytes": 15155928,
+    "input_bytes": 16312230,
+    "compact_bytes": 728
+  },
+  {
+    "round": 41,
+    "clients": 6,
+    "parent_bytes": 15116824,
+    "input_bytes": 16312230,
+    "compact_bytes": 728
+  },
+  {
+    "round": 42,
+    "clients": 6,
+    "parent_bytes": 14753688,
+    "input_bytes": 16312230,
+    "compact_bytes": 728
+  },
+  {
+    "round": 43,
+    "clients": 6,
+    "parent_bytes": 14732568,
+    "input_bytes": 16312230,
+    "compact_bytes": 668
+  },
+  {
+    "round": 44,
+    "clients": 6,
+    "parent_bytes": 14735832,
+    "input_bytes": 16312230,
+    "compact_bytes": 668
+  },
+  {
+    "round": 45,
+    "clients": 6,
+    "parent_bytes": 14730968,
+    "input_bytes": 16312230,
+    "compact_bytes": 728
+  },
+  {
+    "round": 46,
+    "clients": 6,
+    "parent_bytes": 14730008,
+    "input_bytes": 16312230,
+    "compact_bytes": 728
+  },
+  {
+    "round": 47,
+    "clients": 6,
+    "parent_bytes": 14731288,
+    "input_bytes": 16312230,
+    "compact_bytes": 728
+  },
+  {
+    "round": 48,
+    "clients": 6,
+    "parent_bytes": 14751512,
+    "input_bytes": 16312230,
+    "compact_bytes": 728
+  },
+  {
+    "round": 49,
+    "clients": 6,
+    "parent_bytes": 15021976,
+    "input_bytes": 16312230,
+    "compact_bytes": 668
+  },
+  {
+    "round": 50,
+    "clients": 6,
+    "parent_bytes": 15095640,
+    "input_bytes": 16312230,
+    "compact_bytes": 668
+  }
+]

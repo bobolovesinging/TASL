@@ -1,0 +1,21 @@
+{
+  "name": "reference",
+  "comments": [
+    "R4 round2 C2"
+  ],
+  "rounds_completed": 50,
+  "average_accuracy": 66.64320000000001,
+  "best_accuracy": 81.26,
+  "seconds": 45.38561214879155,
+  "skipped": 0,
+  "norm_gate_leak_rounds": 0,
+  "maximum_norm_rejected_weight": 0,
+  "honest_proposals": 50,
+  "attacked_proposals": 0,
+  "true_rejections": 0,
+  "false_rejections": 0,
+  "honest_acceptance": 1.0,
+  "precision": null,
+  "recall": null,
+  "interpretation": "Run finished; scope and pairing checks must still be assessed before manuscript use."
+}

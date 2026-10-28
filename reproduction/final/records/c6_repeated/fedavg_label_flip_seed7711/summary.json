@@ -1,0 +1,9 @@
+{
+  "method": "fedavg",
+  "attack": "label_flip",
+  "seed": 7711,
+  "avg": 57.527399999999986,
+  "final": 39.24,
+  "lf_asr": 14.835,
+  "seconds": 70.74872957635671
+}

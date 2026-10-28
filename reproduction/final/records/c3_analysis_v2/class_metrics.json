@@ -1,0 +1,374 @@
+{
+  "none_budget0": [
+    {
+      "class_id": 0,
+      "class_name": "T-shirt/top",
+      "test_samples": 1000,
+      "accuracy": 19.3
+    },
+    {
+      "class_id": 1,
+      "class_name": "Trouser",
+      "test_samples": 1000,
+      "accuracy": 94.6
+    },
+    {
+      "class_id": 2,
+      "class_name": "Pullover",
+      "test_samples": 1000,
+      "accuracy": 77.10000000000001
+    },
+    {
+      "class_id": 3,
+      "class_name": "Dress",
+      "test_samples": 1000,
+      "accuracy": 80.10000000000001
+    },
+    {
+      "class_id": 4,
+      "class_name": "Coat",
+      "test_samples": 1000,
+      "accuracy": 59.0
+    },
+    {
+      "class_id": 5,
+      "class_name": "Sandal",
+      "test_samples": 1000,
+      "accuracy": 94.3
+    },
+    {
+      "class_id": 6,
+      "class_name": "Shirt",
+      "test_samples": 1000,
+      "accuracy": 87.3
+    },
+    {
+      "class_id": 7,
+      "class_name": "Sneaker",
+      "test_samples": 1000,
+      "accuracy": 74.9
+    },
+    {
+      "class_id": 8,
+      "class_name": "Bag",
+      "test_samples": 1000,
+      "accuracy": 98.2
+    },
+    {
+      "class_id": 9,
+      "class_name": "Ankle boot",
+      "test_samples": 1000,
+      "accuracy": 98.8
+    }
+  ],
+  "none_budget2": [
+    {
+      "class_id": 0,
+      "class_name": "T-shirt/top",
+      "test_samples": 1000,
+      "accuracy": 42.199999999999996
+    },
+    {
+      "class_id": 1,
+      "class_name": "Trouser",
+      "test_samples": 1000,
+      "accuracy": 90.0
+    },
+    {
+      "class_id": 2,
+      "class_name": "Pullover",
+      "test_samples": 1000,
+      "accuracy": 91.60000000000001
+    },
+    {
+      "class_id": 3,
+      "class_name": "Dress",
+      "test_samples": 1000,
+      "accuracy": 11.5
+    },
+    {
+      "class_id": 4,
+      "class_name": "Coat",
+      "test_samples": 1000,
+      "accuracy": 65.9
+    },
+    {
+      "class_id": 5,
+      "class_name": "Sandal",
+      "test_samples": 1000,
+      "accuracy": 97.6
+    },
+    {
+      "class_id": 6,
+      "class_name": "Shirt",
+      "test_samples": 1000,
+      "accuracy": 72.6
+    },
+    {
+      "class_id": 7,
+      "class_name": "Sneaker",
+      "test_samples": 1000,
+      "accuracy": 90.4
+    },
+    {
+      "class_id": 8,
+      "class_name": "Bag",
+      "test_samples": 1000,
+      "accuracy": 96.89999999999999
+    },
+    {
+      "class_id": 9,
+      "class_name": "Ankle boot",
+      "test_samples": 1000,
+      "accuracy": 94.3
+    }
+  ],
+  "none_budget4": [
+    {
+      "class_id": 0,
+      "class_name": "T-shirt/top",
+      "test_samples": 1000,
+      "accuracy": 41.5
+    },
+    {
+      "class_id": 1,
+      "class_name": "Trouser",
+      "test_samples": 1000,
+      "accuracy": 89.9
+    },
+    {
+      "class_id": 2,
+      "class_name": "Pullover",
+      "test_samples": 1000,
+      "accuracy": 91.5
+    },
+    {
+      "class_id": 3,
+      "class_name": "Dress",
+      "test_samples": 1000,
+      "accuracy": 11.5
+    },
+    {
+      "class_id": 4,
+      "class_name": "Coat",
+      "test_samples": 1000,
+      "accuracy": 66.4
+    },
+    {
+      "class_id": 5,
+      "class_name": "Sandal",
+      "test_samples": 1000,
+      "accuracy": 97.6
+    },
+    {
+      "class_id": 6,
+      "class_name": "Shirt",
+      "test_samples": 1000,
+      "accuracy": 72.8
+    },
+    {
+      "class_id": 7,
+      "class_name": "Sneaker",
+      "test_samples": 1000,
+      "accuracy": 90.4
+    },
+    {
+      "class_id": 8,
+      "class_name": "Bag",
+      "test_samples": 1000,
+      "accuracy": 96.89999999999999
+    },
+    {
+      "class_id": 9,
+      "class_name": "Ankle boot",
+      "test_samples": 1000,
+      "accuracy": 94.3
+    }
+  ],
+  "label_flip_budget0": [
+    {
+      "class_id": 0,
+      "class_name": "T-shirt/top",
+      "test_samples": 1000,
+      "accuracy": 61.1
+    },
+    {
+      "class_id": 1,
+      "class_name": "Trouser",
+      "test_samples": 1000,
+      "accuracy": 98.4
+    },
+    {
+      "class_id": 2,
+      "class_name": "Pullover",
+      "test_samples": 1000,
+      "accuracy": 45.9
+    },
+    {
+      "class_id": 3,
+      "class_name": "Dress",
+      "test_samples": 1000,
+      "accuracy": 76.8
+    },
+    {
+      "class_id": 4,
+      "class_name": "Coat",
+      "test_samples": 1000,
+      "accuracy": 96.8
+    },
+    {
+      "class_id": 5,
+      "class_name": "Sandal",
+      "test_samples": 1000,
+      "accuracy": 40.699999999999996
+    },
+    {
+      "class_id": 6,
+      "class_name": "Shirt",
+      "test_samples": 1000,
+      "accuracy": 21.2
+    },
+    {
+      "class_id": 7,
+      "class_name": "Sneaker",
+      "test_samples": 1000,
+      "accuracy": 95.7
+    },
+    {
+      "class_id": 8,
+      "class_name": "Bag",
+      "test_samples": 1000,
+      "accuracy": 94.1
+    },
+    {
+      "class_id": 9,
+      "class_name": "Ankle boot",
+      "test_samples": 1000,
+      "accuracy": 95.8
+    }
+  ],
+  "label_flip_budget2": [
+    {
+      "class_id": 0,
+      "class_name": "T-shirt/top",
+      "test_samples": 1000,
+      "accuracy": 85.39999999999999
+    },
+    {
+      "class_id": 1,
+      "class_name": "Trouser",
+      "test_samples": 1000,
+      "accuracy": 97.2
+    },
+    {
+      "class_id": 2,
+      "class_name": "Pullover",
+      "test_samples": 1000,
+      "accuracy": 53.1
+    },
+    {
+      "class_id": 3,
+      "class_name": "Dress",
+      "test_samples": 1000,
+      "accuracy": 90.0
+    },
+    {
+      "class_id": 4,
+      "class_name": "Coat",
+      "test_samples": 1000,
+      "accuracy": 90.2
+    },
+    {
+      "class_id": 5,
+      "class_name": "Sandal",
+      "test_samples": 1000,
+      "accuracy": 87.1
+    },
+    {
+      "class_id": 6,
+      "class_name": "Shirt",
+      "test_samples": 1000,
+      "accuracy": 19.8
+    },
+    {
+      "class_id": 7,
+      "class_name": "Sneaker",
+      "test_samples": 1000,
+      "accuracy": 97.39999999999999
+    },
+    {
+      "class_id": 8,
+      "class_name": "Bag",
+      "test_samples": 1000,
+      "accuracy": 95.39999999999999
+    },
+    {
+      "class_id": 9,
+      "class_name": "Ankle boot",
+      "test_samples": 1000,
+      "accuracy": 85.0
+    }
+  ],
+  "label_flip_budget4": [
+    {
+      "class_id": 0,
+      "class_name": "T-shirt/top",
+      "test_samples": 1000,
+      "accuracy": 51.1
+    },
+    {
+      "class_id": 1,
+      "class_name": "Trouser",
+      "test_samples": 1000,
+      "accuracy": 94.89999999999999
+    },
+    {
+      "class_id": 2,
+      "class_name": "Pullover",
+      "test_samples": 1000,
+      "accuracy": 62.3
+    },
+    {
+      "class_id": 3,
+      "class_name": "Dress",
+      "test_samples": 1000,
+      "accuracy": 93.89999999999999
+    },
+    {
+      "class_id": 4,
+      "class_name": "Coat",
+      "test_samples": 1000,
+      "accuracy": 28.799999999999997
+    },
+    {
+      "class_id": 5,
+      "class_name": "Sandal",
+      "test_samples": 1000,
+      "accuracy": 95.19999999999999
+    },
+    {
+      "class_id": 6,
+      "class_name": "Shirt",
+      "test_samples": 1000,
+      "accuracy": 81.8
+    },
+    {
+      "class_id": 7,
+      "class_name": "Sneaker",
+      "test_samples": 1000,
+      "accuracy": 81.2
+    },
+    {
+      "class_id": 8,
+      "class_name": "Bag",
+      "test_samples": 1000,
+      "accuracy": 94.0
+    },
+    {
+      "class_id": 9,
+      "class_name": "Ankle boot",
+      "test_samples": 1000,
+      "accuracy": 96.39999999999999
+    }
+  ]
+}

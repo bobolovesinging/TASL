@@ -1,0 +1,26 @@
+{
+  "comment": "R4 second round Comment 7",
+  "tenseal": "0.3.16",
+  "torch": "2.5.1+cu121",
+  "numpy": "1.26.4",
+  "context": {
+    "poly_modulus_degree": 8192,
+    "coeff_mod_bit_sizes": [
+      60,
+      40,
+      40,
+      60
+    ],
+    "scale": 1099511627776,
+    "threads": 2
+  },
+  "repeats": 3,
+  "rounds": 50,
+  "source_sha256": {
+    "replay_c7.py": "f67e699ef0088c667d4d3838e06a227c25cf461cc804304695e1f21390da6ca4",
+    "scripts/exp2/exp2_run.py": "33e948426bf328da0a3f298fc10a490c04b1e553c53ad780fadb3ade662b46ef",
+    "scripts/exp3/exp3_governance_tasv2.py": "7aff55451783a28d80e3211cae62036772fcab665769295e7809e59e1b5bfcd4"
+  },
+  "captured_index_sha256": "f139325cc0b796597240a1344cbfb9171f4e3777733bce0ac493ec5b21cd3f88",
+  "scope": "Repeated cryptographic executions of one frozen external client-update sequence; recomputed histories/exclusions/audits/model accumulation, not client retraining under decoded-model feedback."
+}

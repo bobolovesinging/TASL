@@ -1,0 +1,8 @@
+{
+  "comment": "R4 round2 Comment 3",
+  "seed": 42,
+  "inference": "Same deterministic CUDA backend/batch size as recorded training evaluation; CPU inference diagnostic differed at a class-decision boundary.",
+  "source_sha256": "f83ec3079a457c6e2faccfc8054184eb1cb8edef3b49731a3684d9239e324776",
+  "training_partition_sha256": "da723a804a97b901c3e07034a2e4d3ea33b5494e8a91f2b623345b91fb224133",
+  "scope": "Descriptive per-class and client-associated holdout accuracy from final global models, zero-weight opportunities including post-exclusion rounds, fixed rule with cap 0/2/4. One partition; no causal fairness or subgroup-generalisation claim."
+}

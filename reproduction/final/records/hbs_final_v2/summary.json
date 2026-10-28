@@ -1,0 +1,50 @@
+{
+  "comments": [
+    "R4 second round Comment 2",
+    "R4 second round Comment 4",
+    "R4 second round Comment 8"
+  ],
+  "rounds": 50,
+  "window": 5,
+  "policies": {
+    "full": {
+      "active_bytes": 1616399818,
+      "archive_bytes": 0,
+      "total_bytes": 1616399818,
+      "historical_records_without_archive": 45,
+      "active_reduction_pct": 0.0
+    },
+    "uniform": {
+      "active_bytes": 171086291,
+      "archive_bytes": 1445313527,
+      "total_bytes": 1616399818,
+      "historical_records_without_archive": 0,
+      "active_reduction_pct": 89.41559575206534
+    },
+    "hbs": {
+      "active_bytes": 171117964,
+      "archive_bytes": 1445281854,
+      "total_bytes": 1616399818,
+      "historical_records_without_archive": 45,
+      "active_reduction_pct": 89.41363627399271
+    }
+  },
+  "compact_total_bytes": 35193,
+  "compact_per_round_range": [
+    666,
+    730
+  ],
+  "normal_recovery_matches": 50,
+  "fault_cases_blocked": 450,
+  "historical_without_archive_blocked": 45,
+  "recent_without_archive_matches": 5,
+  "duplicate_commits_blocked": 50,
+  "scope": "Final C2 input sequence; actual serialized parent, proposal/input and compact objects, with one active/archive copy per policy and the same trusted manifest. Read timings are cached local file/SHA-256/deserialization, not network retrieval.",
+  "equivalent_flat_retention": "The same retained object set gives identical serialized bytes and recovery information; no extra compression benefit attributed to directory hierarchy.",
+  "source_sha256": {
+    "hbs_final_replay_v2.py": "679c6a10cada14904871b68afa017182e2dc57d404bd8991cebbcfac63a43cdc",
+    "scripts/exp2/exp2_run.py": "33e948426bf328da0a3f298fc10a490c04b1e553c53ad780fadb3ade662b46ef",
+    "scripts/exp3/exp3_governance_tasv2.py": "7aff55451783a28d80e3211cae62036772fcab665769295e7809e59e1b5bfcd4",
+    "replay_c7.py": "f67e699ef0088c667d4d3838e06a227c25cf461cc804304695e1f21390da6ca4"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "reference": "smoke_reference",
+  "audited": "smoke_audited",
+  "rounds": 3,
+  "matching_complete_states": 3,
+  "mismatched_rounds": [],
+  "identical_accuracies": true,
+  "fully_paired": true
+}

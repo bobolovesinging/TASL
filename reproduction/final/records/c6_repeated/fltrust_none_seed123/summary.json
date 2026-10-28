@@ -1,0 +1,9 @@
+{
+  "method": "fltrust",
+  "attack": "none",
+  "seed": 123,
+  "avg": 61.929,
+  "final": 75.36,
+  "lf_asr": null,
+  "seconds": 71.83162928652018
+}

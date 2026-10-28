@@ -1,0 +1,9 @@
+{
+  "method": "tasl_full",
+  "attack": "none",
+  "seed": 3407,
+  "avg": 72.1816,
+  "final": 69.46,
+  "lf_asr": null,
+  "seconds": 59.84227142017335
+}

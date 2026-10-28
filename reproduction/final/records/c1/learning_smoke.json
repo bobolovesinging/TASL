@@ -1,0 +1,47 @@
+[
+  {
+    "round": 1,
+    "skipped": 0,
+    "parent_hash": "d31a0e92574265d828e1e5a58fbfc7dce7a6e0a07146dfcd4ae11d34fdf95bdc",
+    "state_hash": "6e81d93fde4cde7a7b6ee829cbf6737efc98ccb157409af005ad8b250f9953fb",
+    "accuracy": 6.25,
+    "asr": 6.25,
+    "round_seconds": 0.19628441985696554,
+    "accepted_total": 10,
+    "excluded_total": 0,
+    "honest_rejected": 0,
+    "byzantine_nonzero": 4,
+    "byzantine_weight_sum": 0.03687493819868503,
+    "weights_json": "{\"0\": 0.008953832084982481, \"1\": 0.009301662216524039, \"2\": 0.009265480154775086, \"3\": 0.009353963742403425, \"4\": 0.07960166220817834, \"5\": 0.0026990728914084495, \"6\": 0.08079567342179277, \"7\": 0.6907993619140815, \"8\": 0.02728788778385847, \"9\": 0.0819414035819954}"
+  },
+  {
+    "round": 2,
+    "skipped": 0,
+    "parent_hash": "6e81d93fde4cde7a7b6ee829cbf6737efc98ccb157409af005ad8b250f9953fb",
+    "state_hash": "07d25b37f8450910f88ac0a369f6c67081a9f1aa61ec3d511f62a03f3f08b355",
+    "accuracy": 6.25,
+    "asr": 6.25,
+    "round_seconds": 0.216009640134871,
+    "accepted_total": 6,
+    "excluded_total": 0,
+    "honest_rejected": 0,
+    "byzantine_nonzero": 0,
+    "byzantine_weight_sum": 0.0,
+    "weights_json": "{\"0\": 0.0, \"1\": 0.0, \"2\": 0.0, \"3\": 0.0, \"4\": 0.0914160260817915, \"5\": 0.0003729826710605622, \"6\": 0.09096563346675424, \"7\": 0.7159647039587262, \"8\": 0.008866254593017067, \"9\": 0.09241439922865044}"
+  },
+  {
+    "round": 3,
+    "skipped": 0,
+    "parent_hash": "07d25b37f8450910f88ac0a369f6c67081a9f1aa61ec3d511f62a03f3f08b355",
+    "state_hash": "9c88b36fa915064c43410440aba0ff181840012327a6efbe59481770efa0ebd6",
+    "accuracy": 6.25,
+    "asr": 6.25,
+    "round_seconds": 0.20740170311182737,
+    "accepted_total": 6,
+    "excluded_total": 0,
+    "honest_rejected": 0,
+    "byzantine_nonzero": 0,
+    "byzantine_weight_sum": 0.0,
+    "weights_json": "{\"0\": 0.0, \"1\": 0.0, \"2\": 0.0, \"3\": 0.0, \"4\": 0.08906248920479923, \"5\": 0.00011960850076869, \"6\": 0.0882831369445421, \"7\": 0.7211333418868628, \"8\": 0.010285501520349715, \"9\": 0.09111592194267747}"
+  }
+]

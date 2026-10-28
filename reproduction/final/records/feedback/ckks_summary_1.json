@@ -1,0 +1,12 @@
+{
+  "repeat": 1,
+  "avg": 67.0714,
+  "final": 75.67,
+  "honest_acceptance": 20,
+  "honest_count": 20,
+  "attacked_rejected": 30,
+  "attacked_count": 30,
+  "max_decode_abs": 1.9532260388840754e-08,
+  "exclusion_sets_equal_plain": 50,
+  "skipped": 0
+}

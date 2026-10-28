@@ -1,0 +1,9 @@
+{
+  "method": "fltrust",
+  "attack": "label_flip",
+  "seed": 2024,
+  "avg": 66.65599999999999,
+  "final": 81.59,
+  "lf_asr": 1.2384,
+  "seconds": 70.0701485676691
+}

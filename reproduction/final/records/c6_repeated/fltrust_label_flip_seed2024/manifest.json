@@ -1,0 +1,122 @@
+{
+  "comments": [
+    "R4 round2 Comment 6",
+    "R4 round2 Comment 2 final learning"
+  ],
+  "method": "fltrust",
+  "attack": "label_flip",
+  "configuration": {
+    "experiment": {
+      "seed": 2024
+    },
+    "data": {
+      "dataset": "fashionmnist",
+      "batch_size": 128,
+      "n_clients": 10,
+      "alpha": 0.3
+    },
+    "training": {
+      "local_epochs": 2,
+      "lr": 0.02,
+      "momentum": 0.0,
+      "weight_decay": 0.0
+    },
+    "model": {
+      "num_classes": 10
+    },
+    "algorithm_params": {
+      "bsp": {
+        "enabled": false
+      },
+      "tasl": {
+        "trust_power": 5.0,
+        "weight_cap_ratio": 1.5,
+        "ema_alpha": 0.7,
+        "norm_penalty": 0.8,
+        "fusion": "multiplicative",
+        "exclusion": true,
+        "screen_tau": 0.6
+      }
+    }
+  },
+  "actual_byzantine_clients": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "exclusion_budget": 4,
+  "source_sha256": {
+    "run_c3_c6_v2.py": "789d60dc95a07116baafa906920515730dc81995ef846220efd3af7842c79c6a",
+    "scripts/exp2/exp2_run.py": "33e948426bf328da0a3f298fc10a490c04b1e553c53ad780fadb3ade662b46ef",
+    "core/model.py": "8034c1028c95cba2b8c9b0654b9991a4d40f06284e81b9ed3d55ed0a5d77ea8d",
+    "lasa_adapter.py": "494da6e1c6f68963003224aa3f11c1988df168353dff33a9a35abb54a53851d0"
+  },
+  "partition": [
+    {
+      "client": 0,
+      "samples": 9703,
+      "labels_sha256": "a8c6b82a95cc652d23d4d04edcaa008b6443eb3ba9193c32af2a5a7e6ffd810a",
+      "data_sha256": "5d6d7da9371c82e4beed353698d0f127b61b607e8d36c3053d67f5e919c80b1a"
+    },
+    {
+      "client": 1,
+      "samples": 726,
+      "labels_sha256": "6977a1c68fe394aea84f647737c5c3da752d750657a86b7d3ec338c764ede595",
+      "data_sha256": "358adc7cd526781441a954ba49c4140b6c7284275b735c71247cace82a5985c6"
+    },
+    {
+      "client": 2,
+      "samples": 1063,
+      "labels_sha256": "8f42f1460946d74e5be812ad2f41bd3345cb4ab5b93430f6392c6d63e777bf4a",
+      "data_sha256": "e1c4f18071ed11e34919233fd72d53e2e75cd8dd6c2177f2c4e10afc4c7e6dd3"
+    },
+    {
+      "client": 3,
+      "samples": 7844,
+      "labels_sha256": "1c2e1eb036d0c962951a8843de5e2633828a5fcdef5657e605046e0a74ee0f24",
+      "data_sha256": "e21965df7090ee08c25b70912ee163dfa704b248f5d3bdbf4cf1b3319eb0b2f1"
+    },
+    {
+      "client": 4,
+      "samples": 2446,
+      "labels_sha256": "13e8a054598dd1a7b768ad642e1d85110036c761239439329e0c3f4db4911faf",
+      "data_sha256": "81e6c97afa8637e83296ce55026aedd96f4e1d3d9fff94f17cee864af4eb9469"
+    },
+    {
+      "client": 5,
+      "samples": 3464,
+      "labels_sha256": "682a2e0e9ce627d1bc4f1ed009377cefd372a4767f28f4afe937ea19f3c4da9d",
+      "data_sha256": "42de8938b87360ad0db4e44ed51223b0312ece0af533ff57568a798977c5e8ae"
+    },
+    {
+      "client": 6,
+      "samples": 11849,
+      "labels_sha256": "b61f377addc01b1c2e0bc6deac53358c61a25e27d016d080407b5b785a29dcf7",
+      "data_sha256": "4bfc037b65e0fdff45ed3df6f0870df3edc32cf9813ef3b9fe7a9157b8af774a"
+    },
+    {
+      "client": 7,
+      "samples": 7762,
+      "labels_sha256": "a2c0388457d122592b2851bb908a290384d7848612be79550c25ab537115f054",
+      "data_sha256": "f7414bf0b43f926a80a323f10a36af8b7feb60917c7e5608e10edff90aa0a0f3"
+    },
+    {
+      "client": 8,
+      "samples": 8970,
+      "labels_sha256": "27c21138257450727d60d875099c33a7a54d072cb310eec31e994038c716e879",
+      "data_sha256": "24ad7cc41757e20d9f69355759dcc84bcdafbc1df015ab2d0361ff49ef749b42"
+    },
+    {
+      "client": 9,
+      "samples": 6173,
+      "labels_sha256": "7e8aa82464fee6eb80c00949c951dfe738da9009aa1edd8d9361b7c85be5570a",
+      "data_sha256": "1d6a6093447dcdbc931c320bcd45fc5ad06c7a150fa65da9fb5680c8ae9d8492"
+    }
+  ],
+  "lasa_upstream": null,
+  "root_samples": 500,
+  "torch": "2.5.1+cu121",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "deterministic_kernels": "required"
+}

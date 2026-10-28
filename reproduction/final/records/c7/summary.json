@@ -1,0 +1,29 @@
+{
+  "comment": "R4 second round Comment 7",
+  "repeats": 3,
+  "rounds_per_repeat": 50,
+  "round_records": 150,
+  "raw_state_matches_training": 150,
+  "max_decode_abs_error": 1.751246613202655e-08,
+  "max_weight_abs_error": 9.09564017393949e-05,
+  "max_cosine_abs_error": 7.73482760008104e-06,
+  "max_direction_abs_error": 5.070398815809618e-05,
+  "norm_decision_changes": 0,
+  "cosine_decision_changes": 0,
+  "direction_decision_changes": 0,
+  "exclusion_matches": 150,
+  "max_model_relative_error": 9.168155801538e-07,
+  "max_honest_aggregate_residual": 8.036069836253413e-08,
+  "honest_rejections": 0,
+  "boundary_cases": [
+    {
+      "repeat": 0,
+      "round": 1,
+      "raw_residual": 1.0001830140441014e-06,
+      "decoded_residual": 5.626961761172667e-07,
+      "raw_reject": true,
+      "decoded_reject": false
+    }
+  ],
+  "scope": "Repeated cryptographic executions of one frozen external client-update sequence; recomputed histories/exclusions/audits/model accumulation, not client retraining under decoded-model feedback."
+}

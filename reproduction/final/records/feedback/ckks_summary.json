@@ -1,0 +1,43 @@
+{
+  "repeats": 3,
+  "training_feedback": true,
+  "runs": [
+    {
+      "repeat": 0,
+      "avg": 66.5932,
+      "final": 78.08,
+      "honest_acceptance": 20,
+      "honest_count": 20,
+      "attacked_rejected": 30,
+      "attacked_count": 30,
+      "max_decode_abs": 1.5692323518791493e-08,
+      "exclusion_sets_equal_plain": 50,
+      "skipped": 0
+    },
+    {
+      "repeat": 1,
+      "avg": 67.0714,
+      "final": 75.67,
+      "honest_acceptance": 20,
+      "honest_count": 20,
+      "attacked_rejected": 30,
+      "attacked_count": 30,
+      "max_decode_abs": 1.9532260388840754e-08,
+      "exclusion_sets_equal_plain": 50,
+      "skipped": 0
+    },
+    {
+      "repeat": 2,
+      "avg": 67.7602,
+      "final": 64.25,
+      "honest_acceptance": 20,
+      "honest_count": 20,
+      "attacked_rejected": 30,
+      "attacked_count": 30,
+      "max_decode_abs": 1.527240518455603e-08,
+      "exclusion_sets_equal_plain": 50,
+      "skipped": 0
+    }
+  ],
+  "scope": "Single-key CKKS encode/decode; decoded global model drives subsequent local training. Independent keys, same data seed42. Not distributed threshold decryption."
+}

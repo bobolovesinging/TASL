@@ -1,0 +1,542 @@
+[
+  {
+    "configuration": "One complete verifier",
+    "round": 1,
+    "case": "honest",
+    "accepted": true
+  },
+  {
+    "configuration": "Two complete verifiers",
+    "round": 1,
+    "case": "honest",
+    "accepted": true
+  },
+  {
+    "configuration": "TAS roles",
+    "round": 1,
+    "case": "honest",
+    "accepted": true
+  },
+  {
+    "configuration": "One complete verifier",
+    "round": 1,
+    "case": "weight_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "Two complete verifiers",
+    "round": 1,
+    "case": "weight_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "TAS roles",
+    "round": 1,
+    "case": "weight_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "One complete verifier",
+    "round": 1,
+    "case": "aggregate_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "Two complete verifiers",
+    "round": 1,
+    "case": "aggregate_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "TAS roles",
+    "round": 1,
+    "case": "aggregate_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "One complete verifier",
+    "round": 1,
+    "case": "joint_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "Two complete verifiers",
+    "round": 1,
+    "case": "joint_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "TAS roles",
+    "round": 1,
+    "case": "joint_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "One complete verifier",
+    "round": 1,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "configuration": "Two complete verifiers",
+    "round": 1,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "configuration": "TAS roles",
+    "round": 1,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "configuration": "One complete verifier",
+    "round": 1,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "configuration": "Two complete verifiers",
+    "round": 1,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "configuration": "TAS roles",
+    "round": 1,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "configuration": "One complete verifier",
+    "round": 3,
+    "case": "honest",
+    "accepted": true
+  },
+  {
+    "configuration": "Two complete verifiers",
+    "round": 3,
+    "case": "honest",
+    "accepted": true
+  },
+  {
+    "configuration": "TAS roles",
+    "round": 3,
+    "case": "honest",
+    "accepted": true
+  },
+  {
+    "configuration": "One complete verifier",
+    "round": 3,
+    "case": "weight_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "Two complete verifiers",
+    "round": 3,
+    "case": "weight_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "TAS roles",
+    "round": 3,
+    "case": "weight_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "One complete verifier",
+    "round": 3,
+    "case": "aggregate_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "Two complete verifiers",
+    "round": 3,
+    "case": "aggregate_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "TAS roles",
+    "round": 3,
+    "case": "aggregate_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "One complete verifier",
+    "round": 3,
+    "case": "joint_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "Two complete verifiers",
+    "round": 3,
+    "case": "joint_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "TAS roles",
+    "round": 3,
+    "case": "joint_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "One complete verifier",
+    "round": 3,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "configuration": "Two complete verifiers",
+    "round": 3,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "configuration": "TAS roles",
+    "round": 3,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "configuration": "One complete verifier",
+    "round": 3,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "configuration": "Two complete verifiers",
+    "round": 3,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "configuration": "TAS roles",
+    "round": 3,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "configuration": "One complete verifier",
+    "round": 10,
+    "case": "honest",
+    "accepted": true
+  },
+  {
+    "configuration": "Two complete verifiers",
+    "round": 10,
+    "case": "honest",
+    "accepted": true
+  },
+  {
+    "configuration": "TAS roles",
+    "round": 10,
+    "case": "honest",
+    "accepted": true
+  },
+  {
+    "configuration": "One complete verifier",
+    "round": 10,
+    "case": "weight_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "Two complete verifiers",
+    "round": 10,
+    "case": "weight_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "TAS roles",
+    "round": 10,
+    "case": "weight_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "One complete verifier",
+    "round": 10,
+    "case": "aggregate_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "Two complete verifiers",
+    "round": 10,
+    "case": "aggregate_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "TAS roles",
+    "round": 10,
+    "case": "aggregate_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "One complete verifier",
+    "round": 10,
+    "case": "joint_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "Two complete verifiers",
+    "round": 10,
+    "case": "joint_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "TAS roles",
+    "round": 10,
+    "case": "joint_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "One complete verifier",
+    "round": 10,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "configuration": "Two complete verifiers",
+    "round": 10,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "configuration": "TAS roles",
+    "round": 10,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "configuration": "One complete verifier",
+    "round": 10,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "configuration": "Two complete verifiers",
+    "round": 10,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "configuration": "TAS roles",
+    "round": 10,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "configuration": "One complete verifier",
+    "round": 25,
+    "case": "honest",
+    "accepted": true
+  },
+  {
+    "configuration": "Two complete verifiers",
+    "round": 25,
+    "case": "honest",
+    "accepted": true
+  },
+  {
+    "configuration": "TAS roles",
+    "round": 25,
+    "case": "honest",
+    "accepted": true
+  },
+  {
+    "configuration": "One complete verifier",
+    "round": 25,
+    "case": "weight_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "Two complete verifiers",
+    "round": 25,
+    "case": "weight_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "TAS roles",
+    "round": 25,
+    "case": "weight_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "One complete verifier",
+    "round": 25,
+    "case": "aggregate_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "Two complete verifiers",
+    "round": 25,
+    "case": "aggregate_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "TAS roles",
+    "round": 25,
+    "case": "aggregate_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "One complete verifier",
+    "round": 25,
+    "case": "joint_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "Two complete verifiers",
+    "round": 25,
+    "case": "joint_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "TAS roles",
+    "round": 25,
+    "case": "joint_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "One complete verifier",
+    "round": 25,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "configuration": "Two complete verifiers",
+    "round": 25,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "configuration": "TAS roles",
+    "round": 25,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "configuration": "One complete verifier",
+    "round": 25,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "configuration": "Two complete verifiers",
+    "round": 25,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "configuration": "TAS roles",
+    "round": 25,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "configuration": "One complete verifier",
+    "round": 50,
+    "case": "honest",
+    "accepted": true
+  },
+  {
+    "configuration": "Two complete verifiers",
+    "round": 50,
+    "case": "honest",
+    "accepted": true
+  },
+  {
+    "configuration": "TAS roles",
+    "round": 50,
+    "case": "honest",
+    "accepted": true
+  },
+  {
+    "configuration": "One complete verifier",
+    "round": 50,
+    "case": "weight_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "Two complete verifiers",
+    "round": 50,
+    "case": "weight_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "TAS roles",
+    "round": 50,
+    "case": "weight_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "One complete verifier",
+    "round": 50,
+    "case": "aggregate_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "Two complete verifiers",
+    "round": 50,
+    "case": "aggregate_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "TAS roles",
+    "round": 50,
+    "case": "aggregate_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "One complete verifier",
+    "round": 50,
+    "case": "joint_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "Two complete verifiers",
+    "round": 50,
+    "case": "joint_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "TAS roles",
+    "round": 50,
+    "case": "joint_tampering",
+    "accepted": false
+  },
+  {
+    "configuration": "One complete verifier",
+    "round": 50,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "configuration": "Two complete verifiers",
+    "round": 50,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "configuration": "TAS roles",
+    "round": 50,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "configuration": "One complete verifier",
+    "round": 50,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "configuration": "Two complete verifiers",
+    "round": 50,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "configuration": "TAS roles",
+    "round": 50,
+    "case": "stale_parent",
+    "accepted": false
+  }
+]

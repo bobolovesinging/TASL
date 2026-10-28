@@ -1,0 +1,9 @@
+{
+  "source_sha256": {
+    "run_feedback_and_adaptive.py": "98f84a725eb44a644ea4e79ab0aec740f59c29193473ca49e121d819434a3b51",
+    "final_input_adapter.py": "acbc0a7c7e4995a5756152f1dcf3326e0bd318f2df77ef434e86fdc4a26f823d",
+    "exp2_run.py": "33e948426bf328da0a3f298fc10a490c04b1e553c53ad780fadb3ade662b46ef",
+    "exp3_governance_tasv2.py": "7aff55451783a28d80e3211cae62036772fcab665769295e7809e59e1b5bfcd4"
+  },
+  "transparent_hook_complete_matches": 3
+}

@@ -1,0 +1,9 @@
+{
+  "method": "fedavg",
+  "attack": "none",
+  "seed": 123,
+  "avg": 75.75319999999999,
+  "final": 83.71,
+  "lf_asr": null,
+  "seconds": 69.54923853464425
+}

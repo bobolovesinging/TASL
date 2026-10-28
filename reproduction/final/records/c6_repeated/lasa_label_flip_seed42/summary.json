@@ -1,0 +1,9 @@
+{
+  "method": "lasa",
+  "attack": "label_flip",
+  "seed": 42,
+  "avg": 35.018,
+  "final": 38.08,
+  "lf_asr": 33.45420000000001,
+  "seconds": 68.79929503053427
+}

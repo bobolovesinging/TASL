@@ -1,0 +1,198 @@
+{
+  "comments": [
+    "R4 round2 C1"
+  ],
+  "summaries": {
+    "clean_control": {
+      "name": "clean_control",
+      "comments": [
+        "R4 round2 C1"
+      ],
+      "rounds_completed": 50,
+      "average_accuracy": 74.0712,
+      "best_accuracy": 85.29,
+      "seconds": 69.82975685223937,
+      "skipped": 0,
+      "norm_gate_leak_rounds": 0,
+      "maximum_norm_rejected_weight": 0,
+      "honest_proposals": 50,
+      "attacked_proposals": 0,
+      "true_rejections": 0,
+      "false_rejections": 0,
+      "honest_acceptance": 1.0,
+      "precision": null,
+      "recall": null,
+      "interpretation": "Run finished; scope and pairing checks must still be assessed before manuscript use.",
+      "post_onset_average_accuracy": 77.72914285714286,
+      "round16_weights": {
+        "0": 0.3562805318248176,
+        "1": 0.07963819518966983,
+        "2": 0.026719976490313907,
+        "3": 0.0008290531146380389,
+        "4": 0.10144965036186707,
+        "5": 5.8355667695694295e-06,
+        "6": 0.34413368437821307,
+        "7": 0.07243523724134665,
+        "8": 0.008912848133931117,
+        "9": 0.009594987698433267
+      },
+      "round17_weights": {
+        "0": 0.3776361892931742,
+        "1": 0.05818927007183448,
+        "2": 0.02091198690700606,
+        "3": 0.0009661907464411631,
+        "4": 0.10209222045130675,
+        "5": 0.00014694226847140166,
+        "6": 0.36426359577056727,
+        "7": 0.0652625635537302,
+        "8": 0.002273593460185874,
+        "9": 0.008257447477282581
+      }
+    },
+    "clean_corrected": {
+      "name": "clean_corrected",
+      "comments": [
+        "R4 round2 C1"
+      ],
+      "rounds_completed": 50,
+      "average_accuracy": 74.0712,
+      "best_accuracy": 85.29,
+      "seconds": 68.72638910356909,
+      "skipped": 0,
+      "norm_gate_leak_rounds": 0,
+      "maximum_norm_rejected_weight": 0,
+      "honest_proposals": 50,
+      "attacked_proposals": 0,
+      "true_rejections": 0,
+      "false_rejections": 0,
+      "honest_acceptance": 1.0,
+      "precision": null,
+      "recall": null,
+      "interpretation": "Run finished; scope and pairing checks must still be assessed before manuscript use.",
+      "post_onset_average_accuracy": 77.72914285714286,
+      "round16_weights": {
+        "0": 0.3562805318248176,
+        "1": 0.07963819518966983,
+        "2": 0.026719976490313907,
+        "3": 0.0008290531146380389,
+        "4": 0.10144965036186707,
+        "5": 5.8355667695694295e-06,
+        "6": 0.34413368437821307,
+        "7": 0.07243523724134665,
+        "8": 0.008912848133931117,
+        "9": 0.009594987698433267
+      },
+      "round17_weights": {
+        "0": 0.3776361892931742,
+        "1": 0.05818927007183448,
+        "2": 0.02091198690700606,
+        "3": 0.0009661907464411631,
+        "4": 0.10209222045130675,
+        "5": 0.00014694226847140166,
+        "6": 0.36426359577056727,
+        "7": 0.0652625635537302,
+        "8": 0.002273593460185874,
+        "9": 0.008257447477282581
+      }
+    },
+    "delayed_control": {
+      "name": "delayed_control",
+      "comments": [
+        "R4 round2 C1"
+      ],
+      "rounds_completed": 50,
+      "average_accuracy": 68.71820000000001,
+      "best_accuracy": 83.81,
+      "seconds": 49.10443916358054,
+      "skipped": 0,
+      "norm_gate_leak_rounds": 2,
+      "maximum_norm_rejected_weight": 0.17646015927569558,
+      "honest_proposals": 50,
+      "attacked_proposals": 0,
+      "true_rejections": 0,
+      "false_rejections": 0,
+      "honest_acceptance": 1.0,
+      "precision": null,
+      "recall": null,
+      "interpretation": "Run finished; scope and pairing checks must still be assessed before manuscript use.",
+      "post_onset_average_accuracy": 70.08200000000001,
+      "round16_weights": {
+        "0": 0.1222397352399641,
+        "1": 0.043956906041802225,
+        "2": 0.009874413781755598,
+        "3": 0.0003891042121736415,
+        "4": 0.18778130327512066,
+        "5": 6.856630607157837e-06,
+        "6": 0.42065410379767043,
+        "7": 0.14444597305890375,
+        "8": 0.03943117069415191,
+        "9": 0.031220433267850487
+      },
+      "round17_weights": {
+        "0": 0.023110212997992128,
+        "1": 0.010863829095652167,
+        "2": 0.008729479074901991,
+        "3": 0.00029820404067758683,
+        "4": 0.1861197132699994,
+        "5": 0.012418845476412407,
+        "6": 0.21985275334282925,
+        "7": 0.20772683973184178,
+        "8": 0.16168310312266646,
+        "9": 0.16919701984702687
+      }
+    },
+    "delayed_corrected": {
+      "name": "delayed_corrected",
+      "comments": [
+        "R4 round2 C1"
+      ],
+      "rounds_completed": 50,
+      "average_accuracy": 70.667,
+      "best_accuracy": 83.49,
+      "seconds": 50.12529925443232,
+      "skipped": 0,
+      "norm_gate_leak_rounds": 0,
+      "maximum_norm_rejected_weight": 0,
+      "honest_proposals": 50,
+      "attacked_proposals": 0,
+      "true_rejections": 0,
+      "false_rejections": 0,
+      "honest_acceptance": 1.0,
+      "precision": null,
+      "recall": null,
+      "interpretation": "Run finished; scope and pairing checks must still be assessed before manuscript use.",
+      "post_onset_average_accuracy": 72.86599999999999,
+      "round16_weights": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.22801726642631734,
+        "5": 8.3258031586273e-06,
+        "6": 0.5107878004149801,
+        "7": 0.17539646039694123,
+        "8": 0.04788010093048096,
+        "9": 0.03791004602812181
+      },
+      "round17_weights": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.20148316724285653,
+        "5": 2.0272613505427547e-05,
+        "6": 0.6991746187310792,
+        "7": 0.05514189181019996,
+        "8": 0.029485049731969862,
+        "9": 0.01469499987038888
+      }
+    }
+  },
+  "clean_complete_state_matches": 50,
+  "finalized_by": {
+    "extractor_sha256": "7903f06fb3f82f836e3957bcf53c022ff835b634706d6dc1de07162699a1fddd",
+    "training_status": "Four complete 50-round runs retained; original postprocessing failed to encode numpy int64. This extractor reran only the frozen-input replay.",
+    "machine_assertions": "All completed conditions have zero skipped rounds; corrected conditions have zero norm-rejected weight; clean complete states match 50/50."
+  },
+  "interpretation": "One seed supports the tested mechanism and records utility; no statistical superiority or arbitrary poisoning guarantee."
+}

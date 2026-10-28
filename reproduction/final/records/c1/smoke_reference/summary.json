@@ -1,0 +1,21 @@
+{
+  "name": "smoke_reference",
+  "comments": [
+    "R4 round2 C1"
+  ],
+  "rounds_completed": 3,
+  "average_accuracy": 6.25,
+  "best_accuracy": 6.25,
+  "seconds": 0.9480443075299263,
+  "skipped": 0,
+  "norm_gate_leak_rounds": 0,
+  "maximum_norm_rejected_weight": 0,
+  "honest_proposals": 3,
+  "attacked_proposals": 0,
+  "true_rejections": 0,
+  "false_rejections": 0,
+  "honest_acceptance": 1.0,
+  "precision": null,
+  "recall": null,
+  "interpretation": "Run finished; scope and pairing checks must still be assessed before manuscript use."
+}

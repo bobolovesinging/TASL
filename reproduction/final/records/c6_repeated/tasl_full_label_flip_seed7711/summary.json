@@ -1,0 +1,9 @@
+{
+  "method": "tasl_full",
+  "attack": "label_flip",
+  "seed": 7711,
+  "avg": 64.601,
+  "final": 68.1,
+  "lf_asr": 2.8024,
+  "seconds": 50.41480751801282
+}

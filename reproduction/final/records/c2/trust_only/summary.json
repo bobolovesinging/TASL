@@ -1,0 +1,21 @@
+{
+  "name": "trust_only",
+  "comments": [
+    "R4 round2 C2"
+  ],
+  "rounds_completed": 50,
+  "average_accuracy": 63.3666,
+  "best_accuracy": 80.02,
+  "seconds": 43.26573807466775,
+  "skipped": 0,
+  "norm_gate_leak_rounds": 0,
+  "maximum_norm_rejected_weight": 0,
+  "honest_proposals": 20,
+  "attacked_proposals": 30,
+  "true_rejections": 0,
+  "false_rejections": 0,
+  "honest_acceptance": 1.0,
+  "precision": null,
+  "recall": 0.0,
+  "interpretation": "Run finished; scope and pairing checks must still be assessed before manuscript use."
+}

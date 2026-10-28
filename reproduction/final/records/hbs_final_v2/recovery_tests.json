@@ -1,0 +1,3052 @@
+[
+  {
+    "round": 1,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 1,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 1,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 1,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 1,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 1,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 1,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 1,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 1,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 1,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 1,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 1,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 2,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 2,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 2,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 2,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 2,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 2,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 2,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 2,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 2,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 2,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 2,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 2,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 3,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 3,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 3,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 3,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 3,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 3,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 3,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 3,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 3,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 3,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 3,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 3,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 4,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 4,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 4,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 4,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 4,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 4,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 4,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 4,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 4,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 4,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 4,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 4,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 5,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 5,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 5,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 5,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 5,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 5,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 5,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 5,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 5,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 5,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 5,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 5,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 6,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 6,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 6,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 6,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 6,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 6,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 6,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 6,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 6,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 6,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 6,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 6,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 7,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 7,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 7,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 7,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 7,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 7,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 7,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 7,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 7,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 7,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 7,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 7,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 8,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 8,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 8,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 8,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 8,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 8,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 8,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 8,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 8,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 8,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 8,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 8,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 9,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 9,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 9,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 9,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 9,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 9,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 9,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 9,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 9,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 9,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 9,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 9,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 10,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 10,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 10,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 10,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 10,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 10,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 10,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 10,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 10,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 10,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 10,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 10,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 11,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 11,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 11,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 11,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 11,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 11,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 11,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 11,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 11,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 11,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 11,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 11,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 12,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 12,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 12,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 12,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 12,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 12,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 12,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 12,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 12,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 12,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 12,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 12,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 13,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 13,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 13,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 13,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 13,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 13,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 13,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 13,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 13,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 13,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 13,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 13,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 14,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 14,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 14,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 14,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 14,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 14,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 14,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 14,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 14,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 14,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 14,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 14,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 15,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 15,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 15,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 15,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 15,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 15,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 15,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 15,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 15,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 15,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 15,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 15,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 16,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 16,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 16,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 16,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 16,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 16,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 16,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 16,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 16,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 16,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 16,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 16,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 17,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 17,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 17,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 17,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 17,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 17,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 17,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 17,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 17,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 17,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 17,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 17,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 18,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 18,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 18,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 18,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 18,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 18,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 18,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 18,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 18,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 18,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 18,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 18,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 19,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 19,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 19,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 19,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 19,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 19,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 19,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 19,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 19,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 19,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 19,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 19,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 20,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 20,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 20,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 20,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 20,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 20,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 20,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 20,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 20,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 20,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 20,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 20,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 21,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 21,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 21,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 21,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 21,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 21,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 21,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 21,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 21,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 21,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 21,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 21,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 22,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 22,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 22,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 22,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 22,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 22,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 22,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 22,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 22,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 22,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 22,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 22,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 23,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 23,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 23,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 23,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 23,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 23,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 23,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 23,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 23,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 23,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 23,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 23,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 24,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 24,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 24,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 24,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 24,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 24,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 24,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 24,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 24,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 24,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 24,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 24,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 25,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 25,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 25,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 25,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 25,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 25,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 25,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 25,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 25,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 25,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 25,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 25,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 26,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 26,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 26,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 26,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 26,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 26,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 26,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 26,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 26,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 26,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 26,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 26,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 27,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 27,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 27,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 27,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 27,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 27,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 27,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 27,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 27,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 27,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 27,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 27,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 28,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 28,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 28,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 28,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 28,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 28,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 28,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 28,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 28,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 28,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 28,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 28,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 29,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 29,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 29,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 29,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 29,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 29,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 29,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 29,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 29,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 29,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 29,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 29,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 30,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 30,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 30,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 30,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 30,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 30,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 30,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 30,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 30,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 30,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 30,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 30,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 31,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 31,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 31,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 31,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 31,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 31,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 31,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 31,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 31,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 31,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 31,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 31,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 32,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 32,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 32,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 32,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 32,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 32,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 32,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 32,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 32,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 32,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 32,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 32,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 33,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 33,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 33,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 33,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 33,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 33,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 33,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 33,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 33,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 33,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 33,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 33,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 34,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 34,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 34,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 34,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 34,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 34,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 34,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 34,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 34,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 34,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 34,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 34,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 35,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 35,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 35,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 35,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 35,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 35,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 35,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 35,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 35,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 35,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 35,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 35,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 36,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 36,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 36,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 36,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 36,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 36,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 36,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 36,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 36,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 36,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 36,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 36,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 37,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 37,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 37,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 37,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 37,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 37,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 37,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 37,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 37,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 37,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 37,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 37,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 38,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 38,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 38,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 38,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 38,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 38,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 38,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 38,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 38,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 38,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 38,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 38,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 39,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 39,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 39,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 39,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 39,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 39,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 39,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 39,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 39,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 39,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 39,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 39,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 40,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 40,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 40,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 40,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 40,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 40,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 40,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 40,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 40,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 40,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 40,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 40,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 41,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 41,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 41,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 41,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 41,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 41,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 41,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 41,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 41,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 41,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 41,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 41,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 42,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 42,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 42,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 42,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 42,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 42,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 42,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 42,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 42,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 42,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 42,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 42,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 43,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 43,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 43,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 43,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 43,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 43,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 43,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 43,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 43,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 43,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 43,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 43,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 44,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 44,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 44,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 44,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 44,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 44,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 44,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 44,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 44,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 44,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 44,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 44,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 45,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 45,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 45,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 45,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 45,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 45,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 45,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 45,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 45,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 45,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 45,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 45,
+    "case": "archive_unavailable",
+    "accepted": false
+  },
+  {
+    "round": 46,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 46,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 46,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 46,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 46,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 46,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 46,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 46,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 46,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 46,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 46,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 46,
+    "case": "archive_unavailable",
+    "accepted": true
+  },
+  {
+    "round": 47,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 47,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 47,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 47,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 47,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 47,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 47,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 47,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 47,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 47,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 47,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 47,
+    "case": "archive_unavailable",
+    "accepted": true
+  },
+  {
+    "round": 48,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 48,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 48,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 48,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 48,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 48,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 48,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 48,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 48,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 48,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 48,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 48,
+    "case": "archive_unavailable",
+    "accepted": true
+  },
+  {
+    "round": 49,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 49,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 49,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 49,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 49,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 49,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 49,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 49,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 49,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 49,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 49,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 49,
+    "case": "archive_unavailable",
+    "accepted": true
+  },
+  {
+    "round": 50,
+    "case": "normal",
+    "accepted": true,
+    "matches_reference": true
+  },
+  {
+    "round": 50,
+    "case": "missing_input",
+    "accepted": false
+  },
+  {
+    "round": 50,
+    "case": "corrupt_input",
+    "accepted": false
+  },
+  {
+    "round": 50,
+    "case": "missing_parent",
+    "accepted": false
+  },
+  {
+    "round": 50,
+    "case": "corrupt_parent",
+    "accepted": false
+  },
+  {
+    "round": 50,
+    "case": "stale_round",
+    "accepted": false
+  },
+  {
+    "round": 50,
+    "case": "stale_parent",
+    "accepted": false
+  },
+  {
+    "round": 50,
+    "case": "missing_vs",
+    "accepted": false
+  },
+  {
+    "round": 50,
+    "case": "missing_vp",
+    "accepted": false
+  },
+  {
+    "round": 50,
+    "case": "bad_candidate",
+    "accepted": false
+  },
+  {
+    "round": 50,
+    "case": "duplicate_commit",
+    "accepted": false
+  },
+  {
+    "round": 50,
+    "case": "archive_unavailable",
+    "accepted": true
+  }
+]

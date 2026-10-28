@@ -1,0 +1,8 @@
+{
+  "avg": 64.5854,
+  "final": 76.9,
+  "attack_onset": 16,
+  "attacked_rounds": 3,
+  "max_malicious_weight": 1.0000000000000002,
+  "scope": "White-box coordinated update selection with honest-update and defence-state access; 15 candidates per attacked round maximize aggregate deviation, not test loss. One data seed, no baseline ranking."
+}

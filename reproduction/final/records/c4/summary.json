@@ -1,0 +1,90 @@
+{
+  "comment": "R4 round2 Comment 4",
+  "configurations": {
+    "One complete verifier": {
+      "honest_accepted": 5,
+      "honest_cases": 5,
+      "attacks_rejected": 25,
+      "attack_cases": 25,
+      "verify_median_ms": 185.868607,
+      "verify_q1_q3": [
+        182.07118075,
+        234.72766525
+      ],
+      "recovery_median_ms": 371.965468,
+      "recovery_q1_q3": [
+        365.0247205,
+        467.401567
+      ],
+      "logical_received_MiB_median": 27.730085372924805
+    },
+    "Two complete verifiers": {
+      "honest_accepted": 5,
+      "honest_cases": 5,
+      "attacks_rejected": 25,
+      "attack_cases": 25,
+      "verify_median_ms": 370.330342,
+      "verify_q1_q3": [
+        364.546959,
+        468.9339045
+      ],
+      "recovery_median_ms": 557.80508,
+      "recovery_q1_q3": [
+        548.26328,
+        701.9416735
+      ],
+      "logical_received_MiB_median": 55.46017074584961
+    },
+    "TAS roles": {
+      "honest_accepted": 5,
+      "honest_cases": 5,
+      "attacks_rejected": 25,
+      "attack_cases": 25,
+      "verify_median_ms": 372.53230399999995,
+      "verify_q1_q3": [
+        366.3698225,
+        470.91076250000003
+      ],
+      "recovery_median_ms": 560.14159,
+      "recovery_q1_q3": [
+        550.1159594999999,
+        704.899938
+      ],
+      "logical_received_MiB_median": 55.46017074584961
+    }
+  },
+  "input_payloads": [
+    {
+      "round": 1,
+      "clients": 10,
+      "serialized_input_bytes": 25633614
+    },
+    {
+      "round": 3,
+      "clients": 10,
+      "serialized_input_bytes": 37956558
+    },
+    {
+      "round": 10,
+      "clients": 6,
+      "serialized_input_bytes": 28943278
+    },
+    {
+      "round": 25,
+      "clients": 6,
+      "serialized_input_bytes": 29130286
+    },
+    {
+      "round": 50,
+      "clients": 6,
+      "serialized_input_bytes": 29077102
+    }
+  ],
+  "scope": "Single-host fresh checks on five captured rounds, 11 timing repetitions per case. Logical serialized receive volume, not measured network traffic. Recovery includes candidate recomputation and the same endorsement requirements as verification.",
+  "inputs": "Canonical bound update/weight tensors with honest, weight/aggregate/joint tampering and stale round/parent cases; not an arbitrary-input fuzzer.",
+  "source_sha256": {
+    "benchmark_c4.py": "bab52e72ce017686a953f42d8145ab8df16665c3f9b35c45c155fbaafbcd3a42",
+    "scripts/exp2/exp2_run.py": "33e948426bf328da0a3f298fc10a490c04b1e553c53ad780fadb3ade662b46ef",
+    "scripts/exp3/exp3_governance_tasv2.py": "7aff55451783a28d80e3211cae62036772fcab665769295e7809e59e1b5bfcd4"
+  }
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "round": 16,
+    "candidates": 15,
+    "mix": 0.5,
+    "norm_multiple": 1.5,
+    "deviation": 0.3740610163405593,
+    "malicious_weight": 0.849478784448808
+  },
+  {
+    "round": 17,
+    "candidates": 15,
+    "mix": 1.0,
+    "norm_multiple": 1.5,
+    "deviation": 0.8947051126109086,
+    "malicious_weight": 1.0
+  },
+  {
+    "round": 18,
+    "candidates": 15,
+    "mix": 1.0,
+    "norm_multiple": 1.5,
+    "deviation": 2.9596462649840647,
+    "malicious_weight": 1.0000000000000002
+  }
+]
