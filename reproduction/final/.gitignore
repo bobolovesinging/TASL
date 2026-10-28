@@ -3,3 +3,4 @@ results/
 data/
 LASA_upstream/
 __pycache__/
+!records/r2_final_learning_curves.pdf
