@@ -1,0 +1,124 @@
+{
+  "status": "PARTIALLY_REPRODUCED",
+  "scope": "Final-kernel fixed-participation Executor stress control, seed42; permanent exclusion disabled in every group",
+  "verified_files": 146,
+  "conditions": 20,
+  "source_unchanged_from_final_kernel": true,
+  "full_tas_state_matches": 200,
+  "learning_entry_state_matches": 200,
+  "paired": [
+    {
+      "dataset": "fashionmnist",
+      "attack": "scaling",
+      "full_tas_state_matches": 50,
+      "learning_entry_state_matches": 50
+    },
+    {
+      "dataset": "fashionmnist",
+      "attack": "label_flip",
+      "full_tas_state_matches": 50,
+      "learning_entry_state_matches": 50
+    },
+    {
+      "dataset": "mnist",
+      "attack": "scaling",
+      "full_tas_state_matches": 50,
+      "learning_entry_state_matches": 50
+    },
+    {
+      "dataset": "mnist",
+      "attack": "label_flip",
+      "full_tas_state_matches": 50,
+      "learning_entry_state_matches": 50
+    }
+  ],
+  "comparisons": [
+    {
+      "dataset": "fashionmnist",
+      "attack": "scaling",
+      "trust_avg": 56.6172,
+      "differences_vs_trust": {
+        "vs_only": 13.09360000000001,
+        "vp_only": 12.830399999999997,
+        "full_tas": 13.09360000000001
+      }
+    },
+    {
+      "dataset": "fashionmnist",
+      "attack": "label_flip",
+      "trust_avg": 30.5152,
+      "differences_vs_trust": {
+        "vs_only": 35.874599999999994,
+        "vp_only": 35.279,
+        "full_tas": 35.874599999999994
+      }
+    },
+    {
+      "dataset": "mnist",
+      "attack": "scaling",
+      "trust_avg": 75.558,
+      "differences_vs_trust": {
+        "vs_only": 13.305599999999998,
+        "vp_only": 15.145799999999994,
+        "full_tas": 15.447199999999995
+      }
+    },
+    {
+      "dataset": "mnist",
+      "attack": "label_flip",
+      "trust_avg": 40.7604,
+      "differences_vs_trust": {
+        "vs_only": 50.041000000000004,
+        "vp_only": 49.6266,
+        "full_tas": 50.041000000000004
+      }
+    }
+  ],
+  "guards": [
+    {
+      "name": "fixed_fashion_gpu0",
+      "state": "completed",
+      "gpu": 0,
+      "max_temperature_C": 65,
+      "supervisor_pid": 1507236,
+      "started_utc": "2026-10-29T04:05:14.005973+00:00",
+      "temperature_C": 53,
+      "last_sample_utc": "2026-10-29T04:22:58.456862+00:00",
+      "pid": 1507238,
+      "command": [
+        "/home/njit/tof/envs/tof-depthcad/bin/python",
+        "-u",
+        "/home/njit/round2_C2_fixed_v2_20261029/run_matrix.py",
+        "--dataset",
+        "fashionmnist"
+      ],
+      "exit_code": 0,
+      "finished_utc": "2026-10-29T04:22:58.457187+00:00"
+    },
+    {
+      "name": "fixed_mnist_gpu1",
+      "state": "completed",
+      "gpu": 1,
+      "max_temperature_C": 64,
+      "supervisor_pid": 1507807,
+      "started_utc": "2026-10-29T04:09:51.343894+00:00",
+      "temperature_C": 53,
+      "last_sample_utc": "2026-10-29T04:27:25.466413+00:00",
+      "pid": 1507809,
+      "command": [
+        "/home/njit/tof/envs/tof-depthcad/bin/python",
+        "-u",
+        "/home/njit/round2_C2_fixed_v2_20261029/run_matrix.py",
+        "--dataset",
+        "mnist"
+      ],
+      "exit_code": 0,
+      "finished_utc": "2026-10-29T04:27:25.466651+00:00"
+    }
+  ],
+  "limitations": [
+    "Single seed, 40% malicious clients, two grayscale datasets, single host.",
+    "This control isolates persistent Executor tampering and does not replace exclusion-enabled end-to-end evaluation.",
+    "Accuracy ordering is an empirical observation, not a pass criterion or general theorem."
+  ]
+}

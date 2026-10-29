@@ -1,0 +1,41 @@
+{
+  "state": "running",
+  "finished_scenarios": [
+    {
+      "dataset": "fashionmnist",
+      "attack": "scaling",
+      "pair": {
+        "dataset": "fashionmnist",
+        "attack": "scaling",
+        "rounds": 50,
+        "complete_state_matches": 50,
+        "mismatch_rounds": [],
+        "accuracy_matches": true
+      },
+      "learning_entry": {
+        "rounds": 50,
+        "complete_state_matches": 50,
+        "seconds": 73.47485635895282
+      }
+    },
+    {
+      "dataset": "fashionmnist",
+      "attack": "label_flip",
+      "pair": {
+        "dataset": "fashionmnist",
+        "attack": "label_flip",
+        "rounds": 50,
+        "complete_state_matches": 50,
+        "mismatch_rounds": [],
+        "accuracy_matches": true
+      },
+      "learning_entry": {
+        "rounds": 50,
+        "complete_state_matches": 50,
+        "seconds": 75.18151727691293
+      }
+    }
+  ],
+  "logical_conditions": 10,
+  "updated_utc": "2026-10-29T04:22:53.723895+00:00"
+}

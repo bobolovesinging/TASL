@@ -1,0 +1,4 @@
+{
+  "passed": true,
+  "scope": "CPU policy/role regressions and two-dataset three-round recovery pairing; smoke is not paper evidence"
+}

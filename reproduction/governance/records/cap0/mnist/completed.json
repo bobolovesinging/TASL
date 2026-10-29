@@ -1,0 +1,43 @@
+{
+  "state": "completed",
+  "completed_scenarios": [
+    {
+      "dataset": "mnist",
+      "attack": "scaling",
+      "pair": {
+        "dataset": "mnist",
+        "attack": "scaling",
+        "rounds": 50,
+        "complete_state_matches": 50,
+        "mismatch_rounds": [],
+        "accuracy_matches": true
+      },
+      "learning_entry": {
+        "rounds": 50,
+        "complete_state_matches": 50,
+        "seconds": 74.07801164500415
+      }
+    },
+    {
+      "dataset": "mnist",
+      "attack": "label_flip",
+      "pair": {
+        "dataset": "mnist",
+        "attack": "label_flip",
+        "rounds": 50,
+        "complete_state_matches": 50,
+        "mismatch_rounds": [],
+        "accuracy_matches": true
+      },
+      "learning_entry": {
+        "rounds": 50,
+        "complete_state_matches": 50,
+        "seconds": 71.97170698549598
+      }
+    }
+  ],
+  "logical_conditions": 10,
+  "source_unchanged": true,
+  "seconds": 1049.3527016974986,
+  "finished_utc": "2026-10-29T04:27:21.868932+00:00"
+}

@@ -1,0 +1,332 @@
+{
+  "started_utc": "2026-10-29T02:52:08.414104+00:00",
+  "dataset": "fashionmnist",
+  "client_attack": "label_flip",
+  "group": "trust_v2",
+  "rounds": 50,
+  "configuration": {
+    "comment": "Reviewer 4 second-round Comment 2",
+    "datasets": [
+      "fashionmnist",
+      "mnist"
+    ],
+    "client_attacks": [
+      "label_flip",
+      "scaling"
+    ],
+    "groups": [
+      "noexecutor",
+      "trust_only",
+      "trust_v1",
+      "trust_v2",
+      "trust_v1v2"
+    ],
+    "seed": 42,
+    "clients": 10,
+    "byzantine_clients": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rounds": 50,
+    "alpha": 0.3,
+    "local_epochs": 2,
+    "batch_size": 128,
+    "lr": 0.02,
+    "momentum": 0.0,
+    "weight_decay": 0.0,
+    "exclusion_enabled": true,
+    "exclusion_cap": 4,
+    "client_scaling_factor": 5.0,
+    "client_attack_start": 1,
+    "post_ema_norm_mask": true,
+    "screen_tau": 0.6,
+    "ema_alpha": 0.7,
+    "executor_schedule": "30 attacked rounds, 10 each A1/A2/A3; 20 honest rounds; same schedule across groups",
+    "no_defense": "omitted as requested",
+    "reuse": "Existing C2 Fashion-MNIST LF reference/trust_only/full_tas only if source, partition, configuration and schedule match",
+    "preflight": "7 C1 regressions, independent-role regression, 3-round paired smoke on both datasets; no scientific ranking inferred from smoke",
+    "acceptance": "Full TAS 50/50 complete-state match to honest Executor before proceeding; independent learning entry state match; report actual TP/FP/FN/TN and meaningful attacks",
+    "resource_budget": "502 GPU0 only; 4 CPU threads; 6 hour supervisor timeout; stop immediately >=86C or >=82C for three 5s samples; initial temperature<75C and memory<1024MiB; output budget 2GiB",
+    "destination": "/home/njit/round2_C2_matrix_20261029"
+  },
+  "partition": [
+    {
+      "client": 0,
+      "samples": 11644,
+      "labels_sha256": "526ce68692c3505b734eb86ed17797340c67957db447d7ad3bbd36c94461b2f3",
+      "data_sha256": "edce6a8edd934d4c7aad8da04f89f174c6f218ef4b05e1c730360b1f98b5384c"
+    },
+    {
+      "client": 1,
+      "samples": 6656,
+      "labels_sha256": "cd5858fca0208da1d4821748410f819d51be3f2b10157ce4837df2784cedda70",
+      "data_sha256": "efaef632b6678a6d3a006f5cb3dccf0fadb5593c63c667dc97b7027b59744fa0"
+    },
+    {
+      "client": 2,
+      "samples": 3265,
+      "labels_sha256": "e5b206f3f1b99f9c98d38017fb5845c737a22741691eac1a4e8becf9748db6fa",
+      "data_sha256": "c60e1c71b4f0a49b6adef74c17269ca80d0f1202a9db33427340d9e724fa924c"
+    },
+    {
+      "client": 3,
+      "samples": 6728,
+      "labels_sha256": "14cb3cc0f7995a190fc0134759627212c0c422ab72a04adda13901841068a815",
+      "data_sha256": "6563cfd07cf81f9030faca6c02f967e87927c9b32e223760192d445f532ce216"
+    },
+    {
+      "client": 4,
+      "samples": 6294,
+      "labels_sha256": "abf88bf392c1dcb69ea9543a62b2fbd4f5e76bcf8b3feec80050d66d06aad12e",
+      "data_sha256": "173719bac5102c08d4612c2bf91a2a86727433d0be5cec8f28ef4e56ff0b2b01"
+    },
+    {
+      "client": 5,
+      "samples": 1718,
+      "labels_sha256": "6e7810626a3448f21b391594ce24b5925b27345b54d30499fdf70827e90264ce",
+      "data_sha256": "13d357f49aa919b5f179769f93009db34bfed318be34cf1924f741590b8cccb5"
+    },
+    {
+      "client": 6,
+      "samples": 10565,
+      "labels_sha256": "6e87041b07a500dab38e142e9b9197ce533c0f3fb7f1f97c1ce746f8ca8efe96",
+      "data_sha256": "a155714e2e870bbb32052cf656f663cb8009568ca07736121f69674173ac29a9"
+    },
+    {
+      "client": 7,
+      "samples": 4387,
+      "labels_sha256": "ab3943826c5d49f2c08cbb0a7d36dd51e264f8da27407cf6f454a4c58e1c2c69",
+      "data_sha256": "d4bcd27ec1ccf5e011971b500b7483615cf288e60a101116f3b43c9fda89d339"
+    },
+    {
+      "client": 8,
+      "samples": 7655,
+      "labels_sha256": "5bd2e450f4f361b5c063d79d8313a97ea1bb07bbe8e6e92888b26e95284d72a9",
+      "data_sha256": "20e6f5ca4845a12d55f1de59d5c772a26609593ef70dfa8db805aa02cdd4bffc"
+    },
+    {
+      "client": 9,
+      "samples": 1088,
+      "labels_sha256": "68198489f7d726037918a5f8dc0efad3a49bc7329dcb4fa1f6881e48aa68e426",
+      "data_sha256": "7ed594938d81e716fbf07ec159747fdfd83e7cedf3f25ebc38db638b5ff579ba"
+    }
+  ],
+  "source_sha256": {
+    "remote_start.py": "f5cee98221760080e2a6e6e0480e0d76f4e070a7a29fa954e8e48def308d35b2",
+    "start_job.py": "4c84d84c727b721facdf7874e9ac626431ccfcc205ce4b31216e3f102d5020b7",
+    "job_monitor.py": "eddf38f03dcaaed18300a3703621f435616a0f1a22b80d2144f23e2348163ac8",
+    "run_matrix.py": "9e089a15fbc5e0a4f0472afbd6d9b7699dd53fd65265a4baa310f00197ee160c",
+    "test_comment1_policy.py": "a4b1badfed9d76c42960eae0973f0232eefad46c7f6f6454085fd9eb8ac27c34",
+    "run_experiments.py": "746b0e263ad2af0f6af8299cb418e17f1e7d54a84ce605fd27cfc40c6ed22011",
+    "test_final_protocol.py": "29617a20cc2767b695da6a8f47212f85e85e080f9431d9331cc340f978c22e96",
+    "state_digest.py": "a7fe2245b9e8c44f230e12b987a59b3aebaaa55c91f9c5bad10ba70a1ec2a562",
+    "scripts/exp2/exp2_run.py": "33e948426bf328da0a3f298fc10a490c04b1e553c53ad780fadb3ade662b46ef",
+    "scripts/exp3/exp3_governance_tasv2.py": "7aff55451783a28d80e3211cae62036772fcab665769295e7809e59e1b5bfcd4",
+    "core/model.py": "8034c1028c95cba2b8c9b0654b9991a4d40f06284e81b9ed3d55ed0a5d77ea8d"
+  },
+  "smoke": false,
+  "executor_schedule": {
+    "1": {
+      "active": false,
+      "attack_type": null
+    },
+    "2": {
+      "active": true,
+      "attack_type": "A1"
+    },
+    "3": {
+      "active": false,
+      "attack_type": null
+    },
+    "4": {
+      "active": false,
+      "attack_type": null
+    },
+    "5": {
+      "active": true,
+      "attack_type": "A2"
+    },
+    "6": {
+      "active": true,
+      "attack_type": "A3"
+    },
+    "7": {
+      "active": false,
+      "attack_type": null
+    },
+    "8": {
+      "active": true,
+      "attack_type": "A1"
+    },
+    "9": {
+      "active": true,
+      "attack_type": "A2"
+    },
+    "10": {
+      "active": true,
+      "attack_type": "A3"
+    },
+    "11": {
+      "active": true,
+      "attack_type": "A1"
+    },
+    "12": {
+      "active": true,
+      "attack_type": "A2"
+    },
+    "13": {
+      "active": false,
+      "attack_type": null
+    },
+    "14": {
+      "active": true,
+      "attack_type": "A3"
+    },
+    "15": {
+      "active": true,
+      "attack_type": "A1"
+    },
+    "16": {
+      "active": false,
+      "attack_type": null
+    },
+    "17": {
+      "active": true,
+      "attack_type": "A2"
+    },
+    "18": {
+      "active": false,
+      "attack_type": null
+    },
+    "19": {
+      "active": false,
+      "attack_type": null
+    },
+    "20": {
+      "active": true,
+      "attack_type": "A3"
+    },
+    "21": {
+      "active": true,
+      "attack_type": "A1"
+    },
+    "22": {
+      "active": true,
+      "attack_type": "A2"
+    },
+    "23": {
+      "active": true,
+      "attack_type": "A3"
+    },
+    "24": {
+      "active": false,
+      "attack_type": null
+    },
+    "25": {
+      "active": false,
+      "attack_type": null
+    },
+    "26": {
+      "active": true,
+      "attack_type": "A1"
+    },
+    "27": {
+      "active": true,
+      "attack_type": "A2"
+    },
+    "28": {
+      "active": false,
+      "attack_type": null
+    },
+    "29": {
+      "active": true,
+      "attack_type": "A3"
+    },
+    "30": {
+      "active": false,
+      "attack_type": null
+    },
+    "31": {
+      "active": true,
+      "attack_type": "A1"
+    },
+    "32": {
+      "active": false,
+      "attack_type": null
+    },
+    "33": {
+      "active": false,
+      "attack_type": null
+    },
+    "34": {
+      "active": true,
+      "attack_type": "A2"
+    },
+    "35": {
+      "active": false,
+      "attack_type": null
+    },
+    "36": {
+      "active": true,
+      "attack_type": "A3"
+    },
+    "37": {
+      "active": true,
+      "attack_type": "A1"
+    },
+    "38": {
+      "active": true,
+      "attack_type": "A2"
+    },
+    "39": {
+      "active": false,
+      "attack_type": null
+    },
+    "40": {
+      "active": true,
+      "attack_type": "A3"
+    },
+    "41": {
+      "active": true,
+      "attack_type": "A1"
+    },
+    "42": {
+      "active": true,
+      "attack_type": "A2"
+    },
+    "43": {
+      "active": false,
+      "attack_type": null
+    },
+    "44": {
+      "active": false,
+      "attack_type": null
+    },
+    "45": {
+      "active": true,
+      "attack_type": "A3"
+    },
+    "46": {
+      "active": true,
+      "attack_type": "A1"
+    },
+    "47": {
+      "active": true,
+      "attack_type": "A2"
+    },
+    "48": {
+      "active": true,
+      "attack_type": "A3"
+    },
+    "49": {
+      "active": false,
+      "attack_type": null
+    },
+    "50": {
+      "active": false,
+      "attack_type": null
+    }
+  }
+}

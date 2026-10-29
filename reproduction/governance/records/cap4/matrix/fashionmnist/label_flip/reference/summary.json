@@ -1,0 +1,22 @@
+{
+  "name": "reference",
+  "rounds": 50,
+  "avg_accuracy": 66.64320000000001,
+  "best_accuracy": 81.26,
+  "seconds": null,
+  "reused": true,
+  "honest_proposals": 50,
+  "attacked_proposals": 0,
+  "meaningful_attacked_proposals": 0,
+  "true_rejections": 0,
+  "false_rejections": 0,
+  "false_acceptances": 0,
+  "honest_acceptance": 1.0,
+  "false_rejection_rate": 0.0,
+  "precision": null,
+  "recall": null,
+  "skipped": 0,
+  "norm_leak_rounds": 0,
+  "attack_types": {},
+  "interpretation": "Interpret alongside paired complete-state and meaningful-tampering checks; process completion is not a scientific conclusion."
+}

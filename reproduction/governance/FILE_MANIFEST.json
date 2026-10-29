@@ -1,0 +1,918 @@
+{
+  "code/cap0/core/model.py": {
+    "bytes": 1287,
+    "sha256": "8034c1028c95cba2b8c9b0654b9991a4d40f06284e81b9ed3d55ed0a5d77ea8d"
+  },
+  "code/cap0/matrix_config.json": {
+    "bytes": 2082,
+    "sha256": "53e7aa56b326f2c9485c274e1398ad86c0569d1bf573a6ed31100cc7039d3122"
+  },
+  "code/cap0/run_experiments.py": {
+    "bytes": 9471,
+    "sha256": "746b0e263ad2af0f6af8299cb418e17f1e7d54a84ce605fd27cfc40c6ed22011"
+  },
+  "code/cap0/run_matrix.py": {
+    "bytes": 10056,
+    "sha256": "baf1155af451bd15ab970ebc5da23721fcde3bcb3c7a293dd59bc82164a0a927"
+  },
+  "code/cap0/scripts/exp2/exp2_run.py": {
+    "bytes": 75803,
+    "sha256": "33e948426bf328da0a3f298fc10a490c04b1e553c53ad780fadb3ade662b46ef"
+  },
+  "code/cap0/scripts/exp3/exp3_governance_tasv2.py": {
+    "bytes": 63291,
+    "sha256": "7aff55451783a28d80e3211cae62036772fcab665769295e7809e59e1b5bfcd4"
+  },
+  "code/cap0/state_digest.py": {
+    "bytes": 1114,
+    "sha256": "a7fe2245b9e8c44f230e12b987a59b3aebaaa55c91f9c5bad10ba70a1ec2a562"
+  },
+  "code/cap0/test_comment1_policy.py": {
+    "bytes": 3617,
+    "sha256": "a4b1badfed9d76c42960eae0973f0232eefad46c7f6f6454085fd9eb8ac27c34"
+  },
+  "code/cap0/test_final_protocol.py": {
+    "bytes": 1119,
+    "sha256": "29617a20cc2767b695da6a8f47212f85e85e080f9431d9331cc340f978c22e96"
+  },
+  "code/cap4/core/model.py": {
+    "bytes": 1287,
+    "sha256": "8034c1028c95cba2b8c9b0654b9991a4d40f06284e81b9ed3d55ed0a5d77ea8d"
+  },
+  "code/cap4/matrix_config.json": {
+    "bytes": 1582,
+    "sha256": "4abc5e44e0203d7b937631e672375732d994f33f7e97eb46acf641cc18c8b50e"
+  },
+  "code/cap4/run_experiments.py": {
+    "bytes": 9471,
+    "sha256": "746b0e263ad2af0f6af8299cb418e17f1e7d54a84ce605fd27cfc40c6ed22011"
+  },
+  "code/cap4/run_matrix.py": {
+    "bytes": 10747,
+    "sha256": "9e089a15fbc5e0a4f0472afbd6d9b7699dd53fd65265a4baa310f00197ee160c"
+  },
+  "code/cap4/scripts/exp2/exp2_run.py": {
+    "bytes": 75803,
+    "sha256": "33e948426bf328da0a3f298fc10a490c04b1e553c53ad780fadb3ade662b46ef"
+  },
+  "code/cap4/scripts/exp3/exp3_governance_tasv2.py": {
+    "bytes": 63291,
+    "sha256": "7aff55451783a28d80e3211cae62036772fcab665769295e7809e59e1b5bfcd4"
+  },
+  "code/cap4/state_digest.py": {
+    "bytes": 1114,
+    "sha256": "a7fe2245b9e8c44f230e12b987a59b3aebaaa55c91f9c5bad10ba70a1ec2a562"
+  },
+  "code/cap4/test_comment1_policy.py": {
+    "bytes": 3617,
+    "sha256": "a4b1badfed9d76c42960eae0973f0232eefad46c7f6f6454085fd9eb8ac27c34"
+  },
+  "code/cap4/test_final_protocol.py": {
+    "bytes": 1119,
+    "sha256": "29617a20cc2767b695da6a8f47212f85e85e080f9431d9331cc340f978c22e96"
+  },
+  "README.md": {
+    "bytes": 2462,
+    "sha256": "982cfd084809b5c593efe05a3cf82a79eae0977b6cb4d68ef2cfd410c74f1211"
+  },
+  "records/cap0/fashionmnist/completed.json": {
+    "bytes": 1041,
+    "sha256": "d038a8ca86aadd4e0f3b90017fe0e073a93b571c1407652c9b4a035f6932280b"
+  },
+  "records/cap0/fashionmnist/fashionmnist_partition_indices.json": {
+    "bytes": 649023,
+    "sha256": "ef437facd105604657f1dccb75aa7c45e044d53beda24c7fff7cda8754f3c5e2"
+  },
+  "records/cap0/fashionmnist/fashionmnist_partition_inventory.json": {
+    "bytes": 2225,
+    "sha256": "3392a8b63ce2f5e2830c38c84d656b05b9f34b898cc511bcab8a37239aa8d421"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/label_flip/full_tas/manifest.json": {
+    "bytes": 9146,
+    "sha256": "a7b51b3dabc52ad16ce21cc5fcb76ee838166d48c6b27177a1db65c6a1dc411b"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/label_flip/full_tas/round_metrics.json": {
+    "bytes": 169996,
+    "sha256": "0114c36c12f41f6b22ead415bbe958b1cf50c90ea821deb17886b9a18a18cc66"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/label_flip/full_tas/rounds/trust_v1v2.jsonl": {
+    "bytes": 161643,
+    "sha256": "181ba7432933a18e2779c86e4ff2440a02dd5d0c4eabb2a5dfb79e3cd1d726e0"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/label_flip/full_tas/summary.json": {
+    "bytes": 667,
+    "sha256": "cd83e747ef638b61df4b24f2b47004b2f250c1765d9400d6a0a50fa19772d4b6"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/label_flip/learning_entry_check.json": {
+    "bytes": 83,
+    "sha256": "c9abc2ec54c8ab1d7faafa225dcae0980da93d76fd04206f8fd661b6d41b122c"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/label_flip/learning_entry_rounds.json": {
+    "bytes": 32032,
+    "sha256": "e094955ce9320870d59dc6370b344a5df9364bd6a745495338bcb4437c87c7c9"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/label_flip/paired_consistency.json": {
+    "bytes": 159,
+    "sha256": "e7a64eec91149a8b50b4f02dd4a29f98ead984ebdd3ed61b71fe9712207c1af9"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/label_flip/reference/manifest.json": {
+    "bytes": 9146,
+    "sha256": "867085c9b5f7cea13c459f95a14373828afadeeae72eed6be94463a759caee91"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/label_flip/reference/round_metrics.json": {
+    "bytes": 160461,
+    "sha256": "f88c7dbd7ba1cd9e86784516b18b7c0728a6c3b5cf7f155421fd70a44e58684c"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/label_flip/reference/rounds/noexecutor.jsonl": {
+    "bytes": 152108,
+    "sha256": "2602b80bdfb77722cd285090421b232e7e3bb131ccf68bb6133f78bbc10bc261"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/label_flip/reference/summary.json": {
+    "bytes": 622,
+    "sha256": "1d00d9013a4caaa84a4dfa3b426780b1081d999e36efda1c67df0102d28197e0"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/label_flip/trust_only/manifest.json": {
+    "bytes": 9146,
+    "sha256": "5f6c8cd82a533f80cbd4b207def9a256539042d16320fe11446435e4f7d65a3d"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/label_flip/trust_only/round_metrics.json": {
+    "bytes": 167670,
+    "sha256": "99ad4fae18af758bea4df755d53685e46d115eba90509ff844db7ed2745044f0"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/label_flip/trust_only/rounds/trust_only.jsonl": {
+    "bytes": 159317,
+    "sha256": "0917525e1e744d3d5f176a9fbea662a7032cb932090ec80f25633145ec1ffa76"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/label_flip/trust_only/summary.json": {
+    "bytes": 668,
+    "sha256": "747e71725f9a3c8b3a63f766cf94ad3ff1e31bbcf7b857c3b81e9ed56bf67981"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/label_flip/vp_only/manifest.json": {
+    "bytes": 9144,
+    "sha256": "7ec58cc9aad12d56cb4e759c6011d4d959764706464ad56ea6b30733a2c04522"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/label_flip/vp_only/round_metrics.json": {
+    "bytes": 166574,
+    "sha256": "e2c4c7bfe198f9df091c925d3b403077dd5f63e256a3ce294ae6d925a06a730e"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/label_flip/vp_only/rounds/trust_v2.jsonl": {
+    "bytes": 158221,
+    "sha256": "c3b0387c720bdfdc3da31f15d73b258993d92fd148a02c55d534a3a8025e0545"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/label_flip/vp_only/summary.json": {
+    "bytes": 690,
+    "sha256": "248e60e756cf9111d94348653e236a244ca0a0aa9acc20c4e27354336c3fdc08"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/label_flip/vs_only/manifest.json": {
+    "bytes": 9144,
+    "sha256": "f6be2b9fc6b01f3b2ad3a651ae1a7d5f23d6c1567adb6f6eacaff059e5a07cb4"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/label_flip/vs_only/round_metrics.json": {
+    "bytes": 169804,
+    "sha256": "d8ae89a5fa12b41b688fbae197b48de88c557082261c3a0575984d1d5ca61358"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/label_flip/vs_only/rounds/trust_v1.jsonl": {
+    "bytes": 161451,
+    "sha256": "83ac7a331f2db4db0c636e88067952ba68ce4c710ac0f95cf3372e4bdaae19f1"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/label_flip/vs_only/summary.json": {
+    "bytes": 665,
+    "sha256": "8c93a0b82895d46f0f0664e216b3e8e3e326769eaedc2d4eb2c1ff2e9494d8d5"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/scaling/full_tas/manifest.json": {
+    "bytes": 9143,
+    "sha256": "bc1b0c2bded76166bf285bf85539f8e827b0d1f775ec1573b113c68a890fc11d"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/scaling/full_tas/round_metrics.json": {
+    "bytes": 170777,
+    "sha256": "26d1062a063cec0a382d9246ff63172a9bc6c64712408ee73969ae1ea908ac18"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/scaling/full_tas/rounds/trust_v1v2.jsonl": {
+    "bytes": 162424,
+    "sha256": "c434c8ff5f7188b929242644c64c8a338ef75fff10dd5d3ae0eece0d04e156e8"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/scaling/full_tas/summary.json": {
+    "bytes": 666,
+    "sha256": "435e62b415eecf4f5c3aad23dfd9675ac9c9a27cf31859c735b18e0e3d3710ca"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/scaling/learning_entry_check.json": {
+    "bytes": 83,
+    "sha256": "94fd4dcaccfd9a4519be06f3f75dce65c4027d7fa283ae53fb363928a91168e7"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/scaling/learning_entry_rounds.json": {
+    "bytes": 32191,
+    "sha256": "b8e9bf97521a2ec58382a2d897f90ae43ef74bb6f014ba5465424e1b07381f09"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/scaling/paired_consistency.json": {
+    "bytes": 156,
+    "sha256": "b92540e7d0ad287ac7f1d818bf38fbb82655368ce05e0e75de94fd12c090f345"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/scaling/reference/manifest.json": {
+    "bytes": 9143,
+    "sha256": "e297408cc5490871d336d8c12692847bbf915deec1b1ea4542b1b4e2dd161e15"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/scaling/reference/round_metrics.json": {
+    "bytes": 161010,
+    "sha256": "8fb882866d471a0152f3412ba892b5633ca21393aecde08077b54cbbfb863d1f"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/scaling/reference/rounds/noexecutor.jsonl": {
+    "bytes": 152657,
+    "sha256": "edfef1e2ee06c0f68119bab2fc6e310842c28d04b6f402b2ed3cf8a4a57406a7"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/scaling/reference/summary.json": {
+    "bytes": 622,
+    "sha256": "14bd95979787402f4d8d03e359a2b58d4f3d93fafc5f0fd40216e372f8cd1b2f"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/scaling/trust_only/manifest.json": {
+    "bytes": 9143,
+    "sha256": "ddae8c27a659b8aec6ad6bfe0e02b3551fb27e8b376d43847ea7cd2f6d05ace9"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/scaling/trust_only/round_metrics.json": {
+    "bytes": 166949,
+    "sha256": "6ff71f3d4d710b3fe816d0abea8cd2f75d5fd972ae7399c8d3e996d563882278"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/scaling/trust_only/rounds/trust_only.jsonl": {
+    "bytes": 158596,
+    "sha256": "45bad8b7dc980109e2cbfda0c6015474633304b9ba9200dd7f3cd1cbc7a2e436"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/scaling/trust_only/summary.json": {
+    "bytes": 669,
+    "sha256": "7e8a04262db698536de2968f300e6f82ab7b94e0becb0d30add66f64c1632a0d"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/scaling/vp_only/manifest.json": {
+    "bytes": 9141,
+    "sha256": "c0f894aab462a276f30111195241de17e9ca50fd4987480a0046a7303916e164"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/scaling/vp_only/round_metrics.json": {
+    "bytes": 166923,
+    "sha256": "7ceff4558f691be7bae54fd85930deb575539ae089be40d2354c6d32efbd4b9a"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/scaling/vp_only/rounds/trust_v2.jsonl": {
+    "bytes": 158570,
+    "sha256": "f9521567e397b8396452801ee04a72a845ef71e6b223c287478d616b0c94487e"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/scaling/vp_only/summary.json": {
+    "bytes": 691,
+    "sha256": "3a3286fc870e4158ee319ce7e4096fa8552927e915b54db191b11ba5ea1d0794"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/scaling/vs_only/manifest.json": {
+    "bytes": 9141,
+    "sha256": "014f501d09c09359c2c5f9c80e17ec8048dfd497bbd259bf618239d673c66da9"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/scaling/vs_only/round_metrics.json": {
+    "bytes": 170598,
+    "sha256": "7dfa6520f674b9f4169a4d89427eb9479b438d4207de4f558b30cdb1ea4cf213"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/scaling/vs_only/rounds/trust_v1.jsonl": {
+    "bytes": 162245,
+    "sha256": "73faf5b6e0d4f4be0492ff83874ca05ec9778fa1ef47313dfdb23921b0f6e06e"
+  },
+  "records/cap0/fashionmnist/matrix/fashionmnist/scaling/vs_only/summary.json": {
+    "bytes": 665,
+    "sha256": "7204543603b5862d18609cbf75fc27eda2cda1bab6bc66d7f3672a2f42ac5e8d"
+  },
+  "records/cap0/fashionmnist/preflight.json": {
+    "bytes": 137,
+    "sha256": "fc48f9d2d388c1e7c4ac3849d811f84a8432a9e74017c7fc69f5b51feb31e4ff"
+  },
+  "records/cap0/fashionmnist/progress.json": {
+    "bytes": 976,
+    "sha256": "96094e61e435ff855b9a369a97b30ac3f8de4b932f8b2591ac618d8a5bf11f01"
+  },
+  "records/cap0/fashionmnist/run_manifest.json": {
+    "bytes": 3539,
+    "sha256": "a2c70529a99c65ab8b6cee750420474a6fadac6bfb8aba552ecc90b3479b35af"
+  },
+  "records/cap0/independent_validation.json": {
+    "bytes": 3625,
+    "sha256": "edfc074bc2d0040bcd3d4f640be6dbd1347393b02cc23cc0ca742e4fb2f3dde6"
+  },
+  "records/cap0/independent_verified_summary.csv": {
+    "bytes": 4400,
+    "sha256": "1c310d785d3a24fe8f8048f64e2aeac83bda5fa046bc88ea9ddb714a6ffdad42"
+  },
+  "records/cap0/mnist/completed.json": {
+    "bytes": 1013,
+    "sha256": "c1b1b6c26a97a8a3469028718e2cae3526c0cb4b5401c7cd35f0f74b8e5a6185"
+  },
+  "records/cap0/mnist/matrix/mnist/label_flip/full_tas/manifest.json": {
+    "bytes": 9138,
+    "sha256": "6f2c75c93093be26f17125cefdbf08bd35f6c59ea8e95bfced8f0a2f031374e2"
+  },
+  "records/cap0/mnist/matrix/mnist/label_flip/full_tas/round_metrics.json": {
+    "bytes": 169664,
+    "sha256": "c8309fbc50d4d1d463610ccc0f338fbde2b4ed3747b7064bb3aa17f651a6ec32"
+  },
+  "records/cap0/mnist/matrix/mnist/label_flip/full_tas/rounds/trust_v1v2.jsonl": {
+    "bytes": 161311,
+    "sha256": "c3e73ae766ed8edcb4e31cf1870ef0c52944a6effb288b68d71d09ffdc189200"
+  },
+  "records/cap0/mnist/matrix/mnist/label_flip/full_tas/summary.json": {
+    "bytes": 667,
+    "sha256": "9a5d7038ab0fab381da0097f5f58f7d9e43507cdf07a837685150360758f2ec2"
+  },
+  "records/cap0/mnist/matrix/mnist/label_flip/learning_entry_check.json": {
+    "bytes": 83,
+    "sha256": "b6cb832a455e6b6fbe10d7928198c93f4e3da4b2ae7c4b8e9f89a4ee98ca07c8"
+  },
+  "records/cap0/mnist/matrix/mnist/label_flip/learning_entry_rounds.json": {
+    "bytes": 31979,
+    "sha256": "91331c4131a9043cc63470d8ebee6cc8854f858296cb1730b7e1e63123d3800e"
+  },
+  "records/cap0/mnist/matrix/mnist/label_flip/paired_consistency.json": {
+    "bytes": 152,
+    "sha256": "9fefc96792884077b2c054ea33fb29cb2bd9c08db758c3daab6b09d07f32552e"
+  },
+  "records/cap0/mnist/matrix/mnist/label_flip/reference/manifest.json": {
+    "bytes": 9138,
+    "sha256": "93b7ec39095ec0a4c74677b8f021bb9325dda7df1d38bcf72ba38e8a93744865"
+  },
+  "records/cap0/mnist/matrix/mnist/label_flip/reference/round_metrics.json": {
+    "bytes": 160334,
+    "sha256": "597decb2ec51b104b9abaead8761502c44eb50dae3908789a6a866806eaca7ba"
+  },
+  "records/cap0/mnist/matrix/mnist/label_flip/reference/rounds/noexecutor.jsonl": {
+    "bytes": 151981,
+    "sha256": "66828f24aeabdc1ac5f5d84b4c8dfae50abe7a37de299b72763d6951af2947d5"
+  },
+  "records/cap0/mnist/matrix/mnist/label_flip/reference/summary.json": {
+    "bytes": 622,
+    "sha256": "ae5807aafdfc5aee1177de5058a8951f8032823f3ab3bb628f5babfaa0da87c2"
+  },
+  "records/cap0/mnist/matrix/mnist/label_flip/trust_only/manifest.json": {
+    "bytes": 9138,
+    "sha256": "8652ea31b95f21604239a3b3131d0d05b6a3e235d0bd49f5ff35fa8e0b2489c1"
+  },
+  "records/cap0/mnist/matrix/mnist/label_flip/trust_only/round_metrics.json": {
+    "bytes": 167743,
+    "sha256": "ccda48d3a76c7aa7710bd8cbb67c4e2bda2f444d30fbddf694200b5eff83f551"
+  },
+  "records/cap0/mnist/matrix/mnist/label_flip/trust_only/rounds/trust_only.jsonl": {
+    "bytes": 159390,
+    "sha256": "653d2fa158360bf3b5098b04a1d23990f61b8d93c86c94369b898470622d9be7"
+  },
+  "records/cap0/mnist/matrix/mnist/label_flip/trust_only/summary.json": {
+    "bytes": 669,
+    "sha256": "b13035bcfc870ee4dbf9341f0af281c760405286ee941c192726d711bc19926d"
+  },
+  "records/cap0/mnist/matrix/mnist/label_flip/vp_only/manifest.json": {
+    "bytes": 9136,
+    "sha256": "6540cd6492f5d473cf4fc6e7e2b98b67118462c741682806b7861704fb11d21a"
+  },
+  "records/cap0/mnist/matrix/mnist/label_flip/vp_only/round_metrics.json": {
+    "bytes": 167421,
+    "sha256": "1852d9eed691d410b2555caac514e9249086638c9a2bcfc34496f269550171af"
+  },
+  "records/cap0/mnist/matrix/mnist/label_flip/vp_only/rounds/trust_v2.jsonl": {
+    "bytes": 159068,
+    "sha256": "871f4dae5d4e24c316a5f287ecf970cab11c7e853b7dd7ba6e26f3b3d5e2c005"
+  },
+  "records/cap0/mnist/matrix/mnist/label_flip/vp_only/summary.json": {
+    "bytes": 678,
+    "sha256": "9a2226650b59a7872a1ae7a163e3815205ec71e078c079e81d932414d2d789f9"
+  },
+  "records/cap0/mnist/matrix/mnist/label_flip/vs_only/manifest.json": {
+    "bytes": 9136,
+    "sha256": "15649fb1cbca0a57e91c38bd7d74f461c3790595dffbd17eab86c5c6456bdd05"
+  },
+  "records/cap0/mnist/matrix/mnist/label_flip/vs_only/round_metrics.json": {
+    "bytes": 169476,
+    "sha256": "160df7997d7c6d4ef1376faec7940429078cecf4516240a2598ffcd3310ec1ed"
+  },
+  "records/cap0/mnist/matrix/mnist/label_flip/vs_only/rounds/trust_v1.jsonl": {
+    "bytes": 161123,
+    "sha256": "0e4ed8cecf449ab9c63a35e16afa60182dbee4338cf3e277fa93570b252ccf60"
+  },
+  "records/cap0/mnist/matrix/mnist/label_flip/vs_only/summary.json": {
+    "bytes": 665,
+    "sha256": "01b224956212cd4454b63032ab1b2a164f18b7aaf4b8eb0f3ed56e026b7dabc6"
+  },
+  "records/cap0/mnist/matrix/mnist/scaling/full_tas/manifest.json": {
+    "bytes": 9135,
+    "sha256": "53607266a5a19852d846ce28e37035f304de95d431fa28817dbf2b8f90a72f22"
+  },
+  "records/cap0/mnist/matrix/mnist/scaling/full_tas/round_metrics.json": {
+    "bytes": 169882,
+    "sha256": "3763a1ddc4acbeb1c758a18ef76c696199c1b5584771e69dcb1d0e4d7c146871"
+  },
+  "records/cap0/mnist/matrix/mnist/scaling/full_tas/rounds/trust_v1v2.jsonl": {
+    "bytes": 161529,
+    "sha256": "5ecb42ce9cc8604ebdfe2ff635c96f6958fbc95d58e09eb13f05d1e33a6d5ca6"
+  },
+  "records/cap0/mnist/matrix/mnist/scaling/full_tas/summary.json": {
+    "bytes": 666,
+    "sha256": "075597855f265f2ea85b4b77006c03b1d36fce6e4d8ffe1180f2adecafd34b40"
+  },
+  "records/cap0/mnist/matrix/mnist/scaling/learning_entry_check.json": {
+    "bytes": 83,
+    "sha256": "b2fb48f85e32fb4afe822bec4a90ae2021cdbe204600b15b76bed3cafda69ab7"
+  },
+  "records/cap0/mnist/matrix/mnist/scaling/learning_entry_rounds.json": {
+    "bytes": 32098,
+    "sha256": "b6e929cf43e56029a309ba8f0ffa6f97474727e609c031396e514873159e3d65"
+  },
+  "records/cap0/mnist/matrix/mnist/scaling/paired_consistency.json": {
+    "bytes": 149,
+    "sha256": "81eeb67387a0db1cf1712453e56441e4241ad2fc46dd3940bd95622bf7b4c3c0"
+  },
+  "records/cap0/mnist/matrix/mnist/scaling/reference/manifest.json": {
+    "bytes": 9135,
+    "sha256": "13e11ac0be957e4c52abbce6c793de74a8cb9a68489f8e585d600dcd7dcdf412"
+  },
+  "records/cap0/mnist/matrix/mnist/scaling/reference/round_metrics.json": {
+    "bytes": 160354,
+    "sha256": "a2c84d069bcb03fd32c5706e588aa665e5872a6b12492d4948849d2a6a2eba0e"
+  },
+  "records/cap0/mnist/matrix/mnist/scaling/reference/rounds/noexecutor.jsonl": {
+    "bytes": 152001,
+    "sha256": "457414d22e1fa9a93a80f11ce6359405e04e7e7f0033f16b99e71f1427304efc"
+  },
+  "records/cap0/mnist/matrix/mnist/scaling/reference/summary.json": {
+    "bytes": 621,
+    "sha256": "5380384fac5d9918a7d744de1c6fac2b6823ffee2fd3f2c7dbdcf79fadce0b1c"
+  },
+  "records/cap0/mnist/matrix/mnist/scaling/trust_only/manifest.json": {
+    "bytes": 9135,
+    "sha256": "81b54a6770403d25f45cf86dc483c4715f0870e2cbae85f6bdab37d2d86c1aba"
+  },
+  "records/cap0/mnist/matrix/mnist/scaling/trust_only/round_metrics.json": {
+    "bytes": 167327,
+    "sha256": "f7ca67626bec90edebff33c8b526de9d8b0e3dd95afad2beed516a7bd1bd92e6"
+  },
+  "records/cap0/mnist/matrix/mnist/scaling/trust_only/rounds/trust_only.jsonl": {
+    "bytes": 158974,
+    "sha256": "8e4a81a37d127e1f70ba14fdaedc315c441060287e1c1c10db6f86a23c145c68"
+  },
+  "records/cap0/mnist/matrix/mnist/scaling/trust_only/summary.json": {
+    "bytes": 668,
+    "sha256": "64f8f2ce1b2e003cafd0d0637113a1901518a911541c7dac8d69fca4c8b75ab7"
+  },
+  "records/cap0/mnist/matrix/mnist/scaling/vp_only/manifest.json": {
+    "bytes": 9133,
+    "sha256": "9a710da426147157f18f023bea0c0bf480eb267dd9330a60523219ec1567aeb1"
+  },
+  "records/cap0/mnist/matrix/mnist/scaling/vp_only/round_metrics.json": {
+    "bytes": 166473,
+    "sha256": "6f1f5517d96f5483871beed3d74708fa5483475b955141bc4a7f9d20271cbf5d"
+  },
+  "records/cap0/mnist/matrix/mnist/scaling/vp_only/rounds/trust_v2.jsonl": {
+    "bytes": 158120,
+    "sha256": "5532080bc555996bfb5ecf7f8b9e88d5d9df047a05bdcf89dbb799f19e0e9d91"
+  },
+  "records/cap0/mnist/matrix/mnist/scaling/vp_only/summary.json": {
+    "bytes": 691,
+    "sha256": "b61fc5ca997abcf134e7f82f627a48f63624a05a529c43df20e5365dcbd97ad9"
+  },
+  "records/cap0/mnist/matrix/mnist/scaling/vs_only/manifest.json": {
+    "bytes": 9133,
+    "sha256": "3da83fbfeb64c2bf2261625e1d79359a1dc88b951691ea4f1d14c91f9413f5dd"
+  },
+  "records/cap0/mnist/matrix/mnist/scaling/vs_only/round_metrics.json": {
+    "bytes": 168557,
+    "sha256": "b526bfdfbb41f46864b7c5c82db30bed36e80369a43eaf459bdf0a5ede4e03c3"
+  },
+  "records/cap0/mnist/matrix/mnist/scaling/vs_only/rounds/trust_v1.jsonl": {
+    "bytes": 160204,
+    "sha256": "500699521312acc8c73d03d5e78c6b02330242c96b3c8564e06d3d5e5a92ae92"
+  },
+  "records/cap0/mnist/matrix/mnist/scaling/vs_only/summary.json": {
+    "bytes": 690,
+    "sha256": "67047fb2304e19a1a3d24bab136002dc9bbb4c7c216b68276869219147f4307a"
+  },
+  "records/cap0/mnist/mnist_partition_indices.json": {
+    "bytes": 649023,
+    "sha256": "9492372afc71888bb0b65636c629b9d747653815d9852b5814c381d66e780af1"
+  },
+  "records/cap0/mnist/mnist_partition_inventory.json": {
+    "bytes": 2224,
+    "sha256": "c687ebfbe46e2c7a817f639782d0f7ceb9209f7e1a61245ee5bbf473c475cb87"
+  },
+  "records/cap0/mnist/preflight.json": {
+    "bytes": 137,
+    "sha256": "fc48f9d2d388c1e7c4ac3849d811f84a8432a9e74017c7fc69f5b51feb31e4ff"
+  },
+  "records/cap0/mnist/progress.json": {
+    "bytes": 948,
+    "sha256": "0a39e84e27f99834b3c827dcab892daaf278c023f429fb5250d22165ee6d272d"
+  },
+  "records/cap0/mnist/run_manifest.json": {
+    "bytes": 3539,
+    "sha256": "93028dfb58ee4c416bb22ab19d38dbc6054e900a73b7217953579584c5e6c840"
+  },
+  "records/cap4/completed.json": {
+    "bytes": 1852,
+    "sha256": "bd4bce343c128fbdf048e2557c2527e8cb9d3c70280a4716b6a2c1112e652996"
+  },
+  "records/cap4/fashionmnist_partition_indices.json": {
+    "bytes": 649023,
+    "sha256": "ef437facd105604657f1dccb75aa7c45e044d53beda24c7fff7cda8754f3c5e2"
+  },
+  "records/cap4/fashionmnist_partition_inventory.json": {
+    "bytes": 2225,
+    "sha256": "3392a8b63ce2f5e2830c38c84d656b05b9f34b898cc511bcab8a37239aa8d421"
+  },
+  "records/cap4/independent_validation.json": {
+    "bytes": 4430,
+    "sha256": "4173089287468a028a48d5ad5cb300d8594e6472061cda562b547c9e7f451ae5"
+  },
+  "records/cap4/independent_verified_summary.csv": {
+    "bytes": 2164,
+    "sha256": "b0f74fe35cbac3400300372502d6c5e63df96ad37b5b47ef89c6738dab87dd05"
+  },
+  "records/cap4/matrix/fashionmnist/label_flip/full_tas/manifest.json": {
+    "bytes": 4708,
+    "sha256": "314c1f0daf32666e6a1a9b6ab9b5af5f75db87d3acaa5a2441df45f7956fa157"
+  },
+  "records/cap4/matrix/fashionmnist/label_flip/full_tas/original_manifest.json": {
+    "bytes": 8065,
+    "sha256": "5b902b815058854aeb7d84ae046b4f08e4fd4e16dfc98f606aa4e54dbad3f3d6"
+  },
+  "records/cap4/matrix/fashionmnist/label_flip/full_tas/round_metrics.json": {
+    "bytes": 143857,
+    "sha256": "697c55bf769ab2b7fb6222cff06f155884ee3c4ecdcd3591abb156bb4add244a"
+  },
+  "records/cap4/matrix/fashionmnist/label_flip/full_tas/summary.json": {
+    "bytes": 662,
+    "sha256": "1c367ecc01e11720bc065676f4fef771d32a90891a1278bb0d9bf03c52794814"
+  },
+  "records/cap4/matrix/fashionmnist/label_flip/learning_entry_check.json": {
+    "bytes": 83,
+    "sha256": "7e41c6f380b75e72ef550e6a240d68a99441ffb8f024115cdacb98146014d623"
+  },
+  "records/cap4/matrix/fashionmnist/label_flip/learning_entry_rounds.json": {
+    "bytes": 32244,
+    "sha256": "7f2fda5d39128f067ec5be6c9320049ff887f85c452ce2e356af7cf4ad95259c"
+  },
+  "records/cap4/matrix/fashionmnist/label_flip/paired_consistency.json": {
+    "bytes": 159,
+    "sha256": "e7a64eec91149a8b50b4f02dd4a29f98ead984ebdd3ed61b71fe9712207c1af9"
+  },
+  "records/cap4/matrix/fashionmnist/label_flip/reference/manifest.json": {
+    "bytes": 4709,
+    "sha256": "e2c8b70a21c7f50036a89c1ab6c2550f9dfbba6caa953c340d7f8549c9893fa2"
+  },
+  "records/cap4/matrix/fashionmnist/label_flip/reference/original_manifest.json": {
+    "bytes": 8148,
+    "sha256": "f1dea39a0cc1162f489643bfe7b3be0d9c0d5ce0c83bfe749e2eff2ffa910af2"
+  },
+  "records/cap4/matrix/fashionmnist/label_flip/reference/round_metrics.json": {
+    "bytes": 136663,
+    "sha256": "fd492100aa0cc646913f80f479ad8b0fa45b03b6ad0e0dcede98ad141013ee5a"
+  },
+  "records/cap4/matrix/fashionmnist/label_flip/reference/summary.json": {
+    "bytes": 618,
+    "sha256": "cf7e46a7f31f7840fd107e883d3f5b8f2dd7fe6890d5b9eebda77a05af8ff63c"
+  },
+  "records/cap4/matrix/fashionmnist/label_flip/trust_only/manifest.json": {
+    "bytes": 4710,
+    "sha256": "7acfd126c2ab7f90ac3b191975be2238179ff9239108b47901ed53dbac69cf77"
+  },
+  "records/cap4/matrix/fashionmnist/label_flip/trust_only/original_manifest.json": {
+    "bytes": 8069,
+    "sha256": "5afd28d7c8e3a59cec49b8f09660aff9b0e05977849474a6932429781640ee8f"
+  },
+  "records/cap4/matrix/fashionmnist/label_flip/trust_only/round_metrics.json": {
+    "bytes": 137322,
+    "sha256": "7a374b6bf48256a77ab7d18fedac06da394d2ecff54dfa4f4442a61bb700cacd"
+  },
+  "records/cap4/matrix/fashionmnist/label_flip/trust_only/summary.json": {
+    "bytes": 655,
+    "sha256": "b27deeca0326c1eaf1365efbc06d121d17c84f8d073c0de8d095ffde998e4878"
+  },
+  "records/cap4/matrix/fashionmnist/label_flip/vp_only/manifest.json": {
+    "bytes": 8642,
+    "sha256": "b9f9c663230b1f2052716d07afef697b28ad6ac32a4703c8028db2d6bfb51497"
+  },
+  "records/cap4/matrix/fashionmnist/label_flip/vp_only/round_metrics.json": {
+    "bytes": 135773,
+    "sha256": "4aad43231e1f6d21f27e59c1ee176a08cbf2bdfb3a325b0eaede5a4cca08fd4d"
+  },
+  "records/cap4/matrix/fashionmnist/label_flip/vp_only/rounds/trust_v2.jsonl": {
+    "bytes": 127420,
+    "sha256": "88374724b555824226eacc49160848a52f2906511ac0fab2e1eb86bcc0a1b462"
+  },
+  "records/cap4/matrix/fashionmnist/label_flip/vp_only/summary.json": {
+    "bytes": 681,
+    "sha256": "57c186f0c0109086167a1575214ef210047020f8ea3384143466bc491a9a9f51"
+  },
+  "records/cap4/matrix/fashionmnist/label_flip/vs_only/manifest.json": {
+    "bytes": 8642,
+    "sha256": "852e826afab2069ecf1c4f34f33d60aac1c5d5b85d17c7ffb5dfa7ddab725f58"
+  },
+  "records/cap4/matrix/fashionmnist/label_flip/vs_only/round_metrics.json": {
+    "bytes": 138597,
+    "sha256": "e810bf5f071008b1e4ff561db61542a4350364d8a28a87d02b4446be519facc2"
+  },
+  "records/cap4/matrix/fashionmnist/label_flip/vs_only/rounds/trust_v1.jsonl": {
+    "bytes": 130244,
+    "sha256": "ae0654d0fd11e995d0f3190aed2d6e968b34187378fa66cec8b1892ebd113b74"
+  },
+  "records/cap4/matrix/fashionmnist/label_flip/vs_only/summary.json": {
+    "bytes": 676,
+    "sha256": "0799b8eab942d39c099126a1e4ed2e7f2dd43124af4b1493ee8d87e703f7abee"
+  },
+  "records/cap4/matrix/fashionmnist/scaling/full_tas/manifest.json": {
+    "bytes": 8641,
+    "sha256": "214b51d5b889dbad9a75563f226d3b04ff2ac45ae7eec669f2448713c9884a38"
+  },
+  "records/cap4/matrix/fashionmnist/scaling/full_tas/round_metrics.json": {
+    "bytes": 137029,
+    "sha256": "1cf157c881ec93c2074d33bf1a36623880b9b45c25d45985b4a1d143c22fcf34"
+  },
+  "records/cap4/matrix/fashionmnist/scaling/full_tas/rounds/trust_v1v2.jsonl": {
+    "bytes": 128676,
+    "sha256": "b854d6e4e77470bbab115bd7ada97473c9e8863b7eccb964d07d511d00867a59"
+  },
+  "records/cap4/matrix/fashionmnist/scaling/full_tas/summary.json": {
+    "bytes": 665,
+    "sha256": "af08df422dbb5403e46f626849d01e0b5c7c6415bd5454f0dcbe71acbdd00d61"
+  },
+  "records/cap4/matrix/fashionmnist/scaling/learning_entry_check.json": {
+    "bytes": 83,
+    "sha256": "e8a0e60a908e08f474215754b06c287a77cfac21fb7d71223b62703e7b429515"
+  },
+  "records/cap4/matrix/fashionmnist/scaling/learning_entry_rounds.json": {
+    "bytes": 32235,
+    "sha256": "e8648884b2ecbef9d55c34f295b973ec062bd130f1f2f4c0e6fb8cb174cea284"
+  },
+  "records/cap4/matrix/fashionmnist/scaling/paired_consistency.json": {
+    "bytes": 156,
+    "sha256": "b92540e7d0ad287ac7f1d818bf38fbb82655368ce05e0e75de94fd12c090f345"
+  },
+  "records/cap4/matrix/fashionmnist/scaling/reference/manifest.json": {
+    "bytes": 8641,
+    "sha256": "7186f06f24cee679de8779ffa056d7c445bae5d2ab120c28f560f58eb871a55f"
+  },
+  "records/cap4/matrix/fashionmnist/scaling/reference/round_metrics.json": {
+    "bytes": 129639,
+    "sha256": "2fc255d1430ad80e03224f6064625867ade97565f379e00784d47ec337e8769d"
+  },
+  "records/cap4/matrix/fashionmnist/scaling/reference/rounds/noexecutor.jsonl": {
+    "bytes": 121286,
+    "sha256": "c7f627b955b21ebc8c126c4a0f2ba9ad2b30cc73b710c3dc7c4d6bbee04a99f2"
+  },
+  "records/cap4/matrix/fashionmnist/scaling/reference/summary.json": {
+    "bytes": 622,
+    "sha256": "0a4e1838132d1e37267392d1d265bb63cf29dd6330c3d315162fc43f582b3871"
+  },
+  "records/cap4/matrix/fashionmnist/scaling/trust_only/manifest.json": {
+    "bytes": 8641,
+    "sha256": "04793f5dbbf677c48070468ee996153e74ddf5a037088f47c28a5333fd2f824b"
+  },
+  "records/cap4/matrix/fashionmnist/scaling/trust_only/round_metrics.json": {
+    "bytes": 129239,
+    "sha256": "36d9f504657cb5175aab3c79db0eeab67586b23877f395d5250ecff15f057a3c"
+  },
+  "records/cap4/matrix/fashionmnist/scaling/trust_only/rounds/trust_only.jsonl": {
+    "bytes": 120886,
+    "sha256": "c2f78e54788048249a8e960340baf431ba3e3cbc5cd4049a59676d53b90bca64"
+  },
+  "records/cap4/matrix/fashionmnist/scaling/trust_only/summary.json": {
+    "bytes": 669,
+    "sha256": "251fa7af353c2048c3ebf8c3a4adc3870a2bb3a9ca3901c2b80e761117595d36"
+  },
+  "records/cap4/matrix/fashionmnist/scaling/vp_only/manifest.json": {
+    "bytes": 8639,
+    "sha256": "e9015e1e497d28da2c397c7148e9f5bb911f7241ef659a158175a1d9d4810875"
+  },
+  "records/cap4/matrix/fashionmnist/scaling/vp_only/round_metrics.json": {
+    "bytes": 132895,
+    "sha256": "65636d17c43d466ced223732f39919181df373065467653a7783061c77c0f476"
+  },
+  "records/cap4/matrix/fashionmnist/scaling/vp_only/rounds/trust_v2.jsonl": {
+    "bytes": 124542,
+    "sha256": "169d53efac1445e904122cae5f9d9b9728f376488371f2fa0f8d223d046902fb"
+  },
+  "records/cap4/matrix/fashionmnist/scaling/vp_only/summary.json": {
+    "bytes": 680,
+    "sha256": "2d1b7d42fad2c927eef1afc07ec32acc6a325386d102d3f1760e824d8ffd9204"
+  },
+  "records/cap4/matrix/fashionmnist/scaling/vs_only/manifest.json": {
+    "bytes": 8639,
+    "sha256": "b05a2dd9679e76f6ff088802169b59437a901ec5de00870546c5594dfc723627"
+  },
+  "records/cap4/matrix/fashionmnist/scaling/vs_only/round_metrics.json": {
+    "bytes": 136043,
+    "sha256": "6633a674f5afc06b13c859953c8a6b5c5b6f2ed822f7e7d952728315c6e107b8"
+  },
+  "records/cap4/matrix/fashionmnist/scaling/vs_only/rounds/trust_v1.jsonl": {
+    "bytes": 127690,
+    "sha256": "01aec7baa83ef26134c473abe6cb058f58c74cc845a6d74997a4601b91ef9fe4"
+  },
+  "records/cap4/matrix/fashionmnist/scaling/vs_only/summary.json": {
+    "bytes": 689,
+    "sha256": "a4e6c6b21aa0b693aaac580e0363259a937544024c685f2246a7ba677bfbdce9"
+  },
+  "records/cap4/matrix/mnist/label_flip/full_tas/manifest.json": {
+    "bytes": 8636,
+    "sha256": "8bdfdfffb7d0231bcef2a755230cdd6f4570fbe1180b501fdce26fdc07d3b8de"
+  },
+  "records/cap4/matrix/mnist/label_flip/full_tas/round_metrics.json": {
+    "bytes": 138219,
+    "sha256": "3536c3789a86fed0f1937d97739f6a6247d6c73cfcb4f67aaf41b6f44be4900d"
+  },
+  "records/cap4/matrix/mnist/label_flip/full_tas/rounds/trust_v1v2.jsonl": {
+    "bytes": 129866,
+    "sha256": "8c00f10ffc3dcf77928878314a0c06b56558fbdf4d158cc7ee9f8103edffa36c"
+  },
+  "records/cap4/matrix/mnist/label_flip/full_tas/summary.json": {
+    "bytes": 666,
+    "sha256": "ad9f315c24917d233ddb155b8dc132fb76f16305deb18d5ce92e020490de76b9"
+  },
+  "records/cap4/matrix/mnist/label_flip/learning_entry_check.json": {
+    "bytes": 82,
+    "sha256": "d6ea421f8664699be66d7e1f562d5c251a9e1d6adf02b19701c7c90636db84f1"
+  },
+  "records/cap4/matrix/mnist/label_flip/learning_entry_rounds.json": {
+    "bytes": 32189,
+    "sha256": "c2d381763c08b155544cb3684b18ae75baabcdf19c7d4dff1c2b00b843b6a9be"
+  },
+  "records/cap4/matrix/mnist/label_flip/paired_consistency.json": {
+    "bytes": 152,
+    "sha256": "9fefc96792884077b2c054ea33fb29cb2bd9c08db758c3daab6b09d07f32552e"
+  },
+  "records/cap4/matrix/mnist/label_flip/reference/manifest.json": {
+    "bytes": 8636,
+    "sha256": "6f95c6aa5ae07f669940354ad9a59aa6c4d29a86185ad6388c95f724c77e6157"
+  },
+  "records/cap4/matrix/mnist/label_flip/reference/round_metrics.json": {
+    "bytes": 130983,
+    "sha256": "571624cd289888b21454419ae7a8e281da9062de55e529559085137f4a19d452"
+  },
+  "records/cap4/matrix/mnist/label_flip/reference/rounds/noexecutor.jsonl": {
+    "bytes": 122630,
+    "sha256": "76199a29ab4b0ab3aa7316e04cc1920b24f429428b90b2d1883013755b5da26f"
+  },
+  "records/cap4/matrix/mnist/label_flip/reference/summary.json": {
+    "bytes": 622,
+    "sha256": "8e941a7d3cde184b05ecc569cd945330d9a4fce2e111b6f0164a8905b8940719"
+  },
+  "records/cap4/matrix/mnist/label_flip/trust_only/manifest.json": {
+    "bytes": 8636,
+    "sha256": "b87c94b00fb575fb72f3472f1d1bc5c735d201753776c891b2bd4ef680a1b932"
+  },
+  "records/cap4/matrix/mnist/label_flip/trust_only/round_metrics.json": {
+    "bytes": 132671,
+    "sha256": "835b6c91acfcb44329ed5751cfd16bd5aa5807611f0dd9038d60e945a4792ecd"
+  },
+  "records/cap4/matrix/mnist/label_flip/trust_only/rounds/trust_only.jsonl": {
+    "bytes": 124318,
+    "sha256": "a5ad48b0d458f3dc87d5c841a3aa3695474745f2eafce0e892331be5aaf4116c"
+  },
+  "records/cap4/matrix/mnist/label_flip/trust_only/summary.json": {
+    "bytes": 679,
+    "sha256": "39d335997134a0cce3aca4a675976ccbf530c561a2c0a8e4b639286c4c550af9"
+  },
+  "records/cap4/matrix/mnist/label_flip/vp_only/manifest.json": {
+    "bytes": 8634,
+    "sha256": "8c97277d3c14613fc3ffa54b06f38c92288bad0b62a0b3c5117fb149b09dbc1c"
+  },
+  "records/cap4/matrix/mnist/label_flip/vp_only/round_metrics.json": {
+    "bytes": 134666,
+    "sha256": "60d93bcad5956560909620d0e501d7500298e1080d0c35cbdf1be02e235069ac"
+  },
+  "records/cap4/matrix/mnist/label_flip/vp_only/rounds/trust_v2.jsonl": {
+    "bytes": 126313,
+    "sha256": "a3897c3fa2dff6d9ccf7c88ced3d092a8f953c0cef3c8112bd133455f89ed5c4"
+  },
+  "records/cap4/matrix/mnist/label_flip/vp_only/summary.json": {
+    "bytes": 690,
+    "sha256": "06b0d0b78fde6eb3b2a183f84cb3238d827aad5e53cd6c97125c82d4442044c1"
+  },
+  "records/cap4/matrix/mnist/label_flip/vs_only/manifest.json": {
+    "bytes": 8634,
+    "sha256": "74ec1df570f272002c0e93a1978600d0e18f774e7bf82dc1babe489fcc008358"
+  },
+  "records/cap4/matrix/mnist/label_flip/vs_only/round_metrics.json": {
+    "bytes": 138044,
+    "sha256": "b272cb027ef6c1e50c66f97e553fafa050af5d03eca991ce18888bb2db805bd9"
+  },
+  "records/cap4/matrix/mnist/label_flip/vs_only/rounds/trust_v1.jsonl": {
+    "bytes": 129691,
+    "sha256": "2be3a452c4d1363fd4bdaadc77bda5277537e5c707fe5d458c3a70678b620fcf"
+  },
+  "records/cap4/matrix/mnist/label_flip/vs_only/summary.json": {
+    "bytes": 665,
+    "sha256": "318057e657149d5846080b317222bf4f83d32cd9ad1cb404019b60c69fe300c2"
+  },
+  "records/cap4/matrix/mnist/scaling/full_tas/manifest.json": {
+    "bytes": 8633,
+    "sha256": "6e44142bf54a20ef3bfe459cf6d4bb1712c50c67b876bb2e5294d8f8f111aab8"
+  },
+  "records/cap4/matrix/mnist/scaling/full_tas/round_metrics.json": {
+    "bytes": 136794,
+    "sha256": "b9d38eaea3c7b1964aeccef3a089af96a1d832a441ae5a926a9845028e1acc76"
+  },
+  "records/cap4/matrix/mnist/scaling/full_tas/rounds/trust_v1v2.jsonl": {
+    "bytes": 128441,
+    "sha256": "11925c0b5aa023fc5b0d22984431eda0b28fa350ccffce3c3e456b5972301c6d"
+  },
+  "records/cap4/matrix/mnist/scaling/full_tas/summary.json": {
+    "bytes": 676,
+    "sha256": "a377dbec8aed32fea0fc671808615983aab3286ec383ec075123ebabc572ed81"
+  },
+  "records/cap4/matrix/mnist/scaling/learning_entry_check.json": {
+    "bytes": 83,
+    "sha256": "0c1e96c045971e6f13e21841169e763420c8e6d9ad70beba2dc7368bc9113f9a"
+  },
+  "records/cap4/matrix/mnist/scaling/learning_entry_rounds.json": {
+    "bytes": 31972,
+    "sha256": "f71246e3e5b6c7189de52abf855736bb6cde53b09b43382ae9be9993ad7cf197"
+  },
+  "records/cap4/matrix/mnist/scaling/paired_consistency.json": {
+    "bytes": 149,
+    "sha256": "81eeb67387a0db1cf1712453e56441e4241ad2fc46dd3940bd95622bf7b4c3c0"
+  },
+  "records/cap4/matrix/mnist/scaling/reference/manifest.json": {
+    "bytes": 8633,
+    "sha256": "b974ac155468291bf702837e418140c102e4e8d911cdc54b1318601bbb3c4721"
+  },
+  "records/cap4/matrix/mnist/scaling/reference/round_metrics.json": {
+    "bytes": 129181,
+    "sha256": "fe6d86b8344f7265f0d06fd271f3f423e19d452389f5115d227062efcf2c82fc"
+  },
+  "records/cap4/matrix/mnist/scaling/reference/rounds/noexecutor.jsonl": {
+    "bytes": 120828,
+    "sha256": "b3315ce82b89b95133dc8b44f01ae1234e74fd9c957d12ba49ee8a3de730bbf0"
+  },
+  "records/cap4/matrix/mnist/scaling/reference/summary.json": {
+    "bytes": 632,
+    "sha256": "4bfab2e8716707868e5cc7e4490d39592a35fbbc50e1504e59e21fde528bf262"
+  },
+  "records/cap4/matrix/mnist/scaling/trust_only/manifest.json": {
+    "bytes": 8633,
+    "sha256": "39ec1091c4c2b7fddd07423178b108ccfd79c22c4bc6d82cbc1b66d7c841496e"
+  },
+  "records/cap4/matrix/mnist/scaling/trust_only/round_metrics.json": {
+    "bytes": 130880,
+    "sha256": "30242fdfb196bb4d3b48cf3871e72e8688c2733dbca4a22187463935fede2503"
+  },
+  "records/cap4/matrix/mnist/scaling/trust_only/rounds/trust_only.jsonl": {
+    "bytes": 122527,
+    "sha256": "cd13f3d8c071c89cbe6fed5b9bc40b0bf8bf012c3cd0d98440dd4e3b981ae6eb"
+  },
+  "records/cap4/matrix/mnist/scaling/trust_only/summary.json": {
+    "bytes": 669,
+    "sha256": "e2dfecbd29e911a34585fefb44f75bcc1021923cb1ef1d65c5784a6da1ccb69a"
+  },
+  "records/cap4/matrix/mnist/scaling/vp_only/manifest.json": {
+    "bytes": 8631,
+    "sha256": "f44ce9fa2b8d6598469ed7f387fc798ac7701d1846cd9ed64f99cc7112c0c137"
+  },
+  "records/cap4/matrix/mnist/scaling/vp_only/round_metrics.json": {
+    "bytes": 133328,
+    "sha256": "fc281d7ffcb2ded53b524e5c555435db7f15f7bf9e2c3a99f7e12e77c2ece29d"
+  },
+  "records/cap4/matrix/mnist/scaling/vp_only/rounds/trust_v2.jsonl": {
+    "bytes": 124975,
+    "sha256": "07996dacd0d778e6cd984aafa05fece7a852479d5445b08504fc56e2032bdc73"
+  },
+  "records/cap4/matrix/mnist/scaling/vp_only/summary.json": {
+    "bytes": 675,
+    "sha256": "946b4e56493bca37d2f025f2fc94dede5e135c00019700abdbc442efd91e0bdd"
+  },
+  "records/cap4/matrix/mnist/scaling/vs_only/manifest.json": {
+    "bytes": 8631,
+    "sha256": "6592a7dedffb71e49ddbf076282fc59820f1352e4355a98a6c6bee077333f8d6"
+  },
+  "records/cap4/matrix/mnist/scaling/vs_only/round_metrics.json": {
+    "bytes": 135831,
+    "sha256": "62dd928342883bda4cf79637437b24ee8269bde7d1b9df5aeccf5be8b782b5df"
+  },
+  "records/cap4/matrix/mnist/scaling/vs_only/rounds/trust_v1.jsonl": {
+    "bytes": 127478,
+    "sha256": "8f8c18acd178e6b7242e17f78a368f621b7e53bc17543f7de648c425981376c5"
+  },
+  "records/cap4/matrix/mnist/scaling/vs_only/summary.json": {
+    "bytes": 689,
+    "sha256": "260140696520bba8a52b1699fccc9c8cb6a5749b084e9f062233bb114a330427"
+  },
+  "records/cap4/mnist_partition_indices.json": {
+    "bytes": 649023,
+    "sha256": "9492372afc71888bb0b65636c629b9d747653815d9852b5814c381d66e780af1"
+  },
+  "records/cap4/mnist_partition_inventory.json": {
+    "bytes": 2224,
+    "sha256": "c687ebfbe46e2c7a817f639782d0f7ceb9209f7e1a61245ee5bbf473c475cb87"
+  },
+  "records/cap4/preflight.json": {
+    "bytes": 137,
+    "sha256": "fc48f9d2d388c1e7c4ac3849d811f84a8432a9e74017c7fc69f5b51feb31e4ff"
+  },
+  "records/cap4/progress.json": {
+    "bytes": 1787,
+    "sha256": "da4c1bc8a2289a8e3882468dc00688a90b658f66119cdbdb0eba234aecd3dba6"
+  },
+  "records/cap4/run_manifest.json": {
+    "bytes": 3037,
+    "sha256": "f056a86adace2f7f4a0bc66136798e59b44cc5a3794745395dd3cb350f7b2c60"
+  },
+  "reproduce.py": {
+    "bytes": 1220,
+    "sha256": "4e966b00186ae9e3bf724bd45d691b17ccf0459618d5e1c99ff1d8c88e972adf"
+  },
+  "verify.py": {
+    "bytes": 4183,
+    "sha256": "7f31f6a9397671390ac9059656d220954193300ade496557c5bd2a33554c0a05"
+  }
+}

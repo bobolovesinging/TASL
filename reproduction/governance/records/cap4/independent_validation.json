@@ -1,0 +1,128 @@
+{
+  "status": "PARTIALLY_REPRODUCED",
+  "scope": "C2 final-implementation two-dataset single-seed matrix; no arbitrary robustness or accuracy-ranking claim",
+  "archive_sha256": "bbc8ae5368c9fd7a2ed6c11e15f2d7b5768290edb71d20341aa32f9ca9714e82",
+  "verified_files": 130,
+  "logical_conditions": 20,
+  "new_conditions": 17,
+  "reused_conditions": 3,
+  "paired_checks": [
+    {
+      "dataset": "mnist",
+      "attack": "label_flip",
+      "full_tas_reference_state_matches": 50,
+      "learning_reference_state_matches": 50,
+      "attacked": 30,
+      "honest": 20
+    },
+    {
+      "dataset": "mnist",
+      "attack": "scaling",
+      "full_tas_reference_state_matches": 50,
+      "learning_reference_state_matches": 50,
+      "attacked": 30,
+      "honest": 20
+    },
+    {
+      "dataset": "fashionmnist",
+      "attack": "label_flip",
+      "full_tas_reference_state_matches": 50,
+      "learning_reference_state_matches": 50,
+      "attacked": 30,
+      "honest": 20
+    },
+    {
+      "dataset": "fashionmnist",
+      "attack": "scaling",
+      "full_tas_reference_state_matches": 50,
+      "learning_reference_state_matches": 50,
+      "attacked": 30,
+      "honest": 20
+    }
+  ],
+  "full_tas_attacks_total": 120,
+  "full_tas_intercepted_total": 120,
+  "full_tas_honest_accepted_total": 80,
+  "full_tas_honest_false_rejected_total": 0,
+  "full_tas_complete_state_matches_total": 200,
+  "independent_learning_state_matches_total": 200,
+  "guard_status": {
+    "name": "matrix_gpu0",
+    "state": "completed",
+    "gpu": 0,
+    "max_temperature_C": 66,
+    "supervisor_pid": 1504223,
+    "started_utc": "2026-10-29T02:50:13.254498+00:00",
+    "temperature_C": 55,
+    "last_sample_utc": "2026-10-29T03:10:38.191516+00:00",
+    "pid": 1504225,
+    "command": [
+      "/home/njit/tof/envs/tof-depthcad/bin/python",
+      "-u",
+      "/home/njit/round2_C2_matrix_20261029/run_matrix.py"
+    ],
+    "exit_code": 0,
+    "finished_utc": "2026-10-29T03:10:38.191740+00:00"
+  },
+  "elapsed_seconds": 1220.6382975187153,
+  "source_hashes_match": true,
+  "all_20_metrics_recomputed": true,
+  "all_480_nonreference_injected_proposals_meaningfully_tampered": true,
+  "interpretation": [
+    {
+      "dataset": "mnist",
+      "attack": "label_flip",
+      "full_minus_trust_avg": 1.2069999999999936,
+      "trust_attacks_after_client_exclusion": 27,
+      "trust_attacks_only_honest_targets": 27
+    },
+    {
+      "dataset": "mnist",
+      "attack": "scaling",
+      "full_minus_trust_avg": -1.2267999999999972,
+      "trust_attacks_after_client_exclusion": 29,
+      "trust_attacks_only_honest_targets": 29
+    },
+    {
+      "dataset": "fashionmnist",
+      "attack": "label_flip",
+      "full_minus_trust_avg": 3.276600000000009,
+      "trust_attacks_after_client_exclusion": 27,
+      "trust_attacks_only_honest_targets": 27
+    },
+    {
+      "dataset": "fashionmnist",
+      "attack": "scaling",
+      "full_minus_trust_avg": -1.0297999999999945,
+      "trust_attacks_after_client_exclusion": 29,
+      "trust_attacks_only_honest_targets": 29
+    }
+  ],
+  "limitations": [
+    "Only seed42, 40% malicious clients, two grayscale datasets, single host.",
+    "FullTAS restores the reference exactly; its Avg is not uniformly highest.",
+    "Both Scaling trust-only runs have higher Avg than FullTAS despite genuine protocol tampering.",
+    "After malicious clients are excluded, Executor attacks reweight remaining honest client updates. This is an integrity violation but does not guarantee lower test accuracy.",
+    "Two Vs-only conditions reach full coverage; these traces do not establish that both audit roles are necessary in every scenario."
+  ],
+  "claims": {
+    "C2_complete_state_consistency": {
+      "status": "CLAIM_REPRODUCED_WITHIN_TOLERANCE",
+      "observed": 200,
+      "expected": 200
+    },
+    "independent_learning_entry_consistency": {
+      "status": "CLAIM_REPRODUCED_WITHIN_TOLERANCE",
+      "observed": 200,
+      "expected": 200
+    },
+    "universal_accuracy_superiority": {
+      "status": "CLAIM_NOT_REPRODUCED",
+      "scope": "Exploratory ranking; not the primary C2 acceptance criterion"
+    },
+    "both_auditors_needed_in_every_scenario": {
+      "status": "INCONCLUSIVE",
+      "scope": "Vs alone covers both LF traces; Vp alone covers MNIST Scaling"
+    }
+  }
+}

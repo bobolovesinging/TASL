@@ -1,0 +1,26 @@
+{
+  "name": "vs_only",
+  "rounds": 50,
+  "avg_accuracy": 66.3898,
+  "best_accuracy": 80.43,
+  "seconds": 95.35923304688185,
+  "reused": false,
+  "honest_proposals": 20,
+  "attacked_proposals": 30,
+  "meaningful_attacked_proposals": 30,
+  "true_rejections": 30,
+  "false_rejections": 0,
+  "false_acceptances": 0,
+  "honest_acceptance": 1.0,
+  "false_rejection_rate": 0.0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "skipped": 0,
+  "norm_leak_rounds": 0,
+  "attack_types": {
+    "A1": 10,
+    "A2": 10,
+    "A3": 10
+  },
+  "interpretation": "Interpret alongside paired complete-state and meaningful-tampering checks; process completion is not a scientific conclusion."
+}

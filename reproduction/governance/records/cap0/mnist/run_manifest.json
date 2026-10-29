@@ -1,0 +1,73 @@
+{
+  "started_utc": "2026-10-29T04:09:52.531046+00:00",
+  "configuration": {
+    "comment": "R4 second-round C2; controlled fixed-participation Executor stress test",
+    "datasets": [
+      "fashionmnist",
+      "mnist"
+    ],
+    "client_attacks": [
+      "scaling",
+      "label_flip"
+    ],
+    "groups": [
+      "noexecutor",
+      "trust_only",
+      "trust_v1",
+      "trust_v2",
+      "trust_v1v2"
+    ],
+    "seed": 42,
+    "clients": 10,
+    "byzantine_clients": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rounds": 50,
+    "alpha": 0.3,
+    "local_epochs": 2,
+    "batch_size": 128,
+    "lr": 0.02,
+    "momentum": 0.0,
+    "weight_decay": 0.0,
+    "exclusion_enabled": false,
+    "exclusion_cap": 0,
+    "client_scaling_factor": 5.0,
+    "client_attack_start": 1,
+    "post_ema_norm_mask": true,
+    "screen_tau": 0.6,
+    "ema_alpha": 0.7,
+    "executor_schedule": "30 attacked rounds, 10 each A1/A2/A3; 20 honest rounds; same schedule across groups",
+    "no_defense": "omitted as requested",
+    "reuse": "None; all fixed-participation conditions freshly run",
+    "preflight": "7 C1 regressions, independent-role regression, 3-round paired smoke on both datasets; no scientific ranking inferred from smoke",
+    "acceptance": "Full TAS 50/50 complete-state match to honest Executor before proceeding; independent learning entry state match; report actual TP/FP/FN/TN and meaningful attacks",
+    "resource_budget": "502 GPU0 Fashion-MNIST; GPU1 MNIST starts only after Fashion Scaling paired pilot passes; 4 CPU threads per worker; per-worker six-hour thermal-protected limit; total max2 GPUs and 2GiB outputs; no newserver use",
+    "destination": "/home/njit/round2_C2_fixed_v2_20261029",
+    "scope": "Keep the final trust/audit/recovery implementation; disable only permanent exclusion in all groups to isolate sustained malicious-Executor effects. Do not relabel as exclusion-enabled final training.",
+    "preflight_correction": "A3 targets intentionally include four malicious clients and two suppressed honest clients. Require all four declared malicious clients remain active/targeted; do not require the entire target list to be malicious. Attack generator unchanged."
+  },
+  "source_sha256": {
+    "remote_start.py": "32cb2ad676ddace6f57540cc3d426ef4862e12525a2397f8288bdafaf10cd8ba",
+    "start_job.py": "4c84d84c727b721facdf7874e9ac626431ccfcc205ce4b31216e3f102d5020b7",
+    "job_monitor.py": "eddf38f03dcaaed18300a3703621f435616a0f1a22b80d2144f23e2348163ac8",
+    "run_matrix.py": "baf1155af451bd15ab970ebc5da23721fcde3bcb3c7a293dd59bc82164a0a927",
+    "test_comment1_policy.py": "a4b1badfed9d76c42960eae0973f0232eefad46c7f6f6454085fd9eb8ac27c34",
+    "run_experiments.py": "746b0e263ad2af0f6af8299cb418e17f1e7d54a84ce605fd27cfc40c6ed22011",
+    "test_final_protocol.py": "29617a20cc2767b695da6a8f47212f85e85e080f9431d9331cc340f978c22e96",
+    "state_digest.py": "a7fe2245b9e8c44f230e12b987a59b3aebaaa55c91f9c5bad10ba70a1ec2a562",
+    "scripts/exp2/exp2_run.py": "33e948426bf328da0a3f298fc10a490c04b1e553c53ad780fadb3ade662b46ef",
+    "scripts/exp3/exp3_governance_tasv2.py": "7aff55451783a28d80e3211cae62036772fcab665769295e7809e59e1b5bfcd4",
+    "core/model.py": "8034c1028c95cba2b8c9b0654b9991a4d40f06284e81b9ed3d55ed0a5d77ea8d"
+  },
+  "environment": {
+    "host": "njit-506-1",
+    "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]",
+    "torch": "2.5.1+cu121",
+    "numpy": "1.26.4",
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "CUDA_VISIBLE_DEVICES": "1"
+  }
+}

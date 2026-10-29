@@ -1,0 +1,47 @@
+{
+  "comment": "Reviewer 4 second-round Comment 2",
+  "datasets": [
+    "fashionmnist",
+    "mnist"
+  ],
+  "client_attacks": [
+    "label_flip",
+    "scaling"
+  ],
+  "groups": [
+    "noexecutor",
+    "trust_only",
+    "trust_v1",
+    "trust_v2",
+    "trust_v1v2"
+  ],
+  "seed": 42,
+  "clients": 10,
+  "byzantine_clients": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "rounds": 50,
+  "alpha": 0.3,
+  "local_epochs": 2,
+  "batch_size": 128,
+  "lr": 0.02,
+  "momentum": 0.0,
+  "weight_decay": 0.0,
+  "exclusion_enabled": true,
+  "exclusion_cap": 4,
+  "client_scaling_factor": 5.0,
+  "client_attack_start": 1,
+  "post_ema_norm_mask": true,
+  "screen_tau": 0.6,
+  "ema_alpha": 0.7,
+  "executor_schedule": "30 attacked rounds, 10 each A1/A2/A3; 20 honest rounds; same schedule across groups",
+  "no_defense": "omitted as requested",
+  "reuse": "Existing C2 Fashion-MNIST LF reference/trust_only/full_tas only if source, partition, configuration and schedule match",
+  "preflight": "7 C1 regressions, independent-role regression, 3-round paired smoke on both datasets; no scientific ranking inferred from smoke",
+  "acceptance": "Full TAS 50/50 complete-state match to honest Executor before proceeding; independent learning entry state match; report actual TP/FP/FN/TN and meaningful attacks",
+  "resource_budget": "502 GPU0 only; 4 CPU threads; 6 hour supervisor timeout; stop immediately >=86C or >=82C for three 5s samples; initial temperature<75C and memory<1024MiB; output budget 2GiB",
+  "destination": "/home/njit/round2_C2_matrix_20261029"
+}

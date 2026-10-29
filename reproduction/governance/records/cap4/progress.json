@@ -1,0 +1,75 @@
+{
+  "state": "running",
+  "finished_scenarios": [
+    {
+      "dataset": "fashionmnist",
+      "attack": "label_flip",
+      "pair": {
+        "dataset": "fashionmnist",
+        "attack": "label_flip",
+        "rounds": 50,
+        "complete_state_matches": 50,
+        "mismatch_rounds": [],
+        "accuracy_matches": true
+      },
+      "learning_entry": {
+        "rounds": 50,
+        "complete_state_matches": 50,
+        "seconds": 43.66701218020171
+      }
+    },
+    {
+      "dataset": "fashionmnist",
+      "attack": "scaling",
+      "pair": {
+        "dataset": "fashionmnist",
+        "attack": "scaling",
+        "rounds": 50,
+        "complete_state_matches": 50,
+        "mismatch_rounds": [],
+        "accuracy_matches": true
+      },
+      "learning_entry": {
+        "rounds": 50,
+        "complete_state_matches": 50,
+        "seconds": 41.08876767940819
+      }
+    },
+    {
+      "dataset": "mnist",
+      "attack": "label_flip",
+      "pair": {
+        "dataset": "mnist",
+        "attack": "label_flip",
+        "rounds": 50,
+        "complete_state_matches": 50,
+        "mismatch_rounds": [],
+        "accuracy_matches": true
+      },
+      "learning_entry": {
+        "rounds": 50,
+        "complete_state_matches": 50,
+        "seconds": 52.9727632291615
+      }
+    },
+    {
+      "dataset": "mnist",
+      "attack": "scaling",
+      "pair": {
+        "dataset": "mnist",
+        "attack": "scaling",
+        "rounds": 50,
+        "complete_state_matches": 50,
+        "mismatch_rounds": [],
+        "accuracy_matches": true
+      },
+      "learning_entry": {
+        "rounds": 50,
+        "complete_state_matches": 50,
+        "seconds": 53.77620964311063
+      }
+    }
+  ],
+  "logical_conditions": 20,
+  "updated_utc": "2026-10-29T03:10:34.912784+00:00"
+}

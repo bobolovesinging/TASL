@@ -1,0 +1,8 @@
+{
+  "dataset": "mnist",
+  "attack": "scaling",
+  "rounds": 50,
+  "complete_state_matches": 50,
+  "mismatch_rounds": [],
+  "accuracy_matches": true
+}

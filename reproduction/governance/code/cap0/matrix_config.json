@@ -1,0 +1,49 @@
+{
+  "comment": "R4 second-round C2; controlled fixed-participation Executor stress test",
+  "datasets": [
+    "fashionmnist",
+    "mnist"
+  ],
+  "client_attacks": [
+    "scaling",
+    "label_flip"
+  ],
+  "groups": [
+    "noexecutor",
+    "trust_only",
+    "trust_v1",
+    "trust_v2",
+    "trust_v1v2"
+  ],
+  "seed": 42,
+  "clients": 10,
+  "byzantine_clients": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "rounds": 50,
+  "alpha": 0.3,
+  "local_epochs": 2,
+  "batch_size": 128,
+  "lr": 0.02,
+  "momentum": 0.0,
+  "weight_decay": 0.0,
+  "exclusion_enabled": false,
+  "exclusion_cap": 0,
+  "client_scaling_factor": 5.0,
+  "client_attack_start": 1,
+  "post_ema_norm_mask": true,
+  "screen_tau": 0.6,
+  "ema_alpha": 0.7,
+  "executor_schedule": "30 attacked rounds, 10 each A1/A2/A3; 20 honest rounds; same schedule across groups",
+  "no_defense": "omitted as requested",
+  "reuse": "None; all fixed-participation conditions freshly run",
+  "preflight": "7 C1 regressions, independent-role regression, 3-round paired smoke on both datasets; no scientific ranking inferred from smoke",
+  "acceptance": "Full TAS 50/50 complete-state match to honest Executor before proceeding; independent learning entry state match; report actual TP/FP/FN/TN and meaningful attacks",
+  "resource_budget": "502 GPU0 Fashion-MNIST; GPU1 MNIST starts only after Fashion Scaling paired pilot passes; 4 CPU threads per worker; per-worker six-hour thermal-protected limit; total max2 GPUs and 2GiB outputs; no newserver use",
+  "destination": "/home/njit/round2_C2_fixed_v2_20261029",
+  "scope": "Keep the final trust/audit/recovery implementation; disable only permanent exclusion in all groups to isolate sustained malicious-Executor effects. Do not relabel as exclusion-enabled final training.",
+  "preflight_correction": "A3 targets intentionally include four malicious clients and two suppressed honest clients. Require all four declared malicious clients remain active/targeted; do not require the entire target list to be malicious. Attack generator unchanged."
+}

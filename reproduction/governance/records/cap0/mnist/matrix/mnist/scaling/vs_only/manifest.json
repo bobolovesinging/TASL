@@ -1,0 +1,334 @@
+{
+  "started_utc": "2026-10-29T04:15:34.581491+00:00",
+  "dataset": "mnist",
+  "client_attack": "scaling",
+  "group": "trust_v1",
+  "rounds": 50,
+  "configuration": {
+    "comment": "R4 second-round C2; controlled fixed-participation Executor stress test",
+    "datasets": [
+      "fashionmnist",
+      "mnist"
+    ],
+    "client_attacks": [
+      "scaling",
+      "label_flip"
+    ],
+    "groups": [
+      "noexecutor",
+      "trust_only",
+      "trust_v1",
+      "trust_v2",
+      "trust_v1v2"
+    ],
+    "seed": 42,
+    "clients": 10,
+    "byzantine_clients": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rounds": 50,
+    "alpha": 0.3,
+    "local_epochs": 2,
+    "batch_size": 128,
+    "lr": 0.02,
+    "momentum": 0.0,
+    "weight_decay": 0.0,
+    "exclusion_enabled": false,
+    "exclusion_cap": 0,
+    "client_scaling_factor": 5.0,
+    "client_attack_start": 1,
+    "post_ema_norm_mask": true,
+    "screen_tau": 0.6,
+    "ema_alpha": 0.7,
+    "executor_schedule": "30 attacked rounds, 10 each A1/A2/A3; 20 honest rounds; same schedule across groups",
+    "no_defense": "omitted as requested",
+    "reuse": "None; all fixed-participation conditions freshly run",
+    "preflight": "7 C1 regressions, independent-role regression, 3-round paired smoke on both datasets; no scientific ranking inferred from smoke",
+    "acceptance": "Full TAS 50/50 complete-state match to honest Executor before proceeding; independent learning entry state match; report actual TP/FP/FN/TN and meaningful attacks",
+    "resource_budget": "502 GPU0 Fashion-MNIST; GPU1 MNIST starts only after Fashion Scaling paired pilot passes; 4 CPU threads per worker; per-worker six-hour thermal-protected limit; total max2 GPUs and 2GiB outputs; no newserver use",
+    "destination": "/home/njit/round2_C2_fixed_v2_20261029",
+    "scope": "Keep the final trust/audit/recovery implementation; disable only permanent exclusion in all groups to isolate sustained malicious-Executor effects. Do not relabel as exclusion-enabled final training.",
+    "preflight_correction": "A3 targets intentionally include four malicious clients and two suppressed honest clients. Require all four declared malicious clients remain active/targeted; do not require the entire target list to be malicious. Attack generator unchanged."
+  },
+  "partition": [
+    {
+      "client": 0,
+      "samples": 2609,
+      "labels_sha256": "118f9f9708fd5b7f4d97970ab922d11b5f0a08b3b2136f25ac37de50ca988b4c",
+      "data_sha256": "837f4565c4ddb81da37bac4772ed16f7f8000d7879137a48f2858c719e1d24c1"
+    },
+    {
+      "client": 1,
+      "samples": 1239,
+      "labels_sha256": "49fb76128662b37891c7d7a0d891090e42967fae3d72d817b60b2565e718b896",
+      "data_sha256": "d46e937d5238f33f7da88ff7e71db3ad25fc6bf4d7fa721299940ce738be0bca"
+    },
+    {
+      "client": 2,
+      "samples": 4631,
+      "labels_sha256": "14473fe538174cc54d97fcc84470c333a57f377c9cfe40614bb3edec78f5cb7f",
+      "data_sha256": "498db2f6aa258e689021ffec19cd6c38f26e89b6491799af17785a689b71a1d7"
+    },
+    {
+      "client": 3,
+      "samples": 8736,
+      "labels_sha256": "b7fce87d84ed320816c555a8896b49f360d4f62391979d01dd2ccffa606ba89c",
+      "data_sha256": "a8ec0310d005ebefc6703649fbb529d7a964f43501d1ce504ae28903b958620d"
+    },
+    {
+      "client": 4,
+      "samples": 4550,
+      "labels_sha256": "c7fe89cf55b034f4d28d8397c476394bef1a06151ba936db722afb7f908e9d30",
+      "data_sha256": "7edb79cdd74bd3ed36733f59decb60ee9198e6d1277d61b5c2b718dca0143fcc"
+    },
+    {
+      "client": 5,
+      "samples": 7873,
+      "labels_sha256": "048b8cbe0f098716f25ac9d9c4d4012a660631ce70456315924df6192485d1da",
+      "data_sha256": "da6cc83f17b6f2ef8c2e2e1e605ab947301fe728de66a781cf58e7bae5ea866f"
+    },
+    {
+      "client": 6,
+      "samples": 8094,
+      "labels_sha256": "31fd64a1db375c3afa217f221a7e9b2359f589a45eddb7f9c8914bd61a6427fb",
+      "data_sha256": "0c055f7a16ec5a5ddf6a09aa269625cd3c6b4d4bd2df324b993111bf2a7f1b91"
+    },
+    {
+      "client": 7,
+      "samples": 7315,
+      "labels_sha256": "c75bc188b8c7d24fbf9291d8612bb43cff3663ae83e7a49bc4092b29f7466f0d",
+      "data_sha256": "68fd03db97cab3c43e6fac9b4992a04c587aae436ca3f081033541a778513018"
+    },
+    {
+      "client": 8,
+      "samples": 10666,
+      "labels_sha256": "1c8d6faee0b5ed6e7f7202232cf528cd038ea2145f9cc72eda6601225ec08575",
+      "data_sha256": "a35d990862ff6306ce20618235ce3d5e2d588d3e6be3e3a78d3fd93b5e953d72"
+    },
+    {
+      "client": 9,
+      "samples": 4287,
+      "labels_sha256": "903124de55609f67187cd81f089bace0859ea74f9ff22a8246ed90d36f16fb5b",
+      "data_sha256": "a46ed68ab7a7d68496a8a40d2ecb586b862c98c7b2faa32bd80b99da93bdafe0"
+    }
+  ],
+  "source_sha256": {
+    "remote_start.py": "32cb2ad676ddace6f57540cc3d426ef4862e12525a2397f8288bdafaf10cd8ba",
+    "start_job.py": "4c84d84c727b721facdf7874e9ac626431ccfcc205ce4b31216e3f102d5020b7",
+    "job_monitor.py": "eddf38f03dcaaed18300a3703621f435616a0f1a22b80d2144f23e2348163ac8",
+    "run_matrix.py": "baf1155af451bd15ab970ebc5da23721fcde3bcb3c7a293dd59bc82164a0a927",
+    "test_comment1_policy.py": "a4b1badfed9d76c42960eae0973f0232eefad46c7f6f6454085fd9eb8ac27c34",
+    "run_experiments.py": "746b0e263ad2af0f6af8299cb418e17f1e7d54a84ce605fd27cfc40c6ed22011",
+    "test_final_protocol.py": "29617a20cc2767b695da6a8f47212f85e85e080f9431d9331cc340f978c22e96",
+    "state_digest.py": "a7fe2245b9e8c44f230e12b987a59b3aebaaa55c91f9c5bad10ba70a1ec2a562",
+    "scripts/exp2/exp2_run.py": "33e948426bf328da0a3f298fc10a490c04b1e553c53ad780fadb3ade662b46ef",
+    "scripts/exp3/exp3_governance_tasv2.py": "7aff55451783a28d80e3211cae62036772fcab665769295e7809e59e1b5bfcd4",
+    "core/model.py": "8034c1028c95cba2b8c9b0654b9991a4d40f06284e81b9ed3d55ed0a5d77ea8d"
+  },
+  "smoke": false,
+  "executor_schedule": {
+    "1": {
+      "active": false,
+      "attack_type": null
+    },
+    "2": {
+      "active": true,
+      "attack_type": "A1"
+    },
+    "3": {
+      "active": false,
+      "attack_type": null
+    },
+    "4": {
+      "active": false,
+      "attack_type": null
+    },
+    "5": {
+      "active": true,
+      "attack_type": "A2"
+    },
+    "6": {
+      "active": true,
+      "attack_type": "A3"
+    },
+    "7": {
+      "active": false,
+      "attack_type": null
+    },
+    "8": {
+      "active": true,
+      "attack_type": "A1"
+    },
+    "9": {
+      "active": true,
+      "attack_type": "A2"
+    },
+    "10": {
+      "active": true,
+      "attack_type": "A3"
+    },
+    "11": {
+      "active": true,
+      "attack_type": "A1"
+    },
+    "12": {
+      "active": true,
+      "attack_type": "A2"
+    },
+    "13": {
+      "active": false,
+      "attack_type": null
+    },
+    "14": {
+      "active": true,
+      "attack_type": "A3"
+    },
+    "15": {
+      "active": true,
+      "attack_type": "A1"
+    },
+    "16": {
+      "active": false,
+      "attack_type": null
+    },
+    "17": {
+      "active": true,
+      "attack_type": "A2"
+    },
+    "18": {
+      "active": false,
+      "attack_type": null
+    },
+    "19": {
+      "active": false,
+      "attack_type": null
+    },
+    "20": {
+      "active": true,
+      "attack_type": "A3"
+    },
+    "21": {
+      "active": true,
+      "attack_type": "A1"
+    },
+    "22": {
+      "active": true,
+      "attack_type": "A2"
+    },
+    "23": {
+      "active": true,
+      "attack_type": "A3"
+    },
+    "24": {
+      "active": false,
+      "attack_type": null
+    },
+    "25": {
+      "active": false,
+      "attack_type": null
+    },
+    "26": {
+      "active": true,
+      "attack_type": "A1"
+    },
+    "27": {
+      "active": true,
+      "attack_type": "A2"
+    },
+    "28": {
+      "active": false,
+      "attack_type": null
+    },
+    "29": {
+      "active": true,
+      "attack_type": "A3"
+    },
+    "30": {
+      "active": false,
+      "attack_type": null
+    },
+    "31": {
+      "active": true,
+      "attack_type": "A1"
+    },
+    "32": {
+      "active": false,
+      "attack_type": null
+    },
+    "33": {
+      "active": false,
+      "attack_type": null
+    },
+    "34": {
+      "active": true,
+      "attack_type": "A2"
+    },
+    "35": {
+      "active": false,
+      "attack_type": null
+    },
+    "36": {
+      "active": true,
+      "attack_type": "A3"
+    },
+    "37": {
+      "active": true,
+      "attack_type": "A1"
+    },
+    "38": {
+      "active": true,
+      "attack_type": "A2"
+    },
+    "39": {
+      "active": false,
+      "attack_type": null
+    },
+    "40": {
+      "active": true,
+      "attack_type": "A3"
+    },
+    "41": {
+      "active": true,
+      "attack_type": "A1"
+    },
+    "42": {
+      "active": true,
+      "attack_type": "A2"
+    },
+    "43": {
+      "active": false,
+      "attack_type": null
+    },
+    "44": {
+      "active": false,
+      "attack_type": null
+    },
+    "45": {
+      "active": true,
+      "attack_type": "A3"
+    },
+    "46": {
+      "active": true,
+      "attack_type": "A1"
+    },
+    "47": {
+      "active": true,
+      "attack_type": "A2"
+    },
+    "48": {
+      "active": true,
+      "attack_type": "A3"
+    },
+    "49": {
+      "active": false,
+      "attack_type": null
+    },
+    "50": {
+      "active": false,
+      "attack_type": null
+    }
+  }
+}
