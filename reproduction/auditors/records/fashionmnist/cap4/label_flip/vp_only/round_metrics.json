@@ -1,0 +1,3886 @@
+[
+  {
+    "round": 1,
+    "group": "trust_v2",
+    "attack_active": 0,
+    "attack_type": "none",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      0,
+      1,
+      8
+    ],
+    "vp_bound_intervals": {
+      "0": [
+        0.0,
+        1.0
+      ],
+      "1": [
+        0.0,
+        1.0
+      ],
+      "2": [
+        0.0,
+        1.0
+      ],
+      "3": [
+        0.0,
+        1.0
+      ],
+      "4": [
+        0.0,
+        1.0
+      ],
+      "5": [
+        0.0,
+        1.0
+      ],
+      "6": [
+        0.0,
+        1.0
+      ],
+      "7": [
+        0.0,
+        1.0
+      ],
+      "8": [
+        0.0,
+        1.0
+      ],
+      "9": [
+        0.0,
+        1.0
+      ]
+    },
+    "audit_reference_input_key": "925e4f11d1b86a1d353417077825a177aff0871b5dfa32fb7d4849754da6833b",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "9b2df24c388adcfd8be106e107667f8ea61ac530c568ecb5f6f4a98d2ca87c55",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"0\": \"eea4b8eae41a7416702f11a24ddbfbdaee2df8638d27fa71a66ded9bfd21e265\", \"1\": \"85c3e50883c66e1045aeb5c8b9a1f4b7dd4aeee9bee116ab7ac6d78d77cf705e\", \"2\": \"6b3fc32cae8eddf046090d3dade02a6ffa321a3f4948c6bc03697a81bf8c5a96\", \"3\": \"7cf1047fea4e5b51c0d8b66a41506e0371bb267d9b1e77642cc353113504df0b\", \"4\": \"5c7a99b522aa537f0cd1d3ae348a65d73719a84c3a1f469cadc54b5ff4c1851d\", \"5\": \"95e366f22288323d3322954be4f15a79b53200cdf7d5f1f4f5dca0e7ba730dfd\", \"6\": \"5c2e4e6460af249f3f7ea8f6f247fc15bb7f9f9c5b2596061c15fb574be45626\", \"7\": \"2f8805cd88c9a2ee8888bcc482476310859870274cd91d51d5e091a29fce98ee\", \"8\": \"71b94f0231bddd19429e9f3b38326939084b2aa657cf1168dfc4444b8a1440ac\", \"9\": \"6a09255b14991c764fef447161850c9cdc275d48226c947bcd84328036e27845\"}",
+    "recovery_commitment": null,
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 0,
+    "recovery_endorsed": 0,
+    "v2_trust": 0,
+    "v2_agg": 0,
+    "consensus_passed": 1,
+    "healed_applied": 0,
+    "heal_source": "",
+    "accuracy": 26.02,
+    "skipped": 0,
+    "proposal_relative_error": 0.0,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"0\": 0.04108330095651005, \"1\": 0.10622100228541688, \"2\": 0.06822159183284296, \"3\": 0.1258875658478087, \"4\": 0.14928484704574657, \"5\": 0.1024291248028263, \"6\": 0.08793127225110925, \"7\": 0.16498344675036053, \"8\": 0.13524926103134938, \"9\": 0.01870858719602937}",
+    "update_norms": "{\"0\": 1.6940218364504083, \"1\": 1.338732398116887, \"2\": 0.8407048534299951, \"3\": 1.2826959490489485, \"4\": 1.2226094410636672, \"5\": 0.6154450358979451, \"6\": 1.6556172064401045, \"7\": 0.8844546798926989, \"8\": 1.4355862197262714, \"9\": 0.3382904145134078}",
+    "cosines": "{\"0\": 0.5113138142398508, \"1\": 0.5754029256765905, \"2\": 0.5423920288420593, \"3\": 0.574014544045835, \"4\": 0.6017271922451378, \"5\": 0.5948227145194798, \"6\": 0.5805309922506929, \"7\": 0.6681959539451219, \"8\": 0.6042003194056257, \"9\": 0.4633288184170712}",
+    "published_weights": "{\"0\": 0.04108330095651005, \"1\": 0.10622100228541688, \"2\": 0.06822159183284296, \"3\": 0.1258875658478087, \"4\": 0.14928484704574657, \"5\": 0.1024291248028263, \"6\": 0.08793127225110925, \"7\": 0.16498344675036053, \"8\": 0.13524926103134938, \"9\": 0.01870858719602937}",
+    "used_weights": "{\"0\": 0.04108330095651005, \"1\": 0.10622100228541688, \"2\": 0.06822159183284296, \"3\": 0.1258875658478087, \"4\": 0.14928484704574657, \"5\": 0.1024291248028263, \"6\": 0.08793127225110925, \"7\": 0.16498344675036053, \"8\": 0.13524926103134938, \"9\": 0.01870858719602937}",
+    "attack_targets": "[]",
+    "excluded_clients": "[]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 0,
+    "recovery_consistent": 0,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "d31a0e92574265d828e1e5a58fbfc7dce7a6e0a07146dfcd4ae11d34fdf95bdc",
+    "state_hash": "fec6cd28c61db557540cb88a581228d4e59945ebc0b5b00085f03307a0322a70",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_accepted\", \"committed_once\"]"
+  },
+  {
+    "round": 2,
+    "group": "trust_v2",
+    "attack_active": 1,
+    "attack_type": "A1",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      1,
+      2,
+      6
+    ],
+    "vp_bound_intervals": {
+      "0": [
+        0.0013374012409231902,
+        0.630689409107185
+      ],
+      "1": [
+        0.0038038599586055323,
+        0.669512043291933
+      ],
+      "2": [
+        0.0020891203766656413,
+        0.6239942507802959
+      ],
+      "3": [
+        0.0049695472302727795,
+        0.6963691611789358
+      ],
+      "4": [
+        0.008594949736937033,
+        0.7790749591384315
+      ],
+      "5": [
+        0.004654638418289818,
+        0.7190560612782415
+      ],
+      "6": [
+        0.004670492616878042,
+        0.7450569281785916
+      ],
+      "7": [
+        0.009349278511771938,
+        0.7810530050752895
+      ],
+      "8": [
+        0.008095007079751193,
+        0.7816946262081602
+      ],
+      "9": [
+        0.0008324537479982489,
+        0.6902094066482904
+      ]
+    },
+    "audit_reference_input_key": "d3595d01633e3a936d2ec49d02880928ea9ff43f91ff7f2e455810fb40b0ee5d",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "2d248477a95634883a2a570b0e794cc920cc53e89ecf116897440c06220db992",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"0\": \"20209b9705e0d184268491cf01b7805659acefbe1f9b2a7cbf93210cfa0c6049\", \"1\": \"f8eb23e60a41fc7716e1e3ff556115e052378f870dd67ea28b7ae43c0d23f534\", \"2\": \"0f6875a1c7a285a34393d12d2827018e69334ae214b06b4e585799f86b9222cd\", \"3\": \"b37d82268dbe92cc8255269c065d7965a3d1550b7181319fe99c3124be370d24\", \"4\": \"12b8013b0597ace2d9ad11827852f452454aef42bb05f9d6704f82e88b08efda\", \"5\": \"11d8825ca5c85391b0ae7bba0917eb604c2333b8bfc8b98128e65537da6bce36\", \"6\": \"79339ad1ae737e4416b2bc34094f552d748d86cde920f5ed856e4574a70cc0d5\", \"7\": \"6cc20a6f41aa249afbe200bc1924c281dfa7540de8ea08778c611dbbe0f68816\", \"8\": \"e8045c4b7a2f6b158bffd9082dfe9ea9d7988c0888180f68279f954733d58d87\", \"9\": \"a3a4bad261e86ddb8926721114bbe6bb60ce10f7bce883ea46af5718ff6c4509\"}",
+    "recovery_commitment": "9429cc1a31de1ebcb520011a0b666b7df35add5c0b85a6d676d5e0dc60342742",
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 1,
+    "recovery_endorsed": 1,
+    "v2_trust": 1,
+    "v2_agg": 0,
+    "consensus_passed": 0,
+    "healed_applied": 1,
+    "heal_source": "V2",
+    "accuracy": 43.35,
+    "skipped": 0,
+    "proposal_relative_error": 1.0780517225119457,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"0\": 0.008272475114995174, \"1\": 0.02417050384469133, \"2\": 0.01261265980057147, \"3\": 0.03553134862999709, \"4\": 0.1996511104319346, \"5\": 0.06976422263384917, \"6\": 0.16260674042812046, \"7\": 0.21089414392812203, \"8\": 0.21128859858445206, \"9\": 0.06520819660326663}",
+    "update_norms": "{\"0\": 1.561998073137331, \"1\": 1.2592892163069573, \"2\": 0.8265228342643288, \"3\": 1.069134100210702, \"4\": 1.030638722138698, \"5\": 0.5539042718936859, \"6\": 1.510442462706493, \"7\": 1.0193324138986792, \"8\": 1.0207628638097719, \"9\": 0.4140821190810023}",
+    "cosines": "{\"0\": 0.34171985920157216, \"1\": 0.3791473578870554, \"2\": 0.3157805413384812, \"3\": 0.4013270028788931, \"4\": 0.5793157257599545, \"5\": 0.5050530288250499, \"6\": 0.5681661446786695, \"7\": 0.6114257428079574, \"8\": 0.6154910860753774, \"9\": 0.5064890928646395}",
+    "published_weights": "{\"0\": 0.75, \"1\": 0.75, \"2\": 0.75, \"3\": 0.75, \"4\": 0.1996511104319346, \"5\": 0.06976422263384917, \"6\": 0.16260674042812046, \"7\": 0.21089414392812203, \"8\": 0.21128859858445206, \"9\": 0.06520819660326663}",
+    "used_weights": "{\"0\": 0.19135518445926977, \"1\": 0.19135518445926977, \"2\": 0.19135518445926977, \"3\": 0.19135518445926977, \"4\": 0.050939033418934514, \"5\": 0.017799660921010364, \"6\": 0.04148752374525812, \"7\": 0.05380758375032744, \"8\": 0.05390822500835791, \"9\": 0.016637235319032554}",
+    "attack_targets": "[0, 1, 2, 3]",
+    "excluded_clients": "[]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 1,
+    "recovery_consistent": 1,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "fec6cd28c61db557540cb88a581228d4e59945ebc0b5b00085f03307a0322a70",
+    "state_hash": "56273ac5f65c0bad3f29f0291f29ab2e1705d81526f2cf0d789146b4eb0ca74c",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_rejected\", \"recovery_recomputed\", \"recovery_audited\", \"recovery_verified\", \"committed_once\"]"
+  },
+  {
+    "round": 3,
+    "group": "trust_v2",
+    "attack_active": 0,
+    "attack_type": "none",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      3,
+      4,
+      5
+    ],
+    "vp_bound_intervals": {
+      "0": [
+        0.0,
+        1.5631940186722204e-13
+      ],
+      "1": [
+        0.0,
+        1.5631940186722204e-13
+      ],
+      "2": [
+        0.0,
+        1.5631940186722204e-13
+      ],
+      "3": [
+        0.0,
+        1.5631940186722204e-13
+      ],
+      "4": [
+        0.014852276110824401,
+        0.7831524005505639
+      ],
+      "5": [
+        0.005938965740031051,
+        0.7370633697640291
+      ],
+      "6": [
+        0.012991712663969656,
+        0.7759745686193992
+      ],
+      "7": [
+        0.01590982519283878,
+        0.7872322988106791
+      ],
+      "8": [
+        0.015190540121138718,
+        0.7844573827689895
+      ],
+      "9": [
+        0.006107851795560855,
+        0.749417454195546
+      ]
+    },
+    "audit_reference_input_key": "58f43e9ce588a8f080332639dbccd56cd01c787a19337e39f34b257cb39d5787",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "4931c633445848899a7e38121ff46f1cb58db76fac8cfa045b7484c7e8b04625",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"0\": \"30886a682076b0b3bb077cb1c64fef20caa845cf0e676feac5e64bcef4a6d12e\", \"1\": \"abcb2c099f9862d5f1465008c18cb994be7426730c666902c8a05d53ca232c77\", \"2\": \"4439c31aa29f17a5d3deea62e97814a2ca1c150b1ebe0b3e1fe48943274d6c45\", \"3\": \"695ec46876ca2524b16b0ec9afe9b0fde1b680a2ea6746f68d70b52c1282dc67\", \"4\": \"5cd8018134d0752a2f61202f0288da9a3c9c36ec8f621ffd2957665918d6dcdd\", \"5\": \"2beb75552f656bf6edb19dc27f575eafe012bb74238e4f6221cb65823cf6e0a3\", \"6\": \"ff7dbc459f623c72c37a9e18eb244f3fd1dfe6b739ab9a7620d9f7b3c5de85ae\", \"7\": \"235d9bfc5bfe1c0566bef80c4e71a46070dc35609ca09aa649c6e2ba92cba5ba\", \"8\": \"f4ed0b670917d40b29e808434c82fe626599c352de1f589d19648dc1212a8e2e\", \"9\": \"e97ccb2d6bb0f95b407ea9afc70ca3102609cb6192b432558dd1e6f98b2cdf8d\"}",
+    "recovery_commitment": null,
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 0,
+    "recovery_endorsed": 0,
+    "v2_trust": 0,
+    "v2_agg": 0,
+    "consensus_passed": 1,
+    "healed_applied": 0,
+    "heal_source": "",
+    "accuracy": 52.51,
+    "skipped": 0,
+    "proposal_relative_error": 0.0,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"0\": 0.0, \"1\": 0.0, \"2\": 0.0, \"3\": 0.0, \"4\": 0.21625471993511003, \"5\": 0.06863233962570446, \"6\": 0.20905508615225118, \"7\": 0.22034701042419458, \"8\": 0.12357468852553051, \"9\": 0.1621361553372094}",
+    "update_norms": "{\"0\": 1.5793476193756681, \"1\": 1.2633168971605087, \"2\": 0.9261318419207346, \"3\": 1.0697307824599336, \"4\": 0.6711820723642179, \"5\": 0.4439320829782566, \"6\": 1.0985588953382401, \"7\": 0.6399109485500657, \"8\": 0.575783903467818, \"9\": 0.30620316686056814}",
+    "cosines": "{\"0\": 0.0654916310510867, \"1\": 0.040961420662176035, \"2\": -0.15279596269141996, \"3\": 0.04071997178694212, \"4\": 0.6961839349212816, \"5\": 0.5759288690924513, \"6\": 0.6820817299661622, \"7\": 0.7291395350917347, \"8\": 0.5945707720354818, \"9\": 0.6278202956556815}",
+    "published_weights": "{\"0\": 0.0, \"1\": 0.0, \"2\": 0.0, \"3\": 0.0, \"4\": 0.21625471993511003, \"5\": 0.06863233962570446, \"6\": 0.20905508615225118, \"7\": 0.22034701042419458, \"8\": 0.12357468852553051, \"9\": 0.1621361553372094}",
+    "used_weights": "{\"0\": 0.0, \"1\": 0.0, \"2\": 0.0, \"3\": 0.0, \"4\": 0.21625471993511003, \"5\": 0.06863233962570446, \"6\": 0.20905508615225118, \"7\": 0.22034701042419458, \"8\": 0.12357468852553051, \"9\": 0.1621361553372094}",
+    "attack_targets": "[]",
+    "excluded_clients": "[]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 0,
+    "recovery_consistent": 0,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "56273ac5f65c0bad3f29f0291f29ab2e1705d81526f2cf0d789146b4eb0ca74c",
+    "state_hash": "05ba0e8521f955ae79d97a9e8c18ca45f51e03ab4c07287052533c326e4f5848",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_accepted\", \"committed_once\"]"
+  },
+  {
+    "round": 4,
+    "group": "trust_v2",
+    "attack_active": 0,
+    "attack_type": "none",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      2,
+      4,
+      8
+    ],
+    "vp_bound_intervals": {
+      "0": [
+        0.0,
+        1.5631940186722204e-13
+      ],
+      "1": [
+        0.0,
+        1.5631940186722204e-13
+      ],
+      "2": [
+        0.0,
+        1.5631940186722204e-13
+      ],
+      "3": [
+        0.0,
+        1.5631940186722204e-13
+      ],
+      "4": [
+        0.018853718017265476,
+        0.7868800976358252
+      ],
+      "5": [
+        0.005078954109455936,
+        0.7029281861454386
+      ],
+      "6": [
+        0.018226032918823257,
+        0.7847367011165383
+      ],
+      "7": [
+        0.01921049585291189,
+        0.7880984097687422
+      ],
+      "8": [
+        0.005055847487865741,
+        0.6030759918934149
+      ],
+      "9": [
+        0.01413550351195819,
+        0.7707685082846945
+      ]
+    },
+    "audit_reference_input_key": "5cf10014805adb5d14ef7ecb6f039b8804177aff31433c1d021bb51b839b5044",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "57355405b316b4f3884b42819d01afa6535411faf3fe08a5606c065b5bbe4a43",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"0\": \"a046c061e1996c74ea0c2653596b1a3a2c22410ebf309581c410988f61782950\", \"1\": \"9b3ea74c14c416d6a6f1d410523381e1f8d3ef983ab0b85c730fd1d2d424c74d\", \"2\": \"31ce4d08322f644a931f3e6452690d6eccc0d1ae6f63dc754dc7882d99229b9c\", \"3\": \"cb975d5a791b75c29a46081fe51547b0ab6a22d859c678d54c977b0bb7a244bd\", \"4\": \"b9e35fe0c364850a6dd97c06a39690e765f38a4f0e9bcb0ba68d9ed3e29fa0d2\", \"5\": \"6928f35593bf42e0bbca6c28f255d0083eedbea57a5006c6e992bdefc98a9492\", \"6\": \"17f400c2b8a8998bb45f60f2b92a3cdd52333a6b2fa48f632b17a549909c9271\", \"7\": \"7cdb6e7dac9ec2a0a5b6a1b038bf64ec8c9f7d22081dd4a505deea89c1433b73\", \"8\": \"6bb59f73c42f67096ea4f17fb2e079d73d653d6417a4557ea25c5a143a92e9d5\", \"9\": \"38baec9eeb6baed9c757a5650f3cf47f4345605d5ce9ff221140a86aa4bc9843\"}",
+    "recovery_commitment": null,
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 0,
+    "recovery_endorsed": 0,
+    "v2_trust": 0,
+    "v2_agg": 0,
+    "consensus_passed": 1,
+    "healed_applied": 0,
+    "heal_source": "",
+    "accuracy": 59.25,
+    "skipped": 0,
+    "proposal_relative_error": 0.0,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"0\": 0.0, \"1\": 0.0, \"2\": 0.0, \"3\": 0.0, \"4\": 0.24422783557998823, \"5\": 0.020690997189961438, \"6\": 0.24208240785681495, \"7\": 0.24544730225445485, \"8\": 0.01945047914412108, \"9\": 0.22810097797465936}",
+    "update_norms": "{\"0\": 1.6302525227962477, \"1\": 1.3406906722967948, \"2\": 1.069513637008986, \"3\": 1.1266082793383452, \"4\": 0.4613277034174003, \"5\": 0.31059646384118733, \"6\": 0.8291570927613402, \"7\": 0.4209764292977361, \"8\": 0.5178112855008234, \"9\": 0.20180016505028842}",
+    "cosines": "{\"0\": 0.02473839829504836, \"1\": -0.030477881262728792, \"2\": -0.18002125670985333, \"3\": -0.01696763771964553, \"4\": 0.6806879160491042, \"5\": 0.5022827255339652, \"6\": 0.7266323273106005, \"7\": 0.6494129532226173, \"8\": 0.35940766070742347, \"9\": 0.6304814556108896}",
+    "published_weights": "{\"0\": 0.0, \"1\": 0.0, \"2\": 0.0, \"3\": 0.0, \"4\": 0.24422783557998823, \"5\": 0.020690997189961438, \"6\": 0.24208240785681495, \"7\": 0.24544730225445485, \"8\": 0.01945047914412108, \"9\": 0.22810097797465936}",
+    "used_weights": "{\"0\": 0.0, \"1\": 0.0, \"2\": 0.0, \"3\": 0.0, \"4\": 0.24422783557998823, \"5\": 0.020690997189961438, \"6\": 0.24208240785681495, \"7\": 0.24544730225445485, \"8\": 0.01945047914412108, \"9\": 0.22810097797465936}",
+    "attack_targets": "[]",
+    "excluded_clients": "[2]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 0,
+    "recovery_consistent": 0,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "05ba0e8521f955ae79d97a9e8c18ca45f51e03ab4c07287052533c326e4f5848",
+    "state_hash": "2334703ffc0fa1584e22a1bb50a5c7f486fc7cfe367328940bea91bc3a0a1075",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_accepted\", \"committed_once\"]"
+  },
+  {
+    "round": 5,
+    "group": "trust_v2",
+    "attack_active": 1,
+    "attack_type": "A2",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      2,
+      3,
+      9
+    ],
+    "vp_bound_intervals": {
+      "0": [
+        0.0,
+        0.0
+      ],
+      "1": [
+        0.0,
+        0.0
+      ],
+      "3": [
+        0.0,
+        1.4210854715202004e-13
+      ],
+      "4": [
+        0.02439169676728764,
+        0.7939216370559172
+      ],
+      "5": [
+        0.0015765949597525374,
+        0.6432050584230793
+      ],
+      "6": [
+        0.024177427077938303,
+        0.7932800536795298
+      ],
+      "7": [
+        0.02140752612477498,
+        0.769181659562567
+      ],
+      "8": [
+        0.0010485300399592664,
+        0.4631314484404372
+      ],
+      "9": [
+        0.019173943701857467,
+        0.7570602246289185
+      ]
+    },
+    "audit_reference_input_key": "d123732cdcacf79dc14486f73a55d62246ff8b77cf4b12b6e33d76e2a2eeecf9",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "b8f78619b46d0ffad2230ca60ca5ff6db858e4114b247077b7d0bf0e4fead264",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"0\": \"473b9a4329951921cf4c885611251e42b6b0f9f5823af00ff86285f1bc8f9c9e\", \"1\": \"4ea86456f32419b6cdc41e52391725ffd15a194c50a8ac9a0da6d470df8c645b\", \"3\": \"ec525cadc8dd00b13481a6741843f0114212c517f490a143c329f5ee5a77785c\", \"4\": \"d7263428b14a3b704f6c24f1d82dd634c903ad79001082c16763546d25013d58\", \"5\": \"edaebf6bea1194b80dd066d4fa1126df17a3aed7f2d5ee38b3e828879cd29e06\", \"6\": \"d49b7615d0deee1dd48f4d627834c490bb69dc6860ad071525b8ec205efb9111\", \"7\": \"fe72ff08c38ca562cea7d95695012c5d24fc3756f70150e62c2f705fecb8be15\", \"8\": \"41c705c0f7573c8a2c2ba5f58c43ec740125766286ddf8afaa79ad0ffa3085a2\", \"9\": \"c37415258370c1850d419c42d3c7f031958192940fc8a991e83fd90498d6a2b3\"}",
+    "recovery_commitment": "8dd27f93b81d55b93ffdabac1cd86889c4a2cb6d37418491ea9a2db6eef3d5ce",
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 1,
+    "recovery_endorsed": 1,
+    "v2_trust": 0,
+    "v2_agg": 1,
+    "consensus_passed": 0,
+    "healed_applied": 1,
+    "heal_source": "V2",
+    "accuracy": 63.98,
+    "skipped": 0,
+    "proposal_relative_error": 1.4844203046292868,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"0\": 0.0, \"1\": 0.0, \"3\": 0.0, \"4\": 0.2822551916833083, \"5\": 0.006458882690536799, \"6\": 0.28158668883684995, \"7\": 0.2332070260647145, \"8\": 0.004988438667090233, \"9\": 0.1915037720575}",
+    "update_norms": "{\"0\": 1.6467977991302085, \"1\": 1.3697403046290602, \"3\": 1.1616577799706613, \"4\": 0.37809107334672526, \"5\": 0.2699227624630751, \"6\": 0.6853537592671773, \"7\": 0.3295688726786983, \"8\": 0.4798863190047336, \"9\": 0.17373585747914533}",
+    "cosines": "{\"0\": 0.07385744195298781, \"1\": 0.01060177596035939, \"3\": 0.021837978204228572, \"4\": 0.6846478653964895, \"5\": 0.4303278582020628, \"6\": 0.7860356596040224, \"7\": 0.5695001121146736, \"8\": 0.29587946264090026, \"9\": 0.5582487257984365}",
+    "published_weights": "{\"0\": 0.0, \"1\": 0.0, \"3\": 0.0, \"4\": 0.2822551916833083, \"5\": 0.006458882690536799, \"6\": 0.28158668883684995, \"7\": 0.2332070260647145, \"8\": 0.004988438667090233, \"9\": 0.1915037720575}",
+    "used_weights": "{\"0\": 0.1428571428571429, \"1\": 0.1428571428571429, \"3\": 0.1428571428571429, \"4\": 0.1612886809618905, \"5\": 0.0036907901088781715, \"6\": 0.16090667933534286, \"7\": 0.13326115775126546, \"8\": 0.0028505363811944196, \"9\": 0.10943072689000002}",
+    "attack_targets": "[0, 1, 3]",
+    "excluded_clients": "[0, 2]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 1,
+    "recovery_consistent": 1,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "2334703ffc0fa1584e22a1bb50a5c7f486fc7cfe367328940bea91bc3a0a1075",
+    "state_hash": "8cdc202582ee101c0952bb81709788fdb446cf7c32cf4967998096f8c51f0c8a",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_rejected\", \"recovery_recomputed\", \"recovery_audited\", \"recovery_verified\", \"committed_once\"]"
+  },
+  {
+    "round": 6,
+    "group": "trust_v2",
+    "attack_active": 1,
+    "attack_type": "A3",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      1,
+      2,
+      3
+    ],
+    "vp_bound_intervals": {
+      "1": [
+        0.0,
+        0.0
+      ],
+      "3": [
+        0.0,
+        0.0
+      ],
+      "4": [
+        0.03160531126146186,
+        0.8147773110670559
+      ],
+      "5": [
+        0.0004559551361166744,
+        0.5741713980668843
+      ],
+      "6": [
+        0.031530456161665096,
+        0.814581708762768
+      ],
+      "7": [
+        0.0192816814372925,
+        0.7301042428572593
+      ],
+      "8": [
+        0.00041848009434331337,
+        0.44618067614261947
+      ],
+      "9": [
+        0.016182526144709025,
+        0.7177400543679469
+      ]
+    },
+    "audit_reference_input_key": "f2e5bace57ac92dd0d121fe409c91cd8844fe355f28eb3d5f5ce8acf753e997a",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "a99d901b85640f3786f31a337e2eca5fbed6da9df74ff3d2f80c66cd3bcf73c2",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"1\": \"e6e2cd2475eed3b48cd8c38fc205ca5646dc90e42817bfd97910af5e7f31016a\", \"3\": \"8b60ea2c57a1ee13d1c1f42fa0ce55ac6d043d5ee19d770158e11a588e56b007\", \"4\": \"bcd138e0db0bdb03bb687686ad180418ee97e33c2eaa5100a28925832b542fd4\", \"5\": \"3b7c78810025d3faf1d6b649569b25e5e7dde7e2ee8fe78ff077182a91eaa7ec\", \"6\": \"b70f42541a23414eb76f8915ee47826c7ac63cec644ac40f177d63783c8d4d24\", \"7\": \"313fca28607557926e07554883f24b0d2deb4c0eb0ce86c7fa4a0bb8c6c6deb1\", \"8\": \"58d0bb4e294353089aeb116787f82319972206ee72b18fbf2abb9bca00828d78\", \"9\": \"2651a0f9f91a3ac2edd7dca33678c7c928024bca8d3f51699c89bb554a7106f3\"}",
+    "recovery_commitment": "7336493ddbaafa6f55eb288f1c5d6222d354ead59f57b526e7381ef53f122186",
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 1,
+    "recovery_endorsed": 1,
+    "v2_trust": 1,
+    "v2_agg": 1,
+    "consensus_passed": 0,
+    "healed_applied": 1,
+    "heal_source": "V2",
+    "accuracy": 62.03,
+    "skipped": 0,
+    "proposal_relative_error": 2.5968007591269275,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"1\": 0.0, \"3\": 0.0, \"4\": 0.2757673557483305, \"5\": 0.0029834281644457806, \"6\": 0.435056309466058, \"7\": 0.14933114623143912, \"8\": 0.0017235123376918235, \"9\": 0.13513824805203473}",
+    "update_norms": "{\"1\": 1.406937058648815, \"3\": 1.202564247403275, \"4\": 0.3588202555112001, \"5\": 0.24859840254443685, \"6\": 0.5751056247070013, \"7\": 0.31127379825273044, \"8\": 0.4352769443265486, \"9\": 0.1539749362048734}",
+    "cosines": "{\"1\": 0.04796231953986986, \"3\": 0.04252466440396471, \"4\": 0.6418706529855159, \"5\": 0.3618851034361188, \"6\": 0.8297344323942668, \"7\": 0.4986104572581417, \"8\": 0.24581849100200243, \"9\": 0.5148968022520727}",
+    "published_weights": "{\"1\": 0.2916666666666667, \"3\": 0.2916666666666667, \"4\": 0.11490306489513771, \"5\": 0.0012430950685190752, \"6\": 0.18127346227752417, \"7\": 0.0622213109297663, \"8\": 0.0007181301407049264, \"9\": 0.056307603355014474}",
+    "used_weights": "{\"1\": 0.43079178383109384, \"3\": 0.43079178383109384, \"4\": 0.0, \"5\": 0.001428040378770582, \"6\": 0.0, \"7\": 0.07147847874064843, \"8\": 0.0008249721715657324, \"9\": 0.06468494104682765}",
+    "attack_targets": "[1, 3, 4, 6]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 1,
+    "recovery_consistent": 1,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "8cdc202582ee101c0952bb81709788fdb446cf7c32cf4967998096f8c51f0c8a",
+    "state_hash": "ced701b5c9f97354049990246f3f54ba0c9a4e50d53a99e2863a0865f6f12da3",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_rejected\", \"recovery_recomputed\", \"recovery_audited\", \"recovery_verified\", \"committed_once\"]"
+  },
+  {
+    "round": 7,
+    "group": "trust_v2",
+    "attack_active": 0,
+    "attack_type": "none",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      2,
+      6,
+      7
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.04947895747048797,
+        0.8360737124363348
+      ],
+      "5": [
+        0.0001186357310433687,
+        0.3208597397278194
+      ],
+      "6": [
+        0.08428751143347397,
+        0.8929739822907283
+      ],
+      "7": [
+        0.009969327701088236,
+        0.5603436419434985
+      ],
+      "8": [
+        4.7057918358945714e-05,
+        0.16595085654895977
+      ],
+      "9": [
+        0.004674841410012535,
+        0.396562933550637
+      ]
+    },
+    "audit_reference_input_key": "03a4fd4a3408db8aff9b333b0d8044f7ba7eaa14c76ffcd867bb7ddbb0a00d7e",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "42f5cb14a7cfa758212e417df16a5a949397537be0215f4923d9dc4c56cc41b4",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"9df21240d43402ab72f63746e8418d912428d9cfabc31506a25bddb417fb4e2b\", \"5\": \"64529bfc336377cddde7227d4ba055ac492f4ac994a353a108be066778ef925d\", \"6\": \"6b1dbfe44a467e8934385687961aad7f654d394b325f716971319cb4f489ac61\", \"7\": \"43603a1cc2e18ff3e7b0b9ea4c5f8f412ab95a581f49cf6ced3102ef5101aada\", \"8\": \"f728ddf64fe19ef0f38863c5ace9968332db6bfce2fce69f602c56fcd0feb7f1\", \"9\": \"879b53ab9cc1e05c4f2bd8c34b31cfd715e23684e47073d74baa6124838bc645\"}",
+    "recovery_commitment": null,
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 0,
+    "recovery_endorsed": 0,
+    "v2_trust": 0,
+    "v2_agg": 0,
+    "consensus_passed": 1,
+    "healed_applied": 0,
+    "heal_source": "",
+    "accuracy": 62.32,
+    "skipped": 0,
+    "proposal_relative_error": 0.0,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.2857534930590723, \"5\": 0.0014604652441382825, \"6\": 0.6542794673346647, \"7\": 0.04408988165496839, \"8\": 0.000120044302658274, \"9\": 0.014296648404497934}",
+    "update_norms": "{\"4\": 0.31896689854173443, \"5\": 0.26376473706210335, \"6\": 0.4696683851823682, \"7\": 0.310652417784309, \"8\": 0.5071351231264826, \"9\": 0.17555662769605104}",
+    "cosines": "{\"4\": 0.6177278234916671, \"5\": 0.29403600392382384, \"6\": 0.8827917843100055, \"7\": 0.42180673691134535, \"8\": 0.2213598057253658, \"9\": 0.3352083023365245}",
+    "published_weights": "{\"4\": 0.2857534930590723, \"5\": 0.0014604652441382825, \"6\": 0.6542794673346647, \"7\": 0.04408988165496839, \"8\": 0.000120044302658274, \"9\": 0.014296648404497934}",
+    "used_weights": "{\"4\": 0.2857534930590723, \"5\": 0.0014604652441382825, \"6\": 0.6542794673346647, \"7\": 0.04408988165496839, \"8\": 0.000120044302658274, \"9\": 0.014296648404497934}",
+    "attack_targets": "[]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 0,
+    "recovery_consistent": 0,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "ced701b5c9f97354049990246f3f54ba0c9a4e50d53a99e2863a0865f6f12da3",
+    "state_hash": "27d48de58b6312d3f898d15c99516cbd10974b591a45d80f5630750435e8a803",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_accepted\", \"committed_once\"]"
+  },
+  {
+    "round": 8,
+    "group": "trust_v2",
+    "attack_active": 1,
+    "attack_type": "A1",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      2,
+      7,
+      9
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.046198352589971896,
+        0.8090722076505894
+      ],
+      "5": [
+        0.0002231008398708809,
+        0.34247878467269205
+      ],
+      "6": [
+        0.1009488735687543,
+        0.9034680612213024
+      ],
+      "7": [
+        0.0051201291449670845,
+        0.4864590971078844
+      ],
+      "8": [
+        5.380838439179438e-05,
+        0.3875297673183042
+      ],
+      "9": [
+        0.002242932602989321,
+        0.4061710983213175
+      ]
+    },
+    "audit_reference_input_key": "7e7250ac98a93258d738d9d8c581acb1d6016389c19dde0c24af2c447c6b94b8",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "832006df0a53f0aaa3a7ad56a7bda94fe6d87a180bbf94ce024b88975adf0200",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"f04d22f2ad9201056b4968412f3567189f48fbbe1356785e56513b7930711c25\", \"5\": \"5a5d305c956db22383e5a9be865b27f269557d5560b4d1fb5214074261d94691\", \"6\": \"810c8cb1268ff64959ffc793fa636d3d11149bb079e20b5cd7db78d370b5693c\", \"7\": \"afbc53d440732a865da481ed2ce832f3435cbf2d9a66360955e73170cd70a231\", \"8\": \"5282eddc96b91216ad95143090cf3c9115173044a880dbb7a52e1d8612b872a4\", \"9\": \"1b215fe7cf66a908ea07ac62a8a596a68b907fe50fc8169e044afa2397c2d8f9\"}",
+    "recovery_commitment": "fbf2a154a77967230c76bfb94486cbc1df0b049f17eb63455cb9025930326b75",
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 1,
+    "recovery_endorsed": 1,
+    "v2_trust": 1,
+    "v2_agg": 0,
+    "consensus_passed": 0,
+    "healed_applied": 1,
+    "heal_source": "V2",
+    "accuracy": 56.52,
+    "skipped": 0,
+    "proposal_relative_error": 0.7551999930096358,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.12786143235928524, \"5\": 0.002003633889656745, \"6\": 0.8371260545212187, \"7\": 0.022737362911178442, \"8\": 0.0002090272152736099, \"9\": 0.01006248910338717}",
+    "update_norms": "{\"4\": 0.2831974444182442, \"5\": 0.23766168630523812, \"6\": 0.38448194009923137, \"7\": 0.3125487141866383, \"8\": 0.47739094800799636, \"9\": 0.16626368439591532}",
+    "cosines": "{\"4\": 0.5522465741480322, \"5\": 0.27425230067874085, \"6\": 0.8869109214218991, \"7\": 0.3696940131481153, \"8\": 0.2755094926906151, \"9\": 0.33066298128000887}",
+    "published_weights": "{\"4\": 0.12786143235928524, \"5\": 0.75, \"6\": 0.8371260545212187, \"7\": 0.75, \"8\": 0.75, \"9\": 0.75}",
+    "used_weights": "{\"4\": 0.03224762569424439, \"5\": 0.18915570414323565, \"6\": 0.21112955773281306, \"7\": 0.18915570414323565, \"8\": 0.18915570414323565, \"9\": 0.18915570414323565}",
+    "attack_targets": "[5, 7, 8, 9]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 1,
+    "recovery_consistent": 1,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "27d48de58b6312d3f898d15c99516cbd10974b591a45d80f5630750435e8a803",
+    "state_hash": "4c33678e526cae937d6b4d34c11deb99122534fe514b6f49a9efa1d597172275",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_rejected\", \"recovery_recomputed\", \"recovery_audited\", \"recovery_verified\", \"committed_once\"]"
+  },
+  {
+    "round": 9,
+    "group": "trust_v2",
+    "attack_active": 1,
+    "attack_type": "A2",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      1,
+      3,
+      6
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.013206994748983944,
+        0.6596938695484647
+      ],
+      "5": [
+        0.0005068834549109394,
+        0.47353309920227843
+      ],
+      "6": [
+        0.1612841418229713,
+        0.9676491974678665
+      ],
+      "7": [
+        0.0026771387371321356,
+        0.4273036197418879
+      ],
+      "8": [
+        2.6180110020351336e-05,
+        0.36057452140579094
+      ],
+      "9": [
+        0.0013235072252915066,
+        0.38402612678200243
+      ]
+    },
+    "audit_reference_input_key": "1c54ac70957d3880bed8957e6ada5464d634812f7c5c33b47ed83d0fa47a1664",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "74f04ca049307d760573bb32e48f71a9a58c733841c3c5b8734912881d5a70d1",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"9ed0bc31fd2b0e8a7d9a013031979f9d1627f210b080e56729c1d1e1a8c1081b\", \"5\": \"f72794ef64386dba5d6cccb031b75c384782b8e8b3e914f6131d1766e0a59d17\", \"6\": \"1dd9a1ae2dc3b34ca3266898c1333d2dc6a38c513a6fe83d56d0865c460f1e80\", \"7\": \"39c03747692a12465822d0a357ce991ef1a11d33b23751a5a1c5e03168c610f5\", \"8\": \"5d0fb0c8b576800ea2b88fcc3a19dbe89091037a8860f862d1a25abdadc83840\", \"9\": \"79d30ccffaef58de3e50fcc67742fdff29a411ffd9a1f3b653b9122f667a7918\"}",
+    "recovery_commitment": "0bc1d7a3ce336d0d7ef6da90c6e7fa24e189c45f244b5c2a7d79b9ff5aecfaf6",
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 1,
+    "recovery_endorsed": 1,
+    "v2_trust": 0,
+    "v2_agg": 1,
+    "consensus_passed": 0,
+    "healed_applied": 1,
+    "heal_source": "V2",
+    "accuracy": 60.59,
+    "skipped": 0,
+    "proposal_relative_error": 0.5405313954931349,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.05637144636204542, \"5\": 0.0014087084907348192, \"6\": 0.9156248136528724, \"7\": 0.018072152284788177, \"8\": 0.00017579720167005197, \"9\": 0.008347082007889117}",
+    "update_norms": "{\"4\": 0.27945121657844957, \"5\": 0.20658909671054132, \"6\": 0.32030260205257355, \"7\": 0.3197796463145534, \"8\": 0.5084024615749587, \"9\": 0.17856648366114827}",
+    "cosines": "{\"4\": 0.4348426120714034, \"5\": 0.30459600609285464, \"6\": 0.8829737470284368, \"7\": 0.36272246862295426, \"8\": 0.294848579167182, \"9\": 0.33288086211504614}",
+    "published_weights": "{\"4\": 0.05637144636204542, \"5\": 0.0014087084907348192, \"6\": 0.9156248136528724, \"7\": 0.018072152284788177, \"8\": 0.00017579720167005197, \"9\": 0.008347082007889117}",
+    "used_weights": "{\"4\": 0.02818572318102271, \"5\": 0.1257043542453674, \"6\": 0.4578124068264362, \"7\": 0.1340360761423941, \"8\": 0.12508789860083502, \"9\": 0.12917354100394457}",
+    "attack_targets": "[5, 7, 8, 9]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 1,
+    "recovery_consistent": 1,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "4c33678e526cae937d6b4d34c11deb99122534fe514b6f49a9efa1d597172275",
+    "state_hash": "0340de6bbf7b26c5d9f0c414b33d63951b389b4b19714f06813026ddf99b03ff",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_rejected\", \"recovery_recomputed\", \"recovery_audited\", \"recovery_verified\", \"committed_once\"]"
+  },
+  {
+    "round": 10,
+    "group": "trust_v2",
+    "attack_active": 1,
+    "attack_type": "A3",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      1,
+      4,
+      8
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.009521055385553156,
+        0.6331371244770393
+      ],
+      "5": [
+        9.896377167460005e-05,
+        0.2951205589706394
+      ],
+      "6": [
+        0.1983041461980544,
+        0.9785475722735547
+      ],
+      "7": [
+        0.0023701105421054733,
+        0.3866557115515886
+      ],
+      "8": [
+        2.7301739205728375e-05,
+        0.3632445657333461
+      ],
+      "9": [
+        0.0010005555040348453,
+        0.32915418411998465
+      ]
+    },
+    "audit_reference_input_key": "c7375b771b298bfd73a41fa01ca09dc930ec224d93727f77ead382907b9a786d",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "e0f82a92cd62075eeeeb991c8e278d2950db85c9a0316fbbf431957f079531e7",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"357b083467675e95afd4822e9c4a5ed3f8c2285ed439d1bb5f845a34d78b9bcb\", \"5\": \"7af8d894c875010d7bdf2ba4c5a4454c0ce58f51f041ca9b7cc27c7d0145a87c\", \"6\": \"1df096f03b810e3b965766d4b7029dd16eff691f2a850e0beb6e38c16c803272\", \"7\": \"2221988a12580d21c3c22f9cff8e066bc33584f390cadd0d9a89d138774cd552\", \"8\": \"eeaed57922cf496374fc38112eed27a614c61184d75387535e907e6350a6a903\", \"9\": \"b2f5827b44caf2e272a1984108f2b2388ebd549bb723f4d0ab424f8ffb69bfbf\"}",
+    "recovery_commitment": "1100100f448d31fee671d3102b8e1b902e45c4d25e9c026adfce55cc8d1be269",
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 1,
+    "recovery_endorsed": 1,
+    "v2_trust": 1,
+    "v2_agg": 1,
+    "consensus_passed": 0,
+    "healed_applied": 1,
+    "heal_source": "V2",
+    "accuracy": 60.48,
+    "skipped": 0,
+    "proposal_relative_error": 1.1317752029761363,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.03297191836153252, \"5\": 0.0014773544649312807, \"6\": 0.9388787531729716, \"7\": 0.016657585675078898, \"8\": 0.00018139003825946848, \"9\": 0.00983299828722613}",
+    "update_norms": "{\"4\": 0.2780008912552671, \"5\": 0.22576754191990445, \"6\": 0.2759855318056843, \"7\": 0.3053800726636768, \"8\": 0.47818662759318964, \"9\": 0.16777390831053665}",
+    "cosines": "{\"4\": 0.4157886243392392, \"5\": 0.2910041418425225, \"6\": 0.8930465797355338, \"7\": 0.38475081142599815, \"8\": 0.31311435992363523, \"9\": 0.352499503431317}",
+    "published_weights": "{\"4\": 0.008741575749635534, \"5\": 0.18558528981085526, \"6\": 0.24891726500694342, \"7\": 0.18558528981085526, \"8\": 0.18558528981085526, \"9\": 0.18558528981085526}",
+    "used_weights": "{\"4\": 0.0, \"5\": 0.25, \"6\": 0.0, \"7\": 0.25, \"8\": 0.25, \"9\": 0.25}",
+    "attack_targets": "[4, 5, 6, 7, 8, 9]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 1,
+    "recovery_consistent": 1,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "0340de6bbf7b26c5d9f0c414b33d63951b389b4b19714f06813026ddf99b03ff",
+    "state_hash": "c29b359f7ae46386e411e9156d8c8e05dd23e5213495f06083a30bd02dc0043a",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_rejected\", \"recovery_recomputed\", \"recovery_audited\", \"recovery_verified\", \"committed_once\"]"
+  },
+  {
+    "round": 11,
+    "group": "trust_v2",
+    "attack_active": 1,
+    "attack_type": "A1",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      0,
+      5,
+      7
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.004830869779092335,
+        0.6037264108391712
+      ],
+      "5": [
+        0.0004060397563166015,
+        0.4442269609270427
+      ],
+      "6": [
+        0.18557730513164206,
+        0.9823965070654942
+      ],
+      "7": [
+        0.0029541958358530163,
+        0.4392911008019314
+      ],
+      "8": [
+        2.422996708958716e-05,
+        0.35325855332764183
+      ],
+      "9": [
+        0.00144753010320464,
+        0.3444610396041128
+      ]
+    },
+    "audit_reference_input_key": "1c2e46f474df452421528a7aaaf27434a0d234e9d20ba91080b191d8e9ba6f48",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "dcd6cfafba8902511d3654c9309c8f3d5b3c0e3540633aac800603f27c0f2fe0",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"d1338eb7d7f5f0babb35b0a66848060ff172f0ba8a064ce033a57e907e0b7fdd\", \"5\": \"a649a3d6ebff54b94d8c52437bbb8b43d57a1f171d9556ef70130c3c0746af9d\", \"6\": \"06ff7e8434366e3769b8878e8ece1b6d292d0e6319833af3036a6d156386151a\", \"7\": \"ea748c3f5af22095753a26abec56c06ee68e4d36936ae02a516ccc5c740e139d\", \"8\": \"c80fd1ac03e573f213f8111a32a0d76ff67af367508e9d411d62db1a331d2664\", \"9\": \"417cff726ffbb327e72d4a6ac6a2da4cc9c80f23b1eb0d377bc5e6f07fcfab01\"}",
+    "recovery_commitment": "6887fd5af51677966b6c6c297d212fb440e315c1de0a34f020b4fe0894e24775",
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 1,
+    "recovery_endorsed": 1,
+    "v2_trust": 1,
+    "v2_agg": 0,
+    "consensus_passed": 0,
+    "healed_applied": 1,
+    "heal_source": "V2",
+    "accuracy": 62.63,
+    "skipped": 0,
+    "proposal_relative_error": 0.8785838874797038,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.05439478704722814, \"5\": 0.002491344148341888, \"6\": 0.8939141851836017, \"7\": 0.03847618974290744, \"8\": 0.0021616355024781666, \"9\": 0.008561858375442913}",
+    "update_norms": "{\"4\": 0.2939825206908128, \"5\": 0.20470683118905303, \"6\": 0.2519002000428819, \"7\": 0.3046003103796302, \"8\": 0.4838888465483862, \"9\": 0.16276699094673366}",
+    "cosines": "{\"4\": 0.4312789201267772, \"5\": 0.29688953871901597, \"6\": 0.8623972861845209, \"7\": 0.4109201151754538, \"8\": 0.31781159004101445, \"9\": 0.34055216867087057}",
+    "published_weights": "{\"4\": 0.05439478704722814, \"5\": 0.75, \"6\": 0.8939141851836017, \"7\": 0.75, \"8\": 0.75, \"9\": 0.75}",
+    "used_weights": "{\"4\": 0.0137767300963011, \"5\": 0.1899547389211142, \"6\": 0.2264043142192421, \"7\": 0.1899547389211142, \"8\": 0.1899547389211142, \"9\": 0.1899547389211142}",
+    "attack_targets": "[5, 7, 8, 9]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 1,
+    "recovery_consistent": 1,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "c29b359f7ae46386e411e9156d8c8e05dd23e5213495f06083a30bd02dc0043a",
+    "state_hash": "a2d9c87430d28a3598012bc0b054e363cdc0d82890abe82f2e7f055e6fe696ba",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_rejected\", \"recovery_recomputed\", \"recovery_audited\", \"recovery_verified\", \"committed_once\"]"
+  },
+  {
+    "round": 12,
+    "group": "trust_v2",
+    "attack_active": 1,
+    "attack_type": "A2",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      3,
+      6,
+      7
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.010595044286439296,
+        0.6582388849400747
+      ],
+      "5": [
+        0.00011635572585211881,
+        0.22348061055871843
+      ],
+      "6": [
+        0.18361405214231444,
+        0.970210291183112
+      ],
+      "7": [
+        0.006154790875179048,
+        0.48247432756961905
+      ],
+      "8": [
+        0.00033060692099995496,
+        0.38270977926293465
+      ],
+      "9": [
+        0.000736533540899235,
+        0.2557977420661714
+      ]
+    },
+    "audit_reference_input_key": "a490db496d6e441ce4025e064b9398e473e2a9b82daaaef92e8e8a3c9a397d26",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "49c8195c47f2df4a2d74672ef166ff8379d486bad69d20de7f10db97b2e53269",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"c205150c6eef3c6763caacd0e1b7514f88db1c0a4419a365e2ff0d9f97050e66\", \"5\": \"44381e17c98e838b9d514ceae75901ab9aa1e8940ddae2562d69a8e4886eeff8\", \"6\": \"181f4db2ea50dc01c7cb6b06537f29109ac44f843b800c316afb3f3594895652\", \"7\": \"235dedf7e9287d457aa17187c19433e1b27529f8d1250192c7f7469141f6f251\", \"8\": \"a8c99e40b6fb60e7622166176a731faeb8e86a7b0689392c33358d9448c08804\", \"9\": \"5021c16a7f4acb32ed3ff1760b85bf400a001978ddbc2b77c63fd17f0d964a44\"}",
+    "recovery_commitment": "c6c560bc6e0ae3888055d204550cf522acf5b64d3140f62537acb8a97146b61f",
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 1,
+    "recovery_endorsed": 1,
+    "v2_trust": 0,
+    "v2_agg": 1,
+    "consensus_passed": 0,
+    "healed_applied": 1,
+    "heal_source": "V2",
+    "accuracy": 67.03,
+    "skipped": 0,
+    "proposal_relative_error": 0.5894456679794937,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.0951973939509685, \"5\": 0.0003488794662353751, \"6\": 0.8531181211648149, \"7\": 0.04229439675002085, \"8\": 0.0033382251980009826, \"9\": 0.0057029834699592625}",
+    "update_norms": "{\"4\": 0.2765843869464671, \"5\": 0.22239340984352968, \"6\": 0.23624696568579545, \"7\": 0.2986977106614977, \"8\": 0.5009322235596337, \"9\": 0.1761338081297566}",
+    "cosines": "{\"4\": 0.47086590246148563, \"5\": 0.2872412146697827, \"6\": 0.8686939277385137, \"7\": 0.43595600156757996, \"8\": 0.3517477046479888, \"9\": 0.3586553539418476}",
+    "published_weights": "{\"4\": 0.0951973939509685, \"5\": 0.0003488794662353751, \"6\": 0.8531181211648149, \"7\": 0.04229439675002085, \"8\": 0.0033382251980009826, \"9\": 0.0057029834699592625}",
+    "used_weights": "{\"4\": 0.04759869697548425, \"5\": 0.12517443973311768, \"6\": 0.42655906058240745, \"7\": 0.14614719837501042, \"8\": 0.1266691125990005, \"9\": 0.12785149173497964}",
+    "attack_targets": "[5, 7, 8, 9]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 1,
+    "recovery_consistent": 1,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "a2d9c87430d28a3598012bc0b054e363cdc0d82890abe82f2e7f055e6fe696ba",
+    "state_hash": "28b39207730cd10a46df822c3df958938b2260c2dc072e5eed99e797fed98f47",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_rejected\", \"recovery_recomputed\", \"recovery_audited\", \"recovery_verified\", \"committed_once\"]"
+  },
+  {
+    "round": 13,
+    "group": "trust_v2",
+    "attack_active": 0,
+    "attack_type": "none",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      7,
+      8,
+      9
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.01303284751479383,
+        0.6782600748430779
+      ],
+      "5": [
+        0.00013759401588708489,
+        0.4888148329879592
+      ],
+      "6": [
+        0.12796782805545673,
+        0.9547231830570586
+      ],
+      "7": [
+        0.006734439143724612,
+        0.5543827416240596
+      ],
+      "8": [
+        0.000558138784810147,
+        0.4698222105542304
+      ],
+      "9": [
+        0.0014298091850672959,
+        0.42933746404798073
+      ]
+    },
+    "audit_reference_input_key": "ba277a13e6ab6fddd06b63b22dfd81a52e3ce008f8b5f0eab8c641bf42228796",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "7700796037f56e90fdd8bacbe15ffb643a6815533375e7e9539a708141596620",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"55f1cfe2663c597b98815424406a37a4a263067db113c964e972d468db4384d7\", \"5\": \"add7af04510e0a8837ef8bc3f30c1f6a1ece85ce78101d5e12d1beb3dc5534e4\", \"6\": \"7f37edcc3233219909611fa43ec8eb44ee8161dd9a28a6badb94851811bf608e\", \"7\": \"61475a5176af1604130857b6a80435892edeed42af506fbc94ac281598b2dfe4\", \"8\": \"adfe8cd5e39c8951f7d7ec7fe7f5d3c921a89ee8dfb7632b82d5b429ff712af6\", \"9\": \"008b297c68ce751903a1a003c45016e4ab536d1bd00b3afb336a28495aa370c3\"}",
+    "recovery_commitment": null,
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 0,
+    "recovery_endorsed": 0,
+    "v2_trust": 0,
+    "v2_agg": 0,
+    "consensus_passed": 1,
+    "healed_applied": 0,
+    "heal_source": "",
+    "accuracy": 66.58,
+    "skipped": 0,
+    "proposal_relative_error": 0.0,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.07887541501073012, \"5\": 0.0012405446288987578, \"6\": 0.7799289383639828, \"7\": 0.10824533589954352, \"8\": 0.007976645548908019, \"9\": 0.023733120547936727}",
+    "update_norms": "{\"4\": 0.24955239454039715, \"5\": 0.191760745675839, \"6\": 0.2276953688866142, \"7\": 0.27254769514551147, \"8\": 0.4494147226221663, \"9\": 0.15507238530809664}",
+    "cosines": "{\"4\": 0.41242098195116855, \"5\": 0.3204622511177578, \"6\": 0.7838569230864616, \"7\": 0.4402185214328449, \"8\": 0.36596574167731954, \"9\": 0.35694186784850424}",
+    "published_weights": "{\"4\": 0.07887541501073012, \"5\": 0.0012405446288987578, \"6\": 0.7799289383639828, \"7\": 0.10824533589954352, \"8\": 0.007976645548908019, \"9\": 0.023733120547936727}",
+    "used_weights": "{\"4\": 0.07887541501073012, \"5\": 0.0012405446288987578, \"6\": 0.7799289383639828, \"7\": 0.10824533589954352, \"8\": 0.007976645548908019, \"9\": 0.023733120547936727}",
+    "attack_targets": "[]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 0,
+    "recovery_consistent": 0,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "28b39207730cd10a46df822c3df958938b2260c2dc072e5eed99e797fed98f47",
+    "state_hash": "86feebb84f7130d44f51057e1ebc805303683bff7a7f0667ea207d9606639112",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_accepted\", \"committed_once\"]"
+  },
+  {
+    "round": 14,
+    "group": "trust_v2",
+    "attack_active": 1,
+    "attack_type": "A3",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      0,
+      7,
+      9
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.010876415347222057,
+        0.6712628831174433
+      ],
+      "5": [
+        0.00010246037153308309,
+        0.4031550841049598
+      ],
+      "6": [
+        0.1492213924907908,
+        0.9531890153094946
+      ],
+      "7": [
+        0.014727132347296081,
+        0.5971218964014113
+      ],
+      "8": [
+        0.0004967218959940239,
+        0.3265959078671886
+      ],
+      "9": [
+        0.000814437596395239,
+        0.19042493768295699
+      ]
+    },
+    "audit_reference_input_key": "c20196657ffc909ae7e0649cea807c0332d25234528b5b1c89b131bb645a66a1",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "eddc5a2601b108efc4e3431148b87ce31617ffce6a8aec5bf3eee46f2b414daf",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"bcbe6aab70e3f25aeb62de33830e1d82a2830ff43a0c55ec5300bc91eb1ee154\", \"5\": \"b540bff61a8272b0fd2d6ca1b9e6069be1809890ccd28f888fff8334ed28d9a3\", \"6\": \"ef264e67f4c293156a95116d0e6a40fc5f7b7b8f407f39a7152f4c5c67aa16d3\", \"7\": \"e2162a6949c0866e1e6d27132e15db255beff484a1bbc1568e99db5456bf8a31\", \"8\": \"7150a4b9a0f5b1ab0fc164361cff32e5df14541263231024e79dee398a358b19\", \"9\": \"0f50b42566b43b3506cbf16607d77caf9d54596cabb51a98ba38cec6bdb112b9\"}",
+    "recovery_commitment": "3aae1b7b1aa0f51d05d56f9e333e21e28cde0716d539a38388607c0b437cfc52",
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 1,
+    "recovery_endorsed": 1,
+    "v2_trust": 0,
+    "v2_agg": 1,
+    "consensus_passed": 0,
+    "healed_applied": 1,
+    "heal_source": "V2",
+    "accuracy": 67.87,
+    "skipped": 0,
+    "proposal_relative_error": 1.1348723021153697,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.1106174049471565, \"5\": 0.0006074865771422684, \"6\": 0.71310891160063, \"7\": 0.16581069675460816, \"8\": 0.005197624229853298, \"9\": 0.004657875890609851}",
+    "update_norms": "{\"4\": 0.2561982149085136, \"5\": 0.19216905865348025, \"6\": 0.22445529394798164, \"7\": 0.26203101715976473, \"8\": 0.4747376368388343, \"9\": 0.16100627953555924}",
+    "cosines": "{\"4\": 0.42958922386032605, \"5\": 0.27368804751676146, \"6\": 0.7620845835604857, \"7\": 0.4610717804807306, \"8\": 0.34883108356921555, \"9\": 0.3158727448413232}",
+    "published_weights": "{\"4\": 0.19027325261748626, \"5\": 0.19027325261748626, \"6\": 0.19383650297252478, \"7\": 0.04507048655752996, \"8\": 0.19027325261748626, \"9\": 0.19027325261748626}",
+    "used_weights": "{\"4\": 0.25, \"5\": 0.25, \"6\": 0.0, \"7\": 0.0, \"8\": 0.25, \"9\": 0.25}",
+    "attack_targets": "[4, 5, 6, 7, 8, 9]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 1,
+    "recovery_consistent": 1,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "86feebb84f7130d44f51057e1ebc805303683bff7a7f0667ea207d9606639112",
+    "state_hash": "54f508b2fa2477586d9b0a0a7879c5035499fc52737d38e56515cc7b025855e8",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_rejected\", \"recovery_recomputed\", \"recovery_audited\", \"recovery_verified\", \"committed_once\"]"
+  },
+  {
+    "round": 15,
+    "group": "trust_v2",
+    "attack_active": 1,
+    "attack_type": "A1",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      0,
+      6,
+      8
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.021951527427909127,
+        0.7625605446045705
+      ],
+      "5": [
+        1.0060796852109002e-05,
+        0.09907211592527945
+      ],
+      "6": [
+        0.11531818016842599,
+        0.9285018471205364
+      ],
+      "7": [
+        0.017061831195550332,
+        0.5899497644691085
+      ],
+      "8": [
+        0.0009014107816974646,
+        0.43607996908772256
+      ],
+      "9": [
+        0.0010413472367883903,
+        0.3300906795099198
+      ]
+    },
+    "audit_reference_input_key": "63653c4c0a752ca5fc45d7adfd9d0d45c75c370a9adadcbfde8fafe2003169cd",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "150a6ff755c9096ff9b400579512b5774dae6dab2ad98b347eeeadff76a7f58c",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"47100080a071101caf5a01f078aad1a684341459f5938f88d02ccf834d3376cb\", \"5\": \"60e77aec6c583accf96a9e25270145a76eb3c3181f6af6c002c0759b42cb4b25\", \"6\": \"754b20c472d257d0bb5d9d70753d3c062740217fa43f85cb3163519b94c34eca\", \"7\": \"544521496e4625f69f93236a7dfa159b7f1cfea65ac04f640cc61e8599796e76\", \"8\": \"dc90de0bb9dc8c6524c9e5d76093656e6c0c574656e1f75483af7c08af1f4630\", \"9\": \"353efdadfd5a20c6915cfa984ac9f6452e64d237965a3c3c380c9816c869f102\"}",
+    "recovery_commitment": "81b5ebc478bc21ee853bccfc7a9597b3a538d716e0a7a8c9cf6a0415dd314753",
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 1,
+    "recovery_endorsed": 1,
+    "v2_trust": 1,
+    "v2_agg": 0,
+    "consensus_passed": 0,
+    "healed_applied": 1,
+    "heal_source": "V2",
+    "accuracy": 70.48,
+    "skipped": 0,
+    "proposal_relative_error": 0.9479282585899138,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.15377255112922814, \"5\": 0.00016210435669929997, \"6\": 0.7488488262522106, \"7\": 0.0837800115933911, \"8\": 0.006626940123762822, \"9\": 0.00680956654470809}",
+    "update_norms": "{\"4\": 0.23882779076307564, \"5\": 0.2109106372614474, \"6\": 0.2124792233433613, \"7\": 0.263685790040312, \"8\": 0.4645447621262406, \"9\": 0.15971781394337792}",
+    "cosines": "{\"4\": 0.4706197721293913, \"5\": 0.23289677707051543, \"6\": 0.776848482476299, \"7\": 0.440232175337853, \"8\": 0.3623448424086823, \"9\": 0.3306012530706782}",
+    "published_weights": "{\"4\": 0.15377255112922814, \"5\": 0.75, \"6\": 0.7488488262522106, \"7\": 0.75, \"8\": 0.75, \"9\": 0.75}",
+    "used_weights": "{\"4\": 0.03940237503449685, \"5\": 0.19217851989096396, \"6\": 0.1918835454016473, \"7\": 0.19217851989096396, \"8\": 0.19217851989096396, \"9\": 0.19217851989096396}",
+    "attack_targets": "[5, 7, 8, 9]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 1,
+    "recovery_consistent": 1,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "54f508b2fa2477586d9b0a0a7879c5035499fc52737d38e56515cc7b025855e8",
+    "state_hash": "7cae237caffe2812529776c1d09f3fe35075d0d09629d4fe80152f88153b5e40",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_rejected\", \"recovery_recomputed\", \"recovery_audited\", \"recovery_verified\", \"committed_once\"]"
+  },
+  {
+    "round": 16,
+    "group": "trust_v2",
+    "attack_active": 0,
+    "attack_type": "none",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      3,
+      4,
+      5
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.016211758227726934,
+        0.6767255146285214
+      ],
+      "5": [
+        0.00011045768639446743,
+        0.3587751579639972
+      ],
+      "6": [
+        0.1420968828450862,
+        0.9504565380365819
+      ],
+      "7": [
+        0.00957554133270428,
+        0.5123858684365995
+      ],
+      "8": [
+        0.0012127643361787438,
+        0.5003636456797347
+      ],
+      "9": [
+        0.0007744824020617653,
+        0.29703771711479915
+      ]
+    },
+    "audit_reference_input_key": "3bd8f396f6b5dc3c73bda5bfa454e81e4b799bbd241e37ff8d7e43bbb5c4d3da",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "a8116e58d80ff32b4b67a9a761851c6bb5208295494a2b7cddc85b3e33009283",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"1ddd8052fa1953b2ac176c9e2fd4314c96f8c4238b88282a5cc5d9566694020a\", \"5\": \"9a582276c374fa1370603008e2e92e472a908e2dc9bc33d638d7a600dbca5b06\", \"6\": \"a7998985f3dd33e35130660c65dae2bc7f4a4a027d551c0ee325e573899eedf2\", \"7\": \"8d24c1a2f7dea2a76c04cef0ade4eb8a88d378f0b331b7e957b69c36c94e820b\", \"8\": \"da8823de05009e989071eb9339ad0c645da0c5929ee47e3a13abef7d92473485\", \"9\": \"e4eb4ed03f2dd8565bb3ed7cf8f9270f80a42513d599c0ef5b4127b50c1a3af7\"}",
+    "recovery_commitment": null,
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 0,
+    "recovery_endorsed": 0,
+    "v2_trust": 0,
+    "v2_agg": 0,
+    "consensus_passed": 1,
+    "healed_applied": 0,
+    "heal_source": "",
+    "accuracy": 69.4,
+    "skipped": 0,
+    "proposal_relative_error": 0.0,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.07659949345876788, \"5\": 0.0006936116478308835, \"6\": 0.7438956938891422, \"7\": 0.16000111967269154, \"8\": 0.009253473949717182, \"9\": 0.009556607381850324}",
+    "update_norms": "{\"4\": 0.24041538422025352, \"5\": 0.200036582729525, \"6\": 0.21079412940560652, \"7\": 0.2579748624365604, \"8\": 0.42695889592658826, \"9\": 0.150952220965854}",
+    "cosines": "{\"4\": 0.41405148691265986, \"5\": 0.27697863954456675, \"6\": 0.7310015093355372, \"7\": 0.4558991003578106, \"8\": 0.37181286602923086, \"9\": 0.33739490115594994}",
+    "published_weights": "{\"4\": 0.07659949345876788, \"5\": 0.0006936116478308835, \"6\": 0.7438956938891422, \"7\": 0.16000111967269154, \"8\": 0.009253473949717182, \"9\": 0.009556607381850324}",
+    "used_weights": "{\"4\": 0.07659949345876788, \"5\": 0.0006936116478308835, \"6\": 0.7438956938891422, \"7\": 0.16000111967269154, \"8\": 0.009253473949717182, \"9\": 0.009556607381850324}",
+    "attack_targets": "[]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 0,
+    "recovery_consistent": 0,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "7cae237caffe2812529776c1d09f3fe35075d0d09629d4fe80152f88153b5e40",
+    "state_hash": "a44fa55c39d763dfc4db7ed25de79b6dd2dca2e77b8e2b2230e0682549d22ef5",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_accepted\", \"committed_once\"]"
+  },
+  {
+    "round": 17,
+    "group": "trust_v2",
+    "attack_active": 1,
+    "attack_type": "A2",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      3,
+      4,
+      9
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.0077311607120991,
+        0.629527553814971
+      ],
+      "5": [
+        0.0001327906969251595,
+        0.5010176775741065
+      ],
+      "6": [
+        0.12953577002857777,
+        0.9399860159331441
+      ],
+      "7": [
+        0.025446077899032176,
+        0.6507283845262944
+      ],
+      "8": [
+        0.00028674724160027674,
+        0.23844396754496977
+      ],
+      "9": [
+        0.0011039407974188782,
+        0.3292665005382348
+      ]
+    },
+    "audit_reference_input_key": "928355ab602fe9663a3c385980f50a3d8021e75a59d45949394c7c0fbeb43489",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "6acb8ce485ccb622f8de102cbc5dd2b425372156eb6d73a7bac1df4998f76e4b",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"a0cdf9475eaa1ead461fff725259c7af66e32cf9da6027300353273b5e3764a8\", \"5\": \"f155af85da8ec7ad392bbf904887c9d683e0fcad1a7c3802671d2a8ed863386c\", \"6\": \"826127c1e085d6660195354a3d67ebf13310097faa839d6340ce478f08fb957b\", \"7\": \"ac4b0ef456c499a5a634974055444740cbf58508c5273c9e13a3dead1d682529\", \"8\": \"3a001cce4b52c723caf187fd904d98372e63d882b889b38cbdc96bda0d2b69e5\", \"9\": \"8f00f32b8799ba470d65d78f6b0e587610ae94a63ff2442fee7adb267ce7bf22\"}",
+    "recovery_commitment": "36d799db4f0738ffe7fee77441902752d14ef223e2450f39a372fcb2f9441d02",
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 1,
+    "recovery_endorsed": 1,
+    "v2_trust": 0,
+    "v2_agg": 1,
+    "consensus_passed": 0,
+    "healed_applied": 1,
+    "heal_source": "V2",
+    "accuracy": 71.17,
+    "skipped": 0,
+    "proposal_relative_error": 0.5584002753833264,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.04410615825013576, \"5\": 0.0006425488552971892, \"6\": 0.7355487741647828, \"7\": 0.20738223968509764, \"8\": 0.0019887011427937714, \"9\": 0.010331577901892782}",
+    "update_norms": "{\"4\": 0.24024233363564187, \"5\": 0.19558030966414078, \"6\": 0.20141382367271107, \"7\": 0.24807025551642753, \"8\": 0.4432138682707284, \"9\": 0.12605596642059752}",
+    "cosines": "{\"4\": 0.37665909389848534, \"5\": 0.29974053545657153, \"6\": 0.7485742385485792, \"7\": 0.4586191885139183, \"8\": 0.32543553368573924, \"9\": 0.337811390724288}",
+    "published_weights": "{\"4\": 0.04410615825013576, \"5\": 0.0006425488552971892, \"6\": 0.7355487741647828, \"7\": 0.20738223968509764, \"8\": 0.0019887011427937714, \"9\": 0.010331577901892782}",
+    "used_weights": "{\"4\": 0.14705307912506788, \"5\": 0.1253212744276486, \"6\": 0.3677743870823914, \"7\": 0.10369111984254882, \"8\": 0.12599435057139688, \"9\": 0.13016578895094638}",
+    "attack_targets": "[4, 5, 8, 9]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 1,
+    "recovery_consistent": 1,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "a44fa55c39d763dfc4db7ed25de79b6dd2dca2e77b8e2b2230e0682549d22ef5",
+    "state_hash": "7cb18323f26bcf3dd196dc8d7adc257290bb37e72a6c0ed181ddb139829a4475",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_rejected\", \"recovery_recomputed\", \"recovery_audited\", \"recovery_verified\", \"committed_once\"]"
+  },
+  {
+    "round": 18,
+    "group": "trust_v2",
+    "attack_active": 0,
+    "attack_type": "none",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      0,
+      4,
+      5
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.005901166734460707,
+        0.6387714336191112
+      ],
+      "5": [
+        4.870269103703645e-05,
+        0.4036404479437134
+      ],
+      "6": [
+        0.10521926583622764,
+        0.9228174567721621
+      ],
+      "7": [
+        0.03222794447800015,
+        0.7149775097504453
+      ],
+      "8": [
+        0.0006233641942545727,
+        0.4618051514369729
+      ],
+      "9": [
+        0.001563886026304643,
+        0.40048844390590105
+      ]
+    },
+    "audit_reference_input_key": "c4d4f688437b997859838179d986927282a2fb3a9b211cd326ebf6812216fc60",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "cb30cc9c23e7b5c0322f4af99fc3a02cb8129582867fcccaa6bf2849ed98cd2e",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"1450dca61e8c0ece4ff82d96f9420c6ce40e2a171c79be3bf83e070cf97e5d60\", \"5\": \"570dec90792ac018ccfa65893a56bdafa667e15dc518e4c5fd289aa756ab5bdd\", \"6\": \"ac0599ff66dd943753c00906a2344c1cc1e8f569319598e32262f81f34e8b182\", \"7\": \"b0a190269fc52ce2c095863b8e76d9df15b664dc5ca13a510de55efc615464db\", \"8\": \"e7ccf1bfc7783caa12fbd135c506fa513368ad35b5a1e78eba9971c950ac2890\", \"9\": \"14521258da05e925c1f97ebb3af7c707588629f8da5e22eaff39ac58ae41ac28\"}",
+    "recovery_commitment": null,
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 0,
+    "recovery_endorsed": 0,
+    "v2_trust": 0,
+    "v2_agg": 0,
+    "consensus_passed": 1,
+    "healed_applied": 0,
+    "heal_source": "",
+    "accuracy": 73.26,
+    "skipped": 0,
+    "proposal_relative_error": 0.0,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.07228278531395874, \"5\": 0.00032033793853990597, \"6\": 0.6159691827938033, \"7\": 0.28180835874459004, \"8\": 0.009603499975364185, \"9\": 0.020015835233743826}",
+    "update_norms": "{\"4\": 0.2407506236383647, \"5\": 0.19504876758041564, \"6\": 0.20058107215623958, \"7\": 0.23936112988247266, \"8\": 0.42975595956690466, \"9\": 0.13474737168610498}",
+    "cosines": "{\"4\": 0.4014024303005001, \"5\": 0.2815880996278729, \"6\": 0.7209495259420502, \"7\": 0.502396659271594, \"8\": 0.35644180976174894, \"9\": 0.3745018384012195}",
+    "published_weights": "{\"4\": 0.07228278531395874, \"5\": 0.00032033793853990597, \"6\": 0.6159691827938033, \"7\": 0.28180835874459004, \"8\": 0.009603499975364185, \"9\": 0.020015835233743826}",
+    "used_weights": "{\"4\": 0.07228278531395874, \"5\": 0.00032033793853990597, \"6\": 0.6159691827938033, \"7\": 0.28180835874459004, \"8\": 0.009603499975364185, \"9\": 0.020015835233743826}",
+    "attack_targets": "[]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 0,
+    "recovery_consistent": 0,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "7cb18323f26bcf3dd196dc8d7adc257290bb37e72a6c0ed181ddb139829a4475",
+    "state_hash": "83629be4c9bbe7aebd400e9b1ffe43d79a8829760554ab10f93bded1fdbd8413",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_accepted\", \"committed_once\"]"
+  },
+  {
+    "round": 19,
+    "group": "trust_v2",
+    "attack_active": 0,
+    "attack_type": "none",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      2,
+      3,
+      8
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.006801170312364147,
+        0.6008553628790894
+      ],
+      "5": [
+        4.083013624320111e-05,
+        0.4485020623614284
+      ],
+      "6": [
+        0.08014981626969878,
+        0.8843215809885573
+      ],
+      "7": [
+        0.05181912018998783,
+        0.813672436986125
+      ],
+      "8": [
+        0.001016645330378634,
+        0.46242376154263815
+      ],
+      "9": [
+        0.0012411219438119856,
+        0.291231129759425
+      ]
+    },
+    "audit_reference_input_key": "be991cc7e903e89891a1a75b9550d8c72f3bd6a15cbc12b50e980f5e05f59cf9",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "c1b46fc097a95d49245fabf5eea60ba88a6464146022023de77de86c4f6bc316",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"16392ca3a81816e0dca2b987ae94b5d6030961068adb7a9d7ff311afafae6576\", \"5\": \"6f5bd5de3fd6c77e6e90abff0577c98be4b01f728952ea7e60cb683be13db49b\", \"6\": \"cda6708343021c67a41969bd8391c8fafb13fb3863890ee58ceb5a1a06102b7d\", \"7\": \"d980899dfa1c49ac1e7079035a8c3d1a1a072291db82c798b939c5bea7978b9f\", \"8\": \"ec1eddcbe59d47b2275b3f60a007a94a99fc7d72906a8198baf3f69030710021\", \"9\": \"fc17ff70c5edaf1e3d7db3876d347230ca25cc22c3e9ceb71a620cc0908692af\"}",
+    "recovery_commitment": null,
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 0,
+    "recovery_endorsed": 0,
+    "v2_trust": 0,
+    "v2_agg": 0,
+    "consensus_passed": 1,
+    "healed_applied": 0,
+    "heal_source": "",
+    "accuracy": 72.33,
+    "skipped": 0,
+    "proposal_relative_error": 0.0,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.03665716270219119, \"5\": 0.00010375701535694639, \"6\": 0.5406389566791383, \"7\": 0.4084706405886233, \"8\": 0.009426956501352826, \"9\": 0.004702526513337489}",
+    "update_norms": "{\"4\": 0.25121932673650604, \"5\": 0.18523947529185697, \"6\": 0.21446491100329618, \"7\": 0.21199197166765213, \"8\": 0.41242812613268537, \"9\": 0.14050701090210693}",
+    "cosines": "{\"4\": 0.3452242428843427, \"5\": 0.198687427479469, \"6\": 0.5620033561010414, \"7\": 0.5076202785239687, \"8\": 0.34466047800479, \"9\": 0.2774804030898654}",
+    "published_weights": "{\"4\": 0.03665716270219119, \"5\": 0.00010375701535694639, \"6\": 0.5406389566791383, \"7\": 0.4084706405886233, \"8\": 0.009426956501352826, \"9\": 0.004702526513337489}",
+    "used_weights": "{\"4\": 0.03665716270219119, \"5\": 0.00010375701535694639, \"6\": 0.5406389566791383, \"7\": 0.4084706405886233, \"8\": 0.009426956501352826, \"9\": 0.004702526513337489}",
+    "attack_targets": "[]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 0,
+    "recovery_consistent": 0,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "83629be4c9bbe7aebd400e9b1ffe43d79a8829760554ab10f93bded1fdbd8413",
+    "state_hash": "b0649f95a3d42cdaf1cb5a402e991589bc07b8ec2f1421f81dd1308c9de67ac8",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_accepted\", \"committed_once\"]"
+  },
+  {
+    "round": 20,
+    "group": "trust_v2",
+    "attack_active": 1,
+    "attack_type": "A3",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      0,
+      3,
+      5
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.006440771124568594,
+        0.6359778648225319
+      ],
+      "5": [
+        6.183459767856069e-06,
+        0.27792189052284105
+      ],
+      "6": [
+        0.09745597047614069,
+        0.8894979876259024
+      ],
+      "7": [
+        0.05747993711349965,
+        0.7986401160387752
+      ],
+      "8": [
+        0.0008827986562401567,
+        0.3835891591910017
+      ],
+      "9": [
+        0.00013428273994083235,
+        0.08587375169275195
+      ]
+    },
+    "audit_reference_input_key": "4b00323e84647532181640fdcf60532c8b4172e7b9b6d3c3a18752579ce61efe",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "a8722d730cf9eee2269b56cf69dcb8d247af798f803738b70a75fe9c25be1c68",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"73efb633b34f4f8caf2d07ffe1b0fb757a4f7e83c36d97e74bf15e138cffc47d\", \"5\": \"ef944380d44f55b9329ad1926bc696e5adff49fe36db5e7974e7dc2a598df749\", \"6\": \"f304d169de15c8f98677402a5964825f1f3e1eefa6ff70cfb56b9d0805a745e0\", \"7\": \"8ca2d4948fdbf5401c9bb7e1f20826717f107eca5867d20e206e11c6132a5b69\", \"8\": \"3005f7574f33ee834bfa53f7aac8a8b68a191ef31e7ef082da1376f31f1cabeb\", \"9\": \"659cc123dd176bca8500e81a213f90287327e49be095b9d137c50992bee3d6ca\"}",
+    "recovery_commitment": "8cab5b27d9ab417732d5cf52dc4e1e57023010ce479daca931f4fa8ada81e305",
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 1,
+    "recovery_endorsed": 1,
+    "v2_trust": 0,
+    "v2_agg": 1,
+    "consensus_passed": 0,
+    "healed_applied": 1,
+    "heal_source": "V2",
+    "accuracy": 73.66,
+    "skipped": 0,
+    "proposal_relative_error": 1.1612322865801459,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.04742818746089812, \"5\": 9.497965423912193e-05, \"6\": 0.5819414586702373, \"7\": 0.35893858086190505, \"8\": 0.010637530443517984, \"9\": 0.0009592629092024473}",
+    "update_norms": "{\"4\": 0.24137325001846313, \"5\": 0.17434315392002392, \"6\": 0.21355626567237548, \"7\": 0.20295235257440886, \"8\": 0.41962932125515756, \"9\": 0.12816756422414077}",
+    "cosines": "{\"4\": 0.37371545659500677, \"5\": 0.2111332876463889, \"6\": 0.5829925324875908, \"7\": 0.49876108449145784, \"8\": 0.345017117749503, \"9\": 0.2759613966994971}",
+    "published_weights": "{\"4\": 0.18712174477734556, \"5\": 0.18712174477734556, \"6\": 0.15556271586378334, \"7\": 0.0959503050268343, \"8\": 0.18712174477734556, \"9\": 0.18712174477734556}",
+    "used_weights": "{\"4\": 0.25, \"5\": 0.25, \"6\": 0.0, \"7\": 0.0, \"8\": 0.25, \"9\": 0.25}",
+    "attack_targets": "[4, 5, 6, 7, 8, 9]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 1,
+    "recovery_consistent": 1,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "b0649f95a3d42cdaf1cb5a402e991589bc07b8ec2f1421f81dd1308c9de67ac8",
+    "state_hash": "80276bfbf10fd2c05699ccfbea451afb25609d76349a746a2848e3cc3d265602",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_rejected\", \"recovery_recomputed\", \"recovery_audited\", \"recovery_verified\", \"committed_once\"]"
+  },
+  {
+    "round": 21,
+    "group": "trust_v2",
+    "attack_active": 1,
+    "attack_type": "A1",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      1,
+      2,
+      4
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.004650659995959141,
+        0.5939699138671273
+      ],
+      "5": [
+        2.7889952145290234e-05,
+        0.5025679727726771
+      ],
+      "6": [
+        0.10875235782683637,
+        0.933475552575239
+      ],
+      "7": [
+        0.02778899169594281,
+        0.678734321933081
+      ],
+      "8": [
+        0.0016124358456425989,
+        0.4652836196747241
+      ],
+      "9": [
+        0.000942032311412708,
+        0.45815195832616745
+      ]
+    },
+    "audit_reference_input_key": "968467304d6766e775f38c82d13bc8097081e21b4c930de819e001116ff4af70",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "b247fef5b689f25cb2df94d844dc090617b880c6897b10806bdf1d3dc324fabf",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"4104e96c77f6e0cc0bf7360cf6ac14a3050a729b8307610022af11068e579a10\", \"5\": \"8d1e571cedaee0cfa091bb890df0453e56bc8b7c99de7ba0411bd85ad5ab1c1d\", \"6\": \"ca8b23174935e7479c8c946782a17bd029e2dd4349ea7d0e4fcf79bbc661aaf0\", \"7\": \"c2474497d035efe18bf444e7ddbb8d20e1c5c415ddf9a59f49747d3c23c9f54a\", \"8\": \"559d97d1a92f14f491eab7694b0ff9304f98741c644f13e589eb6f5a5df4e940\", \"9\": \"68cc7d26fc2ff28e826384be7632669d5ec3eea2f050527bc0bb2f96efbf9b2b\"}",
+    "recovery_commitment": "eb7fb9b46950388bc899119ae8621d84fc6a09cdd49d575548acfa03742430f0",
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 1,
+    "recovery_endorsed": 1,
+    "v2_trust": 1,
+    "v2_agg": 0,
+    "consensus_passed": 0,
+    "healed_applied": 1,
+    "heal_source": "V2",
+    "accuracy": 75.02,
+    "skipped": 0,
+    "proposal_relative_error": 0.8326503357690682,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.08367508583192429, \"5\": 8.00443489174075e-05, \"6\": 0.6431697709256815, \"7\": 0.23868835183289533, \"8\": 0.027818950071087797, \"9\": 0.006567796989493579}",
+    "update_norms": "{\"4\": 0.2441859821512003, \"5\": 0.16993316968833835, \"6\": 0.20338330189684325, \"7\": 0.2093339195289274, \"8\": 0.38853001742532645, \"9\": 0.11826625087987391}",
+    "cosines": "{\"4\": 0.3729359528976885, \"5\": 0.24770760660528943, \"6\": 0.6319453187007186, \"7\": 0.44649007398782353, \"8\": 0.36708224563458763, \"9\": 0.37148003750071246}",
+    "published_weights": "{\"4\": 0.75, \"5\": 0.75, \"6\": 0.6431697709256815, \"7\": 0.23868835183289533, \"8\": 0.75, \"9\": 0.75}",
+    "used_weights": "{\"4\": 0.1932064429668092, \"5\": 0.1932064429668092, \"6\": 0.16568605821910456, \"7\": 0.06148816991365864, \"8\": 0.1932064429668092, \"9\": 0.1932064429668092}",
+    "attack_targets": "[4, 5, 8, 9]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 1,
+    "recovery_consistent": 1,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "80276bfbf10fd2c05699ccfbea451afb25609d76349a746a2848e3cc3d265602",
+    "state_hash": "47229400cd8cd60a3e17147eb8a61fa7e0134d673bd0fa358681fb0c04fa03c7",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_rejected\", \"recovery_recomputed\", \"recovery_audited\", \"recovery_verified\", \"committed_once\"]"
+  },
+  {
+    "round": 22,
+    "group": "trust_v2",
+    "attack_active": 1,
+    "attack_type": "A2",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      1,
+      5,
+      9
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.016570847421669865,
+        0.7244134446858076
+      ],
+      "5": [
+        4.7410377490434523e-07,
+        0.05809823959123188
+      ],
+      "6": [
+        0.12119776724926916,
+        0.9378534904010247
+      ],
+      "7": [
+        0.017953236004136598,
+        0.5705766382348482
+      ],
+      "8": [
+        0.0030908232661926134,
+        0.48347535870168223
+      ],
+      "9": [
+        0.00047174219390343247,
+        0.3703687214823431
+      ]
+    },
+    "audit_reference_input_key": "4ef76fd150f692a54e4931d25f22a9418782f28fa5c96f37c6cec894536fb1d3",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "cdae27790358ff6987dcc9c10e286a73f3f9879f05c78579d4c8c262c55577a0",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"b82e54fb5b31020b4b481c6f957f2598acab7630f51b684085d84004058157e2\", \"5\": \"e843a83f7d7ccdafc8206702b8cd0b8bb576a4b248bdc92229f64195690ccb50\", \"6\": \"0c620e1afdcd34f211adf4da54cfee0df5ec5846c97c4c4fc7f4bab92afe22a0\", \"7\": \"9a7d8e3e250c9141dc1186a08062b8edc826f9f2fc8ddc9f7d81cabe63c756c7\", \"8\": \"b285b6c818b1ea95967736f0e4f5ebe345487090a5ebb08ae0c3f39963dda446\", \"9\": \"244c12bcc62e88b6e5e2dfbed606ddc974a06d3bb85fccc392331839ec37438e\"}",
+    "recovery_commitment": "df6ebcb03ca983b23f9c838da80017523f708dc0c26d1d0588eae24c47cd8c4e",
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 1,
+    "recovery_endorsed": 1,
+    "v2_trust": 0,
+    "v2_agg": 1,
+    "consensus_passed": 0,
+    "healed_applied": 1,
+    "heal_source": "V2",
+    "accuracy": 74.78,
+    "skipped": 0,
+    "proposal_relative_error": 0.6869791192612255,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.12836215520194752, \"5\": 1.447974183907711e-06, \"6\": 0.6811615446251491, \"7\": 0.1301491133444055, \"8\": 0.02398957077518399, \"9\": 0.03633616807913024}",
+    "update_norms": "{\"4\": 0.22951513609582622, \"5\": 0.18089679863278832, \"6\": 0.2019471844009642, \"7\": 0.21175953387423344, \"8\": 0.3889234408987619, \"9\": 0.12143404948662885}",
+    "cosines": "{\"4\": 0.37270502130458133, \"5\": 0.2097415032485182, \"6\": 0.6243368448603491, \"7\": 0.34447587072294067, \"8\": 0.355417761084852, \"9\": 0.34331738168221415}",
+    "published_weights": "{\"4\": 0.12836215520194752, \"5\": 1.447974183907711e-06, \"6\": 0.6811615446251491, \"7\": 0.1301491133444055, \"8\": 0.02398957077518399, \"9\": 0.03633616807913024}",
+    "used_weights": "{\"4\": 0.06418107760097376, \"5\": 0.12500072398709194, \"6\": 0.34058077231257455, \"7\": 0.19007455667220274, \"8\": 0.136994785387592, \"9\": 0.14316808403956513}",
+    "attack_targets": "[5, 7, 8, 9]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 1,
+    "recovery_consistent": 1,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "47229400cd8cd60a3e17147eb8a61fa7e0134d673bd0fa358681fb0c04fa03c7",
+    "state_hash": "978909e0f281c84341058a5f2a19cae2152006566a49a80fb37b6a110718947f",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_rejected\", \"recovery_recomputed\", \"recovery_audited\", \"recovery_verified\", \"committed_once\"]"
+  },
+  {
+    "round": 23,
+    "group": "trust_v2",
+    "attack_active": 1,
+    "attack_type": "A3",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      1,
+      5,
+      8
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.023322936944237222,
+        0.774008113108151
+      ],
+      "5": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "6": [
+        0.2035230200390459,
+        0.9734137399387888
+      ],
+      "7": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "8": [
+        0.0007569702741227687,
+        0.21582906946081476
+      ],
+      "9": [
+        0.0005627399610153074,
+        0.08548961219702611
+      ]
+    },
+    "audit_reference_input_key": "14aa89f4eba1722ccf4032e56421f1137541db1d1f2880893187a8ac2dd20964",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "b73704714e4ccd5338daed23af7ce3b8444264ac8fb0a4b14bedb6110fd3b1b4",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"04a444520835119a915f318a0b6cf2565786df63c777efabcd2a7379df2b7956\", \"5\": \"69355c8ce808dd909defc97fcacc5b09361180d60bdcdea647e6bfc8d28499e9\", \"6\": \"71b7dae83ac5298ab0e2ec3aa3a3b5e833d4cf82f0dd99c2b71fd0ad58842e23\", \"7\": \"8f918742a1cdb6dcedf5ead62e2070b75b37961cc55f73938c40ddbdbd02f0fa\", \"8\": \"7bb9389d270cbd73138ac6c74b7a0b636dc51aaa163a950f4c4272006ba981ef\", \"9\": \"30912ae6783ec05e6d0d0e0fd83bea5a484d388ad4cb6b1e1950333813cb264c\"}",
+    "recovery_commitment": "1055a72fda0109abdab13aa7639c2dc3d605607fd2012200f6790c9f8ca970a0",
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 1,
+    "recovery_endorsed": 1,
+    "v2_trust": 1,
+    "v2_agg": 1,
+    "consensus_passed": 0,
+    "healed_applied": 1,
+    "heal_source": "V2",
+    "accuracy": 72.31,
+    "skipped": 0,
+    "proposal_relative_error": 1.3090856534667683,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.04639352553751382, \"5\": 0.0, \"6\": 0.9492381450479054, \"7\": 0.0, \"8\": 0.001718272349557901, \"9\": 0.0026500570650227124}",
+    "update_norms": "{\"4\": 0.22157238142060884, \"5\": 0.1936155090566625, \"6\": 0.18677012036620994, \"7\": 0.2493139207938336, \"8\": 0.3984052238180235, \"9\": 0.13665820086388475}",
+    "cosines": "{\"4\": 0.3830695170190555, \"5\": 0.2194659613855048, \"6\": 0.7253666284404021, \"7\": 0.2956361419883335, \"8\": 0.288203311466242, \"9\": 0.30504869085155567}",
+    "published_weights": "{\"4\": 0.012222873440814745, \"5\": 0.18442253114935028, \"6\": 0.250087001961784, \"7\": 0.18442253114935028, \"8\": 0.18442253114935028, \"9\": 0.18442253114935028}",
+    "used_weights": "{\"4\": 0.0, \"5\": 0.25, \"6\": 0.0, \"7\": 0.25, \"8\": 0.25, \"9\": 0.25}",
+    "attack_targets": "[4, 5, 6, 7, 8, 9]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 1,
+    "recovery_consistent": 1,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "978909e0f281c84341058a5f2a19cae2152006566a49a80fb37b6a110718947f",
+    "state_hash": "e9e1127116ba84cd0983b511fc05a74b71014ffeecdf23a134e2db9b80c452b2",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_rejected\", \"recovery_recomputed\", \"recovery_audited\", \"recovery_verified\", \"committed_once\"]"
+  },
+  {
+    "round": 24,
+    "group": "trust_v2",
+    "attack_active": 0,
+    "attack_type": "none",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      1,
+      5,
+      7
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "5": [
+        1.5179441432057591e-05,
+        0.17001918417288575
+      ],
+      "6": [
+        0.8299808158271142,
+        0.9999848205585679
+      ],
+      "7": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "8": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "9": [
+        0.0,
+        9.947598300641403e-14
+      ]
+    },
+    "audit_reference_input_key": "f19cca9478d8989761d3500299f3b137fe40e12dcaf4d5c7369c42b5707dfec3",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "72949e0650b6ffa7fdf2a0cc58151d72f4dff677e8d2a9f60154c0dff7437d6a",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"223fc471f3e8e5307bcf904d601b9c1efd8a2daa44006e98c3835e28065ea667\", \"5\": \"e02c2eeb376a22b0069a610161291611602b0afcf1c88619caa7dde90268ae29\", \"6\": \"6f016cac2c4b9be695667e38e7553fc4e2070e252510b9ecc98f4aa5ea341feb\", \"7\": \"99420e25c4a26d89cf25c2a0b047243ec5633ae175d4f5bf5ea71768ec3a669e\", \"8\": \"e0895bc62ea2a9ba274f6fe166807cad54f3bcfdc67b840c1fa15f010af2e4cc\", \"9\": \"8de53b2c792a35e1e3fbc55778884ac51626ca116368f423bb4b871b33069d7b\"}",
+    "recovery_commitment": null,
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 0,
+    "recovery_endorsed": 0,
+    "v2_trust": 0,
+    "v2_agg": 0,
+    "consensus_passed": 1,
+    "healed_applied": 0,
+    "heal_source": "",
+    "accuracy": 60.92,
+    "skipped": 0,
+    "proposal_relative_error": 0.0,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.0, \"5\": 6.646311788132967e-05, \"6\": 0.9999335368821187, \"7\": 0.0, \"8\": 0.0, \"9\": 0.0}",
+    "update_norms": "{\"4\": 0.2647262897481397, \"5\": 0.18580207159267717, \"6\": 0.1840836395907785, \"7\": 0.2609243423601527, \"8\": 0.40168540862855395, \"9\": 0.15003545189329062}",
+    "cosines": "{\"4\": 0.26081221744475475, \"5\": 0.2407008628083843, \"6\": 0.6867052392474743, \"7\": 0.2901465047482182, \"8\": 0.2994184218493427, \"9\": 0.2835576588379526}",
+    "published_weights": "{\"4\": 0.0, \"5\": 6.646311788132967e-05, \"6\": 0.9999335368821187, \"7\": 0.0, \"8\": 0.0, \"9\": 0.0}",
+    "used_weights": "{\"4\": 0.0, \"5\": 6.646311788132967e-05, \"6\": 0.9999335368821187, \"7\": 0.0, \"8\": 0.0, \"9\": 0.0}",
+    "attack_targets": "[]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 0,
+    "recovery_consistent": 0,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "e9e1127116ba84cd0983b511fc05a74b71014ffeecdf23a134e2db9b80c452b2",
+    "state_hash": "806e2dcd7663f242288f1184d8ef78ed394ae122f5fa2b623a885910dcd52e38",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_accepted\", \"committed_once\"]"
+  },
+  {
+    "round": 25,
+    "group": "trust_v2",
+    "attack_active": 0,
+    "attack_type": "none",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      0,
+      4,
+      7
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.007892430474789604,
+        0.5577940901114377
+      ],
+      "5": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "6": [
+        0.4422059098885624,
+        0.9921075695252105
+      ],
+      "7": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "8": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "9": [
+        0.0,
+        9.947598300641403e-14
+      ]
+    },
+    "audit_reference_input_key": "e44e14facfa12d911db18d0d719bda96f7888cf9823d338401ee59bdadf6c869",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "096834415fa2811736f2d35527e64e828c3017a3c56fe94418ab27e6a4076baf",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"43e305a58d5c245b602112bf5da92fffd93dbb76c7daeda2e4bc720aaaa59d90\", \"5\": \"edad51e41e369de51e566b36425d2e9478abdddb90a68b63ad4a953d23cb2a7c\", \"6\": \"800cdfb9398c87f144bed83debd59b53b54cea57c6509d1ad87267687da2f23b\", \"7\": \"1a5d3633d2aedfad79bd514b4177cd628b2a944ef7994ff57b7aab06907690bf\", \"8\": \"640aef2b82a4a80d70933e09bf7832e5a5a8046c9d9688e434ef0d5979b5e37a\", \"9\": \"b5f4cf98ec35548fa0e51b17cd029b7ef02548e2480eadbe4df21c815e40ca76\"}",
+    "recovery_commitment": null,
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 0,
+    "recovery_endorsed": 0,
+    "v2_trust": 0,
+    "v2_agg": 0,
+    "consensus_passed": 1,
+    "healed_applied": 0,
+    "heal_source": "",
+    "accuracy": 67.87,
+    "skipped": 0,
+    "proposal_relative_error": 0.0,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.06676894878321836, \"5\": 0.0, \"6\": 0.9332310512167816, \"7\": 0.0, \"8\": 0.0, \"9\": 0.0}",
+    "update_norms": "{\"4\": 0.25504425907570566, \"5\": 0.229681328932542, \"6\": 0.17659257867677727, \"7\": 0.35550964745834607, \"8\": 0.4513882527032228, \"9\": 0.18138194102985378}",
+    "cosines": "{\"4\": 0.48237036588350063, \"5\": 0.5552044292670693, \"6\": 0.6081633707774005, \"7\": 0.7321869983208014, \"8\": 0.5820122350380669, \"9\": 0.713808440679065}",
+    "published_weights": "{\"4\": 0.06676894878321836, \"5\": 0.0, \"6\": 0.9332310512167816, \"7\": 0.0, \"8\": 0.0, \"9\": 0.0}",
+    "used_weights": "{\"4\": 0.06676894878321836, \"5\": 0.0, \"6\": 0.9332310512167816, \"7\": 0.0, \"8\": 0.0, \"9\": 0.0}",
+    "attack_targets": "[]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 0,
+    "recovery_consistent": 0,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "806e2dcd7663f242288f1184d8ef78ed394ae122f5fa2b623a885910dcd52e38",
+    "state_hash": "0d87d859b2bb703c7fdf4f9eb69a7190c6003a1150284d1af31d71b659f4b264",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_accepted\", \"committed_once\"]"
+  },
+  {
+    "round": 26,
+    "group": "trust_v2",
+    "attack_active": 1,
+    "attack_type": "A1",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      3,
+      4,
+      9
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.008922632174863906,
+        0.6991204244446229
+      ],
+      "5": [
+        0.0008873133995681361,
+        0.5909006688381069
+      ],
+      "6": [
+        0.08518747363260713,
+        0.9397586575931905
+      ],
+      "7": [
+        0.01167785534497778,
+        0.7180832225769611
+      ],
+      "8": [
+        0.0008991831582138159,
+        0.37230410157263516
+      ],
+      "9": [
+        0.008820124291799528,
+        0.4606863086209305
+      ]
+    },
+    "audit_reference_input_key": "a5cdbbbe7c5e5a19521d75b60beabc44f8ea95a35aa9a0bc3ad82a550373beeb",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "8b0751a468e1e837e270cc9f1d465d18ba060adf90a5c673a7c29a00501826b9",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"f0e4a9baf66adfc631cdda36b5818033dacfbbec760fda6d7cb4f7c8a4ff1f1c\", \"5\": \"2558dd57b580f788290aa61bb7b97e90bc915683bd7be17a326629501d85742c\", \"6\": \"c5ffb5d3488115a6dc206e373de739ebdcda3c8a96fd47e57c304c6c2997b939\", \"7\": \"e4e321b2e85183f3e7fc6c3e30ccdc0de9b79841a563e9b12620f83841f0ee8c\", \"8\": \"c6bdff9b400df567a8d067838862bc4c747ec8af46be1f5160f474675b5f928b\", \"9\": \"dcff3d2bc9c13a2cb352a3307c467fa20c7677e1f8a17bd4aa26228902377384\"}",
+    "recovery_commitment": "de0d4268a77b22bd63a9a57537107f6ea12b8c392a7d82229e6ec6a2a0fa37b4",
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 1,
+    "recovery_endorsed": 1,
+    "v2_trust": 1,
+    "v2_agg": 0,
+    "consensus_passed": 0,
+    "healed_applied": 1,
+    "heal_source": "V2",
+    "accuracy": 73.9,
+    "skipped": 0,
+    "proposal_relative_error": 0.7843891806078633,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.12819011570357655, \"5\": 0.043505774597708914, \"6\": 0.4834072347025372, \"7\": 0.2532337277691372, \"8\": 0.010568780027439393, \"9\": 0.08109436719960074}",
+    "update_norms": "{\"4\": 0.2555853066489415, \"5\": 0.20871655940190215, \"6\": 0.17708704675447196, \"7\": 0.2704360840571955, \"8\": 0.42154264621892285, \"9\": 0.18135608582217783}",
+    "cosines": "{\"4\": 0.497677289561514, \"5\": 0.5035088611895915, \"6\": 0.6081863599096081, \"7\": 0.623957016040867, \"8\": 0.438013344046912, \"9\": 0.5220839027470657}",
+    "published_weights": "{\"4\": 0.75, \"5\": 0.75, \"6\": 0.4834072347025372, \"7\": 0.2532337277691372, \"8\": 0.75, \"9\": 0.75}",
+    "used_weights": "{\"4\": 0.20071502922879103, \"5\": 0.20071502922879103, \"6\": 0.12936946299030508, \"7\": 0.06777042009453078, \"8\": 0.20071502922879103, \"9\": 0.20071502922879103}",
+    "attack_targets": "[4, 5, 8, 9]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 1,
+    "recovery_consistent": 1,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "0d87d859b2bb703c7fdf4f9eb69a7190c6003a1150284d1af31d71b659f4b264",
+    "state_hash": "1c565606cbf276f4ba1326470269a7282370fb192cd712a27657a145596ad867",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_rejected\", \"recovery_recomputed\", \"recovery_audited\", \"recovery_verified\", \"committed_once\"]"
+  },
+  {
+    "round": 27,
+    "group": "trust_v2",
+    "attack_active": 1,
+    "attack_type": "A2",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      0,
+      4,
+      6
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.008174652255279408,
+        0.6622225281886471
+      ],
+      "5": [
+        0.0018817586592259545,
+        0.4728481886241497
+      ],
+      "6": [
+        0.016561320131898274,
+        0.7298010496941842
+      ],
+      "7": [
+        0.06360733940107369,
+        0.9261521758104692
+      ],
+      "8": [
+        0.003851338763583096,
+        0.7289279190246571
+      ],
+      "9": [
+        0.006306195093312748,
+        0.46666359040707356
+      ]
+    },
+    "audit_reference_input_key": "98698435b956e79ec485c1cca15968e1c1437d032ff2737bbd334c7759c1d40c",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "26358f1fd471df691a1b684eeac3fd4c5f1f4a8e53156366b6dff5cdf4d44703",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"2106b94ec517e58afb88851466c3cb93e42572c825b2ef6731d1374514b0a759\", \"5\": \"16674ddbe01850b68316ba4b10b5dabfb49fe291c7637c2e3638e560eb5a22cb\", \"6\": \"9884afdac7966e4f19c2dbb32bd6ade503aa4b0f91cad3debd990a5934d9a16c\", \"7\": \"1f0bfb21f9865eeafb400cb0d55565e296040ded5d60c8650d5573df19f5860b\", \"8\": \"c57a832b25f4e838828e43a2983024fd132eeb00fa7faa89625c85f5743f5410\", \"9\": \"c2d79100aace0452383ca4efb4a517c1017b7330ac6186f793ddd8970af072f7\"}",
+    "recovery_commitment": "43e7d1273f7dfc84cd4758e2016a67efef523dfe3f4217cb69413aff791a70dc",
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 1,
+    "recovery_endorsed": 1,
+    "v2_trust": 0,
+    "v2_agg": 1,
+    "consensus_passed": 0,
+    "healed_applied": 1,
+    "heal_source": "V2",
+    "accuracy": 66.02,
+    "skipped": 0,
+    "proposal_relative_error": 0.5011774703574153,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.028311069045821053, \"5\": 0.007544136934012633, \"6\": 0.06844593999921038, \"7\": 0.8343337330678953, \"8\": 0.04249744331390322, \"9\": 0.018867677639157334}",
+    "update_norms": "{\"4\": 0.24951115202549978, \"5\": 0.18278528831757226, \"6\": 0.18226930894481008, \"7\": 0.20752158979987256, \"8\": 0.3810091537184719, \"9\": 0.14312689859998848}",
+    "cosines": "{\"4\": 0.27976860441239076, \"5\": 0.2367592067685869, \"6\": 0.3301900333245595, \"7\": 0.6157089412622407, \"8\": 0.39649466774288944, \"9\": 0.26608750809480974}",
+    "published_weights": "{\"4\": 0.028311069045821053, \"5\": 0.007544136934012633, \"6\": 0.06844593999921038, \"7\": 0.8343337330678953, \"8\": 0.04249744331390322, \"9\": 0.018867677639157334}",
+    "used_weights": "{\"4\": 0.13915553452291055, \"5\": 0.12877206846700634, \"6\": 0.15922296999960522, \"7\": 0.41716686653394774, \"8\": 0.021248721656951613, \"9\": 0.13443383881957868}",
+    "attack_targets": "[4, 5, 6, 9]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 1,
+    "recovery_consistent": 1,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "1c565606cbf276f4ba1326470269a7282370fb192cd712a27657a145596ad867",
+    "state_hash": "b6a425440ff4af0d22fb1b66b4381a4da47722d6ae5164dba080f3dc9f03fbc9",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_rejected\", \"recovery_recomputed\", \"recovery_audited\", \"recovery_verified\", \"committed_once\"]"
+  },
+  {
+    "round": 28,
+    "group": "trust_v2",
+    "attack_active": 0,
+    "attack_type": "none",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      0,
+      2,
+      9
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "5": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "6": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "7": [
+        0.9890526385285633,
+        0.9999398817666598
+      ],
+      "8": [
+        6.0118233340128553e-05,
+        0.010947361471436769
+      ],
+      "9": [
+        0.0,
+        9.947598300641403e-14
+      ]
+    },
+    "audit_reference_input_key": "9e3bba47d49f8f270f4530743c33b67714f3340e043dda9cb6687d3f9ae65540",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "231af66e4b4bdfa4639fb38a7a5e3c78e54f211ee017312c3f892978f38d1969",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"4ce5fce0fba3f71e2352205496cc2f68e57e6a37462efcc0b6b627f25ef12f2f\", \"5\": \"b3aa3645c63585a74fa76cb13d885be4756d3e1732f8bab50be367cb901d9493\", \"6\": \"65453af7a4179b721c1804cec624645b4b5ae16cd8ebcfd9427472df959a69f7\", \"7\": \"befee7710d4d12490e237897ed1bc2bb788a801cb2e8a040cdfb40a61eb4072a\", \"8\": \"94f541932412d9564754d7df3065f0d84aee9481f109021f236917921971409a\", \"9\": \"9dfe6f9cf2d78b3895b6ba8f3f5d4e41ad65e8fa476f378c6018b93cd0e039b2\"}",
+    "recovery_commitment": null,
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 0,
+    "recovery_endorsed": 0,
+    "v2_trust": 0,
+    "v2_agg": 0,
+    "consensus_passed": 1,
+    "healed_applied": 0,
+    "heal_source": "",
+    "accuracy": 63.89,
+    "skipped": 0,
+    "proposal_relative_error": 0.0,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.0, \"5\": 0.0, \"6\": 0.0, \"7\": 0.9981197005896773, \"8\": 0.0018802994103227619, \"9\": 0.0}",
+    "update_norms": "{\"4\": 0.2747562585805619, \"5\": 0.1641685763570863, \"6\": 0.28145272513617886, \"7\": 0.13696408325002954, \"8\": 0.391329174764898, \"9\": 0.160988965736215}",
+    "cosines": "{\"4\": 0.44726525534005307, \"5\": 0.23887200490795765, \"6\": 0.46364334100089705, \"7\": 0.3630259964327719, \"8\": 0.513815643422782, \"9\": 0.5435584101959924}",
+    "published_weights": "{\"4\": 0.0, \"5\": 0.0, \"6\": 0.0, \"7\": 0.9981197005896773, \"8\": 0.0018802994103227619, \"9\": 0.0}",
+    "used_weights": "{\"4\": 0.0, \"5\": 0.0, \"6\": 0.0, \"7\": 0.9981197005896773, \"8\": 0.0018802994103227619, \"9\": 0.0}",
+    "attack_targets": "[]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 0,
+    "recovery_consistent": 0,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "b6a425440ff4af0d22fb1b66b4381a4da47722d6ae5164dba080f3dc9f03fbc9",
+    "state_hash": "151efc2cdbbff411a3a5d7681e187d6897ee85f0baa0e5a4d263954c76ef2aad",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_accepted\", \"committed_once\"]"
+  },
+  {
+    "round": 29,
+    "group": "trust_v2",
+    "attack_active": 1,
+    "attack_type": "A3",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      2,
+      4,
+      5
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.0007894241912493986,
+        0.17320569328331314
+      ],
+      "5": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "6": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "7": [
+        0.6601549666533656,
+        0.9980608709058352
+      ],
+      "8": [
+        0.0011161366935039632,
+        0.23009925287404065
+      ],
+      "9": [
+        0.0,
+        9.947598300641403e-14
+      ]
+    },
+    "audit_reference_input_key": "92d62b2b318032c980682d30adef9c1d4178199d4f9793c6fd1daecbfc16bef8",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "3c88795fcff7eec1bed44932a8dd0530c1bfc6dddd2c68191f9ca9925c3e97c2",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"17d83917f8475129221f774855c2e91ec7b4aa729524fd9d0a470fbb1f59657b\", \"5\": \"3ba3ce47abfe23d058a7426ef5e639936baa653bdf5626f1f65df339455431b8\", \"6\": \"7c8b1b476435e82520d4fe3d8248445d912aa85bad98ee4a4bd7b84af33ce205\", \"7\": \"9f4cdce374c6ac28082d60e1b5fc199aa63941198ac11c8ed96df44b0ad6907c\", \"8\": \"7523f231bf11d2de1faba9b31d76b84e629e464c01ab1f9f236cad44b197b7f2\", \"9\": \"10b1884c9ee561150d6d61eaf857fb83e94584f8ec10b09c41a66df24a3cab8d\"}",
+    "recovery_commitment": "bcfdd954cde72cedaf0e51d006279778648bab18121e60904f8e85c62bf074eb",
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 1,
+    "recovery_endorsed": 1,
+    "v2_trust": 1,
+    "v2_agg": 0,
+    "consensus_passed": 0,
+    "healed_applied": 1,
+    "heal_source": "V2",
+    "accuracy": 62.41,
+    "skipped": 0,
+    "proposal_relative_error": 1.160232520472663,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.01685905415732449, \"5\": 0.0, \"6\": 0.0, \"7\": 0.9624375135871545, \"8\": 0.020703432255521164, \"9\": 0.0}",
+    "update_norms": "{\"4\": 0.2725439086689944, \"5\": 0.19169500141478352, \"6\": 0.32853977282138447, \"7\": 0.1273585867537122, \"8\": 0.3874705837320904, \"9\": 0.2053775149029594}",
+    "cosines": "{\"4\": 0.5110362619846979, \"5\": 0.5257431596303537, \"6\": 0.6639612209966377, \"7\": 0.32998852067096135, \"8\": 0.5080963141802177, \"9\": 0.7679374113898118}",
+    "published_weights": "{\"4\": 0.25, \"5\": 0.25, \"6\": 0.0, \"7\": 0.25, \"8\": 0.25, \"9\": 0.0}",
+    "used_weights": "{\"4\": 0.25, \"5\": 0.25, \"6\": 0.0, \"7\": 0.25, \"8\": 0.25, \"9\": 0.0}",
+    "attack_targets": "[4, 5, 6, 7, 8, 9]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 1,
+    "recovery_consistent": 1,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "151efc2cdbbff411a3a5d7681e187d6897ee85f0baa0e5a4d263954c76ef2aad",
+    "state_hash": "3ddfc25f2c878987da12f98e1d3f071f3ccbb8e223afd67bcf14825eb486d802",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_rejected\", \"recovery_recomputed\", \"recovery_audited\", \"recovery_verified\", \"committed_once\"]"
+  },
+  {
+    "round": 30,
+    "group": "trust_v2",
+    "attack_active": 0,
+    "attack_type": "none",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      5,
+      6,
+      9
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "5": [
+        0.00011247585937580386,
+        0.5950532606325506
+      ],
+      "6": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "7": [
+        0.0518495591273543,
+        0.9914719361104177
+      ],
+      "8": [
+        0.008001782097739198,
+        0.941804716011478
+      ],
+      "9": [
+        0.0,
+        9.947598300641403e-14
+      ]
+    },
+    "audit_reference_input_key": "9a804915db52ff4dc6d5375ef6495fd38e48c5340b7ba51db4256c527d39460e",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "b592e81c953eb077239a98720bffa8c0d0b46013cfd494b1b0a8d2f22a9a8a88",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"846789c93e686820b8cc78a7c5797ad1422927b5f7fa508abd44e5c4b96f7f33\", \"5\": \"99a72246131ae8311da91eba6a193614bb5f16000c05947dfb2cabe34f2e8d17\", \"6\": \"c74b8aa1795469f6d26fbca14f588969c99b24fee6de9b042fb482b1cab9585b\", \"7\": \"1d2addb2c15a4fc865ffdec4efce3b81fbc06761fe37bcd626e4cc42989c78c0\", \"8\": \"978b2e0f8d6b80bd6319d4d5aa12fbd3a553c3afec243d341762b25351dd8e42\", \"9\": \"ed99f446a68232b5f1e0e89ce71f288a8326a03fef4053965173239f549efbc5\"}",
+    "recovery_commitment": null,
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 0,
+    "recovery_endorsed": 0,
+    "v2_trust": 0,
+    "v2_agg": 0,
+    "consensus_passed": 1,
+    "healed_applied": 0,
+    "heal_source": "",
+    "accuracy": 71.18,
+    "skipped": 0,
+    "proposal_relative_error": 0.0,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.0, \"5\": 0.04480826819724894, \"6\": 0.0, \"7\": 0.6474368294080592, \"8\": 0.30775490239469194, \"9\": 0.0}",
+    "update_norms": "{\"4\": 0.2952412978003084, \"5\": 0.1865020301844364, \"6\": 0.3227625765584947, \"7\": 0.128543336000984, \"8\": 0.3891849107110924, \"9\": 0.17023521042224352}",
+    "cosines": "{\"4\": 0.6221744766993722, \"5\": 0.48935432141107477, \"6\": 0.7025018353127404, \"7\": 0.27250630955313127, \"8\": 0.4562779326566634, \"9\": 0.7702789731787273}",
+    "published_weights": "{\"4\": 0.0, \"5\": 0.04480826819724894, \"6\": 0.0, \"7\": 0.6474368294080592, \"8\": 0.30775490239469194, \"9\": 0.0}",
+    "used_weights": "{\"4\": 0.0, \"5\": 0.04480826819724894, \"6\": 0.0, \"7\": 0.6474368294080592, \"8\": 0.30775490239469194, \"9\": 0.0}",
+    "attack_targets": "[]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 0,
+    "recovery_consistent": 0,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "3ddfc25f2c878987da12f98e1d3f071f3ccbb8e223afd67bcf14825eb486d802",
+    "state_hash": "9d9322283173fe336bc39b8d73d68e123a4cdee4d801260901e9b82e7e5e5415",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_accepted\", \"committed_once\"]"
+  },
+  {
+    "round": 31,
+    "group": "trust_v2",
+    "attack_active": 1,
+    "attack_type": "A1",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      2,
+      3,
+      6
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "5": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "6": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "7": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "8": [
+        0.058347071324673615,
+        0.9798649223808016
+      ],
+      "9": [
+        0.02013507761919834,
+        0.9416529286753265
+      ]
+    },
+    "audit_reference_input_key": "608384f5716163a49dd81e236df884b7939a26b0bfcc53f239af577e739072aa",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "c14310f55bae790574d3cb0a07c486ba4b5787f1d7583a732bcefeafbbed920a",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"c28ee467f662f5ab37ca91793a6a08095cb44f18470c83611366d40c644c6149\", \"5\": \"359fbe92b6b966ec1459f8098f3b7dcb1705785d14029646e7a91467669166aa\", \"6\": \"25ef4cd31a9244b751b86795e6b7acdc90b94239e33a4e3bfcd8010998f00757\", \"7\": \"e842138eb147174333515d4f1c60070c693423ba54f322e3e24917719bc9e0dc\", \"8\": \"6142902e441906f7f743eade1310d608d9183cfa54238e94a62a0d3c1a23295c\", \"9\": \"8f681b0315e5455061d0bec86ae4957add8ce5e5e6b9a90b9571cf6540ee0915\"}",
+    "recovery_commitment": "da95bf11a4a71765667b294ef15a0fd4f24b94d4c5127e71e03e396d56043ca3",
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 1,
+    "recovery_endorsed": 1,
+    "v2_trust": 1,
+    "v2_agg": 0,
+    "consensus_passed": 0,
+    "healed_applied": 1,
+    "heal_source": "V2",
+    "accuracy": 74.79,
+    "skipped": 0,
+    "proposal_relative_error": 0.6881940068931036,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.0, \"5\": 0.0, \"6\": 0.0, \"7\": 0.0, \"8\": 0.1328421721390645, \"9\": 0.8671578278609354}",
+    "update_norms": "{\"4\": 0.294535022931973, \"5\": 0.2194753966042087, \"6\": 0.3182001520016354, \"7\": 0.14199799028459753, \"8\": 0.2658035071946717, \"9\": 0.15306569311988524}",
+    "cosines": "{\"4\": 0.6430434273041162, \"5\": 0.6215333888750315, \"6\": 0.7467723192736759, \"7\": 0.26103321566454263, \"8\": -0.028884141750652844, \"9\": 0.711293504499083}",
+    "published_weights": "{\"4\": 0.75, \"5\": 0.75, \"6\": 0.0, \"7\": 0.75, \"8\": 0.75, \"9\": 0.8671578278609354}",
+    "used_weights": "{\"4\": 0.19394088200813156, \"5\": 0.19394088200813156, \"6\": 0.0, \"7\": 0.19394088200813156, \"8\": 0.19394088200813156, \"9\": 0.22423647196747376}",
+    "attack_targets": "[4, 5, 7, 8]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 1,
+    "recovery_consistent": 1,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "9d9322283173fe336bc39b8d73d68e123a4cdee4d801260901e9b82e7e5e5415",
+    "state_hash": "2d3b38d1d4a1b545765a41cd53915a0ee338f6a505aaff9c2431f262b89bf5ab",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_rejected\", \"recovery_recomputed\", \"recovery_audited\", \"recovery_verified\", \"committed_once\"]"
+  },
+  {
+    "round": 32,
+    "group": "trust_v2",
+    "attack_active": 0,
+    "attack_type": "none",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      0,
+      8,
+      9
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "5": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "6": [
+        0.031520325775240526,
+        0.6998977560765736
+      ],
+      "7": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "8": [
+        0.000252366446412934,
+        0.42530732407555366
+      ],
+      "9": [
+        0.23275950889484823,
+        0.9645746950619591
+      ]
+    },
+    "audit_reference_input_key": "93b46ed74928c308db27bf0d349e2029697241a46cd33de70c230cf5365343ca",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "87bc355515459aedd50029adee897f9710eccc0a95f4e755020c208fb4d8a42d",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"573e765d78ab76823f6501c8777d9eda584d66629460668b9d2889388afe1123\", \"5\": \"3aaf1f5fe8767eeb96568281881617ce0ed85a95fa945559a6808dbd26f7110f\", \"6\": \"3b25c659154e63007b9334fbf37489855d91d5e8a02f153fc83f9f8e7a216f31\", \"7\": \"6ce83b0224a04350003694f26abe2a8dac00c73d77aaaa13429f51cdf27b70b1\", \"8\": \"be29cc9b2b71defdd4266a3da0de0b84256ef2b3ee4ca009b3802c49b9e1b6b1\", \"9\": \"8c284a6dde146d22699897924906ff18a5525d1c6671bc40b8e65a9646c147c0\"}",
+    "recovery_commitment": null,
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 0,
+    "recovery_endorsed": 0,
+    "v2_trust": 0,
+    "v2_agg": 0,
+    "consensus_passed": 1,
+    "healed_applied": 0,
+    "heal_source": "",
+    "accuracy": 79.5,
+    "skipped": 0,
+    "proposal_relative_error": 0.0,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.0, \"5\": 0.0, \"6\": 0.5247850181680742, \"7\": 0.0, \"8\": 0.0010958343573941164, \"9\": 0.47411914747453165}",
+    "update_norms": "{\"4\": 0.27320170350036616, \"5\": 0.21451391131729738, \"6\": 0.31198399043807185, \"7\": 0.19958489614747327, \"8\": 0.24704596661921804, \"9\": 0.07750270333080662}",
+    "cosines": "{\"4\": 0.48824266532147664, \"5\": 0.5912004658671162, \"6\": 0.719531088234909, \"7\": 0.3662648577575445, \"8\": -0.3588420177705673, \"9\": 0.4767636577136121}",
+    "published_weights": "{\"4\": 0.0, \"5\": 0.0, \"6\": 0.5247850181680742, \"7\": 0.0, \"8\": 0.0010958343573941164, \"9\": 0.47411914747453165}",
+    "used_weights": "{\"4\": 0.0, \"5\": 0.0, \"6\": 0.5247850181680742, \"7\": 0.0, \"8\": 0.0010958343573941164, \"9\": 0.47411914747453165}",
+    "attack_targets": "[]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 0,
+    "recovery_consistent": 0,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "2d3b38d1d4a1b545765a41cd53915a0ee338f6a505aaff9c2431f262b89bf5ab",
+    "state_hash": "2ee1945d609c60e4e8270e706995cb06c8cf36a0fbe6c4032b34f328ee0c7b4b",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_accepted\", \"committed_once\"]"
+  },
+  {
+    "round": 33,
+    "group": "trust_v2",
+    "attack_active": 0,
+    "attack_type": "none",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      2,
+      7,
+      8
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.004223538575901443,
+        0.48688345135629807
+      ],
+      "5": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "6": [
+        0.513116548643702,
+        0.9957764614240985
+      ],
+      "7": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "8": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "9": [
+        0.0,
+        9.947598300641403e-14
+      ]
+    },
+    "audit_reference_input_key": "a531dd823621d55a89fd358b74f0dcc1659b09241a10033f233db2976e57d361",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "500d9e1c7bc964f8b18cd7dd5808a5c3c918b0bfb9bee70bf291ae980449d549",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"6c160c3c95f32a66b970349ad35a0f2cc40db3b13cb1eb5151525b167cefbf29\", \"5\": \"91d933008a48aa26076d10685c289f1d0e4f51d07e9c35a39ec4bbf2ba8b058a\", \"6\": \"b9bd6fddba17bdbeab7974e90d4d06ac68f8eaa9c0980867c2c64cd0fb819254\", \"7\": \"961fd093ccf3bfaa8a35d2ee90d81f7a8d58a0a63b30b335e02cafa7dc04a823\", \"8\": \"704b2cc6aafba649caa8cd6c82bac94cfff7eb2053de7dfe5412ddf1a3e4d684\", \"9\": \"a785aa73d061e652473c6fd7f2d1c515f6b8caa666155a37ad91d7d7cf1d3db1\"}",
+    "recovery_commitment": null,
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 0,
+    "recovery_endorsed": 0,
+    "v2_trust": 0,
+    "v2_agg": 0,
+    "consensus_passed": 1,
+    "healed_applied": 0,
+    "heal_source": "",
+    "accuracy": 73.08,
+    "skipped": 0,
+    "proposal_relative_error": 0.0,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.012169077959874621, \"5\": 0.0, \"6\": 0.9878309220401253, \"7\": 0.0, \"8\": 0.0, \"9\": 0.0}",
+    "update_norms": "{\"4\": 0.2565398389629979, \"5\": 0.18557832627549825, \"6\": 0.2061553115837457, \"7\": 0.23380347757537676, \"8\": 0.31304729283500904, \"9\": 0.09727040959618727}",
+    "cosines": "{\"4\": 0.2895463376050686, \"5\": 0.18782306525426223, \"6\": 0.7558889678928638, \"7\": 0.09109273056055431, \"8\": -0.34827821441265644, \"9\": -0.11459253149651664}",
+    "published_weights": "{\"4\": 0.012169077959874621, \"5\": 0.0, \"6\": 0.9878309220401253, \"7\": 0.0, \"8\": 0.0, \"9\": 0.0}",
+    "used_weights": "{\"4\": 0.012169077959874621, \"5\": 0.0, \"6\": 0.9878309220401253, \"7\": 0.0, \"8\": 0.0, \"9\": 0.0}",
+    "attack_targets": "[]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 0,
+    "recovery_consistent": 0,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "2ee1945d609c60e4e8270e706995cb06c8cf36a0fbe6c4032b34f328ee0c7b4b",
+    "state_hash": "fc135a94eba07686c1076af2e6c13a50bf724ccd1dd5495d19b930f62ba86d3e",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_accepted\", \"committed_once\"]"
+  },
+  {
+    "round": 34,
+    "group": "trust_v2",
+    "attack_active": 1,
+    "attack_type": "A2",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      1,
+      5,
+      6
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.0009079347010248358,
+        0.1300915345623988
+      ],
+      "5": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "6": [
+        0.8699084654376013,
+        0.9990920652989752
+      ],
+      "7": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "8": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "9": [
+        0.0,
+        9.947598300641403e-14
+      ]
+    },
+    "audit_reference_input_key": "e8ed71618634c6df59a5d2b2784cbdf57fc62b2315decaa5ecb8c8b409e1bfc9",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "1a4b1284632b2c74773d292613f5038a5a2dd3922e2a882c971aa4d94086dd82",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"752d97790024ccaabf866e13c628972293284675d5b9058b79681992e1462036\", \"5\": \"30fc70ff7c943168cbb909055640b30b89dbf0dd88e51fe5c8264f1201093dcf\", \"6\": \"867b2274ef8a1928061ead8e9ac040bb59f7f5b53676115006b8ff5112253d79\", \"7\": \"fc85241bb131a3aa69e5ad766115672d2915bae29fbc5d015e0ed5d426da9b3c\", \"8\": \"7c17a473aceab3c1126ece5b6669c4d46c37d8db03f391cc1e1ac5a90ebc0252\", \"9\": \"02d23c66dae782c8a0bd5088a5b17670427293b51bb39d1ba36711ac476d0175\"}",
+    "recovery_commitment": "1bea1fbf01b1325391010cba42453bc55e6c98c2c930d480ac7fe0f3eeb1e228",
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 1,
+    "recovery_endorsed": 1,
+    "v2_trust": 0,
+    "v2_agg": 1,
+    "consensus_passed": 0,
+    "healed_applied": 1,
+    "heal_source": "V2",
+    "accuracy": 74.47,
+    "skipped": 0,
+    "proposal_relative_error": 0.6414525434536527,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.02405173611826555, \"5\": 0.0, \"6\": 0.9759482638817345, \"7\": 0.0, \"8\": 0.0, \"9\": 0.0}",
+    "update_norms": "{\"4\": 0.24314588568625112, \"5\": 0.1919815526681192, \"6\": 0.17490724965186236, \"7\": 0.23830081362748004, \"8\": 0.4045711529492616, \"9\": 0.1412656681761438}",
+    "cosines": "{\"4\": 0.4695829940580034, \"5\": 0.4586235728269282, \"6\": 0.5160434037271072, \"7\": 0.5362650507087182, \"8\": 0.3876137745505987, \"9\": 0.4546117438067381}",
+    "published_weights": "{\"4\": 0.02405173611826555, \"5\": 0.0, \"6\": 0.9759482638817345, \"7\": 0.0, \"8\": 0.0, \"9\": 0.0}",
+    "used_weights": "{\"4\": 0.13702586805913278, \"5\": 0.125, \"6\": 0.48797413194086725, \"7\": 0.0, \"8\": 0.125, \"9\": 0.125}",
+    "attack_targets": "[4, 5, 8, 9]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 1,
+    "recovery_consistent": 1,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "fc135a94eba07686c1076af2e6c13a50bf724ccd1dd5495d19b930f62ba86d3e",
+    "state_hash": "896925286a4a93ca734d0e43713e6d7d42d2d5b02410bd0bbba690a478b208df",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_rejected\", \"recovery_recomputed\", \"recovery_audited\", \"recovery_verified\", \"committed_once\"]"
+  },
+  {
+    "round": 35,
+    "group": "trust_v2",
+    "attack_active": 0,
+    "attack_type": "none",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      2,
+      5,
+      8
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.00930725887284006,
+        0.5728856247992009
+      ],
+      "5": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "6": [
+        0.36363231548641334,
+        0.9902451579190042
+      ],
+      "7": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "8": [
+        3.0944734418348707e-06,
+        0.2738839609680443
+      ],
+      "9": [
+        0.0,
+        9.947598300641403e-14
+      ]
+    },
+    "audit_reference_input_key": "47a84093df64a7424ccdbc0b29d80a87f5b24b5393d4cdc2d69aff16e5ee7b60",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "184823b2330b0e2bddba871e8c7e4471b59ff110df5600fd3a88190f8c989747",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"d0d2d6dabcc1a2e8394bd75f84aa7f44c4d570ef7d0296381cc38278a6d35bff\", \"5\": \"8a1d7eb19042b7fa4457f913512a17850ced5b0731ee1de7287d0153812ee45a\", \"6\": \"5ff9510d6997626e47d3178b2924a0b328ec0de5d22c33667d12da50b8573eed\", \"7\": \"267ff3097f10b9062f20caa700eab636e49e28954cfead1cd0cfe1cb0ef109ed\", \"8\": \"f27293d6ef2f3b4d070c362eaf11c4931cc50e307ff8bf8f0341c40dfae806ed\", \"9\": \"7fcbe618c5c87822b4b88cb37c75a152cfecfdaf7a4fe8c36c4923752607fc0a\"}",
+    "recovery_commitment": null,
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 0,
+    "recovery_endorsed": 0,
+    "v2_trust": 0,
+    "v2_agg": 0,
+    "consensus_passed": 1,
+    "healed_applied": 0,
+    "heal_source": "",
+    "accuracy": 77.75,
+    "skipped": 0,
+    "proposal_relative_error": 0.0,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.14202411938504572, \"5\": 0.0, \"6\": 0.8237490616993361, \"7\": 0.0, \"8\": 0.03422681891561811, \"9\": 0.0}",
+    "update_norms": "{\"4\": 0.25730068064996237, \"5\": 0.18633140232872625, \"6\": 0.16939332812648458, \"7\": 0.2659813947778976, \"8\": 0.3837142713415513, \"9\": 0.15132328776886503}",
+    "cosines": "{\"4\": 0.48561479765996524, \"5\": 0.4368219295003561, \"6\": 0.25627662315079075, \"7\": 0.7044645128266702, \"8\": 0.5720429973565438, \"9\": 0.6590892402915945}",
+    "published_weights": "{\"4\": 0.14202411938504572, \"5\": 0.0, \"6\": 0.8237490616993361, \"7\": 0.0, \"8\": 0.03422681891561811, \"9\": 0.0}",
+    "used_weights": "{\"4\": 0.14202411938504572, \"5\": 0.0, \"6\": 0.8237490616993361, \"7\": 0.0, \"8\": 0.03422681891561811, \"9\": 0.0}",
+    "attack_targets": "[]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 0,
+    "recovery_consistent": 0,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "896925286a4a93ca734d0e43713e6d7d42d2d5b02410bd0bbba690a478b208df",
+    "state_hash": "a5e4426514d804f7a3c961753cdc335f6d2ec913f5ddf6be03dc24b06b9fa709",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_accepted\", \"committed_once\"]"
+  },
+  {
+    "round": 36,
+    "group": "trust_v2",
+    "attack_active": 1,
+    "attack_type": "A3",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      0,
+      7,
+      9
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.016292643114595145,
+        0.9171990341907863
+      ],
+      "5": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "6": [
+        0.06679486936180622,
+        0.9799686815710351
+      ],
+      "7": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "8": [
+        0.0017067261101873096,
+        0.597898345885492
+      ],
+      "9": [
+        0.0,
+        9.947598300641403e-14
+      ]
+    },
+    "audit_reference_input_key": "865d55e3a2c36006fc8b24eb959733e91a3c7fba5d0f67dc43ff748f83b2a0ad",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "32b7f0f02a4812ef65963c0d25ecff4836cc8f01b847e88c7080461aafbac9c8",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"d570ca6f7aac523f032d269a26e9de96b5a0a3732a0ae4b1d25fa9fa269c6780\", \"5\": \"1dc02b1d0da7b3cd42853d86e1a8b2263625e45e468829fdea63a9544dce8a9d\", \"6\": \"1cb032901b70499aae3ccece83528d71cf7d0d4a2fdc79a9988b519358927e68\", \"7\": \"175e58358bdc6244263c44f86a5b026d47f9b4f7dadd63752259b3d7cb1e60e7\", \"8\": \"696529f45ba11f3b4018981674779fe3f696c2428e6778e8979fa029c8309523\", \"9\": \"c5f3f9cc246743ea310dec8ee13456cdba080070bf43800321af2b277fbbe86c\"}",
+    "recovery_commitment": null,
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 0,
+    "recovery_endorsed": 0,
+    "v2_trust": 0,
+    "v2_agg": 0,
+    "consensus_passed": 1,
+    "healed_applied": 0,
+    "heal_source": "",
+    "accuracy": 82.3,
+    "skipped": 0,
+    "proposal_relative_error": 0.7452282570100891,
+    "committed_relative_error": 0.7452282570100891,
+    "final_weights": "{\"4\": 0.3987140660074898, \"5\": 0.0, \"6\": 0.5300426258009346, \"7\": 0.0, \"8\": 0.07124330819157558, \"9\": 0.0}",
+    "update_norms": "{\"4\": 0.23447370414857788, \"5\": 0.22014886668201977, \"6\": 0.16688004329851577, \"7\": 0.25548072083077494, \"8\": 0.36144625854800105, \"9\": 0.14593954203706244}",
+    "cosines": "{\"4\": 0.4843449542618201, \"5\": 0.5109950072659145, \"6\": 0.1947019749663304, \"7\": 0.7626550197184434, \"8\": 0.558728468359945, \"9\": 0.6951080286480377}",
+    "published_weights": "{\"4\": 0.25, \"5\": 0.25, \"6\": 0.25, \"7\": 0.0, \"8\": 0.25, \"9\": 0.0}",
+    "used_weights": "{\"4\": 0.25, \"5\": 0.25, \"6\": 0.25, \"7\": 0.0, \"8\": 0.25, \"9\": 0.0}",
+    "attack_targets": "[4, 5, 6, 7, 8, 9]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 0,
+    "recovery_consistent": 0,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "a5e4426514d804f7a3c961753cdc335f6d2ec913f5ddf6be03dc24b06b9fa709",
+    "state_hash": "13063f5cbe102bad61c07645be68480a5f023328f87eb111d1b8ed0d9c097769",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_accepted\", \"committed_once\"]"
+  },
+  {
+    "round": 37,
+    "group": "trust_v2",
+    "attack_active": 1,
+    "attack_type": "A1",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      4,
+      5,
+      7
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.0009505434407378546,
+        0.38822879564263335
+      ],
+      "5": [
+        0.0032213371598772793,
+        0.666439237005421
+      ],
+      "6": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "7": [
+        0.04769514774022925,
+        0.8716411434363192
+      ],
+      "8": [
+        0.012135147094831286,
+        0.8560033602480445
+      ],
+      "9": [
+        0.029482366738791326,
+        0.7745615961094416
+      ]
+    },
+    "audit_reference_input_key": "67bd06f1be449ec789da386ab041716f7f150d7d0c9fe491d086439bbb24da87",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "8469edfafcc56522e70b990229719bbfd3f27b9703ce93987b4efbb2ffd41e3e",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"5d1506659421821c22761e69cbed8703deb7582fe348d928b715aa3fba8c0129\", \"5\": \"892d09f492328af6340cc0038bfbf6382e7385631f7ee57bc63102501f4ceb48\", \"6\": \"792f1b191694ceddf7495bbd0c421518efd5843075f37e3d4cab7129b9ab2069\", \"7\": \"7a64f61e4777052f4ae8778313dca057ea288261e2c1c71c9717a4fc7c222347\", \"8\": \"e16531d5a2e23c8e9a837b981464a1c0f4cdb587099493b1a9141881e09158bd\", \"9\": \"d2ede1edc01264cbc2152a5aa214bf0f4339c62cae96b6faa92b134d8240083a\"}",
+    "recovery_commitment": "ec59a73c99d07c00ae7952942153d3334ef99cbd6d330bb83c563038289a517b",
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 1,
+    "recovery_endorsed": 1,
+    "v2_trust": 1,
+    "v2_agg": 0,
+    "consensus_passed": 0,
+    "healed_applied": 1,
+    "heal_source": "V2",
+    "accuracy": 73.78,
+    "skipped": 0,
+    "proposal_relative_error": 0.8204138800322555,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.003079273755788452, \"5\": 0.15578828249054846, \"6\": 0.0, \"7\": 0.4360977059297547, \"8\": 0.29262872713092747, \"9\": 0.1124060106929808}",
+    "update_norms": "{\"4\": 0.22833081750067136, \"5\": 0.18460266066601316, \"6\": 0.19650291522499105, \"7\": 0.20518883253151726, \"8\": 0.28881698953150314, \"9\": 0.09867956092754385}",
+    "cosines": "{\"4\": 0.18630395471900515, \"5\": 0.4069733154328994, \"6\": -0.019988186710755425, \"7\": 0.5260963709305575, \"8\": 0.3961061544922015, \"9\": 0.30866753652209483}",
+    "published_weights": "{\"4\": 0.75, \"5\": 0.15578828249054846, \"6\": 0.75, \"7\": 0.4360977059297547, \"8\": 0.75, \"9\": 0.75}",
+    "used_weights": "{\"4\": 0.20880395491891626, \"5\": 0.043372279352069165, \"6\": 0.20880395491891626, \"7\": 0.12141190097226574, \"8\": 0.20880395491891626, \"9\": 0.20880395491891626}",
+    "attack_targets": "[4, 6, 8, 9]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 1,
+    "recovery_consistent": 1,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "13063f5cbe102bad61c07645be68480a5f023328f87eb111d1b8ed0d9c097769",
+    "state_hash": "dd0bfb71b9aecaf1154910f69d19fd9bc83f3dcd29c4bfe989465268eda520d1",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_rejected\", \"recovery_recomputed\", \"recovery_audited\", \"recovery_verified\", \"committed_once\"]"
+  },
+  {
+    "round": 38,
+    "group": "trust_v2",
+    "attack_active": 1,
+    "attack_type": "A2",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      1,
+      6,
+      7
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "5": [
+        0.004916751602064965,
+        0.3298877508889045
+      ],
+      "6": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "7": [
+        0.13637376443810598,
+        0.9396322684579803
+      ],
+      "8": [
+        0.047430260624063976,
+        0.8424443049725565
+      ],
+      "9": [
+        0.0,
+        9.947598300641403e-14
+      ]
+    },
+    "audit_reference_input_key": "09108587dcd45e34c37fbb90bff4174627de89d901c25d9ce62373b52d37ab0b",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "e122fbc882f048670419a3685d1199ad7f0b30f94671c511f7066642227b5b8a",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"f7f2017d5b2990749b8b42882650591319a0bb5ff7947f6c3dd24a5b0a5cb626\", \"5\": \"17df7389adedc0ec65e55c142a6b95d00e2d09f2082fb3f0cda67e40eaa77c7f\", \"6\": \"65982e7f4fc630a07e33492ebd6b3b74cfdaf6312699bed1a12a4883b2e757a4\", \"7\": \"2bd12741aeec3545373a459a54102f27dfdd0c7d5bce27a4f9ba1616cce13cfe\", \"8\": \"5704bd61efe3391d035c2e0158ef29569ea7d7f0f9c564e6dd3c6d63e7a20afd\", \"9\": \"4af4db49e4cab39017d39b2e83bd505efae09d36df6b69f64aa8763b84af26a0\"}",
+    "recovery_commitment": "a3cc17b491a065b359527da35a4a2fe64e6a1eedc5433f0f93773c9cba1956c7",
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 1,
+    "recovery_endorsed": 1,
+    "v2_trust": 0,
+    "v2_agg": 1,
+    "consensus_passed": 0,
+    "healed_applied": 1,
+    "heal_source": "V2",
+    "accuracy": 72.78,
+    "skipped": 0,
+    "proposal_relative_error": 0.7563651872132422,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.0, \"5\": 0.14283383790178128, \"6\": 0.0, \"7\": 0.6722688393697327, \"8\": 0.18489732272848605, \"9\": 0.0}",
+    "update_norms": "{\"4\": 0.2623273370379177, \"5\": 0.15039245483792302, \"6\": 0.25580029601910065, \"7\": 0.1567348945085219, \"8\": 0.24651758319218273, \"9\": 0.11127495500293556}",
+    "cosines": "{\"4\": 0.3998687316385739, \"5\": 0.44805485093702213, \"6\": 0.44905218849846, \"7\": 0.4443439616072705, \"8\": -0.1690803397376567, \"9\": 0.32914993946912935}",
+    "published_weights": "{\"4\": 0.0, \"5\": 0.14283383790178128, \"6\": 0.0, \"7\": 0.6722688393697327, \"8\": 0.18489732272848605, \"9\": 0.0}",
+    "used_weights": "{\"4\": 0.15845538596076833, \"5\": 0.09053116365193829, \"6\": 0.0, \"7\": 0.31691077192153666, \"8\": 0.2756472925049883, \"9\": 0.15845538596076833}",
+    "attack_targets": "[4, 7, 8, 9]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 1,
+    "recovery_consistent": 1,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "dd0bfb71b9aecaf1154910f69d19fd9bc83f3dcd29c4bfe989465268eda520d1",
+    "state_hash": "ee44ecba0366776a3053d49874164f408ba6ee309db9771ae9ee712e6232960a",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_rejected\", \"recovery_recomputed\", \"recovery_audited\", \"recovery_verified\", \"committed_once\"]"
+  },
+  {
+    "round": 39,
+    "group": "trust_v2",
+    "attack_active": 0,
+    "attack_type": "none",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      1,
+      5,
+      7
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "5": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "6": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "7": [
+        0.9999999999999005,
+        1.0
+      ],
+      "8": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "9": [
+        0.0,
+        9.947598300641403e-14
+      ]
+    },
+    "audit_reference_input_key": "626b68c1f9350c299b71bb8f6f834dea3aabb91083fca0d6fc39e56247c7a9c7",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "816dfc1ee07d0d59c3c7329f272bbd027bac71cc075668a40ac9ba9b4f798cba",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"21fab32388b9d2ea3aef02561bf7d43e06e2b89517b5dd9c059f60e180fe722a\", \"5\": \"801f3c9583925b16170f6fce9e123c167c3328d1b0031b6ee76f53d6dc3deef3\", \"6\": \"ea40ab32c3070deaea59a26850f2ce8e4827a69ea8e3b21aeae230b8fd94859f\", \"7\": \"eba2a40c3d3ea9cf739a7fd34ca12a45ced89330c9b2597cef920f526bbd0cdc\", \"8\": \"840d5dee5ea29aab0aee1b74abf1149b713d0872f7ed76139a0533dd9472b862\", \"9\": \"9238b314384c8cf9b5eeb34adb6478ff1bfa67c02f68a5ccefcd8e5621eea612\"}",
+    "recovery_commitment": null,
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 0,
+    "recovery_endorsed": 0,
+    "v2_trust": 0,
+    "v2_agg": 0,
+    "consensus_passed": 1,
+    "healed_applied": 0,
+    "heal_source": "",
+    "accuracy": 61.94,
+    "skipped": 0,
+    "proposal_relative_error": 0.0,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.0, \"5\": 0.0, \"6\": 0.0, \"7\": 1.0, \"8\": 0.0, \"9\": 0.0}",
+    "update_norms": "{\"4\": 0.277097090375837, \"5\": 0.18445899051399584, \"6\": 0.2741242462338935, \"7\": 0.13393193417360766, \"8\": 0.25528590370465465, \"9\": 0.12881377648841197}",
+    "cosines": "{\"4\": 0.5560273316754812, \"5\": 0.5680495023172383, \"6\": 0.6502503783134973, \"7\": 0.3227623682547769, \"8\": -0.24676065873058187, \"9\": 0.39711585640137226}",
+    "published_weights": "{\"4\": 0.0, \"5\": 0.0, \"6\": 0.0, \"7\": 1.0, \"8\": 0.0, \"9\": 0.0}",
+    "used_weights": "{\"4\": 0.0, \"5\": 0.0, \"6\": 0.0, \"7\": 1.0, \"8\": 0.0, \"9\": 0.0}",
+    "attack_targets": "[]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 0,
+    "recovery_consistent": 0,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "ee44ecba0366776a3053d49874164f408ba6ee309db9771ae9ee712e6232960a",
+    "state_hash": "0a255dcded88bed536f902c7638d82313f77cf7ed826f861d55b6f772818a5ab",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_accepted\", \"committed_once\"]"
+  },
+  {
+    "round": 40,
+    "group": "trust_v2",
+    "attack_active": 1,
+    "attack_type": "A3",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      0,
+      2,
+      5
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "5": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "6": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "7": [
+        0.9999999999999005,
+        1.0
+      ],
+      "8": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "9": [
+        0.0,
+        9.947598300641403e-14
+      ]
+    },
+    "audit_reference_input_key": "5a1edc5b7f12f72c0571ae8eedb7c7a3070d331555e8778fb758085521568b7f",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "9cc4605236ded9d7a972a55f48f7de3d2e5b7c5414c63b9e5262a6edc75e6531",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"68e0ce6bf2a30c47aba5d196f98cf4a533cc60656676388a9f054cde7edbb4d5\", \"5\": \"51ab0c8a839b65b9c5fd21400c32521605a1fdbec2b1f9225e93d8fc00fb5647\", \"6\": \"a427b920b337efb5868e227abc6554e31915e7bba269ca87c8612bb0c866aee3\", \"7\": \"ee5fe11e1765a4cc9bcd49a67b73ff4c588d6b5fad1f771e8f3bf4b69df39947\", \"8\": \"b4ef30aadaf0ec41bd182f41e16f3529ea4e43631bc79ac39ffa632c589ce77a\", \"9\": \"5b8a3109c5709b20a352b2cdd31400382d452aa8cf486b5729658962105403ea\"}",
+    "recovery_commitment": "2eb1127627a269e85d248655e8bdad6ef8db9f7e2430855f993f69dc2fcbcad8",
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 1,
+    "recovery_endorsed": 1,
+    "v2_trust": 1,
+    "v2_agg": 0,
+    "consensus_passed": 0,
+    "healed_applied": 1,
+    "heal_source": "V2",
+    "accuracy": 55.72,
+    "skipped": 0,
+    "proposal_relative_error": 1.3556352738770117,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.0, \"5\": 0.0, \"6\": 0.0, \"7\": 1.0, \"8\": 0.0, \"9\": 0.0}",
+    "update_norms": "{\"4\": 0.30526857546986774, \"5\": 0.1615686566347521, \"6\": 0.30922593865989767, \"7\": 0.12697858986715918, \"8\": 0.34738948352778254, \"9\": 0.18128890230048164}",
+    "cosines": "{\"4\": 0.6300508224342222, \"5\": 0.45086411177134417, \"6\": 0.7299888836238388, \"7\": 0.008516238300924545, \"8\": 0.27243136256218586, \"9\": 0.6575302150566401}",
+    "published_weights": "{\"4\": 0.25, \"5\": 0.25, \"6\": 0.0, \"7\": 0.25, \"8\": 0.25, \"9\": 0.0}",
+    "used_weights": "{\"4\": 0.25, \"5\": 0.25, \"6\": 0.0, \"7\": 0.25, \"8\": 0.25, \"9\": 0.0}",
+    "attack_targets": "[4, 5, 6, 7, 8, 9]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 1,
+    "recovery_consistent": 1,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "0a255dcded88bed536f902c7638d82313f77cf7ed826f861d55b6f772818a5ab",
+    "state_hash": "28028be3395a7cc3011272f85db6d87a800aa032c16ad9fe2d5ae763f802fdad",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_rejected\", \"recovery_recomputed\", \"recovery_audited\", \"recovery_verified\", \"committed_once\"]"
+  },
+  {
+    "round": 41,
+    "group": "trust_v2",
+    "attack_active": 1,
+    "attack_type": "A1",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      0,
+      2,
+      7
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "5": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "6": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "7": [
+        0.9999999999999005,
+        1.0
+      ],
+      "8": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "9": [
+        0.0,
+        9.947598300641403e-14
+      ]
+    },
+    "audit_reference_input_key": "436bf347cce078d329bdcc3157ff06336491137a0ee293afb1f71468a1fb5f97",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "b0f95a9efe87c685eb82ce0396c28e00e02b04817c5a56ec32fb20f981c179b4",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"e09397337a1f46e26dbc5b6937945f6c6e8191aaffa2ecd97ef0c9bda43d1a17\", \"5\": \"251429651868bb46da78d639d3b3c7178029ffcf69c077c90d04de56487e95fb\", \"6\": \"1eeff6b66901a90e6b588b83f02268c52e76c8c03c9f8646fa65cd4db1cbb830\", \"7\": \"2561331f4d482a54ed37a4eef10ed54018f1656cc27d816a17010c8e9c3d7909\", \"8\": \"5f98bc4ae1dc91fa68a5f073b747847ab28332856e6eee6523eeefd35eef9fff\", \"9\": \"fc9286286b33e06738eae7dd8b8f36bee25e5867da60abd694808151476884d7\"}",
+    "recovery_commitment": "63d00bc2546ccc96475bc9901b13813056bc16d9362a4eda102cc6ea52262f4f",
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 1,
+    "recovery_endorsed": 1,
+    "v2_trust": 1,
+    "v2_agg": 0,
+    "consensus_passed": 0,
+    "healed_applied": 1,
+    "heal_source": "V2",
+    "accuracy": 61.26,
+    "skipped": 0,
+    "proposal_relative_error": 1.3675937394500617,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.0, \"5\": 0.0, \"6\": 0.0, \"7\": 1.0, \"8\": 0.0, \"9\": 0.0}",
+    "update_norms": "{\"4\": 0.30023643400169464, \"5\": 0.18969467515999683, \"6\": 0.33864721919422286, \"7\": 0.13645727125020413, \"8\": 0.5544876871218026, \"9\": 0.20572199891994447}",
+    "cosines": "{\"4\": 0.674688905908602, \"5\": 0.5893051128640714, \"6\": 0.7069259889150414, \"7\": 0.26506798817556415, \"8\": 0.537518292306637, \"9\": 0.7965507128552706}",
+    "published_weights": "{\"4\": 0.75, \"5\": 0.75, \"6\": 0.0, \"7\": 0.75, \"8\": 0.75, \"9\": 0.0}",
+    "used_weights": "{\"4\": 0.25, \"5\": 0.25, \"6\": 0.0, \"7\": 0.25, \"8\": 0.25, \"9\": 0.0}",
+    "attack_targets": "[4, 5, 7, 8]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 1,
+    "recovery_consistent": 1,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "28028be3395a7cc3011272f85db6d87a800aa032c16ad9fe2d5ae763f802fdad",
+    "state_hash": "1a10aa5c939fa23393891b2ae6eccdee6c71b1e7407d1f3cded315285fdf5c9d",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_rejected\", \"recovery_recomputed\", \"recovery_audited\", \"recovery_verified\", \"committed_once\"]"
+  },
+  {
+    "round": 42,
+    "group": "trust_v2",
+    "attack_active": 1,
+    "attack_type": "A2",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      6,
+      8,
+      9
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.00042125468095515465,
+        0.7582100343145516
+      ],
+      "5": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "6": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "7": [
+        0.004731578330819926,
+        0.9988620786500073
+      ],
+      "8": [
+        0.0005443803426215065,
+        0.993719682158663
+      ],
+      "9": [
+        0.0,
+        9.947598300641403e-14
+      ]
+    },
+    "audit_reference_input_key": "b18dd4f44e555bef9288eda674220a046c585da3d97e45153e3a6e358a390e0d",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "b49f90b9fd847c10e070dd0b25e6086ec5a39324429cf8f832a35efa583699d8",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"19d4e82a2418879ac01b8292647d8c728c37648f46af45c010a42fcee531b5c6\", \"5\": \"3103a5282b08d247015dacb0a8e8c44ea12e09c6747deeb0db833408b3975c9f\", \"6\": \"ea6b4e13dae2d260a05ec2c4817a840e7225f30f0cd1419e39ca909cace1535c\", \"7\": \"1f8fc00a85fc5ba44f026c79dbe157899f23dd58526eb993c4587a1dc8a96473\", \"8\": \"debc8d44278dc5fc3a8b97a0612cbebcd0ab5f49a012d4683e662e926e29a0f9\", \"9\": \"4914e48d924fff2a96050d3075b6f0a87cec989782d669c3ba103e36e0bf8cdf\"}",
+    "recovery_commitment": "6ff5a19c62612bb32bd81044a22c79d41161e2c4fe5236c9666ae6d79ec8bed6",
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 1,
+    "recovery_endorsed": 1,
+    "v2_trust": 0,
+    "v2_agg": 1,
+    "consensus_passed": 0,
+    "healed_applied": 1,
+    "heal_source": "V2",
+    "accuracy": 64.59,
+    "skipped": 0,
+    "proposal_relative_error": 0.5360030693585885,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.08566028108717894, \"5\": 0.0, \"6\": 0.0, \"7\": 0.09406872364999248, \"8\": 0.8202709952628285, \"9\": 0.0}",
+    "update_norms": "{\"4\": 0.3145710220876812, \"5\": 0.1951618179015113, \"6\": 0.349152553763112, \"7\": 0.10872857785297119, \"8\": 0.42874294709758143, \"9\": 0.21977193738139486}",
+    "cosines": "{\"4\": 0.6746622314575306, \"5\": 0.5633773452532125, \"6\": 0.7190411458441311, \"7\": 0.3995904444121555, \"8\": 0.5595308366750871, \"9\": 0.8089956376955343}",
+    "published_weights": "{\"4\": 0.08566028108717894, \"5\": 0.0, \"6\": 0.0, \"7\": 0.09406872364999248, \"8\": 0.8202709952628285, \"9\": 0.0}",
+    "used_weights": "{\"4\": 0.23477196026311556, \"5\": 0.17485831173017138, \"6\": 0.0, \"7\": 0.24065310454637032, \"8\": 0.34971662346034277, \"9\": 0.0}",
+    "attack_targets": "[4, 5, 7, 8]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 1,
+    "recovery_consistent": 1,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "1a10aa5c939fa23393891b2ae6eccdee6c71b1e7407d1f3cded315285fdf5c9d",
+    "state_hash": "417794e413354e2450e1e5509ae27c064b7919396c00d0a210ad19a119a2d0c1",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_rejected\", \"recovery_recomputed\", \"recovery_audited\", \"recovery_verified\", \"committed_once\"]"
+  },
+  {
+    "round": 43,
+    "group": "trust_v2",
+    "attack_active": 0,
+    "attack_type": "none",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      6,
+      7,
+      8
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "5": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "6": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "7": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "8": [
+        0.9999999999999005,
+        1.0
+      ],
+      "9": [
+        0.0,
+        9.947598300641403e-14
+      ]
+    },
+    "audit_reference_input_key": "70bbb0fb0208414372f39d5828614333abc80c7df39a48626a18b2a16cad0f9b",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "fda08141ddd5adcec0d4559d52094e5949add52b1d4eb75b6735ce3df0f71d3a",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"6f91dab3e50b335b99a9b76e883c57e45d04b9b54a092eb3304db7bba8f45034\", \"5\": \"4ee35b1e27a8711f90d7f12c94430466406fbd2740c921a2dc112b30d9d5e143\", \"6\": \"be277ab5e4baedcd6da11671c62ecfa6b33618d3c61f55d9f0d1204141828aeb\", \"7\": \"6655a7e79726634a60afad4f4172c4cb5911f9d492951f87760e53b9226a7319\", \"8\": \"0c6ab46f3dd106f91bfcdf9dfb1ae25cf956fa37ad3ffeea6a57f4d3e0cd581b\", \"9\": \"abac81a54aec49501b3508e3a168b19ebbe373b24be3e54b883effc13818b575\"}",
+    "recovery_commitment": null,
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 0,
+    "recovery_endorsed": 0,
+    "v2_trust": 0,
+    "v2_agg": 0,
+    "consensus_passed": 1,
+    "healed_applied": 0,
+    "heal_source": "",
+    "accuracy": 59.04,
+    "skipped": 0,
+    "proposal_relative_error": 0.0,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.0, \"5\": 0.0, \"6\": 0.0, \"7\": 0.0, \"8\": 1.0, \"9\": 0.0}",
+    "update_norms": "{\"4\": 0.3852988862872955, \"5\": 0.3572757164584457, \"6\": 0.4104086521246937, \"7\": 0.319070552164042, \"8\": 0.1340349197436434, \"9\": 0.20367769492508908}",
+    "cosines": "{\"4\": 0.7465564471978214, \"5\": 0.8231481842644686, \"6\": 0.808915815114324, \"7\": 0.6446204799986409, \"8\": -0.2181509727496551, \"9\": 0.8470629934312275}",
+    "published_weights": "{\"4\": 0.0, \"5\": 0.0, \"6\": 0.0, \"7\": 0.0, \"8\": 1.0, \"9\": 0.0}",
+    "used_weights": "{\"4\": 0.0, \"5\": 0.0, \"6\": 0.0, \"7\": 0.0, \"8\": 1.0, \"9\": 0.0}",
+    "attack_targets": "[]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 0,
+    "recovery_consistent": 0,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "417794e413354e2450e1e5509ae27c064b7919396c00d0a210ad19a119a2d0c1",
+    "state_hash": "fa497eac8aaaeaf2ac7b7bafe41b90f04595177df7b3cf864c9382feafd2606d",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_accepted\", \"committed_once\"]"
+  },
+  {
+    "round": 44,
+    "group": "trust_v2",
+    "attack_active": 0,
+    "attack_type": "none",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      0,
+      1,
+      9
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "5": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "6": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "7": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "8": [
+        0.9999999999999005,
+        1.0
+      ],
+      "9": [
+        0.0,
+        9.947598300641403e-14
+      ]
+    },
+    "audit_reference_input_key": "1d3547b82e8026f1648a85861ec8d291670f9dff236f719288007c28583ad293",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "0d15b1aa169850ff1e00c503f0d24cf54d1c9a812b672637d20cd6d59168b242",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"b7b8a2214ca6a43cb426ac5b2b031da325e1c1815ca2150fd9f57b7f241aef9e\", \"5\": \"3b3494ee01d9e0adb283e12a80c91ddf1287f2473b39eb53d7315358d081fa7b\", \"6\": \"4af312912fc07449ae6d00d610d8a7486835568ce6aa38a1ff6f68d9668f8ebf\", \"7\": \"d9dce83ee50d02af1104eaa816c98cfd008741d0ec3240158a395922fa4acf30\", \"8\": \"f8a286689f869833205614b2aaf154dd50eae695bb9abd983c5d232a2105155e\", \"9\": \"3037ac990c4d5ef7aa3041e26c746a3e693cf971d92a17cb21f3fe25592d2d1e\"}",
+    "recovery_commitment": null,
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 0,
+    "recovery_endorsed": 0,
+    "v2_trust": 0,
+    "v2_agg": 0,
+    "consensus_passed": 1,
+    "healed_applied": 0,
+    "heal_source": "",
+    "accuracy": 59.14,
+    "skipped": 0,
+    "proposal_relative_error": 0.0,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.0, \"5\": 0.0, \"6\": 0.0, \"7\": 0.0, \"8\": 1.0, \"9\": 0.0}",
+    "update_norms": "{\"4\": 0.43875816763236497, \"5\": 0.3910214647885891, \"6\": 0.46833312694694357, \"7\": 0.37084313276745656, \"8\": 0.09705116140523784, \"9\": 0.24785840206503873}",
+    "cosines": "{\"4\": 0.7711441895856427, \"5\": 0.890407135150858, \"6\": 0.8417564245831137, \"7\": 0.8307866904797401, \"8\": -0.06124325499774488, \"9\": 0.8932622553098322}",
+    "published_weights": "{\"4\": 0.0, \"5\": 0.0, \"6\": 0.0, \"7\": 0.0, \"8\": 1.0, \"9\": 0.0}",
+    "used_weights": "{\"4\": 0.0, \"5\": 0.0, \"6\": 0.0, \"7\": 0.0, \"8\": 1.0, \"9\": 0.0}",
+    "attack_targets": "[]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 0,
+    "recovery_consistent": 0,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "fa497eac8aaaeaf2ac7b7bafe41b90f04595177df7b3cf864c9382feafd2606d",
+    "state_hash": "d305923f431ec6751867c3ce6df5ce29abe09c0738bec68d75026aed1b94a098",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_accepted\", \"committed_once\"]"
+  },
+  {
+    "round": 45,
+    "group": "trust_v2",
+    "attack_active": 1,
+    "attack_type": "A3",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      4,
+      7,
+      9
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "5": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "6": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "7": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "8": [
+        0.9999999999999005,
+        1.0
+      ],
+      "9": [
+        0.0,
+        9.947598300641403e-14
+      ]
+    },
+    "audit_reference_input_key": "5f491a832b72f922b884499dbce7205d3261fc04b22bec96d7944d972aa4f566",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "9b45326f43f041284433310fabb90ff2c1d57b7183384b46e06004a602d1b375",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"f37830b3dbe8105b56bc15fcd4fa9a84708dad7f36e9fa9402a16d403098fa2a\", \"5\": \"3c307dbc7fc681e7ab9e55e504daafaaf2c4a790d83519e09beb9cdac0bdde8f\", \"6\": \"860f525f8009769de2de2e8030b64952978f0466b78910d387186562185e14f0\", \"7\": \"3e4b43369fe00ae5f92786461012c964a96043fd905d1b995038e62da6a5f857\", \"8\": \"d5d8b7b6e135be2aeb546e6890ee2f669fbd14f577c851f8f745c1cfc43e152c\", \"9\": \"a8824f5382b9a4e80f8e09262e9d8e7e352802dae38034ee80c176091dce7a97\"}",
+    "recovery_commitment": "3763201281a0ea248a495f01c9b05214afdc4a9eb469a4f90b9109bc6bfa83c0",
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 1,
+    "recovery_endorsed": 1,
+    "v2_trust": 1,
+    "v2_agg": 0,
+    "consensus_passed": 0,
+    "healed_applied": 1,
+    "heal_source": "V2",
+    "accuracy": 61.8,
+    "skipped": 0,
+    "proposal_relative_error": 3.2046077482644075,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.0, \"5\": 0.0, \"6\": 0.0, \"7\": 0.0, \"8\": 1.0, \"9\": 0.0}",
+    "update_norms": "{\"4\": 0.4245396369431953, \"5\": 0.40457326827614637, \"6\": 0.48785788944526437, \"7\": 0.3625083416098621, \"8\": 0.09048892334925693, \"9\": 0.25207080517914215}",
+    "cosines": "{\"4\": 0.7264985576737246, \"5\": 0.8859332200924236, \"6\": 0.8387075440168081, \"7\": 0.8597405968163098, \"8\": -0.017277052298045256, \"9\": 0.9006740235971898}",
+    "published_weights": "{\"4\": 0.25, \"5\": 0.0, \"6\": 0.25, \"7\": 0.25, \"8\": 0.25, \"9\": 0.0}",
+    "used_weights": "{\"4\": 0.25, \"5\": 0.0, \"6\": 0.25, \"7\": 0.25, \"8\": 0.25, \"9\": 0.0}",
+    "attack_targets": "[4, 5, 6, 7, 8, 9]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 1,
+    "recovery_consistent": 1,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "d305923f431ec6751867c3ce6df5ce29abe09c0738bec68d75026aed1b94a098",
+    "state_hash": "cdd9b8d930c2b8dd2ec7283e9c0d6e12a2b06e44e09e0385b8a3bb2238f1d6b7",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_rejected\", \"recovery_recomputed\", \"recovery_audited\", \"recovery_verified\", \"committed_once\"]"
+  },
+  {
+    "round": 46,
+    "group": "trust_v2",
+    "attack_active": 1,
+    "attack_type": "A1",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      2,
+      3,
+      9
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "5": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "6": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "7": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "8": [
+        0.9999999999999005,
+        1.0
+      ],
+      "9": [
+        0.0,
+        9.947598300641403e-14
+      ]
+    },
+    "audit_reference_input_key": "20ab60d7667039f1381b719d55fdaf160c18f01fbb6256de33c2b0059bfabe89",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "b48214fba9e05c289bc62fe413910d2b90b48ad14f8f9e9237936be5248084cd",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"1cc2dd417d6db98b61f989d5589341ae683495b9b13b819bc44854b1e2bde489\", \"5\": \"fee727896d57c47dddca1f61b3ec44d354fc3f341bb99c9d3696d92e0ae7a4bf\", \"6\": \"8db83140cbe6029039e9c946027b78b7fa2cf89ed90bdbba5289527f87b07d1c\", \"7\": \"c001a87d0c9756be157f604407e8449a21b14598699dac0391f4bb867c3cff02\", \"8\": \"35a044ed8d0ea849fd36b48f30bb63e5fadca75ed2409deb77d8e01d46231f15\", \"9\": \"8f3bf0740d3c8573ce8da1cf94948eceb419b39e5dc459a243bac3d520c191cb\"}",
+    "recovery_commitment": "aed3b41913760092c01231669bfb8574c48ee9815844af06e8cb0243db08f3cc",
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 1,
+    "recovery_endorsed": 1,
+    "v2_trust": 1,
+    "v2_agg": 0,
+    "consensus_passed": 0,
+    "healed_applied": 1,
+    "heal_source": "V2",
+    "accuracy": 58.05,
+    "skipped": 0,
+    "proposal_relative_error": 3.511454853905835,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.0, \"5\": 0.0, \"6\": 0.0, \"7\": 0.0, \"8\": 1.0, \"9\": 0.0}",
+    "update_norms": "{\"4\": 0.3837650806616497, \"5\": 0.3877943046991181, \"6\": 0.4785922810994036, \"7\": 0.37335565942656, \"8\": 0.08251455584445326, \"9\": 0.2481680887994694}",
+    "cosines": "{\"4\": 0.7509833813035303, \"5\": 0.8913930628402987, \"6\": 0.8237098290351795, \"7\": 0.8631280630611958, \"8\": -0.134165950607969, \"9\": 0.8968526052282019}",
+    "published_weights": "{\"4\": 0.75, \"5\": 0.0, \"6\": 0.75, \"7\": 0.75, \"8\": 0.75, \"9\": 0.0}",
+    "used_weights": "{\"4\": 0.25, \"5\": 0.0, \"6\": 0.25, \"7\": 0.25, \"8\": 0.25, \"9\": 0.0}",
+    "attack_targets": "[4, 6, 7, 8]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 1,
+    "recovery_consistent": 1,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "cdd9b8d930c2b8dd2ec7283e9c0d6e12a2b06e44e09e0385b8a3bb2238f1d6b7",
+    "state_hash": "81a5e358ba98965a6f2ba24104eb6bdf4230ab8c3eae3178a589aacfea1e1847",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_rejected\", \"recovery_recomputed\", \"recovery_audited\", \"recovery_verified\", \"committed_once\"]"
+  },
+  {
+    "round": 47,
+    "group": "trust_v2",
+    "attack_active": 1,
+    "attack_type": "A2",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      2,
+      3,
+      7
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "5": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "6": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "7": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "8": [
+        0.9999999999999005,
+        1.0
+      ],
+      "9": [
+        0.0,
+        9.947598300641403e-14
+      ]
+    },
+    "audit_reference_input_key": "5ef120836aef2b0965a046bd478313e0386bb44b25c93a78030950c6cf152d77",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "80514c21463dbbdf28d3dc34007446c2855a5cc17795d032636c10aa9a28d5e4",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"b23398ddd465194562b1dc8c6ef76b2d79799c997a7d42326c6b3b7fe0a29593\", \"5\": \"1bed92eef4418f5713a32340400d16657c7f4eb84fac98bb068ce1d68f2db80f\", \"6\": \"eaec8fd7bfdc3ed1301cf868470b11013aa611494649e37358d987fb7dd9a509\", \"7\": \"3fa4f23b966993e6c5c042568eecb3b689ea0d8e378eef0bfbc56a5f86d62387\", \"8\": \"4b91da02281846770be3d4c4cefd73efb3964eb3eb344d787ba305c3f77a8403\", \"9\": \"7980a0e3fa045da1328f68d9926e0fe03c38139950dc0ba84af1dd3a69fe5f2a\"}",
+    "recovery_commitment": "4a0ea133904515eb1b69dcdd0f36a093af1ff2c7370e4372b99ee5851b1219e3",
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 1,
+    "recovery_endorsed": 1,
+    "v2_trust": 0,
+    "v2_agg": 1,
+    "consensus_passed": 0,
+    "healed_applied": 1,
+    "heal_source": "V2",
+    "accuracy": 59.95,
+    "skipped": 0,
+    "proposal_relative_error": 3.323778776367416,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.0, \"5\": 0.0, \"6\": 0.0, \"7\": 0.0, \"8\": 1.0, \"9\": 0.0}",
+    "update_norms": "{\"4\": 0.45904508407797157, \"5\": 0.41022195318628896, \"6\": 0.4994919773365086, \"7\": 0.41338687225645704, \"8\": 0.07450359128827742, \"9\": 0.2546361202934658}",
+    "cosines": "{\"4\": 0.8128796728136053, \"5\": 0.9006983326140394, \"6\": 0.8331748420902444, \"7\": 0.8671038044671852, \"8\": 0.021449840432402008, \"9\": 0.89704747648559}",
+    "published_weights": "{\"4\": 0.0, \"5\": 0.0, \"6\": 0.0, \"7\": 0.0, \"8\": 1.0, \"9\": 0.0}",
+    "used_weights": "{\"4\": 0.2, \"5\": 0.0, \"6\": 0.2, \"7\": 0.2, \"8\": 0.4, \"9\": 0.0}",
+    "attack_targets": "[4, 6, 7, 8]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 1,
+    "recovery_consistent": 1,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "81a5e358ba98965a6f2ba24104eb6bdf4230ab8c3eae3178a589aacfea1e1847",
+    "state_hash": "f19869631952295402f50f7d75bd22adba70d77dd87370808f74d135cbf27e8f",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_rejected\", \"recovery_recomputed\", \"recovery_audited\", \"recovery_verified\", \"committed_once\"]"
+  },
+  {
+    "round": 48,
+    "group": "trust_v2",
+    "attack_active": 1,
+    "attack_type": "A3",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      4,
+      5,
+      7
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.005370776986778538,
+        0.9996847435015626
+      ],
+      "5": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "6": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "7": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "8": [
+        0.00031525649843750815,
+        0.9946292230132215
+      ],
+      "9": [
+        0.0,
+        9.947598300641403e-14
+      ]
+    },
+    "audit_reference_input_key": "a5bf4b5f324f7a7823e0b12da7bc5b1ec1422066288b352d0a72bcc5cb9a65a2",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "4d27cef6bd8ab33e533e7e705df7f8c1ae3552ce0f06febbd2e85424659ea13d",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"fc384f9d42144b46b1727807f9651b1511e4d82425675602e5dd60b887f7abc7\", \"5\": \"0e78acbb5780740c997244776b21562a5da159c1161ab5c3460d1c5c645a9b93\", \"6\": \"49f8ee51f59ad8a7096a6ffa214382411a6346890c437685a6ade5fc7594af3a\", \"7\": \"ccbb94ac415132bc6aa3e496d94f700ff8716a70d4e5cb1a865427984d650885\", \"8\": \"31d025a4b89b8880870b88968c38deee77cc4313c397127928aebfb3f595bc50\", \"9\": \"baf92ba27d18c9b42ec395cd45c5eefe864d28fe35581d736cbf5fa30c83b74d\"}",
+    "recovery_commitment": "e13e446ca9740b70cf6f3f3dd6aa6cb840352896f43071acc5ea4cc632124bda",
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 1,
+    "recovery_endorsed": 1,
+    "v2_trust": 1,
+    "v2_agg": 0,
+    "consensus_passed": 0,
+    "healed_applied": 1,
+    "heal_source": "V2",
+    "accuracy": 76.9,
+    "skipped": 0,
+    "proposal_relative_error": 0.47847307989597704,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.9981912946530126, \"5\": 0.0, \"6\": 0.0, \"7\": 0.0, \"8\": 0.0018087053469874803, \"9\": 0.0}",
+    "update_norms": "{\"4\": 0.4454166595291459, \"5\": 0.4040004908656311, \"6\": 0.503061136048384, \"7\": 0.39590709193018203, \"8\": 0.07177628986490905, \"9\": 0.25524273402154696}",
+    "cosines": "{\"4\": 0.7945980549893137, \"5\": 0.896671646248288, \"6\": 0.835577536406839, \"7\": 0.8894008913940543, \"8\": -0.07557543443635414, \"9\": 0.8959914574863738}",
+    "published_weights": "{\"4\": 0.25, \"5\": 0.0, \"6\": 0.25, \"7\": 0.25, \"8\": 0.25, \"9\": 0.0}",
+    "used_weights": "{\"4\": 0.25, \"5\": 0.0, \"6\": 0.25, \"7\": 0.25, \"8\": 0.25, \"9\": 0.0}",
+    "attack_targets": "[4, 5, 6, 7, 8, 9]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 1,
+    "recovery_consistent": 1,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "f19869631952295402f50f7d75bd22adba70d77dd87370808f74d135cbf27e8f",
+    "state_hash": "c5eeec84cf85a553736e03c1c12c7f598102edae53cbaed2ab85c28357cf8398",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_rejected\", \"recovery_recomputed\", \"recovery_audited\", \"recovery_verified\", \"committed_once\"]"
+  },
+  {
+    "round": 49,
+    "group": "trust_v2",
+    "attack_active": 0,
+    "attack_type": "none",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      0,
+      1,
+      5
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.31894788419492137,
+        0.993040276458379
+      ],
+      "5": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "6": [
+        0.00695972354162105,
+        0.6810521158050787
+      ],
+      "7": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "8": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "9": [
+        0.0,
+        9.947598300641403e-14
+      ]
+    },
+    "audit_reference_input_key": "c256a608c392cefb5995cafb539824cc6a36315d9c4e8162a63261f7ee90e32c",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "3de07d70b36bb893936efd0de53acfb5f809ebbd3241e5b513c65cd9a883dd91",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"e1de98089a1e268dd3b5bda4ad4a09b86001428da000bcc22dabcf5cf42f06ea\", \"5\": \"03830bb34d4d6f8a6a87d3e1f0bd6a1068d375ec255d8fb91f4e7405b345e59d\", \"6\": \"3429328923aa0c7aa87c335aed692f4cc003a85d4a393467bdde7a7dba846813\", \"7\": \"ad452b3acf4fbb3da3037c91bc414f1684fe89a284ebf296b279100550f17560\", \"8\": \"029e334800657616afb621351a84b1543d46b86221904a86166c5057c1ce1bcd\", \"9\": \"cebfb9682b0c818093a62f392346a23526b03ee0cde30c2a690c19fbbb388d5f\"}",
+    "recovery_commitment": null,
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 0,
+    "recovery_endorsed": 0,
+    "v2_trust": 0,
+    "v2_agg": 0,
+    "consensus_passed": 1,
+    "healed_applied": 0,
+    "heal_source": "",
+    "accuracy": 79.72,
+    "skipped": 0,
+    "proposal_relative_error": 0.0,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.9195862691096501, \"5\": 0.0, \"6\": 0.08041373089034991, \"7\": 0.0, \"8\": 0.0, \"9\": 0.0}",
+    "update_norms": "{\"4\": 0.17597358776544075, \"5\": 0.2490284901721886, \"6\": 0.3113037305828701, \"7\": 0.2626028231151498, \"8\": 0.33962506049362895, \"9\": 0.21722439765296253}",
+    "cosines": "{\"4\": 0.3072456967951144, \"5\": 0.23612843928351232, \"6\": 0.23264311591049727, \"7\": 0.07572840207877249, \"8\": -0.647013825003825, \"9\": -0.17992664686957438}",
+    "published_weights": "{\"4\": 0.9195862691096501, \"5\": 0.0, \"6\": 0.08041373089034991, \"7\": 0.0, \"8\": 0.0, \"9\": 0.0}",
+    "used_weights": "{\"4\": 0.9195862691096501, \"5\": 0.0, \"6\": 0.08041373089034991, \"7\": 0.0, \"8\": 0.0, \"9\": 0.0}",
+    "attack_targets": "[]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 0,
+    "recovery_consistent": 0,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "c5eeec84cf85a553736e03c1c12c7f598102edae53cbaed2ab85c28357cf8398",
+    "state_hash": "657884f9f2165cfcfc4ad990961dc04e98821ee68c9814e3d72a71c5d53b3052",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_accepted\", \"committed_once\"]"
+  },
+  {
+    "round": 50,
+    "group": "trust_v2",
+    "attack_active": 0,
+    "attack_type": "none",
+    "v1_trust": 0,
+    "v1_agg": 0,
+    "v1_projection_residual": null,
+    "vp_rule": "sampled_admissibility_bounds",
+    "vp_sampled_clients": [
+      2,
+      5,
+      8
+    ],
+    "vp_bound_intervals": {
+      "4": [
+        0.11949616144275951,
+        0.9472463147961022
+      ],
+      "5": [
+        0.014703281697718373,
+        0.5758406069453558
+      ],
+      "6": [
+        0.011514496630580628,
+        0.5817648559666514
+      ],
+      "7": [
+        0.0053289804935456805,
+        0.6298730472950849
+      ],
+      "8": [
+        0.0,
+        9.947598300641403e-14
+      ],
+      "9": [
+        0.002450975025719537,
+        0.4836164067687071
+      ]
+    },
+    "audit_reference_input_key": "136a0a30ad76ac9bf212cd55a62067fa1345efb25d2731ee75e1e38bc8b7f986",
+    "recovery_weight_source": "replacement_constructor",
+    "v1_projection_tolerance": 0.1,
+    "v1_challenge_seed": null,
+    "proposal_commitment": "ab32b5eaa7650acb30f9ebf23a6bc3157fff114304a819719a61208f180d3456",
+    "proposal_binding_valid": 1,
+    "update_hashes": "{\"4\": \"83e1efb269aa0f98bc78247a89c59e17fc9381ceeeefda3c4484bca6b94c6343\", \"5\": \"240c0c039990610974db90e87cb94e068317effd64739aed7d530ea708339ae5\", \"6\": \"5b3d3882405b87ca663ad609a17de4cb7bdd923ce0af249fd5435015363f7e1e\", \"7\": \"0ffa117fe5e465267002b2c83226ed805c4a744303efbfbd2ca89d0023720bb7\", \"8\": \"1d44f9a45bbf34103850d75fbde861775e1748bbd435f918cf7be35cf778adaf\", \"9\": \"7cdf40cde762b3c794b44a7f3295f7b2f51d886058a6254154a5a2e57601d9d5\"}",
+    "recovery_commitment": null,
+    "recovery_v1_endorsed": 0,
+    "recovery_v2_endorsed": 0,
+    "recovery_endorsed": 0,
+    "v2_trust": 0,
+    "v2_agg": 0,
+    "consensus_passed": 1,
+    "healed_applied": 0,
+    "heal_source": "",
+    "accuracy": 76.88,
+    "skipped": 0,
+    "proposal_relative_error": 0.0,
+    "committed_relative_error": 0.0,
+    "final_weights": "{\"4\": 0.37303735085068573, \"5\": 0.3045278508085991, \"6\": 0.15964820017288334, \"7\": 0.13398273993688267, \"8\": 0.0, \"9\": 0.02880385823094903}",
+    "update_norms": "{\"4\": 0.1845949745816714, \"5\": 0.2517200037939201, \"6\": 0.3105576343084177, \"7\": 0.21737266957282544, \"8\": 0.3262622750931728, \"9\": 0.19330427218744783}",
+    "cosines": "{\"4\": 0.4487575548521663, \"5\": 0.4776985365680297, \"6\": 0.3751373500097725, \"7\": 0.35783879322606066, \"8\": -0.13308700440666937, \"9\": 0.24923555234596828}",
+    "published_weights": "{\"4\": 0.37303735085068573, \"5\": 0.3045278508085991, \"6\": 0.15964820017288334, \"7\": 0.13398273993688267, \"8\": 0.0, \"9\": 0.02880385823094903}",
+    "used_weights": "{\"4\": 0.37303735085068573, \"5\": 0.3045278508085991, \"6\": 0.15964820017288334, \"7\": 0.13398273993688267, \"8\": 0.0, \"9\": 0.02880385823094903}",
+    "attack_targets": "[]",
+    "excluded_clients": "[0, 1, 2, 3]",
+    "audit_executed": 1,
+    "honest_rejection": 0,
+    "recovery_attempted": 0,
+    "recovery_consistent": 0,
+    "recovery_relative_error": 0.0,
+    "parent_hash": "657884f9f2165cfcfc4ad990961dc04e98821ee68c9814e3d72a71c5d53b3052",
+    "state_hash": "f4f9986c00efeecffcc0aed62daf32beb450337bf240c601fcc76d1a6144504b",
+    "events": "[\"proposal_created\", \"proposal_committed\", \"audit_accepted\", \"committed_once\"]"
+  }
+]

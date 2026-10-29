@@ -1,0 +1,23 @@
+test_cache_binding_covers_input_history_config_and_round (test_final_roles.FinalRoles) ... ok
+test_full_tas_uses_vs_reference_for_recovery_without_second_kernel (test_final_roles.FinalRoles) ... ok
+test_vp_only_reconstructs_once_on_recovery_without_trusting_executor_weights (test_final_roles.FinalRoles) ... ok
+test_client_sampling_matches_the_existing_rule (test_sampled_weight_audit.LightweightCrosscheck) ... ok
+test_crosscheck_does_not_recompute_the_full_trust_kernel (test_sampled_weight_audit.LightweightCrosscheck) ... ok
+test_honest_outputs_are_accepted_under_heterogeneous_histories (test_sampled_weight_audit.LightweightCrosscheck) ... ok
+test_honest_zero_direction_fallback_is_not_rejected (test_sampled_weight_audit.LightweightCrosscheck) ... ok
+test_norm_inadmissible_positive_weight_is_detected (test_sampled_weight_audit.LightweightCrosscheck) ... ok
+test_zero_direction_positive_weight_is_detected_when_fallback_is_impossible (test_sampled_weight_audit.LightweightCrosscheck) ... ok
+test_amplification_grid_obeys_norm_bound (test_comment1_policy.Comment1Policy) ... ok
+test_history_does_not_restore_norm_rejected (test_comment1_policy.Comment1Policy) ... ok
+test_nonfinite_round_preserves_full_parent_state (test_comment1_policy.Comment1Policy) ... ok
+test_pre_direction_history_is_preserved (test_comment1_policy.Comment1Policy) ... ok
+test_similarity_smoothing_and_direction_do_not_make_disjoint_hard_masks (test_comment1_policy.Comment1Policy) ... ok
+test_zero_direction_fallback_never_restores_norm_rejected (test_comment1_policy.Comment1Policy) ... ok
+test_zero_updates_remain_bounded (test_comment1_policy.Comment1Policy) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.290s
+
+OK
+[trust_v1v2] r01 | atk=True | V1_t=1,a=0 | V2_t=1,a=0 | ok=0 heal=1 | acc=100.00%
+[trust_v2] r01 | atk=True | V2_t=1,a=0 | ok=0 heal=1 | acc=100.00%

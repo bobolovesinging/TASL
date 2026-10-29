@@ -1,0 +1,1175 @@
+{
+  "scope": "Conditional coverage for b per-client admissibility violations; sum and nonnegativity remain valid. Not the probability of detecting arbitrary altered coefficients.",
+  "selected": [
+    {
+      "round": 2,
+      "capture_sha256": "b1aaad00c8c4b64b202e93eb0fd997ca0a9ccc88ef50df3bc21d87b348ad7e68",
+      "honest_weights": {
+        "0": 0.008272475114995174,
+        "1": 0.02417050384469133,
+        "2": 0.01261265980057147,
+        "3": 0.03553134862999709,
+        "4": 0.1996511104319346,
+        "5": 0.06976422263384917,
+        "6": 0.16260674042812046,
+        "7": 0.21089414392812203,
+        "8": 0.21128859858445206,
+        "9": 0.06520819660326663
+      },
+      "bounds": {
+        "0": [
+          0.0013374012409231902,
+          0.630689409107185
+        ],
+        "1": [
+          0.0038038599586055323,
+          0.669512043291933
+        ],
+        "2": [
+          0.0020891203766656413,
+          0.6239942507802959
+        ],
+        "3": [
+          0.0049695472302727795,
+          0.6963691611789358
+        ],
+        "4": [
+          0.008594949736937033,
+          0.7790749591384315
+        ],
+        "5": [
+          0.004654638418289818,
+          0.7190560612782415
+        ],
+        "6": [
+          0.004670492616878042,
+          0.7450569281785916
+        ],
+        "7": [
+          0.009349278511771938,
+          0.7810530050752895
+        ],
+        "8": [
+          0.008095007079751193,
+          0.7816946262081602
+        ],
+        "9": [
+          0.0008324537479982489,
+          0.6902094066482904
+        ]
+      },
+      "proposals": [
+        {
+          "b": 1,
+          "weights": {
+            "0": 0.0,
+            "1": 0.03244297895968651,
+            "2": 0.01261265980057147,
+            "3": 0.03553134862999709,
+            "4": 0.1996511104319346,
+            "5": 0.06976422263384917,
+            "6": 0.16260674042812046,
+            "7": 0.21089414392812203,
+            "8": 0.21128859858445206,
+            "9": 0.06520819660326663
+          },
+          "violated": [
+            0
+          ]
+        },
+        {
+          "b": 2,
+          "weights": {
+            "0": 0.0,
+            "1": 0.0,
+            "2": 0.04505563876025798,
+            "3": 0.03553134862999709,
+            "4": 0.1996511104319346,
+            "5": 0.06976422263384917,
+            "6": 0.16260674042812046,
+            "7": 0.21089414392812203,
+            "8": 0.21128859858445206,
+            "9": 0.06520819660326663
+          },
+          "violated": [
+            0,
+            1
+          ]
+        },
+        {
+          "b": 3,
+          "weights": {
+            "0": 0.0,
+            "1": 0.0,
+            "2": 0.0,
+            "3": 0.08058698739025506,
+            "4": 0.1996511104319346,
+            "5": 0.06976422263384917,
+            "6": 0.16260674042812046,
+            "7": 0.21089414392812203,
+            "8": 0.21128859858445206,
+            "9": 0.06520819660326663
+          },
+          "violated": [
+            0,
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "capture_sha256": "7aeff4516261bd6269b2299fa3c4b3e77f6d4befa157a5dfe25cf919d051e3ed",
+      "honest_weights": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.21625471993511003,
+        "5": 0.06863233962570446,
+        "6": 0.20905508615225118,
+        "7": 0.22034701042419458,
+        "8": 0.12357468852553051,
+        "9": 0.1621361553372094
+      },
+      "bounds": {
+        "0": [
+          0.0,
+          1.5631940186722204e-13
+        ],
+        "1": [
+          0.0,
+          1.5631940186722204e-13
+        ],
+        "2": [
+          0.0,
+          1.5631940186722204e-13
+        ],
+        "3": [
+          0.0,
+          1.5631940186722204e-13
+        ],
+        "4": [
+          0.014852276110824401,
+          0.7831524005505639
+        ],
+        "5": [
+          0.005938965740031051,
+          0.7370633697640291
+        ],
+        "6": [
+          0.012991712663969656,
+          0.7759745686193992
+        ],
+        "7": [
+          0.01590982519283878,
+          0.7872322988106791
+        ],
+        "8": [
+          0.015190540121138718,
+          0.7844573827689895
+        ],
+        "9": [
+          0.006107851795560855,
+          0.749417454195546
+        ]
+      },
+      "proposals": [
+        {
+          "b": 1,
+          "weights": {
+            "0": 0.0,
+            "1": 0.0,
+            "2": 0.0,
+            "3": 0.0,
+            "4": 0.0,
+            "5": 0.2848870595608145,
+            "6": 0.20905508615225118,
+            "7": 0.22034701042419458,
+            "8": 0.12357468852553051,
+            "9": 0.1621361553372094
+          },
+          "violated": [
+            4
+          ]
+        },
+        {
+          "b": 2,
+          "weights": {
+            "0": 0.0,
+            "1": 0.0,
+            "2": 0.0,
+            "3": 0.0,
+            "4": 0.0,
+            "5": 0.0,
+            "6": 0.4939421457130657,
+            "7": 0.22034701042419458,
+            "8": 0.12357468852553051,
+            "9": 0.1621361553372094
+          },
+          "violated": [
+            4,
+            5
+          ]
+        },
+        {
+          "b": 3,
+          "weights": {
+            "0": 0.0,
+            "1": 0.0,
+            "2": 0.0,
+            "3": 0.0,
+            "4": 0.0,
+            "5": 0.0,
+            "6": 0.0,
+            "7": 0.7142891561372603,
+            "8": 0.12357468852553051,
+            "9": 0.1621361553372094
+          },
+          "violated": [
+            4,
+            5,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "capture_sha256": "90cdb4aa80b5a67212306c576813fb4c10abba656363fe17a81bdf5125b6fc6e",
+      "honest_weights": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.24422783557998823,
+        "5": 0.020690997189961438,
+        "6": 0.24208240785681495,
+        "7": 0.24544730225445485,
+        "8": 0.01945047914412108,
+        "9": 0.22810097797465936
+      },
+      "bounds": {
+        "0": [
+          0.0,
+          1.5631940186722204e-13
+        ],
+        "1": [
+          0.0,
+          1.5631940186722204e-13
+        ],
+        "2": [
+          0.0,
+          1.5631940186722204e-13
+        ],
+        "3": [
+          0.0,
+          1.5631940186722204e-13
+        ],
+        "4": [
+          0.018853718017265476,
+          0.7868800976358252
+        ],
+        "5": [
+          0.005078954109455936,
+          0.7029281861454386
+        ],
+        "6": [
+          0.018226032918823257,
+          0.7847367011165383
+        ],
+        "7": [
+          0.01921049585291189,
+          0.7880984097687422
+        ],
+        "8": [
+          0.005055847487865741,
+          0.6030759918934149
+        ],
+        "9": [
+          0.01413550351195819,
+          0.7707685082846945
+        ]
+      },
+      "proposals": [
+        {
+          "b": 1,
+          "weights": {
+            "0": 0.0,
+            "1": 0.0,
+            "2": 0.0,
+            "3": 0.0,
+            "4": 0.0,
+            "5": 0.26491883276994965,
+            "6": 0.24208240785681495,
+            "7": 0.24544730225445485,
+            "8": 0.01945047914412108,
+            "9": 0.22810097797465936
+          },
+          "violated": [
+            4
+          ]
+        },
+        {
+          "b": 2,
+          "weights": {
+            "0": 0.0,
+            "1": 0.0,
+            "2": 0.0,
+            "3": 0.0,
+            "4": 0.0,
+            "5": 0.0,
+            "6": 0.5070012406267645,
+            "7": 0.24544730225445485,
+            "8": 0.01945047914412108,
+            "9": 0.22810097797465936
+          },
+          "violated": [
+            4,
+            5
+          ]
+        },
+        {
+          "b": 3,
+          "weights": {
+            "0": 0.0,
+            "1": 0.0,
+            "2": 0.0,
+            "3": 0.0,
+            "4": 0.0,
+            "5": 0.0,
+            "6": 0.0,
+            "7": 0.7524485428812194,
+            "8": 0.01945047914412108,
+            "9": 0.22810097797465936
+          },
+          "violated": [
+            4,
+            5,
+            6
+          ]
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "round": 2,
+      "b": 1,
+      "k": 1,
+      "subsets": 10,
+      "detected": 1,
+      "honest_rejected": 0,
+      "rate": 0.1
+    },
+    {
+      "round": 2,
+      "b": 1,
+      "k": 2,
+      "subsets": 45,
+      "detected": 9,
+      "honest_rejected": 0,
+      "rate": 0.2
+    },
+    {
+      "round": 2,
+      "b": 1,
+      "k": 3,
+      "subsets": 120,
+      "detected": 36,
+      "honest_rejected": 0,
+      "rate": 0.3
+    },
+    {
+      "round": 2,
+      "b": 1,
+      "k": 4,
+      "subsets": 210,
+      "detected": 84,
+      "honest_rejected": 0,
+      "rate": 0.4
+    },
+    {
+      "round": 2,
+      "b": 1,
+      "k": 5,
+      "subsets": 252,
+      "detected": 126,
+      "honest_rejected": 0,
+      "rate": 0.5
+    },
+    {
+      "round": 2,
+      "b": 1,
+      "k": 6,
+      "subsets": 210,
+      "detected": 126,
+      "honest_rejected": 0,
+      "rate": 0.6
+    },
+    {
+      "round": 2,
+      "b": 1,
+      "k": 7,
+      "subsets": 120,
+      "detected": 84,
+      "honest_rejected": 0,
+      "rate": 0.7
+    },
+    {
+      "round": 2,
+      "b": 1,
+      "k": 8,
+      "subsets": 45,
+      "detected": 36,
+      "honest_rejected": 0,
+      "rate": 0.8
+    },
+    {
+      "round": 2,
+      "b": 1,
+      "k": 9,
+      "subsets": 10,
+      "detected": 9,
+      "honest_rejected": 0,
+      "rate": 0.9
+    },
+    {
+      "round": 2,
+      "b": 1,
+      "k": 10,
+      "subsets": 1,
+      "detected": 1,
+      "honest_rejected": 0,
+      "rate": 1.0
+    },
+    {
+      "round": 2,
+      "b": 2,
+      "k": 1,
+      "subsets": 10,
+      "detected": 2,
+      "honest_rejected": 0,
+      "rate": 0.2
+    },
+    {
+      "round": 2,
+      "b": 2,
+      "k": 2,
+      "subsets": 45,
+      "detected": 17,
+      "honest_rejected": 0,
+      "rate": 0.37777777777777777
+    },
+    {
+      "round": 2,
+      "b": 2,
+      "k": 3,
+      "subsets": 120,
+      "detected": 64,
+      "honest_rejected": 0,
+      "rate": 0.5333333333333333
+    },
+    {
+      "round": 2,
+      "b": 2,
+      "k": 4,
+      "subsets": 210,
+      "detected": 140,
+      "honest_rejected": 0,
+      "rate": 0.6666666666666666
+    },
+    {
+      "round": 2,
+      "b": 2,
+      "k": 5,
+      "subsets": 252,
+      "detected": 196,
+      "honest_rejected": 0,
+      "rate": 0.7777777777777778
+    },
+    {
+      "round": 2,
+      "b": 2,
+      "k": 6,
+      "subsets": 210,
+      "detected": 182,
+      "honest_rejected": 0,
+      "rate": 0.8666666666666667
+    },
+    {
+      "round": 2,
+      "b": 2,
+      "k": 7,
+      "subsets": 120,
+      "detected": 112,
+      "honest_rejected": 0,
+      "rate": 0.9333333333333333
+    },
+    {
+      "round": 2,
+      "b": 2,
+      "k": 8,
+      "subsets": 45,
+      "detected": 44,
+      "honest_rejected": 0,
+      "rate": 0.9777777777777777
+    },
+    {
+      "round": 2,
+      "b": 2,
+      "k": 9,
+      "subsets": 10,
+      "detected": 10,
+      "honest_rejected": 0,
+      "rate": 1.0
+    },
+    {
+      "round": 2,
+      "b": 2,
+      "k": 10,
+      "subsets": 1,
+      "detected": 1,
+      "honest_rejected": 0,
+      "rate": 1.0
+    },
+    {
+      "round": 2,
+      "b": 3,
+      "k": 1,
+      "subsets": 10,
+      "detected": 3,
+      "honest_rejected": 0,
+      "rate": 0.3
+    },
+    {
+      "round": 2,
+      "b": 3,
+      "k": 2,
+      "subsets": 45,
+      "detected": 24,
+      "honest_rejected": 0,
+      "rate": 0.5333333333333333
+    },
+    {
+      "round": 2,
+      "b": 3,
+      "k": 3,
+      "subsets": 120,
+      "detected": 85,
+      "honest_rejected": 0,
+      "rate": 0.7083333333333334
+    },
+    {
+      "round": 2,
+      "b": 3,
+      "k": 4,
+      "subsets": 210,
+      "detected": 175,
+      "honest_rejected": 0,
+      "rate": 0.8333333333333334
+    },
+    {
+      "round": 2,
+      "b": 3,
+      "k": 5,
+      "subsets": 252,
+      "detected": 231,
+      "honest_rejected": 0,
+      "rate": 0.9166666666666666
+    },
+    {
+      "round": 2,
+      "b": 3,
+      "k": 6,
+      "subsets": 210,
+      "detected": 203,
+      "honest_rejected": 0,
+      "rate": 0.9666666666666667
+    },
+    {
+      "round": 2,
+      "b": 3,
+      "k": 7,
+      "subsets": 120,
+      "detected": 119,
+      "honest_rejected": 0,
+      "rate": 0.9916666666666667
+    },
+    {
+      "round": 2,
+      "b": 3,
+      "k": 8,
+      "subsets": 45,
+      "detected": 45,
+      "honest_rejected": 0,
+      "rate": 1.0
+    },
+    {
+      "round": 2,
+      "b": 3,
+      "k": 9,
+      "subsets": 10,
+      "detected": 10,
+      "honest_rejected": 0,
+      "rate": 1.0
+    },
+    {
+      "round": 2,
+      "b": 3,
+      "k": 10,
+      "subsets": 1,
+      "detected": 1,
+      "honest_rejected": 0,
+      "rate": 1.0
+    },
+    {
+      "round": 3,
+      "b": 1,
+      "k": 1,
+      "subsets": 10,
+      "detected": 1,
+      "honest_rejected": 0,
+      "rate": 0.1
+    },
+    {
+      "round": 3,
+      "b": 1,
+      "k": 2,
+      "subsets": 45,
+      "detected": 9,
+      "honest_rejected": 0,
+      "rate": 0.2
+    },
+    {
+      "round": 3,
+      "b": 1,
+      "k": 3,
+      "subsets": 120,
+      "detected": 36,
+      "honest_rejected": 0,
+      "rate": 0.3
+    },
+    {
+      "round": 3,
+      "b": 1,
+      "k": 4,
+      "subsets": 210,
+      "detected": 84,
+      "honest_rejected": 0,
+      "rate": 0.4
+    },
+    {
+      "round": 3,
+      "b": 1,
+      "k": 5,
+      "subsets": 252,
+      "detected": 126,
+      "honest_rejected": 0,
+      "rate": 0.5
+    },
+    {
+      "round": 3,
+      "b": 1,
+      "k": 6,
+      "subsets": 210,
+      "detected": 126,
+      "honest_rejected": 0,
+      "rate": 0.6
+    },
+    {
+      "round": 3,
+      "b": 1,
+      "k": 7,
+      "subsets": 120,
+      "detected": 84,
+      "honest_rejected": 0,
+      "rate": 0.7
+    },
+    {
+      "round": 3,
+      "b": 1,
+      "k": 8,
+      "subsets": 45,
+      "detected": 36,
+      "honest_rejected": 0,
+      "rate": 0.8
+    },
+    {
+      "round": 3,
+      "b": 1,
+      "k": 9,
+      "subsets": 10,
+      "detected": 9,
+      "honest_rejected": 0,
+      "rate": 0.9
+    },
+    {
+      "round": 3,
+      "b": 1,
+      "k": 10,
+      "subsets": 1,
+      "detected": 1,
+      "honest_rejected": 0,
+      "rate": 1.0
+    },
+    {
+      "round": 3,
+      "b": 2,
+      "k": 1,
+      "subsets": 10,
+      "detected": 2,
+      "honest_rejected": 0,
+      "rate": 0.2
+    },
+    {
+      "round": 3,
+      "b": 2,
+      "k": 2,
+      "subsets": 45,
+      "detected": 17,
+      "honest_rejected": 0,
+      "rate": 0.37777777777777777
+    },
+    {
+      "round": 3,
+      "b": 2,
+      "k": 3,
+      "subsets": 120,
+      "detected": 64,
+      "honest_rejected": 0,
+      "rate": 0.5333333333333333
+    },
+    {
+      "round": 3,
+      "b": 2,
+      "k": 4,
+      "subsets": 210,
+      "detected": 140,
+      "honest_rejected": 0,
+      "rate": 0.6666666666666666
+    },
+    {
+      "round": 3,
+      "b": 2,
+      "k": 5,
+      "subsets": 252,
+      "detected": 196,
+      "honest_rejected": 0,
+      "rate": 0.7777777777777778
+    },
+    {
+      "round": 3,
+      "b": 2,
+      "k": 6,
+      "subsets": 210,
+      "detected": 182,
+      "honest_rejected": 0,
+      "rate": 0.8666666666666667
+    },
+    {
+      "round": 3,
+      "b": 2,
+      "k": 7,
+      "subsets": 120,
+      "detected": 112,
+      "honest_rejected": 0,
+      "rate": 0.9333333333333333
+    },
+    {
+      "round": 3,
+      "b": 2,
+      "k": 8,
+      "subsets": 45,
+      "detected": 44,
+      "honest_rejected": 0,
+      "rate": 0.9777777777777777
+    },
+    {
+      "round": 3,
+      "b": 2,
+      "k": 9,
+      "subsets": 10,
+      "detected": 10,
+      "honest_rejected": 0,
+      "rate": 1.0
+    },
+    {
+      "round": 3,
+      "b": 2,
+      "k": 10,
+      "subsets": 1,
+      "detected": 1,
+      "honest_rejected": 0,
+      "rate": 1.0
+    },
+    {
+      "round": 3,
+      "b": 3,
+      "k": 1,
+      "subsets": 10,
+      "detected": 3,
+      "honest_rejected": 0,
+      "rate": 0.3
+    },
+    {
+      "round": 3,
+      "b": 3,
+      "k": 2,
+      "subsets": 45,
+      "detected": 24,
+      "honest_rejected": 0,
+      "rate": 0.5333333333333333
+    },
+    {
+      "round": 3,
+      "b": 3,
+      "k": 3,
+      "subsets": 120,
+      "detected": 85,
+      "honest_rejected": 0,
+      "rate": 0.7083333333333334
+    },
+    {
+      "round": 3,
+      "b": 3,
+      "k": 4,
+      "subsets": 210,
+      "detected": 175,
+      "honest_rejected": 0,
+      "rate": 0.8333333333333334
+    },
+    {
+      "round": 3,
+      "b": 3,
+      "k": 5,
+      "subsets": 252,
+      "detected": 231,
+      "honest_rejected": 0,
+      "rate": 0.9166666666666666
+    },
+    {
+      "round": 3,
+      "b": 3,
+      "k": 6,
+      "subsets": 210,
+      "detected": 203,
+      "honest_rejected": 0,
+      "rate": 0.9666666666666667
+    },
+    {
+      "round": 3,
+      "b": 3,
+      "k": 7,
+      "subsets": 120,
+      "detected": 119,
+      "honest_rejected": 0,
+      "rate": 0.9916666666666667
+    },
+    {
+      "round": 3,
+      "b": 3,
+      "k": 8,
+      "subsets": 45,
+      "detected": 45,
+      "honest_rejected": 0,
+      "rate": 1.0
+    },
+    {
+      "round": 3,
+      "b": 3,
+      "k": 9,
+      "subsets": 10,
+      "detected": 10,
+      "honest_rejected": 0,
+      "rate": 1.0
+    },
+    {
+      "round": 3,
+      "b": 3,
+      "k": 10,
+      "subsets": 1,
+      "detected": 1,
+      "honest_rejected": 0,
+      "rate": 1.0
+    },
+    {
+      "round": 4,
+      "b": 1,
+      "k": 1,
+      "subsets": 10,
+      "detected": 1,
+      "honest_rejected": 0,
+      "rate": 0.1
+    },
+    {
+      "round": 4,
+      "b": 1,
+      "k": 2,
+      "subsets": 45,
+      "detected": 9,
+      "honest_rejected": 0,
+      "rate": 0.2
+    },
+    {
+      "round": 4,
+      "b": 1,
+      "k": 3,
+      "subsets": 120,
+      "detected": 36,
+      "honest_rejected": 0,
+      "rate": 0.3
+    },
+    {
+      "round": 4,
+      "b": 1,
+      "k": 4,
+      "subsets": 210,
+      "detected": 84,
+      "honest_rejected": 0,
+      "rate": 0.4
+    },
+    {
+      "round": 4,
+      "b": 1,
+      "k": 5,
+      "subsets": 252,
+      "detected": 126,
+      "honest_rejected": 0,
+      "rate": 0.5
+    },
+    {
+      "round": 4,
+      "b": 1,
+      "k": 6,
+      "subsets": 210,
+      "detected": 126,
+      "honest_rejected": 0,
+      "rate": 0.6
+    },
+    {
+      "round": 4,
+      "b": 1,
+      "k": 7,
+      "subsets": 120,
+      "detected": 84,
+      "honest_rejected": 0,
+      "rate": 0.7
+    },
+    {
+      "round": 4,
+      "b": 1,
+      "k": 8,
+      "subsets": 45,
+      "detected": 36,
+      "honest_rejected": 0,
+      "rate": 0.8
+    },
+    {
+      "round": 4,
+      "b": 1,
+      "k": 9,
+      "subsets": 10,
+      "detected": 9,
+      "honest_rejected": 0,
+      "rate": 0.9
+    },
+    {
+      "round": 4,
+      "b": 1,
+      "k": 10,
+      "subsets": 1,
+      "detected": 1,
+      "honest_rejected": 0,
+      "rate": 1.0
+    },
+    {
+      "round": 4,
+      "b": 2,
+      "k": 1,
+      "subsets": 10,
+      "detected": 2,
+      "honest_rejected": 0,
+      "rate": 0.2
+    },
+    {
+      "round": 4,
+      "b": 2,
+      "k": 2,
+      "subsets": 45,
+      "detected": 17,
+      "honest_rejected": 0,
+      "rate": 0.37777777777777777
+    },
+    {
+      "round": 4,
+      "b": 2,
+      "k": 3,
+      "subsets": 120,
+      "detected": 64,
+      "honest_rejected": 0,
+      "rate": 0.5333333333333333
+    },
+    {
+      "round": 4,
+      "b": 2,
+      "k": 4,
+      "subsets": 210,
+      "detected": 140,
+      "honest_rejected": 0,
+      "rate": 0.6666666666666666
+    },
+    {
+      "round": 4,
+      "b": 2,
+      "k": 5,
+      "subsets": 252,
+      "detected": 196,
+      "honest_rejected": 0,
+      "rate": 0.7777777777777778
+    },
+    {
+      "round": 4,
+      "b": 2,
+      "k": 6,
+      "subsets": 210,
+      "detected": 182,
+      "honest_rejected": 0,
+      "rate": 0.8666666666666667
+    },
+    {
+      "round": 4,
+      "b": 2,
+      "k": 7,
+      "subsets": 120,
+      "detected": 112,
+      "honest_rejected": 0,
+      "rate": 0.9333333333333333
+    },
+    {
+      "round": 4,
+      "b": 2,
+      "k": 8,
+      "subsets": 45,
+      "detected": 44,
+      "honest_rejected": 0,
+      "rate": 0.9777777777777777
+    },
+    {
+      "round": 4,
+      "b": 2,
+      "k": 9,
+      "subsets": 10,
+      "detected": 10,
+      "honest_rejected": 0,
+      "rate": 1.0
+    },
+    {
+      "round": 4,
+      "b": 2,
+      "k": 10,
+      "subsets": 1,
+      "detected": 1,
+      "honest_rejected": 0,
+      "rate": 1.0
+    },
+    {
+      "round": 4,
+      "b": 3,
+      "k": 1,
+      "subsets": 10,
+      "detected": 3,
+      "honest_rejected": 0,
+      "rate": 0.3
+    },
+    {
+      "round": 4,
+      "b": 3,
+      "k": 2,
+      "subsets": 45,
+      "detected": 24,
+      "honest_rejected": 0,
+      "rate": 0.5333333333333333
+    },
+    {
+      "round": 4,
+      "b": 3,
+      "k": 3,
+      "subsets": 120,
+      "detected": 85,
+      "honest_rejected": 0,
+      "rate": 0.7083333333333334
+    },
+    {
+      "round": 4,
+      "b": 3,
+      "k": 4,
+      "subsets": 210,
+      "detected": 175,
+      "honest_rejected": 0,
+      "rate": 0.8333333333333334
+    },
+    {
+      "round": 4,
+      "b": 3,
+      "k": 5,
+      "subsets": 252,
+      "detected": 231,
+      "honest_rejected": 0,
+      "rate": 0.9166666666666666
+    },
+    {
+      "round": 4,
+      "b": 3,
+      "k": 6,
+      "subsets": 210,
+      "detected": 203,
+      "honest_rejected": 0,
+      "rate": 0.9666666666666667
+    },
+    {
+      "round": 4,
+      "b": 3,
+      "k": 7,
+      "subsets": 120,
+      "detected": 119,
+      "honest_rejected": 0,
+      "rate": 0.9916666666666667
+    },
+    {
+      "round": 4,
+      "b": 3,
+      "k": 8,
+      "subsets": 45,
+      "detected": 45,
+      "honest_rejected": 0,
+      "rate": 1.0
+    },
+    {
+      "round": 4,
+      "b": 3,
+      "k": 9,
+      "subsets": 10,
+      "detected": 10,
+      "honest_rejected": 0,
+      "rate": 1.0
+    },
+    {
+      "round": 4,
+      "b": 3,
+      "k": 10,
+      "subsets": 1,
+      "detected": 1,
+      "honest_rejected": 0,
+      "rate": 1.0
+    }
+  ],
+  "total_subset_proposal_cases": 9207,
+  "total_honest_false_rejections": 0,
+  "source_sha256": {
+    "/home/njit/tas_vp_final_analysis_20261029/sampling_final.py": "369192c8e81060f1cd04179da606388cb9e119deefd261a94b42ab58ad615004",
+    "/home/njit/tas_vp_final_20261029/sampled_weight_audit.py": "60bfeca3859d3f33d9b3239a4964954c233ac5c0e109b8d40c87b7d967f313cc",
+    "/home/njit/tas_vp_final_20261029/scripts/exp3/exp3_governance_tasv2.py": "95b767778d3a7e6142aa641d625bad5b1f97f4f759dff12d78270d19b301e822"
+  }
+}
