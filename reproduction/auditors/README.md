@@ -1,3 +1,9 @@
+# Current Table 4 records
+
+Version `paper-v2.4` adds the four normalized-A1 V_P-only runs used in the final Table 4. A1 publishes and uses the same normalized forged weights. Auditor and recovery behaviour are unchanged. The other Table 4 rows, exclusion-budget control, and frozen-input timings retain their recorded configurations below.
+
+Verify the new rows with `python reproduction/auditors/verify_normalized.py`. Repeat them with `python reproduction/auditors/reproduce_normalized.py --dataset mnist --workspace /path/to/fresh-run` (or `fashionmnist`). The source bundle preserves the exact executed files, and the adapter regenerates both attack scenarios for the selected dataset.
+
 # Final audit and recovery records
 
 This directory contains the audit implementation used for the updated governance rows, the complete-verifier comparison, and sampled-weight sensitivity in the second revision (`paper-v2.3`). The weighting rule and training partitions match the preceding governance study. Numerical results for the preceding implementation remain in `../governance`; the updated auditor rows are here.

@@ -56,8 +56,8 @@
     "sha256": "db743cf360f3c4c4d4b2dab3545088163d9b07b1a7fd7eabb527dfcf7f5d8c08"
   },
   "README.md": {
-    "bytes": 3477,
-    "sha256": "c71cc6bc842d84d0717f798ec71e8a2f6fa8bfcff9a9320c36e243db2ced979c"
+    "bytes": 4173,
+    "sha256": "6f4e13f64ef790b9c8fa92bd4e4564416fa0001feebf9a9a115f5293537b1adf"
   },
   "records/fashionmnist/cap0/label_flip/full_tas/manifest.json": {
     "bytes": 8464,
@@ -211,6 +211,14 @@
     "bytes": 71,
     "sha256": "089d0112c7d8ac6d49ed24a626d958a6bc2009a15a87e9e836f5fe499cf2586c"
   },
+  "records/normalized_sources.json": {
+    "bytes": 440930,
+    "sha256": "efb3c5db103d4ffeeeb88334cd2b8a5de45b5f186d8936006b2d461cc052e163"
+  },
+  "records/normalized_vp_runs.json": {
+    "bytes": 998200,
+    "sha256": "af0c5e665e2b016b06dd2b9b074d6982036fe02bcdef24d98076a6c3a929620d"
+  },
   "records/protocol_tests.txt": {
     "bytes": 1900,
     "sha256": "b443cfecd033e8d6f6b0ae27678aaf68229200fc194676e9dcc6dd4181af9008"
@@ -227,8 +235,16 @@
     "bytes": 3334,
     "sha256": "b7ff1b3f0eac9e7138cea66380a5df67d34c24b065907d2a962f39489d1f6b74"
   },
+  "reproduce_normalized.py": {
+    "bytes": 1573,
+    "sha256": "16e6116c7a69c54cd0486082259a2a1bbba31486e684eec55db5801a2242053e"
+  },
   "verify.py": {
     "bytes": 4726,
     "sha256": "fafa50ee131f5dc8f9a929112c82982a28c6d309767dbab874ee413d826bc48a"
+  },
+  "verify_normalized.py": {
+    "bytes": 2631,
+    "sha256": "7b135c5c5429602060abaa83326882bce69dd694f18b74bf06aee9f94e175407"
   }
 }
